@@ -1,0 +1,17 @@
+<mod:findName type="eventList" name="MONOLITH_TOO_CLOSE_RAND">
+	<mod:findWithChildLike type="event" child-type="choice">
+		<mod:removeTag />
+	</mod:findWithChildLike>
+</mod:findName>
+
+<!-- the above removes this event: (the only event with a <choice>)
+
+<event>
+	<text>You carefully approach the monolith with your ship, and the monolith's surface covers with trembling ripples. Suddenly you start to be dragged inside, right into an infinite void! The engines roar at maximum power, trying to pull you of the trap, but they seem to have absolutely no effect whatsoever...</text>
+	<choice hidden="true">
+		<text id="continue" />
+		<event>
+			<secretSector/>
+		</event>
+	</choice>
+</event> -->

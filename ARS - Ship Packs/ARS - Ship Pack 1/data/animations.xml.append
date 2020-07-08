@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- artillery ion beam used only in DLC ship =fed_type_A= -->
+<animSheet name="artillery_ion_fed" w="400" h="100" fw="40" fh="100">weapons/beam_fed_ion_strip10.png</animSheet>
+<weaponAnim name="artillery_ion_fed">
+	<sheet>artillery_ion_fed</sheet>
+	<desc length="10" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>2</fireFrame>
+	<firePoint  x="0" y="50"/>
+	<mountPoint x="0" y="50"/>
+	<chargeImage>weapons/beam_fed_ion_glow.png</chargeImage>
+</weaponAnim>
+
+<animSheet name="artillery_breacher_fed" w="400" h="100" fw="40" fh="100">weapons/beam_fed_breacher_strip10.png</animSheet>
+<weaponAnim name="artillery_breacher_fed">
+	<sheet>artillery_breacher_fed</sheet>
+	<desc length="10" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>2</fireFrame>
+	<firePoint  x="0" y="50"/>
+	<mountPoint x="0" y="50"/>
+	<chargeImage>weapons/beam_fed_breacher_glow.png</chargeImage>
+</weaponAnim>
+<animSheet name="breacher_contact" w="240" h="48" fw="48" fh="48">weapons/breacher_contact.png</animSheet>
+<anim name="breacher_contact">
+	<sheet>breacher_contact</sheet>
+	<desc length="5" x="0" y="0"/>
+	<time>0.75</time>
+</anim>
+
+<animSheet name="missile_666" w="256" h="80" fw="32" fh="80">weapons/missile2_666_strip8.png</animSheet>
+<anim name="missile_666">
+	<sheet>missile_666</sheet>
+	<desc length="8" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+
+<animSheet name="shotgun_strip8_veryold" w="296" h="51" fw="37" fh="51">weapons/shotgun_strip8_veryold.png</animSheet>
+<weaponAnim name="shotgun_strip8_veryold">
+	<sheet>shotgun_strip8_veryold</sheet>
+	<desc length="8" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>3</fireFrame>
+	<firePoint  x="15" y="2"/>
+	<mountPoint x="5" y="28"/>
+	<chargeImage>weapons/shotgun_glow_veryold.png</chargeImage>
+</weaponAnim>
+
+<animSheet name="ba_plasma_thrower_plus" w="240" h="60" fw="30" fh="60">weapons/ba_plasma_thrower_plus_strip8.png</animSheet>
+<weaponAnim name="ba_plasma_thrower_plus">
+	<sheet>ba_plasma_thrower_plus</sheet>
+	<desc length="8" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>2</fireFrame>
+	<firePoint  x="18" y="15"/>
+	<mountPoint x="4" y="37"/>
+	<chargeImage>weapons/ba_plasma_thrower_plus_glow.png</chargeImage>
+</weaponAnim>
+
+
+<!-- NEW -->
+<animSheet name="crystal_heavy_1_player" w="444" h="63" fw="37" fh="63">weapons/crystal_heavy_1_player_strip12.png</animSheet>
+<animSheet name="crystal_heavy_2_player" w="564" h="69" fw="47" fh="69">weapons/crystal_heavy_2_player_strip12.png</animSheet>
+<weaponAnim name="crystal_heavy_1_player">
+	<sheet>crystal_heavy_1_player</sheet>
+	<desc length="12" x="0" y="0" />
+	<chargedFrame>5</chargedFrame>
+	<fireFrame>8</fireFrame>
+	<firePoint x="15" y="16" />
+	<mountPoint x="8" y="45" />
+</weaponAnim>
+<weaponAnim name="crystal_heavy_2_player">
+	<sheet>crystal_heavy_2_player</sheet>
+	<desc length="12" x="0" y="0" />
+	<chargedFrame>5</chargedFrame>
+	<fireFrame>8</fireFrame>
+	<firePoint x="16" y="22" />
+	<mountPoint x="9" y="47" />
+</weaponAnim>
+<animSheet name="crystal_shard_c" w="32" h="80" fw="32" fh="80">weapons/crystal_shard_c.png</animSheet>
+<animSheet name="crystal_shard_z" w="32" h="80" fw="32" fh="80">weapons/crystal_shard_z.png</animSheet>
+<anim name="crystal_shard_c">
+	<sheet>crystal_shard_c</sheet>
+	<desc length="1" x="0" y="0" />
+	<time>1</time>
+</anim> 
+<anim name="crystal_shard_z">
+	<sheet>crystal_shard_z</sheet>
+	<desc length="1" x="0" y="0" />
+	<time>1</time>
+</anim>
+
+<animSheet name="ba_laser_artillery_mini" w="360" h="83" fw="30" fh="83">weapons/ba_laser_artillery_mini_strip12.png</animSheet>
+<weaponAnim name="ba_laser_artillery_mini">
+	<sheet>ba_laser_artillery_mini</sheet>
+	<desc length="12" x="0" y="0"/>
+	<chargedFrame>5</chargedFrame>
+	<fireFrame>8</fireFrame>
+	<firePoint  x="17" y="17"/>
+	<mountPoint x="3" y="59"/>
+	<chargeImage>weapons/ba_laser_artillery_mini_glow.png</chargeImage>
+</weaponAnim>

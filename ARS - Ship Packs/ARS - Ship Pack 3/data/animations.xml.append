@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<animSheet name="fire_hell_beam_nemesis" w="330" h="83" fw="33" fh="83">weapons/fire_hell_beam_nemesis.png</animSheet>
+<weaponAnim name="fire_hell_beam_nemesis">
+	<sheet>fire_hell_beam_nemesis</sheet>
+	<desc length="8" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>3</fireFrame>
+	<firePoint x="20" y="13"/>
+	<mountPoint x="4" y="71"/>
+	<chargeImage>weapons/fire_hell_beam_nemesis_glow.png</chargeImage>
+</weaponAnim>
+
+<animSheet name="ai_core_crystal_player" w="1000" h="100" fw="100" fh="100">weapons/ai_core_crystal_player.png</animSheet>
+<weaponAnim name="ai_core_crystal_player">
+	<sheet>ai_core_crystal_player</sheet>
+	<desc length="10" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>3</fireFrame>
+	<firePoint x="0" y="100"/>
+	<mountPoint x="0" y="100"/>
+	<chargeImage>weapons/ai_core_crystal_player_glow.png</chargeImage>
+</weaponAnim>

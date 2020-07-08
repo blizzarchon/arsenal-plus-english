@@ -1,0 +1,64 @@
+<metadata>
+  <!-- CDATA tags mean no need to escape special characters. -->
+  <!-- Don't worry about spaces at the start/end. That gets trimmed. -->
+
+
+  <!-- The title of this mod. -->
+  <title><![CDATA[ Arsenal+ in English - DLC Ship Pack 1 ]]></title>
+
+
+  <!--
+    This mod's thread on ftlgame.com.
+    If there's no thread yet, create one to announce your upcoming mod in
+    the 'Mod Development' forum. Then paste the url here.
+  -->
+  <threadUrl><![CDATA[ https://subsetgames.com/forum/viewtopic.php?f=11&t=29891 ]]></threadUrl>
+
+
+  <!-- Your forum user name. -->
+  <author><![CDATA[ bamalf and KBA3u, translated by mr_easy_money ]]></author>
+
+
+  <!--
+    Version can be any string, preferably at least a number.
+    Examples:
+      0.3
+      2.1c Ships Only WIP
+      2.4.1 Hi-res Bkgs
+      1.0 for FTL 1.03.1
+  -->
+  <version><![CDATA[ 1.16 ]]></version>
+
+
+  <description>
+<![CDATA[
+This mod replaces all the base ships in Arsenal+ with completely different ships. The ships in this mod each have their own theme separate from the vanilla ship themes, with completely new hull images and ship greebles.
+
+In addition, certain ships have custom variants of the weapons and drones in the base Arsenal+ mod, as well as some ships having custom augments.
+
+Lastly, the Lanius A and Lanius B have been replaced by ships with themes from the two new factions found in Arsenal+.
+]]>
+  </description>
+  
+  <!--
+    Suggestions for the description...
+
+    Write a short paragraph about the mod's effect first (what style ship,
+    how does it affect gameplay). No need to introduce yourself.
+
+    Optionally add a paragraph of background flavor.
+
+    Optionally list important features.
+
+    List any concerns about mod compatibility, preferred order, or
+    requirements.
+
+    Mention "Replaces the XYZ ship." if relevant.
+      Kestrel-A, Stealth-A, Mantis-A,
+      Engi-A,    Fed-A,     Slug-A,
+      Rock-A,    Zoltan-A,  Crystal-A
+
+    Above all, keep the description general, so you won't have to edit
+    that again for each new version.
+  -->
+</metadata>

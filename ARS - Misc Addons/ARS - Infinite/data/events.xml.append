@@ -1,0 +1,1687 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<eventList name="QUESTS_ALL">
+	<!-- <event load="MENGI_CRYSTAL_EVENT"/> --><!-- 1.27 -->
+	<event load="MENGI_SYSREPTRANS_EVENT"/><!-- 1.27 -->
+	<event load="MENGI_SCANNING_EVENT"/><!-- 1.27 -->
+	<event load="MENGI_HUNT1_EVENT"/><!-- 1.27 -->
+	<event load="NO_MENGI_EVENT"/><!-- 1.27 -->
+	<event load="ZOLTON_PLANET_IN_DANGER"/><!-- 1.26 -->
+	<event load="EVENT_CON_TRANSPORTTOPLANET"/><!-- 1.26 -->
+	<event load="EVENT_FED_DAMAGEDGOHOME"/><!-- 1.25 -->
+	<event load="EVENT_FEDHELP"/><!-- 1.25 -->
+	<event load="BORDER_NEED_HELP"/>
+	<event load="BORDER_BATTLE_HELP"/>
+	<event load="BORDER_PIRATE_QUEST"/>
+	<event load="BORDER_REPAIR"/>
+	<event load="ZOLTAN_PEACE_QUEST"/>
+	<event load="FEDERATION_PLANET_SIGNAL"/>
+	<event load="FEDERATION_PLANET_SIGNAL"/>
+	<event load="FEDERATION_PLANET_SIGNAL"/>
+	<event load="FEDERATION_PLANET_SIGNAL"/>
+	<event load="FEDERATION_PLANET_SIGNAL"/>
+	<event load="MERCENARY_WORK_START"/>
+	<event load="MERCENARY_WORK_START"/>
+	<event load="MERCENARY_WORK_START"/>
+	<event load="MERCENARY_WORK_START"/>
+	<event load="MERCHANT_REQUEST"/>
+	<event load="MERCHANT_REQUEST"/>
+	<event load="MERCHANT_REQUEST"/>
+	<event load="MERCHANT_REQUEST"/>
+	<event load="ORDEN_AUTOSHIP_QUEST"/>
+	<event load="ORDEN_QUEST_ESCORT"/>
+	<event load="QUESTS_ORDEN_CIVSHIPHELP"/>
+	<event load="QUESTS_ORDEN_TWO_WEAK_RABBITS"/>
+	<event load="QUEST_CONSTRUCTIONYARD"/>
+	<event load="QUEST_CREWDEAD_START"/>
+	<event load="QUEST_CREWDEAD_START"/>
+	<event load="QUEST_CREWDEAD_START"/>
+	<event load="QUEST_ESCORT"/>
+	<event load="QUEST_ESCORT"/>
+	<event load="QUEST_ESCORT"/>
+	<event load="QUEST_ESCORT"/>
+	<event load="QUEST_MANTIS_INVASION_START"/>
+	<event load="QUEST_MANTIS_INVASION_START"/>
+	<event load="ROCK_QUEST_MARRIAGE_START"/>
+	<event load="SLUG_VS_LANIUS_FOTON"/>
+	<event load="ZOLTAN_QUEST_PRIMITIVES"/>
+	<event load="ZOLTAN_SCI_QUEST"/>
+	<event load="ZOLTAN_TRADE_HUB"/>
+	<event load="HAL_I_FORGOT_YOU_MAN"/>
+	<event load="HAL_FED_NOFUEL"/>
+	<event load="HAL_QUEST_ESCORT"/>
+</eventList>
+
+<eventList name="BOARDING_ALL">
+	<event load="EVENT_LANIUS_EATME"/><!-- 1.26 -->
+	<event load="ZOLTON_BOARDERS"/><!-- 1.26 -->
+	<event load="ZOLTON_BOARDERS_MANTIS"/><!-- 1.26 -->
+	<event load="ASTEROID_BOARDERS_ORDEN"/>
+	<event load="BOARDERS"/>
+	<event load="BOARDERS_CRYSTAL"/>
+	<event load="BOARDERS_HACKING"/>
+	<event load="BOARDERS_HACKING"/>
+	<event load="BOARDERS_ORDEN_ANGRYSHIP"/>
+	<event load="BOARDERS_ORDEN_CLEAR"/>
+	<event load="BOARDERS_REBEL_SHIP"/>
+	<event load="BOARDERS_SUN"/>
+	<event load="BOARDERS_SUN"/>
+	<event load="BOARDERS_SUN"/>
+	<event load="FLOATING_CARGO"/>
+	<event load="LANIUS_BOARDERS"/>
+	<event load="LANIUS_PIRATE_BOARDERS"/>
+	<event load="MANTIS_BOARDERS"/>
+	<event load="MANTIS_BOARDERS"/>
+	<event load="ROCK_BOARDERS_ASTEROID"/>
+	<event load="ROCK_BOARDERS_SHIP"/>
+	<event load="ROCK_BOARDERS_SUN"/>
+	<event load="STATION_SICK"/>
+	<event load="ZOLTAN_BOARDERS"/>
+	<event load="ZOLTAN_BOARDERS_MANTIS"/>
+</eventList>
+
+<eventList name="NEBULA_ALL">
+	<event load="NEBULA_MENGI_SUPERSTORM_HOSTILE"/><!-- 1.27 -->
+	<event load="NEBULA_MENGI_SUPERSTORM_NEUTRAL"/><!-- 1.27 -->
+	<event load="NEBULA_JELLY_STEALS_MENGIWEAP"/><!-- 1.27 -->
+	<event load="NEBULA_REPAIRMENGI_EVENT"/><!-- 1.27 -->
+	<event load="NEBULA_ENGIMENGI_EVENT"/><!-- 1.27 -->
+	<event load="NEBULA_MENGI_DAMAGED_EVENT"/><!-- 1.27 -->
+	<event load="NEBULA_MENGI_FIGHT"/><!-- 1.27 -->
+	<event load="NEBULA_PILESOS_EVENT"/><!-- 1.27 -->
+	<event load="NEBULA_EVENT_DAMAGE_FTLJUMP"/><!-- 1.26 -->
+	<event load="STORM_EVENT_KILLAVATAR"/><!-- 1.26 -->
+	<event load="NEBULA_SLUG_STEAL_FUEL"/><!-- 1.26 -->
+	<event load="STORM_ZOLTON_FIGHT"/><!-- 1.26 -->
+	<event load="NEBULA_AUTO_ZOLTON_FIGHT"/><!-- 1.26 -->
+	<event load="NEBULA_BORDER_PDS_AFTERBATTLE"/><!-- 1.25.1 -->
+	<event load="NEBULA_STORE"/><!-- 1.25 -->
+	<event load="NEBULA_STORE_AVATAR"/><!-- 1.25 -->
+	<event load="NEBULA_STORE_SLUG"/><!-- 1.25 -->
+	<event load="STORM_STORE_UNSTABLE_STORM"/><!-- 1.25 -->
+	<event load="NEBULA_STORE_SLURM"/><!-- 1.25 -->
+	<event load="NEBULA_ITEMS"/><!-- 1.25 -->
+	<event load="NEBULA_SLURM_CRAZY_CAPTAIN"/><!-- 1.25 -->
+	<event load="NEBULA_EVENT_SLURM_BOARDING"/><!-- 1.25 -->
+	<event load="NEBULA_EVENT_SLURM_RISK"/><!-- 1.25 -->
+	<event load="NEBULA_NEUTRAL_SLURM_FIGHT"/><!-- 1.25 -->
+	<event load="NEBULA_NEUTRAL_SLURM_FIGHT"/><!-- 1.25 -->
+	<event load="NEBULA_SLURM_PLANET_TRADER"/><!-- 1.25 -->
+	<event load="NEBULA_SLURM_PIRATE_STEAL"/><!-- 1.25 -->
+	<event load="NEBULA_SLURM_RECEPT"/><!-- 1.25 -->
+	<event load="NEBULA_EVENT_SLURM_AUCTION"/><!-- 1.25 -->
+	<event load="NEBULA_SLURM_FIGHT"/><!-- 1.25 -->
+	<event load="NEBULA_SLURM_FIGHT"/><!-- 1.25 -->
+	<event load="NEBULA_SLURM_FIGHT_RANDOM"/><!-- 1.25 -->
+	<event load="NEBULA_SLURM_FIGHT_RANDOM"/><!-- 1.25 -->
+	<event load="NEBULA_AUTO_WARNING"/><!-- 1.25 -->
+	<event load="NEBULA_EVENT_ROCKSLUG_CRASH"/><!-- 1.25 -->
+	<event load="NEBULA_SLUG_DISTRESS_PILOTING"/>
+	<event load="NEBULA_SLUG_DISTRESS_PILOTING"/>
+	<event load="NEBULA_SLUG_DISTRESS_PILOTING"/>
+	<event load="NEBULA_SLUG_DISTRESS_PILOTING"/>
+	<event load="NEBULA_SLUG_DISTRESS_RESCUE"/>
+	<event load="NEBULA_SLUG_DISTRESS_RESCUE"/>
+	<event load="NEBULA_SLUG_DISTRESS_RESCUE"/>
+	<event load="NEBULA_SLUG_DISTRESS_RESCUE"/>
+	<event load="NEBULA_SLUG_DISTRESS_TRICK"/>
+	<event load="NEBULA_SLUG_DISTRESS_TRICK"/>
+	<event load="NEBULA_SLUG_DISTRESS_TRICK"/>
+	<event load="NEBULA_SLUG_DISTRESS_TRICK"/>
+	<event load="NEBULA_SLUG_DISTRESS_QUESTION"/>
+	<event load="NEBULA_SLUG_DISTRESS_QUESTION"/>
+	<event load="NEBULA_SLUG_DISTRESS_QUESTION"/>
+	<event load="NEBULA_SLUG_DISTRESS_QUESTION"/>
+	<event load="NEBULA_SLUG_DISTRESS_ROCK"/>
+	<event load="NEBULA_SLUG_DISTRESS_ROCK"/>
+	<event load="NEBULA_SLUG_DISTRESS_ROCK"/>
+	<event load="NEBULA_SLUG_DISTRESS_ROCK"/>
+	<event load="NEBULA_BORDER_WITH_PDS"/>
+	<event load="NEBULA_BORDER_WITH_PDS2"/>
+	<event load="NEBULA_BORDER_WITH_PDS3"/>
+	<event load="NEBULA_BOSS_HACKER"/>
+	<event load="NEBULA_AI_CORE"/>
+	<event load="NEBULA_ASTEROID_FREE"/>
+	<event load="NEBULA_ASTEROID_HOSTILE_JELLYHACK"/>
+	<event load="NEBULA_AUTO"/>
+	<event load="NEBULA_AUTO"/>
+	<event load="NEBULA_AUTO_DEFENSE_ITEM"/>
+	<event load="NEBULA_AUTO_DEFENSE_ITEM"/>
+	<event load="NEBULA_AUTO_WARNING"/>
+	<event load="NEBULA_AUTO_WARNING"/>
+	<event load="NEBULA_BOARDING"/>
+	<event load="NEBULA_BOARDING"/>
+	<event load="NEBULA_EMPTY"/>
+	<event load="NEBULA_EMPTY"/>
+	<event load="NEBULA_EMPTY"/>
+	<event load="NEBULA_EMPTY"/>
+	<event load="NEBULA_EMPTY"/>
+	<event load="NEBULA_HOSTILE_OLD_PIRATE"/>
+	<event load="NEBULA_HOSTILE_OLD_PIRATE_SURRENDER"/>
+	<event load="NEBULA_HOSTILE_OLD_PIRATE_SURRENDER2"/>
+	<event load="NEBULA_HOSTILE_ORDEN"/>
+	<event load="NEBULA_LOST_SHIP"/> 
+	<event load="NEBULA_LOST_SHIP"/> 
+	<event load="NEBULA_LOST_SHIP"/>  
+	<event load="NEBULA_LOST_SHIP"/>   
+	<event load="NEBULA_MANTIS_FIGHT"/> 
+	<event load="NEBULA_ORDEN_NOTHING"/>
+	<event load="NEBULA_PIRATE_SMUGGLE"/>
+	<event load="NEBULA_PIRATE_SMUGGLE"/>
+	<event load="NEBULA_PULSAR_HOSTILE_JELLYHACK"/>
+	<event load="NEBULA_REBEL"/> 
+	<event load="NEBULA_REBEL"/>  
+	<event load="NEBULA_REBEL"/>  
+	<event load="NEBULA_REBEL_BOARDING"/>
+	<event load="NEBULA_REBEL_BOARDING"/>
+	<event load="NEBULA_REBEL_UNDETECTED"/> 
+	<event load="NEBULA_REBEL_UNDETECTED"/>  
+	<event load="NEBULA_SUN_HOSTILE_JELLYHACK"/>
+	<event load="NEBULA_TRADER"/>
+	<event load="NEBULA_TRADER"/>
+	<event load="NEBULA_TRADER"/>
+	<event load="NEBULA_UNSTABLE_FED_BARGE_EVENT"/>
+	<event load="NEBULA_WEAPONS_TRADER"/>
+	<event load="NEBULA_AUTO"/>
+	<event load="NEBULA_AUTO"/>
+	<event load="NEBULA_AUTO_WARNING"/>
+	<event load="NEBULA_AUTO_WARNING"/>
+	<event load="NEBULA_AVATAR_PRO_EVENT"/>
+	<event load="NEBULA_AVATAR_SHIPS"/>
+	<event load="NEBULA_AVATAR_SHIPS"/>
+	<event load="NEBULA_AVATAR_SHIPS"/>
+	<event load="NEBULA_BOARDING"/>
+	<event load="NEBULA_BOARDING_AVATAR"/>
+	<event load="NEBULA_DRONEQUEEN_EVENT"/>
+	<event load="NEBULA_JELLY_PRO_EVENT"/>
+	<event load="NEBULA_MANTIS_FIGHT"/>
+	<event load="NEBULA_PIRATE"/>
+	<event load="NEBULA_REBEL"/>
+	<!-- <event load="NEBULA_REBEL_DREDNOUT_QUEST"/> --><!-- 1.25 -->
+	<event load="NEBULA_SLUG_DOORS"/>
+	<event load="NEBULA_SLUG_FIGHT"/>
+	<event load="NEBULA_SLUG_FIGHT_UNLOCK"/>
+	<event load="NEBULA_SLUG_MANTIS"/>
+	<event load="NEBULA_SLUG_MEDBAY"/>
+	<event load="NEBULA_SLUG_OXYGEN"/>
+	<event load="NEBULA_SLUG_PIRATE"/>
+	<event load="NEBULA_AI_KILLS_CIV"/>
+	<event load="NEBULA_AI_KILLS_CIV"/>
+	<event load="NEBULA_AI_KILLS_CIV"/>
+	<event load="NEBULA_AI_KILLS_CIV"/>
+	<event load="NEBULA_AVATAR_HELP"/>
+	<event load="NEBULA_AVATAR_HELP"/>
+	<event load="NEBULA_AVATAR_HELP"/>
+	<event load="NEBULA_AVATAR_HELP"/>
+	<event load="NEBULA_AVATAR_HELP2"/>
+	<event load="NEBULA_AVATAR_HELP2"/>
+	<event load="NEBULA_AVATAR_HELP2"/>
+	<event load="NEBULA_AVATAR_HELP2"/>
+	<event load="NEBULA_AVATAR_HELP3"/>
+	<event load="NEBULA_AVATAR_HELP3"/>
+	<event load="NEBULA_AVATAR_HELP3"/>
+	<event load="NEBULA_AVATAR_HELP3"/>
+	<event load="NEBULA_MOTHERSHIP"/>
+	<event load="NEBULA_REBEL_HELP"/>
+	<event load="NEBULA_REBEL_HELP"/>
+	<event load="NEBULA_REBEL_HELP"/>
+	<event load="NEBULA_REBEL_HELP"/>
+	<event load="NEBULA_REBEL_HELP2"/>
+	<event load="NEBULA_REBEL_HELP2"/>
+	<event load="NEBULA_REBEL_HELP2"/>
+	<event load="NEBULA_REBEL_HELP2"/>
+	<event load="NEBULA_SLUG_DEAD"/>
+	<event load="NEBULA_SLUG_DEAD"/>
+	<event load="NEBULA_SLUG_DEAD"/>
+	<event load="NEBULA_SLUG_DEAD"/>
+	<event load="NEBULA_SLUG_HELP"/>
+	<event load="NEBULA_SLUG_HELP"/>
+	<event load="NEBULA_SLUG_HELP"/>
+	<event load="NEBULA_SLUG_HELP"/>
+	<event load="NEBULA_SLUG_HELP2"/>
+	<event load="NEBULA_SLUG_HELP2"/>
+	<event load="NEBULA_SLUG_HELP2"/>
+	<event load="NEBULA_SLUG_HELP2"/>
+	<event load="NEBULA_NOTHING_SLUG"/>
+	<event load="NEBULA_AUTO_DEFENSE_ITEM"/>
+	<event load="NEBULA_AUTO_DEFENSE_ITEM"/>
+	<event load="NEBULA_BATTLEFIELD"/>
+	<event load="NEBULA_HAL_FIGHT"/>
+	<event load="NEBULA_HAL_EMPTY"/>
+	<event load="NEBULA_HAL_PIRATE"/>
+	<event load="NEBULA_LOST_SHIP"/>
+	<event load="NEBULA_LOST_SHIP"/>
+	<event load="NEBULA_MANTIS_CHOICE"/>
+	<event load="NEBULA_PIRATE_SMUGGLE"/>
+	<event load="NEBULA_REBEL_CHASE"/>
+	<event load="NEBULA_REBEL_CHASE"/>
+	<event load="NEBULA_REBEL_UNDETECTED"/>
+	<event load="NEBULA_REBEL_UNDETECTED"/>
+	<event load="NEBULA_ROCK_RACIST"/>
+	<event load="NEBULA_SLUG_BURST_QUEST"/>
+	<event load="NEBULA_SLUG_CHOOSE_DEATH"/>
+	<event load="NEBULA_SLUG_FAKE_STORE"/>
+	<event load="NEBULA_SLUG_FED_HUNT"/>
+	<event load="NEBULA_SLUG_HULLFIX"/>
+	<event load="NEBULA_SLUG_NEW_DECEPTION"/>
+	<event load="NEBULA_SLUG_STEAL_PIRATE_EVENT"/>
+	<event load="NEBULA_WEAPONS_TRADER"/>
+	<event load="NEBULA_WEAPONS_TRADER"/>
+	<event load="NEBULA_FIND_STANDARD_AVATAR"/>
+	<event load="NEBULA_FIND_STUFF_AVATAR"/>
+	<event load="NEBULA_FIND_STUFF_AVATAR"/>
+	<event load="NEBULA_FIND_STANDARD_AVATAR"/>
+	<event load="STORE_ORDEN_PIRATESTORE"/>
+	<event load="STORM_SLUGS_UNSTABLE_TRADER"/>
+	<event load="STORM_SLUG_CONVERTER_OF_SOUL"/>
+	<event load="STORM_AUTO"/>
+	<event load="STORM_AUTO"/>
+	<event load="STORM_BOARDING"/>
+	<event load="STORM_DISTRESS"/>
+	<event load="STORM_DISTRESS_EMPTY"/>
+	<event load="STORM_DISTRESS_HACKER"/>
+	<event load="STORM_DISTRESS_OLD_PIRATE"/>
+	<event load="STORM_ITEMS"/>
+	<event load="STORM_ITEMS"/>
+	<event load="STORM_ITEMS"/>
+	<event load="STORM_ITEMS"/>
+	<event load="STORM_REBEL"/>
+	<event load="STORM_REBEL"/>
+	<event load="STORM_SLUGS_UNSTABLE_TRADER"/>
+	<event load="STORM_SLUG_CONVERTER_OF_SOUL"/>
+	<event load="STORM_AUTO"/>
+	<event load="STORM_AUTO"/>
+	<event load="STORM_REBEL"/>
+	<event load="STORM_REBEL"/>
+	<event load="STORM_SLUG_FIGHT"/>
+</eventList>
+
+<eventList name="HOSTILE_ALL">
+	<event load="MENGI_MTRIGGER_EVENT"/><!-- 1.27 -->
+	<event load="MENGI_REBEL_CONFUSED_EVENT"/><!-- 1.27 -->
+	<event load="MENGI_ZOND_R_EVENT"/><!-- 1.27 -->
+	<event load="MENGI_ZOND_S_EVENT"/><!-- 1.27 -->
+	<event load="MENGI_ZOND_M_EVENT"/><!-- 1.27 -->
+	<event load="MENGI_ZOND_Z_EVENT"/><!-- 1.27 -->
+	<event load="MENGI_FIGHT"/><!-- 1.27 -->
+	<event load="MENGI_FIGHT"/><!-- 1.27 -->
+	<event load="MENGI_FIGHT"/><!-- 1.27 -->
+	<event load="MENGI_FIGHT"/><!-- 1.27 -->
+	<event load="EVENT_DONT_HACK_MENGI"/><!-- 1.27 -->
+	<event load="SILVER_SHAMAN_EVENT"/><!-- 1.26.4 -->
+	<event load="EVENT_CON_LEADER"/><!-- 1.26 -->
+	<event load="ZOLTON_BOSS_EVENT"/><!-- 1.26 -->
+	<event load="EVENT_SOLARIS"/><!-- 1.26 -->
+	<event load="MOTILEK_EVENT"/><!-- 1.26 -->
+	<event load="CON_FIGHT"/><!-- 1.26 -->
+	<event load="CON_FIGHT"/><!-- 1.26 -->
+	<event load="ZOLTON_FIGHT"/><!-- 1.26 -->
+	<event load="ZOLTON_MANTIS"/><!-- 1.26 -->
+	<event load="DESTROYER_OF_FED_EVENT"/><!-- 1.26 -->
+	<event load="ABYSSEYE_EVENT"/><!-- 1.26 -->
+	<event load="ZOLTAN_BLINK_X2_EVENT"/><!-- 1.26 -->
+	<event load="EVENT_DONT_CLOAK_WITH_ZOLTONS"/><!-- 1.26 -->
+	<event load="EVENT_CON_VS_AUTOSHIP"/><!-- 1.26 -->
+	<event load="EVENT_ZOLTON_VS_CON"/><!-- 1.26 -->
+	<event load="SLURM_FIGHT"/><!-- 1.25 -->
+	<event load="SLURM_FIGHT"/><!-- 1.25 -->
+	<event load="SLURM_FIGHT_RANDOM"/><!-- 1.25 -->
+	<event load="SLURM_FIGHT_RANDOM"/><!-- 1.25 -->
+	<event load="EVENT_SLURM_TAMOZNA"/><!-- 1.25 -->
+	<event load="EVENT_PIRATE_DREDNOUT"/><!-- 1.25 -->
+	<event load="EVENT_REBEL_MINIBOSS"/><!-- 1.25 -->
+	<event load="DECEPTICON_EVENT"/><!-- 1.25 -->
+	<event load="REBEL_DREDNOUT_QUEST"/><!-- 1.25 -->
+	<event load="ZOLTAN_BOSS_EVENT"/>
+	<event load="BORDER_SECTOR_PDS_BAD"/>
+	<event load="BORDER_SECTOR_PDS_CHAOS"/>
+	<event load="BORDER_SECTOR_FLEET_REBEL"/>
+	<event load="BORDER_SECTOR_PDS_FED"/>
+	<event load="MISSILE_RADIATION_EVENT"/>
+	<event load="SHIP_WITH_BIG_MISSILE_EVENT"/>
+	<event load="BORDER_ELITE_HOSTILE"/>
+	<event load="BORDER_REBEL_PREIGNITE"/>
+	<event load="MEGADEATH"/>
+	<event load="SLUGS_IMITATOR_EVENT"/>
+	<event load="HAL_FIGHT"/>
+	<event load="SUN_HAL_FIGHT"/>
+	<event load="PULSAR_HAL_FIGHT"/>
+	<event load="ASTEROID_HAL_FIGHT"/>
+	<event load="HAL_FIGHT_ENGIDEAD"/>
+	<event load="LANIUS_HAL_HOST"/>
+	<event load="HAL_PIRATE"/>
+	<event load="BROKEN_HAL_FIGHT"/>
+	<event load="BROKEN_HAL_FIGHT_2"/>
+	<event load="HAL_ENGI_MANTIS"/>
+	<event load="ENGI_HATER"/>
+	<event load="APLUS_BLACK_HOLE_START"/>
+	<event load="ENGI_ARTILLERY_EVENT"/>
+	<event load="ANAEROBIC_PRO_EVENT"/>
+	<event load="ASTEROID_DREDNOUT"/>
+	<event load="ASTEROID_PULSAR_UNSTABLE_OLDPIRATE"/>
+	<event load="ASTEROID_PULSAR_UNSTABLE_OLDPIRATE"/>
+	<event load="ASTEROID_SUN_UNSTABLE_OLDPIRATE"/>
+	<event load="ASTEROID_SUN_UNSTABLE_OLDPIRATE"/>
+	<event load="ASTEROID_SUN_UNSTABLE_SHIPS_ROCK_PIRATE"/>
+	<event load="ASTEROID_SUN_UNSTABLE_SHIPS_ROCK_PIRATE"/>
+	<event load="AUTO_ASTEROID"/>
+	<event load="AUTO_ASTEROID"/>
+	<event load="AUTO_ASTEROID"/>
+	<event load="AUTO_ASTEROID"/>
+	<event load="AUTO_CIVILIAN"/>
+	<event load="AUTO_HACKER"/>
+	<event load="AUTO_ORDER"/>
+	<event load="AUTO_REFUEL_STATION"/>
+	<event load="AUTO_REFUEL_STATION"/>
+	<event load="AUTO_SUN"/>
+	<event load="AUTO_WARNING"/>
+	<event load="AUTO_WARNING"/>
+	<event load="AUTO_WARNING"/>
+	<event load="AVATAR_SHIPS"/>
+	<event load="BOARDERS_ASTEROID_PRIZRAK"/>
+	<event load="BOARDERS_ASTEROID_PRIZRAK"/>
+	<event load="CIRCLE_PRO_EVENT"/>
+	<event load="CRYSTAL_AUTO"/>
+	<event load="CRYSTAL_CONVOY"/>
+	<event load="CRYSTAL_DREDNOUT_PROTOTYPE"/>
+	<event load="CRYSTAL_FIGHT"/>
+	<event load="CRYSTAL_FIGHT"/>
+	<event load="CRYSTAL_FIGHT"/>
+	<event load="CRYSTAL_HUNTER"/>
+	<event load="CRYSTAL_REBEL"/>
+	<event load="DONOR_BLACK_RAVEN"/>
+	<event load="DONOR_MANTIS_CHASE"/>
+	<event load="ELITE_AUTOMATED_EVENT"/>
+	<event load="ENGI_MANTIS_FIGHT"/>
+	<event load="ENGI_PIRATE_FIGHT"/>
+	<event load="ENGI_REBEL_FIGHT"/>
+	<event load="ENGI_UNLOCK_1"/>
+	<event load="FLAGSHIP_CONSTRUCTION"/>
+	<event load="HOSTILE_HACKER"/>
+	<event load="HOSTILE_HACKER"/>
+	<event load="HOSTILE_HACKER2"/>
+	<event load="HOSTILE_HACKER2"/>
+	<event load="HOSTILE_OLD_PIRATE"/>
+	<event load="HOSTILE_OLD_PIRATE"/>
+	<event load="HOSTILE_OLD_PIRATE_SURRENDER"/>
+	<event load="HOSTILE_OLD_PIRATE_SURRENDER"/>
+	<event load="HOSTILE_OLD_PIRATE_SURRENDER2"/>
+	<event load="HOSTILE_OLD_PIRATE_SURRENDER2"/>
+	<event load="HOSTILE_ORDEN_EMPTYFUEL_PIRATE"/>
+	<event load="ION_REBELSHIP_ASTEROID"/>
+	<event load="LANIUS_FIGHT"/>
+	<event load="LANIUS_FIGHT_ASTEROID"/>
+	<event load="LANIUS_FIGHT_PULSAR"/>
+	<event load="LANIUS_HARVESTER"/>
+	<event load="LANIUS_NOBOARDERS_PDS"/>
+	<event load="LANIUS_PIRATE_FIGHT"/>
+	<event load="LANIUS_REBEL_FIGHT"/>
+	<event load="MANTIS_BOSS_FIRST"/>
+	<event load="MANTIS_FIGHT"/>
+	<event load="MANTIS_FIGHT"/>
+	<event load="MANTIS_HOSTILE"/>
+	<event load="MANTIS_HUNTER_PIRATE_EVENT"/>
+	<event load="MANTIS_NAMED_THIEF"/>
+	<event load="MANTIS_PRO_EVENT"/>
+	<event load="MANTIS_SUN_FIGHT"/>
+	<event load="MARADERS1_EVENT"/>
+	<event load="ORDEN_DREDNOUT_QUEST"/>
+	<event load="ORDEN_FIGHT"/>
+	<event load="ORDEN_FIGHT"/>
+	<event load="ORDEN_FIGHT"/>
+	<event load="ORDEN_STATION_EVENT"/>
+	<event load="ORDEN_VS_REBEL_VS_YOU"/>
+	<event load="PIRATE"/>
+	<event load="PIRATE"/>
+	<event load="PIRATE"/>
+	<event load="PIRATE_ASTEROID"/>
+	<event load="PIRATE_ASTEROID"/>
+	<event load="PIRATE_ASTEROID"/>
+	<event load="PIRATE_CHOICE"/>
+	<event load="PIRATE_CHOICE"/>
+	<event load="PIRATE_CHOICE"/>
+	<event load="PIRATE_NO_ESCAPE"/>
+	<event load="PIRATE_NO_ESCAPE"/>
+	<event load="PIRATE_NO_ESCAPE"/>
+	<event load="PIRATE_PULSAR"/>
+	<event load="PIRATE_PULSAR"/>
+	<event load="PIRATE_PULSAR"/>
+	<event load="PIRATE_SLAVER"/>
+	<event load="PIRATE_SLAVER"/>
+	<event load="PIRATE_SUN"/>
+	<event load="PIRATE_SUN"/>
+	<event load="PIRATE_SUN"/>
+	<event load="PRIZRAK_SHIP_EVENT"/>
+	<event load="PRIZRAK_SHIP_EVENT"/>
+	<event load="PULSAR_ASTEROID_HOSTILE_JELLYHACK"/>
+	<event load="PULSAR_ASTEROID_HOSTILE_JELLYHACK"/>
+	<event load="REBEL"/>
+	<event load="REBEL"/>
+	<event load="REBEL"/>
+	<event load="REBEL"/>
+	<event load="REBEL"/>
+	<event load="REBEL"/>
+	<event load="REBEL"/>
+	<event load="REBEL_AUTO"/>
+	<event load="REBEL_AUTO"/>
+	<event load="REBEL_AUTO"/>
+	<event load="REBEL_AUTO"/>
+	<event load="REBEL_AUTO"/>
+	<event load="REBEL_AUTO_PDS"/>
+	<event load="REBEL_FRIENDLY_CARGO"/>
+	<event load="REBEL_PDS"/>
+	<event load="REBEL_PULSAR"/>
+	<event load="REBEL_PULSAR"/>
+	<event load="REBEL_PULSAR"/>
+	<event load="REBEL_PULSAR"/>
+	<event load="ROCK_BOSS"/>
+	<event load="ROCK_CRYSTAL_BEACON"/>
+	<event load="ROCK_FIGHT_ASTEROID"/>
+	<event load="ROCK_PIRATE"/>
+	<event load="ROCK_PIRATE_ASTEROID"/>
+	<event load="ROCK_PIRATE_SUN"/>
+	<event load="ROCK_PRO_EVENT"/>
+	<event load="ROCK_SHIP"/>
+	<event load="ROCK_UNLOCK1"/>
+	<event load="SLUG_ART"/>
+	<event load="SLUG_DEPRESSER_EVENT"/>
+	<event load="SLUG_FIGHT"/>
+	<event load="SLUG_MANTIS"/>
+	<event load="SLUG_PIRATE"/>
+	<event load="SLUG_REBEL"/>
+	<event load="SQUAT_REFUEL_STATION"/>
+	<event load="SQUAT_WARNING"/>
+	<event load="SQUAT_WARNING"/>
+	<event load="SQUAT_WARNING"/>
+	<event load="SQUAT_WARNING"/>
+	<event load="SUN_ASTEROID_HOSTILE_AUTOSHIP"/>
+	<event load="SUN_ASTEROID_HOSTILE_AUTOSHIP"/>
+	<event load="SUN_HOSTILE_ORDEN"/>
+	<event load="WHERE_IS_MY_ENGINES_DUDE"/>
+	<event load="ZOLTAN_ARTILLERY_MEETING"/>
+	<event load="ZOLTAN_ASTEROID"/>
+	<event load="ZOLTAN_ENGI"/>
+	<event load="ZOLTAN_FIGHT"/>
+	<event load="ZOLTAN_FLEET"/>
+	<event load="ZOLTAN_MANTIS"/>
+	<event load="ZOLTAN_PIRATE"/>
+	<event load="ZOLTAN_PRO_EVENT"/>
+</eventList>
+
+<eventList name="DISTRESS_BEACON_ALL">
+	<event load="MORPH_BAD_LANG"/><!-- 1.27 -->
+	<event load="MORPH_BRK_SHIELD"/><!-- 1.27 -->
+	<event load="DISTRESSED_MENGI_FIGHT"/><!-- 1.27 -->
+	<event load="DISTRESS_MENGI_BADZOND_EVENT"/><!-- 1.27 -->
+	<event load="CAPSULE_EVENT_STANDARD"/><!-- 1.26.3 -->
+	<event load="CAPSULE_EVENT_SUN"/><!-- 1.26.3 -->
+	<event load="CAPSULE_EVENT_ASTEROID"/><!-- 1.26.3 -->
+	<event load="PIRATE_ATTACK_CIVIL_1"/><!-- 1.26 -->
+	<event load="ZOLTON_OXYGEN_PLEASE"/><!-- 1.26 -->
+	<event load="DISTRESS_ZOLTON_BASE_VS_AUTO"/><!-- 1.26 -->
+	<event load="EVENT_ITB_VEK"/><!-- 1.26 -->
+	<event load="DISTRESS_ZOLTON_MANTIS"/><!-- 1.26 -->
+	<event load="ZOLTAN_BLINK_EVENT"/><!-- 1.25 -->
+	<event load="DISTRESS_SLURM_MANTIS"/><!-- 1.25 -->
+	<event load="EVENT_3_CLONE_ON_SHIP"/><!-- 1.25 -->
+	<event load="EVENT_SLURM_ESCORT"/><!-- 1.25 -->
+	<event load="DISTRESS_BORDER_TRADERS"/>
+	<event load="BORDER_DISTRESS_TWO_FLEET_FIGHT"/>
+	<event load="BORDER_SUPPLY"/>
+	<event load="BORDER_FED_TRAP"/>
+	<event load="DISTRESS_HAL_FED"/>
+	<event load="DISTRESS_HAL_DESTR"/>
+	<event load="DISTRESS_HAL_TRAP"/>
+	<event load="DISTRESS_HAL_EMPTY"/>
+	<event load="ALIENS"/>
+	<event load="ALIENS"/>
+	<event load="ALIENS"/>
+	<event load="ALIENS"/>
+	<event load="CIVILIAN_ASTEROIDS_BEACON"/>  
+	<event load="CIVILIAN_ASTEROIDS_BEACON"/>  
+	<event load="CIVILIAN_ASTEROIDS_BEACON"/>  
+	<event load="CIVILIAN_ASTEROIDS_BEACON"/>  
+	<event load="DISTRESS_BEACON_ORDEN_ITSAHELP"/>
+	<event load="DISTRESS_BEACON_ORDEN_ITSATRAP"/>
+	<event load="DISTRESS_ENGI_REACTOR"/>
+	<event load="DISTRESS_ENGI_REACTOR"/>
+	<event load="DISTRESS_ENGI_REACTOR"/>
+	<event load="DISTRESS_ENGI_REACTOR"/>
+	<event load="DISTRESS_ENGI_REBEL"/>
+	<event load="DISTRESS_ENGI_REBEL"/>
+	<event load="DISTRESS_ENGI_REBEL"/>
+	<event load="DISTRESS_ENGI_REBEL"/>
+	<event load="DISTRESS_INFESTATION"/>
+	<event load="DISTRESS_INFESTATION"/>
+	<event load="DISTRESS_INFESTATION"/>
+	<event load="DISTRESS_INFESTATION"/>
+	<event load="DISTRESS_ORDEN_FIRE"/>
+	<event load="DISTRESS_SATELLITE_DEFENSE"/>
+	<event load="DISTRESS_SATELLITE_DEFENSE"/>
+	<event load="DISTRESS_SATELLITE_DEFENSE"/>
+	<event load="DISTRESS_SATELLITE_DEFENSE"/>
+	<event load="DISTRESS_STATION_DISEASE"/>
+	<event load="DISTRESS_STATION_DISEASE"/>
+	<event load="DISTRESS_STATION_DISEASE"/>
+	<event load="DISTRESS_STATION_DISEASE"/>
+	<event load="DISTRESS_STATION_FIRE"/>
+	<event load="DISTRESS_STATION_FIRE"/>
+	<event load="DISTRESS_STATION_FIRE"/>
+	<event load="DISTRESS_STATION_FIRE"/>
+	<event load="DISTRESS_TRAPPED_MINER"/>
+	<event load="DISTRESS_TRAPPED_MINER"/>
+	<event load="DISTRESS_TRAPPED_MINER"/>
+	<event load="DISTRESS_TRAPPED_MINER"/>
+	<event load="ENGI_STATION_DISTRESS"/>
+	<event load="ENGI_STATION_DISTRESS"/>
+	<event load="ENGI_STATION_DISTRESS"/>
+	<event load="ENGI_STATION_DISTRESS"/>
+	<event load="ENGI_STATION_MEDCLONE"/>
+	<event load="ENGI_STATION_MEDCLONE"/>
+	<event load="ENGI_STATION_MEDCLONE"/>
+	<event load="ENGI_STATION_MEDCLONE"/>
+	<event load="ESCORT_BEACON"/>
+	<event load="ESCORT_BEACON"/>
+	<event load="ESCORT_BEACON"/>
+	<event load="ESCORT_BEACON"/>
+	<event load="FRIENDLY_BEACON"/>
+	<event load="FRIENDLY_BEACON"/>
+	<event load="FRIENDLY_BEACON"/>
+	<event load="FRIENDLY_BEACON"/>
+	<event load="FRIENDLY_BEACON_BAD"/><!-- 1.25 -->
+	<event load="FRIENDLY_BEACON_BAD"/><!-- 1.25 -->
+	<event load="FRIENDLY_BEACON_BAD"/><!-- 1.25 -->
+	<event load="FRIENDLY_BEACON_BAD"/><!-- 1.25 -->
+	<event load="LANIUS_DISTRESS_EMPTY"/>
+	<event load="LANIUS_DISTRESS_EMPTY"/>
+	<event load="LANIUS_DISTRESS_EMPTY"/>
+	<event load="LANIUS_DISTRESS_EMPTY"/>
+	<event load="LANIUS_DISTRESS_FIGHT"/>
+	<event load="LANIUS_DISTRESS_FIGHT"/>
+	<event load="LANIUS_DISTRESS_FIGHT"/>
+	<event load="LANIUS_DISTRESS_FIGHT"/>
+	<event load="LANIUS_DISTRESS_TOOLATE"/>
+	<event load="LANIUS_DISTRESS_TOOLATE"/>
+	<event load="LANIUS_DISTRESS_TOOLATE"/>
+	<event load="LANIUS_DISTRESS_TOOLATE"/>
+	<event load="LANIUS_DISTRESS_TRAP"/>
+	<event load="LANIUS_DISTRESS_TRAP"/>
+	<event load="LANIUS_DISTRESS_TRAP"/>
+	<event load="LANIUS_DISTRESS_TRAP"/>
+	<event load="LANIUS_MANTIS_DISTRESS"/>
+	<event load="LANIUS_MANTIS_DISTRESS"/>
+	<event load="LANIUS_MANTIS_DISTRESS"/>
+	<event load="LANIUS_MANTIS_DISTRESS"/>
+	<event load="LANIUS_ROCK_DISTRESS"/>
+	<event load="LANIUS_ROCK_DISTRESS"/>
+	<event load="LANIUS_ROCK_DISTRESS"/>
+	<event load="LANIUS_ROCK_DISTRESS"/>
+	<event load="LANIUS_SLUG_DISTRESS"/>
+	<event load="LANIUS_SLUG_DISTRESS"/>
+	<event load="LANIUS_SLUG_DISTRESS"/>
+	<event load="LANIUS_SLUG_DISTRESS"/>
+	<event load="ODIN_PIRAT_QUEST"/>
+	<event load="ODIN_PIRAT_QUEST"/>
+	<event load="ODIN_PIRAT_QUEST"/>
+	<event load="ODIN_PIRAT_QUEST"/>
+	<event load="ORDEN_CIVILIAN"/>
+	<event load="PIRATE_CIVILIAN_BEACON"/>
+	<event load="PIRATE_CIVILIAN_BEACON"/>
+	<event load="PIRATE_CIVILIAN_BEACON"/>
+	<event load="PIRATE_CIVILIAN_BEACON"/>
+	<event load="PLANETA_ENGI"/>
+	<event load="PLANETA_ENGI"/>
+	<event load="PLANETA_ENGI"/>
+	<event load="PLANETA_ENGI"/>
+	<event load="REBEL_VS_FEDERATION"/> 
+	<event load="REBEL_VS_FEDERATION"/> 
+	<event load="REBEL_VS_FEDERATION"/> 
+	<event load="REBEL_VS_FEDERATION"/> 
+	<event load="REFUGEE_DISTRESS"/>
+	<event load="REFUGEE_DISTRESS"/>
+	<event load="REFUGEE_DISTRESS"/>
+	<event load="REFUGEE_DISTRESS"/>
+	<event load="REFUGEE_DISTRESS_PIRATE"/>
+	<event load="REFUGEE_DISTRESS_PIRATE"/>
+	<event load="REFUGEE_DISTRESS_PIRATE"/>
+	<event load="REFUGEE_DISTRESS_PIRATE"/>
+	<event load="REFUGEE_DISTRESS_SLUG"/>
+	<event load="REFUGEE_DISTRESS_SLUG"/>
+	<event load="REFUGEE_DISTRESS_SLUG"/>
+	<event load="REFUGEE_DISTRESS_SLUG"/>
+	<event load="REFUGEE_DISTRESS_ZOLTAN"/>
+	<event load="REFUGEE_DISTRESS_ZOLTAN"/>
+	<event load="REFUGEE_DISTRESS_ZOLTAN"/>
+	<event load="REFUGEE_DISTRESS_ZOLTAN"/>
+	<event load="REFUGEE_GHOST"/>
+	<event load="REFUGEE_GHOST"/>
+	<event load="REFUGEE_GHOST"/>
+	<event load="REFUGEE_GHOST"/>
+	<event load="ROCK_PIRAT_QUEST"/>
+	<event load="ROCK_PIRAT_QUEST"/>
+	<event load="ROCK_PIRAT_QUEST"/>
+	<event load="ROCK_PIRAT_QUEST"/>
+	<event load="SLUG_DISTRESS_MANTIS"/>
+	<event load="SLUG_DISTRESS_MANTIS"/>
+	<event load="SLUG_DISTRESS_MANTIS"/>
+	<event load="SLUG_DISTRESS_MANTIS"/>
+	<event load="STRANDED_BEACON"/>
+	<event load="STRANDED_BEACON"/>
+	<event load="STRANDED_BEACON"/>
+	<event load="STRANDED_BEACON"/>
+	<event load="SUN_RIDDIK_EVENT"/>
+	<event load="SUN_RIDDIK_EVENT"/>
+	<event load="SUN_RIDDIK_EVENT"/>
+	<event load="SUN_RIDDIK_EVENT"/>
+	<event load="SUN_UNSTABLE_ROCK_NOFUEL"/>
+	<event load="SUN_UNSTABLE_ROCK_NOFUEL"/>
+	<event load="SUN_UNSTABLE_TRAP"/>
+	<event load="SUN_UNSTABLE_TRAP"/>
+	<event load="TRAP_BEACON"/>
+	<event load="TRAP_BEACON"/>
+	<event load="TRAP_BEACON"/>
+	<event load="TRAP_BEACON"/>
+	<event load="ZOLTAN_DISTRESS_MANTIS"/>
+	<event load="ZOLTAN_DISTRESS_MANTIS"/>
+	<event load="ZOLTAN_DISTRESS_MANTIS"/>
+	<event load="ZOLTAN_DISTRESS_MANTIS"/>
+	<event load="ZOLTAN_DISTRESS_SHELL"/>
+	<event load="ZOLTAN_DISTRESS_SHELL"/>
+	<event load="ZOLTAN_DISTRESS_SHELL"/>
+	<event load="ZOLTAN_DISTRESS_SHELL"/>
+</eventList>
+
+<eventList name="NOTHING_ALL">
+	<event load="NOTHING_MORPH"/><!-- 1.27 -->
+	<event load="NOTHING_ZOLTON"/><!-- 1.26 -->
+	<event load="NOTHING_SLURM"/><!-- 1.25 -->
+	<event load="BORDER_SECTOR_EMPTY"/>
+	<event load="NOTHING_HAL_1"/>
+	<event load="NOTHING"/>
+	<event load="NOTHING_CRYSTAL"/>
+	<event load="NOTHING_ENGI"/>
+	<event load="NOTHING_LANIUS"/>
+	<event load="NOTHING_MANTIS"/>
+	<event load="NOTHING_ORDEN"/>
+	<event load="NOTHING_PIRATE"/>
+	<event load="NOTHING_REBEL"/>
+	<event load="NOTHING_ROCK"/>
+	<event load="NOTHING_SLUG"/>
+	<event load="NOTHING_ZOLTAN"/>
+</eventList>
+
+<eventList name="NEUTRAL_ALL">
+	<event load="MENGI_TIMESHIFT_EVENT"/><!-- 1.27 -->
+	<event load="MENGI_CODE_EVENT"/><!-- 1.27 -->
+	<event load="MENGI_ANIMALS_EVENT"/><!-- 1.27 -->
+	<event load="MENGI_STORMFIRE_EVENT"/><!-- 1.27 -->
+	<event load="MENGI_SELFDAMAGER_EVENT"/><!-- 1.27 -->
+	<event load="MENGI_INJS_EVENT"/><!-- 1.27 -->
+	<event load="MENGI_LIFEFORM_EXPERIMENT_EVENT"/><!-- 1.27 -->
+	<event load="MENGI_SELL_UNKNOWN_EVENT_START"/><!-- 1.27 -->
+	<event load="CON_NEUTRAL"/><!-- 1.26 -->
+	<event load="ZOLTON_NEUTRAL"/><!-- 1.26 -->
+	<event load="EVENT_QMULTI_ENTER"/><!-- 1.26 -->
+	<event load="CON_UWB_AND_SMASHER"/><!-- 1.26 -->
+	<event load="EVENT_FED_DANGERSCAN_ANOMALY"/><!-- 1.26 -->
+	<event load="CUBE_IN_SPACE"/><!-- 1.26 -->
+	<event load="EVENT_ZOLTON_LIFE_RESEARCH"/><!-- 1.26 -->
+	<event load="EVENT_CONTRABAND"/><!-- 1.26 -->
+	<event load="EVENT_ANTENN_ZOLTON"/><!-- 1.26 -->
+	<event load="EVENT_ENERGYX_BS"/><!-- 1.26 -->
+	<event load="ZOLTON_EYE"/><!-- 1.26 -->
+	<event load="ASTEROID_WITH_CONSTATION"/><!-- 1.26 -->
+	<event load="EVENT_TRADE_FUMIDRCON"/><!-- 1.26 -->
+	<event load="EVENT_TRADE_FUMIDR"/><!-- 1.26 -->
+	<event load="PSEVDO_NOTHING"/><!-- 1.26 -->
+	<event load="EVENT_TR_FED_MISSILES"/><!-- 1.25.1 -->
+	<event load="EVENT_TR_FED_FUEL"/><!-- 1.25.1 -->
+	<event load="EVENT_ETG_TRADER"/><!-- 1.25.1 -->
+	<event load="NEUTRAL_SLURM_FIGHT"/><!-- 1.25 -->
+	<event load="NEUTRAL_SLURM_FIGHT"/><!-- 1.25 -->
+	<event load="BOX_AND_BOMB"/><!-- 1.25 -->
+	<event load="PEACEFUL_MAN_EVENT"/><!-- 1.25 -->
+	<event load="SLURM_TEAMBOIL"/><!-- 1.25 -->
+	<event load="SLURM_4_BARRELS"/><!-- 1.25 -->
+	<event load="SLURM_3_CORPORATIONS"/><!-- 1.25 -->
+	<event load="EVENT_MANTIS_WRKD"/><!-- 1.25 -->
+	<event load="EVENT_SLURM_STORAGE_ALERT"/><!-- 1.25 -->
+	<event load="EVENT_SLURM_HALFMEBABY"/><!-- 1.25 -->
+	<event load="SLURM_BOSS_EVENT"/><!-- 1.25 -->
+	<event load="EVENT_ROCKSLUG_CRASH"/><!-- 1.25 -->
+	<event load="CRYSTAL_STATION_EVENT"/><!-- 1.25 -->
+	<event load="EVENT_CIV_STATION"/><!-- 1.25 -->
+	<event load="EVENT_PIRATE_RABSTVO"/><!-- 1.25 -->
+	<event load="BORDER_SECTOR_TWO_FLEET_FIGHT"/>
+	<event load="BORDER_REBEL_MINER"/>
+	<event load="BORDER_FED_MINER"/>
+	<event load="BORDER_PANIC"/>
+	<event load="BORDER_WHO_ARE_YOU"/>
+	<event load="BORDER_SECTOR_SUR"/>
+	<event load="HALCYON_EVENT"/>
+	<event load="PROTOTYPE_COLLECTIONER"/>
+	<event load="ENGI_EVO"/>
+	<event load="ROCK_ESCORT"/>
+	<event load="CIVILIAN_COREWORLD_STATION"/>
+	<event load="HAL_NEUTRAL_FIGHT"/>
+	<event load="HAL_SILENT_BASE"/>
+	<event load="HAL_ROCK_DEFEAT"/>
+	<event load="HAL_ANGAR"/>
+	<event load="HAL_HUNTRADE"/>
+	<event load="ORDEN_CRAZY_HEAL_ENGI"/>
+	<event load="HAL_LANIUS_CREW"/>
+	<event load="LANIUS_HAL"/>
+	<event load="HAL_PIRATE_HELP"/>
+	<event load="HAL_MONOLITH"/>
+	<event load="MANTIS_TEST_15_DEADROCK"/>
+	<event load="ENGI_MINI_SENSORSHIP_EVENT"/>
+	<event load="ALISON_DEFECTOR"/>
+	<event load="ALISON_MANTIS_CREW"/>
+	<event load="ALISON_MANTIS_CREW"/>
+	<event load="ASTEROID_DERELICT_SHIP"/>
+	<event load="ASTEROID_DERELICT_SHIP"/>
+	<event load="ASTEROID_DERELICT_SHIP"/>
+	<event load="ASTEROID_EXPLORE"/>
+	<event load="ASTEROID_EXPLORE"/>
+	<event load="ASTEROID_EXPLORE"/>
+	<event load="ASTEROID_EXPLORE"/>
+	<event load="ASTEROID_EXPLORE"/>
+	<event load="ASTEROID_EXPLORE"/>	
+	<event load="ASTEROID_ROCK_MINING"/>
+	<event load="AUTO_CIVILIAN"/>
+	<event load="AUTO_DEFENSE_ITEM"/>
+	<event load="AUTO_DEFENSE_ITEM"/> 
+	<event load="AUTO_DEFENSE_ITEM"/> 
+	<event load="AUTO_DEFENSE_ITEM"/> 
+	<event load="AUTO_DEFENSE_MAP"/>
+	<event load="AUTO_DEFENSE_MAP"/> 
+	<event load="AUTO_DEFENSE_RADAR"/>
+	<event load="AUTO_REFUEL_STATION"/>
+	<event load="BLACK_ZOLTAN_1"/>
+	<event load="BROKEN_REBEL_DRONE"/>
+	<event load="BROKEN_REBEL_DRONE"/>
+	<event load="BROKEN_REBEL_DRONE"/>
+	<event load="BROKEN_REBEL_DRONE"/>
+	<event load="BROKEN_REBEL_DRONE"/>
+	<event load="CONFUSED_ENGI"/>
+	<event load="CONFUSED_MANTIS"/>
+	<event load="CRYSTAL_CHATTY"/>
+	<event load="CRYSTAL_FED"/>
+	<event load="CRYSTAL_FED_DESERTER"/>
+	<event load="CRYSTAL_HELP_DIG"/>
+	<event load="CRYSTAL_HUMAN_TESTS"/>
+	<event load="CRYSTAL_MANTIS_CRYSTAL"/>
+	<event load="CRYSTAL_PIRATE_CRYSTAL"/>
+	<event load="CRYSTAL_REBEL_CRYSTAL"/>
+	<event load="CRYSTAL_REBEL_CRYSTAL2"/>
+	<event load="CRYSTAL_REQUEST"/>
+	<event load="CRYST_LOB"/>
+	<event load="DISTRESS_BEACON"/>
+	<event load="DISTRESS_BEACON"/>
+	<event load="DONOR_PLAGUE"/>
+	<event load="DONOR_PONY"/>
+	<event load="EMPTY_STATION2"/>
+	<event load="ENGI_SEX"/>
+	<event load="ENGI_STATION_DISTRESS"/>
+	<event load="ENGI_VIRUS"/>
+	<event load="EVENT_UNSTABLE_SLUG_INEEDTOGO"/>
+	<event load="FIRETRADER"/>
+	<event load="FRIENDLY_SLAVER"/>
+	<event load="FRIENDLY_SLAVER"/>
+	<event load="FRIENDLY_SLAVER"/>
+	<event load="FRIENDLY_SLAVER"/>
+	<event load="FRIENDLY_SLAVER"/>
+	<event load="FRIENDLY_SLAVER"/>
+	<event load="FUELING_STATION"/>
+	<event load="FUELING_STATION"/>
+	<event load="LANIUS_AUTO_REBEL"/>
+	<event load="LANIUS_BEACON_EATER"/>
+	<event load="LANIUS_CIVILIAN"/>
+	<event load="LANIUS_DORMANT_EVENT"/>
+	<event load="LANIUS_FUELING_STATION"/>
+	<event load="LANIUS_GROUP_AUTO"/>
+	<event load="LANIUS_PIRATE_CIVILIAN"/>
+	<event load="LANIUS_SCARED_CIVILIAN"/>
+	<event load="LANIUS_SOLO_SALVAGE"/>
+	<event load="LOTEREYA"/>
+	<event load="MANTIS_CAPTURE_COMMANDO"/>
+	<event load="MANTIS_CIVILIAN"/>
+	<event load="MANTIS_CIVILIAN"/>
+	<event load="MANTIS_CREW"/>
+	<event load="MANTIS_FED_TRANSPORT_FREON"/>
+	<event load="MANTIS_FIGHT_CHOICE"/>
+	<event load="MANTIS_FIGHT_CHOICE"/>
+	<event load="MANTIS_GAMBLE"/>
+	<event load="MANTIS_QUEST_HUNT_ENGI_EVENT"/>
+	<event load="MANTIS_X20_ON_ENGI_SHIP"/>
+	<event load="MERCENARY"/>
+	<event load="MERCENARY"/>
+	<event load="MERCENARY"/>
+	<event load="MERCENARY"/>
+	<event load="NEUTRAL_HACKER"/>
+	<event load="NEUTRAL_ORDEN_GADALKA"/>
+	<event load="NEUTRAL_ORDEN_SHIP"/>
+	<event load="NEUTRAL_ORDEN_ZOLTANSISABATTERY"/>
+	<event load="ORDEN_CRAZY_HEAL_ENGI"/>
+	<event load="ORDEN_LUNA"/>
+	<event load="PIRATE_BRIBER"/>
+	<event load="PIRATE_BRIBER"/>
+	<event load="PIRATE_BRIBER"/>
+	<event load="PIRATE_BRIBER"/>
+	<event load="PIRATE_BRIBER"/>
+	<event load="PIRATE_BRIBER"/>
+	<event load="PIRATE_CHICKEN"/>
+	<event load="PIRATE_CHOICE"/>
+	<event load="PIRATE_CIVILIAN"/>
+	<event load="PIRATE_CIVILIAN"/>
+	<event load="PIRATE_CIVILIAN"/>
+	<event load="PIRATE_CIVILIAN"/>
+	<event load="PIRATE_SALESMAN"/>
+	<event load="PIRATE_STATION_ASTEROID"/>
+	<event load="PIRATE_STATION_CROPS"/>
+	<event load="QUEST_SLUG_PIRATE_TRAP"/>
+	<event load="RADAR_REBEL"/>
+	<event load="REBEL_CHECKPOINT"/>
+	<event load="REBEL_HELPERS"/>
+	<event load="REBEL_STOPFLEET"/>
+	<event load="REBEL_TRANSPORT"/>
+	<event load="REBEL_TRANSPORT"/>
+	<event load="REBEL_TRANSPORT"/>
+	<event load="REBEL_TRANSPORT"/>
+	<event load="REBEL_WITH_SCANNERS"/>
+	<event load="REFUGEE_NO_DISTRESS"/>
+	<event load="REFUGEE_NO_DISTRESS"/>
+	<event load="REFUGEE_NO_DISTRESS_PIRATE"/>
+	<event load="REFUGEE_NO_DISTRESS_SLUG"/>
+	<event load="REFUGEE_NO_DISTRESS_ZOLTAN"/>
+	<event load="REPAIR_ENGI"/>
+	<event load="REPAIR_ENGI_HOME"/>
+	<event load="RETRANSLATOR"/>
+	<event load="ROCK_ATHIEST"/>
+	<event load="ROCK_LOOTING"/>
+	<event load="ROCK_MANTIS_FREIGHTER"/>
+	<event load="ROCK_MANTIS_HUNTER"/>
+	<event load="ROCK_NURSERY"/>
+	<event load="ROCK_SLUG_ARGUMENT"/>
+	<event load="ROCK_SLUG_ARGUMENT_NEBULA"/>
+	<event load="ROCK_STARSHIP_MINE"/>
+	<event load="ROCK_ZOLTAN_HELP"/>
+	<event load="ROGUE_REBEL"/>
+	<event load="RUHLAD"/>
+	<event load="SHIPS_MANTIS_PRO_FIGHTSTATION_EVENT"/>
+	<event load="SKUP"/>
+	<event load="SLUG_DRINK"/>
+	<event load="SQUAT_REFUEL_STATION"/>
+	<event load="TERRAFORMING_SCAN"/>
+	<event load="UNSTABLE_BLACKHOLE_RANDOMIZER_3000"/>
+	<event load="WRECKAGE_EVENT"/>
+	<event load="WRECKAGE_EVENT"/>
+	<event load="ZOLTAN_CREW_SCAN"/>
+	<event load="ZOLTAN_CREW_STUDY"/>
+	<event load="ZOLTAN_CREW_STUDY"/>
+	<event load="ZOLTAN_CREW_STUDY"/>
+	<event load="ZOLTAN_EYE"/>
+	<event load="ZOLTAN_LIFERAFT"/>
+	<event load="ZOLTAN_RIFT_FIGHT"/>
+	<event load="ZOLTAN_SCIENCE_DOCK"/>
+</eventList>
+
+<eventList name="ITEMS_ALL">
+	<event load="SPECIAL_ASTEROID_MORPH"/><!-- 1.27 -->
+	<event load="MORPH_SYSREPATBEACON"/><!-- 1.27 -->
+	<event load="POCHTA_EVENT"/><!-- 1.26.1 -->
+	<event load="ZOLTON_SCAN_ASTEROID"/><!-- 1.26 -->
+	<event load="BORDER_SECTOR_FLEET_FED"/>
+	<event load="BORDER_STUFF"/>
+	<event load="BORDER_RANDOM_STANDARD"/>
+	<event load="LOW_ITEMS_HAL"/>
+	<event load="MED_ITEMS_HAL"/>
+	<event load="HAL_DRONE_HA_LA_VA"/>
+	<event load="FIND_STUFF_AVATAR"/>
+	<event load="FIND_STANDARD_AVATAR"/>
+	<event load="CRYSTAL_CACHE"/>
+	<event load="CRYSTAL_SCRAP_EXCITED"/>
+	<event load="ENGI_FLEET_DELAY"/>
+	<event load="ENGI_FLEET_DELAY"/>
+	<event load="ENGI_FLEET_DELAY"/>
+	<event load="ENGI_FLEET_DELAY"/>
+	<event load="ENGI_GIFT"/>
+	<event load="ENGI_GIFT"/>
+	<event load="ENGI_GIFT"/>
+	<event load="ENGI_GIFT"/>
+	<event load="ENGI_MONSTER"/>
+	<event load="ENGI_MONSTER"/>
+	<event load="ENGI_MONSTER"/>
+	<event load="ENGI_MONSTER"/>
+	<event load="ENGI_SURRENDER"/>
+	<event load="ENGI_SURRENDER"/>
+	<event load="ENGI_SURRENDER"/>
+	<event load="ENGI_SURRENDER"/>
+	<event load="FIND_DRONE"/>
+	<event load="FIND_DRONE"/>
+	<event load="FIND_DRONE"/>
+	<event load="FIND_DRONE"/>
+	<event load="FIND_DRONE"/>
+	<event load="FIND_DRONE"/>
+	<event load="FIND_DRONE"/>
+	<event load="FIND_DRONE"/>
+	<event load="FIND_DRONE"/>
+	<event load="FIND_DRONE"/>
+	<event load="FIND_DRONE"/>
+	<event load="FIND_WEAPON"/>
+	<event load="FIND_WEAPON"/>
+	<event load="FIND_WEAPON"/>
+	<event load="FIND_WEAPON"/>
+	<event load="FIND_WEAPON"/>
+	<event load="FIND_WEAPON"/>
+	<event load="FIND_WEAPON"/>
+	<event load="FIND_WEAPON"/>
+	<event load="FIND_WEAPON"/>
+	<event load="FIND_WEAPON"/>
+	<event load="FIND_WEAPON"/>
+	<event load="FREE_ITEMS"/>
+	<event load="FREE_ITEMS"/>
+	<event load="FREE_ITEMS"/>
+	<event load="FREE_ITEMS"/>
+	<event load="FREE_ITEMS"/>
+	<event load="FREE_ITEMS"/>
+	<event load="FREE_ITEMS"/>
+	<event load="FREE_ITEMS"/>
+	<event load="FREE_ITEMS"/>
+	<event load="FREE_ITEMS"/>
+	<event load="FREE_ITEMS"/>
+	<event load="FUEL_FOR_DRONE"/>
+	<event load="FUEL_FOR_DRONE"/>
+	<event load="FUEL_FOR_DRONE"/>
+	<event load="FUEL_FOR_DRONE"/>
+	<event load="FUEL_FOR_DRONE"/>
+	<event load="FUEL_FOR_DRONE"/>
+	<event load="FUEL_FOR_DRONE"/>
+	<event load="FUEL_FOR_DRONE"/>
+	<event load="FUEL_FOR_DRONE"/>
+	<event load="FUEL_FOR_DRONE"/>
+	<event load="FUEL_FOR_DRONE"/>
+	<event load="HELP_MINERS"/>
+	<event load="HELP_MINERS"/>
+	<event load="HELP_MINERS"/>
+	<event load="HELP_MINERS"/>
+	<event load="HELP_MINERS"/>
+	<event load="HELP_MINERS"/>
+	<event load="HELP_MINERS"/>
+	<event load="HELP_MINERS"/>
+	<event load="HELP_MINERS"/>
+	<event load="HELP_MINERS"/>
+	<event load="HELP_MINERS"/>
+	<event load="ITEM_ORDEN_BOX2_FOR_HUMAN"/>
+	<event load="ITEM_ORDEN_BOX_FOR_HUMAN"/>
+	<event load="ORDEN_ITEMS_FIRE"/>
+	<event load="ORDEN_ITEMS_LOW"/>
+	<event load="REFUEL_STATION"/>
+	<event load="REFUEL_STATION"/>
+	<event load="REFUEL_STATION"/>
+	<event load="REFUEL_STATION"/>
+	<event load="REFUEL_STATION"/>
+	<event load="REFUEL_STATION"/>
+	<event load="REFUEL_STATION"/>
+	<event load="REFUEL_STATION"/>
+	<event load="REFUEL_STATION"/>
+	<event load="REFUEL_STATION"/>
+	<event load="REFUEL_STATION"/>
+	<!-- 1.26.5 --> <!-- new name -->
+	<event load="NEW_REPAIR_STATION"/>
+	<event load="NEW_REPAIR_STATION"/>
+	<event load="NEW_REPAIR_STATION"/>
+	<event load="NEW_REPAIR_STATION"/>
+	<event load="NEW_REPAIR_STATION"/>
+	<event load="NEW_REPAIR_STATION"/>
+	<event load="NEW_REPAIR_STATION"/>
+	<event load="NEW_REPAIR_STATION"/>
+	<event load="NEW_REPAIR_STATION"/>
+	<event load="NEW_REPAIR_STATION"/>
+	<event load="NEW_REPAIR_STATION"/>
+	<!-- 1.26.5 --> <!-- end -->
+	<event load="SELL_DRONES_STATION"/>
+	<event load="SELL_DRONES_STATION"/>
+	<event load="SELL_DRONES_STATION"/>
+	<event load="SELL_DRONES_STATION"/>
+	<event load="SELL_DRONES_STATION"/>
+	<event load="SELL_DRONES_STATION"/>
+	<event load="SELL_DRONES_STATION"/>
+	<event load="SELL_DRONES_STATION"/>
+	<event load="SELL_DRONES_STATION"/>
+	<event load="SELL_DRONES_STATION"/>
+	<event load="SELL_DRONES_STATION"/>
+	<event load="SELL_MISSILES_STATION"/>
+	<event load="SELL_MISSILES_STATION"/>
+	<event load="SELL_MISSILES_STATION"/>
+	<event load="SELL_MISSILES_STATION"/>
+	<event load="SELL_MISSILES_STATION"/>
+	<event load="SELL_MISSILES_STATION"/>
+	<event load="SELL_MISSILES_STATION"/>
+	<event load="SELL_MISSILES_STATION"/>
+	<event load="SELL_MISSILES_STATION"/>
+	<event load="SELL_MISSILES_STATION"/>
+	<event load="SELL_MISSILES_STATION"/>
+	<event load="TAVERN_HIRE"/>
+	<event load="TAVERN_HIRE"/>
+	<event load="TAVERN_HIRE"/>
+	<event load="TAVERN_HIRE"/>
+	<event load="TAVERN_HIRE"/>
+	<event load="TAVERN_HIRE"/>
+	<event load="TAVERN_HIRE"/>
+	<event load="TAVERN_HIRE"/>
+	<event load="TAVERN_HIRE"/>
+	<event load="TAVERN_HIRE"/>
+	<event load="TAVERN_HIRE"/>
+	<event load="TRADER_CIV"/>
+	<event load="TRADER_CIV"/>
+	<event load="TRADER_CIV"/>
+	<event load="TRADER_CIV"/>
+	<event load="TRADER_CIV"/>
+	<event load="TRADER_CIV"/>
+	<event load="TRADER_CIV"/>
+	<event load="TRADER_CIV"/>
+	<event load="TRADER_CIV"/>
+	<event load="TRADER_CIV"/>
+	<event load="TRADER_CIV"/>
+	<event load="TRADER_UPGRADES"/>
+	<event load="TRADER_UPGRADES"/>
+	<event load="TRADER_UPGRADES"/>
+	<event load="TRADER_UPGRADES"/>
+	<event load="TRADER_UPGRADES"/>
+	<event load="TRADER_UPGRADES"/>
+	<event load="TRADER_UPGRADES"/>
+	<event load="TRADER_UPGRADES"/>
+	<event load="TRADER_UPGRADES"/>
+	<event load="TRADER_UPGRADES"/>
+	<event load="TRADER_UPGRADES"/>
+	<event load="TRADER_UPGRADES_EXCHANGE"/>
+	<event load="TRADER_UPGRADES_EXCHANGE"/>
+	<event load="TRADER_UPGRADES_EXCHANGE"/>
+	<event load="TRADER_UPGRADES_EXCHANGE"/>
+	<event load="TRADER_UPGRADES_EXCHANGE"/>
+	<event load="TRADER_UPGRADES_EXCHANGE"/>
+	<event load="TRADER_UPGRADES_EXCHANGE"/>
+	<event load="TRADER_UPGRADES_EXCHANGE"/>
+	<event load="TRADER_UPGRADES_EXCHANGE"/>
+	<event load="TRADER_UPGRADES_EXCHANGE"/>
+	<event load="TRADER_UPGRADES_EXCHANGE"/>
+</eventList>
+
+<eventList name="STORE_ALL">
+	<event load="STORE_MORPH"/><!-- 1.27 -->
+	<event load="STORE_MORPH"/><!-- 1.27 -->
+	<event load="STORE_MORPH"/><!-- 1.27 -->
+	<event load="STORE_MORPH"/><!-- 1.27 -->
+	<event load="STORE_ZOLTON"/><!-- 1.26 -->
+	<event load="STORE_ZOLTON"/><!-- 1.26 -->
+	<event load="STORE_ZOLTON"/><!-- 1.26 -->
+	<event load="STORE_ZOLTON"/><!-- 1.26 -->
+	<event load="STORE_BORDER_1"/>
+	<event load="STORE_BORDER_1"/>
+	<event load="STORE_BORDER_1"/>
+	<event load="STORE_BORDER_1"/>
+	<!-- <event load="NEBULA_STORE"/>
+	<event load="NEBULA_STORE"/>
+	<event load="NEBULA_STORE"/>
+	<event load="NEBULA_STORE"/>
+	<event load="NEBULA_STORE_AVATAR"/>
+	<event load="NEBULA_STORE_AVATAR"/>
+	<event load="NEBULA_STORE_AVATAR"/>
+	<event load="NEBULA_STORE_AVATAR"/>
+	<event load="NEBULA_STORE_SLUG"/>
+	<event load="NEBULA_STORE_SLUG"/>
+	<event load="NEBULA_STORE_SLUG"/>
+	<event load="NEBULA_STORE_SLUG"/> --><!-- 1.25 -->
+	<event load="SPECIAL_STORE"/>
+	<event load="TRADERS_3_AUGMENTS"/>
+	<event load="TRADERS_3_WEAPONS"/>
+	<event load="TRADERS_3_DRONES"/>
+	<event load="TRADERS_3_MERCENARY"/>
+	<event load="STORE"/>
+	<event load="STORE"/>
+	<event load="STORE"/>
+	<event load="STORE"/>
+	<event load="STORE_CRYSTAL"/>
+	<event load="STORE_CRYSTAL"/>
+	<event load="STORE_CRYSTAL"/>
+	<event load="STORE_CRYSTAL"/>
+	<event load="STORE_ENGI"/>
+	<event load="STORE_ENGI"/>
+	<event load="STORE_ENGI"/>
+	<event load="STORE_ENGI"/>
+	<event load="STORE_LANIUS"/>
+	<event load="STORE_LANIUS"/>
+	<event load="STORE_LANIUS"/>
+	<event load="STORE_LANIUS"/>
+	<event load="STORE_MANTIS"/>
+	<event load="STORE_MANTIS"/>
+	<event load="STORE_MANTIS"/>
+	<event load="STORE_MANTIS"/>
+	<event load="STORE_ORDEN"/>
+	<event load="STORE_ORDEN"/>
+	<event load="STORE_ORDEN"/>
+	<event load="STORE_ORDEN"/>
+	<event load="STORE_PIRATE"/>
+	<event load="STORE_PIRATE"/>
+	<event load="STORE_PIRATE"/>
+	<event load="STORE_PIRATE"/>
+	<event load="STORE_REBEL"/>
+	<event load="STORE_REBEL"/>
+	<event load="STORE_REBEL"/>
+	<event load="STORE_REBEL"/>
+	<event load="STORE_ROCK"/>
+	<event load="STORE_ROCK"/>
+	<event load="STORE_ROCK"/>
+	<event load="STORE_ROCK"/>
+	<event load="STORE_ZOLTAN"/>
+	<event load="STORE_ZOLTAN"/>
+	<event load="STORE_ZOLTAN"/>
+	<event load="STORE_ZOLTAN"/>
+	<!-- <event load="STORM_STORE_UNSTABLE_STORM"/>
+	<event load="STORM_STORE_UNSTABLE_STORM"/>
+	<event load="STORM_STORE_UNSTABLE_STORM"/>
+	<event load="STORM_STORE_UNSTABLE_STORM"/> --><!-- 1.25 -->
+</eventList>
+
+
+<event name="START_BEACON">
+	<choice hidden="true">
+		<text id="continue" />
+		<event load="FIRST_UPGRADE"/>
+	</choice>
+</event>
+
+<event name="FIRST_UPGRADE">
+	<text>Your ship is equipped with an advanced navigation system: every time you jump into a new sector, your piloting will be upgraded. After upgrading to level 8, you can jump into the remote sectors of the Galaxy, or go to the Federation Base to complete your mission.</text>
+	<choice req="pilot" lvl="1" hidden="true" blue="false" max_group="0"> 
+		<text id="continue" />
+		<event>
+			<text>Improved Piloting to level 2...</text>
+			<upgrade amount="1" system="pilot"/>
+		</event>
+	</choice>
+	<choice req="pilot" lvl="2" hidden="true" blue="false" max_group="0"> 
+		<text id="continue" />
+		<event/>
+	</choice>
+	<!-- <choice req="pilot" lvl="3" hidden="true" blue="false" max_group="0">
+		<text id="continue" />
+		<event>
+			<text>It looks like your cockpit isn't suitable for long-distance FTL travel, as during the first jump it explodes! You chose the wrong ship...</text>
+			<damage amount="60"/>
+		</event>
+	</choice> -->
+</event>
+
+<event name="START_BEACON_NEW">
+	<text load="START_BEACON_NEW"/>
+	<choice hidden="true">
+		<text id="continue" />
+		<event load="AUGMENTS_ON_START_BEACON"/>
+	</choice>
+</event>
+
+<textList name="START_BEACON_NEW">
+	<text>Welcome to a new sector! It seems that part of the Rebel Fleet has jumped in right behind you. Get to the exit beacon and jump to the next sector before the pursuing Rebels catch you!</text>
+</textList>
+
+<event name="FINISH_BEACON">
+	<text>You've arrived at the Long-Range Beacon. When the FTL Drive is charged you can jump to the next sector.</text>
+	<choice req="pilot" lvl="1" hidden="true" blue="false" max_group="0">
+		<text id="continue" />
+		<event load="EXIT_LIST" />
+	</choice>
+	<choice req="pilot" lvl="8" hidden="true" blue="true" max_group="0">
+		<text>(Hyper-Jump Module) Perform a hyper jump.</text>
+		<event>
+			<text>Select a destination.</text>
+			<choice hidden="true">
+				<text>Jump to a remote sector.</text>
+				<event>
+					<secretSector/>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>Make a hyper-jump to the Federation base.</text>
+				<event/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="FINISH_BEACON_NEBULA">
+	<environment type="nebula"/>
+	<text>This Long-Range Beacon is almost hidden within a nebula. When the FTL Drive is charged you can jump to the next sector.</text>
+	<choice req="pilot" lvl="1" hidden="true" blue="false" max_group="0">
+		<text id="continue" />
+		<event load="FINISH_BEACON_NEBULA_ORIGINAL" />
+	</choice>
+	<choice req="pilot" lvl="8" hidden="true" blue="true" max_group="0">
+		<text>(Hyper-Jump Module) Perform a hyper jump.</text>
+		<event>
+			<text>Select a destination.</text>
+			<choice hidden="true">
+				<text>Jump to a remote sector.</text>
+				<event>
+					<secretSector/>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>Make a hyper-jump to the Federation base.</text>
+				<event/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<eventList name="FLEET_EASY_BEACON"><!-- 1.25 -->
+	<event load="FLEET_EASY_BEACON_INF"/>
+</eventList>
+
+<event name="FLEET_EASY_BEACON_INF">
+	<text>It seems the rebels have lost your trail, giving you a little bit of time to catch your breath. You notice a fuel cell floating nearby while the ship is preparing to jump.</text>
+	<item_modify>
+		<item type="fuel" min="1" max="1"/>
+	</item_modify>
+	<choice req="pilot" lvl="1" hidden="true" blue="false" max_group="0">
+		<text id="continue" />
+		<event/>
+	</choice>
+	<choice req="pilot" lvl="8" hidden="true" blue="true" max_group="0">
+		<text>(Hyper-Jump Module) Perform a hyper jump.</text>
+		<event>
+			<text>Select a destination.</text>
+			<choice hidden="true">
+				<text>Jump to a remote sector.</text>
+				<event>
+					<secretSector/>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>Make a hyper-jump to the Federation base.</text>
+				<event/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<eventList name="FLEET_EASY_BEACON_DLC"><!-- 1.25 -->
+	<event load="FLEET_EASY_BEACON_DLC_INF"/>
+</eventList>
+
+<event name="FLEET_EASY_BEACON_DLC_INF">
+	<text>It seems the rebels have lost your trail, giving you a little bit of time to catch your breath. You notice a fuel cell floating nearby while the ship is preparing to jump.</text>
+	<item_modify>
+		<item type="fuel" min="1" max="1"/>
+	</item_modify>
+	<choice req="pilot" lvl="1" hidden="true" blue="false" max_group="0">
+		<text id="continue" />
+		<event/>
+	</choice>
+	<choice req="pilot" lvl="8" hidden="true" blue="true" max_group="0">
+		<text>(Hyper-Jump Module) Perform a hyper jump.</text>
+		<event>
+			<text>Select a destination.</text>
+			<choice hidden="true">
+				<text>Jump to a remote sector.</text>
+				<event>
+					<secretSector/>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>Make a hyper-jump to the Federation base.</text>
+				<event/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="ROCK_CRYSTAL_BEACON">
+	<img planet="PLANET_GAS" back="CRYSTAL_CHERV"/>
+	<text>An ancient device is orbiting within the crystal rings of a nearby gas giant. You can't discern its nature or function, but it seems to have been deactivated for a very long time. Perhaps you can get some scrap from it.</text>
+	<choice hidden="true">
+		<text>Scrap it.</text>
+		<event load="ROCK_CRYSTAL_BEACON_LIST"/>
+	</choice>
+	<choice hidden="true">
+		<text>Leave it alone.</text>
+		<event>
+			<text>Better not risk it. The Rock people are unlikely to respond well to vandalism.</text>
+		</event>
+	</choice>
+	<choice hidden="true" req="crystal">
+		<text>(Crystal Crewmember) Reactivate it.</text>
+		<event>
+			<text>Your Crystalline companion says, "It looks like we have found the abandoned link to the Crystal home worlds. I can reactivate it." However, it seems they overestimated their abilities. Whatever they try to do, the portal refuses to budge. Frustrated, the only thing left to do is to move on...</text>
+		</event>
+	</choice>
+</event>
+
+<eventList name="MONOLITH_TOO_CLOSE_RAND">
+	<event>
+		<text>You carefully approach the monolith with your ship, but nothing happens... What a useless waste of time!</text>
+	</event>
+	<event>
+		<text>You carefully approach the monolith with your ship, but suddenly record a rise in on board temperature. You decide it's best to get out of here before conditions worsen.</text>
+		<damage amount="0" system="random" effect="fire"/>
+		<damage amount="0" system="room" effect="fire"/>
+	</event>
+	<event>
+		<text>You carefully approach the monolith with your ship, but suddenly your ship's energy flow changes instantly, partially damaging your ship's plating... You change the course away from the monolith to safety.</text>
+		<damage amount="1" system="random" effect="fire"/>
+		<damage amount="1" system="room" effect="fire"/>
+		<damage amount="1" system="room" effect="random"/>
+	</event>
+	<event>
+		<text>You carefully approach the monolith with your ship and notice how the ship's hull damage partially vanishes due to some unknown force.</text>
+		<damage amount="-30"/><!-- 1.23 was -10 -->
+	</event>
+</eventList>
+
+<!-- upgrades to piloting through event will mess with Arsenal+ Infinite progression -->
+<mod:findName type="eventList" name="EVENT_FED_DAMAGEDGOHOME_Q">
+	<!-- find the event with at least 1 child <choice req="pilot">, and then delete it altogether -->
+	<mod:findWithChildLike type="event" child-type="choice"><mod:selector req="pilot" />
+		<mod:removeTag />
+	</mod:findWithChildLike>
+</mod:findName>
+
+
+<event name="START_BEACON_CIVILIAN">
+	<text load="START_BEACON"/>
+	<choice hidden="true">
+		<text id="continue" />
+		<event>
+			<text>Upgrading Piloting...</text>
+			<upgrade amount="1" system="pilot"/>
+			<choice hidden="true">
+				<text id="continue" />
+				<event load="AUGMENTS_ON_START_BEACON"/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="START_BEACON_TRADE">
+	<text load="START_BEACON_TRADE"/>
+	<choice hidden="true">
+		<text id="continue" />
+		<event>
+			<text>Upgrading Piloting...</text>
+			<upgrade amount="1" system="pilot"/>
+			<choice hidden="true">
+				<text id="continue" />
+				<event load="AUGMENTS_ON_START_BEACON"/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="START_BEACON_ENGI">
+	<text load="START_BEACON_ENGI"/>
+	<choice hidden="true">
+		<text id="continue" />
+		<event>
+			<text>Upgrading Piloting...</text>
+			<upgrade amount="1" system="pilot"/>
+			<choice hidden="true">
+				<text id="continue" />
+				<event load="AUGMENTS_ON_START_BEACON"/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="START_BEACON_PIRATE">
+	<text load="START_BEACON_PIRATE"/>
+	<choice hidden="true">
+		<text id="continue" />
+		<event>
+			<text>Upgrading Piloting...</text>
+			<upgrade amount="1" system="pilot"/>
+			<choice hidden="true">
+				<text id="continue" />
+				<event load="AUGMENTS_ON_START_BEACON"/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="START_BEACON_REBEL">
+	<text load="START_BEACON_REBEL"/>
+	<choice hidden="true">
+		<text id="continue" />
+		<event>
+			<text>Upgrading Piloting...</text>
+			<upgrade amount="1" system="pilot"/>
+			<choice hidden="true">
+				<text id="continue" />
+				<event load="AUGMENTS_ON_START_BEACON"/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="START_BEACON_ORDEN">
+	<text load="START_BEACON_ORDEN"/>
+	<choice hidden="true">
+		<text id="continue" />
+		<event>
+			<text>Upgrading Piloting...</text>
+			<upgrade amount="1" system="pilot"/>
+			<choice hidden="true">
+				<text id="continue" />
+				<event load="AUGMENTS_ON_START_BEACON"/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="START_BEACON_MANTIS">
+	<text load="START_BEACON_MANTIS"/>
+	<choice hidden="true">
+		<text id="continue" />
+		<event>
+			<text>Upgrading Piloting...</text>
+			<upgrade amount="1" system="pilot"/>
+			<choice hidden="true">
+				<text id="continue" />
+				<event load="AUGMENTS_ON_START_BEACON"/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="START_BEACON_NEBULA">
+	<text load="START_BEACON_NEBULA"/>
+	<choice hidden="true">
+		<text id="continue" />
+		<event>
+			<text>Upgrading Piloting...</text>
+			<upgrade amount="1" system="pilot"/>
+			<choice hidden="true">
+				<text id="continue" />
+				<event load="AUGMENTS_ON_START_BEACON"/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="START_BEACON_AVATAR">
+	<text load="START_BEACON_AVATAR"/>
+	<choice hidden="true">
+		<text id="continue" />
+		<event>
+			<text>Upgrading Piloting...</text>
+			<upgrade amount="1" system="pilot"/>
+			<choice hidden="true">
+				<text id="continue" />
+				<event load="AUGMENTS_ON_START_BEACON"/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="START_BEACON_SLUG">
+	<text load="START_BEACON_SLUG"/>
+	<choice hidden="true">
+		<text id="continue" />
+		<event>
+			<text>Upgrading Piloting...</text>
+			<upgrade amount="1" system="pilot"/>
+			<choice hidden="true">
+				<text id="continue" />
+				<event load="AUGMENTS_ON_START_BEACON"/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="START_BEACON_ZOLTAN">
+	<text load="START_BEACON_ZOLTAN"/>
+	<choice hidden="true">
+		<text id="continue" />
+		<event>
+			<text>Upgrading Piloting...</text>
+			<upgrade amount="1" system="pilot"/>
+			<choice hidden="true">
+				<text id="continue" />
+				<event load="AUGMENTS_ON_START_BEACON"/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="START_BEACON_ZOLTON"> <!-- 1.26 -->
+	<text load="START_BEACON_ZOLTON"/>
+	<choice hidden="true">
+		<text id="continue" />
+		<event>
+			<text>Upgrading Piloting...</text>
+			<upgrade amount="1" system="pilot"/>
+			<choice hidden="true">
+				<text id="continue" />
+				<event load="AUGMENTS_ON_START_BEACON"/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="START_BEACON_ROCK">
+	<text load="START_BEACON_ROCK"/>
+	<choice hidden="true">
+		<text id="continue" />
+		<event>
+			<text>Upgrading Piloting...</text>
+			<upgrade amount="1" system="pilot"/>
+			<choice hidden="true">
+				<text id="continue" />
+				<event load="AUGMENTS_ON_START_BEACON"/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="START_BEACON_LANIUS">
+	<text load="START_BEACON_LANIUS"/>
+	<choice hidden="true">
+		<text id="continue" />
+		<event>
+			<text>Upgrading Piloting...</text>
+			<upgrade amount="1" system="pilot"/>
+			<choice hidden="true">
+				<text id="continue" />
+				<event load="AUGMENTS_ON_START_BEACON"/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="START_BEACON_UNSTABLE"><!-- 1.26 -->
+	<text load="START_BEACON_UNSTABLE"/>
+	<modifyPursuit amount="-3"/>
+	<choice hidden="true">
+		<text id="continue" />
+		<event>
+			<text load="START_BEACON_UNSTABLE_2"/>
+			<modifyPursuit amount="-3"/>
+			<choice hidden="true">
+				<text id="continue" />
+				<event>
+					<text>Upgrading Piloting...</text>
+					<upgrade amount="1" system="pilot"/>
+					<choice hidden="true">
+						<text id="continue" />
+						<event load="AUGMENTS_ON_START_BEACON"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="START_BEACON_HAL">
+	<text load="START_BEACON_HAL"/>
+	<choice hidden="true">
+		<text id="continue" />
+		<event>
+			<text>Upgrading Piloting...</text>
+			<upgrade amount="1" system="pilot"/>
+			<choice hidden="true">
+				<text id="continue" />
+				<event load="AUGMENTS_ON_START_BEACON"/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="START_BEACON_BORDER">
+	<text load="START_BEACON_BORDER"/>
+	<choice hidden="true">
+		<text id="continue" />
+		<event>
+			<text>Upgrading Piloting...</text>
+			<upgrade amount="1" system="pilot"/>
+			<choice hidden="true">
+				<text id="continue" />
+				<event load="ENTER_BORDER"/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="START_BEACON_SLURM"><!-- 1.25 -->
+	<text load="START_BEACON_SLURM"/>
+	<choice hidden="true">
+		<text id="continue" />
+		<event>
+			<text>Upgrading Piloting...</text>
+			<upgrade amount="1" system="pilot"/>
+			<choice hidden="true">
+				<text id="continue" />
+				<event load="SLURM_FUEL"/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+
+<event name="START_BEACON_MORPH"><!-- 1.27 -->
+	<text load="START_BEACON_MORPH"/>
+	<choice hidden="true">
+		<text id="continue" />
+		<event>
+			<text>Upgrading Piloting...</text>
+			<upgrade amount="1" system="pilot"/>
+			<choice hidden="true">
+				<text id="continue" />
+				<event load="AUGMENTS_ON_START_BEACON"/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<!-- 1.27 --> 
+<!-- delete MONOLITH_TOO_CLOSE_RAND -->
+<!-- PEACEFUL_MAN_RANDOM_CHERVOTOCHINA move to events_slug.xml.append -->

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--Copyright (c) 2012 by Subset Games. All rights reserved.-->
+<img x="-56" y="-32" w="300" h="470" />
+<offsets>
+	<floor x="150" y="235" />
+	<cloak x="0" y="0" />
+</offsets>
+<weaponMounts>
+	<mount x="77" y="91" rotate="false" mirror="true" gib="4" slide="left" />
+	<mount x="56" y="167" rotate="false" mirror="true" gib="4" slide="left" />
+	<mount x="38" y="232" rotate="false" mirror="true" gib="4" slide="left" />
+	<mount x="254" y="202" rotate="false" mirror="false" gib="2" slide="right" />
+</weaponMounts>
+<explosion>
+	<gib1>
+		<velocity min="0.40" max="0.40" />
+		<direction min="107" max="132" />
+		<angular min="-0.52" max="0.52" />
+		<x>93</x>
+		<y>88</y>
+	</gib1>
+	<gib2>
+		<velocity min="0.64" max="0.64" />
+		<direction min="309" max="340" />
+		<angular min="-0.46" max="0.46" />
+		<x>87</x>
+		<y>0</y>
+	</gib2>
+	<gib3>
+		<velocity min="0.58" max="0.58" />
+		<direction min="111" max="134" />
+		<angular min="-0.84" max="0.84" />
+		<x>0</x>
+		<y>203</y>
+	</gib3>
+	<gib4>
+		<velocity min="0.73" max="0.73" />
+		<direction min="24" max="47" />
+		<angular min="-1.11" max="1.11" />
+		<x>0</x>
+		<y>0</y>
+	</gib4>
+	<gib5>
+		<velocity min="0.78" max="0.78" />
+		<direction min="214" max="230" />
+		<angular min="-1.07" max="1.07" />
+		<x>124</x>
+		<y>195</y>
+	</gib5>
+	<gib6>
+		<velocity min="0.95" max="1.22" />
+		<direction min="-10" max="10" />
+		<angular min="-5.08" max="5.08" />
+		<x>122</x>
+		<y>111</y>
+	</gib6>
+</explosion>
+

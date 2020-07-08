@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<systemBlueprint name="pilot">
+	<type>pilot</type>
+	<title>Piloting</title>
+	<desc>Allows the ship to make FTL jumps and dodge when piloted. Upgrading adds auto-pilot that allows some evasion even without a pilot.</desc>
+	<startPower>1</startPower>
+	<maxPower>8</maxPower>
+	<rarity>1</rarity>
+	<upgradeCost>
+		<level>11111</level>
+		<level>11111</level>
+		<level>11111</level>
+		<level>11111</level>
+		<level>11111</level>
+		<level>11111</level>
+		<level>11111</level>
+	</upgradeCost>
+	<cost>1</cost>
+</systemBlueprint>
+
+<!-- sets player ships with piloting 3+ to piloting 2. otherwise, the infinite progression plays incorrectly -->
+
+<!-- finds a player ship, as name is unique to player ships.
+a stronger approach would be to use findComposite and grab every player ship,
+listing all 28 of them by name, but for the sake of space this is easier -->
+<mod:findWithChildLike type="shipBlueprint" child-type="name">
+    <mod:findLike type="systemList"><!-- go to the system list -->
+        <mod:findComposite><!-- find pilot tags with power="3" or higher, and set them to power="2" -->
+            <mod:par op="OR">
+                <mod:findLike type="pilot"><mod:selector power="3"/></mod:findLike>
+                <mod:findLike type="pilot"><mod:selector power="4"/></mod:findLike>
+                <!-- can add as many levels as you want, but I think every player ship that exists will have at most 4 -->
+            </mod:par>
+            <mod:setAttributes power="2" />
+        </mod:findComposite>
+    </mod:findLike>
+</mod:findWithChildLike>

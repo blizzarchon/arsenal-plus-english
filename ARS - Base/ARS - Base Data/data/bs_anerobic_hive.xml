@@ -1,0 +1,41 @@
+<!-- Copyright (c) 2012 by Subset Games. All rights reserved -->
+<!-- Superluminal exported file -->
+
+<img x="-84" y="-119" w="449" h="390"/>
+
+<weaponMounts>
+	<mount x="208" y="104" rotate="false" mirror="true" gib="4" slide="up"/>
+	<mount x="240" y="103" rotate="false" mirror="false" gib="4" slide="up"/>
+	<mount x="141" y="87" rotate="false" mirror="true" gib="3" slide="left"/>
+</weaponMounts>
+
+<explosion>
+	<gib1>
+		<velocity min="0.20" max="0.40"/>
+		<direction min="184" max="360"/>
+		<angular min="-0.80" max="0.80"/>
+		<x>263</x>
+		<y>12</y>
+	</gib1>
+	<gib2>
+		<velocity min="0.50" max="0.80"/>
+		<direction min="197" max="342"/>
+		<angular min="-1.00" max="1.00"/>
+		<x>285</x>
+		<y>143</y>
+	</gib2>
+	<gib3>
+		<velocity min="0.30" max="0.50"/>
+		<direction min="21" max="180"/>
+		<angular min="-0.50" max="0.20"/>
+		<x>0</x>
+		<y>0</y>
+	</gib3>
+	<gib4>
+		<velocity min="0.20" max="0.40"/>
+		<direction min="-31" max="35"/>
+		<angular min="-0.50" max="0.50"/>
+		<x>123</x>
+		<y>64</y>
+	</gib4>
+</explosion>

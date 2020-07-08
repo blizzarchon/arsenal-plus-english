@@ -1,0 +1,892 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Copyright (c) 2012 by Subset Games. All rights reserved -->
+
+<!-- these translations are starting to make no sense at all -->
+<!-- some of these names are just plain stupid and dumb -->
+
+<!-- 1.25 --> <!-- to mr easy money: You can add your own names and delete stupid existing ones if you want -->
+<!-- 1.23: a present from bamalf:  "for you, mr. easy money" -->
+<nameList race="human" sex="male">
+	<!-- special -->
+	<name>Barabawka</name><!-- 1.27 removed short="Bara" -->
+	<name short="Grind">Grinders</name>
+	<name short="Zerg">Zergulik</name>
+	<name>Ivanzyfer</name><!-- 1.27 removed short="Ivanzy" -->
+	<name short="Kizdos">Kizdosik</name><!-- 1.25 -->
+	<name>Majestic</name><!-- 1.27 removed short="Maj" -->
+	<name short="Murd">Murdantiks</name>
+	<name>Pustunchik</name><!-- 1.27 removed short="Pustun" -->
+	<name short="Plenum">Plenumolog</name>
+	<name>Abama</name> 
+	<name>Abver</name> 
+	<name>Abrams</name>
+	<name>Avadon</name>
+	<!-- <name>Avatar</name> 1.26.2  -->
+	<name>Agaskar</name>
+	<name>Adam</name>
+	<name>Adnan</name>
+	<name>Aimp</name>
+	<name>Akbuhan</name>
+	<name>Axel</name>
+	<name>Alexandr D</name>
+	<name>Alsid</name>
+	<name>Alu</name> 
+	<name>Alucard</name> 
+	<name>Altron</name>
+	<name>Alesha</name>
+	<name>Amatair</name> 
+	<name>Amur</name>
+	<name>Andron</name> 
+	<name>Antario</name>
+	<name>Antibug</name>
+	<name>Aswell</name>
+	<name>Apollo</name> 
+	<name>Arafat</name>
+	<name>Arcadi</name><!-- 1.25 -->
+	<name>Arkey</name> 
+	<name>Arkot</name> <!-- 1.25 -->
+	<name>Arnold</name>
+	<name>Artem</name>
+	<name>Artras</name> 
+	<name>Arhil</name>
+	<name>Assa</name> 
+	<name>Astrix</name>
+	<name>Atreyu</name>
+	<name>Outcast</name> 
+	<name>Ahmarov</name>
+	<name>Aztec</name>
+	
+	<name>Babah</name>
+	<name>Bazing</name>
+	<name>Bak Ost</name><!-- 1.25 -->
+	<name>Balamut</name>
+	<name>Ballast</name>
+	<name>Bamalf</name>
+	<name>Banzai</name> 
+	<name>Bart</name>
+	<name>Basom</name>
+	<!-- <name>Loaf</name> -->
+	<name>Baty</name>
+	<name>Bower</name>
+	<name>Devil</name>
+	<name>Bigbuy</name>
+	<name>Biowolf</name> 
+	<name>Bishop</name>
+	<name>Blok</name><!-- 1.25 -->
+	<name>Bogdan</name>
+	<name>Bolt</name> 
+	<name>Bottos</name>
+	<name>Brian</name>
+	<name>Brother</name>
+	<name>Brod</name>
+	<name>Bubonik</name> 
+	<name>Butera</name>
+	<name>Butcher</name> 
+	<name>Bychan</name>
+	<name>Bjorn</name>
+	<name>Bird</name>
+	<name>Vados</name>
+	<name>Vazyuka</name>
+	<name>Valera</name>
+	<name>Validol</name>
+	<name>Vantus</name>
+	<name>Warg</name>
+	<name>Warkun</name>
+	<name>Warp</name>
+	<name>Warrok</name>
+	<name>Basil</name>
+	<name>Vjuice</name> 
+	<name>Weber</name>
+	<name>Bucket</name>
+	<name>Sage</name>
+	<name>Velores</name>
+	<name>Broom</name>
+	<name>Venom</name>
+	<name>Vensus</name><!-- 1.25 -->
+	<name>Werewolf</name>
+	<name>Werther</name>
+	<name>Vivanov</name>
+	<name>Vivek</name>
+	<name>Weaver</name> 
+	<name>Vivipon</name>
+	<name>Vicanti</name><!-- 1.25 -->
+	<!-- <name>Win</name> -->
+	<name>Vinzard</name> 
+	<name>Wirl</name>
+	<name>Vitec</name>
+	<name>Vlad</name>
+	<name>Grandson</name>
+	<name>Vonavi</name>
+	<name>Vortex</name>
+	<name>Rider</name>
+	<name>Vuvko</name> 
+	<name>Volcano</name>
+	<name>Vurdol</name>
+	<!-- <name>Wurst</name> -->
+	<name>Vuus</name>
+	<name>Vans</name>
+	
+	<name>Gasmeats</name> 
+	<name>Gamada</name>
+	<name>Gunter</name> 
+	<name>Garma</name>
+	<name>Garn</name>
+	<name>Harpoon</name> 
+	<name>Garret</name> 
+	<name>Gamer</name> 
+	<name>Hector</name>
+	<name>Geralt</name>
+	<name>Gerasim</name>
+	<name>Getkor</name>
+	<name>Gitman</name>
+	<name>Glacier</name>
+	<name>Gmu</name>
+	<name>Homer</name> 
+	<name>Gorzo</name>
+	<name>Grant</name>
+	<name>Graffin</name>
+	<name>Gregor</name>
+	<name>Greykod</name> 
+	<name>Grek</name>
+	<name>Grimm</name>
+	<name>Green Fox</name>
+	<name>Grish</name>
+	<name>Grisha</name>
+	<name>Thunder</name>
+	<name>Grubnas</name> 
+	<name>Groote</name>
+	<!-- <name>Goodjob</name> -->
+	<name>Goodtrash</name><!-- 1.26 -->
+	<name>Hussar</name>
+	<name>Guf</name>
+	
+	<name>David</name>
+	<name>Danig</name>
+	<name>Dagot</name>
+	<name>Darlin</name>
+	<name>Dice</name> 
+	<name>Dalek Kaan</name> <!-- 1.25 -->
+	<name>Dwayan</name>
+	<name>Dark</name><!-- 1.25 -->
+	<name>Dvan</name>
+	<name>Devote</name>
+	<name>Gaffer</name>
+	<name>Dean</name>
+	<name>Dexter</name>
+	<name>Dernach</name>
+	<name>Deron</name><!-- 1.25 -->
+	<name>Despina</name>
+	<name>Dessmol</name> 
+	<name>Dehit</name>
+	
+	<name>Jaba</name>
+	<name>Justin</name>
+	<name>Jack Hammer</name><!-- 1.23 -->
+	<name>Jerry</name>
+	<name>Jessie</name>
+	<name>Jet</name><!-- 1.23 -->
+	<name>Jeffrey</name>
+	<name>Jim</name>
+	<name>Gin</name><!-- 1.26 -->
+	<name>Jobashi</name>
+	<name>Joker</name>
+	<name>John</name>
+	<name>Johnny Vagabond</name><!-- 1.25 -->
+	<name>Junpen</name>
+	<name>Divite</name>
+	<name>Disloer</name><!-- 1.23 -->
+	<name>Dobor</name><!-- 1.26 -->
+	<name>Dokkova</name><!-- 1.25 -->
+	<name>Domain</name>
+	<name>Don Juan</name><!-- 1.25 -->
+	<name>Doter</name>
+	<!-- <name>Dry</name> -->
+	<name>Greglak</name>
+	<!-- <name>Dream Hard</name> -->
+	<name>Droid</name>
+	<name>Doodle</name>
+	<!-- <name>Doit</name> -->
+	<name>Dumac</name>
+	<name>Duncan</name>
+	<name>Hollow</name>
+	<name>Dan</name>
+	<name>Egor</name><!-- 1.26 -->
+	<name>Elm</name>
+	<name>Enotch</name>
+	<name>Ermac</name>
+	<name>Esaul</name>
+	<name>Jacket</name> 
+	<!-- <name>G G</name>  -->
+	<name>Zhenya</name> 
+	<name>Zherka</name> 
+	<name>George</name><!-- 1.26 -->
+	<name>Jeddit</name><!-- 1.26 -->
+	<name>Zak</name> 
+	<name>Zaltir</name>
+	<name>Zambis</name>
+	<name>Fuse</name>
+	<name>Fuze</name><!-- added by mr_easy_money -->
+	<name>Zarqa</name> 
+	<name>Zarko</name> 
+	<name>Zartos</name> <!-- 1.25 -->
+	<name>Zen</name>
+	<name>Zeret</name> 
+	<name>Zizitop</name>
+	<name>Zimerk Derk</name> 
+	<name>Zlat Bulat</name> 
+	<name>Evilleg</name>
+	<name>Zorro</name>
+	<name>Zurab</name>
+	<name>Zes</name>
+	<name>Ibrahim</name> 
+	<name>Ivan</name>
+	<name>Yeshua</name><!-- 1.26 -->
+	<!-- <name>Easily</name> -->
+	<name>Ikadum</name>
+	<name>Ooze</name>
+	<name>Illusion</name><!-- 1.26 -->
+	<name>Impulse</name><!-- 1.25 -->
+	<name>Imtek</name>
+	<name>Yin Yang</name>
+	<name>Johann</name>
+	<name>Ionov</name><!-- 1.25 -->
+	<name>Joseph</name>
+	<name>Yoccoz</name>
+	<name>Isaac</name><!-- 1.24 -->
+	<name>Judas</name><!-- 1.24 -->
+	<name>Yoler</name>
+	<name>Yorick</name>
+	<name>Calyon</name>
+	<name>Cancel</name>
+	<name>Kapika</name>
+	<name>Carl</name>
+	<name>Carn</name> 
+	<name>Casper</name> 
+	<name>Caster</name>
+	<name>Katsun</name>
+	<name>Kafka</name>
+	<name>Quasi</name>
+	<name>Quentin</name> 
+	<name>Queiroz</name> 
+	<name>Keysik</name> 
+	<name>Cake</name>
+	<!-- <name>Camper</name> -->
+	<name>Kenbro</name>
+	<!-- <name>Killme</name> -->
+	<name>Kinf</name>
+	<name>Kieran</name>
+	<name>Kirby</name>
+	<name>Kirk</name>
+	<name>Kir</name><!-- 1.25 -->
+	<!-- <name>Clon</name> --> <!-- 1.25 --> <!-- its unique event name now -->
+	<name>Kitsune</name><!-- 1.26 -->
+	<!-- <name>Close</name> -->
+	<name>Knite</name>
+	<!-- <name>Ginger Bread</name> -->
+	<name>Nicholas</name>
+	<name>Kombez</name>
+	<name>Compote</name>
+	<name>Consul</name>
+	<!-- <name>Contest</name> -->
+	<name>Corsair</name>
+	<name>Mower</name>
+	<name>Kosaru</name> 
+	<name>Cosmic</name>
+	<name>Cant</name>
+	<name>Krabos</name>
+	<name>Flint</name>
+	<name>Kreng</name>
+	<name>Merlin</name><!-- 1.25 -->
+	<name>Crombie</name>
+	<name>Kronzak</name> 
+	<name>Croche</name>
+	<name>Kruger</name>
+	<name>Hook</name>
+	<name>Xenon</name>
+	<name>Ksulli</name>
+	<name>Xulli</name><!-- added by mr_easy_money -->
+	<name>Whoso</name>
+	<name>Blocker</name>
+	<name>Block</name>
+	<name>Kukan</name> 
+	<name>Kukare</name>
+	<!-- <name>Easter Cake</name> -->
+	<name>Kunha</name><!-- 1.25 -->
+	<name>Kulibin</name>
+	<name>Curio</name>
+	<name>Pieceman</name>
+	<name>Piece</name>
+	<name>Kflyur</name> 
+	<name>Cap</name>
+	<name>Pita</name>
+	<name>Lagget</name>
+	<name>Lazarus</name>
+	<name>Laser</name> 
+	<name>Light</name>
+	<name>Lunn</name> 
+	<name>Larset</name>
+	<name>Last</name>
+	<name>Latonen</name><!-- 1.25 -->
+	<name>Laertes</name>
+	<name>Livolin</name>
+	<name>Levons</name>
+	<name>Leo</name>
+	<name>Leonaz</name> 
+	<name>Forester</name> 
+	<name>Alex</name> 
+	<name>Liam</name>
+	<name>Liver</name><!-- 1.26 -->
+	<name>Lid</name><!-- 1.25 -->
+	<name>Lidson</name> 
+	<name>Linarm</name>
+	<name>Lynx</name> 
+	<name>Leery Fox</name> <!-- 1.25 -->
+	<name>Logobor</name>
+	<name>Loc Dog</name> 
+	<name>Loki</name> 
+	<name>Elk</name>
+	<name>Ludar</name>
+	<name>Lucas</name>
+	<name>Looney</name> 
+	<name>Liu Chang</name>
+	<name>Lucian</name>
+	<name>Ma Feng</name>
+	<name>McFly</name>
+	<name>Maqam</name>
+	<name>Maxim</name>
+	<name>Malibu</name> 
+	<name>Mulock</name>
+	<name>Mamba</name>
+	<name>Maniyuk</name> 
+	<name>Markel</name>
+	<name>Marco</name>
+	<name>Marcus</name>
+	<name>Markush</name> 
+	<name>Marshall Hood</name> 
+	<name>Master</name>
+	<name>Mauser</name>
+	<name>Mouse</name>
+	<!-- <name>Muffin</name> -->
+	<name>Megusk</name>
+	<name>Milkis</name> 
+	<name>Midas</name>
+	<name>Micon</name>
+	<name>Miller</name>
+	<name>Minibeam</name>
+	<name>Michael</name>
+	<name>Mikheil</name>
+	<name>Mihnea</name> 
+	<name>Montero</name>
+	<name>Marine</name> 
+	<name>Mr. White</name>
+	<name>Gloom</name>
+	<name>Msakas</name>
+	<!-- <name>Move</name> -->
+	<name>Muggia</name> 
+	<name>Moomoo</name>
+	<name>Muchacha</name>
+	<name>Maverick</name>
+	<name>Mad Ranger</name>
+	<name>Mems</name>
+	<name>Matt</name>
+	<name>Matthew</name>
+	<name>Meffi</name>
+	<name>Nuggets</name> 
+	<name>Nakrul</name>
+	<name>Nathan</name>
+	<!-- <name>Unexpect</name> -->
+	<name>Neldar</name>
+	<name>Nelok</name>
+	<name>Nelot</name>
+	<!-- <name>Donot</name> -->
+	<name>Donut</name><!-- added by mr_easy_money -->
+	<name>Nerevar</name>
+	<!-- <name>Nonsugar</name>  -->
+	<name>Niga</name>
+	<name>Nicola</name>
+	<name>Nikiton</name> 
+	<name>Niro</name>
+	<name>Nirutti</name>
+	<name>Nitro</name> 
+	<name>Noname</name> 
+	<name>Newbie</name> 
+	<!-- <name>Waiting</name> -->
+	<name>Noofen</name><!-- 1.26 -->
+	<name>Owcsec</name><!-- 1.25.1 -->
+	<name>Okidoki</name>
+	<name>Eyepiece</name> 
+	<name>Olmes</name>
+	<name>Lobster</name>
+	<name>Omnilan</name>
+	<name>Oni</name>
+	<name>Orden</name>
+	<name>Orcasov</name> 
+	<name>Ossa</name><!-- 1.26 -->
+	<name>Owen</name>
+	<name>Paul</name>
+	<name>Hangman</name>
+	<name>Pallus</name>
+	<name>Punch</name>
+	<name>Parker</name>
+	<name>Turdis</name> 
+	<name>Patrix</name> <!-- 1.25 -->
+	<name>Spider</name>
+	<name>Stump</name>
+	<name>Pepeh</name><!-- 1.25 -->
+	<name>Perk</name>
+	<name>Liver</name> 
+	<name>Beer</name>
+	<name>Pilot</name>
+	<name>Peter</name>
+	<name>Pyth</name>
+	<name>Maim</name>
+	<name>Potap</name>
+	<name>Prank</name>
+	<name>Proxy</name>
+	<!-- <name>Just</name> -->
+	<name>Proton</name> 
+	<name>Prohor</name>
+	<name>Pumbaa Bumba</name> 
+	<name>Putis</name> <!-- 1.25 -->
+	<name>Puchbud</name> 
+	<name>Copeck</name>
+	<name>Raguli</name> 
+	<name>Razor</name>
+	<name>Cancer</name>
+	<name>Raksha</name>
+	<name>Rapp</name> 
+	<name>Rusher</name>
+	<name>Reverse</name>
+	<name>Reddan</name>
+	<name>Reds</name> 
+	<name>Rave</name> <!-- 1.26 -->
+	<name>Relm</name> 
+	<name>Rail</name>
+	<name>Rene</name> 
+	<name>Rivid</name>
+	<name>Rizok</name>
+	<name>Rimas</name> 
+	<name>Reno</name>
+	<name>Rip</name>
+	<name>Rodrik</name>
+	<name>Rozario</name><!-- 1.26 -->
+	<name>Swarm</name>
+	<name>Rocketup</name> 
+	<name>Rolland</name>
+	<name>Rolly</name>
+	<name>Rolf</name>
+	<name>Romero</name>
+	<name>Roshan</name>
+	<name>Roche</name>
+	<name>Rubik</name>
+	<name>Rubkin</name>
+	<name>Rudo</name>
+	<name>Handleg</name>
+	<name>Rustik</name> <!-- 1.27.1 -->
+	<name>Rutony</name>
+	<name>Fisher</name>
+	<name>Sawa</name> 
+	<name>Sagger</name>
+	<name>Sagrest</name> 
+	<name>Sazeroth</name> 
+	<name>Saizan</name>
+	<name>Sai</name><!-- 1.26 -->
+	<name>Syrax</name>
+	<name>Samurai</name> 
+	<name>Sanchez</name>
+	<name>Boot</name>
+	<name>Sahib</name>
+	<name>Holy</name>
+	<name>Segni</name>
+	<name>Seditative</name><!-- 1.26.3 -->
+	<name>Sesame</name>
+	<name>Sektor</name>
+	<name>Selco</name>
+	<name>Sigmair</name> 
+	<name>Sidorov</name>
+	<name>Sidut</name>
+	<name>Silver</name>
+	<name>Sinjal</name> 
+	<name>Sink</name> 
+	<name>Sifnoks</name> 
+	<name>Skye</name> 
+	<name>Skog</name>
+	<name>Scourge</name>
+	<name>Scotch</name>
+	<name>Scatman</name>
+	<!-- <name>Sink</name> -->
+	<name>Slowpoke</name>
+	<name>Smake</name> 
+	<name>Death</name>
+	<name>Small</name> 
+	<name>Smoke</name>
+	<name>Falcon</name>
+	<name>Sorry</name>
+	<name>Nurser</name>
+	<name>Spirus</name><!-- 1.26 -->
+	<name>Spartacus</name>
+	<name>Spectre</name>
+	<name>Oldman</name>
+	<name>Stasik</name>
+	<name>Stephen</name>
+	<name>Stig</name>
+	<!-- <name>Stylus</name> -->
+	<name>Stilmok</name> 
+	<name>Stokes</name>
+	<name>Stopper</name><!-- 1.26 -->
+	<name>Stress</name>
+	<!-- <name>Streamer</name> -->
+	<name>Stenson</name>
+	<name>Marmot</name>
+	<name>Sytchev</name>
+	<name>Rusk</name>
+	<name>Sam</name>
+	<name>Thankee</name>
+	<name>Tadeus</name>
+	<name>Tai</name>
+	<name>Tyrus</name>
+	<name>Taytub</name>
+	<name>Talandr</name>
+	<name>Talos</name> 
+	<name>Slipper</name>
+	<name>Tarius</name>
+	<name>Tatorey</name>
+	<name>Tails</name> 
+	<name>Tentacle</name>
+	<name>Termite</name>
+	<name>Foreman</name>
+	<name>Ti Lek</name>
+	<name>Tianid</name>
+	<name>Tiggo</name> 
+	<name>Thies</name> 
+	<name>Tirion</name>
+	<name>Thomas</name>
+	<name>Thomason</name>
+	<name>Axe</name>
+	<!-- <name>Top</name>  -->
+	<name>Torgus</name>
+	<name>Thorpe</name>
+	<name>Tart</name>
+	<!-- <name>Try</name> -->
+	<!-- <name>Train</name> -->
+	<name>Trinh</name>
+	<name>Troll</name>
+	<name>Fleder</name>
+	<!-- <name>Faggen</name> -->
+	<!-- <name>Fight</name> -->
+	<!-- <name>Fact</name> -->
+	<name>Falcon</name><!-- 1.25 -->
+	<name>Fanfani</name>
+	<name>Farad</name>
+	<name>Fargot</name>
+	<name>Faster</name>
+	<name>Fail</name>
+	<name>Feng</name> 
+	<name>Fenrir</name>
+	<name>Ferri</name>
+	<name>Thess</name>
+	<name>Philip</name>
+	<name>Shiner</name>
+	<name>Flyer</name>
+	<name>Flashwe</name>
+	<!-- <name>Foxy</name> -->
+	<name>Folk</name>
+	<name>Fotos</name>
+	<name>Dupe</name>
+	<name>Fredek</name>
+	<name>Friend</name>
+	<name>Fugitive</name>
+	<name>Fulgor</name> 
+	<name>Fuel</name>
+	<!-- <name>Asdf</name> -->
+	<name>Fusion</name>
+	<name>Haar</name>
+	<name>Hagrid</name><!-- 1.26 -->
+	<name>Hazayr</name>
+	<name>Hein</name>
+	<name>Hacker</name>
+	<name>Haoser</name>
+	<name>Haro</name>
+	<name>Xaseo</name>
+	<name>Hutz</name>
+	<name>Goofy</name>
+	<name>Hill</name><!-- 1.26 -->
+	<name>Xim</name><!-- 1.25 -->
+	<name>Ximerik</name><!-- 1.25 -->
+	<name>Khimich</name>
+	<name>Hippie</name> 
+	<name>Serf</name>
+	<name>Jose</name>
+	<name>Chrome</name>
+	<name>Chronos</name>
+	<name>Oinker</name>
+	<name>Hooch</name>
+	<name>Centron</name>
+	<name>Zehren</name>
+	<name>Zorc</name>
+	<name>Tenner</name>
+	<name>Chief Black</name><!-- 1.25 -->
+	<name>Chobot</name>
+	<name>Chumubik</name>
+	<name>Schadow</name>
+	<name>Sham</name>
+	<!-- <name>Shatup</name> -->
+	<name>Sheckley</name>
+	<name>Shell</name>
+	<name>Shepard</name>
+	<name>Sheen</name>
+	<name>Shinnok</name>
+	<name>Shira</name>
+	<name>Shkiper</name><!-- 1.25 -->
+	<!-- <name>Naughty</name> -->
+	<name>Stamp</name>
+	<!-- <name>Plug</name> -->
+	<!-- <name>Cork Screw</name> -->
+	<name>Cork</name><!-- added by mr_easy_money -->
+	<name>Pintle</name>
+	<name>Shupi</name>
+	<name>Edward</name><!-- 1.26 -->
+	<name>Exti</name> 
+	<name>Elvis</name>
+	<name>Elysium Frost</name> 
+	<name>Elnar</name>
+	<name>Elrest</name>
+	<name>Emert</name>
+	<name>Emmett Brown</name>
+	<name>Encore</name><!-- 1.26 -->
+	<name>Hainaut</name>
+	<name>Epic</name>
+	<name>Erasmus</name>
+	<name>Eressir</name><!-- 1.25 -->
+	<name>Earl</name>
+	<name>Eros</name>
+	<name>Escobar</name> 
+	<name>Esper</name>
+	<name>Ugfi</name> 
+	<name>Eugene</name>
+	<!-- <name>User Name</name>  -->
+	<name>Upndal</name>
+	<name>Usis</name>
+	<name>Jakob</name> 
+	<name>Yamato</name>
+	<name>Yarrick</name>
+	<name>Clear</name>
+	<!-- 1.26.6 vanilla is here now -->
+	<name>Alex Rigopulos</name>
+	<name short="Mort">Mortraven</name>
+	<name>Notch</name>
+	<name>Steven</name>
+	<name>Wai-Shing</name><!-- 1.27 removed short="WaiShing" -->
+	<name>Kadreal</name>
+	<name>Starger</name>
+	<name>Andrew Fenn</name>
+	<name>Mr Buga</name>
+	<name>Borman</name>
+	<name>Scott Kletzkin</name>
+	<name>Fleischy</name>
+	<name>Joel</name>
+	<name>Shelton</name>
+	<name>Tach</name>
+	<name>Logan Johnson</name>
+	<name>Enzo Martin</name>
+	<name>Jax</name>
+	<name>Jeff Baars</name>
+	<name>Ohm</name>
+	<name>Ihlay Caris</name>
+	<name>Gumpo</name>
+	<name>Zerimar</name>
+	<name>Bomfy M</name>
+	<name>Nekose</name>
+	<name>Scoops</name>
+	<name>Remo</name>
+	<name>Berko</name>
+	<name>Jorlack</name>
+	<name>Hassifa</name>
+	<name>Magmaros</name><!-- 1.27 removed short="Magmar" -->
+	<name>Butters</name> <!-- not sure -->
+	<name>Josh Cubbin</name>
+	<name>Vitas Varnas</name>
+	<name>Monsvik</name>
+	<name>Grozoly</name>
+	<name>Sean O'Regan</name>
+	<name>Tom Banks</name>
+	<name>Nikmi</name>
+	<name>Mullett</name>
+	<name>Vivimord</name>
+	<name>Craig Dolan</name>
+	<name>Dre Kozar</name>
+	<name>Nick Lanng</name>
+	<name>Giles</name>
+	<name>CY Heng</name>
+	<name short="Narth">Narthollis</name>
+	<name short="Schultze">Norwyn Schultze</name>
+	<name short="Chriz">Christoph Z</name> 
+	<name>Bruce Geryk</name>
+	<name>Chris Phillips</name>
+	<name>Mikael Olofsson</name>
+	<name>James Pomeroy</name>
+	<name>Mike Weston</name>
+	<name>Jason Bovee</name>
+	<name>Xemu</name>
+	<name>Nick Breckon</name>
+	<name>Kapalka</name>
+	<name>Stick</name>
+	<name>Roper</name>
+	<name short="Frederic">Frederick</name> 
+	<name>Henrik Aasted</name>
+	<name>Firedihm</name> 
+	<name>Triko</name>
+	<name short="Mara">Maradine</name> 
+  	<name short="Swamps">Swampson</name> <!--Shortens to Swamps. Messaged -->
+	<name>Arries</name>
+	<name>Elnubnub</name>
+	<name>Ken</name>
+	<name>Randy Walker</name>
+	<name>Declan</name>
+	<name>Luaan Ti</name>
+	<name>Kirkner</name>
+	<name>Lombard</name>
+	<name>Feras</name>
+	<name>Yeoz</name>
+	<name>Ryan Maniscalco</name>
+	<name>GM Faux</name>
+	<name>O. Williams</name>
+	<name>Yevon Si</name>
+	<name>Johnny Maloney</name>
+	<!-- <name>Will</name> --><!-- 1.25.1 --> <!-- "Will" it is unique name for now -->
+	<name>Maxwell</name>
+	<name>Thomas Bloch</name>
+	<name>Rynhart</name>
+	<name>Cremity</name>
+	<name>AJ Hager</name>
+	<name>Stephen Eckman</name>
+	<name>Jan Magne</name>
+	<name>Jack Shirai</name>
+	<name>Julian Rafn</name>
+	<name>Markand</name>
+	<name>Steven Dengler</name>
+	<name>Nelis</name>
+	<name>Chris Malott</name>
+	<name>Davion</name>
+	<name>Jon Caldwell</name>
+	<name>Kusy</name>
+	<name>Lagardi</name>
+	<name>Vincent</name>
+	<name>Kevin Fish</name>
+	<name>Turing</name>
+	<name>Stelly</name>
+	<name>Teldarin</name>
+</nameList>
+
+<nameList race="human" sex="female">
+	<name>Barbydosha</name><!-- 1.27 removed short="Barba" -->
+	<name>Azaz</name>
+	<name>Aida</name>
+	<name>Aisha</name>
+	<name>Aki</name>
+	<name>Alice</name>
+	<name>Alma</name>
+	<name>Anaedra</name>
+	<name>Anna</name>
+	<name>Arai</name>
+	<name>Arilla</name>
+	<name>Arion</name>
+	<name>Ariel</name>
+	<name>Oldwife</name>
+	<name>Bazinga</name>
+	<name>Brenda</name>
+	<name>Valeria</name>
+	<name>Wendy</name>
+	<name>Vera</name>
+	<name>Nut</name>
+	<name>Gaenor</name>
+	<name>Gracie</name> 
+	<name>Eve</name><!-- 1.24 probably eve not eva; other two new ones are bible related -->
+	<name>Dam</name>
+	<name>Lady G.</name><!-- 1.26 -->
+	<name>Deck</name>
+	<name>Demisir</name>
+	<name>Jeske</name>
+	<name>Jill</name>
+	<name>Dren</name>
+	<!-- <name>True Story</name> -->
+	<name>Vein</name>
+	<name>Johnsen</name>
+	<name>Yoria</name>
+	<name>Kafa</name>
+	<name>Kim</name>
+	<name>Cryo</name>
+	<name>Xia</name>
+	<name>Lana</name>
+	<name>Noodles</name>
+	<name>Lisa</name> 
+	<name>Lis</name>
+	<!-- <name>Spoon</name> -->
+	<name>Lauren</name>
+	<name>Moon</name>
+	<name>Layla</name>
+	<!-- <name>Larvae</name> -->
+	<name>Maria</name>
+	<name>Maisie</name>
+	<name>Meca</name>
+	<name>Mercury</name>
+	<name>Milory</name><!-- 1.26 -->
+	<name>Minarda</name>
+	<name>Miranda</name>
+	<name>Moybi</name>
+	<name>Molly</name>
+	<name>Morrigan</name>
+	<name>Mosikva</name>
+	<name>Muse</name>
+	<name>Manon</name>
+	<name>Nazia</name>
+	<name>Naomi</name>
+	<name>Nei</name>
+	<name>Nisa</name>
+	<name>Nobi</name>
+	<name>Noemi</name>
+	<name>Dilly</name>
+	<name>Panda</name>
+	<name>Pipaluk</name>
+	<name>Rebeca</name>
+	<name>Rinoa</name>
+	<name>Ripley</name>
+	<name>Ray</name> 
+	<name>Remka</name><!-- 1.26 -->
+	<name>Reyra</name>
+	<name>Setgirl</name>
+	<name>Shin Shin</name>
+	<name>Siri</name>
+	<name>Sonya</name>
+	<name>Sofia</name>
+	<name>Suzume</name> 
+	<name>Cirno</name>
+	<name>Tanata</name>
+	<name>Teran</name>
+	<!-- <name>Tyranny</name> --> 
+	<name>Grass</name>
+	<name>Trisha</name><!-- 1.25 -->
+	<name>Titin</name>
+	<name>Willow</name>
+	<name>Feliz</name>
+	<name>Flor</name>
+	<name>Phosal</name> 
+	<name>Mill</name>
+	<name>Oinky</name>
+	<name>Tsugumi</name> 
+	<name>Chim</name>
+	<name>Chucha</name>
+	<name>Shurgaya</name>
+	<name>Eliza</name>
+	<name>Alison</name>
+	<name>Emily</name>
+	<name>Emma</name>
+	<name>Berry</name>
+	<!-- 1.26.6 vanilla is here now -->
+	<name>Beth</name>
+	<name>Debbie</name>
+	<name>Kara</name>
+</nameList>
+
+<!-- bamalf was nice enough to create an English version! thanks for the support! -->

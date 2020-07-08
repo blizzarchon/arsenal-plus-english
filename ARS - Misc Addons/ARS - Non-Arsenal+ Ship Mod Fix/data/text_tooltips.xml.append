@@ -1,0 +1,7 @@
+<!-- compatible with FTL 1.6+ -->
+
+<!-- change dummy text to something very general so there's no confusion -->
+<mod:findLike type="text"><mod:selector name="tooltip_artillery" />
+	<mod:removeTag />
+</mod:findLike>
+<text name="tooltip_artillery">Artillery: This ship's signature weapon. View its description in the Upgrades tab. More power means faster cooldown.</text>

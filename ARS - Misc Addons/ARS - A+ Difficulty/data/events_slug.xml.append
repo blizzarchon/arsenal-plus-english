@@ -1,0 +1,668 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<mod:findLike type="eventList">
+<mod:findLike type="event">
+	<mod:findLike type="autoReward"><mod:selector level="MED">standard</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="MED">stuff</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="MED">fuel</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="MED">missiles</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="MED">droneparts</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="MED">fuel_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="MED">missiles_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="MED">droneparts_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="MED">scrap_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="MED">weapon</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="MED">drone</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="MED">augment</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="HIGH">standard</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="HIGH">stuff</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="HIGH">fuel</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="HIGH">missiles</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="HIGH">droneparts</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="HIGH">fuel_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="HIGH">missiles_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="HIGH">droneparts_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="HIGH">scrap_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="HIGH">weapon</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="HIGH">drone</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="HIGH">augment</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+	<mod:findLike type="choice">
+	<mod:findLike type="event">
+		<mod:findLike type="autoReward"><mod:selector level="MED">standard</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="MED">stuff</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="MED">fuel</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="MED">missiles</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="MED">droneparts</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="MED">fuel_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="MED">missiles_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="MED">droneparts_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="MED">scrap_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="MED">weapon</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="MED">drone</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="MED">augment</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="HIGH">standard</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="HIGH">stuff</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="HIGH">fuel</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="HIGH">missiles</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="HIGH">droneparts</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="HIGH">fuel_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="HIGH">missiles_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="HIGH">droneparts_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="HIGH">scrap_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="HIGH">weapon</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="HIGH">drone</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="HIGH">augment</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+		<mod:findLike type="choice">
+		<mod:findLike type="event">
+			<mod:findLike type="autoReward"><mod:selector level="MED">standard</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="MED">stuff</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="MED">fuel</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="MED">missiles</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="MED">droneparts</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="MED">fuel_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="MED">missiles_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="MED">droneparts_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="MED">scrap_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="MED">weapon</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="MED">drone</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="MED">augment</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="HIGH">standard</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="HIGH">stuff</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="HIGH">fuel</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="HIGH">missiles</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="HIGH">droneparts</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="HIGH">fuel_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="HIGH">missiles_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="HIGH">droneparts_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="HIGH">scrap_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="HIGH">weapon</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="HIGH">drone</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="HIGH">augment</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+			<mod:findLike type="choice">
+			<mod:findLike type="event">
+				<mod:findLike type="autoReward"><mod:selector level="MED">standard</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="MED">stuff</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="MED">fuel</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="MED">missiles</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="MED">droneparts</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="MED">fuel_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="MED">missiles_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="MED">droneparts_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="MED">scrap_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="MED">weapon</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="MED">drone</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="MED">augment</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="HIGH">standard</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="HIGH">stuff</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="HIGH">fuel</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="HIGH">missiles</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="HIGH">droneparts</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="HIGH">fuel_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="HIGH">missiles_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="HIGH">droneparts_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="HIGH">scrap_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="HIGH">weapon</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="HIGH">drone</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="HIGH">augment</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+			</mod:findLike>
+			</mod:findLike>
+		</mod:findLike>
+		</mod:findLike>
+	</mod:findLike>
+	</mod:findLike>
+</mod:findLike>
+</mod:findLike>
+
+<mod:findLike type="event">
+	<mod:findLike type="autoReward"><mod:selector level="MED">standard</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="MED">stuff</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="MED">fuel</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="MED">missiles</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="MED">droneparts</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="MED">fuel_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="MED">missiles_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="MED">droneparts_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="MED">scrap_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="MED">weapon</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="MED">drone</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="MED">augment</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="HIGH">standard</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="HIGH">stuff</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="HIGH">fuel</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="HIGH">missiles</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="HIGH">droneparts</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="HIGH">fuel_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="HIGH">missiles_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="HIGH">droneparts_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="HIGH">scrap_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="HIGH">weapon</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="HIGH">drone</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="HIGH">augment</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+	<mod:findLike type="choice">
+	<mod:findLike type="event">
+		<mod:findLike type="autoReward"><mod:selector level="MED">standard</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="MED">stuff</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="MED">fuel</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="MED">missiles</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="MED">droneparts</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="MED">fuel_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="MED">missiles_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="MED">droneparts_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="MED">scrap_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="MED">weapon</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="MED">drone</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="MED">augment</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="HIGH">standard</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="HIGH">stuff</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="HIGH">fuel</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="HIGH">missiles</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="HIGH">droneparts</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="HIGH">fuel_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="HIGH">missiles_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="HIGH">droneparts_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="HIGH">scrap_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="HIGH">weapon</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="HIGH">drone</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="HIGH">augment</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+		<mod:findLike type="choice">
+		<mod:findLike type="event">
+			<mod:findLike type="autoReward"><mod:selector level="MED">standard</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="MED">stuff</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="MED">fuel</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="MED">missiles</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="MED">droneparts</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="MED">fuel_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="MED">missiles_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="MED">droneparts_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="MED">scrap_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="MED">weapon</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="MED">drone</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="MED">augment</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="HIGH">standard</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="HIGH">stuff</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="HIGH">fuel</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="HIGH">missiles</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="HIGH">droneparts</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="HIGH">fuel_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="HIGH">missiles_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="HIGH">droneparts_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="HIGH">scrap_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="HIGH">weapon</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="HIGH">drone</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="HIGH">augment</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+			<mod:findLike type="choice">
+			<mod:findLike type="event">
+				<mod:findLike type="autoReward"><mod:selector level="MED">standard</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="MED">stuff</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="MED">fuel</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="MED">missiles</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="MED">droneparts</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="MED">fuel_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="MED">missiles_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="MED">droneparts_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="MED">scrap_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="MED">weapon</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="MED">drone</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="MED">augment</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="HIGH">standard</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="HIGH">stuff</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="HIGH">fuel</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="HIGH">missiles</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="HIGH">droneparts</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="HIGH">fuel_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="HIGH">missiles_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="HIGH">droneparts_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="HIGH">scrap_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="HIGH">weapon</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="HIGH">drone</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="HIGH">augment</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+			</mod:findLike>
+			</mod:findLike>
+		</mod:findLike>
+		</mod:findLike>
+	</mod:findLike>
+	</mod:findLike>
+</mod:findLike>
+
+<mod:findLike type="ship">
+<mod:findLike type="destroyed">
+	<mod:findLike type="autoReward"><mod:selector level="MED">standard</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="MED">stuff</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="MED">fuel</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="MED">missiles</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="MED">droneparts</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="MED">fuel_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="MED">missiles_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="MED">droneparts_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="MED">scrap_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="MED">weapon</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="MED">drone</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="MED">augment</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="HIGH">standard</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="HIGH">stuff</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="HIGH">fuel</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="HIGH">missiles</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="HIGH">droneparts</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="HIGH">fuel_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="HIGH">missiles_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="HIGH">droneparts_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="HIGH">scrap_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="HIGH">weapon</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="HIGH">drone</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="HIGH">augment</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+	<mod:findLike type="choice">
+	<mod:findLike type="event">
+		<mod:findLike type="autoReward"><mod:selector level="MED">standard</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="MED">stuff</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="MED">fuel</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="MED">missiles</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="MED">droneparts</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="MED">fuel_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="MED">missiles_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="MED">droneparts_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="MED">scrap_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="MED">weapon</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="MED">drone</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="MED">augment</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="HIGH">standard</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="HIGH">stuff</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="HIGH">fuel</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="HIGH">missiles</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="HIGH">droneparts</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="HIGH">fuel_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="HIGH">missiles_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="HIGH">droneparts_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="HIGH">scrap_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="HIGH">weapon</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="HIGH">drone</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="HIGH">augment</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+		<mod:findLike type="choice">
+		<mod:findLike type="event">
+			<mod:findLike type="autoReward"><mod:selector level="MED">standard</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="MED">stuff</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="MED">fuel</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="MED">missiles</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="MED">droneparts</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="MED">fuel_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="MED">missiles_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="MED">droneparts_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="MED">scrap_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="MED">weapon</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="MED">drone</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="MED">augment</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="HIGH">standard</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="HIGH">stuff</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="HIGH">fuel</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="HIGH">missiles</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="HIGH">droneparts</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="HIGH">fuel_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="HIGH">missiles_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="HIGH">droneparts_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="HIGH">scrap_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="HIGH">weapon</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="HIGH">drone</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="HIGH">augment</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+			<mod:findLike type="choice">
+			<mod:findLike type="event">
+				<mod:findLike type="autoReward"><mod:selector level="MED">standard</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="MED">stuff</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="MED">fuel</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="MED">missiles</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="MED">droneparts</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="MED">fuel_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="MED">missiles_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="MED">droneparts_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="MED">scrap_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="MED">weapon</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="MED">drone</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="MED">augment</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="HIGH">standard</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="HIGH">stuff</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="HIGH">fuel</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="HIGH">missiles</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="HIGH">droneparts</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="HIGH">fuel_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="HIGH">missiles_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="HIGH">droneparts_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="HIGH">scrap_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="HIGH">weapon</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="HIGH">drone</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="HIGH">augment</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+			</mod:findLike>
+			</mod:findLike>
+		</mod:findLike>
+		</mod:findLike>
+	</mod:findLike>
+	</mod:findLike>
+</mod:findLike>
+<mod:findLike type="deadCrew">
+	<mod:findLike type="autoReward"><mod:selector level="MED">standard</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="MED">stuff</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="MED">fuel</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="MED">missiles</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="MED">droneparts</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="MED">fuel_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="MED">missiles_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="MED">droneparts_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="MED">scrap_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="MED">weapon</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="MED">drone</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="MED">augment</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="HIGH">standard</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="HIGH">stuff</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="HIGH">fuel</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="HIGH">missiles</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="HIGH">droneparts</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="HIGH">fuel_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="HIGH">missiles_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="HIGH">droneparts_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="HIGH">scrap_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="HIGH">weapon</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="HIGH">drone</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="HIGH">augment</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+	<mod:findLike type="choice">
+	<mod:findLike type="event">
+		<mod:findLike type="autoReward"><mod:selector level="MED">standard</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="MED">stuff</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="MED">fuel</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="MED">missiles</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="MED">droneparts</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="MED">fuel_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="MED">missiles_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="MED">droneparts_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="MED">scrap_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="MED">weapon</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="MED">drone</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="MED">augment</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="HIGH">standard</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="HIGH">stuff</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="HIGH">fuel</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="HIGH">missiles</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="HIGH">droneparts</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="HIGH">fuel_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="HIGH">missiles_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="HIGH">droneparts_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="HIGH">scrap_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="HIGH">weapon</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="HIGH">drone</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="HIGH">augment</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+		<mod:findLike type="choice">
+		<mod:findLike type="event">
+			<mod:findLike type="autoReward"><mod:selector level="MED">standard</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="MED">stuff</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="MED">fuel</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="MED">missiles</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="MED">droneparts</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="MED">fuel_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="MED">missiles_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="MED">droneparts_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="MED">scrap_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="MED">weapon</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="MED">drone</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="MED">augment</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="HIGH">standard</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="HIGH">stuff</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="HIGH">fuel</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="HIGH">missiles</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="HIGH">droneparts</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="HIGH">fuel_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="HIGH">missiles_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="HIGH">droneparts_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="HIGH">scrap_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="HIGH">weapon</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="HIGH">drone</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="HIGH">augment</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+			<mod:findLike type="choice">
+			<mod:findLike type="event">
+				<mod:findLike type="autoReward"><mod:selector level="MED">standard</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="MED">stuff</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="MED">fuel</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="MED">missiles</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="MED">droneparts</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="MED">fuel_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="MED">missiles_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="MED">droneparts_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="MED">scrap_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="MED">weapon</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="MED">drone</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="MED">augment</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="HIGH">standard</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="HIGH">stuff</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="HIGH">fuel</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="HIGH">missiles</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="HIGH">droneparts</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="HIGH">fuel_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="HIGH">missiles_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="HIGH">droneparts_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="HIGH">scrap_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="HIGH">weapon</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="HIGH">drone</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="HIGH">augment</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+			</mod:findLike>
+			</mod:findLike>
+		</mod:findLike>
+		</mod:findLike>
+	</mod:findLike>
+	</mod:findLike>
+</mod:findLike>
+<mod:findLike type="surrender">
+	<mod:findLike type="autoReward"><mod:selector level="MED">standard</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="MED">stuff</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="MED">fuel</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="MED">missiles</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="MED">droneparts</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="MED">fuel_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="MED">missiles_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="MED">droneparts_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="MED">scrap_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="MED">weapon</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="MED">drone</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="MED">augment</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="HIGH">standard</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="HIGH">stuff</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="HIGH">fuel</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="HIGH">missiles</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="HIGH">droneparts</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="HIGH">fuel_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="HIGH">missiles_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="HIGH">droneparts_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="HIGH">scrap_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="HIGH">weapon</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="HIGH">drone</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="HIGH">augment</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+	<mod:findLike type="choice">
+	<mod:findLike type="event">
+		<mod:findLike type="autoReward"><mod:selector level="MED">standard</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="MED">stuff</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="MED">fuel</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="MED">missiles</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="MED">droneparts</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="MED">fuel_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="MED">missiles_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="MED">droneparts_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="MED">scrap_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="MED">weapon</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="MED">drone</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="MED">augment</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="HIGH">standard</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="HIGH">stuff</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="HIGH">fuel</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="HIGH">missiles</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="HIGH">droneparts</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="HIGH">fuel_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="HIGH">missiles_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="HIGH">droneparts_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="HIGH">scrap_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="HIGH">weapon</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="HIGH">drone</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="HIGH">augment</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+		<mod:findLike type="choice">
+		<mod:findLike type="event">
+			<mod:findLike type="autoReward"><mod:selector level="MED">standard</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="MED">stuff</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="MED">fuel</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="MED">missiles</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="MED">droneparts</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="MED">fuel_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="MED">missiles_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="MED">droneparts_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="MED">scrap_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="MED">weapon</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="MED">drone</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="MED">augment</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="HIGH">standard</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="HIGH">stuff</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="HIGH">fuel</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="HIGH">missiles</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="HIGH">droneparts</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="HIGH">fuel_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="HIGH">missiles_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="HIGH">droneparts_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="HIGH">scrap_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="HIGH">weapon</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="HIGH">drone</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="HIGH">augment</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+			<mod:findLike type="choice">
+			<mod:findLike type="event">
+				<mod:findLike type="autoReward"><mod:selector level="MED">standard</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="MED">stuff</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="MED">fuel</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="MED">missiles</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="MED">droneparts</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="MED">fuel_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="MED">missiles_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="MED">droneparts_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="MED">scrap_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="MED">weapon</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="MED">drone</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="MED">augment</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="HIGH">standard</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="HIGH">stuff</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="HIGH">fuel</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="HIGH">missiles</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="HIGH">droneparts</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="HIGH">fuel_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="HIGH">missiles_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="HIGH">droneparts_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="HIGH">scrap_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="HIGH">weapon</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="HIGH">drone</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="HIGH">augment</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+			</mod:findLike>
+			</mod:findLike>
+		</mod:findLike>
+		</mod:findLike>
+	</mod:findLike>
+	</mod:findLike>
+</mod:findLike>
+<mod:findLike type="gotaway">
+	<mod:findLike type="autoReward"><mod:selector level="MED">standard</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="MED">stuff</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="MED">fuel</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="MED">missiles</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="MED">droneparts</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="MED">fuel_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="MED">missiles_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="MED">droneparts_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="MED">scrap_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="MED">weapon</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="MED">drone</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="MED">augment</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="HIGH">standard</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="HIGH">stuff</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="HIGH">fuel</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="HIGH">missiles</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="HIGH">droneparts</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="HIGH">fuel_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="HIGH">missiles_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="HIGH">droneparts_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="HIGH">scrap_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="HIGH">weapon</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="HIGH">drone</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+	<mod:findLike type="autoReward"><mod:selector level="HIGH">augment</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+	<mod:findLike type="choice">
+	<mod:findLike type="event">
+		<mod:findLike type="autoReward"><mod:selector level="MED">standard</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="MED">stuff</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="MED">fuel</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="MED">missiles</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="MED">droneparts</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="MED">fuel_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="MED">missiles_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="MED">droneparts_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="MED">scrap_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="MED">weapon</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="MED">drone</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="MED">augment</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="HIGH">standard</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="HIGH">stuff</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="HIGH">fuel</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="HIGH">missiles</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="HIGH">droneparts</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="HIGH">fuel_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="HIGH">missiles_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="HIGH">droneparts_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="HIGH">scrap_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="HIGH">weapon</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="HIGH">drone</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+		<mod:findLike type="autoReward"><mod:selector level="HIGH">augment</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+		<mod:findLike type="choice">
+		<mod:findLike type="event">
+			<mod:findLike type="autoReward"><mod:selector level="MED">standard</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="MED">stuff</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="MED">fuel</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="MED">missiles</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="MED">droneparts</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="MED">fuel_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="MED">missiles_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="MED">droneparts_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="MED">scrap_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="MED">weapon</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="MED">drone</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="MED">augment</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="HIGH">standard</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="HIGH">stuff</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="HIGH">fuel</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="HIGH">missiles</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="HIGH">droneparts</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="HIGH">fuel_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="HIGH">missiles_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="HIGH">droneparts_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="HIGH">scrap_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="HIGH">weapon</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="HIGH">drone</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+			<mod:findLike type="autoReward"><mod:selector level="HIGH">augment</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+			<mod:findLike type="choice">
+			<mod:findLike type="event">
+				<mod:findLike type="autoReward"><mod:selector level="MED">standard</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="MED">stuff</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="MED">fuel</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="MED">missiles</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="MED">droneparts</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="MED">fuel_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="MED">missiles_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="MED">droneparts_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="MED">scrap_only</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="MED">weapon</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="MED">drone</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="MED">augment</mod:selector><mod:setAttributes level="LOW" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="HIGH">standard</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="HIGH">stuff</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="HIGH">fuel</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="HIGH">missiles</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="HIGH">droneparts</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="HIGH">fuel_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="HIGH">missiles_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="HIGH">droneparts_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="HIGH">scrap_only</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="HIGH">weapon</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="HIGH">drone</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+				<mod:findLike type="autoReward"><mod:selector level="HIGH">augment</mod:selector><mod:setAttributes level="MEDIUM" /></mod:findLike>
+			</mod:findLike>
+			</mod:findLike>
+		</mod:findLike>
+		</mod:findLike>
+	</mod:findLike>
+	</mod:findLike>
+</mod:findLike>
+</mod:findLike>

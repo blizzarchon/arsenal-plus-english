@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (c) 2012 by Subset Games. All rights reserved -->
+
+<!-- ↓ This is not needed at the current moment, but may prove useful later or for something else ↓
+
+As there is no findWithoutChildLike to find ships without player ship stuff, made a dummy 
+attribute that marks whether a ship is enemy or not, to only change enemy or player ships.
+
+set every ship to be enemy 
+<mod:findLike type="shipBlueprint">
+	<mod:setAttributes enemy="true" />
+</mod:findLike>
+
+set player ships to not be enemy
+<mod:findWithChildLike type="shipBlueprint" child-type="desc">
+	<mod:setAttributes enemy="false" />
+</mod:findLike> 
+
+add `<mod:selector enemy="true" />` in front of every shipBlueprint findLike -->
+
+<!-- reduce max level of core enemy systems by 1, starting from max 4-10 -->
+<mod:findLike type="shipBlueprint">
+	<mod:findLike type="systemList">
+		<mod:findComposite>
+			<mod:par op="OR">
+				<mod:findLike type="shields"><mod:selector max="4" /></mod:findLike>
+				<mod:findLike type="engines"><mod:selector max="4" /></mod:findLike>
+				<mod:findLike type="weapons"><mod:selector max="4" /></mod:findLike>
+				<mod:findLike type="drones"><mod:selector max="4" /></mod:findLike>
+			</mod:par>
+			<mod:setAttributes max="3.5" />
+		</mod:findComposite>
+	</mod:findLike>
+</mod:findLike>
+<mod:findLike type="shipBlueprint">
+	<mod:findLike type="systemList">
+		<mod:findComposite>
+			<mod:par op="OR">
+				<mod:findLike type="shields"><mod:selector max="5" /></mod:findLike>
+				<mod:findLike type="engines"><mod:selector max="5" /></mod:findLike>
+				<mod:findLike type="weapons"><mod:selector max="5" /></mod:findLike>
+				<mod:findLike type="drones"><mod:selector max="5" /></mod:findLike>
+			</mod:par>
+			<mod:setAttributes max="4.5" />
+		</mod:findComposite>
+	</mod:findLike>
+</mod:findLike>
+<mod:findLike type="shipBlueprint">
+	<mod:findLike type="systemList">
+		<mod:findComposite>
+			<mod:par op="OR">
+				<mod:findLike type="shields"><mod:selector max="6" /></mod:findLike>
+				<mod:findLike type="engines"><mod:selector max="6" /></mod:findLike>
+				<mod:findLike type="weapons"><mod:selector max="6" /></mod:findLike>
+				<mod:findLike type="drones"><mod:selector max="6" /></mod:findLike>
+			</mod:par>
+			<mod:setAttributes max="5.5" />
+		</mod:findComposite>
+	</mod:findLike>
+</mod:findLike>
+<mod:findLike type="shipBlueprint">
+	<mod:findLike type="systemList">
+		<mod:findComposite>
+			<mod:par op="OR">
+				<mod:findLike type="shields"><mod:selector max="7" /></mod:findLike>
+				<mod:findLike type="engines"><mod:selector max="7" /></mod:findLike>
+				<mod:findLike type="weapons"><mod:selector max="7" /></mod:findLike>
+				<mod:findLike type="drones"><mod:selector max="7" /></mod:findLike>
+			</mod:par>
+			<mod:setAttributes max="6.5" />
+		</mod:findComposite>
+	</mod:findLike>
+</mod:findLike>
+<mod:findLike type="shipBlueprint">
+	<mod:findLike type="systemList">
+		<mod:findComposite>
+			<mod:par op="OR">
+				<mod:findLike type="shields"><mod:selector max="8" /></mod:findLike>
+				<mod:findLike type="engines"><mod:selector max="8" /></mod:findLike>
+				<mod:findLike type="weapons"><mod:selector max="8" /></mod:findLike>
+				<mod:findLike type="drones"><mod:selector max="8" /></mod:findLike>
+			</mod:par>
+			<mod:setAttributes max="7.5" />
+		</mod:findComposite>
+	</mod:findLike>
+</mod:findLike>
+<mod:findLike type="shipBlueprint">
+	<mod:findLike type="systemList">
+		<mod:findComposite>
+			<mod:par op="OR">
+				<mod:findLike type="shields"><mod:selector max="9" /></mod:findLike>
+				<mod:findLike type="engines"><mod:selector max="9" /></mod:findLike>
+				<mod:findLike type="weapons"><mod:selector max="9" /></mod:findLike>
+				<mod:findLike type="drones"><mod:selector max="9" /></mod:findLike>
+			</mod:par>
+			<mod:setAttributes max="8.5" />
+		</mod:findComposite>
+	</mod:findLike>
+</mod:findLike>
+<mod:findLike type="shipBlueprint">
+	<mod:findLike type="systemList">
+		<mod:findComposite>
+			<mod:par op="OR">
+				<mod:findLike type="shields"><mod:selector max="10" /></mod:findLike>
+				<mod:findLike type="engines"><mod:selector max="10" /></mod:findLike>
+				<mod:findLike type="weapons"><mod:selector max="10" /></mod:findLike>
+				<mod:findLike type="drones"><mod:selector max="10" /></mod:findLike>
+			</mod:par>
+			<mod:setAttributes max="9.5" />
+		</mod:findComposite>
+	</mod:findLike>
+</mod:findLike>
+
+<!-- ↓ This is not needed at the current moment, but may prove useful later or for something else ↓
+remove placeholder tag just in case
+<mod:findLike type="shipBlueprint">
+	<mod:removeAttributes enemy="" />
+</mod:findLike> -->
+
+<mod:findName type="blueprintList" name="WEAPONS_PROTOTYPES_INJ"><!-- 1.26.6 -->
+	<mod:findComposite>
+		<mod:par op="OR">
+			<mod:findLike type="name"><mod:selector>OMICRON_AUTOCANNON_1_POW</mod:selector></mod:findLike>
+			<mod:findLike type="name"><mod:selector>OMICRON_TRIPLE_BLASTER_1_POW</mod:selector></mod:findLike>
+		</mod:par>
+		<mod:removeTag />
+	</mod:findComposite>
+</mod:findName>

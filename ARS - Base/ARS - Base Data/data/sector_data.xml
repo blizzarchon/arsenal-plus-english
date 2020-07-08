@@ -1,0 +1,2046 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FTL>
+<!-- Copyright (c) 2012 by Subset Games. All rights reserved -->
+
+<!-- Should [Race] Sectors/Nebulae be called [Race] Controlled Sectors/Nebulae or just [Race] Sectors/Nebulae? --> 
+
+<sectorType name="CIVILIAN">
+	<sector>CIVILIAN_SECTOR</sector>
+	<sector>CIVILIAN_SECTOR</sector>
+	<sector>CIVILIAN_SECTOR</sector>
+	<sector>ENGI_SECTOR</sector>
+	<sector>ENGI_SECTOR</sector>
+	<sector>ENGI_SECTOR</sector>
+	<sector>ZOLTAN_SECTOR</sector>
+	<sector>ZOLTAN_SECTOR</sector>
+	<sector>ZOLTAN_SECTOR</sector>
+	<sector>ZOLTON_SECTOR</sector><!-- 1.26 -->
+	<sector>ZOLTON_SECTOR</sector><!-- 1.26 -->
+	<sector>ZOLTON_SECTOR</sector><!-- 1.26 -->
+	<sector>MORPH_SECTOR</sector><!-- 1.27 -->
+	<sector>MORPH_SECTOR</sector><!-- 1.27 -->
+	<sector>MORPH_SECTOR</sector><!-- 1.27 -->
+	
+	<sector>ENGI_HOME</sector>
+	<sector>ZOLTAN_HOME</sector>
+	<sector>TRADE_SECTOR</sector>
+	<sector>TRADE_SECTOR</sector><!-- 1.25 -->
+	<sector>TRADE_SECTOR</sector><!-- 1.25 -->
+	<sector>ZOLTON_HOME</sector><!-- 1.26 -->
+	<sector>MORPH_HOME</sector><!-- 1.27 -->
+</sectorType>
+
+<sectorType name="HOSTILE">
+	<sector>REBEL_SECTOR</sector>
+	<sector>REBEL_SECTOR</sector>
+	<sector>REBEL_SECTOR</sector>
+	<sector>ORDEN_SECTOR</sector>
+	<sector>ORDEN_SECTOR</sector>
+	<sector>ORDEN_SECTOR</sector>
+	<sector>HAL_SECTOR</sector>
+	<sector>HAL_SECTOR</sector>
+	<sector>HAL_SECTOR</sector>
+	<sector>PIRATE_SECTOR</sector>
+	<sector>PIRATE_SECTOR</sector>
+	<sector>PIRATE_SECTOR</sector>
+	<sector>MANTIS_SECTOR</sector>
+	<sector>MANTIS_SECTOR</sector>
+	<sector>MANTIS_SECTOR</sector>
+	<sector>ROCK_SECTOR</sector>
+	<sector>ROCK_SECTOR</sector>
+	<sector>ROCK_SECTOR</sector>
+	
+	<sector>ROCK_HOME</sector>
+	<sector>REBEL_SECTOR_MINIBOSS</sector>
+	<sector>ORDEN_SECTOR_MINIBOSS</sector>
+	<sector>HAL_SECTOR_HOME</sector>
+	<sector>MANTIS_HOME</sector>
+	<sector>CRYSTAL_HOME</sector><!-- 1.23 -->
+	<sector>BORDER_SECTOR</sector><!-- 1.23 -->
+	<sector>BORDER_SECTOR</sector><!-- 1.25 -->
+	<sector>BORDER_SECTOR</sector><!-- 1.25 -->
+</sectorType>
+
+<!-- USE ME FOR EXPANDED CONTENT -->
+<sectorType name="OVERRIDE_HOSTILE">
+	<sector>LANIUS_SECTOR</sector>
+	<sector>LANIUS_SECTOR</sector>
+	<sector>LANIUS_SECTOR</sector>
+	<sector>REBEL_SECTOR</sector>
+	<sector>REBEL_SECTOR</sector>
+	<sector>REBEL_SECTOR</sector>
+	<sector>ORDEN_SECTOR</sector>
+	<sector>ORDEN_SECTOR</sector>
+	<sector>ORDEN_SECTOR</sector>
+	<sector>HAL_SECTOR</sector>
+	<sector>HAL_SECTOR</sector>
+	<sector>HAL_SECTOR</sector>
+	<sector>PIRATE_SECTOR</sector>
+	<sector>PIRATE_SECTOR</sector>
+	<sector>PIRATE_SECTOR</sector>
+	<sector>MANTIS_SECTOR</sector>
+	<sector>MANTIS_SECTOR</sector>
+	<sector>MANTIS_SECTOR</sector>
+	<sector>ROCK_SECTOR</sector>
+	<sector>ROCK_SECTOR</sector>
+	<sector>ROCK_SECTOR</sector>
+	
+	<sector>ROCK_HOME</sector>
+	<sector>REBEL_SECTOR_MINIBOSS</sector>
+	<sector>ORDEN_SECTOR_MINIBOSS</sector>
+	<sector>HAL_SECTOR_HOME</sector>
+	<sector>MANTIS_HOME</sector>
+	<sector>LANIUS_SECTOR_HOME</sector>
+	<sector>CRYSTAL_HOME</sector>
+	
+	<sector>BORDER_SECTOR</sector><!-- 1.23 -->
+	<sector>BORDER_SECTOR</sector><!-- 1.25 -->
+	<sector>BORDER_SECTOR</sector><!-- 1.25 -->
+</sectorType>
+
+<sectorType name="NEBULA">
+	<sector>NEBULA_SECTOR</sector>
+	<sector>NEBULA_SECTOR</sector>
+	<sector>NEBULA_SECTOR</sector>
+	<sector>UNSTABLE_SECTOR</sector>
+	<sector>UNSTABLE_SECTOR</sector>
+	<sector>UNSTABLE_SECTOR</sector>
+	<sector>AVATAR_SECTOR</sector>
+	<sector>AVATAR_SECTOR</sector>
+	<sector>AVATAR_SECTOR</sector>
+	<sector>SLUG_SECTOR</sector>
+	<sector>SLUG_SECTOR</sector>
+	<sector>SLUG_SECTOR</sector>
+	
+	<sector>AVATAR_SECTOR_HOME</sector>
+	<sector>SLUG_HOME</sector>
+	<sector>ULTRA_UNSTABLE_SECTOR</sector> <!-- 1.22 -->
+	<sector>SLURM_SECTOR</sector> <!-- 1.25 -->
+	<sector>SLURM_SECTOR</sector> <!-- 1.25 -->
+	<sector>SLURM_SECTOR</sector> <!-- 1.25 -->
+</sectorType>
+
+<sectorType name="UNKNOWN">
+	<sector>STANDARD_SPACE</sector>
+	<!--
+	<sector>DEEP_SPACE_SECTOR</sector>
+	<sector>ABANDONED_SECTOR</sector>
+	<sector>ZOLTAN_HOME</sector>
+	<sector>ROCK_HOME</sector>
+	-->
+</sectorType>
+
+
+<!-- -
+STRUCTURE SECTORS
+ -->
+
+<!--default to prevent crashes if bad sector names are loaded-->
+<sectorDescription name="STANDARD_SPACE" minSector="0" unique="false">
+	<nameList><!-- This is a LIE! -->
+		<name id="sectorname_STANDARD_SPACE" short="sectorname_short_STANDARD_SPACE"/>
+		<!-- actually "sectorname_CIVILIAN_SECTOR" and "sectorname_short_CIVILIAN_SECTOR" -->
+	</nameList>
+	<trackList>
+		<track>civilian</track>
+		<track>infinity</track>
+		<track>cosmos</track>
+		<!-- <track>apollo</track> -->
+		<track>milkyway</track>
+		<track>lostship</track>
+	</trackList>
+	<startEvent>START_BEACON</startEvent>
+	<!-- 15-25 events -->
+	<event name="STORE" min="1" max="1"/><!-- was removed | was 2-3 | vanilla 1-2 -->
+	<event name="PIRATE_ATTACK_CIVIL_1" min="1" max="1"/><!-- 1.26 -->
+	<event name="PIRATE_CIVILIAN" min="1" max="1"/><!-- 1.27 -->
+	<event name="ITEMS" min="1" max="2"/> <!-- 1.25 was 1-1 -->
+	<event name="NEUTRAL_CIVILIAN" min="3" max="5"/><!-- 1.27 | 4-6 in 1.25 | was 2-4 -->
+	<event name="NOTHING" min="0" max="1"/>
+	<event name="DISTRESS_BEACON" min="1" max="2"/>
+	<!-- <event name="HOSTILE_CIVILIAN" min="3" max="5"/> --><!-- 1.27 | 1.26 was 4-6 -->
+	<event name="NEBULA_FIRST_SECTOR" min="0" max="4"/> <!-- 1.26 was NEBULA -->
+	<event name="QUESTS" min="1" max="1"/>
+	<event name="HOSTILE111" min="5" max="7"/><!-- 1.27 was 2-2 | 1.26 was HOSTILE1 -->
+	<event name="HOSTILE_BOARDING" min="0" max="0"/>
+</sectorDescription>
+
+
+<!--FINAL - The sector with the boss -->
+<sectorDescription name="FINAL" minSector="7" unique="true">
+	<nameList>
+		<name id="sectorname_FINAL" short="sectorname_short_FINAL" />
+	</nameList>
+	<trackList>
+		<track>laststand</track>
+	</trackList>
+	<rarityList><!-- 1.25.2 -->
+		<blueprint name="FLEET_DISTRACTION" rarity="0"/>
+		<blueprint name="INJECTOR_PRC" rarity="0"/><!-- 1.26 -->
+		<blueprint name="INJECTOR_FRC" rarity="0"/><!-- 1.26 -->
+		<blueprint name="INJECTOR_BRC" rarity="0"/><!-- 1.26 -->
+		<blueprint name="INJECTOR_CLD" rarity="0"/><!-- 1.26 -->
+		<blueprint name="INJECTOR_POW" rarity="0"/><!-- 1.26 -->
+		<blueprint name="INJECTOR_UNI" rarity="0"/><!-- 1.26.4 -->
+	</rarityList>
+	<startEvent>BOSS_NEUTRAL</startEvent><!-- STUPID, since it's starting you at the "exit" -->
+	<event name="STORE" min="1" max="1"/>
+	<event name="BOSS_REPAIR_STATION" min="3" max="3"/>
+	<event name="BOSS_HOSTILE" min="6" max="6"/>
+	<event name="BOSS_NEUTRAL" min="7" max="10"/>
+</sectorDescription>
+
+
+<!-- -
+CIVILIAN SECTORS
+ -->
+
+
+<sectorDescription name="CIVILIAN_SECTOR" minSector="0" unique="false"> 
+	<nameList>
+		<name id="sectorname_NEW_CIVILIAN_SECTOR" short="sectorname_short_NEW_CIVILIAN_SECTOR"/>
+	</nameList>
+	<trackList>
+		<track>civilian</track>
+		<track>infinity</track>		
+		<track>cosmos</track>
+		<!-- <track>apollo</track> -->
+		<track>milkyway</track>
+		<track>lostship</track>
+	</trackList>
+	<startEvent>START_BEACON_CIVILIAN</startEvent>
+	<event name="STORE" min="2" max="3"/>
+	<event name="ITEMS" min="2" max="3"/>
+	<event name="NEUTRAL_CIVILIAN" min="2" max="4"/>
+	<event name="NOTHING" min="0" max="1"/>
+	<event name="DISTRESS_BEACON" min="1" max="2"/>
+	<event name="HOSTILE_CIVILIAN" min="4" max="6"/>
+	<event name="NEBULA" min="0" max="8"/>
+<!--	<event name="HOSTILE_BOARDING" min="0" max="1"/>-->
+	<event name="QUESTS" min="1" max="2"/>
+	<event name="HOSTILE1" min="2" max="2"/>
+	
+	<!-- JUSTIN CHANGE THESE -->
+</sectorDescription>
+
+<sectorDescription name="TRADE_SECTOR" minSector="3" unique="true"> <!-- 1.25, was 2 -->
+	<nameList>
+		<name id="sectorname_TRADE_SECTOR" short="sectorname_short_TRADE_SECTOR"/>
+	</nameList>
+	<trackList>
+		<track>civilian</track>
+		<track>infinity</track>		
+		<track>cosmos</track>
+		<!-- <track>apollo</track> -->
+		<track>milkyway</track>
+		<track>lostship</track>
+	</trackList>
+	<startEvent>START_BEACON_TRADE</startEvent>
+	<!-- <event name="STORE" min="4" max="4"/> --> <!-- 1.23 -->
+	<event name="SPECIAL_STORE" min="1" max="1"/>
+	<event name="TRADERS_3_AUGMENTS" min="1" max="1"/> <!-- 1.23 -->
+	<event name="TRADERS_3_WEAPONS" min="1" max="1"/> <!-- 1.23 -->
+	<event name="TRADERS_3_DRONES" min="1" max="1"/> <!-- 1.23 -->
+	<event name="TRADERS_3_MERCENARY" min="1" max="1"/> <!-- 1.23 -->
+	<event name="CIVILIAN_COREWORLD_STATION" min="1" max="1"/><!-- 1.22  -->
+	<event name="EVENT_ETG_TRADER" min="1" max="1"/><!-- 1.25.1 -->
+	<event name="ITEMS" min="0" max="1"/><!-- 1.26 was 1-2 | 1.25.1 was 2-3 -->
+	<event name="POCHTA_EVENT" min="1" max="1"/><!-- 1.26.1 -->
+	<event name="NEUTRAL_CIVILIAN" min="1" max="3"/><!-- 1.22  -->
+	<event name="NOTHING" min="0" max="1"/>
+	<event name="DISTRESS_BEACON" min="1" max="2"/>
+	<event name="HOSTILE_CIVILIAN" min="1" max="4"/>
+	<event name="NEBULA" min="0" max="8"/>
+	<event name="QUESTS" min="1" max="2"/>
+	<event name="HOSTILE1" min="2" max="2"/>
+</sectorDescription>
+
+<sectorDescription name="ENGI_SECTOR" minSector="0" unique="false">  
+	<nameList>
+		<name id="sectorname_ENGI_SECTOR" short="sectorname_short_ENGI_SECTOR"/>
+	</nameList>
+	<trackList>
+		<track>engi</track>
+		<track>calm</track>
+		<track>cosmos</track>
+		<track>hacking</track>
+	</trackList>
+	<rarityList>
+		<blueprint name="engi" rarity="1"/>
+		<blueprint name="mantis" rarity="0"/>
+		<blueprint name="energy" rarity="4"/>
+		<blueprint name="slug" rarity="0"/>
+		<blueprint name="rock" rarity="0"/>
+		<blueprint name="human" rarity="3"/>
+	</rarityList>
+	<startEvent>START_BEACON_ENGI</startEvent>
+	<event name="STORE_ENGI" min="2" max="3"/>
+	<event name="ITEMS" min="2" max="2"/>
+	<event name="NOTHING_ENGI" min="0" max="1"/>
+	<event name="ITEMS_ENGI" min="3" max="3"/>
+	<event name="DISTRESS_BEACON_ENGI" min="1" max="3"/>
+	<event name="QUESTS_ENGI" min="1" max="1"/>
+	<event name="REPAIR_ENGI" min="0" max="1"/>
+	<event name="NEUTRAL_ENGI" min="4" max="6"/>
+	<event name="HOSTILE_ENGI" min="5" max="7"/>
+</sectorDescription>
+
+<sectorDescription name="ENGI_HOME" minSector="3" unique="true"> 
+	<nameList>
+		<name id="sectorname_ENGI_HOME" short="sectorname_short_ENGI_HOME"/>
+	</nameList>
+	<trackList>
+		<track>engi</track>
+		<track>calm</track>
+		<track>cosmos</track>
+		<track>hacking</track>
+	</trackList>
+	<rarityList>
+		<blueprint name="engi" rarity="1"/>
+		<blueprint name="mantis" rarity="0"/>
+		<blueprint name="energy" rarity="4"/>
+		<blueprint name="slug" rarity="0"/>
+		<blueprint name="rock" rarity="0"/>
+		<blueprint name="human" rarity="3"/>
+		<!-- 1.26.4 -->
+		<blueprint name="SILV_BEAM_1" rarity="5"/>
+		<blueprint name="SILV_BOMB_BREACH_3" rarity="5"/>
+		<blueprint name="SILV_BOMB_FIRE_2" rarity="5"/>
+		<blueprint name="SILV_ION_BLAST_2" rarity="5"/>
+		<blueprint name="SILV_ION_HEAVY_2" rarity="5"/>
+		<blueprint name="SILV_ION_PIERCE_1" rarity="5"/>
+		<blueprint name="SILV_LASER_AUTO_1" rarity="5"/>
+		<blueprint name="SILV_LASER_BURST_SCATTER_1" rarity="5"/>
+		<blueprint name="SILV_LASER_BURST_2" rarity="5"/>
+		<blueprint name="SILV_MISSILES_ASTERIA" rarity="5"/>
+		<blueprint name="SILV_MISSILES_BURST" rarity="5"/>
+		<blueprint name="SILV_MISSILES_HYDRA" rarity="5"/>
+		<blueprint name="SILV_SHOTGUN" rarity="5"/>
+	</rarityList>
+	<startEvent>START_BEACON_ENGI</startEvent>
+	<event name="CIRCLE_PRO_EVENT" min="1" max="1"/>
+	<event name="REPAIR_ENGI_HOME" min="1" max="1"/>
+	<event name="ENGI_UNLOCK_1" min="1" max="1"/>
+	<event name="STORE_ENGI" min="2" max="3"/>
+	<event name="ITEMS" min="2" max="2"/>
+	<event name="NOTHING_ENGI" min="0" max="1"/>
+	<event name="ITEMS_ENGI" min="3" max="3"/>
+	<event name="DISTRESS_BEACON_ENGI" min="1" max="3"/>
+	<event name="QUESTS_ENGI" min="1" max="1"/>
+	<event name="NEUTRAL_ENGI" min="5" max="7"/>
+	<event name="HOSTILE_ENGI" min="5" max="7"/>
+</sectorDescription>
+
+<sectorDescription name="MORPH_SECTOR" minSector="2" unique="false">  <!-- 1.27 -->
+	<nameList>
+		<name id="sectorname_MORPH_SECTOR" short="sectorname_short_MORPH_SECTOR"/>
+	</nameList>
+	<trackList>
+		<track>engi</track>
+		<track>calm</track>
+		<track>cosmos</track>
+		<track>hacking</track>
+	</trackList>
+	<rarityList>
+		<blueprint name="engi" rarity="1"/>
+		<blueprint name="mantis" rarity="0"/>
+		<blueprint name="energy" rarity="4"/>
+		<blueprint name="slug" rarity="0"/>
+		<blueprint name="rock" rarity="0"/>
+		<blueprint name="human" rarity="3"/>
+		<blueprint name="MORPHGUN_R" rarity="3"/>
+		<blueprint name="MORPHGUN_Z" rarity="3"/>
+		<blueprint name="MORPHGUN_M" rarity="3"/>
+		<blueprint name="MORPHGUN_S" rarity="3"/>	
+	</rarityList>
+	<startEvent>START_BEACON_MORPH</startEvent>
+	<event name="STORE_MORPH" min="2" max="3"/>
+	<event name="ITEMS" min="1" max="1"/>
+	<event name="NOTHING_MORPH" min="0" max="1"/>
+	<event name="ITEMS_MORPH" min="1" max="1"/>
+	<event name="DISTRESS_BEACON_MORPH" min="2" max="2"/>
+	<event name="QUESTS_MORPH" min="1" max="3"/>
+	<event name="NEUTRAL_MORPH" min="4" max="5"/>
+	<event name="HOSTILE_MORPH" min="2" max="4"/>
+	<event name="NEBULA_MORPH" min="4" max="6"/>
+</sectorDescription>
+
+<sectorDescription name="MORPH_HOME" minSector="3" unique="true"> <!-- 1.27 -->
+	<nameList>
+		<name id="sectorname_MORPH_HOME" short="sectorname_short_MORPH_HOME"/>
+	</nameList>
+	<trackList>
+		<track>engi</track>
+		<track>calm</track>
+		<track>cosmos</track>
+		<track>hacking</track>
+	</trackList>
+	<rarityList>
+		<blueprint name="engi" rarity="1"/>
+		<blueprint name="mantis" rarity="0"/>
+		<blueprint name="energy" rarity="4"/>
+		<blueprint name="slug" rarity="0"/>
+		<blueprint name="rock" rarity="0"/>
+		<blueprint name="human" rarity="3"/>
+		<blueprint name="MORPHGUN_R" rarity="3"/>
+		<blueprint name="MORPHGUN_Z" rarity="3"/>
+		<blueprint name="MORPHGUN_M" rarity="3"/>
+		<blueprint name="MORPHGUN_S" rarity="3"/>		
+		<blueprint name="SILV_BEAM_1" rarity="5"/>
+		<blueprint name="SILV_BOMB_BREACH_3" rarity="5"/>
+		<blueprint name="SILV_BOMB_FIRE_2" rarity="5"/>
+		<blueprint name="SILV_ION_BLAST_2" rarity="5"/>
+		<blueprint name="SILV_ION_HEAVY_2" rarity="5"/>
+		<blueprint name="SILV_ION_PIERCE_1" rarity="5"/>
+		<blueprint name="SILV_LASER_AUTO_1" rarity="5"/>
+		<blueprint name="SILV_LASER_BURST_SCATTER_1" rarity="5"/>
+		<blueprint name="SILV_LASER_BURST_2" rarity="5"/>
+		<blueprint name="SILV_MISSILES_ASTERIA" rarity="5"/>
+		<blueprint name="SILV_MISSILES_BURST" rarity="5"/>
+		<blueprint name="SILV_MISSILES_HYDRA" rarity="5"/>
+		<blueprint name="SILV_SHOTGUN" rarity="5"/>
+	</rarityList>
+	<startEvent>START_BEACON_MORPH</startEvent>
+	<event name="MORPH_PRO_EVENT" min="1" max="1"/>
+	<event name="SWORDFISH_EVENT" min="1" max="1"/>
+	<event name="NEBULA_HOME_REPAIRMENGI_EVENT" min="1" max="1"/>
+	<event name="STORE_MORPH" min="2" max="3"/>
+	<event name="ITEMS" min="1" max="1"/>
+	<event name="NOTHING_MORPH" min="0" max="1"/>
+	<event name="ITEMS_MORPH" min="1" max="1"/>
+	<event name="DISTRESS_BEACON_MORPH" min="2" max="2"/>
+	<event name="QUESTS_MORPH" min="1" max="3"/>
+	<event name="NEUTRAL_MORPH" min="3" max="5"/>
+	<event name="HOSTILE_MORPH" min="2" max="4"/>
+	<event name="NEBULA_MORPH_2" min="6" max="6"/> <!-- 1.27.1 -->
+</sectorDescription>
+
+
+<!-- -
+HOSTILE SECTORS
+ -->
+ 
+ 
+<sectorDescription name="PIRATE_SECTOR" minSector="2" unique="false">  <!-- 1.22, minSector was 0 -->
+	<nameList>
+		<name id="sectorname_PIRATE_SECTOR" short="sectorname_short_PIRATE_SECTOR"/>
+	</nameList>
+	<trackList>
+		<track>colonial</track>
+		<track>void</track>
+		<track>lostship</track>
+		<track>hacking</track>
+		<!-- <track>darkflow</track> -->
+	</trackList>
+	<startEvent>START_BEACON_PIRATE</startEvent>
+	<event name="STORE_PIRATE" min="1" max="2"/>
+	<event name="ITEMS" min="1" max="2"/>
+	<event name="HOSTILE_PIRATE" min="6" max="8"/>
+	<event name="BOARDERS_PIRATE" min="1" max="1"/>
+	<event name="DISTRESS_BEACON_PIRATE" min="1" max="2"/>
+	<event name="NEBULA_PIRATE" min="0" max="5"/>
+	<event name="NOTHING_PIRATE" min="0" max="1"/> <!-- need more -->
+	<event name="QUESTS_PIRATE" min="1" max="1"/> <!-- need more -->
+	<event name="NEUTRAL_PIRATE" min="5" max="6"/>
+</sectorDescription>
+
+<sectorDescription name="REBEL_SECTOR_MINIBOSS" minSector="3" unique="true">   <!-- This is the unique sector that has the mini-boss fight-->
+	<nameList>
+		<name id="sectorname_REBEL_SECTOR_MINIBOSS" short="sectorname_short_REBEL_SECTOR_MINIBOSS"/>
+	</nameList>
+	<trackList>
+		<!-- <track>darkflow</track> -->
+		<track>colonial</track>
+		<track>wasteland</track>
+		<track>hacking</track>
+		<track>lostship</track>
+	</trackList>
+	<rarityList><!-- 1.26.4 -->		
+		<blueprint name="SILV_BEAM_1" rarity="5"/>
+		<blueprint name="SILV_BOMB_BREACH_3" rarity="5"/>
+		<blueprint name="SILV_BOMB_FIRE_2" rarity="5"/>
+		<blueprint name="SILV_ION_BLAST_2" rarity="5"/>
+		<blueprint name="SILV_ION_HEAVY_2" rarity="5"/>
+		<blueprint name="SILV_ION_PIERCE_1" rarity="5"/>
+		<blueprint name="SILV_LASER_AUTO_1" rarity="5"/>
+		<blueprint name="SILV_LASER_BURST_SCATTER_1" rarity="5"/>
+		<blueprint name="SILV_LASER_BURST_2" rarity="5"/>
+		<blueprint name="SILV_MISSILES_ASTERIA" rarity="5"/>
+		<blueprint name="SILV_MISSILES_BURST" rarity="5"/>
+		<blueprint name="SILV_MISSILES_HYDRA" rarity="5"/>
+		<blueprint name="SILV_SHOTGUN" rarity="5"/>
+	</rarityList>
+	<startEvent>START_BEACON_REBEL</startEvent>
+	<event name="FLAGSHIP_CONSTRUCTION" min="1" max="1"/>
+	<event name="REBEL_DREDNOUT_QUEST" min="1" max="1"/><!-- 1.25, removed NEBULA_ from start -->
+	<event name="EVENT_REBEL_MINIBOSS" min="1" max="1"/><!-- 1.25, was this missing? woah -->
+	<event name="STORE_REBEL" min="1" max="2"/>
+	<event name="ITEMS" min="1" max="2"/>
+	<event name="HOSTILE_REBEL" min="5" max="6"/>
+	<event name="ELITE_AUTOMATED_EVENT" min="1" max="2"/>
+	<event name="BOARDERS_REBEL" min="1" max="1"/>
+	<event name="DISTRESS_BEACON_REBEL" min="1" max="2"/>
+	<event name="NEBULA_REBEL" min="0" max="5"/>
+	<event name="NOTHING_REBEL" min="0" max="1"/>
+	<event name="QUESTS_REBEL" min="1" max="2"/>
+	<event name="NEUTRAL_REBEL" min="4" max="5"/><!-- 1.25, was 5-6 -->
+</sectorDescription>
+
+<sectorDescription name="REBEL_SECTOR" minSector="2" unique="false">  <!-- 1.22, minSector was 0 -->
+	<nameList>
+		<name id="sectorname_REBEL_SECTOR" short="sectorname_short_REBEL_SECTOR"/>
+	</nameList>
+	<trackList>
+		<!-- <track>darkflow</track> -->
+		<track>colonial</track>
+		<track>wasteland</track>
+		<track>hacking</track>
+		<track>lostship</track>
+	</trackList>
+	<startEvent>START_BEACON_REBEL</startEvent>
+	<event name="STORE_REBEL" min="1" max="2"/>
+	<event name="ITEMS" min="1" max="2"/>
+	<event name="HOSTILE_REBEL" min="5" max="6"/>
+	<event name="ELITE_AUTOMATED_EVENT" min="1" max="2"/>
+	<event name="BOARDERS_REBEL" min="1" max="1"/>
+	<event name="DISTRESS_BEACON_REBEL" min="1" max="2"/>
+	<event name="NEBULA_REBEL" min="0" max="5"/>
+	<event name="NOTHING_REBEL" min="0" max="1"/>
+	<event name="QUESTS_REBEL" min="1" max="2"/>
+	<event name="NEUTRAL_REBEL" min="5" max="6"/>
+</sectorDescription>
+
+<!-- 1.23 -->
+<sectorDescription name="BORDER_SECTOR" minSector="3" unique="true">
+	<nameList>
+		<name id="sectorname_BORDER_SECTOR" short="sectorname_short_BORDER_SECTOR"/>
+	</nameList>
+	<trackList>
+		<track>ntr</track>
+	</trackList>
+	<rarityList>
+		<blueprint name="engi" rarity="1"/>
+		<blueprint name="mantis" rarity="1"/>
+		<blueprint name="energy" rarity="1"/>
+		<blueprint name="slug" rarity="1"/>
+		<blueprint name="rock" rarity="1"/>
+		<blueprint name="human" rarity="1"/>
+		<blueprint name="crystal" rarity="1"/>
+		<blueprint name="ghost" rarity="1"/>
+		<blueprint name="anaerobic" rarity="1"/>
+	</rarityList>
+	<startEvent>START_BEACON_BORDER</startEvent>
+	<event name="STORE_BORDER" min="1" max="2"/>
+	<event name="ITEMS_BORDER" min="1" max="2"/>
+	<event name="DECEPTICON_EVENT" min="1" max="1"/><!-- 1.25 -->
+	<event name="HOSTILE_BORDER" min="5" max="7"/><!-- 1.25, was 6-8 -->
+	<event name="HOSTILE_BORDER_ALIEN" min="3" max="4"/>
+	<event name="DISTRESS_BEACON_BORDER" min="1" max="2"/>
+	<event name="NEBULA_BORDER" min="0" max="4"/>
+	<event name="NOTHING_BORDER" min="0" max="1"/>
+	<event name="QUESTS_BORDER" min="1" max="2"/>
+	<event name="NEUTRAL_BORDER" min="4" max="5"/>
+</sectorDescription>
+
+<sectorDescription name="ORDEN_SECTOR_MINIBOSS" minSector="4" unique="true">
+	<nameList>
+		<name id="sectorname_ORDEN_SECTOR_MINIBOSS" short="sectorname_short_ORDEN_SECTOR_MINIBOSS"/>
+	</nameList>
+	<trackList>
+		<track>demiurge</track>
+	</trackList>
+	<rarityList>
+		<blueprint name="ORDEN2_MISSILES" rarity="2"/>
+		<blueprint name="ORDEN3_MISSILES" rarity="3"/>
+		<blueprint name="LASER_DUAL_ORDEN" rarity="1"/>
+		<blueprint name="LASER_DUAL_ORDEN_2" rarity="1"/>
+		<blueprint name="BA_LASER_ADDFIRE" rarity="1"/>
+		<blueprint name="LASER_HEAVY_CUMULATIVE" rarity="1"/>
+		<blueprint name="GAUSS_ORDEN_MOD1" rarity="2"/>
+		<blueprint name="GAUSS_ORDEN_MOD2" rarity="2"/>
+		<blueprint name="GAUSS_ORDEN_PP" rarity="3"/>
+		<blueprint name="GAUSS_MIXER_M1" rarity="2"/>
+		<blueprint name="GAUSS_MIXER_M2" rarity="2"/>
+		<blueprint name="GAUSS_MIXER_M3" rarity="3"/>
+		<blueprint name="TAHION_M1" rarity="2"/>
+		<blueprint name="TAHION_M2" rarity="2"/>
+		<blueprint name="TAHION_M3" rarity="3"/>
+		<blueprint name="BEAM_SCALPEL" rarity="1"/>
+		<blueprint name="FIRE_HELL_BEAM" rarity="3"/>
+		<blueprint name="BEAM_FIRE_SARISSA" rarity="2"/><!-- 1.25.1 -->
+		<blueprint name="MISSILES_KARAKURT" rarity="1"/>
+		<blueprint name="MISSILES_V3" rarity="2"/>
+		<blueprint name="MESON_CANNON" rarity="2"/>
+		<blueprint name="ION_HEAVY_FIRE_1" rarity="2"/>
+		<blueprint name="ION_HEAVY_FIRE_2" rarity="2"/>
+		<blueprint name="ION_HEAVY_FIRE_3" rarity="2"/>
+		<blueprint name="ION_BLAST_FIRE_1" rarity="1"/>
+		<blueprint name="ION_BLAST_FIRE_2" rarity="1"/>
+		<blueprint name="ION_BLAST_FIRE_3" rarity="1"/>
+		<!-- 1.26.4 -->
+		<blueprint name="SILV_BEAM_1" rarity="5"/>
+		<blueprint name="SILV_BOMB_BREACH_3" rarity="5"/>
+		<blueprint name="SILV_BOMB_FIRE_2" rarity="5"/>
+		<blueprint name="SILV_ION_BLAST_2" rarity="5"/>
+		<blueprint name="SILV_ION_HEAVY_2" rarity="5"/>
+		<blueprint name="SILV_ION_PIERCE_1" rarity="5"/>
+		<blueprint name="SILV_LASER_AUTO_1" rarity="5"/>
+		<blueprint name="SILV_LASER_BURST_SCATTER_1" rarity="5"/>
+		<blueprint name="SILV_LASER_BURST_2" rarity="5"/>
+		<blueprint name="SILV_MISSILES_ASTERIA" rarity="5"/>
+		<blueprint name="SILV_MISSILES_BURST" rarity="5"/>
+		<blueprint name="SILV_MISSILES_HYDRA" rarity="5"/>
+		<blueprint name="SILV_SHOTGUN" rarity="5"/>
+	</rarityList>
+	<startEvent>START_BEACON_ORDEN</startEvent>
+	<event name="ORDEN_DREDNOUT_QUEST" min="1" max="1"/>
+	<event name="ORDEN_STATION_EVENT" min="1" max="1"/>	
+	<event name="STORE_ORDEN" min="1" max="2"/>
+	<event name="ITEMS_ORDEN" min="1" max="2"/>
+	<event name="HOSTILE_ORDEN" min="6" max="8"/>
+	<event name="BOARDERS_ORDEN" min="1" max="1"/>
+	<event name="DISTRESS_BEACON_ORDEN" min="1" max="2"/>
+	<event name="NEBULA_ORDEN" min="0" max="5"/>
+	<event name="NOTHING_ORDEN" min="0" max="1"/>
+	<event name="QUESTS_ORDEN" min="1" max="2"/>
+	<event name="NEUTRAL_ORDEN" min="4" max="5"/>
+</sectorDescription>
+
+<sectorDescription name="ORDEN_SECTOR" minSector="3" unique="false">  
+	<nameList>
+		<name id="sectorname_ORDEN_SECTOR" short="sectorname_short_ORDEN_SECTOR"/>
+	</nameList>
+	<trackList>
+		<track>burn</track>
+		<track>nebulaha</track>
+		<track>nebulagri</track>
+	</trackList>
+	<rarityList>
+		<blueprint name="ORDEN2_MISSILES" rarity="2"/>
+		<blueprint name="ORDEN3_MISSILES" rarity="3"/>
+		<blueprint name="LASER_DUAL_ORDEN" rarity="1"/>
+		<blueprint name="LASER_DUAL_ORDEN_2" rarity="1"/>
+		<blueprint name="BA_LASER_ADDFIRE" rarity="1"/>
+		<blueprint name="LASER_HEAVY_CUMULATIVE" rarity="1"/>
+		<blueprint name="GAUSS_ORDEN_MOD1" rarity="2"/>
+		<blueprint name="GAUSS_ORDEN_MOD2" rarity="2"/>
+		<blueprint name="GAUSS_ORDEN_PP" rarity="3"/>
+		<blueprint name="GAUSS_MIXER_M1" rarity="2"/>
+		<blueprint name="GAUSS_MIXER_M2" rarity="2"/>
+		<blueprint name="GAUSS_MIXER_M3" rarity="3"/>
+		<blueprint name="BEAM_SCALPEL" rarity="1"/>
+		<blueprint name="FIRE_HELL_BEAM" rarity="3"/>
+		<blueprint name="BEAM_FIRE_SARISSA" rarity="2"/><!-- 1.25.1 -->
+		<blueprint name="MISSILES_KARAKURT" rarity="1"/>
+		<blueprint name="MISSILES_V3" rarity="2"/>
+		<blueprint name="MESON_CANNON" rarity="2"/>
+		<blueprint name="ION_HEAVY_FIRE_1" rarity="2"/>
+		<blueprint name="ION_HEAVY_FIRE_2" rarity="2"/>
+		<blueprint name="ION_HEAVY_FIRE_3" rarity="2"/>
+		<blueprint name="ION_BLAST_FIRE_1" rarity="1"/>
+		<blueprint name="ION_BLAST_FIRE_2" rarity="1"/>
+		<blueprint name="ION_BLAST_FIRE_3" rarity="1"/>
+	</rarityList>
+	<startEvent>START_BEACON_ORDEN</startEvent>
+	<event name="STORE_ORDEN" min="1" max="2"/>
+	<event name="ITEMS_ORDEN" min="1" max="2"/>
+	<event name="HOSTILE_ORDEN" min="6" max="8"/>
+	<event name="BOARDERS_ORDEN" min="1" max="1"/>
+	<event name="DISTRESS_BEACON_ORDEN" min="1" max="2"/>
+	<event name="NEBULA_ORDEN" min="0" max="5"/>
+	<event name="NOTHING_ORDEN" min="0" max="1"/>
+	<event name="QUESTS_ORDEN" min="1" max="2"/>
+	<event name="NEUTRAL_ORDEN" min="5" max="6"/>
+</sectorDescription>
+
+<sectorDescription name="HAL_SECTOR" minSector="3" unique="false"> <!-- 1.21 -->
+	<nameList>
+		<name id="sectorname_HAL_SECTOR" short="sectorname_short_HAL_SECTOR"/>
+	</nameList>
+	<trackList>
+		<track>nebulagri</track>
+		<track>nebulaha</track>
+		<track>burn</track>
+	</trackList>
+	<startEvent>START_BEACON_HAL</startEvent>
+	<event name="STORE_HAL" min="1" max="2"/>
+	<event name="ITEMS_HAL" min="1" max="2"/>
+	<event name="HOSTILE_HAL" min="7" max="9"/>
+	<event name="DISTRESS_BEACON_HAL" min="1" max="2"/>
+	<event name="NEBULA_HAL" min="0" max="5"/>
+	<event name="NOTHING_HAL" min="0" max="1"/>
+	<event name="QUESTS_HAL" min="1" max="1"/><!-- 1.25, max was 2, see below -->
+	<event name="NEBULA_QUESTS_HAL" min="0" max="1"/><!-- 1.25 -->
+	<event name="NEUTRAL_HAL" min="5" max="6"/>
+</sectorDescription>
+
+<sectorDescription name="HAL_SECTOR_HOME" minSector="4" unique="true"> <!-- 1.21 -->
+	<nameList>
+		<name id="sectorname_HAL_SECTOR_HOME" short="sectorname_short_HAL_SECTOR_HOME"/>
+	</nameList>
+	<trackList>
+		<track>incursor</track>
+	</trackList>
+	<rarityList><!-- 1.26.4 -->
+		<blueprint name="SILV_BEAM_1" rarity="5"/>
+		<blueprint name="SILV_BOMB_BREACH_3" rarity="5"/>
+		<blueprint name="SILV_BOMB_FIRE_2" rarity="5"/>
+		<blueprint name="SILV_ION_BLAST_2" rarity="5"/>
+		<blueprint name="SILV_ION_HEAVY_2" rarity="5"/>
+		<blueprint name="SILV_ION_PIERCE_1" rarity="5"/>
+		<blueprint name="SILV_LASER_AUTO_1" rarity="5"/>
+		<blueprint name="SILV_LASER_BURST_SCATTER_1" rarity="5"/>
+		<blueprint name="SILV_LASER_BURST_2" rarity="5"/>
+		<blueprint name="SILV_MISSILES_ASTERIA" rarity="5"/>
+		<blueprint name="SILV_MISSILES_BURST" rarity="5"/>
+		<blueprint name="SILV_MISSILES_HYDRA" rarity="5"/>
+		<blueprint name="SILV_SHOTGUN" rarity="5"/>
+	</rarityList>
+	<startEvent>START_BEACON_HAL</startEvent>
+	<event name="HAL_BOSS_FIGHT" min="1" max="1"/>
+	<event name="MEGADEATH" min="1" max="1"/><!-- 1.22  -->
+	<event name="STORE_HAL" min="1" max="2"/>
+	<event name="ITEMS_HAL" min="1" max="2"/>
+	<event name="HOSTILE_HAL" min="6" max="8"/><!-- 1.22, was 7-9  -->
+	<event name="DISTRESS_BEACON_HAL" min="1" max="2"/>
+	<event name="NEBULA_HAL" min="0" max="5"/>
+	<event name="NOTHING_HAL" min="0" max="1"/>
+	<event name="QUESTS_HAL" min="1" max="1"/><!-- 1.25, max was 2, see below -->
+	<event name="NEBULA_QUESTS_HAL" min="0" max="1"/><!-- 1.25 -->
+	<event name="NEUTRAL_HAL" min="4" max="5"/>
+</sectorDescription>
+
+<sectorDescription name="MANTIS_SECTOR" minSector="0" unique="false"> 
+	<nameList>
+		<name id="sectorname_MANTIS_SECTOR" short="sectorname_short_MANTIS_SECTOR"/>
+	</nameList>
+	<trackList>
+		<track>mantis</track>
+		<!-- <track>blackhole</track> -->
+		<track>debris</track>	
+		<track>void</track>
+	</trackList>
+	<rarityList>
+		<blueprint name="engi" rarity="3"/>
+		<blueprint name="mantis" rarity="1"/>
+		<blueprint name="energy" rarity="0"/>
+		<blueprint name="slug" rarity="0"/>
+		<blueprint name="rock" rarity="4"/>
+		<blueprint name="human" rarity="2"/>
+	</rarityList>
+	<startEvent>START_BEACON_MANTIS</startEvent>
+	<event name="STORE_MANTIS" min="1" max="2"/>
+	<event name="NOTHING_MANTIS" min="0" max="1"/>
+	<event name="DISTRESS_BEACON_MANTIS" min="1" max="3"/>
+	<event name="HOSTILE_MANTIS" min="6" max="7"/>
+	<event name="BOARDERS_MANTIS" min="1" max="2"/>
+	<event name="ITEMS" min="1" max="2"/>
+	<event name="NEUTRAL_MANTIS" min="6" max="7"/>
+</sectorDescription>
+
+<sectorDescription name="MANTIS_HOME" minSector="3" unique="true"> <!-- 1.22, minSector was 2 --> 
+	<nameList>
+		<name id="sectorname_MANTIS_HOME" short="sectorname_short_MANTIS_HOME"/>
+	</nameList>
+	<trackList>
+		<track>mantis</track>
+		<!-- <track>blackhole</track> -->
+		<track>debris</track>
+		<track>void</track>
+	</trackList>
+	<rarityList>
+		<blueprint name="engi" rarity="3"/>
+		<blueprint name="mantis" rarity="1"/>
+		<blueprint name="energy" rarity="0"/>
+		<blueprint name="slug" rarity="0"/>
+		<blueprint name="rock" rarity="4"/>
+		<blueprint name="human" rarity="2"/>
+		<!-- 1.26.4 -->
+		<blueprint name="SILV_BEAM_1" rarity="5"/>
+		<blueprint name="SILV_BOMB_BREACH_3" rarity="5"/>
+		<blueprint name="SILV_BOMB_FIRE_2" rarity="5"/>
+		<blueprint name="SILV_ION_BLAST_2" rarity="5"/>
+		<blueprint name="SILV_ION_HEAVY_2" rarity="5"/>
+		<blueprint name="SILV_ION_PIERCE_1" rarity="5"/>
+		<blueprint name="SILV_LASER_AUTO_1" rarity="5"/>
+		<blueprint name="SILV_LASER_BURST_SCATTER_1" rarity="5"/>
+		<blueprint name="SILV_LASER_BURST_2" rarity="5"/>
+		<blueprint name="SILV_MISSILES_ASTERIA" rarity="5"/>
+		<blueprint name="SILV_MISSILES_BURST" rarity="5"/>
+		<blueprint name="SILV_MISSILES_HYDRA" rarity="5"/>
+		<blueprint name="SILV_SHOTGUN" rarity="5"/>
+	</rarityList>
+	<startEvent>START_BEACON_MANTIS</startEvent>
+	<event name="MANTIS_PRO_EVENT" min="1" max="1"/>	
+	<event name="MANTIS_BOSS_FIRST" min="1" max="1"/><!-- 1.22 -->
+	<event name="MANTIS_NAMED_THIEF" min="1" max="1"/>
+	<event name="STORE_MANTIS" min="1" max="2"/>
+	<event name="NOTHING_MANTIS" min="0" max="1"/>
+	<event name="DISTRESS_BEACON_MANTIS" min="1" max="3"/>
+	<event name="HOSTILE_MANTIS" min="5" max="6"/><!-- 1.22, was 6-7 -->
+	<event name="BOARDERS_MANTIS" min="1" max="2"/>
+	<event name="ITEMS" min="1" max="2"/>
+	<event name="NEUTRAL_MANTIS" min="6" max="7"/>
+</sectorDescription>
+
+
+<!-- -
+NEBULA SECTORS
+ -->
+ 
+ 
+<!-- 1.25 -->
+<!-- <sectorDescription name="STANDARD_SPACE" minSector="0" unique="false"> use for testing -->
+<sectorDescription name="SLURM_SECTOR" minSector="3" unique="true">
+	<nameList>
+		<name id="sectorname_SLURM_SECTOR" short="sectorname_short_SLURM_SECTOR"/>
+	</nameList>
+	<trackList>
+		<track>kepler</track>
+	</trackList>
+	<rarityList>
+		<blueprint name="engi" rarity="4"/>
+		<blueprint name="mantis" rarity="4"/>
+		<blueprint name="energy" rarity="4"/>
+		<blueprint name="slug" rarity="1"/>
+		<blueprint name="rock" rarity="4"/>
+		<blueprint name="human" rarity="2"/>
+		
+		<blueprint name="PREIGNITE_SHOTGUN_IMPULSE_1" rarity="2"/>
+		<blueprint name="PREIGNITE_SHOTGUN_IMPULSE_2" rarity="3"/>
+		<blueprint name="PREIGNITE_SHOTGUN_IMPULSE_3" rarity="4"/>
+		<blueprint name="PREIGNITE_PP_IMPULSE_1" rarity="2"/>
+		<blueprint name="PREIGNITE_PP_IMPULSE_2" rarity="3"/>
+		<blueprint name="PREIGNITE_PP_IMPULSE_3" rarity="4"/>
+		<blueprint name="PREIGNITE_ION_IMPULSE_1" rarity="2"/>
+		<blueprint name="PREIGNITE_ION_IMPULSE_2" rarity="3"/>
+		<blueprint name="PREIGNITE_ION_IMPULSE_3" rarity="4"/>
+		<blueprint name="PREIGNITE_PLASMA_IMPULSE_1" rarity="2"/>
+		<blueprint name="PREIGNITE_PLASMA_IMPULSE_2" rarity="3"/>
+		<blueprint name="PREIGNITE_PLASMA_IMPULSE_3" rarity="4"/>
+	</rarityList>
+	<startEvent>START_BEACON_SLURM</startEvent>
+	<event name="SLURM_BOSS_EVENT" min="1" max="1"/>
+	<event name="ITEMS" min="0" max="1"/>
+	<event name="NOTHING_SLURM" min="0" max="1"/>
+	<event name="HOSTILE_SLURM" min="2" max="4"/>
+	<event name="DISTRESS_BEACON_SLURM" min="2" max="2"/>
+	<event name="NEUTRAL_SLURM" min="3" max="4"/>
+	<event name="NEUTRAL" min="1" max="2"/>
+	
+	<event name="NEBULA_ITEMS" min="0" max="2"/>
+	<event name="NEBULA_DISTRESS_BEACON_SLURM" min="1" max="2"/>
+	<event name="NEBULA_NOTHING_SLURM" min="1" max="1"/>
+	<event name="NEBULA_HOSTILE_SLURM" min="2" max="4"/>
+	<event name="NEBULA_NEUTRAL_SLURM" min="3" max="4"/>
+	<event name="NEBULA_STORE_SLURM" min="0" max="3"/>
+</sectorDescription>
+
+<sectorDescription name="NEBULA_SECTOR" minSector="0" unique="false"> 
+	<nameList>
+		<name id="sectorname_NEBULA_SECTOR" short="sectorname_short_NEBULA_SECTOR"/>
+	</nameList>
+	<trackList>
+		<track>deepspace</track>
+		<track>vacuum</track>
+		<track>void</track>
+		<track>infinity</track>
+	</trackList>
+	<rarityList>
+		<blueprint name="engi" rarity="4"/>
+		<blueprint name="mantis" rarity="4"/>
+		<blueprint name="energy" rarity="4"/>
+		<blueprint name="slug" rarity="3"/>
+		<blueprint name="rock" rarity="4"/>
+		<blueprint name="human" rarity="1"/>
+		
+		<blueprint name="PREIGNITE_SHOTGUN_IMPULSE_1" rarity="2"/><!-- 1.23 -->
+		<blueprint name="PREIGNITE_SHOTGUN_IMPULSE_2" rarity="3"/><!-- 1.23 -->
+		<blueprint name="PREIGNITE_SHOTGUN_IMPULSE_3" rarity="4"/><!-- 1.23 -->
+		<blueprint name="PREIGNITE_PP_IMPULSE_1" rarity="2"/><!-- 1.23 -->
+		<blueprint name="PREIGNITE_PP_IMPULSE_2" rarity="3"/><!-- 1.23 -->
+		<blueprint name="PREIGNITE_PP_IMPULSE_3" rarity="4"/><!-- 1.23 -->
+		<blueprint name="PREIGNITE_ION_IMPULSE_1" rarity="2"/><!-- 1.23 -->
+		<blueprint name="PREIGNITE_ION_IMPULSE_2" rarity="3"/><!-- 1.23 -->
+		<blueprint name="PREIGNITE_ION_IMPULSE_3" rarity="4"/><!-- 1.23 -->
+		<blueprint name="PREIGNITE_PLASMA_IMPULSE_1" rarity="2"/><!-- 1.23 -->
+		<blueprint name="PREIGNITE_PLASMA_IMPULSE_2" rarity="3"/><!-- 1.23 -->
+		<blueprint name="PREIGNITE_PLASMA_IMPULSE_3" rarity="4"/><!-- 1.23 -->
+	</rarityList>
+	<startEvent>START_BEACON_NEBULA</startEvent>
+	<event name="STORE" min="0" max="1"/>
+	<event name="ITEMS" min="1" max="3"/>
+	<event name="NEBULA_STORE" min="1" max="1"/>
+	<event name="NEBULA_EMPTY" min="1" max="2"/>
+	<event name="NEBULA_HOSTILE" min="5" max="6"/>
+	<event name="NEBULA_NEUTRAL" min="7" max="8"/>
+	<event name="DISTRESS_BEACON" min="1" max="3"/>
+</sectorDescription>
+
+<sectorDescription name="AVATAR_SECTOR" minSector="2" unique="false"> 
+	<nameList>
+		<name id="sectorname_AVATAR_SECTOR" short="sectorname_short_AVATAR_SECTOR"/>
+	</nameList>
+	<trackList>
+		<track>void2</track><!-- 1.27.1 -->
+		<track>avatar</track>
+	</trackList>
+	<rarityList>
+		<blueprint name="engi" rarity="0"/>
+		<blueprint name="mantis" rarity="0"/>
+		<blueprint name="energy" rarity="0"/>
+		<blueprint name="slug" rarity="4"/>
+		<blueprint name="rock" rarity="0"/>
+		<blueprint name="human" rarity="0"/>
+		<blueprint name="ghost" rarity="1"/>
+		
+		<blueprint name="PREIGNITE_SHOTGUN_IMPULSE_1" rarity="2"/><!-- 1.23 -->
+		<blueprint name="PREIGNITE_SHOTGUN_IMPULSE_2" rarity="3"/><!-- 1.23 -->
+		<blueprint name="PREIGNITE_SHOTGUN_IMPULSE_3" rarity="4"/><!-- 1.23 -->
+		<blueprint name="PREIGNITE_PP_IMPULSE_1" rarity="2"/><!-- 1.23 -->
+		<blueprint name="PREIGNITE_PP_IMPULSE_2" rarity="3"/><!-- 1.23 -->
+		<blueprint name="PREIGNITE_PP_IMPULSE_3" rarity="4"/><!-- 1.23 -->
+		<blueprint name="PREIGNITE_ION_IMPULSE_1" rarity="2"/><!-- 1.23 -->
+		<blueprint name="PREIGNITE_ION_IMPULSE_2" rarity="3"/><!-- 1.23 -->
+		<blueprint name="PREIGNITE_ION_IMPULSE_3" rarity="4"/><!-- 1.23 -->
+		<blueprint name="PREIGNITE_PLASMA_IMPULSE_1" rarity="2"/><!-- 1.23 -->
+		<blueprint name="PREIGNITE_PLASMA_IMPULSE_2" rarity="3"/><!-- 1.23 -->
+		<blueprint name="PREIGNITE_PLASMA_IMPULSE_3" rarity="4"/><!-- 1.23 -->
+	</rarityList>
+	<startEvent>START_BEACON_AVATAR</startEvent>
+	<event name="TUMAN_OFF_AVATAR" min="1" max="3"/>
+	<event name="NEBULA_ITEMS_AVATAR" min="0" max="2"/>
+	<event name="NEBULA_STORE_AVATAR" min="1" max="3"/>
+	<event name="NEBULA_EMPTY" min="1" max="3"/>
+	<event name="NEBULA_HOSTILE_AVATAR" min="6" max="8"/>
+	<event name="NEBULA_DISTRESS_BEACON_AVATAR" min="4" max="6"/>
+</sectorDescription>
+
+<sectorDescription name="AVATAR_SECTOR_HOME" minSector="3" unique="true"> 
+	<nameList>
+		<name id="sectorname_AVATAR_SECTOR_HOME" short="sectorname_short_AVATAR_SECTOR_HOME"/>
+	</nameList>
+	<trackList>
+		<track>avatar2</track>
+	</trackList>
+	<rarityList>
+		<blueprint name="engi" rarity="0"/>
+		<blueprint name="mantis" rarity="0"/>
+		<blueprint name="energy" rarity="0"/>
+		<blueprint name="slug" rarity="4"/>
+		<blueprint name="rock" rarity="0"/>
+		<blueprint name="human" rarity="0"/>
+		<blueprint name="ghost" rarity="1"/>
+		
+		<blueprint name="PREIGNITE_SHOTGUN_IMPULSE_1" rarity="2"/><!-- 1.23 -->
+		<blueprint name="PREIGNITE_SHOTGUN_IMPULSE_2" rarity="3"/><!-- 1.23 -->
+		<blueprint name="PREIGNITE_SHOTGUN_IMPULSE_3" rarity="4"/><!-- 1.23 -->
+		<blueprint name="PREIGNITE_PP_IMPULSE_1" rarity="2"/><!-- 1.23 -->
+		<blueprint name="PREIGNITE_PP_IMPULSE_2" rarity="3"/><!-- 1.23 -->
+		<blueprint name="PREIGNITE_PP_IMPULSE_3" rarity="4"/><!-- 1.23 -->
+		<blueprint name="PREIGNITE_ION_IMPULSE_1" rarity="2"/><!-- 1.23 -->
+		<blueprint name="PREIGNITE_ION_IMPULSE_2" rarity="3"/><!-- 1.23 -->
+		<blueprint name="PREIGNITE_ION_IMPULSE_3" rarity="4"/><!-- 1.23 -->
+		<blueprint name="PREIGNITE_PLASMA_IMPULSE_1" rarity="2"/><!-- 1.23 -->
+		<blueprint name="PREIGNITE_PLASMA_IMPULSE_2" rarity="3"/><!-- 1.23 -->
+		<blueprint name="PREIGNITE_PLASMA_IMPULSE_3" rarity="4"/><!-- 1.23 -->
+		<!-- 1.26.4 -->
+		<blueprint name="SILV_BEAM_1" rarity="5"/>
+		<blueprint name="SILV_BOMB_BREACH_3" rarity="5"/>
+		<blueprint name="SILV_BOMB_FIRE_2" rarity="5"/>
+		<blueprint name="SILV_ION_BLAST_2" rarity="5"/>
+		<blueprint name="SILV_ION_HEAVY_2" rarity="5"/>
+		<blueprint name="SILV_ION_PIERCE_1" rarity="5"/>
+		<blueprint name="SILV_LASER_AUTO_1" rarity="5"/>
+		<blueprint name="SILV_LASER_BURST_SCATTER_1" rarity="5"/>
+		<blueprint name="SILV_LASER_BURST_2" rarity="5"/>
+		<blueprint name="SILV_MISSILES_ASTERIA" rarity="5"/>
+		<blueprint name="SILV_MISSILES_BURST" rarity="5"/>
+		<blueprint name="SILV_MISSILES_HYDRA" rarity="5"/>
+		<blueprint name="SILV_SHOTGUN" rarity="5"/>
+	</rarityList>
+	<startEvent>START_BEACON_AVATAR</startEvent>
+	<event name="NEBULA_AVATAR_PRO_EVENT" min="1" max="1"/>
+	<event name="NEBULA_MOTHERSHIP" min="1" max="1"/>
+	<event name="TUMAN_OFF_AVATAR" min="1" max="3"/>
+	<event name="NEBULA_ITEMS_AVATAR" min="0" max="2"/>
+	<event name="NEBULA_STORE_AVATAR" min="1" max="3"/>
+	<event name="NEBULA_EMPTY" min="1" max="3"/>
+	<event name="NEBULA_HOSTILE_AVATAR" min="5" max="7"/>
+	<event name="NEBULA_DISTRESS_BEACON_AVATAR" min="3" max="5"/>
+</sectorDescription>
+
+<sectorDescription name="SLUG_HOME" minSector="3" unique="true">    
+	<nameList>
+		<name id="sectorname_SLUG_HOME" short="sectorname_short_SLUG_HOME"/>
+	</nameList>
+	<trackList>
+		<track>slug</track>
+		<track>debris</track>
+		<!-- <track>blackhole</track> -->
+		<track>wasteland</track>
+		<track>deepspace</track>
+	</trackList>
+	<rarityList>
+		<blueprint name="engi" rarity="4"/>
+		<blueprint name="mantis" rarity="4"/>
+		<blueprint name="energy" rarity="4"/>
+		<blueprint name="slug" rarity="1"/>
+		<blueprint name="rock" rarity="4"/>
+		<blueprint name="human" rarity="2"/>
+		
+		<blueprint name="PREIGNITE_SHOTGUN_IMPULSE_1" rarity="2"/><!-- 1.23 -->
+		<blueprint name="PREIGNITE_SHOTGUN_IMPULSE_2" rarity="3"/><!-- 1.23 -->
+		<blueprint name="PREIGNITE_SHOTGUN_IMPULSE_3" rarity="4"/><!-- 1.23 -->
+		<blueprint name="PREIGNITE_PP_IMPULSE_1" rarity="2"/><!-- 1.23 -->
+		<blueprint name="PREIGNITE_PP_IMPULSE_2" rarity="3"/><!-- 1.23 -->
+		<blueprint name="PREIGNITE_PP_IMPULSE_3" rarity="4"/><!-- 1.23 -->
+		<blueprint name="PREIGNITE_ION_IMPULSE_1" rarity="2"/><!-- 1.23 -->
+		<blueprint name="PREIGNITE_ION_IMPULSE_2" rarity="3"/><!-- 1.23 -->
+		<blueprint name="PREIGNITE_ION_IMPULSE_3" rarity="4"/><!-- 1.23 -->
+		<blueprint name="PREIGNITE_PLASMA_IMPULSE_1" rarity="2"/><!-- 1.23 -->
+		<blueprint name="PREIGNITE_PLASMA_IMPULSE_2" rarity="3"/><!-- 1.23 -->
+		<blueprint name="PREIGNITE_PLASMA_IMPULSE_3" rarity="4"/><!-- 1.23 -->
+		<!-- 1.26.4 -->
+		<blueprint name="SILV_BEAM_1" rarity="5"/>
+		<blueprint name="SILV_BOMB_BREACH_3" rarity="5"/>
+		<blueprint name="SILV_BOMB_FIRE_2" rarity="5"/>
+		<blueprint name="SILV_ION_BLAST_2" rarity="5"/>
+		<blueprint name="SILV_ION_HEAVY_2" rarity="5"/>
+		<blueprint name="SILV_ION_PIERCE_1" rarity="5"/>
+		<blueprint name="SILV_LASER_AUTO_1" rarity="5"/>
+		<blueprint name="SILV_LASER_BURST_SCATTER_1" rarity="5"/>
+		<blueprint name="SILV_LASER_BURST_2" rarity="5"/>
+		<blueprint name="SILV_MISSILES_ASTERIA" rarity="5"/>
+		<blueprint name="SILV_MISSILES_BURST" rarity="5"/>
+		<blueprint name="SILV_MISSILES_HYDRA" rarity="5"/>
+		<blueprint name="SILV_SHOTGUN" rarity="5"/>
+	</rarityList>
+	<startEvent>START_BEACON_SLUG</startEvent>
+	<event name="NEBULA_JELLY_PRO_EVENT" min="1" max="1"/>
+	<event name="NEBULA_SLUG_FIGHT_UNLOCK" min="1" max="1"/>
+	<event name="STORE" min="0" max="1"/>
+	<event name="NEBULA_STORE_SLUG" min="1" max="2"/>
+	<event name="ITEMS" min="0" max="2"/>
+	<event name="NOTHING_SLUG" min="0" max="1"/>
+	<event name="HOSTILE_SLUG" min="1" max="2"/>
+	<event name="DISTRESS_BEACON_SLUG" min="1" max="2"/> <!-- 1.24 -->
+	<event name="NEBULA_DISTRESS_BEACON_SLUG" min="2" max="2"/> <!-- 1.24 -->
+	<event name="NEBULA_NOTHING_SLUG" min="1" max="1"/>
+	<event name="NEBULA_HOSTILE_SLUG" min="5" max="7"/>
+	<event name="NEBULA_STORM_SLUG" min="1" max="3"/>
+	<event name="NEBULA_NEUTRAL_SLUG" min="3" max="5"/>
+	<event name="NEUTRAL" min="1" max="2"/>
+</sectorDescription>
+
+<sectorDescription name="SLUG_SECTOR" minSector="2" unique="false">    
+	<nameList>
+		<name id="sectorname_SLUG_SECTOR" short="sectorname_short_SLUG_SECTOR"/>
+	</nameList>
+	<trackList>
+		<track>slug</track>
+		<track>debris</track>
+		<!-- <track>blackhole</track> -->
+		<track>wasteland</track>
+		<track>deepspace</track>
+	</trackList>
+	<rarityList>
+		<blueprint name="engi" rarity="4"/>
+		<blueprint name="mantis" rarity="4"/>
+		<blueprint name="energy" rarity="4"/>
+		<blueprint name="slug" rarity="1"/>
+		<blueprint name="rock" rarity="4"/>
+		<blueprint name="human" rarity="2"/>
+		
+		<blueprint name="PREIGNITE_SHOTGUN_IMPULSE_1" rarity="2"/><!-- 1.23 -->
+		<blueprint name="PREIGNITE_SHOTGUN_IMPULSE_2" rarity="3"/><!-- 1.23 -->
+		<blueprint name="PREIGNITE_SHOTGUN_IMPULSE_3" rarity="4"/><!-- 1.23 -->
+		<blueprint name="PREIGNITE_PP_IMPULSE_1" rarity="2"/><!-- 1.23 -->
+		<blueprint name="PREIGNITE_PP_IMPULSE_2" rarity="3"/><!-- 1.23 -->
+		<blueprint name="PREIGNITE_PP_IMPULSE_3" rarity="4"/><!-- 1.23 -->
+		<blueprint name="PREIGNITE_ION_IMPULSE_1" rarity="2"/><!-- 1.23 -->
+		<blueprint name="PREIGNITE_ION_IMPULSE_2" rarity="3"/><!-- 1.23 -->
+		<blueprint name="PREIGNITE_ION_IMPULSE_3" rarity="4"/><!-- 1.23 -->
+		<blueprint name="PREIGNITE_PLASMA_IMPULSE_1" rarity="2"/><!-- 1.23 -->
+		<blueprint name="PREIGNITE_PLASMA_IMPULSE_2" rarity="3"/><!-- 1.23 -->
+		<blueprint name="PREIGNITE_PLASMA_IMPULSE_3" rarity="4"/><!-- 1.23 -->
+	</rarityList>
+	<startEvent>START_BEACON_SLUG</startEvent>
+	<event name="STORE" min="0" max="1"/>
+	<event name="NEBULA_STORE_SLUG" min="1" max="2"/>
+	<event name="ITEMS" min="0" max="2"/>
+	<event name="NOTHING_SLUG" min="0" max="1"/>
+	<event name="HOSTILE_SLUG" min="1" max="2"/>
+	<event name="DISTRESS_BEACON_SLUG" min="1" max="2"/> <!-- 1.24 -->
+	<event name="NEBULA_DISTRESS_BEACON_SLUG" min="2" max="2"/> <!-- 1.24 -->
+	<event name="NEBULA_NOTHING_SLUG" min="1" max="1"/>
+	<event name="NEBULA_HOSTILE_SLUG" min="5" max="7"/>
+	<event name="NEBULA_STORM_SLUG" min="1" max="3"/>
+	<event name="NEBULA_NEUTRAL_SLUG" min="3" max="5"/>
+	<event name="NEUTRAL" min="1" max="2"/>
+</sectorDescription>
+
+<sectorDescription name="UNSTABLE_SECTOR" minSector="2" unique="false">    
+	<nameList>
+		<name id="sectorname_UNSTABLE_SECTOR" short="sectorname_short_UNSTABLE_SECTOR"/>
+	</nameList>
+	<trackList>
+		<track>vacuum</track> <!-- was deepspace -->
+		<track>solar</track> <!-- was vacuum -->
+		<track>ramble</track> <!-- was void -->
+		<track>deepspace</track> <!-- was infinity -->
+	</trackList>
+	<rarityList>
+		<blueprint name="engi" rarity="4"/>
+		<blueprint name="mantis" rarity="4"/>
+		<blueprint name="energy" rarity="4"/>
+		<blueprint name="slug" rarity="1"/>
+		<blueprint name="rock" rarity="4"/>
+		<blueprint name="human" rarity="2"/>
+		
+		<blueprint name="PREIGNITE_SHOTGUN_IMPULSE_1" rarity="2"/><!-- 1.23 -->
+		<blueprint name="PREIGNITE_SHOTGUN_IMPULSE_2" rarity="3"/><!-- 1.23 -->
+		<blueprint name="PREIGNITE_SHOTGUN_IMPULSE_3" rarity="4"/><!-- 1.23 -->
+		<blueprint name="PREIGNITE_PP_IMPULSE_1" rarity="2"/><!-- 1.23 -->
+		<blueprint name="PREIGNITE_PP_IMPULSE_2" rarity="3"/><!-- 1.23 -->
+		<blueprint name="PREIGNITE_PP_IMPULSE_3" rarity="4"/><!-- 1.23 -->
+		<blueprint name="PREIGNITE_ION_IMPULSE_1" rarity="2"/><!-- 1.23 -->
+		<blueprint name="PREIGNITE_ION_IMPULSE_2" rarity="3"/><!-- 1.23 -->
+		<blueprint name="PREIGNITE_ION_IMPULSE_3" rarity="4"/><!-- 1.23 -->
+		<blueprint name="PREIGNITE_PLASMA_IMPULSE_1" rarity="2"/><!-- 1.23 -->
+		<blueprint name="PREIGNITE_PLASMA_IMPULSE_2" rarity="3"/><!-- 1.23 -->
+		<blueprint name="PREIGNITE_PLASMA_IMPULSE_3" rarity="4"/><!-- 1.23 -->
+	</rarityList>
+	<startEvent>START_BEACON_UNSTABLE</startEvent>
+	<event name="NEBULA_STORM_STORE_UNSTABLE" min="1" max="3"/>
+	<event name="NEBULA_ITEMS_UNSTABLE" min="1" max="3"/><!-- 1.25, was 0-2 -->
+	<event name="NOTHING_UNSTABLE_1" min="0" max="1"/>
+	<event name="NEBULA_EMPTY" min="1" max="2"/>
+	<event name="HOSTILE_UNSTABLE" min="5" max="8"/>
+	<event name="DISTRESS_BEACON_UNSTABLE" min="0" max="1"/>
+	<event name="NEBULA_UNSTABLE" min="6" max="8"/><!-- 1.25, was 7-9, see above -->
+	<event name="NEUTRAL_UNSTABLE" min="2" max="4"/>
+	<event name="NEBULA_STORM_NEUTRAL_UNSTABLE" min="0" max="1"/>
+</sectorDescription>
+
+<sectorDescription name="ULTRA_UNSTABLE_SECTOR" minSector="3" unique="true"> <!-- 1.22 -->  
+	<nameList>
+		<name id="sectorname_ULTRA_UNSTABLE_SECTOR" short="sectorname_short_ULTRA_UNSTABLE_SECTOR"/>
+	</nameList>
+	<trackList>
+		<track>vacuum</track>
+		<track>solar</track>
+		<track>ramble</track>
+		<track>deepspace</track>
+	</trackList>
+	<rarityList>
+		<blueprint name="engi" rarity="4"/>
+		<blueprint name="mantis" rarity="4"/>
+		<blueprint name="energy" rarity="4"/>
+		<blueprint name="slug" rarity="1"/>
+		<blueprint name="rock" rarity="4"/>
+		<blueprint name="human" rarity="2"/>
+		
+		<blueprint name="PREIGNITE_SHOTGUN_IMPULSE_1" rarity="2"/><!-- 1.23 -->
+		<blueprint name="PREIGNITE_SHOTGUN_IMPULSE_2" rarity="3"/><!-- 1.23 -->
+		<blueprint name="PREIGNITE_SHOTGUN_IMPULSE_3" rarity="4"/><!-- 1.23 -->
+		<blueprint name="PREIGNITE_PP_IMPULSE_1" rarity="2"/><!-- 1.23 -->
+		<blueprint name="PREIGNITE_PP_IMPULSE_2" rarity="3"/><!-- 1.23 -->
+		<blueprint name="PREIGNITE_PP_IMPULSE_3" rarity="4"/><!-- 1.23 -->
+		<blueprint name="PREIGNITE_ION_IMPULSE_1" rarity="2"/><!-- 1.23 -->
+		<blueprint name="PREIGNITE_ION_IMPULSE_2" rarity="3"/><!-- 1.23 -->
+		<blueprint name="PREIGNITE_ION_IMPULSE_3" rarity="4"/><!-- 1.23 -->
+		<blueprint name="PREIGNITE_PLASMA_IMPULSE_1" rarity="2"/><!-- 1.23 -->
+		<blueprint name="PREIGNITE_PLASMA_IMPULSE_2" rarity="3"/><!-- 1.23 -->
+		<blueprint name="PREIGNITE_PLASMA_IMPULSE_3" rarity="4"/><!-- 1.23 -->
+		<!-- 1.26.4 -->
+		<blueprint name="SILV_BEAM_1" rarity="5"/>
+		<blueprint name="SILV_BOMB_BREACH_3" rarity="5"/>
+		<blueprint name="SILV_BOMB_FIRE_2" rarity="5"/>
+		<blueprint name="SILV_ION_BLAST_2" rarity="5"/>
+		<blueprint name="SILV_ION_HEAVY_2" rarity="5"/>
+		<blueprint name="SILV_ION_PIERCE_1" rarity="5"/>
+		<blueprint name="SILV_LASER_AUTO_1" rarity="5"/>
+		<blueprint name="SILV_LASER_BURST_SCATTER_1" rarity="5"/>
+		<blueprint name="SILV_LASER_BURST_2" rarity="5"/>
+		<blueprint name="SILV_MISSILES_ASTERIA" rarity="5"/>
+		<blueprint name="SILV_MISSILES_BURST" rarity="5"/>
+		<blueprint name="SILV_MISSILES_HYDRA" rarity="5"/>
+		<blueprint name="SILV_SHOTGUN" rarity="5"/>
+	</rarityList>
+	<startEvent>START_BEACON_UNSTABLE</startEvent>
+	<event name="BATTLE_PIRATE_BOSS" min="1" max="1"/>
+	<event name="SILVER_SHAMAN_EVENT" min="1" max="1"/><!-- 1.26.4 -->
+	<event name="APLUS_BLACK_HOLE_START" min="1" max="1"/>
+	<event name="HALCYON_EVENT" min="1" max="1"/>
+	<event name="NEBULA_BOSS_HACKER" min="1" max="1"/><!-- 1.22.2 -->
+	<event name="NEBULA_STORM_STORE_UNSTABLE" min="1" max="3"/>
+	<event name="NEBULA_ITEMS_UNSTABLE" min="1" max="3"/><!-- 1.25 was 0-2 -->
+	<event name="NOTHING_UNSTABLE_1" min="0" max="1"/>
+	<event name="NEBULA_EMPTY" min="1" max="2"/>
+	<event name="HOSTILE_UNSTABLE" min="2" max="5"/><!-- 1.26.4 was 3-6, see above | 1.25 was 4-7 -->
+	<event name="DISTRESS_BEACON_UNSTABLE" min="0" max="1"/>
+	<event name="NEBULA_UNSTABLE" min="4" max="6"/><!-- 1.25 was 5-7, see above | 1.22.2, was 6-8 -->
+	<event name="NEUTRAL_UNSTABLE" min="1" max="3"/>
+	<event name="NEBULA_STORM_NEUTRAL_UNSTABLE" min="0" max="1"/>
+</sectorDescription>
+
+
+<!-- -
+UNKNOWN SECTORS
+
+make this have the unique map exploring (cant see all nodes, slow rebel movement), filled with many empty, some normal pirates/civilizations, + some special "discover new aliens" events
+ -->
+
+
+<sectorDescription name="DEEP_SPACE_SECTOR" minSector="0" unique="false">   
+	<nameList>
+	</nameList>
+	<event name="STORE" min="2" max="4"/>
+	
+	
+</sectorDescription>
+
+<sectorDescription name="ABANDONED_SECTOR" minSector="0" unique="false">   
+	<nameList>
+	</nameList>
+	<event name="STORE" min="2" max="4"/>
+	
+	
+</sectorDescription>
+
+
+<sectorDescription name="ZOLTAN_SECTOR" minSector="1" unique="false">   
+	<nameList>
+		<name id="sectorname_ZOLTAN_SECTOR" short="sectorname_short_ZOLTAN_SECTOR"/>
+	</nameList>
+	<trackList>
+		<track>zoltan</track>
+		<track>calm</track>
+		<track>cosmos</track>
+	</trackList>
+	<rarityList>
+		<blueprint name="engi" rarity="2"/><!-- 1.21 -->
+		<blueprint name="mantis" rarity="4"/>
+		<blueprint name="energy" rarity="1"/>
+		<blueprint name="slug" rarity="4"/>
+		<blueprint name="rock" rarity="4"/>
+		<blueprint name="human" rarity="3"/>
+	</rarityList>
+	<startEvent>START_BEACON_ZOLTAN</startEvent>
+	<event name="ZOLTAN_CREW_STUDY" min="1" max="1"/>
+	<event name="STORE_ZOLTAN" min="2" max="3"/>
+	<event name="NOTHING_ZOLTAN" min="0" max="1"/>
+	<event name="DISTRESS_BEACON_ZOLTAN" min="1" max="2"/>
+	<event name="NEBULA_ZOLTAN" min="2" max="6"/>
+	<event name="HOSTILE_ZOLTAN" min="6" max="8"/>
+	<event name="BOARDERS_ZOLTAN" min="1" max="2"/>
+	<event name="ITEM_ZOLTAN" min="1" max="2"/>
+	<event name="QUESTS_ZOLTAN" min="1" max="1"/>
+	<event name="NEUTRAL_ZOLTAN" min="6" max="7"/>
+</sectorDescription>
+
+<sectorDescription name="ZOLTAN_HOME" minSector="3" unique="true">  
+	<nameList>
+		<name id="sectorname_ZOLTAN_HOME" short="sectorname_short_ZOLTAN_HOME"/>
+	</nameList>
+	<trackList>
+		<track>zoltan</track>
+		<track>calm</track>
+		<track>cosmos</track>
+	</trackList>
+	<rarityList>
+		<blueprint name="engi" rarity="2"/><!-- 1.21 -->
+		<blueprint name="mantis" rarity="4"/>
+		<blueprint name="energy" rarity="1"/>
+		<blueprint name="slug" rarity="4"/>
+		<blueprint name="rock" rarity="4"/>
+		<blueprint name="human" rarity="3"/>
+		<!-- 1.26.4 -->
+		<blueprint name="SILV_BEAM_1" rarity="5"/>
+		<blueprint name="SILV_BOMB_BREACH_3" rarity="5"/>
+		<blueprint name="SILV_BOMB_FIRE_2" rarity="5"/>
+		<blueprint name="SILV_ION_BLAST_2" rarity="5"/>
+		<blueprint name="SILV_ION_HEAVY_2" rarity="5"/>
+		<blueprint name="SILV_ION_PIERCE_1" rarity="5"/>
+		<blueprint name="SILV_LASER_AUTO_1" rarity="5"/>
+		<blueprint name="SILV_LASER_BURST_SCATTER_1" rarity="5"/>
+		<blueprint name="SILV_LASER_BURST_2" rarity="5"/>
+		<blueprint name="SILV_MISSILES_ASTERIA" rarity="5"/>
+		<blueprint name="SILV_MISSILES_BURST" rarity="5"/>
+		<blueprint name="SILV_MISSILES_HYDRA" rarity="5"/>
+		<blueprint name="SILV_SHOTGUN" rarity="5"/>
+	</rarityList>
+	<startEvent>START_BEACON_ZOLTAN</startEvent>
+	<event name="ZOLTAN_PRO_EVENT" min="1" max="1"/>
+	<event name="ZOLTAN_CREW_STUDY" min="1" max="1"/>
+	<event name="ZOLTAN_PEACE_QUEST" min="1" max="1"/>
+	<event name="ZOLTAN_BOSS_EVENT" min="1" max="1"/><!-- 1.24 -->
+	<event name="STORE_ZOLTAN" min="2" max="3"/>
+	<event name="NOTHING_ZOLTAN" min="0" max="1"/>
+	<event name="DISTRESS_BEACON_ZOLTAN" min="1" max="2"/>
+	<event name="NEBULA_ZOLTAN" min="2" max="6"/>
+	<event name="HOSTILE_ZOLTAN" min="6" max="8"/>
+	<event name="BOARDERS_ZOLTAN" min="1" max="2"/>
+	<event name="ITEM_ZOLTAN" min="1" max="2"/>
+	<event name="QUESTS_ZOLTAN" min="1" max="1"/>
+	<event name="NEUTRAL_ZOLTAN" min="4" max="5"/><!-- 1.24 -->
+</sectorDescription>
+
+<sectorDescription name="ZOLTON_SECTOR" minSector="2" unique="false">   
+	<nameList>
+	<name id="sectorname_ZOLTON_SECTOR" short="sectorname_short_ZOLTON_SECTOR"/>
+	</nameList>
+	<trackList>
+		<track>cosmos</track>
+		<track>calm</track>
+		<track>zoltan</track>
+	</trackList>
+	<rarityList>
+		<blueprint name="engi" rarity="2"/>
+		<blueprint name="mantis" rarity="4"/>
+		<blueprint name="energy" rarity="1"/>
+		<blueprint name="slug" rarity="4"/>
+		<blueprint name="rock" rarity="4"/>
+		<blueprint name="human" rarity="3"/>
+		<!-- zolton weapons -->
+		<blueprint name="EP_BA_BEAM_BARDICHE" rarity="2"/>
+		<blueprint name="EP_BA_BEAM_BO" rarity="3"/>
+		<blueprint name="EP_BA_BEAM_SCYTHE" rarity="4"/>
+		<blueprint name="EP_BA_BEAM_HASTA" rarity="1"/>
+		<blueprint name="EP_BA_BEAM_NAGINATA" rarity="4"/>
+		<blueprint name="EP_BA_BEAM_FLAIL_DAMAGE" rarity="5"/>
+		<blueprint name="EP_BA_BEAM_SHEST" rarity="4"/>
+		<blueprint name="EP_BA_BEAM_K1" rarity="2"/>
+		<blueprint name="EP_BA_BEAM_K2" rarity="3"/>
+		<blueprint name="EP_BEAM_2" rarity="4"/>
+		<blueprint name="EP_BEAM_3" rarity="5"/>
+		<blueprint name="EP_BEAM_BIOFIRE" rarity="5"/>
+		<blueprint name="EP_BEAM_FAUCHARD" rarity="5"/>
+		<blueprint name="EP_BEAM_GUISARME" rarity="4"/>
+		<blueprint name="EP_BEAM_LONG" rarity="2"/>
+		<blueprint name="EP_BEAM_SP_KATANA" rarity="4"/>
+		<blueprint name="EP_BEAM_SP_DAITO" rarity="3"/>
+		<blueprint name="BA_ION_HVBURST_1" rarity="3"/>
+		<blueprint name="BA_ION_HVBURST_2" rarity="4"/>
+		<blueprint name="BA_ION_HVBURST_3" rarity="5"/>
+		<!-- con weapons -->
+		<blueprint name="UWB_LASER_BURST_1" rarity="1"/>
+		<blueprint name="UWB_LASER_HEAVY_1" rarity="2"/>
+		<blueprint name="UWB_LASER_STANDARD_1" rarity="1"/>
+		<blueprint name="UWB_LASER_STANDARD_2" rarity="1"/>
+		<blueprint name="UWB_LASER_DUAL_1" rarity="2"/>
+		<blueprint name="UWB_LASER_DUAL_2" rarity="3"/>
+		<blueprint name="UWB_BA_SHOTGUN_SMALL" rarity="1"/>
+		<blueprint name="UWB_BA_PLASMA_1" rarity="3"/>
+		<blueprint name="UWB_BA_LASER_AUTO_1" rarity="1"/>
+		<blueprint name="UWB_BA_LASER_AUTO_2" rarity="3"/>
+		<blueprint name="UWB_BA_LASER_BURST_SCATTER_1" rarity="2"/>
+		<blueprint name="UWB_BA_LASER_BURST_SCATTER_2" rarity="3"/>
+		<blueprint name="UWB_BA_LASER_HEAVY_SCATTER_1" rarity="1"/>
+		<blueprint name="UWB_BA_LASER_HEAVY_SCATTER_2" rarity="3"/>
+		<blueprint name="UWB_BA_LASER_HULL_SMALL" rarity="1"/>
+		<blueprint name="UWB_SHTURM_LASER_1" rarity="2"/>
+		<blueprint name="UWB_SHTURM_LASER_2" rarity="4"/>
+		<blueprint name="UWB_LASER_BURST_2" rarity="3"/>
+		<blueprint name="UWB_LASER_HEAVY_2" rarity="4"/>
+		<blueprint name="UWB_SHOTGUN" rarity="3"/>
+		<blueprint name="UWB_SHOTGUN_2" rarity="5"/>
+		<blueprint name="UWB_BA_PLASMA_2" rarity="4"/>
+		<blueprint name="UWB_BA_LASER_AUTO_3" rarity="5"/>
+		<blueprint name="UWB_BA_LASER_BURST_SCATTER_3" rarity="2"/>
+		<blueprint name="UWB_BA_LASER_ARTILLERY_1" rarity="4"/>
+		<blueprint name="UWB_BA_LASER_HULLCRUSHER" rarity="3"/>
+		<blueprint name="UWB_LASER_HULL_1" rarity="2"/>
+		<blueprint name="UWB_LASER_HULL_2" rarity="4"/>
+		<blueprint name="UWB_LASER_IMP_2" rarity="3"/>
+		<blueprint name="UWB_LASER_IMP_3" rarity="4"/>
+		<blueprint name="UWB_LASER_LIGHT_1" rarity="3"/>
+		<blueprint name="UWB_LASER_LIGHT_2" rarity="3"/>
+		<blueprint name="UWB_LASER_LIGHT_SCATTER_1" rarity="3"/>
+		<blueprint name="UWB_LASER_LIGHT_SCATTER_2" rarity="3"/>
+		<blueprint name="UWB_HEAVY_MINIGUN" rarity="5"/>
+		<blueprint name="UWB_LASER_CHAINGUN" rarity="5"/>
+		<blueprint name="UWB_BA_LASER_WAR_1" rarity="2"/>
+		<blueprint name="UWB_BA_LASER_WAR_2" rarity="3"/>
+		<blueprint name="UWB_BA_LASER_WAR_3" rarity="4"/>
+		<blueprint name="UWB_LASER_SUPER_HEAVY_1" rarity="3"/>
+		<blueprint name="UWB_LASER_SUPER_HEAVY_2" rarity="5"/>
+		<blueprint name="UWB_BA_BEAM_BATON" rarity="3"/>
+		<blueprint name="UWB_BA_BEAM_BO" rarity="3"/>
+		<blueprint name="UWB_BA_BEAM_BIO_2" rarity="3"/>
+		<blueprint name="UWB_BEAM_1" rarity="2"/>
+		<blueprint name="UWB_BEAM_LONG" rarity="2"/>
+		<blueprint name="UWB_BEAM_GUISARME" rarity="4"/>
+		<blueprint name="UWB_BA_BEAM_HASTA" rarity="1"/>
+		<blueprint name="UWB_BA_BEAM_HULL_SMALL" rarity="3"/>
+		<blueprint name="UWB_BA_BEAM_AUTO" rarity="2"/>
+		<blueprint name="UWB_BA_BEAM_BARDICHE" rarity="2"/>
+		<blueprint name="UWB_BA_BEAM_SCYTHE" rarity="4"/>
+		<blueprint name="UWB_BEAM_1_2" rarity="3"/>
+		<blueprint name="UWB_BEAM_HULL" rarity="4"/>
+		<blueprint name="UWB_BEAM_FIRE" rarity="4"/>
+		<blueprint name="UWB_BEAM_2" rarity="4"/>
+		<blueprint name="UWB_BEAM_FAUCHARD" rarity="5"/>
+		<blueprint name="UWB_BEAM_3" rarity="5"/>
+		<blueprint name="UWB_MISSILES_1" rarity="1"/>
+		<blueprint name="UWB_MISSILES_2_PLAYER" rarity="1"/>
+		<blueprint name="UWB_MISSILES_SYS1" rarity="2"/>
+		<blueprint name="UWB_MISSILES_SYS2" rarity="3"/>
+		<blueprint name="UWB_BA_MISSILES_ASTERIA" rarity="2"/>
+		<blueprint name="UWB_BA_MISSILES_HULL_SMALL" rarity="2"/>
+		<blueprint name="UWB_MISSILES_3" rarity="2"/>
+		<blueprint name="UWB_MISSILES_BURST" rarity="3"/>
+		<blueprint name="UWB_BA_MISSILES_ONI" rarity="4"/>
+		<blueprint name="UWB_MISSILES_HULL" rarity="4"/>
+		<blueprint name="UWB_BA_MISSILES_4" rarity="3"/>
+		<blueprint name="UWB_BA_MISSILES_PERYTON" rarity="2"/>
+		<blueprint name="UWB_BA_MISSILES_COCKATRICE" rarity="3"/>
+		<blueprint name="UWB_MISSILES_MEGA" rarity="5"/>
+		<blueprint name="UWB_ION_STUN" rarity="3"/>
+		<blueprint name="UWB_BA_SHOTGUN_ION_1" rarity="3"/>
+		<blueprint name="UWB_BA_ION_2_STUN" rarity="4"/>
+		<blueprint name="UWB_BA_ION_BURST_1_STUN" rarity="4"/>
+		<blueprint name="UWB_BA_ION_BURST_1" rarity="3"/>
+		<blueprint name="UWB_ION_HEAVY_1" rarity="3"/>
+		<blueprint name="UWB_ION_BLAST_1" rarity="2"/>
+		<blueprint name="UWB_BA_SHOTGUN_ION_2" rarity="4"/>
+		<blueprint name="UWB_BA_ION_BURST_2" rarity="4"/>
+		<blueprint name="UWB_ION_BLAST_2" rarity="3"/>
+		<blueprint name="UWB_ION_BLAST_3" rarity="4"/>
+		<blueprint name="UWB_JADE_CANNON_PLAYER" rarity="5"/>
+	</rarityList>
+	<startEvent>START_BEACON_ZOLTON</startEvent>
+	<event name="STORE_ZOLTON" min="2" max="3"/>
+	<event name="NOTHING_ZOLTON" min="0" max="1"/>
+	<event name="DISTRESS_BEACON_ZOLTON" min="1" max="2"/>
+	<event name="CAPSULE_EVENT" min="0" max="1"/><!-- 1.26.3 -->
+	<event name="NEBULA" min="0" max="3"/>
+	<event name="NEBULA_ZOLTON" min="2" max="3"/>
+	<event name="HOSTILE_ZOLTON" min="5" max="6"/>
+	<event name="BOARDERS_ZOLTON" min="1" max="2"/>
+	<event name="ITEM_ZOLTON" min="1" max="2"/>
+	<event name="QUESTS_ZOLTON" min="1" max="1"/>
+	<event name="NEUTRAL_ZOLTON" min="8" max="9"/><!-- 1.26.3 max was 10 -->
+</sectorDescription>
+
+
+<sectorDescription name="ZOLTON_HOME" minSector="3" unique="true">  
+	<nameList>
+		<name id="sectorname_ZOLTON_HOME" short="sectorname_short_ZOLTON_HOME"/>
+	</nameList>
+	<trackList>
+		<track>cosmos</track>
+		<track>calm</track>
+		<track>zoltan</track>
+	</trackList>
+	<rarityList>
+		<blueprint name="engi" rarity="2"/>
+		<blueprint name="mantis" rarity="4"/>
+		<blueprint name="energy" rarity="1"/>
+		<blueprint name="slug" rarity="4"/>
+		<blueprint name="rock" rarity="4"/>
+		<blueprint name="human" rarity="3"/>
+		<!-- zolton weapons -->
+		<blueprint name="EP_BA_BEAM_BARDICHE" rarity="2"/>
+		<blueprint name="EP_BA_BEAM_BO" rarity="3"/>
+		<blueprint name="EP_BA_BEAM_SCYTHE" rarity="4"/>
+		<blueprint name="EP_BA_BEAM_HASTA" rarity="1"/>
+		<blueprint name="EP_BA_BEAM_NAGINATA" rarity="4"/>
+		<blueprint name="EP_BA_BEAM_FLAIL_DAMAGE" rarity="5"/>
+		<blueprint name="EP_BA_BEAM_SHEST" rarity="4"/>
+		<blueprint name="EP_BA_BEAM_K1" rarity="2"/>
+		<blueprint name="EP_BA_BEAM_K2" rarity="3"/>
+		<blueprint name="EP_BEAM_2" rarity="4"/>
+		<blueprint name="EP_BEAM_3" rarity="5"/>
+		<blueprint name="EP_BEAM_BIOFIRE" rarity="5"/>
+		<blueprint name="EP_BEAM_FAUCHARD" rarity="5"/>
+		<blueprint name="EP_BEAM_GUISARME" rarity="4"/>
+		<blueprint name="EP_BEAM_LONG" rarity="2"/>
+		<blueprint name="EP_BEAM_SP_KATANA" rarity="4"/>
+		<blueprint name="EP_BEAM_SP_DAITO" rarity="3"/>
+		<blueprint name="BA_ION_HVBURST_1" rarity="3"/>
+		<blueprint name="BA_ION_HVBURST_2" rarity="4"/>
+		<blueprint name="BA_ION_HVBURST_3" rarity="5"/>
+		<!-- con weapons -->
+		<blueprint name="UWB_LASER_BURST_1" rarity="1"/>
+		<blueprint name="UWB_LASER_HEAVY_1" rarity="2"/>
+		<blueprint name="UWB_LASER_STANDARD_1" rarity="1"/>
+		<blueprint name="UWB_LASER_STANDARD_2" rarity="1"/>
+		<blueprint name="UWB_LASER_DUAL_1" rarity="2"/>
+		<blueprint name="UWB_LASER_DUAL_2" rarity="3"/>
+		<blueprint name="UWB_BA_SHOTGUN_SMALL" rarity="1"/>
+		<blueprint name="UWB_BA_PLASMA_1" rarity="3"/>
+		<blueprint name="UWB_BA_LASER_AUTO_1" rarity="1"/>
+		<blueprint name="UWB_BA_LASER_AUTO_2" rarity="3"/>
+		<blueprint name="UWB_BA_LASER_BURST_SCATTER_1" rarity="2"/>
+		<blueprint name="UWB_BA_LASER_BURST_SCATTER_2" rarity="3"/>
+		<blueprint name="UWB_BA_LASER_HEAVY_SCATTER_1" rarity="1"/>
+		<blueprint name="UWB_BA_LASER_HEAVY_SCATTER_2" rarity="3"/>
+		<blueprint name="UWB_BA_LASER_HULL_SMALL" rarity="1"/>
+		<blueprint name="UWB_SHTURM_LASER_1" rarity="2"/>
+		<blueprint name="UWB_SHTURM_LASER_2" rarity="4"/>
+		<blueprint name="UWB_LASER_BURST_2" rarity="3"/>
+		<blueprint name="UWB_LASER_HEAVY_2" rarity="4"/>
+		<blueprint name="UWB_SHOTGUN" rarity="3"/>
+		<blueprint name="UWB_SHOTGUN_2" rarity="5"/>
+		<blueprint name="UWB_BA_PLASMA_2" rarity="4"/>
+		<blueprint name="UWB_BA_LASER_AUTO_3" rarity="5"/>
+		<blueprint name="UWB_BA_LASER_BURST_SCATTER_3" rarity="2"/>
+		<blueprint name="UWB_BA_LASER_ARTILLERY_1" rarity="4"/>
+		<blueprint name="UWB_BA_LASER_HULLCRUSHER" rarity="3"/>
+		<blueprint name="UWB_LASER_HULL_1" rarity="2"/>
+		<blueprint name="UWB_LASER_HULL_2" rarity="4"/>
+		<blueprint name="UWB_LASER_IMP_2" rarity="3"/>
+		<blueprint name="UWB_LASER_IMP_3" rarity="4"/>
+		<blueprint name="UWB_LASER_LIGHT_1" rarity="3"/>
+		<blueprint name="UWB_LASER_LIGHT_2" rarity="3"/>
+		<blueprint name="UWB_LASER_LIGHT_SCATTER_1" rarity="3"/>
+		<blueprint name="UWB_LASER_LIGHT_SCATTER_2" rarity="3"/>
+		<blueprint name="UWB_BA_BEAM_BATON" rarity="3"/>
+		<blueprint name="UWB_BA_BEAM_BO" rarity="3"/>
+		<blueprint name="UWB_BA_BEAM_BIO_2" rarity="3"/>
+		<blueprint name="UWB_BEAM_1" rarity="2"/>
+		<blueprint name="UWB_BEAM_LONG" rarity="2"/>
+		<blueprint name="UWB_BEAM_GUISARME" rarity="4"/>
+		<blueprint name="UWB_BA_BEAM_HASTA" rarity="1"/>
+		<blueprint name="UWB_BA_BEAM_HULL_SMALL" rarity="3"/>
+		<blueprint name="UWB_BA_BEAM_AUTO" rarity="2"/>
+		<blueprint name="UWB_BA_BEAM_BARDICHE" rarity="2"/>
+		<blueprint name="UWB_BA_BEAM_SCYTHE" rarity="4"/>
+		<blueprint name="UWB_BEAM_1_2" rarity="3"/>
+		<blueprint name="UWB_BEAM_HULL" rarity="4"/>
+		<blueprint name="UWB_BEAM_FIRE" rarity="4"/>
+		<blueprint name="UWB_BEAM_2" rarity="4"/>
+		<blueprint name="UWB_MISSILES_1" rarity="1"/>
+		<blueprint name="UWB_MISSILES_2_PLAYER" rarity="1"/>
+		<blueprint name="UWB_MISSILES_SYS1" rarity="2"/>
+		<blueprint name="UWB_MISSILES_SYS2" rarity="3"/>
+		<blueprint name="UWB_BA_MISSILES_ASTERIA" rarity="2"/>
+		<blueprint name="UWB_BA_MISSILES_HULL_SMALL" rarity="2"/>
+		<blueprint name="UWB_MISSILES_3" rarity="2"/>
+		<blueprint name="UWB_MISSILES_BURST" rarity="3"/>
+		<blueprint name="UWB_BA_MISSILES_ONI" rarity="4"/>
+		<blueprint name="UWB_MISSILES_HULL" rarity="4"/>
+		<blueprint name="UWB_BA_MISSILES_4" rarity="3"/>
+		<blueprint name="UWB_BA_MISSILES_PERYTON" rarity="2"/>
+		<blueprint name="UWB_BA_MISSILES_COCKATRICE" rarity="3"/>
+		<blueprint name="UWB_MISSILES_MEGA" rarity="5"/>
+		<blueprint name="UWB_ION_STUN" rarity="3"/>
+		<blueprint name="UWB_BA_SHOTGUN_ION_1" rarity="3"/>
+		<blueprint name="UWB_BA_ION_2_STUN" rarity="4"/>
+		<blueprint name="UWB_BA_ION_BURST_1_STUN" rarity="4"/>
+		<blueprint name="UWB_BA_ION_BURST_1" rarity="3"/>
+		<blueprint name="UWB_ION_HEAVY_1" rarity="3"/>
+		<blueprint name="UWB_ION_BLAST_1" rarity="2"/>
+		<blueprint name="UWB_BA_SHOTGUN_ION_2" rarity="4"/>
+		<blueprint name="UWB_BA_ION_BURST_2" rarity="4"/>
+		<blueprint name="UWB_ION_BLAST_2" rarity="3"/>
+		<blueprint name="UWB_ION_BLAST_3" rarity="4"/>
+		<blueprint name="UWB_JADE_CANNON_PLAYER" rarity="5"/>
+		<!-- 1.26.4 -->
+		<blueprint name="SILV_BEAM_1" rarity="5"/>
+		<blueprint name="SILV_BOMB_BREACH_3" rarity="5"/>
+		<blueprint name="SILV_BOMB_FIRE_2" rarity="5"/>
+		<blueprint name="SILV_ION_BLAST_2" rarity="5"/>
+		<blueprint name="SILV_ION_HEAVY_2" rarity="5"/>
+		<blueprint name="SILV_ION_PIERCE_1" rarity="5"/>
+		<blueprint name="SILV_LASER_AUTO_1" rarity="5"/>
+		<blueprint name="SILV_LASER_BURST_SCATTER_1" rarity="5"/>
+		<blueprint name="SILV_LASER_BURST_2" rarity="5"/>
+		<blueprint name="SILV_MISSILES_ASTERIA" rarity="5"/>
+		<blueprint name="SILV_MISSILES_BURST" rarity="5"/>
+		<blueprint name="SILV_MISSILES_HYDRA" rarity="5"/>
+		<blueprint name="SILV_SHOTGUN" rarity="5"/>
+	</rarityList>
+	<startEvent>START_BEACON_ZOLTON</startEvent>
+	<event name="ZOLTON_BOSS_EVENT" min="1" max="1"/>
+	<event name="EVENT_CON_LEADER" min="1" max="1"/>
+	<event name="STORE_ZOLTON" min="2" max="3"/>
+	<event name="NOTHING_ZOLTON" min="0" max="1"/>
+	<event name="DISTRESS_BEACON_ZOLTON" min="1" max="2"/>
+	<event name="CAPSULE_EVENT" min="0" max="1"/><!-- 1.26.3 -->
+	<event name="NEBULA" min="0" max="3"/>
+	<event name="NEBULA_ZOLTON" min="2" max="3"/>
+	<event name="HOSTILE_ZOLTON" min="4" max="5"/>
+	<event name="BOARDERS_ZOLTON" min="1" max="2"/>
+	<event name="ITEM_ZOLTON" min="1" max="2"/>
+	<event name="QUESTS_ZOLTON" min="1" max="1"/>
+	<event name="NEUTRAL_ZOLTON" min="7" max="8"/><!-- 1.26.3 was 9 -->
+</sectorDescription>
+
+
+<sectorDescription name="ROCK_SECTOR" minSector="1" unique="false">   
+	<nameList>
+		<name id="sectorname_ROCK_SECTOR" short="sectorname_short_ROCK_SECTOR"/>
+	</nameList>
+	<trackList>
+		<track>rock</track>
+		<!-- <track>rock2</track> -->
+		<track>ramble</track>
+		<track>wasteland</track>
+	</trackList>
+	<rarityList><!-- 1.22 -->
+		<blueprint name="engi" rarity="0"/>
+		<blueprint name="mantis" rarity="0"/>
+		<blueprint name="energy" rarity="3"/>
+		<blueprint name="slug" rarity="0"/>
+		<blueprint name="rock" rarity="1"/>
+		<blueprint name="human" rarity="2"/>
+		<!-- <blueprint name="BOMB_LOCK" rarity="4"/> -->
+	</rarityList>
+	<!-- <event name="STORE" min="2" max="4"/> -->
+	<startEvent>START_BEACON_ROCK</startEvent>
+	<event name="STORE_ROCK" min="1" max="2"/>
+	<event name="NOTHING_ROCK_PLUS" min="0" max="1"/>
+	<event name="DISTRESS_BEACON_ROCK" min="2" max="3"/>
+	<event name="HOSTILE_ROCK" min="6" max="8"/>
+	<event name="BOARDERS_ROCK" min="1" max="2"/>
+	<event name="ITEMS" min="1" max="2"/>
+	<event name="QUESTS_ROCK" min="1" max="1"/>
+	<event name="NEUTRAL_ROCK" min="7" max="8"/>
+</sectorDescription>
+
+<sectorDescription name="ROCK_HOME" minSector="3" unique="true">   
+	<nameList>
+		<name id="sectorname_ROCK_HOME" short="sectorname_short_ROCK_HOME"/>
+	</nameList>
+	<trackList>
+		<track>rock</track>
+		<!-- <track>rock2</track> -->
+		<track>ramble</track>
+		<track>wasteland</track>
+	</trackList>
+	<rarityList><!-- 1.22 -->
+		<blueprint name="engi" rarity="0"/>
+		<blueprint name="mantis" rarity="0"/>
+		<blueprint name="energy" rarity="3"/>
+		<blueprint name="slug" rarity="0"/>
+		<blueprint name="rock" rarity="1"/>
+		<blueprint name="human" rarity="2"/>
+		<!-- <blueprint name="BOMB_LOCK" rarity="2"/> -->
+		<!-- 1.26.4 -->
+		<blueprint name="SILV_BEAM_1" rarity="5"/>
+		<blueprint name="SILV_BOMB_BREACH_3" rarity="5"/>
+		<blueprint name="SILV_BOMB_FIRE_2" rarity="5"/>
+		<blueprint name="SILV_ION_BLAST_2" rarity="5"/>
+		<blueprint name="SILV_ION_HEAVY_2" rarity="5"/>
+		<blueprint name="SILV_ION_PIERCE_1" rarity="5"/>
+		<blueprint name="SILV_LASER_AUTO_1" rarity="5"/>
+		<blueprint name="SILV_LASER_BURST_SCATTER_1" rarity="5"/>
+		<blueprint name="SILV_LASER_BURST_2" rarity="5"/>
+		<blueprint name="SILV_MISSILES_ASTERIA" rarity="5"/>
+		<blueprint name="SILV_MISSILES_BURST" rarity="5"/>
+		<blueprint name="SILV_MISSILES_HYDRA" rarity="5"/>
+		<blueprint name="SILV_SHOTGUN" rarity="5"/>
+	</rarityList>
+	<!-- <event name="STORE" min="2" max="4"/> -->
+	<startEvent>START_BEACON_ROCK</startEvent>
+	<event name="ROCK_PRO_EVENT" min="1" max="1"/>
+	<event name="ROCK_BOSS" min="1" max="1"/> 
+	<event name="ROCK_CRYSTAL_BEACON" min="1" max="1"/> <!-- CRYSTAL UNLOCK-->
+	<event name="ROCK_UNLOCK1" min="1" max="1"/>
+	<event name="STORE_ROCK" min="1" max="2"/>
+	<event name="NOTHING_ROCK" min="0" max="1"/>
+	<event name="DISTRESS_BEACON_ROCK" min="2" max="3"/>
+	<event name="HOSTILE_ROCK" min="6" max="8"/>
+	<event name="BOARDERS_ROCK" min="1" max="2"/>
+	<event name="ITEMS" min="1" max="2"/>
+	<event name="QUESTS_ROCK" min="1" max="1"/>
+	<event name="NEUTRAL_ROCK" min="6" max="7"/>
+</sectorDescription>
+
+
+<!-- -
+HIDDEN SECTORS
+ -->
+ 
+ 
+<sectorDescription name="CRYSTAL_HOME" minSector="5" unique="true">   
+	<nameList>
+		<name id="sectorname_CRYSTAL_HOME" short="sectorname_short_CRYSTAL_HOME"/>
+	</nameList>
+	<trackList>
+		<track>shadow</track><!-- 1.26.6 -->
+		<!-- <track>debris</track>
+		<track>blackhole</track>
+		<track>wasteland</track>
+		<track>deepspace</track> -->
+	</trackList>
+	<rarityList>
+		<blueprint name="engi" rarity="0"/>
+		<blueprint name="mantis" rarity="0"/>
+		<blueprint name="energy" rarity="0"/>
+		<blueprint name="slug" rarity="0"/>
+		<blueprint name="rock" rarity="0"/>
+		<blueprint name="human" rarity="0"/>
+		<blueprint name="crystal" rarity="1"/>
+		<blueprint name="LASER_HEAVY_PIERCE_1" rarity="0"/>
+		<blueprint name="LASER_DUAL_2" rarity="0"/>
+		<blueprint name="LASER_STANDARD_1" rarity="0"/>
+		<blueprint name="LASER_PIERCE_1" rarity="0"/>
+		<blueprint name="LASER_PIERCE_2" rarity="0"/>
+		<blueprint name="LASER_BURST_1" rarity="0"/>
+		<blueprint name="LASER_BURST_2" rarity="0"/>
+		<blueprint name="LASER_BURST_3" rarity="0"/>
+		<blueprint name="SHTURM_FLAK" rarity="0"/>
+		<blueprint name="SHTURM_LASER_1" rarity="0"/>
+		<blueprint name="SHTURM_LASER_2" rarity="0"/>
+		<blueprint name="LASER_HEAVY_1" rarity="0"/>
+		<blueprint name="LASER_HEAVY_2" rarity="0"/>
+		<blueprint name="LASER_SUPER_HEAVY_1" rarity="0"/><!-- 1.26 -->
+		<blueprint name="LASER_AL_1" rarity="0"/><!-- 1.26.2 -->
+		<blueprint name="LASER_AL_2" rarity="0"/><!-- 1.26.2 -->
+		<blueprint name="MISSILES_1" rarity="0"/>
+		<blueprint name="MISSILES_2_PLAYER" rarity="0"/>
+		<blueprint name="MISSILES_2_PLAYER" rarity="0"/>
+		<blueprint name="MISSILES_3" rarity="0"/>
+		<blueprint name="MISSILES_BURST" rarity="0"/>
+		<blueprint name="MISSILES_BREACH" rarity="0"/>
+		<blueprint name="BEAM_1" rarity="0"/>
+		<blueprint name="BEAM_1_2" rarity="0"/>
+		<blueprint name="BEAM_2" rarity="0"/>
+		<blueprint name="BA_BEAM_POLLAXE" rarity="0"/> <!-- 1.26 -->
+		<blueprint name="BEAM_SP_DAITO" rarity="0"/> <!-- 1.21 -->
+		<blueprint name="BEAM_SP_KATANA" rarity="0"/> <!-- 1.21 -->
+		<blueprint name="BA_BEAM_BIO_2" rarity="0"/>
+		<blueprint name="BEAM_BIO" rarity="0"/>
+		<blueprint name="BEAM_CHAIN_BIO" rarity="0"/><!-- 1.25.3 -->
+		<blueprint name="BA_BEAM_BIO_SP1" rarity="0"/><!-- 1.25.1 -->
+		<blueprint name="BA_BEAM_BIO_SP2" rarity="0"/><!-- 1.25.1 -->
+		<blueprint name="BEAM_LONG" rarity="0"/>
+		<blueprint name="BEAM_GUISARME" rarity="0"/> <!-- 1.23 -->
+		<blueprint name="BEAM_LONG_SYS" rarity="0"/> <!-- 1.25.3 -->
+		<blueprint name="BEAM_FIRE" rarity="0"/>
+		<blueprint name="BEAM_FIRECHAIN" rarity="0"/><!-- 1.26.3 -->
+		<blueprint name="BA_BEAM_FIRE_FOCUS" rarity="0"/>
+		<blueprint name="BA_BEAM_HOT_1" rarity="0"/><!-- 1.26.5 -->
+		<blueprint name="BA_BEAM_HOT_2" rarity="0"/><!-- 1.26.5 -->
+		<blueprint name="BOMB_BREACH_1" rarity="0"/>
+		<blueprint name="BOMB_BREACH_2" rarity="0"/>
+		<blueprint name="DE_ANTI_DRONE_MISSILES" rarity="0"/>
+		<blueprint name="DE_REPAIR_4" rarity="0"/>
+		<blueprint name="DE_DRONE_DEFENSE_LIGHT_1" rarity="0"/>
+		<blueprint name="DE_DRONE_DEFENSE_SWARM_MISSILE" rarity="0"/>
+		<blueprint name="DE_DRONE_DEFENSE_LIGHT_MISSILE" rarity="0"/>
+		<blueprint name="DE_DRONE_SCATTER" rarity="0"/>
+		<blueprint name="DE_DRONE_LIGHT_1" rarity="0"/>
+		<blueprint name="DEFENSE_1_OLD" rarity="0"/>
+		<blueprint name="SHOTGUN" rarity="0"/>
+		<blueprint name="LASER_CHAIN_1" rarity="0"/>
+		<blueprint name="LASER_CHAIN_2" rarity="0"/>
+		<blueprint name="LASER_CHAIN_LONG_1" rarity="0"/><!-- 1.26 -->
+		<blueprint name="LASER_CHAIN_LONG_2" rarity="0"/><!-- 1.26 -->
+		<blueprint name="BA_SHOTGUN_SMALL" rarity="0"/>
+		<blueprint name="BA_MISSILES_SWARM_1" rarity="0"/>
+		<blueprint name="MISSILES_SYS1" rarity="0"/><!-- 1.25.1 -->
+		<blueprint name="MISSILES_SYS2" rarity="0"/><!-- 1.25.1 -->
+		<blueprint name="BA_MISSILES_FOBOS" rarity="0"/><!-- 1.25.3 -->
+		<blueprint name="BA_MISSILES_DEIMOS" rarity="0"/><!-- 1.25.3 -->
+		<blueprint name="BA_BOMB_FIRE_SMALL" rarity="0"/>
+		<blueprint name="BA_LASER_HULL_SMALL" rarity="0"/>
+		<blueprint name="BA_LASER_HEAVY_SCATTER_1" rarity="0"/>
+		<blueprint name="BA_LASER_BURST_SCATTER_1" rarity="0"/>
+		<blueprint name="LASER_STANDARD_2" rarity="0"/>
+		<blueprint name="BA_LASER_WAR_1" rarity="0"/><!-- 1.26 -->
+		<blueprint name="BA_LASER_WAR_2" rarity="0"/><!-- 1.26 -->
+		<blueprint name="BA_LASER_WAR_3" rarity="0"/><!-- 1.26 -->
+		<blueprint name="BA_LASER_AUTO_1" rarity="0"/>
+		<blueprint name="LASER_DUAL_1" rarity="0"/>
+		<blueprint name="REPAIR_OLD" rarity="0"/>
+		<blueprint name="MORPH_REPAIR" rarity="0"/><!-- 1.27 -->
+		<blueprint name="DE_ANTI_DRONE_LASER_HEAVY" rarity="0"/>
+		<blueprint name="DE_BATTLE_4" rarity="0"/>
+		<blueprint name="DE_REPAIR_2" rarity="0"/>
+		<blueprint name="DE_DRONE_DEFENSE_HEAVY_SMALL" rarity="0"/>
+		<blueprint name="DE_DRONE_DEFENSE_SCATTER" rarity="0"/>
+		<blueprint name="DE_DRONE_ION_1" rarity="0"/>
+		<blueprint name="DE_DRONE_HULL_1" rarity="0"/>
+		<blueprint name="DE_DRONE_HULL_BEAM" rarity="0"/>
+		<blueprint name="DE_DRONE_BEAM_FOCUS" rarity="0"/>
+		<blueprint name="DE_DRONE_HEAVY_1" rarity="0"/>
+		<blueprint name="DE_DRONE_HEAVY_SCATTER" rarity="0"/>
+		<blueprint name="DE_DRONE_MINE_MEDIUM" rarity="0"/>
+		<blueprint name="BA_BEAM_ADAPTIVE_1" rarity="0"/>
+		<blueprint name="BA_PLASMA_1" rarity="0"/>
+		<blueprint name="BA_PLASMA_2" rarity="0"/>
+		<blueprint name="BA_MISSILES_ONI" rarity="0"/>
+		<blueprint name="BA_MISSILES_SWARM_2" rarity="0"/>
+		<blueprint name="BA_BOMB_CLUSTER_ION" rarity="0"/>
+		<blueprint name="BA_BOMB_CLUSTER_FIRE" rarity="0"/>
+		<blueprint name="BA_MINES_SMALL" rarity="0"/>
+		<blueprint name="BA_MINES_MEDIUM" rarity="0"/>
+		<blueprint name="BA_MISSILES_FIRE" rarity="0"/>
+		<blueprint name="BA_MISSILES_SIMURGH" rarity="0"/>
+		<blueprint name="BA_MISSILES_PERYTON" rarity="0"/>		
+		<blueprint name="BA_MISSILES_HULL_SMALL" rarity="0"/>
+		<blueprint name="BA_MISSILES_ASTERIA" rarity="0"/>
+		<blueprint name="BA_BEAM_BARDICHE" rarity="0"/>
+		<blueprint name="BA_BEAM_AUTO" rarity="0"/>
+		<blueprint name="BA_BEAM_HULL_SMALL" rarity="0"/>
+		<blueprint name="BA_BEAM_HULL_MINI" rarity="0"/><!-- 1.25.3 -->
+		<blueprint name="BA_BEAM_HASTA" rarity="0"/>
+		<blueprint name="BA_BEAM_K1" rarity="0"/><!-- 1.25.3 -->
+		<blueprint name="BA_BEAM_K2" rarity="0"/><!-- 1.25.3 -->
+		<blueprint name="COMBAT_BEAM_OLD" rarity="0"/>
+		<blueprint name="COMBAT_FIRE" rarity="0"/>
+		<blueprint name="COMBAT_FIRE_2" rarity="0"/>
+		<blueprint name="DE_ANTI_DRONE_2" rarity="0"/>
+		<blueprint name="DE_DRONE_LIGHT_MISSILE_STUN" rarity="0"/>
+		<blueprint name="DE_BATTLE_2" rarity="0"/>
+		<blueprint name="DE_DRONE_DEFENSE_MINESWEEPER" rarity="0"/>
+		<blueprint name="DE_DRONE_DEFENSE_SVCH" rarity="0"/><!-- 1.25 -->
+		<blueprint name="DE_DRONE_DEFENSE_GAUSS" rarity="0"/><!-- 1.21 -->
+		<blueprint name="DE_DRONE_DEFENSE_HEAVY" rarity="0"/>
+		<blueprint name="DE_DRONE_DEFENSE_LIGHT_2" rarity="0"/>
+		<blueprint name="DE_DRONE_ION_2" rarity="0"/>
+		<blueprint name="DE_DRONE_ION_3" rarity="0"/>
+		<blueprint name="DRONE_ION_V3" rarity="0"/>
+		<blueprint name="DE_DRONE_ION_PIERCE" rarity="0"/>
+		<blueprint name="DE_DRONE_MINE_SMALL" rarity="0"/>
+		<blueprint name="DE_DRONE_MISSILES_BARRAGE" rarity="0"/>
+		<blueprint name="DE_DRONE_MISSILES_1" rarity="0"/>
+		<blueprint name="DE_DRONE_LIGHT_MISSILE_FIRE" rarity="0"/>
+		<blueprint name="DE_DRONE_LIGHT_MISSILE" rarity="0"/>
+		<blueprint name="DE_DRONE_LIGHT_SCATTER" rarity="0"/>
+		<blueprint name="DE_DRONE_LIGHT_2" rarity="0"/>
+		<blueprint name="DE_DRONE_PLASMA" rarity="0"/>
+		<blueprint name="DEFENSE_2" rarity="0"/>
+		<blueprint name="BA_BEAM_ADAPTIVE_2" rarity="0"/>
+		<blueprint name="BA_STUNGUN_1" rarity="0"/>
+		<blueprint name="BA_STUNGUN_2" rarity="0"/><!-- 1.25 -->
+		<blueprint name="BA_PLASMA_2" rarity="0"/>
+		<blueprint name="LASER_CHARGEGUN_2" rarity="0"/>
+		<blueprint name="LASER_HEAVY_CHARGE_1" rarity="0"/>
+		<blueprint name="LASER_CHARGEGUN_1" rarity="0"/>
+		<blueprint name="BA_SHOTGUN_MISSILES" rarity="0"/>
+		<blueprint name="BA_SHOTGUN_MISSILES2" rarity="0"/>
+		<blueprint name="BA_MISSILE_CHARGEGUN_SMALL" rarity="0"/>
+		<blueprint name="MISSILE_CHARGEGUN" rarity="0"/>
+		<blueprint name="BA_SHOTGUN_SCATTER" rarity="0"/>
+		<blueprint name="BA_BOMB_CLUSTER_STUN" rarity="0"/>
+		<blueprint name="BA_BOMB_CLUSTER_STUN2" rarity="0"/>
+		<blueprint name="BA_ION_PIERCE_2" rarity="0"/>
+		<blueprint name="BA_ION_PIERCE_1" rarity="0"/>
+		<blueprint name="ION_CHAINGUN" rarity="0"/>
+		<blueprint name="BA_ION_CHAIN_MINI" rarity="0"/>
+		<blueprint name="ION_CHARGEGUN" rarity="0"/>
+		<blueprint name="ION_CHARGEGUN_2" rarity="0"/><!-- 1.25.1 -->
+		<blueprint name="ION_STUN" rarity="0"/>
+		<blueprint name="BA_SHOTGUN_ION_1" rarity="0"/>
+		<blueprint name="BA_SHOTGUN_ION_2" rarity="0"/>
+		<blueprint name="BA_ION_2_STUN" rarity="0"/>
+		<blueprint name="BA_ION_BURST_1_STUN" rarity="0"/>
+		<blueprint name="BA_MISSILES_SWARM_3" rarity="0"/>
+		<blueprint name="BA_EFFECTOR_3" rarity="0"/>
+		<blueprint name="BA_EFFECTOR_2" rarity="0"/>
+		<blueprint name="BA_EFFECTOR_1" rarity="0"/>
+		<blueprint name="BA_EFFECTOR_ADAPTIVE" rarity="0"/>
+		<blueprint name="BA_BOMB_NANO_1" rarity="0"/>
+		<blueprint name="BA_BOMB_CLUSTER_1" rarity="0"/>
+		<blueprint name="BA_BOMB_HEAL_2" rarity="0"/>
+		<blueprint name="BA_BOMB_BIG" rarity="0"/>
+		<blueprint name="BA_BOMB_TIMER" rarity="0"/><!-- 1.25 -->
+		<blueprint name="BOMB_HEALFIRE" rarity="0"/><!-- 1.25 -->
+		<blueprint name="BA_BOMB_BIO" rarity="0"/>
+		<blueprint name="BA_BOMB_FIRE_2" rarity="0"/>
+		<blueprint name="ION_HEAVY_2" rarity="0"/>
+		<blueprint name="ION_HEAVY_3" rarity="0"/>
+		<blueprint name="BA_ION_BURST_1" rarity="0"/>
+		<blueprint name="BA_ION_BURST_2" rarity="0"/>
+		<blueprint name="BA_LASER_HULLCRUSHER" rarity="0"/>
+		<blueprint name="BA_LASER_HULLCRUSHER_2" rarity="0"/>
+		<blueprint name="BA_LASER_HEAVY_SCATTER_2" rarity="0"/>
+		<blueprint name="BA_LASER_BURST_SCATTER_2" rarity="0"/>
+		<blueprint name="BA_LASER_BURST_SCATTER_3" rarity="0"/>
+		<blueprint name="LASER_SCATTERCHAIN" rarity="0"/> <!-- 1.25.1 -->
+		<blueprint name="BA_LASER_AUTO_2" rarity="0"/>
+		<blueprint name="BA_LASER_ARTILLERY_1" rarity="0"/>
+		<blueprint name="BA_LASER_LIGHT_ARTILLERY" rarity="0"/>
+		<blueprint name="LASER_LIGHT_SCATTER_3" rarity="0"/><!-- 1.25.1 -->
+		<blueprint name="LASER_LIGHT_SCATTER_2" rarity="0"/>
+		<blueprint name="LASER_LIGHT_SCATTER_1" rarity="0"/>
+		<blueprint name="LASER_LIGHT_AUTO" rarity="0"/>
+		<blueprint name="LIGHT_BREACH_LASER_1" rarity="0"/><!-- 1.24 -->
+		<blueprint name="LIGHT_BREACH_LASER_2" rarity="0"/><!-- 1.24 -->
+		<blueprint name="LASER_LIGHT_3" rarity="0"/><!-- 1.24 -->
+		<blueprint name="LASER_LIGHT_2" rarity="0"/>
+		<blueprint name="LASER_LIGHT_1" rarity="0"/>
+		<blueprint name="MPP_LASER_1" rarity="0"/><!-- 1.26 -->
+		<blueprint name="MPP_LASER_2" rarity="0"/><!-- 1.26 -->
+		<blueprint name="BA_MINES_BIG" rarity="0"/>
+		<blueprint name="BA_MINES_TECH" rarity="0"/><!-- 1.25 -->
+		<blueprint name="BA_MINE_ION" rarity="0"/><!-- 1.25 -->
+		<blueprint name="BA_MINES_MEDIUM_M3" rarity="0"/><!-- 1.25 -->
+		<blueprint name="BA_MINES_MEDIUM_M2" rarity="0"/><!-- 1.25 -->
+		<blueprint name="BA_MISSILES_COCKATRICE" rarity="0"/>
+		<blueprint name="BA_MISSILES_4" rarity="0"/>
+		<blueprint name="BA_BEAM_PERNACH" rarity="0"/>
+		<blueprint name="BA_BEAM_SCYTHE" rarity="0"/>
+		<blueprint name="BA_BEAM_NAGINATA" rarity="0"/>
+		<!-- <blueprint name="BA_BEAM_FLAIL_DAMAGE" rarity="0"/> removed in 1.26 -->
+		<blueprint name="BA_BEAM_SHEST" rarity="0"/> <!-- 1.21 -->
+		<blueprint name="BA_BEAM_BO" rarity="0"/>
+		<blueprint name="BA_BEAM_BATON" rarity="0"/>
+		<blueprint name="BA_MINE_ION" rarity="0"/>
+		<blueprint name="ION_BLAST_1" rarity="0"/>
+		<blueprint name="ION_BLAST_2" rarity="0"/>
+		<blueprint name="ION_HEAVY_1" rarity="0"/>
+		<blueprint name="ION_BLAST_3" rarity="0"/>
+		<blueprint name="BOMB_1" rarity="0"/>
+		<blueprint name="BOMB_FIRE" rarity="0"/>
+		<blueprint name="BOMB_ION" rarity="0"/>
+		<blueprint name="BOMB_HEAL" rarity="0"/>
+		<blueprint name="LASER_HULL_1" rarity="0"/>
+		<blueprint name="LASER_HULL_2" rarity="0"/>
+		<blueprint name="LASER_IMP_2" rarity="0"/><!-- 1.25.1 -->
+		<blueprint name="LASER_IMP_3" rarity="0"/><!-- 1.25.1 -->
+		<blueprint name="LASER_HULLCHAIN" rarity="0"/><!-- 1.25.1 -->
+		<blueprint name="BEAM_HULL" rarity="0"/>
+		<blueprint name="MISSILES_HULL" rarity="0"/>
+		<blueprint name="BOMB_STUN" rarity="0"/>
+		<blueprint name="BOMB_HEAL_SYSTEM" rarity="0"/>
+		<blueprint name="CHARGEGUN_SHOTGUN" rarity="0"/>
+		<blueprint name="LASER_HEAVY_CHAIN" rarity="0"/>
+		<blueprint name="HEAVY_PPL" rarity="0"/>
+		<blueprint name="LASER_AUTO_CHAIN" rarity="0"/>
+		<blueprint name="MISSILES_ARU_GOLIAPH" rarity="0"/><!-- 1.26.1 -->
+		<blueprint name="MISSILES_HYDRA" rarity="0"/>
+		<blueprint name="SHIPRADAR" rarity="0"/>
+		<blueprint name="TRAINING_COMPLEX" rarity="0"/> <!-- 1.21 -->
+		<blueprint name="BOMB_LOCK" rarity="2"/>
+		<blueprint name="CRYSTAL_BURST_1" rarity="1"/>
+		<blueprint name="CRYSTAL_BURST_2" rarity="3"/>
+		<blueprint name="CRYSTAL_HEAVY_1" rarity="2"/>
+		<blueprint name="CRYSTAL_HEAVY_2" rarity="4"/>
+		<blueprint name="BA_CRYSTAL_LIGHT_1" rarity="2"/>
+		<blueprint name="BA_CRYSTAL_LIGHT_2" rarity="4"/>
+		<blueprint name="BA_CRYSTAL_HEAVY_LOCKDOWN_1" rarity="2"/>
+		<blueprint name="BA_CRYSTAL_HEAVY_LOCKDOWN_2" rarity="4"/>
+		<blueprint name="BA_BOMB_LOCK_2" rarity="4"/>
+		<blueprint name="CRYSTAL_FLAK_I" rarity="5"/> <!-- 1.25 -->
+		<blueprint name="BA_CRYSTAL_VULKAN" rarity="5"/> <!-- 1.26 -->
+		<blueprint name="DE_DRONE_CRYSTAL" rarity="2"/>
+		<blueprint name="DE_DRONE_CRYSTAL_2" rarity="3"/>
+		<blueprint name="DE_DRONE_CRYSTAL_HEAVY" rarity="4"/>
+		<blueprint name="DE_DRONE_CRYSTAL_LIGHT" rarity="2"/>
+		<blueprint name="DE_DRONE_DEFENSE_CRYSTAL_LIGHT" rarity="2"/>
+		<blueprint name="DE_DRONE_ANTI_CRYSTAL_HEAVY" rarity="3"/>
+		<!-- 1.26.4 -->
+		<blueprint name="SILV_BEAM_1" rarity="5"/>
+		<blueprint name="SILV_BOMB_BREACH_3" rarity="5"/>
+		<blueprint name="SILV_BOMB_FIRE_2" rarity="5"/>
+		<blueprint name="SILV_ION_BLAST_2" rarity="5"/>
+		<blueprint name="SILV_ION_HEAVY_2" rarity="5"/>
+		<blueprint name="SILV_ION_PIERCE_1" rarity="5"/>
+		<blueprint name="SILV_LASER_AUTO_1" rarity="5"/>
+		<blueprint name="SILV_LASER_BURST_SCATTER_1" rarity="5"/>
+		<blueprint name="SILV_LASER_BURST_2" rarity="5"/>
+		<blueprint name="SILV_MISSILES_ASTERIA" rarity="5"/>
+		<blueprint name="SILV_MISSILES_BURST" rarity="5"/>
+		<blueprint name="SILV_MISSILES_HYDRA" rarity="5"/>
+		<blueprint name="SILV_SHOTGUN" rarity="5"/>
+	</rarityList>
+	<startEvent>START_BEACON_CRYSTAL</startEvent>
+	<event name="STORE_CRYSTAL" min="2" max="3"/>
+	<event name="CRYSTAL_DREDNOUT_PROTOTYPE" min="1" max="1"/>
+	<event name="CRYSTAL_STATION_EVENT" min="1" max="1"/><!-- 1.25 -->
+	<event name="ITEMS_CRYSTAL" min="2" max="2"/>
+	<event name="NOTHING_CRYSTAL" min="0" max="1"/>
+	<event name="HOSTILE_CRYSTAL" min="6" max="10"/>
+	<event name="BOARDERS_CRYSTAL" min="1" max="2"/>
+	<event name="NEUTRAL_CRYSTAL" min="10" max="10"/><!-- 1.25, was 11-11, see above -->
+</sectorDescription>
+
+
+
+<sectorDescription name="LANIUS_SECTOR" minSector="1" unique="false">   
+	<nameList>
+		<name id="sectorname_LANIUS_SECTOR" short="sectorname_short_LANIUS_SECTOR"/>
+	</nameList>
+	<trackList>
+		<track>shrike</track>
+		<track>solar</track>
+		<track>deepspace</track>
+		<track>wasteland</track>
+	</trackList>
+	<rarityList>
+		<blueprint name="engi" rarity="0"/>
+		<blueprint name="mantis" rarity="0"/>
+		<blueprint name="energy" rarity="0"/>
+		<blueprint name="slug" rarity="0"/>
+		<blueprint name="rock" rarity="0"/>
+		<blueprint name="human" rarity="0"/>
+		<blueprint name="anaerobic" rarity="1"/>
+		<blueprint name="PHOTO_1" rarity="1"/>
+		<blueprint name="PHOTO_2" rarity="1"/>
+		<blueprint name="PHOTO_HEAVY_1" rarity="2"/>
+		<blueprint name="PHOTO_HEAVY_2" rarity="2"/>
+		<blueprint name="PHOTO_CHAINGUN" rarity="3"/>
+	</rarityList>
+	<startEvent>START_BEACON_LANIUS</startEvent>
+	<event name="STORE_LANIUS" min="1" max="2"/>
+	<event name="NOTHING_LANIUS" min="0" max="1"/>
+	<event name="DISTRESS_BEACON_LANIUS" min="1" max="2"/>
+	<!-- <event name="NEBULA_LANIUS" min="2" max="6"/> -->
+	<event name="HOSTILE_LANIUS" min="5" max="6"/>
+	<event name="HOSTILE_ENVIRONMENT_LANIUS" min="1" max="2"/>
+	<event name="BOARDERS_LANIUS" min="1" max="2"/>
+	<event name="ITEM_LANIUS" min="2" max="4"/>
+	<event name="QUESTS_LANIUS" min="1" max="1"/>
+	<event name="NEUTRAL_LANIUS" min="5" max="6"/>
+</sectorDescription>
+
+<sectorDescription name="LANIUS_SECTOR_HOME" minSector="3" unique="true">   
+	<nameList>
+		<name id="sectorname_LANIUS_SECTOR_HOME" short="sectorname_short_LANIUS_SECTOR_HOME"/>
+	</nameList>
+	<trackList>
+		<track>shrike</track>
+		<track>solar</track>
+		<track>deepspace</track>
+		<track>wasteland</track>
+	</trackList>
+	<rarityList>
+		<blueprint name="engi" rarity="0"/>
+		<blueprint name="mantis" rarity="0"/>
+		<blueprint name="energy" rarity="0"/>
+		<blueprint name="slug" rarity="0"/>
+		<blueprint name="rock" rarity="0"/>
+		<blueprint name="human" rarity="0"/>
+		<blueprint name="anaerobic" rarity="1"/>
+		<blueprint name="PHOTO_1" rarity="1"/>
+		<blueprint name="PHOTO_2" rarity="1"/>
+		<blueprint name="PHOTO_HEAVY_1" rarity="2"/>
+		<blueprint name="PHOTO_HEAVY_2" rarity="2"/>
+		<blueprint name="PHOTO_CHAINGUN" rarity="3"/>
+		<!-- 1.26.4 -->
+		<blueprint name="SILV_BEAM_1" rarity="5"/>
+		<blueprint name="SILV_BOMB_BREACH_3" rarity="5"/>
+		<blueprint name="SILV_BOMB_FIRE_2" rarity="5"/>
+		<blueprint name="SILV_ION_BLAST_2" rarity="5"/>
+		<blueprint name="SILV_ION_HEAVY_2" rarity="5"/>
+		<blueprint name="SILV_ION_PIERCE_1" rarity="5"/>
+		<blueprint name="SILV_LASER_AUTO_1" rarity="5"/>
+		<blueprint name="SILV_LASER_BURST_SCATTER_1" rarity="5"/>
+		<blueprint name="SILV_LASER_BURST_2" rarity="5"/>
+		<blueprint name="SILV_MISSILES_ASTERIA" rarity="5"/>
+		<blueprint name="SILV_MISSILES_BURST" rarity="5"/>
+		<blueprint name="SILV_MISSILES_HYDRA" rarity="5"/>
+		<blueprint name="SILV_SHOTGUN" rarity="5"/>
+	</rarityList>
+	<startEvent>START_BEACON_LANIUS</startEvent>
+	<event name="ANAEROBIC_PRO_EVENT" min="1" max="1"/>
+	<event name="ASTEROID_DREDNOUT" min="1" max="1"/><!-- 1.22 -->
+	<event name="STORE_LANIUS" min="1" max="2"/>
+	<event name="NOTHING_LANIUS" min="0" max="1"/>
+	<event name="DISTRESS_BEACON_LANIUS" min="1" max="2"/>
+	<!-- <event name="NEBULA_LANIUS" min="2" max="6"/> -->
+	<event name="HOSTILE_LANIUS" min="4" max="5"/>
+	<event name="HOSTILE_ENVIRONMENT_LANIUS" min="1" max="2"/>
+	<event name="BOARDERS_LANIUS" min="1" max="2"/>
+	<event name="ITEM_LANIUS" min="2" max="4"/>
+	<event name="QUESTS_LANIUS" min="1" max="1"/>
+	<event name="NEUTRAL_LANIUS" min="5" max="6"/>
+</sectorDescription>
+</FTL>

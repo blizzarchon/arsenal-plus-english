@@ -1,0 +1,28 @@
+<mod:findName type="eventList" name="PEACEFUL_MAN_RANDOM_CHERVOTOCHINA">
+	<mod:findWithChildLike type="event" child-type="img">
+		<mod:removeTag />
+	</mod:findWithChildLike>
+</mod:findName>
+
+<!-- the above removes this event: (the only event with an <img>)
+
+<event>
+	<img planet="PLANET_GAS" back="CRYSTAL_CHERV"/>
+	<text>The pirate didn't come here, but at the indicated coordinates you find a wormhole! Surely it leads to the Crystal sector.</text>
+	<choice>
+		<text>Approach the wormhole.</text>
+		<event>
+			<secretSector/>
+		</event>
+	</choice>
+	<choice>
+		<text>Don't approach the wormhole.</text>
+		<event>
+			<text>You decide that approaching the wormhole is too dangerous for the ship...</text>
+			<choice hidden="true">
+				<text id="continue" />
+				<event load="TALK_WITH_CREW"/>
+			</choice>
+		</event>
+	</choice>
+</event> -->

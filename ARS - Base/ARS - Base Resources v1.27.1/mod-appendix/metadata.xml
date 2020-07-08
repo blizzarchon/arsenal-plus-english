@@ -1,0 +1,69 @@
+<metadata>
+  <!-- CDATA tags mean no need to escape special characters. -->
+  <!-- Don't worry about spaces at the start/end. That gets trimmed. -->
+
+
+  <!-- The title of this mod. -->
+  <title><![CDATA[ Arsenal+ English Resource Pack ]]></title>
+
+
+  <!--
+    This mod's thread on ftlgame.com.
+    If there's no thread yet, create one to announce your upcoming mod in
+    the 'Mod Development' forum. Then paste the url here.
+  -->
+  <threadUrl><![CDATA[ https://subsetgames.com/forum/viewtopic.php?f=11&t=29891 ]]></threadUrl>
+
+
+  <!-- Your forum user name. -->
+  <author><![CDATA[ bamalf, KBA3u and mr_easy_money ]]></author>
+
+
+  <!--
+    Version can be any string, preferably at least a number.
+    Examples:
+      0.3
+      2.1c Ships Only WIP
+      2.4.1 Hi-res Bkgs
+      1.0 for FTL 1.03.1
+  -->
+  <version><![CDATA[ 1.27.1 ]]></version>
+
+
+  <description>
+<![CDATA[
+This mod contains the resources for the Arsenal+ game expansion. Must be loaded alongside the Arsenal+ English Data mod for Arsenal+ to work properly.
+
+Adds weapons, drones, etc. assets from the FTL: Captain's Edition mod, found here: https://subsetgames.com/forum/viewtopic.php?f=11&t=15663, improves graphics and much more. Not all the graphics assets(sprites, weapon art, etc.) were created by the makers of this mod: some assets from different mods from the official game forum are incorporated into this mod.
+  
+Captain's Edition's assets are correctly given credit; this can be found on this mod's official forum page.
+]]>
+  </description>
+
+  <!--
+  Mod is NOT guaranteed to work if installed upon repacks{differently packages game versions, possibly translated or reduced}. 
+  
+  After mod installation launch Font8_Patch.exe in game folder to install compact{condensed} fonts." -->
+  
+  <!--
+    Suggestions for the description...
+
+    Write a short paragraph about the mod's effect first (what style ship,
+    how does it affect gameplay). No need to introduce yourself.
+
+    Optionally add a paragraph of background flavor.
+
+    Optionally list important features.
+
+    List any concerns about mod compatibility, preferred order, or
+    requirements.
+
+    Mention "Replaces the XYZ ship." if relevant.
+      Kestrel-A, Stealth-A, Mantis-A,
+      Engi-A,    Fed-A,     Slug-A,
+      Rock-A,    Zoltan-A,  Crystal-A
+
+    Above all, keep the description general, so you won't have to edit
+    that again for each new version.
+  -->
+</metadata>

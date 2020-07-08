@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<text name="pilot_4">—</text>
+<text name="pilot_5">—</text>
+<text name="pilot_6">—</text>
+<text name="pilot_7">—</text>
+<text name="pilot_8">Hyper-jump</text>
+
+<mod:findName type="failsafe" name="ERROR: Patch Base Data before any Addons" panic="true" />
+<mod:findName type="failsafe" name="ERROR: Patch Base Resources before any Addons" panic="true" />

@@ -1,0 +1,7 @@
+<!-- compatible with FTL 1.5.13 and below -->
+
+<!-- change dummy text to something very general so there's no confusion -->
+<mod:findLike type="artillery">
+	<mod:removeTag />
+</mod:findLike>
+<artillery>Artillery: This ship's signature weapon. View its description in the Upgrades tab. More power means faster cooldown.</artillery>

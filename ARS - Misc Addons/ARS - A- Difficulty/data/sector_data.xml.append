@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<sectorType name="CIVILIAN">
+	<sector>CIVILIAN_SECTOR</sector>
+	<sector>ENGI_SECTOR</sector>
+	<sector>ZOLTAN_SECTOR</sector>
+	<sector>ZOLTON_SECTOR</sector> <!-- 1.26 -->
+	<sector>MORPH_SECTOR</sector><!-- 1.27 -->
+	
+	<sector>ENGI_HOME</sector>
+	<sector>ZOLTAN_HOME</sector>
+	<sector>ZOLTON_HOME</sector> <!-- 1.26 -->
+	<sector>TRADE_SECTOR</sector>
+	<sector>MORPH_HOME</sector><!-- 1.27 -->
+</sectorType>
+
+
+<sectorType name="HOSTILE">
+	<sector>REBEL_SECTOR</sector>
+	<sector>ORDEN_SECTOR</sector>
+	<sector>HAL_SECTOR</sector>
+	<sector>PIRATE_SECTOR</sector>
+	<sector>MANTIS_SECTOR</sector>
+	<sector>ROCK_SECTOR</sector>
+	
+	<sector>ROCK_HOME</sector>
+	<sector>REBEL_SECTOR_MINIBOSS</sector>
+	<sector>ORDEN_SECTOR_MINIBOSS</sector>
+	<sector>HAL_SECTOR_HOME</sector>
+	<sector>MANTIS_HOME</sector>
+	<sector>CRYSTAL_HOME</sector>
+	
+	<sector>BORDER_SECTOR</sector>
+</sectorType>
+
+
+<sectorType name="OVERRIDE_HOSTILE">
+	<sector>LANIUS_SECTOR</sector>
+	<sector>REBEL_SECTOR</sector>
+	<sector>ORDEN_SECTOR</sector>
+	<sector>HAL_SECTOR</sector>
+	<sector>PIRATE_SECTOR</sector>
+	<sector>MANTIS_SECTOR</sector>
+	<sector>ROCK_SECTOR</sector>
+	
+	<sector>ROCK_HOME</sector>
+	<sector>REBEL_SECTOR_MINIBOSS</sector>
+	<sector>ORDEN_SECTOR_MINIBOSS</sector>
+	<sector>HAL_SECTOR_HOME</sector>
+	<sector>MANTIS_HOME</sector>
+	<sector>LANIUS_SECTOR_HOME</sector>
+	<sector>CRYSTAL_HOME</sector>
+	
+	<sector>BORDER_SECTOR</sector>
+</sectorType>
+
+
+
+<sectorType name="NEBULA">
+	<sector>NEBULA_SECTOR</sector>
+	<sector>UNSTABLE_SECTOR</sector>
+	<sector>AVATAR_SECTOR</sector>
+	<sector>SLUG_SECTOR</sector>
+	
+	<sector>AVATAR_SECTOR_HOME</sector>
+	<sector>SLUG_HOME</sector>
+	<sector>ULTRA_UNSTABLE_SECTOR</sector>
+	<!-- 1.25 -->
+	<sector>SLURM_SECTOR</sector>
+</sectorType>

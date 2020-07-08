@@ -1,0 +1,751 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- DLC ITEMS LIST — These items are turned off if the DLC is turned off.
+		Includes any weapons, drones, augments, or aliens 					--> 
+
+<blueprintList name="DLC_ITEMS">
+	<name>BOMB_HEAL_SYSTEM</name>
+	<name>SHOTGUN_PLAYER</name>
+	<name>SHOTGUN</name>
+	<name>SHOTGUN_2</name>
+	<name>SHOTGUN_007</name>
+	<name>SHTURM_FLAK</name>
+	<name>CHARGEGUN_SHOTGUN</name>
+	<name>MISSILE_CHARGEGUN</name>
+	<name>LASER_CHAIN_1</name>
+	<name>LASER_CHAIN_2</name>
+	<name>LASER_CHAIN_3</name>
+	<name>LASER_CHAINGUN</name>
+	<name>LASER_FIRE_CHAINGUN</name>
+	<name>LASER_CHARGEGUN_1</name>
+	<name>LASER_CHARGEGUN_3</name>
+	<name>LASER_CHARGEGUN_4</name>
+	<name>ION_CHAINGUN</name>
+	<name>ION_STUN</name>
+	<name>ION_CHARGEGUN</name>
+	<name>ION_CHARGEGUN_2</name>
+	<name>BOMB_STUN</name>
+	
+	<name>PDS_SHOT</name>
+	
+	<name>DRONE_HACKING</name>
+	<name>BOARDER_ION</name>
+	<name>DRONE_SHIELD</name>
+	<name>DRONE_SHIELD_PLAYER</name>
+	<name>ANTI_DRONE</name>
+	<name>COMBAT_BEAM_2</name>
+	<name>COMBAT_BEAM_3</name>
+	<name>COMBAT_FIRE</name>
+	
+	<name>anaerobic</name>
+	
+	
+	<name>O2_MASKS</name>
+	<name>EXPLOSIVE_REPLICATOR</name>
+	<name>FIRE_EXTINGUISHERS</name>
+	<name>FLEET_DISTRACTION</name>
+	<name>TELEPORT_HEAL</name>
+	<name>BATTERY_BOOSTER</name>
+	<name>DEFENSE_SCRAMBLER</name>
+	<name>BACKUP_DNA</name>
+	<name>LIFE_SCANNER</name>
+	<name>ZOLTAN_BYPASS</name>
+	<name>HACKING_STUN</name>
+</blueprintList>
+
+<blueprintList name="DLC_WEAPONS">
+	<name>BOMB_HEAL_SYSTEM</name>
+	<name>SHOTGUN</name>
+	<name>SHOTGUN_2</name>
+	<name>SHOTGUN_007</name>
+	<name>SHTURM_FLAK</name>
+	<name>CHARGEGUN_SHOTGUN</name>
+	<name>MISSILE_CHARGEGUN</name>
+	<name>LASER_CHAIN_1</name>
+	<name>LASER_CHAIN_2</name>
+	<name>LASER_CHAIN_3</name>
+	<name>LASER_CHAINGUN</name>
+	<name>LASER_FIRE_CHAINGUN</name>
+	<name>ION_CHAINGUN</name>
+	<name>LASER_CHARGEGUN_1</name>
+	<name>LASER_CHARGEGUN_3</name>
+	<name>LASER_CHARGEGUN_3</name>
+	<name>ION_CHARGEGUN</name>
+	<name>ION_CHARGEGUN_2</name>
+	<name>ION_STUN</name>
+	<name>BOMB_STUN</name>
+	
+	
+</blueprintList>
+
+<blueprintList name="DLC_DRONES">
+	<!--<name>DRONE_HACKING</name>-->
+	<name>BOARDER_ION</name>
+	<name>DRONE_SHIELD</name>
+	<name>ANTI_DRONE</name>
+	<name>COMBAT_BEAM_2</name>
+	<name>COMBAT_BEAM_3</name>
+	<name>COMBAT_FIRE</name>
+</blueprintList>
+
+
+
+<blueprintList name="DLC_AUGMENTS">
+	<name>O2_MASKS</name>
+	<name>EXPLOSIVE_REPLICATOR</name>
+	<name>FIRE_EXTINGUISHERS</name>
+	<name>FLEET_DISTRACTION</name>
+	<name>TELEPORT_HEAL</name>
+	<name>BATTERY_BOOSTER</name>
+	<name>DEFENSE_SCRAMBLER</name>
+	<name>BACKUP_DNA</name>
+	<name>LIFE_SCANNER</name>
+	<name>ZOLTAN_BYPASS</name>
+	<name>HACKING_STUN</name>
+</blueprintList>
+
+
+
+
+
+<blueprintList name="SHIPS_LANIUS">
+	<name>ANAEROBIC_SCOUT</name>
+	<name>ANAEROBIC_SCOUT_2</name>
+	<name>ANAEROBIC_SCOUT_3</name>
+	<name>ANAEROBIC_SCOUT_4</name>
+	<name>ANAEROBIC_SCOUT_5</name>
+	<name>ANAEROBIC_SCOUT_6</name>
+	<name>ANAEROBIC_SCOUT_7</name>
+	<name>ANAEROBIC_SCOUT_8</name>
+	<name>ANAEROBIC_SCOUT_9</name>
+	<name>ANAEROBIC_BOMBER</name>
+	<name>ANAEROBIC_BOMBER_2</name>
+	<name>ANAEROBIC_BOMBER_3</name>
+	<name>ANAEROBIC_BOMBER_4</name>
+	<name>ANAEROBIC_BOMBER_5</name>
+	<name>ANAEROBIC_BOMBER_6</name>
+	<name>ANAEROBIC_BOMBER_7</name>
+	<name>ANAEROBIC_BOMBER_8</name>
+	<name>ANAEROBIC_BOMBER_9</name>
+	<!-- 1.27 -->
+	<name>ANAEROBIC_HARV_1</name>
+	<name>ANAEROBIC_HARV_2</name>
+	<name>ANAEROBIC_HARV_3</name>
+	<name>ANAEROBIC_PHO_1</name>
+	<name>ANAEROBIC_PHO_2</name>
+	<name>ANAEROBIC_PHO_3</name>
+	<name>ANAEROBIC_PROV_1</name>
+	<name>ANAEROBIC_PROV_2</name>
+	<name>ANAEROBIC_PROV_3</name>
+	<!-- copy -->
+	<name>ANAEROBIC_HARV_1</name>
+	<name>ANAEROBIC_HARV_2</name>
+	<name>ANAEROBIC_HARV_3</name>
+	<name>ANAEROBIC_PHO_1</name>
+	<name>ANAEROBIC_PHO_2</name>
+	<name>ANAEROBIC_PHO_3</name>
+	<name>ANAEROBIC_PROV_1</name>
+	<name>ANAEROBIC_PROV_2</name>
+	<name>ANAEROBIC_PROV_3</name>
+</blueprintList>
+
+<blueprintList name="WEAPONS_ANAEROBIC">
+	<name>LASER_CHAIN_1</name>
+	<name>LASER_CHAIN_2</name>
+	<name>LASER_CHARGEGUN_1</name>
+	<name>LASER_CHARGEGUN_2</name>
+	<name>LASER_BURST_1</name>
+	<name>LASER_HEAVY_1</name>
+	<name>LASER_STANDARD_1</name>
+	<name>LASER_STANDARD_2</name>
+	<name>LASER_DUAL_1</name>
+	<name>LASER_DUAL_2</name>
+	<name>BA_SHOTGUN_SMALL</name>
+	<name>BA_PLASMA_1</name>
+	<name>BA_LASER_AUTO_1</name>
+	<name>BA_LASER_AUTO_2</name>
+	<name>BA_LASER_BURST_SCATTER_1</name>
+	<name>BA_LASER_BURST_SCATTER_2</name>
+	<name>BA_LASER_HEAVY_SCATTER_1</name>
+	<name>BA_LASER_HEAVY_SCATTER_2</name>
+	<name>BA_LASER_HULL_SMALL</name>
+
+	<name>LASER_PIERCE_1</name>
+	<name>LASER_PIERCE_2</name>
+	<name>SHTURM_LASER_1</name>
+	<name>SHTURM_LASER_2</name>
+	<name>LASER_HEAVY_CHAIN</name>
+	<name>LASER_AUTO_CHAIN</name>
+	<name>LASER_CHAIN_3</name>
+	<name>LASER_CHARGEGUN_3</name>
+	<name>LASER_BURST_2</name>
+	<name>LASER_HEAVY_2</name>
+	<name>LASER_HEAVY_PIERCE_1</name>
+	<name>SHOTGUN</name>
+	<name>BA_PLASMA_2</name>
+	<name>BA_LASER_AUTO_3</name>
+	<name>BA_LASER_BURST_SCATTER_3</name>
+	<name>LASER_SCATTERCHAIN</name><!-- 1.25.1 -->
+	<name>BA_LASER_ARTILLERY_1</name>
+	<name>BA_LASER_HULLCRUSHER</name>
+	<name>LASER_HULL_1</name>
+	<name>LASER_HULL_2</name>
+	<name>LASER_IMP_2</name><!-- 1.25.1 -->
+	<name>LASER_IMP_3</name><!-- 1.25.1 -->
+	<name>LASER_HULLCHAIN</name><!-- 1.25.1 -->
+	
+	<name>RAIL_DRIVER</name>
+	<name>LASER_CHAINGUN</name>
+	<name>HEAVY_MINIGUN</name>
+	<name>LASER_FIRE_CHAINGUN</name>
+	<name>LASER_HEAVY_CHARGE_1</name>
+	<name>LASER_HEAVY_CHARGE_2</name>
+	<name>LASER_CHARGEGUN_4</name>
+	<name>LASER_BURST_3</name>
+	<name>LASER_BURST_4</name>
+	<name>LASER_HEAVY_PIERCE_2</name>
+	<name>SHOTGUN_2</name>
+	<name>SHOTGUN_007</name>
+	<name>BA_SHOTGUN_SCATTER</name>
+	<name>SHTURM_FLAK</name>
+	<name>CHARGEGUN_SHOTGUN</name>
+	<name>BA_PLASMA_3</name>
+	<name>BA_LASER_ARTILLERY_2</name>
+	<name>BA_LASER_HULLCRUSHER_2</name>
+	<name>BA_LASER_HULLCRUSHER_3</name>
+	
+	<name>BEAM_1</name>
+	<name>BEAM_LONG</name>
+	<name>BA_BEAM_K2</name><!-- 1.25.3 -->
+	<name>BA_BEAM_HASTA</name>
+	<name>BA_BEAM_K1</name><!-- 1.25.3 -->
+	<name>BA_BEAM_HULL_SMALL</name>
+	<name>BA_BEAM_HULL_MINI</name><!-- 1.25.3 -->
+	<name>BA_BEAM_AUTO</name>
+	<name>BA_BEAM_ADAPTIVE_1</name>
+	<name>BA_BEAM_BARDICHE</name>
+	
+	<name>BOMB_STUN</name>
+	<name>BOMB_1</name>
+	<name>BA_BOMB_FIRE_SMALL</name>
+	<name>BOMB_BREACH_1</name>
+	<name>BA_BOMB_CLUSTER_STUN_ENEMY</name>
+	<name>BA_BOMB_CLUSTER_STUN_ENEMY2</name><!-- 1.23 -->
+	
+	<name>MISSILES_1</name>
+	<name>MISSILES_2_PLAYER</name>
+	<name>BA_MISSILE_CHARGEGUN_SMALL</name>
+	<name>MISSILES_SYS1</name><!-- 1.25.1 -->
+	<name>MISSILES_SYS2</name><!-- 1.25.1 -->
+	<name>BA_MISSILES_FOBOS</name><!-- 1.25.3 -->
+	<name>BA_MISSILES_DEIMOS</name><!-- 1.25.3 -->
+	<name>BA_MISSILES_SWARM_1</name>
+	<name>BA_MISSILES_SWARM_2</name>
+	<name>BA_MISSILES_ASTERIA</name>
+	<name>BA_MISSILES_HULL_SMALL</name>
+	<name>BA_MINES_SMALL</name>
+	
+	<name>MISSILES_3</name>
+	<name>MISSILES_BURST</name>
+	<name>MISSILE_CHARGEGUN</name>
+	<name>BA_SHOTGUN_MISSILES</name>
+	<name>BA_MISSILES_ONI</name>
+	<name>BA_MISSILES_SWARM_3</name>
+	<name>MISSILES_HULL</name>
+	<name>BA_MISSILES_PERYTON</name>
+	<name>BA_MISSILES_4</name>
+	<name>BA_MISSILES_COCKATRICE</name>
+	<name>BA_MINES_MEDIUM</name>
+	<name>BA_MINES_TECH</name>
+	<name>BA_MINES_MEDIUM_M2</name> <!-- 1.25 -->
+	<name>BA_MINES_MEDIUM_M3</name> <!-- 1.25 -->
+	
+	<name>ION_STUN</name>
+	<name>ION_CHAINGUN</name>
+	<name>BA_SHOTGUN_ION_1</name>
+	<name>BA_ION_2_STUN</name>
+	<name>BA_ION_BURST_1_STUN</name>
+	<name>BA_ION_PIERCE_1</name>
+	<name>BA_EFFECTOR_1</name>
+	<name>BA_ION_BURST_1</name>
+	<name>ION_HEAVY_1</name>
+	<name>ION_BLAST_1</name>
+	
+	<name>PHOTO_1</name>
+	<name>PHOTO_2</name>
+	<name>PHOTO_HEAVY_1</name>
+	<name>PHOTO_HEAVY_2</name>
+	<name>PHOTO_CHAINGUN</name>
+	<name>PHOTO_1</name>
+	<name>PHOTO_2</name>
+	<name>PHOTO_HEAVY_1</name>
+	<name>PHOTO_HEAVY_2</name>
+	<name>PHOTO_CHAINGUN</name>
+	<name>PHOTO_1</name>
+	<name>PHOTO_2</name>
+	<name>PHOTO_HEAVY_1</name>
+	<name>PHOTO_HEAVY_2</name>
+	<name>PHOTO_CHAINGUN</name>
+	<name>PHOTO_1</name>
+	<name>PHOTO_2</name>
+	<name>PHOTO_HEAVY_1</name>
+	<name>PHOTO_HEAVY_2</name>
+	<name>PHOTO_CHAINGUN</name>
+	<name>PHOTO_1</name>
+	<name>PHOTO_2</name>
+	<name>PHOTO_HEAVY_1</name>
+	<name>PHOTO_HEAVY_2</name>
+	<name>PHOTO_CHAINGUN</name>
+	<name>PHOTO_1</name>
+	<name>PHOTO_2</name>
+	<name>PHOTO_HEAVY_1</name>
+	<name>PHOTO_HEAVY_2</name>
+	<name>PHOTO_CHAINGUN</name>
+</blueprintList>
+
+
+<blueprintList name="WEAPONS_PHOTO">
+	<name>PHOTO_1</name>
+	<name>PHOTO_2</name>
+	<name>PHOTO_1</name>
+	<name>PHOTO_2</name>
+	<name>PHOTO_1</name>
+	<name>PHOTO_2</name>
+	<name>PHOTO_HEAVY_1</name>
+	<name>PHOTO_HEAVY_2</name>
+	<name>PHOTO_HEAVY_1</name>
+	<name>PHOTO_HEAVY_2</name>
+	<name>PHOTO_CHAINGUN</name>
+</blueprintList>
+<blueprintList name="WEAPONS_PHOTO_ENEMY"> <!-- 1.27 --> <!-- we need to have 3-power and none-burst weapon too in list -->
+	<name>PHOTO_1</name>
+	<name>PHOTO_2</name>
+	<name>PHOTO_1</name>
+	<name>PHOTO_2</name>
+	<name>PHOTO_1</name>
+	<name>PHOTO_2</name>
+	<name>PHOTO_HEAVY_1</name>
+	<name>PHOTO_HEAVY_2</name>
+	<name>PHOTO_HEAVY_1</name>
+	<name>PHOTO_HEAVY_2</name>
+	<name>PHOTO_CHAINGUN</name>
+	
+	<name>PHOTO_1</name>
+	<name>PHOTO_2</name>
+	<name>PHOTO_1</name>
+	<name>PHOTO_2</name>
+	<name>PHOTO_1_ENEMY</name>
+	<name>PHOTO_2_ENEMY</name>
+	<name>PHOTO_HEAVY_1</name>
+	<name>PHOTO_HEAVY_2</name>
+	<name>PHOTO_HEAVY_1_ENEMY</name>
+	<name>PHOTO_HEAVY_2_ENEMY</name>
+	<name>PHOTO_CHAINGUN</name>
+</blueprintList>
+
+<!--
+ANAEROBIC ENEMY SHIPS  — AUTOBLUEPRINT
+  -->
+  
+<shipBlueprint name="ANAEROBIC_SCOUT" layout="anaerobic_scout" img="anaerobic_scout">
+	<class>Lanius Scout</class>
+	<maxSector>7</maxSector>
+	<systemList>
+		<pilot power="1" max="3" room="1"/>
+		<clonebay power="1" max="3" room="3" start="false"/>
+		<!--<oxygen power="1" max="3" room="9"/> -->
+		<shields power="2" max="8" room="5"/>
+		<engines power="1" max="5" room="6"/>
+		<weapons power="2" max="8" room="4"/>
+		<doors power="1" max="3" room="0" start="false"/>
+		<hacking power="1" max="3" room="2" start="false"/>
+	</systemList>
+	<weaponList missiles="6" load="WEAPONS_ANAEROBIC"/><!-- 1.25, was 10 --> 
+	<health amount="7"/>	
+	<maxPower amount ="7"/>
+	<crewCount amount = "2" max="3" class="anaerobic"/>
+	<boardingAI>sabotage</boardingAI>
+	<cloakImage>anaerobic_scout</cloakImage>
+	<aug name="O2_MASKS"/>
+</shipBlueprint>
+ 
+<shipBlueprint name="ANAEROBIC_SCOUT_2" layout="anaerobic_scout_2" img="anaerobic_scout">
+	<class>Lanius Scout</class>
+	<maxSector>7</maxSector>
+	<systemList>
+		<cloaking power="1" max="3" room="0" start="false" />
+		<clonebay power="1" max="3" room="7" start="false" />
+		<doors power="1" max="3" room="6" start="false" />
+		<engines power="1" max="5" room="4" start="true" />
+		<hacking power="1" max="3" room="2" start="false" />
+		<pilot power="1" max="3" room="1" start="true" />
+		<shields power="2" max="8" room="3" start="true" />
+		<weapons power="2" max="8" room="5" start="true" />
+	</systemList>
+	<weaponList missiles="6" load="WEAPONS_ANAEROBIC"/><!-- 1.25, was 10 --> 
+	<health amount="7"/>	
+	<maxPower amount ="7"/>
+	<crewCount amount = "2" max="3" class="anaerobic"/>
+	<boardingAI>sabotage</boardingAI>
+	<cloakImage>anaerobic_scout</cloakImage>
+	<aug name="O2_MASKS"/>
+</shipBlueprint>
+
+<shipBlueprint name="ANAEROBIC_SCOUT_3" layout="anaerobic_scout_3" img="anaerobic_scout">
+	<class>Lanius Scout</class>
+	<maxSector>7</maxSector>
+	<systemList>
+		<clonebay power="1" max="3" room="6" start="false" />
+		<doors power="1" max="3" room="5" start="false" />
+		<engines power="1" max="5" room="0" start="true" />
+		<hacking power="1" max="3" room="2" start="false" />
+		<pilot power="1" max="3" room="1" start="true" />
+		<shields power="2" max="8" room="3" start="true" />
+		<weapons power="2" max="8" room="4" start="true" />
+	</systemList>
+	<weaponList missiles="6" load="WEAPONS_ANAEROBIC"/><!-- 1.25, was 10 --> 
+	<health amount="7"/>	
+	<maxPower amount ="7"/>
+	<crewCount amount = "2" max="3" class="anaerobic"/>
+	<boardingAI>sabotage</boardingAI>
+	<cloakImage>anaerobic_scout</cloakImage>
+	<aug name="O2_MASKS"/>
+</shipBlueprint>
+
+<shipBlueprint name="ANAEROBIC_SCOUT_4" layout="anaerobic_scout_4" img="anaerobic_scout">
+	<class>Lanius Scout</class>
+	<maxSector>7</maxSector>
+	<systemList>
+		<clonebay power="1" max="3" room="6" start="false" />
+		<doors power="1" max="3" room="5" start="false" />
+		<engines power="1" max="5" room="0" start="true" />
+		<hacking power="1" max="3" room="2" start="false" />
+		<pilot power="1" max="3" room="1" start="true" />
+		<shields power="2" max="8" room="3" start="true" />
+		<weapons power="2" max="8" room="4" start="true" />
+	</systemList>
+	<weaponList missiles="6" load="WEAPONS_ANAEROBIC"/><!-- 1.25, was 10 --> 
+	<health amount="7"/>	
+	<maxPower amount ="7"/>
+	<crewCount amount = "2" max="3" class="anaerobic"/>
+	<boardingAI>sabotage</boardingAI>
+	<cloakImage>anaerobic_scout</cloakImage>
+	<aug name="O2_MASKS"/>
+</shipBlueprint>
+
+<shipBlueprint name="ANAEROBIC_SCOUT_5" layout="anaerobic_scout_5" img="anaerobic_scout">
+	<class>Lanius Scout</class>
+	<maxSector>7</maxSector>
+	<systemList>
+		<clonebay power="1" max="3" room="6" start="false" />
+		<doors power="1" max="3" room="5" start="false" />
+		<engines power="1" max="5" room="0" start="true" />
+		<hacking power="1" max="3" room="2" start="false" />
+		<pilot power="1" max="3" room="1" start="true" />
+		<shields power="2" max="8" room="3" start="true" />
+		<weapons power="2" max="8" room="4" start="true" />
+	</systemList>
+	<weaponList missiles="6" load="WEAPONS_ANAEROBIC"/><!-- 1.25, was 10 --> 
+	<health amount="7"/>	
+	<maxPower amount ="7"/>
+	<crewCount amount = "2" max="3" class="anaerobic"/>
+	<boardingAI>sabotage</boardingAI>
+	<cloakImage>anaerobic_scout</cloakImage>
+	<aug name="O2_MASKS"/>
+</shipBlueprint>
+
+<shipBlueprint name="ANAEROBIC_SCOUT_6" layout="anaerobic_scout_6" img="anaerobic_scout">
+	<class>Lanius Scout</class>
+	<maxSector>7</maxSector>
+	<systemList>
+		<doors power="1" max="3" room="5" start="false" />
+		<engines power="1" max="5" room="0" start="true" />
+		<hacking power="1" max="3" room="2" start="false" />
+		<medbay power="1" max="3" room="6" start="false" />
+		<pilot power="1" max="3" room="1" start="true" />
+		<shields power="2" max="8" room="3" start="true" />
+		<weapons power="2" max="8" room="4" start="true" />
+	</systemList>
+	<weaponList missiles="6" load="WEAPONS_ANAEROBIC"/><!-- 1.25, was 10 --> 
+	<health amount="7"/>	
+	<maxPower amount ="7"/>
+	<crewCount amount = "2" max="3" class="anaerobic"/>
+	<boardingAI>sabotage</boardingAI>
+	<cloakImage>anaerobic_scout</cloakImage>
+	<aug name="O2_MASKS"/>
+</shipBlueprint>
+
+<shipBlueprint name="ANAEROBIC_SCOUT_7" layout="anaerobic_scout_7" img="anaerobic_scout">
+	<class>Lanius Scout</class>
+	<maxSector>7</maxSector>
+	<systemList>
+		<doors power="1" max="3" room="5" start="false" />
+		<engines power="1" max="5" room="0" start="true" />
+		<hacking power="1" max="3" room="2" start="false" />
+		<medbay power="1" max="3" room="7" start="false" />
+		<pilot power="1" max="3" room="1" start="true" />
+		<shields power="2" max="8" room="3" start="true" />
+		<weapons power="2" max="8" room="4" start="true" />
+	</systemList>
+	<weaponList missiles="6" load="WEAPONS_ANAEROBIC"/><!-- 1.25, was 10 --> 
+	<health amount="7"/>	
+	<maxPower amount ="7"/>
+	<crewCount amount = "2" max="3" class="anaerobic"/>
+	<boardingAI>sabotage</boardingAI>
+	<cloakImage>anaerobic_scout</cloakImage>
+	<aug name="O2_MASKS"/>
+</shipBlueprint>
+
+<shipBlueprint name="ANAEROBIC_SCOUT_8" layout="anaerobic_scout_8" img="anaerobic_scout">
+	<class>Lanius Scout</class>
+	<maxSector>7</maxSector>
+	<systemList>
+		<doors power="1" max="3" room="5" start="false" />
+		<engines power="1" max="5" room="0" start="true" />
+		<hacking power="1" max="3" room="2" start="false" />
+		<medbay power="1" max="3" room="6" start="false" />
+		<pilot power="1" max="3" room="1" start="true" />
+		<shields power="2" max="8" room="3" start="true" />
+		<weapons power="2" max="8" room="4" start="true" />
+	</systemList>
+	<weaponList missiles="6" load="WEAPONS_ANAEROBIC"/><!-- 1.25, was 10 --> 
+	<health amount="7"/>	
+	<maxPower amount ="7"/>
+	<crewCount amount = "2" max="3" class="anaerobic"/>
+	<boardingAI>sabotage</boardingAI>
+	<cloakImage>anaerobic_scout</cloakImage>
+	<aug name="O2_MASKS"/>
+</shipBlueprint>
+
+<shipBlueprint name="ANAEROBIC_SCOUT_9" layout="anaerobic_scout_9" img="anaerobic_scout">
+	<class>Lanius Scout</class>
+	<maxSector>7</maxSector>
+	<systemList>
+		<cloaking power="1" max="3" room="8" start="false" />
+		<doors power="1" max="3" room="5" start="false" />
+		<engines power="1" max="8" room="0" start="true" /><!-- engines > 8 does not work as intended -->
+		<hacking power="1" max="3" room="2" start="false" />
+		<medbay power="1" max="3" room="6" start="false" />
+		<mind power="1" max="3" room="7" start="false" />
+		<pilot power="1" max="3" room="1" start="true" />
+		<shields power="2" max="8" room="3" start="true" />
+		<weapons power="2" max="8" room="4" start="true" />
+	</systemList>
+	<weaponList missiles="6" load="WEAPONS_ANAEROBIC"/><!-- 1.25, was 10 --> 
+	<health amount="7"/>	
+	<maxPower amount ="7"/>
+	<crewCount amount = "2" max="3" class="anaerobic"/>
+	<boardingAI>sabotage</boardingAI>
+	<cloakImage>anaerobic_scout</cloakImage>
+	<aug name="O2_MASKS"/>
+</shipBlueprint>
+
+
+<shipBlueprint name="ANAEROBIC_BOMBER" layout="anaerobic_bomber" img="anaerobic_bomber">
+	<class>Lanius Bomber</class>
+	<minSector>3</minSector>
+	<systemList>
+		<pilot power="1" max="3" room="3"/>
+		<doors power="1" max="3" room="10" start="false"/>
+		<clonebay power="1" max="3" room="7" start="false"/>
+		<!--<oxygen power="1" max="3" room="9"/> -->
+		<shields power="2" max="8" room="0"/>
+		<engines power="1" max="5" room="9"/>
+		<weapons power="2" max="8" room="1"/>
+		<mind power="1" max="2" room="4" start="false"/>
+		<teleporter power="1" max="3" room="8"/>
+		<cloaking power="1" max="3" room="2" start="false"/>
+	</systemList>
+	<weaponList missiles="6" load="WEAPONS_ANAEROBIC"/><!-- 1.25, was 10 --> 
+	<health amount="9"/>	
+	<maxPower amount ="7"/>
+	<crewCount amount = "3" max="5" class="anaerobic"/>
+	<boardingAI>sabotage</boardingAI>
+	<cloakImage>anaerobic_bomber</cloakImage>
+	<aug name="O2_MASKS"/>
+</shipBlueprint>
+
+<shipBlueprint name="ANAEROBIC_BOMBER_2" layout="anaerobic_bomber_2" img="anaerobic_bomber">
+	<class>Lanius Bomber</class>
+	<minSector>3</minSector>
+	<systemList>
+		<cloaking power="1" max="3" room="0" start="false" />
+		<clonebay power="1" max="3" room="5" start="false" />
+		<doors power="1" max="3" room="8" start="false" />
+		<engines power="1" max="5" room="7" start="true" />
+		<mind power="1" max="2" room="2" start="false" />
+		<pilot power="1" max="3" room="1" start="true" />
+		<shields power="2" max="8" room="3" start="true" />
+		<teleporter power="1" max="3" room="6" start="true" />
+		<weapons power="2" max="8" room="4" start="true" />
+	</systemList>
+	<weaponList missiles="6" load="WEAPONS_ANAEROBIC"/><!-- 1.25, was 10 --> 
+	<health amount="9"/>	
+	<maxPower amount ="7"/>
+	<crewCount amount = "3" max="5" class="anaerobic"/>
+	<boardingAI>sabotage</boardingAI>
+	<cloakImage>anaerobic_bomber</cloakImage>
+	<aug name="O2_MASKS"/>
+</shipBlueprint>
+
+<shipBlueprint name="ANAEROBIC_BOMBER_3" layout="anaerobic_bomber_3" img="anaerobic_bomber">
+	<class>Lanius Bomber</class>
+	<minSector>3</minSector>
+	<systemList>
+		<cloaking power="1" max="3" room="0" start="false" />
+		<clonebay power="1" max="3" room="5" start="false" />
+		<doors power="1" max="3" room="8" start="false" />
+		<engines power="1" max="5" room="7" start="true" />
+		<mind power="1" max="2" room="2" start="false" />
+		<pilot power="1" max="3" room="1" start="true" />
+		<shields power="2" max="8" room="3" start="true" />
+		<teleporter power="1" max="3" room="6" start="true" />
+		<weapons power="2" max="8" room="4" start="true" />
+	</systemList>
+	<weaponList missiles="6" load="WEAPONS_ANAEROBIC"/><!-- 1.25, was 10 --> 
+	<health amount="9"/>	
+	<maxPower amount ="7"/>
+	<crewCount amount = "3" max="5" class="anaerobic"/>
+	<boardingAI>sabotage</boardingAI>
+	<cloakImage>anaerobic_bomber</cloakImage>
+	<aug name="O2_MASKS"/>
+</shipBlueprint>
+
+<shipBlueprint name="ANAEROBIC_BOMBER_4" layout="anaerobic_bomber_4" img="anaerobic_bomber">
+	<class>Lanius Bomber</class>
+	<minSector>3</minSector>
+	<systemList>
+		<cloaking power="1" max="3" room="0" start="false" />
+		<clonebay power="1" max="3" room="4" start="false" />
+		<doors power="1" max="3" room="7" start="false" />
+		<engines power="1" max="5" room="8" start="true" />
+		<mind power="1" max="2" room="2" start="false" />
+		<pilot power="1" max="3" room="1" start="true" />
+		<shields power="2" max="8" room="6" start="true" />
+		<teleporter power="1" max="3" room="5" start="true" />
+		<weapons power="2" max="8" room="3" start="true" />
+	</systemList>
+	<weaponList missiles="6" load="WEAPONS_ANAEROBIC"/><!-- 1.25, was 10 --> 
+	<health amount="9"/>	
+	<maxPower amount ="7"/>
+	<crewCount amount = "3" max="5" class="anaerobic"/>
+	<boardingAI>sabotage</boardingAI>
+	<cloakImage>anaerobic_bomber</cloakImage>
+	<aug name="O2_MASKS"/>
+</shipBlueprint>
+
+<shipBlueprint name="ANAEROBIC_BOMBER_5" layout="anaerobic_bomber_5" img="anaerobic_bomber">
+	<class>Lanius Bomber</class>
+	<minSector>3</minSector>
+	<systemList>
+		<cloaking power="1" max="3" room="6" start="false" />
+		<doors power="1" max="3" room="7" start="false" />
+		<engines power="1" max="7" room="9" start="true" />
+		<medbay power="1" max="3" room="8" start="false" />
+		<mind power="1" max="3" room="2" start="false" />
+		<pilot power="1" max="3" room="1" start="true" />
+		<shields power="2" max="8" room="10" start="true" />
+		<teleporter power="1" max="3" room="0" start="true" />
+		<weapons power="2" max="8" room="3" start="true" />
+	</systemList>
+	<weaponList missiles="6" load="WEAPONS_ANAEROBIC"/><!-- 1.25, was 10 --> 
+	<health amount="9"/>	
+	<maxPower amount ="7"/>
+	<crewCount amount = "3" max="5" class="anaerobic"/>
+	<boardingAI>sabotage</boardingAI>
+	<cloakImage>anaerobic_bomber</cloakImage>
+	<aug name="O2_MASKS"/>
+</shipBlueprint>
+
+<shipBlueprint name="ANAEROBIC_BOMBER_6" layout="anaerobic_bomber_6" img="anaerobic_bomber">
+	<class>Lanius Bomber</class>
+	<minSector>3</minSector>
+	<systemList>
+		<cloaking power="1" max="3" room="5" start="false" />
+		<medbay power="1" max="3" room="7" start="false" />
+		<doors power="1" max="3" room="10" start="false" />
+		<engines power="1" max="5" room="9" start="true" />
+		<mind power="1" max="2" room="6" start="false" />
+		<pilot power="1" max="3" room="3" start="true" />
+		<shields power="2" max="8" room="0" start="true" />
+		<teleporter power="1" max="3" room="8" start="true" />
+		<weapons power="2" max="8" room="1" start="true" />
+	</systemList>
+	<weaponList missiles="6" load="WEAPONS_ANAEROBIC"/><!-- 1.25, was 10 --> 
+	<health amount="9"/>	
+	<maxPower amount ="7"/>
+	<crewCount amount = "3" max="5" class="anaerobic"/>
+	<boardingAI>sabotage</boardingAI>
+	<cloakImage>anaerobic_bomber</cloakImage>
+	<aug name="O2_MASKS"/>
+</shipBlueprint>
+
+<shipBlueprint name="ANAEROBIC_BOMBER_7" layout="anaerobic_bomber_7" img="anaerobic_bomber">
+	<class>Lanius Bomber</class>
+	<minSector>3</minSector>
+	<systemList>
+		<cloaking power="1" max="3" room="3" start="false" />
+		<medbay power="1" max="3" room="5" start="false" />
+		<doors power="1" max="3" room="7" start="false" />
+		<engines power="1" max="5" room="0" start="true" />
+		<mind power="1" max="2" room="4" start="false" />
+		<pilot power="1" max="3" room="1" start="true" />
+		<shields power="2" max="8" room="2" start="true" />
+		<teleporter power="1" max="3" room="6" start="true" />
+		<weapons power="2" max="8" room="8" start="true" />
+	</systemList>
+	<weaponList missiles="6" load="WEAPONS_ANAEROBIC"/><!-- 1.25, was 10 --> 
+	<health amount="9"/>	
+	<maxPower amount ="7"/>
+	<crewCount amount = "3" max="5" class="anaerobic"/>
+	<boardingAI>sabotage</boardingAI>
+	<cloakImage>anaerobic_bomber</cloakImage>
+	<aug name="O2_MASKS"/>
+</shipBlueprint>
+
+<shipBlueprint name="ANAEROBIC_BOMBER_8" layout="anaerobic_bomber_8" img="anaerobic_bomber">
+	<class>Lanius Bomber</class>
+	<minSector>3</minSector>
+	<systemList>
+		<cloaking power="1" max="3" room="8" start="false" />
+		<medbay power="1" max="3" room="3" start="false" />
+		<doors power="1" max="3" room="4" start="false" />
+		<engines power="1" max="5" room="6" start="true" />
+		<mind power="1" max="2" room="7" start="false" />
+		<pilot power="1" max="3" room="1" start="true" />
+		<shields power="2" max="8" room="5" start="true" />
+		<teleporter power="1" max="3" room="2" start="true" />
+		<weapons power="2" max="8" room="0" start="true" />
+	</systemList>
+	<weaponList missiles="6" load="WEAPONS_ANAEROBIC"/><!-- 1.25, was 10 --> 
+	<health amount="9"/>	
+	<maxPower amount ="7"/>
+	<crewCount amount = "3" max="5" class="anaerobic"/>
+	<boardingAI>sabotage</boardingAI>
+	<cloakImage>anaerobic_bomber</cloakImage>
+	<aug name="O2_MASKS"/>
+</shipBlueprint>
+
+<shipBlueprint name="ANAEROBIC_BOMBER_9" layout="anaerobic_bomber_9" img="anaerobic_bomber">
+	<class>Lanius Bomber</class>
+	<minSector>3</minSector>
+	<systemList>
+		<cloaking power="1" max="3" room="7" start="false" />
+		<clonebay power="1" max="3" room="2" start="false" />
+		<doors power="1" max="3" room="3" start="false" />
+		<engines power="1" max="5" room="5" start="true" />
+		<hacking power="1" max="3" room="8" start="false" />
+		<mind power="1" max="2" room="6" start="false" />
+		<pilot power="1" max="3" room="1" start="true" />
+		<shields power="2" max="8" room="4" start="true" />
+		<teleporter power="1" max="3" room="9" start="true" />
+		<weapons power="2" max="8" room="0" start="true" />
+	</systemList>
+	<weaponList missiles="6" load="WEAPONS_ANAEROBIC"/><!-- 1.25, was 10 --> 
+	<health amount="9"/>	
+	<maxPower amount ="7"/>
+	<crewCount amount = "3" max="5" class="anaerobic"/>
+	<boardingAI>sabotage</boardingAI>
+	<cloakImage>anaerobic_bomber</cloakImage>
+	<aug name="O2_MASKS"/>
+</shipBlueprint>

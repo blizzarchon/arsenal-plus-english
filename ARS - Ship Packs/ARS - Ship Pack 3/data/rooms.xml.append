@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<roomLayout name="engines_2">
+	<computerGlow x="6" y="53" dir="DOWN" />
+</roomLayout>
+<roomLayout name="pilot">
+	<computerGlow name="glow_pilot" x="18" y="9" dir="RIGHT" />
+</roomLayout>
+<roomLayout name="shields_4">
+	<computerGlow x="0" y="8" dir="LEFT" />
+</roomLayout>
+<roomLayout name="weapons_9">
+	<computerGlow x="41" y="0" dir="UP" />
+</roomLayout>
+
+<roomLayout name="engines_Angelada">
+	<computerGlow x="5" y="53" dir="DOWN" />
+</roomLayout>
+<roomLayout name="pilot_Angelada">
+	<computerGlow name="glow_pilot" x="54" y="9" dir="RIGHT" />
+</roomLayout>
+<roomLayout name="shields_Angelada">
+	<computerGlow x="6" y="0" dir="UP" />
+</roomLayout>
+<roomLayout name="weapons">
+	<computerGlow x="41" y="0" dir="UP" />
+</roomLayout>
+
+<roomLayout name="engines_Equilibrium">
+	<computerGlow x="7" y="53" dir="DOWN" />
+</roomLayout>
+<roomLayout name="pilot_Equilibrium">
+	<computerGlow name="glow_pilot" x="53" y="9" dir="RIGHT" />
+</roomLayout>
+<roomLayout name="shields_Equilibrium">
+	<computerGlow x="0" y="40" dir="LEFT" />
+</roomLayout>
+<roomLayout name="weapons_Equilibrium">
+	<computerGlow x="20" y="7" dir="RIGHT" />
+</roomLayout>
+
+<roomLayout name="engines_Nemesis">
+	<computerGlow x="6" y="53" dir="DOWN" />
+</roomLayout>
+<roomLayout name="pilot_Nemesis">
+	<computerGlow name="glow_pilot" x="18" y="42" dir="RIGHT" />
+</roomLayout>
+<roomLayout name="shields_Nemesis">
+	<computerGlow x="0" y="8" dir="LEFT" />
+</roomLayout>
+<roomLayout name="weapons_Nemesis">
+	<computerGlow x="41" y="0" dir="UP" />
+</roomLayout>
+
+<roomLayout name="engines_3">
+	<computerGlow x="53" y="8" dir="RIGHT" />
+</roomLayout>
+<roomLayout name="shields">
+	<computerGlow x="0" y="8" dir="LEFT" />
+</roomLayout>
+<roomLayout name="weapons_Tulip">
+	<computerGlow x="41" y="0" dir="UP" />
+</roomLayout>
+
+<roomLayout name="engines_Nebuchadnezzar">
+	<computerGlow x="7" y="1" dir="UP" />
+</roomLayout>
+<roomLayout name="pilot_Nebuchadnezzar">
+	<computerGlow name="glow_pilot" x="18" y="9" dir="RIGHT" />
+</roomLayout>
+<roomLayout name="shields_Nebuchadnezzar">
+	<computerGlow x="1" y="8" dir="LEFT" />
+</roomLayout>
+<roomLayout name="weapons_Nebuchadnezzar">
+	<computerGlow x="6" y="0" dir="UP" />
+</roomLayout>
+
+<roomLayout name="engines_Devastator">
+	<computerGlow x="5" y="53" dir="DOWN" />
+</roomLayout>
+<roomLayout name="pilot_Devastator">
+	<computerGlow name="glow_pilot" x="53" y="9" dir="RIGHT" />
+</roomLayout>
+<roomLayout name="shields_Devastator">
+	<computerGlow x="40" y="53" dir="DOWN" />
+</roomLayout>
+<roomLayout name="weapons_Devastator">
+	<computerGlow x="41" y="0" dir="UP" />
+</roomLayout>
+
+<roomLayout name="engines_Wormulon">
+	<computerGlow x="6" y="53" dir="DOWN" />
+</roomLayout>
+<roomLayout name="pilot_Wormulon">
+	<computerGlow name="glow_pilot" x="19" y="9" dir="RIGHT" />
+</roomLayout>
+<roomLayout name="shields_Wormulon">
+	<computerGlow x="1" y="8" dir="LEFT" />
+</roomLayout>
+<roomLayout name="weapons_Wormulon">
+	<computerGlow x="41" y="0" dir="UP" />
+</roomLayout>
+
+<roomLayout name="engines_Apophis">
+	<computerGlow x="5" y="1" dir="UP" />
+</roomLayout>
+<roomLayout name="pilot_Apophis">
+	<computerGlow name="glow_pilot" x="19" y="9" dir="RIGHT" />
+</roomLayout>
+<roomLayout name="shields_Apophis">
+	<computerGlow x="1" y="8" dir="LEFT" />
+</roomLayout>
+<roomLayout name="weapons_Apophis">
+	<computerGlow x="41" y="0" dir="UP" />
+</roomLayout>
+
+<roomLayout name="engines_Spectrum">
+	<computerGlow x="6" y="53" dir="DOWN" />
+</roomLayout>
+<roomLayout name="pilot_Spectrum">
+	<computerGlow name="glow_pilot" x="54" y="9" dir="RIGHT" />
+</roomLayout>
+<roomLayout name="shields_Spectrum">
+	<computerGlow x="1" y="6" dir="LEFT" />
+</roomLayout>
+<roomLayout name="weapons_Spectrum">
+	<computerGlow x="53" y="6" dir="RIGHT" />
+</roomLayout>
+
+<roomLayout name="engines_Avalon">
+	<computerGlow x="52" y="5" dir="RIGHT" />
+</roomLayout>
+<roomLayout name="pilot_Avalon">
+	<computerGlow name="glow_pilot" x="53" y="9" dir="RIGHT" />
+</roomLayout>
+<roomLayout name="shields_Avalon">
+	<computerGlow x="53" y="40" dir="RIGHT" />
+</roomLayout>
+<roomLayout name="weapons_Avalon">
+	<computerGlow x="54" y="41" dir="RIGHT" />
+</roomLayout>
+
+<roomLayout name="engines_Megatron">
+	<computerGlow x="5" y="53" dir="DOWN" />
+</roomLayout>
+<roomLayout name="pilot_Megatron">
+	<computerGlow name="glow_pilot" x="18" y="9" dir="RIGHT" />
+</roomLayout>
+<roomLayout name="shields_Megatron">
+	<computerGlow x="1" y="8" dir="LEFT" />
+</roomLayout>
+<roomLayout name="weapons_Megatron">
+	<computerGlow x="54" y="42" dir="RIGHT" />
+</roomLayout>
+
+<roomLayout name="engines_Amethystium">
+	<computerGlow x="6" y="53" dir="DOWN" />
+</roomLayout>
+<roomLayout name="pilot_Amethystium">
+	<computerGlow name="glow_pilot" x="53" y="9" dir="RIGHT" />
+</roomLayout>
+<roomLayout name="shields_Amethystium">
+	<computerGlow x="6" y="0" dir="UP" />
+</roomLayout>
+<roomLayout name="weapons_Amethystium">
+	<computerGlow x="6" y="1" dir="UP" />
+</roomLayout>
+
+<roomLayout name="engines_7">
+	<computerGlow x="53" y="43" dir="RIGHT" />
+</roomLayout>
+<roomLayout name="pilot_4">
+	<computerGlow name="glow_pilot" x="18" y="9" dir="RIGHT" />
+</roomLayout>
+<roomLayout name="shields_3">
+	<computerGlow x="0" y="43" dir="LEFT" />
+</roomLayout>
+<roomLayout name="weapons_zircon">
+	<computerGlow x="41" y="0" dir="UP" />
+</roomLayout>
+
+<roomLayout name="engines_Collector">
+	<computerGlow x="5" y="53" dir="DOWN" />
+</roomLayout>
+<roomLayout name="pilot_Collector">
+	<computerGlow name="glow_pilot" x="19" y="9" dir="RIGHT" />
+</roomLayout>
+<roomLayout name="shields_Collector">
+	<computerGlow x="0" y="7" dir="LEFT" />
+</roomLayout>
+<roomLayout name="weapons_Collector">
+	<computerGlow x="41" y="0" dir="UP" />
+</roomLayout>
+
+<roomLayout name="engines_3_formator">
+	<computerGlow x="53" y="9" dir="RIGHT" />
+</roomLayout>
+<roomLayout name="pilot_2">
+	<computerGlow name="glow_pilot" x="53" y="9" dir="RIGHT" />
+</roomLayout>
+<roomLayout name="shields_5">
+	<computerGlow x="6" y="0" dir="UP" />
+</roomLayout>
+<roomLayout name="weapons_4">
+	<computerGlow x="6" y="0" dir="UP" />
+</roomLayout>
+
+
+
+<roomLayout name="engines_firestorm">
+	<computerGlow x="5" y="53" dir="DOWN" />
+</roomLayout>
+<roomLayout name="pilot_firestorm">
+	<computerGlow name="glow_pilot" x="18" y="9" dir="RIGHT" />
+</roomLayout>
+

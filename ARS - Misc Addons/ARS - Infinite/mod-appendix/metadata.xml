@@ -1,0 +1,68 @@
+<metadata>
+  <!-- CDATA tags mean no need to escape special characters. -->
+  <!-- Don't worry about spaces at the start/end. That gets trimmed. -->
+
+
+  <!-- The title of this mod. -->
+  <title><![CDATA[ Arsenal+ in English - Infinite ]]></title>
+
+
+  <!--
+    This mod's thread on ftlgame.com.
+    If there's no thread yet, create one to announce your upcoming mod in
+    the 'Mod Development' forum. Then paste the url here.
+  -->
+  <threadUrl><![CDATA[ https://subsetgames.com/forum/viewtopic.php?f=11&t=29891 ]]></threadUrl>
+
+
+  <!-- Your forum user name. -->
+  <author><![CDATA[ bamalf, translated by mr_easy_money ]]></author>
+
+
+  <!--
+    Version can be any string, preferably at least a number.
+    Examples:
+      0.3
+      2.1c Ships Only WIP
+      2.4.1 Hi-res Bkgs
+      1.0 for FTL 1.03.1
+  -->
+  <version><![CDATA[ 1.20 ]]></version>
+
+
+  <description>
+<![CDATA[
+Patch after all ship mods, otherwise progression may not work correctly.
+
+Arsenal+ Infinite is different from an infinite add-on you may know, CE Infinite.
+
+"Your ship is equipped with an advanced navigation system: every time you jump into a new sector, your piloting will be upgraded. After upgrading to level 8, you can jump into the remote sectors of the Galaxy, or go to the Federation Base to complete your mission."
+
+Thus, the remote sectors will have the same difficulty as the 7th sector.
+
+This add-on may be more useful on Hard (where you get less scrap overall) and/or with the A+ add-on (where everything costs more) to better prepare yourself for The Last Stand, and maybe even if you've got a Random Flagship on.
+]]>
+  </description>
+
+  <!--
+    Suggestions for the description...
+
+    Write a short paragraph about the mod's effect first (what style ship,
+    how does it affect gameplay). No need to introduce yourself.
+
+    Optionally add a paragraph of background flavor.
+
+    Optionally list important features.
+
+    List any concerns about mod compatibility, preferred order, or
+    requirements.
+
+    Mention "Replaces the XYZ ship." if relevant.
+      Kestrel-A, Stealth-A, Mantis-A,
+      Engi-A,    Fed-A,     Slug-A,
+      Rock-A,    Zoltan-A,  Crystal-A
+
+    Above all, keep the description general, so you won't have to edit
+    that again for each new version.
+  -->
+</metadata>

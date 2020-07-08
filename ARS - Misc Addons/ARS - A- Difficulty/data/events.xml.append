@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<mod:findName type="eventList" name="NOTHING2_HUMAN">
+	<mod-append:event load="NOTHING2_HUMAN_GOOD" />
+</mod:findName>
+<mod:findName type="eventList" name="NOTHING2_HUMAN2">
+	<mod-append:event load="NOTHING2_HUMAN_BEST" />
+</mod:findName>
+
+<mod:findName type="eventList" name="NOTHING2_ENGI">
+	<mod-append:event load="NOTHING2_ENGI_GOOD" />
+</mod:findName>
+<mod:findName type="eventList" name="NOTHING2_ENGI2">
+	<mod-append:event load="NOTHING2_ENGI_BEST" />
+</mod:findName>
+
+<mod:findName type="eventList" name="NOTHING2_ENERGY">
+	<mod-append:event load="NOTHING2_ENERGY_GOOD" />
+</mod:findName>
+<mod:findName type="eventList" name="NOTHING2_ENERGY2">
+	<mod-append:event load="NOTHING2_ENERGY_GOOD" />
+</mod:findName>
+
+<mod:findName type="eventList" name="NOTHING2_MANTIS">
+	<mod-append:event load="NOTHING2_MANTIS_GOOD" />
+</mod:findName>
+<mod:findName type="eventList" name="NOTHING2_MANTIS2">
+	<mod-append:event load="NOTHING2_MANTIS_BEST" />
+</mod:findName>
+
+<mod:findName type="eventList" name="NOTHING2_SLUG">
+	<mod-append:event load="NOTHING2_SLUG_GOOD" />
+</mod:findName>
+<mod:findName type="eventList" name="NOTHING2_SLUG2">
+	<mod-append:event load="NOTHING2_SLUG_BEST" />
+</mod:findName>
+
+<mod:findName type="eventList" name="NOTHING2_ROCK">
+	<mod-append:event load="NOTHING2_ROCK_GOOD" />
+</mod:findName>
+<mod:findName type="eventList" name="NOTHING2_ROCK2">
+	<mod-append:event load="NOTHING2_ROCK_BEST" />
+</mod:findName>
+
+<mod:findName type="eventList" name="NOTHING2_ANAEROBIC">
+	<mod-append:event load="NOTHING2_ANAEROBIC_GOOD" />
+</mod:findName>
+<mod:findName type="eventList" name="NOTHING2_ANAEROBIC2">
+	<mod-append:event load="NOTHING2_ANAEROBIC_BEST" />
+</mod:findName>
+
+<mod:findName type="eventList" name="NOTHING2_CRYSTAL">
+	<mod-append:event load="NOTHING2_CRYSTAL_GOOD" />
+</mod:findName>
+<mod:findName type="eventList" name="NOTHING2_CRYSTAL2">
+	<mod-append:event load="NOTHING2_CRYSTAL_GOOD" />
+</mod:findName>
+
+<mod:findName type="eventList" name="NOTHING2_GHOST">
+	<mod-append:event load="NOTHING2_GHOST_GOOD" />
+</mod:findName>
+<mod:findName type="eventList" name="NOTHING2_GHOST2">
+	<mod-append:event load="NOTHING2_GHOST_GOOD" />
+</mod:findName>
+
+
+<!-- 1.26.1 -->
+<mod:findName type="eventList" name="ADV_SCANNERS_LIST">
+	<mod:findLike type="event"><mod:selector load="ADV_SCANNERS_LIST_BAD" />
+		<mod:removeTag />
+	</mod:findLike>
+</mod:findName>
+<mod:findName type="eventList" name="AUTO_COOLDOWN_LIST">
+	<mod:findLike type="event"><mod:selector load="AUTO_COOLDOWN_LIST_WASTE" />
+		<mod:removeTag />
+	</mod:findLike>
+</mod:findName>
+<mod:findName type="eventList" name="BACKUP_DNA_LIST">
+	<mod:findComposite>
+		<mod:par op="OR">
+			<mod:findLike type="event"><mod:selector load="BACKUP_DNA_LIST_BAD" /></mod:findLike>
+			<mod:findLike type="event"><mod:selector load="BACKUP_DNA_LIST_VERY_BAD" /></mod:findLike>
+		</mod:par>
+		<mod:removeTag />
+	</mod:findComposite>
+</mod:findName>
+<mod:findName type="eventList" name="BATTERY_BOOSTER_LIST">
+	<mod:findLike type="event"><mod:selector load="BATTERY_BOOSTER_BAD" />
+		<mod:removeTag />
+	</mod:findLike>
+</mod:findName>
+<mod:findName type="eventList" name="CLOAK_FIRE_LIST_LOW">
+	<mod:findLike type="event"><mod:selector load="CLOAK_FIRE_LIST_LOW_BAD" />
+		<mod:removeTag />
+	</mod:findLike>
+</mod:findName>
+<mod:findName type="eventList" name="CLOAK_FIRE_LIST_MED">
+	<mod:findLike type="event"><mod:selector load="CLOAK_FIRE_LIST_MED_BAD" />
+		<mod:removeTag />
+	</mod:findLike>
+</mod:findName>
+<mod:findName type="eventList" name="CLOAK_FIRE_LIST_HIGH">
+	<mod:findLike type="event"><mod:selector load="CLOAK_FIRE_LIST_HIGH_BAD" />
+		<mod:removeTag />
+	</mod:findLike>
+</mod:findName>
+<mod:findName type="event" name="CREW_STIMS_PREPARE">
+	<mod:findWithChildLike type="choice" child-type="event"><mod:selector load="CREW_STIMS_LIST_ALMOST_NOTHING" />
+		<mod-overwrite:event load="CREW_STIMS_LIST_NOTHING" />
+	</mod:findWithChildLike>
+</mod:findName>
+<mod:findName type="eventList" name="CREW_STIMS_LIST">
+	<mod:findComposite>
+		<mod:par op="OR">
+			<mod:findLike type="event"><mod:selector load="CREW_STIMS_LIST_BAD" /></mod:findLike>
+			<mod:findLike type="event"><mod:selector load="CREW_STIMS_LIST_VERY_BAD" /></mod:findLike>
+		</mod:par>
+		<mod:removeTag />
+	</mod:findComposite>
+</mod:findName>
+<mod:findName type="eventList" name="ENERGY_SHIELD_LIST">
+	<mod:findLike type="event"><mod:selector load="ENERGY_SHIELD_LIST_BAD" />
+		<mod:removeTag />
+	</mod:findLike>
+</mod:findName>
+<mod:findName type="eventList" name="EXPLOSIVE_REPLICATOR_LIST">
+	<mod:findLike type="event"><mod:selector load="EXPLOSIVE_REPLICATOR_LIST_BAD" />
+		<mod:removeTag />
+	</mod:findLike>
+</mod:findName>
+<mod:findName type="eventList" name="FLEET_DISTRACTION_LIST">
+	<mod:findLike type="event"><mod:selector load="FLEET_DISTRACTION_LIST_BAD" />
+		<mod:removeTag />
+	</mod:findLike>
+</mod:findName>
+<mod:findName type="eventList" name="FTL_BOOSTER_LIST">
+	<mod:findLike type="event"><mod:selector load="FTL_BOOSTER_LIST_BAD" />
+		<mod:removeTag />
+	</mod:findLike>
+</mod:findName>
+<mod:findName type="eventList" name="HACKING_STUN_LIST_LOW">
+	<mod:findLike type="event"><mod:selector load="HACKING_STUN_LIST_LOW_BAD" />
+		<mod:removeTag />
+	</mod:findLike>
+</mod:findName>
+<mod:findName type="eventList" name="HACKING_STUN_LIST_MED">
+	<mod:findLike type="event"><mod:selector load="HACKING_STUN_LIST_MED_BAD" />
+		<mod:removeTag />
+	</mod:findLike>
+</mod:findName>
+<mod:findName type="eventList" name="HACKING_STUN_LIST_HIGH">
+	<mod:findLike type="event"><mod:selector load="HACKING_STUN_LIST_HIGH_BAD" />
+		<mod:removeTag />
+	</mod:findLike>
+</mod:findName>
+
+<mod:findName type="event" name="ION_ARMOR_PREPARE">
+	<mod-overwrite:text>To create a drone you will need drone parts.</mod-overwrite:text>
+	<mod:findLike type="choice" start="1" limit="2"><mod:removeTag /></mod:findLike><!-- deletes only choice 2 and 3 -->
+	<mod-overwrite:choice hidden="false"><!-- overwrites choice 1 -->
+		<text>Spend the required number of drones.</text>
+		<event>
+			<text>You successfully assemble a drone.</text>
+			<item_modify>
+				<item type="drones" min="-10" max="-5"/>
+			</item_modify>
+			<drone name="DRONES_IONES_LIST"/>
+		</event>
+	</mod-overwrite:choice>
+</mod:findName>
+
+<mod:findName type="eventList" name="NANO_MEDBAY_LIST">
+	<mod:findLike type="event"><mod:selector load="NANO_MEDBAY_LIST_BAD" />
+		<mod:removeTag />
+	</mod:findLike>
+</mod:findName>
+<mod:findName type="eventList" name="O2_MASKS_LIST">
+	<mod:findLike type="event"><mod:selector load="O2_MASKS_LIST_BAD" />
+		<mod:removeTag />
+	</mod:findLike>
+</mod:findName>
+<mod:findName type="eventList" name="O2_MASKS_LIST_NO_CREW">
+	<mod:findLike type="event"><mod:selector load="O2_MASKS_LIST_BAD_NO_CREW" />
+		<mod:removeTag />
+	</mod:findLike>
+</mod:findName>
+<mod:findName type="eventList" name="ROCK_ARMOR_LIST">
+	<mod:findLike type="event"><mod:selector load="ROCK_ARMOR_LIST_BAD" />
+		<mod:removeTag />
+	</mod:findLike>
+</mod:findName>
+<mod:findName type="eventList" name="SCRAP_COLLECTOR_LIST">
+	<mod:findLike type="event"><mod:selector load="SCRAP_COLLECTOR_LIST_BAD" />
+		<mod:removeTag />
+	</mod:findLike>
+</mod:findName>
+<mod:findName type="eventList" name="SHIELD_RECHARGE_LIST">
+	<mod:findLike type="event"><mod:selector load="SHIELD_RECHARGE_LIST_WASTE" />
+		<mod:removeTag />
+	</mod:findLike>
+</mod:findName>
+
+<mod:findName type="eventList" name="WEAPON_PREIGNITE_LIST">
+	<mod:findComposite>
+		<mod:par op="OR">
+			<mod:findLike type="event" limit="3"><mod:selector load="WEAPON_PREIGNITE_LIST_GOOD" /></mod:findLike>
+			<mod:findLike type="event"><mod:selector load="WEAPON_PREIGNITE_LIST_BAD" /></mod:findLike>
+			<mod:findLike type="event"><mod:selector load="WEAPON_PREIGNITE_LIST_VERY_BAD" /></mod:findLike>
+			<mod:findLike type="event"><mod:selector load="WEAPON_PREIGNITE_LIST_SUPER_VERY_BAD" /></mod:findLike>
+		</mod:par>
+		<mod:removeTag />
+	</mod:findComposite>
+</mod:findName>
+
+<mod:findName type="eventList" name="ZOLTAN_BYPASS_LIST">
+	<mod:findComposite>
+		<mod:par op="OR">
+			<mod:findLike type="event" limit="2"><mod:selector load="ZOLTAN_BYPASS_LIST_GOOD" /></mod:findLike>
+			<mod:findLike type="event"><mod:selector load="ZOLTAN_BYPASS_LIST_BAD" /></mod:findLike>
+			<mod:findLike type="event"><mod:selector load="ZOLTAN_BYPASS_LIST_VERY_BAD" /></mod:findLike>
+		</mod:par>
+		<mod:removeTag />
+	</mod:findComposite>
+</mod:findName>
+
+
+<mod:findName type="eventList" name="DESTROYED_DEFAULT">
+	<mod:findComposite>
+		<mod:par op="OR">
+			<mod:findLike type="event"><mod:selector load="DESTROYED_DEFAULT_STUFF_LOW" /></mod:findLike>
+			<mod:findLike type="event" limit="2"><mod:selector load="DESTROYED_DEFAULT_STANDARD_LOW" /></mod:findLike>
+		</mod:par>
+		<mod:removeTag />
+	</mod:findComposite>
+</mod:findName>
+
+<mod:findName type="eventList" name="DEAD_CREW_DEFAULT">
+	<mod:findComposite>
+		<mod:par op="OR">
+			<mod:findLike type="event"><mod:selector load="DEAD_CREW_DEFAULT_STUFF_MED" /></mod:findLike>
+			<mod:findLike type="event"><mod:selector load="DEAD_CREW_DEFAULT_STANDARD_LOW" /></mod:findLike>
+			<mod:findLike type="event" limit="3"><mod:selector load="DEAD_CREW_DEFAULT_STANDARD_HIGH" /></mod:findLike>
+			<mod:findLike type="event"><mod:selector load="DEAD_CREW_DEFAULT_FUEL_MED" /></mod:findLike>
+			<!-- <mod:findLike type="event"><mod:selector load="DEAD_CREW_DEFAULT_CREW" /></mod:findLike> -->
+			<mod:findLike type="event" limit="1"><mod:selector load="DEAD_CREW_DEFAULT_WEAPON_RANDOM" /></mod:findLike>
+		</mod:par>
+		<mod:removeTag />
+	</mod:findComposite>
+	<mod-append:event load="DEAD_CREW_DEFAULT_CREW" />
+	<!-- <mod-append:event>
+		<text>Now that their ship has been emptied of hostiles, you search it. Eventually you find a prisoner who offers to join your crew.</text>
+		<crewMember amount="1"/>
+		<autoReward level="LOW">scrap_only</autoReward>
+	</mod-append:event>
+	<mod-append:event>
+		<text>Now that their ship has been emptied of hostiles, you search it. Eventually you find a prisoner who offers to join your crew.</text>
+		<crewMember amount="1"/>
+		<autoReward level="RANDOM">scrap_only</autoReward>
+	</mod-append:event> -->
+</mod:findName>
+
+<mod:findName type="event" name="INJECTOR_POW_MASSIVE">
+	<mod:findComposite>
+		<mod:par op="OR">
+			<mod:findLike type="choice"><mod:selector req="OMICRON_TRIPLE_BLASTER_1" /></mod:findLike>
+			<mod:findLike type="choice"><mod:selector req="OMICRON_AUTOCANNON_1" /></mod:findLike>
+		</mod:par>
+		<mod:removeTag />
+	</mod:findComposite>
+</mod:findName>

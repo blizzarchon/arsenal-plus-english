@@ -1,0 +1,18 @@
+<text name="alt_unlock_crystal">Alt Unlock: Defeat the Flagship with Type A and Type B of every other ship (excluding the Avatar and Order Cruisers)</text>
+
+<mod:findName type="failsafe" name="ERROR: Patch Base Data before any Addons" panic="true" />
+<mod:findName type="failsafe" name="ERROR: Patch Base Resources before any Addons" panic="true" />
+
+<failsafe name="Arsenal+ Ship Pack 1" />
+
+<mod:findName type="failsafe" name="Arsenal+ Ship Pack 2">
+	<mod:findName name="ERROR: Ship Pack 1 will replace all of Ship Pack 2 -- Select only one Ship Pack" panic="true" />
+</mod:findName>
+
+<mod:findName type="failsafe" name="Arsenal+ Ship Pack 3">
+	<mod:findName name="ERROR: Ship Pack 1 will replace all of Ship Pack 3 -- Select only one Ship Pack" panic="true" />
+</mod:findName>
+
+<mod:findName type="failsafe" name="Arsenal+ Randtrel Ship Pack">
+	<mod:findName name="ERROR: Ship Pack 1 will replace all of Randtrel Ship Pack -- Select only one Ship Pack" panic="true" />
+</mod:findName>

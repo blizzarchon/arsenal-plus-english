@@ -1,0 +1,4 @@
+<mod:findName type="failsafe" name="ERROR: Patch Base Data before any Addons" panic="true" />
+<mod:findName type="failsafe" name="ERROR: Patch Base Resources before any Addons" panic="true" />
+
+<failsafe name="Arsenal+ Ship Packs" />

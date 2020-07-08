@@ -1,0 +1,3866 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Copyright (c) 2012 by Subset Games. All rights reserved -->
+
+<blueprintList name="DRONES_ZOLTANSHIELD">  <!-- Unchanged -->
+	<name>DRONE_SHIELD</name>
+	<name>DE_DRONE_SHIELD_SMALL</name>
+	<name>DE_DRONE_SHIELD_BIG</name>
+</blueprintList>
+
+<blueprintList name="WEAPONS_RARE">
+	<name>BA_BEAM_ADAPTIVE_3</name>
+	<name>BA_BEAM_BIO_FOCUS</name>
+	<name>BA_BEAM_FIRE_2</name>
+	<name>BEAM_FIRECHAIN</name><!-- 1.26.3 -->
+	<name>BA_BEAM_FIRE_FOCUS2</name>
+	<name>BA_BEAM_MAUL</name>
+	<name>BOMB_BREACH_3</name>
+	<name>BA_BOMB_CLUSTER_BREACH</name>
+	<name>BA_BOMB_NANO_2</name>
+	<name>BA_BOMB_NANO_3</name><!-- 1.25 -->
+	<name>BA_ION_BURST_3</name>
+	<name>BA_ION_VULKAN</name>
+	<name>BA_LASER_ARTILLERY_2</name>
+	<name>BA_LASER_HULLCRUSHER_3</name>
+	<name>BA_LASER_LIGHT_CHAINGUN</name>
+	<name>BA_MISSILES_IFRIT</name>
+	<name>BA_PLASMA_3</name>
+	<name>BA_SHOTGUN_MISSILES3</name>
+	<name>BEAM_3</name>
+	<name>BA_BEAM_PARTISAN</name><!-- 1.26 -->
+	<name>BEAM_BIOFIRE</name>
+	<name>BEAM_FAUCHARD</name>
+	<name>HEAVY_MINIGUN</name>
+	<name>LASER_BURST_4</name>
+	<name>LASER_CHAINGUN</name>
+	<name>LASER_CHAIN_3</name>
+	<name>LASER_CHAIN_LONG_3</name> <!-- 1.26 -->
+	<name>LASER_CHARGEGUN_3</name>
+	<name>LASER_CHARGEGUN_4</name>
+	<name>LASER_FIRE_CHAINGUN</name>
+	<name>LASER_HEAVY_CHARGE_2</name>
+	<name>LASER_HEAVY_PIERCE_2</name>
+	<name>MISSILES_MEGA</name>
+	<name>RAIL_DRIVER</name>
+	<name>SHOTGUN_007</name>
+	<name>SHOTGUN_2</name>
+	<name>SHTURM_FLAK</name>
+</blueprintList>
+
+
+<!--           Overwriting the previous ship lists to include the new versions            -->
+
+<blueprintList name="OVERRIDE_SHIPS_FED">
+	<name>FED_SCOUT</name>
+	<name>FED_SCOUT_2</name>
+	<name>FED_SCOUT_3</name>
+	<name>FED_BOMBER</name>
+	<name>FED_BOMBER_2</name>
+	<name>FED_BOMBER_3</name>
+	<name>FED_SCOUT_DLC</name>
+	<name>FED_SCOUT_DLC_2</name>
+	<name>FED_SCOUT_DLC_3</name>
+	<name>FED_BOMBER_DLC</name>
+	<name>FED_BOMBER_DLC_2</name>
+	<name>FED_BOMBER_DLC_3</name>
+</blueprintList>
+
+<blueprintList name="OVERRIDE_SHPS_REBEL_AND_AUTO">
+	<name>AUTO_BASIC</name>
+	<name>AUTO_BASIC_2</name>
+	<name>AUTO_BASIC_3</name>
+	<name>AUTO_ASSAULT</name>
+	<name>AUTO_ASSAULT_2</name>
+	<name>AUTO_ASSAULT_3</name>
+	<name>REBEL_FAT</name>
+	<name>REBEL_FAT_2</name>
+	<name>REBEL_FAT_3</name>
+	<name>REBEL_SKINNY</name>
+	<name>REBEL_SKINNY_2</name>
+	<name>REBEL_SKINNY_3</name>
+	<name>AUTO_BASIC_DLC</name>
+	<name>AUTO_BASIC_DLC_2</name>
+	<name>AUTO_BASIC_DLC_3</name>	
+	<name>AUTO_ASSAULT_DLC</name>
+	<name>AUTO_ASSAULT_DLC_2</name>
+	<name>AUTO_ASSAULT_DLC_3</name>
+	<name>REBEL_FAT_DLC</name>
+	<name>REBEL_FAT_DLC_2</name>
+	<name>REBEL_FAT_DLC_3</name>
+	<name>REBEL_SKINNY_DLC</name>
+	<name>REBEL_SKINNY_DLC_2</name>
+	<name>REBEL_SKINNY_DLC_3</name>
+</blueprintList>
+
+<blueprintList name="OVERRIDE_SHIPS_REBEL">
+	<name>REBEL_FAT</name>
+	<name>REBEL_FAT_2</name>
+	<name>REBEL_FAT_3</name>
+	<name>REBEL_SKINNY</name>
+	<name>REBEL_SKINNY_2</name>
+	<name>REBEL_SKINNY_3</name>
+	<name>REBEL_FAT_DLC</name>
+	<name>REBEL_FAT_DLC_2</name>
+	<name>REBEL_FAT_DLC_3</name>
+	<name>REBEL_SKINNY_DLC</name>
+	<name>REBEL_SKINNY_DLC_2</name>
+	<name>REBEL_SKINNY_DLC_3</name>
+	<!-- 1.27 -->
+	<name>REBEL_ABOMB_1</name>
+	<name>REBEL_ABOMB_2</name>
+	<name>REBEL_ABOMB_3</name>
+</blueprintList>
+
+
+<blueprintList name="SHIPS_REBEL_ELITE">
+	<name>REBEL_SKINNY_ELITE</name>
+	<name>REBEL_SKINNY_ELITE_2</name>
+	<name>REBEL_SKINNY_ELITE_3</name>
+</blueprintList>
+
+
+<blueprintList name="OVERRIDE_SHIPS_REBEL_ELITE">
+	<name>REBEL_SKINNY_ELITE</name>
+	<name>REBEL_SKINNY_ELITE_2</name>
+	<name>REBEL_SKINNY_ELITE_3</name>
+	<name>REBEL_SKINNY_ELITE_DLC</name>
+	<name>REBEL_SKINNY_ELITE_DLC_2</name>
+	<name>REBEL_SKINNY_ELITE_DLC_3</name>
+</blueprintList>
+
+
+<blueprintList name="OVERRIDE_SHIPS_AUTO">
+	<name>AUTO_BASIC</name>
+	<name>AUTO_BASIC_2</name>
+	<name>AUTO_BASIC_3</name>
+	<name>AUTO_ASSAULT</name>
+	<name>AUTO_ASSAULT_2</name>
+	<name>AUTO_ASSAULT_3</name>
+	<name>AUTO_BASIC_DLC</name>
+	<name>AUTO_BASIC_DLC_2</name>
+	<name>AUTO_BASIC_DLC_3</name>
+	<name>AUTO_ASSAULT_DLC</name>
+	<name>AUTO_ASSAULT_DLC_2</name>
+	<name>AUTO_ASSAULT_DLC_3</name>
+	
+	<name>AUTO_AGRESSOR_1</name><!-- 1.25.1 -->
+	<name>AUTO_AGRESSOR_2</name><!-- 1.25.1 -->
+	<name>AUTO_AGRESSOR_3</name><!-- 1.25.1 -->
+	<name>AUTO_BOXER_1</name><!-- 1.25.1 -->
+	<name>AUTO_BOXER_2</name><!-- 1.25.1 -->
+	<name>AUTO_BOXER_3</name><!-- 1.25.1 -->
+	
+	<name>AUTO_RAZ_1</name><!-- 1.26 -->
+	<name>AUTO_RAZ_2</name><!-- 1.26 -->
+	<name>AUTO_RAZ_3</name><!-- 1.26 -->
+	<name>AUTO_CATCHER_1</name><!-- 1.26 -->
+	<name>AUTO_CATCHER_2</name><!-- 1.26 -->
+	<name>AUTO_CATCHER_3</name><!-- 1.26 -->
+	<name>AUTO_RAPID_1</name><!-- 1.26 -->
+	<name>AUTO_RAPID_2</name><!-- 1.26 -->
+	<name>AUTO_RAPID_3</name><!-- 1.26 -->
+	<!-- 1.27 -->
+	<name>AUTO_UNI_1</name>
+	<name>AUTO_UNI_2</name>
+	<name>AUTO_UNI_3</name>
+</blueprintList>
+
+<blueprintList name="OVERRIDE_SHIPS_JELLY">
+	<name>JELLY_BUTTON</name>
+	<name>JELLY_BUTTON_2</name>
+	<name>JELLY_BUTTON_3</name>
+	<name>JELLY_CROISSANT</name>
+	<name>JELLY_CROISSANT_2</name>
+	<name>JELLY_CROISSANT_3</name>
+	<name>JELLY_TRUFFLE</name>
+	<name>JELLY_TRUFFLE_2</name>
+	<name>JELLY_TRUFFLE_3</name>
+	<name>JELLY_BUTTON_DLC</name>
+	<name>JELLY_BUTTON_DLC_2</name>
+	<name>JELLY_BUTTON_DLC_3</name>
+	<name>JELLY_CROISSANT_DLC</name>
+	<name>JELLY_CROISSANT_DLC_2</name>
+	<name>JELLY_CROISSANT_DLC_3</name>
+	<name>JELLY_TRUFFLE_DLC</name>
+	<name>JELLY_TRUFFLE_DLC_2</name>
+	<name>JELLY_TRUFFLE_DLC_3</name>
+	<!-- 1.27 -->
+	<name>JELLY_SCIENCE_1</name>
+	<name>JELLY_SCIENCE_2</name>
+	<name>JELLY_SCIENCE_3</name>
+	<name>JELLY_SCIENCE_1</name>
+	<name>JELLY_SCIENCE_2</name>
+	<name>JELLY_SCIENCE_3</name>
+</blueprintList>
+
+<blueprintList name="OVERRIDE_SHIPS_MANTIS">
+	<name>MANTIS_SCOUT</name>
+	<name>MANTIS_SCOUT_2</name>
+	<name>MANTIS_SCOUT_3</name>
+	<name>MANTIS_FIGHTER</name>
+	<name>MANTIS_FIGHTER_2</name>
+	<name>MANTIS_FIGHTER_3</name>
+	<name>MANTIS_BOMBER</name>
+	<name>MANTIS_BOMBER_2</name>
+	<name>MANTIS_BOMBER_3</name>
+	
+	<name>MANTIS_HUNTER</name>
+	<name>MANTIS_HUNTER_2</name>
+	<name>MANTIS_HUNTER_3</name>
+	<name>MANTIS_FOX_1</name><!-- 1.26 -->
+	<name>MANTIS_FOX_2</name><!-- 1.26 -->
+	<name>MANTIS_FOX_3</name><!-- 1.26 -->
+	
+	<name>MANTIS_SCOUT_DLC</name>
+	<name>MANTIS_SCOUT_DLC_2</name>
+	<name>MANTIS_SCOUT_DLC_3</name>
+	<name>MANTIS_FIGHTER_DLC</name>
+	<name>MANTIS_FIGHTER_DLC_2</name>
+	<name>MANTIS_FIGHTER_DLC_3</name>
+	<name>MANTIS_BOMBER_DLC</name>
+	<name>MANTIS_BOMBER_DLC_2</name>
+	<name>MANTIS_BOMBER_DLC_3</name>
+	<!-- 1.27 -->
+	<name>MANTIS_CATCHR_1</name>
+	<name>MANTIS_CATCHR_2</name>
+	<name>MANTIS_CATCHR_3</name>
+</blueprintList>
+
+<blueprintList name="OVERRIDE_SHIPS_ROCK_PRO">
+	<name>BS_ROCK_OUTPOST</name>
+</blueprintList>
+
+
+<blueprintList name="OVERRIDE_SHIPS_ROCK">
+	<name>ROCK_SCOUT</name>
+	<name>ROCK_SCOUT_2</name>
+	<name>ROCK_SCOUT_3</name>
+	<name>ROCK_FIGHT</name>
+	<name>ROCK_FIGHT_2</name>
+	<name>ROCK_FIGHT_3</name>
+	<name>ROCK_ASSAULT</name>
+	<name>ROCK_ASSAULT_2</name>
+	<name>ROCK_ASSAULT_3</name>
+	<name>ROCK_SCOUT_DLC</name>
+	<name>ROCK_SCOUT_DLC_2</name>
+	<name>ROCK_SCOUT_DLC_3</name>
+	<name>ROCK_FIGHT_DLC</name>
+	<name>ROCK_FIGHT_DLC_2</name>
+	<name>ROCK_FIGHT_DLC_3</name>
+	<name>ROCK_ASSAULT_DLC</name>
+	<name>ROCK_ASSAULT_DLC_2</name>
+	<name>ROCK_ASSAULT_DLC_3</name>
+	<name>ROCK_ARTILLERY_1</name><!-- 1.25.2 -->
+	<name>ROCK_ARTILLERY_2</name><!-- 1.25.2 -->
+	<name>ROCK_ARTILLERY_3</name><!-- 1.25.2 -->
+</blueprintList>
+
+<blueprintList name="OVERRIDE_SHIPS_ROCK_PIRATE">
+	<name>ROCK_SCOUT_P</name>
+	<name>ROCK_FIGHT_P</name>
+	<name>ROCK_SCOUT_P_DLC</name>
+	<name>ROCK_FIGHT_P_DLC</name>
+</blueprintList>
+
+<blueprintList name="OVERRIDE_SHIPS_CIRCLE">
+	<name>CIRCLE_SCOUT</name>
+	<name>CIRCLE_SCOUT_2</name>
+	<name>CIRCLE_SCOUT_3</name>
+	<name>CIRCLE_BOMBER</name>
+	<name>CIRCLE_BOMBER_2</name>
+	<name>CIRCLE_BOMBER_3</name>
+	<name>CIRCLE_SCOUT_DLC</name>
+	<name>CIRCLE_SCOUT_DLC_2</name>
+	<name>CIRCLE_SCOUT_DLC_3</name>
+	<name>CIRCLE_BOMBER_DLC</name>
+	<name>CIRCLE_BOMBER_DLC_2</name>
+	<name>CIRCLE_BOMBER_DLC_3</name>
+</blueprintList>
+
+<blueprintList name="OVERRIDE_SHIPS_ZOLTAN">
+	<name>ZOLTAN_FIGHTER</name>
+	<name>ZOLTAN_FIGHTER_2</name>
+	<name>ZOLTAN_FIGHTER_3</name>
+	<name>ZOLTAN_BOMBER</name>
+	<name>ZOLTAN_BOMBER_2</name>
+	<name>ZOLTAN_BOMBER_3</name>
+	<name>ZOLTAN_SCOUT</name>
+	<name>ZOLTAN_SCOUT_2</name>
+	<name>ZOLTAN_SCOUT_3</name>
+	<name>ZOLTAN_FIGHTER_DLC</name>
+	<name>ZOLTAN_FIGHTER_DLC_2</name>
+	<name>ZOLTAN_FIGHTER_DLC_3</name>
+	<name>ZOLTAN_BOMBER_DLC</name>
+	<name>ZOLTAN_BOMBER_DLC_2</name>
+	<name>ZOLTAN_BOMBER_DLC_3</name>
+	<!-- 1.27 -->
+	<name>ZOLTAN_HUNTER_1</name>
+	<name>ZOLTAN_HUNTER_2</name>
+	<name>ZOLTAN_HUNTER_3</name>
+</blueprintList>
+<blueprintList name="OVERRIDE_SHIPS_ZOLTAN_WOTP"><!--- 1.27 -->
+	<name>ZOLTAN_FIGHTER</name>
+	<name>ZOLTAN_FIGHTER_2</name>
+	<name>ZOLTAN_FIGHTER_3</name>
+	<name>ZOLTAN_BOMBER</name>
+	<name>ZOLTAN_BOMBER_2</name>
+	<name>ZOLTAN_BOMBER_3</name>
+	<name>ZOLTAN_SCOUT</name>
+	<name>ZOLTAN_SCOUT_2</name>
+	<name>ZOLTAN_SCOUT_3</name>
+	<name>ZOLTAN_FIGHTER_DLC</name>
+	<name>ZOLTAN_FIGHTER_DLC_2</name>
+	<name>ZOLTAN_FIGHTER_DLC_3</name>
+	<name>ZOLTAN_BOMBER_DLC</name>
+	<name>ZOLTAN_BOMBER_DLC_2</name>
+	<name>ZOLTAN_BOMBER_DLC_3</name>
+</blueprintList>
+
+<blueprintList name="OVERRIDE_SHIPS_ZOLTAN_PIRATE">
+	<name>ZOLTAN_FIGHTER_P</name>
+	<name>ZOLTAN_BOMBER_P</name>
+	<name>ZOLTAN_FIGHTER_P_DLC</name>
+	<name>ZOLTAN_BOMBER_P_DLC</name>
+	<!-- 1.27 -->
+	<name>ZOLTAN_FIGHTER_P</name>
+	<name>ZOLTAN_BOMBER_P</name>
+	<name>ZOLTAN_FIGHTER_P_DLC</name>
+	<name>ZOLTAN_BOMBER_P_DLC</name>
+	
+	<name>ZOLTAN_HUNTER_P1</name>
+	<name>ZOLTAN_HUNTER_P2</name>
+	<name>ZOLTAN_HUNTER_P3</name>
+</blueprintList>
+
+
+<blueprintList name="OVERRIDE_SHIPS_CRYSTAL">
+	<name>CRYSTAL_SCOUT</name>
+	<name>CRYSTAL_SCOUT_2</name>
+	<name>CRYSTAL_SCOUT_3</name>
+	<name>CRYSTAL_BOMBER</name>
+	<name>CRYSTAL_BOMBER_2</name>
+	<name>CRYSTAL_BOMBER_3</name>
+	<name>CRYSTAL_SCOUT_DLC</name>
+	<name>CRYSTAL_SCOUT_DLC_2</name>
+	<name>CRYSTAL_SCOUT_DLC_3</name>
+	<name>CRYSTAL_BOMBER_DLC</name>
+	<name>CRYSTAL_BOMBER_DLC_2</name>
+	<name>CRYSTAL_BOMBER_DLC_3</name>
+	
+	<name>CRYSTAL_KEEPER</name><!-- 1.25 -->
+	<name>CRYSTAL_KEEPER_2</name><!-- 1.25 -->
+	<name>CRYSTAL_KEEPER_3</name><!-- 1.25 -->
+</blueprintList>
+  
+  
+
+<blueprintList name="OVERRIDE_SHIPS_CIVILIAN">
+	<name>JELLY_BUTTON</name>
+	<name>JELLY_BUTTON_2</name>
+	<name>JELLY_BUTTON_3</name>
+	<name>ROCK_SCOUT</name>
+	<name>ROCK_SCOUT_2</name>
+	<name>ROCK_SCOUT_3</name>
+	<name>ROCK_FIGHT</name>
+	<name>ROCK_FIGHT_2</name>
+	<name>ROCK_FIGHT_3</name>
+	<name>FED_SCOUT</name>
+	<name>FED_SCOUT_2</name>
+	<name>FED_SCOUT_3</name>
+	<name>FED_BOMBER</name>
+	<name>FED_BOMBER_2</name>
+	<name>FED_BOMBER_3</name>
+	<name>CIRCLE_SCOUT</name>
+	<name>CIRCLE_SCOUT_2</name>
+	<name>CIRCLE_SCOUT_3</name>
+	<name>CIRCLE_BOMBER</name>
+	<name>CIRCLE_BOMBER_2</name>
+	<name>CIRCLE_BOMBER_3</name>
+</blueprintList>
+
+
+<blueprintList name="OVERRIDE_SHIPS_PIRATE">
+	<name>JELLY_BUTTON_P</name>
+	<name>JELLY_CROISSANT_P</name>
+	<name>JELLY_TRUFFLE_P</name> 
+	<name>REBEL_FAT_P</name>
+	<name>REBEL_SKINNY_P</name>  
+	<name>ROCK_SCOUT_P</name>
+	<name>ROCK_FIGHT_P</name>
+	<name>MANTIS_SCOUT_P</name>
+	<name>MANTIS_FIGHTER_P</name>
+	<name>MANTIS_BOMBER_P</name>
+	<name>FED_SCOUT_P</name>
+	<name>FED_BOMBER_P</name>
+	<name>ZOLTAN_FIGHTER_P</name>
+	<name>ZOLTAN_BOMBER_P</name> 
+	<name>JELLY_BUTTON_P_DLC</name>
+	<name>JELLY_CROISSANT_P_DLC</name>
+	<name>JELLY_TRUFFLE_P_DLC</name> 
+	<name>REBEL_FAT_P_DLC</name>
+	<name>REBEL_SKINNY_P_DLC</name>  
+	<name>ROCK_SCOUT_P_DLC</name>
+	<name>ROCK_FIGHT_P_DLC</name>
+	<name>MANTIS_SCOUT_P_DLC</name>
+	<name>MANTIS_FIGHTER_P_DLC</name>
+	<name>MANTIS_BOMBER_P_DLC</name>
+	<name>FED_SCOUT_P_DLC</name>
+	<name>FED_BOMBER_P_DLC</name>
+	<name>ZOLTAN_FIGHTER_P_DLC</name>
+	<name>ZOLTAN_BOMBER_P_DLC</name>
+	<!-- 1.27 -->
+	<name>PIRATE_ABOMB_1</name>
+	<name>PIRATE_ABOMB_2</name>
+	<name>PIRATE_ABOMB_3</name>
+	<name>ZOLTAN_HUNTER_P1</name>
+	<name>ZOLTAN_HUNTER_P2</name>
+	<name>ZOLTAN_HUNTER_P3</name>
+	<name>JELLY_SCIENCE_1P</name>
+	<name>JELLY_SCIENCE_2P</name>
+	<name>JELLY_SCIENCE_3P</name>
+	<name>MANTIS_CATCHR_1P</name>
+	<name>MANTIS_CATCHR_2P</name>
+	<name>MANTIS_CATCHR_3P</name>
+</blueprintList>
+
+<blueprintList name="OVERRIDE_SHIPS_SLUG_PIRATE">
+	<name>JELLY_BUTTON_P</name>
+	<name>JELLY_CROISSANT_P</name>
+	<name>JELLY_TRUFFLE_P</name> 
+	<name>JELLY_BUTTON_P_DLC</name>
+	<name>JELLY_CROISSANT_P_DLC</name>
+	<name>JELLY_TRUFFLE_P_DLC</name> 
+	<!-- 1.27 -->
+	<name>JELLY_BUTTON_P</name>
+	<name>JELLY_CROISSANT_P</name>
+	<name>JELLY_TRUFFLE_P</name> 
+	<name>JELLY_BUTTON_P_DLC</name>
+	<name>JELLY_CROISSANT_P_DLC</name>
+	<name>JELLY_TRUFFLE_P_DLC</name> 
+	
+	<name>JELLY_SCIENCE_1P</name>
+	<name>JELLY_SCIENCE_2P</name>
+	<name>JELLY_SCIENCE_3P</name>
+</blueprintList>
+
+<blueprintList name="SHIPS_SLUG_PIRATE">
+	<name>JELLY_BUTTON_P</name>
+	<name>JELLY_CROISSANT_P</name>
+	<name>JELLY_TRUFFLE_P</name> 
+</blueprintList>
+
+
+<!--
+  REBELS
+  -->
+
+<shipBlueprint name="REBEL_FAT_DLC" layout="rebel_squat" img="rebel_squat">
+	<class>Rebel Disruptor</class>
+	<systemList>
+		<pilot power="1" max="2" room="0"/>
+		<oxygen power="1" max="2" room="1"/> <!--2-->
+		<shields power="2" max="8" room="7"/> <!--4-->
+		<engines power="2" max="4" room="6"/> <!--7--> 
+		<weapons power="1" max="6" room="2"/> <!--6-->
+		<drones power="2" max="8" room="4"/> <!--1-->
+		<clonebay power="1" max="3" room="3" start="false"/> <!--3-->
+		<hacking power="1" max="1" room="5" start="false"/> <!--5-->
+	</systemList>
+	<droneList drones="4" load="DRONES_STANDARD"/>
+	<weaponList missiles="6" load="WEAPONS_REBEL"/><!-- 1.25, was 10 -->  
+	<health amount="9"/>	
+	<maxPower amount ="8"/>
+	<crewCount amount = "3" max="5" class="human"/>
+	<boardingAI>sabotage</boardingAI>
+</shipBlueprint>
+
+<shipBlueprint name="REBEL_FAT_DLC_2" layout="rebel_fat_dlc_2" img="rebel_squat">
+	<class>Rebel Disruptor</class>
+	<systemList>
+		<clonebay power="1" max="3" room="2" start="false" />
+		<drones power="2" max="8" room="5" start="true" />
+		<engines power="2" max="4" room="3" start="true" />
+		<hacking power="1" max="1" room="4" start="false" />
+		<oxygen power="1" max="2" room="0" start="true" />
+		<pilot power="1" max="2" room="1" start="true" />
+		<shields power="2" max="8" room="6" start="true" />
+		<weapons power="1" max="6" room="7" start="true" />
+	</systemList>
+	<droneList drones="4" load="DRONES_STANDARD"/>
+	<weaponList missiles="6" load="WEAPONS_REBEL"/><!-- 1.25, was 10 -->  
+	<health amount="9"/>	
+	<maxPower amount ="8"/>
+	<crewCount amount = "3" max="5" class="human"/>
+	<boardingAI>sabotage</boardingAI>
+</shipBlueprint>
+
+<shipBlueprint name="REBEL_FAT_DLC_3" layout="rebel_fat_dlc_3" img="rebel_squat">
+	<class>Rebel Disruptor</class>
+	<systemList>
+		<clonebay power="1" max="3" room="5" start="false" />
+		<drones power="2" max="8" room="4" start="true" />
+		<engines power="2" max="4" room="3" start="true" />
+		<hacking power="1" max="1" room="6" start="false" />
+		<oxygen power="1" max="2" room="7" start="true" />
+		<pilot power="1" max="2" room="0" start="true" />
+		<shields power="2" max="8" room="1" start="true" />
+		<weapons power="1" max="6" room="2" start="true" />
+	</systemList>
+	<droneList drones="4" load="DRONES_STANDARD"/>
+	<weaponList missiles="6" load="WEAPONS_REBEL"/><!-- 1.25, was 10 -->  
+	<health amount="9"/>	
+	<maxPower amount ="8"/>
+	<crewCount amount = "3" max="5" class="human"/>
+	<boardingAI>sabotage</boardingAI>
+</shipBlueprint>
+
+<shipBlueprint name="REBEL_SKINNY_DLC" layout="rebel_long" img="rebel_long">
+	<class>Rebel Invader</class>
+	<systemList>
+		<oxygen power="1" max="2" room="3"/> <!--2-->
+		<pilot power="1" max="3" room="0"/> <!--0-->
+		<shields power="2" max="8" room="4"/> <!--6-->
+		<engines power="2" max="5" room="5"/> <!--5-->
+		<weapons power="2" max="8" room="6"/>   <!--4-->
+		<clonebay power="1" max="2" room="2" start="false"/> <!--3--> 
+		<teleporter power="1" max="1" room="1" start="false"/> <!--1-->
+	</systemList>
+	<weaponList missiles="6" load="WEAPONS_REBEL"/><!-- 1.25, was 10 -->  
+	<health amount="10"/>	
+	<maxPower amount ="7"/>
+	<crewCount amount = "3" max="6" class="human"/> <!--CHANGED was 3/6-->
+	<boardingAI>sabotage</boardingAI>
+</shipBlueprint>
+
+<shipBlueprint name="REBEL_SKINNY_DLC_2" layout="rebel_skinny_dlc_2" img="rebel_long">
+	<class>Rebel Invader</class>
+	<systemList>
+		<clonebay power="1" max="2" room="4" start="false" />
+		<engines power="2" max="5" room="7" start="true" />
+		<oxygen power="1" max="2" room="6" start="true" />
+		<pilot power="1" max="3" room="0" start="true" />
+		<shields power="2" max="8" room="2" start="true" />
+		<teleporter power="1" max="1" room="5" start="false" />
+		<weapons power="2" max="8" room="3" start="true" />
+	</systemList>
+	<weaponList missiles="6" load="WEAPONS_REBEL"/><!-- 1.25, was 10 -->  
+	<health amount="10"/>	
+	<maxPower amount ="7"/>
+	<crewCount amount = "3" max="6" class="human"/> <!--CHANGED was 3/6-->
+	<boardingAI>sabotage</boardingAI>
+</shipBlueprint>
+
+<shipBlueprint name="REBEL_SKINNY_DLC_3" layout="rebel_skinny_dlc_3" img="rebel_long">
+	<class>Rebel Invader</class>
+	<systemList>
+		<clonebay power="1" max="2" room="4" start="false" />
+		<engines power="2" max="5" room="2" start="true" />
+		<oxygen power="1" max="2" room="5" start="true" />
+		<pilot power="1" max="3" room="6" start="true" />
+		<shields power="2" max="8" room="0" start="true" />
+		<teleporter power="1" max="1" room="3" start="false" />
+		<weapons power="2" max="8" room="1" start="true" />
+	</systemList>
+	<weaponList missiles="6" load="WEAPONS_REBEL"/><!-- 1.25, was 10 -->  
+	<health amount="10"/>	
+	<maxPower amount ="7"/>
+	<crewCount amount = "3" max="6" class="human"/> <!--CHANGED was 3/6-->
+	<boardingAI>sabotage</boardingAI>
+</shipBlueprint>
+		
+<shipBlueprint name="REBEL_SKINNY_ELITE_DLC" layout="rebel_long" img="rebel_long_elite">
+	<class>Rebel Elite Assault</class>
+	<systemList>
+		<oxygen power="1" max="2" room="3"/>
+		<pilot power="1" max="3" room="0"/>
+		<shields power="4" max="8" room="4"/>
+		<engines power="3" max="5" room="5"/>
+		<weapons power="4" max="10" room="6"/>  <!-- 1.21 -->
+		<clonebay power="1" max="3" room="2"/> 
+		<teleporter power="1" max="3" room="1" start="false"/>
+	</systemList>
+	<weaponList missiles="6" load="WEAPONS_REBEL"/><!-- 1.25, was 10 -->  
+	<health amount="14"/>	
+	<maxPower amount ="13"/>
+	<crewCount amount="3" max="8" class="human"/> <!--CHANGED was 3/6-->
+	<boardingAI>sabotage</boardingAI>
+</shipBlueprint>
+
+<shipBlueprint name="REBEL_SKINNY_ELITE_DLC_2" layout="rebel_skinny_elite_dlc_2" img="rebel_long_elite">
+	<class>Rebel Elite Assault</class>
+	<systemList>
+		<clonebay power="1" max="3" room="1" start="true" />
+		<engines power="3" max="5" room="3" start="true" />
+		<oxygen power="1" max="2" room="2" start="true" />
+		<pilot power="1" max="3" room="0" start="true" />
+		<shields power="4" max="8" room="6" start="true" />
+		<teleporter power="1" max="3" room="5" start="false" />
+		<weapons power="4" max="10" room="4" start="true" /><!-- 1.21 -->
+	</systemList>
+	<weaponList missiles="6" load="WEAPONS_REBEL"/><!-- 1.25, was 10 -->  
+	<health amount="14"/>	
+	<maxPower amount ="13"/>
+	<crewCount amount="3" max="8" class="human"/> <!--CHANGED was 3/6-->
+	<boardingAI>sabotage</boardingAI>
+</shipBlueprint>
+
+<shipBlueprint name="REBEL_SKINNY_ELITE_DLC_3" layout="rebel_skinny_elite_dlc_3" img="rebel_long_elite">
+	<class>Rebel Elite Assault</class>
+	<systemList>
+		<clonebay power="1" max="3" room="1" start="true" />
+		<engines power="3" max="5" room="3" start="true" />
+		<oxygen power="1" max="2" room="2" start="true" />
+		<pilot power="1" max="3" room="0" start="true" />
+		<shields power="4" max="8" room="6" start="true" />
+		<teleporter power="1" max="3" room="5" start="false" />
+		<weapons power="4" max="10" room="4" start="true" /><!-- 1.21 -->
+	</systemList>
+	<weaponList missiles="6" load="WEAPONS_REBEL"/><!-- 1.25, was 10 -->  
+	<health amount="14"/>	
+	<maxPower amount ="13"/>
+	<crewCount amount="3" max="8" class="human"/> <!--CHANGED was 3/6-->
+	<boardingAI>sabotage</boardingAI>
+</shipBlueprint>
+
+
+<blueprintList name="REBEL_SKINNY_ELITE_X_SHIPS"><!-- 1.25 -->
+	<name>REBEL_SKINNY_ELITE_X</name>
+	<name>REBEL_SKINNY_ELITE_X2</name>
+	<name>REBEL_SKINNY_ELITE_X</name>
+	<name>REBEL_SKINNY_ELITE_X2</name>
+	<name>C_REBEL_EW_CRUISER_M</name>
+</blueprintList>
+<!-- 1.25 -->
+<shipBlueprint name="REBEL_SKINNY_ELITE_X" layout="rebel_long_elite_x" img="rebel_long_elite_x">
+	<class>Black Wing Cruiser</class>
+	<systemList>
+		<clonebay power="1" max="3" room="6" start="true" />
+		<doors power="1" max="3" room="7" start="true" />
+		<engines power="3" max="8" room="5" start="true" /><!-- 1.26 engines > 8 does not work as intended -->
+		<oxygen power="1" max="3" room="3" start="true" />
+		<pilot power="1" max="3" room="0" start="true" />
+		<shields power="4" max="10" room="1" start="true" />
+		<teleporter power="1" max="3" room="4" start="false" />
+		<weapons power="5" max="10" room="2" start="true" />
+	</systemList>
+	<weaponList missiles="12" count="4" load="WEAPONS_REBEL" /> <!-- 1.27.1 missiles was 6 -->
+	<health amount="16" />
+	<maxPower amount="16" />
+	<crewCount amount="5" max="8" class="human" />
+	<aug name="FIRE_EXTINGUISHERS"/><!-- 1.26 -->
+	<boardingAI>sabotage</boardingAI>
+</shipBlueprint>
+<!-- 1.25 -->
+<shipBlueprint name="REBEL_SKINNY_ELITE_X2" layout="rebel_long_elite_x" img="rebel_long_elite_x">
+	<class>Black Wing Cruiser</class>
+	<systemList>
+		<medbay power="1" max="3" room="6" start="true" />
+		<doors power="1" max="3" room="7" start="true" />
+		<engines power="3" max="8" room="5" start="true" /><!-- 1.26 engines > 8 does not work as intended -->
+		<oxygen power="1" max="3" room="3" start="true" />
+		<pilot power="1" max="3" room="0" start="true" />
+		<shields power="4" max="10" room="1" start="true" />
+		<teleporter power="1" max="3" room="4" start="false" />
+		<weapons power="5" max="10" room="2" start="true" />
+	</systemList>
+	<weaponList missiles="12" count="4" load="WEAPONS_REBEL" /> <!-- 1.27.1 missiles was 6 -->
+	<health amount="16" />
+	<maxPower amount="16" />
+	<crewCount amount="5" max="8" class="human" />
+	<aug name="FIRE_EXTINGUISHERS"/><!-- 1.26 -->
+	<boardingAI>sabotage</boardingAI>
+</shipBlueprint>
+<!-- 1.25 -->
+<shipBlueprint name="C_REBEL_EW_CRUISER_M" layout="c_rebel_ew_cruiser_m" img="c_rebel_cruiser_m">
+	<class>Black Wing Dreadnought</class>
+	<minSector>4</minSector> <!-- 1.26.2 -->
+	<systemList>
+		<clonebay power="1" max="3" room="5" start="true" />
+		<doors power="1" max="3" room="1" start="false" />
+		<drones power="4" max="4" room="12" start="true" />
+		<engines power="1" max="8" room="3" start="true" />
+		<teleporter power="1" max="3" room="6" start="false" />
+		<oxygen power="1" max="3" room="7" start="true" />
+		<pilot power="1" max="3" room="2" start="true" />
+		<shields power="4" max="10" room="11" start="true" />
+		<weapons power="5" max="10" room="14" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>4</droneSlots>
+	<weaponList missiles="12" load="WEAPONS_REBEL" /> <!-- 1.27.1 missiles was 6 -->
+	<droneList count="4" drones="4">
+		<drone name="DE_BOARDER_3"/>
+		<drone name="DE_BOARDER_3"/>
+		<drone name="DE_BOARDER_3"/>
+		<drone name="DE_BOARDER_3"/>
+	</droneList>
+	<health amount="18" />
+	<maxPower amount="18" />
+	<crewCount amount="5" max="8" class="human" />
+	<aug name="FIRE_EXTINGUISHERS"/><!-- 1.26 -->
+	<boardingAI>sabotage</boardingAI>
+</shipBlueprint>
+
+		
+<!--
+  AUTOMATED
+  -->
+		
+
+<shipBlueprint name="AUTO_BASIC_DLC" layout="auto_basic" img="auto_basic">  <!-- NOTE:   This ship starts with no shields.  that ok?-->
+	<class>Auto-Surveyor</class>
+	<systemList>
+		<pilot power="1" max="2" room="2"/>
+		<shields power="2" max="8" room="1" start="false"/> <!--3-->
+		<engines power="2" max="8" room="0"/> <!--1-->
+		<weapons power="2" max="8" room="3"/> <!--4-->
+		<mind power="1" max="2" room="4" start="false"/> <!--0-->
+	</systemList>
+	<weaponList missiles="6" load="WEAPONS_AUTO"/><!-- 1.25, was 10 --> 
+	<health amount="6"/>	
+	<maxPower amount ="6"/>
+	<crewCount amount = "0" max="0" class="human"/>
+</shipBlueprint>	
+
+<shipBlueprint name="AUTO_BASIC_DLC_2" layout="auto_basic_dlc_2" img="auto_basic_dlc_2">
+	<class>Auto-Surveyor</class>
+	<systemList>
+		<engines power="2" max="8" room="0" start="true" />
+		<mind power="1" max="2" room="3" start="false" />
+		<pilot power="1" max="2" room="2" start="true" />
+		<shields power="2" max="8" room="1" start="false" />
+		<weapons power="2" max="8" room="4" start="true" />
+	</systemList>
+	<weaponList missiles="6" load="WEAPONS_AUTO"/><!-- 1.25, was 10 --> 
+	<health amount="6" />
+	<maxPower amount="6" />
+	<crewCount amount = "0" max="0" class="human"/>
+</shipBlueprint>
+
+<shipBlueprint name="AUTO_BASIC_DLC_3" layout="auto_basic_dlc_3" img="auto_basic_dlc_2">
+	<class>Auto-Surveyor</class>
+	<systemList>
+		<engines power="2" max="8" room="3" start="true" />
+		<mind power="1" max="2" room="4" start="false" />
+		<pilot power="1" max="2" room="1" start="true" />
+		<shields power="2" max="8" room="0" start="false" />
+		<weapons power="2" max="8" room="2" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="6" load="WEAPONS_AUTO"/><!-- 1.25, was 10 --> 
+	<droneList drones="0" count="2" />
+	<health amount="6" />
+	<maxPower amount="6" />
+	<boardingAI>sabotage</boardingAI>
+</shipBlueprint>
+
+<shipBlueprint name="AUTO_ASSAULT_DLC" layout="auto_assault" img="auto_assault">
+	<class>Auto-Disruptor</class>
+	<systemList>
+		<pilot power="1" max="3" room="2"/><!--2-->
+		<shields power="2" max="8" room="1"/> <!--3-->
+		<engines power="1" max="5" room="0"/><!--4-->
+		<weapons power="2" max="7" room="3"/>   <!--1-->
+		<hacking power="1" max="2" room="4"/> <!--0-->
+	</systemList>
+	<weaponList missiles="6" load="WEAPONS_AUTO"/><!-- 1.25, was 10 --> 
+	<droneList drones="4"/>
+	<health amount="8"/>	
+	<maxPower amount ="7"/>
+	<crewCount amount = "0" max="0" class="human"/>
+</shipBlueprint>	
+
+<shipBlueprint name="AUTO_ASSAULT_DLC_2" layout="auto_assault_2" img="auto_assault">
+	<class>Auto-Disruptor</class>
+	<systemList>
+		<pilot power="1" max="3" room="1"/><!--2-->
+		<shields power="2" max="8" room="4"/> <!--3-->
+		<engines power="1" max="5" room="2"/><!--4-->
+		<weapons power="2" max="7" room="0"/>   <!--1-->
+		<hacking power="1" max="2" room="3"/> <!--0-->
+	</systemList>
+	<weaponList missiles="6" load="WEAPONS_AUTO"/><!-- 1.25, was 10 --> 
+	<droneList drones="4"/>
+	<health amount="8"/>	
+	<maxPower amount ="7"/>
+	<crewCount amount = "0" max="0" class="human"/>
+</shipBlueprint>	
+
+<shipBlueprint name="AUTO_ASSAULT_DLC_3" layout="auto_assault_3" img="auto_assault">
+	<class>Auto-Disruptor</class>
+	<systemList>
+		<pilot power="1" max="3" room="4"/><!--2-->
+		<shields power="2" max="8" room="1"/> <!--3-->
+		<engines power="1" max="5" room="2"/><!--4-->
+		<weapons power="2" max="7" room="3"/>   <!--1-->
+		<hacking power="1" max="2" room="0"/> <!--0-->
+	</systemList>
+	<weaponList missiles="6" load="WEAPONS_AUTO"/><!-- 1.25, was 10 --> 
+	<droneList drones="4"/>
+	<health amount="8"/>	
+	<maxPower amount ="7"/>
+	<crewCount amount = "0" max="0" class="human"/>
+</shipBlueprint>	
+
+<!--
+  SLUG SHIPS
+  -->
+  
+  
+<shipBlueprint name="JELLY_BUTTON_DLC" layout="jelly_button" img="jelly_button">
+	<class>Slug Scout</class>
+	<maxSector>5</maxSector>
+	<systemList>
+		<oxygen power="1" max="3" room="3"/>
+		<pilot power="1" max="3" room="0"/>
+		<shields power="2" max="8" room="1"/>
+		<engines power="1" max="8"  room="4"/>
+		<weapons power="2" max="8"  room="2"/>
+	</systemList>
+	<weaponList missiles="4" load="WEAPONS_JELLY"/><!-- 1.25, was 6 --> 
+	<health amount="9"/>	
+	<maxPower amount ="7"/>
+	<crewCount amount = "3" max="4" class="slug"/><!-- 1.26.2 was 2-3 --> 
+	<boardingAI>sabotage</boardingAI>
+	<aug name="SLUG_GEL"/>
+</shipBlueprint>
+
+<shipBlueprint name="JELLY_BUTTON_DLC_2" layout="jelly_button_dlc_2" img="jelly_button">
+	<class>Slug Scout</class>
+	<maxSector>5</maxSector>
+	<systemList>
+		<engines power="1" max="8" room="4" start="true" />
+		<oxygen power="1" max="3" room="2" start="true" />
+		<pilot power="1" max="3" room="0" start="true" />
+		<shields power="2" max="8" room="1" start="true" />
+		<weapons power="2" max="8" room="3" start="true" />
+	</systemList>
+	<weaponList missiles="4" load="WEAPONS_JELLY"/><!-- 1.25, was 6 --> 
+	<health amount="9"/>	
+	<maxPower amount ="7"/>
+	<crewCount amount = "3" max="4" class="slug"/><!-- 1.26.2 was 2-3 --> 
+	<boardingAI>sabotage</boardingAI>
+	<aug name="SLUG_GEL"/>
+</shipBlueprint>
+
+<shipBlueprint name="JELLY_BUTTON_DLC_3" layout="jelly_button_dlc_3" img="jelly_button">
+	<class>Slug Scout</class>
+	<maxSector>5</maxSector>
+	<systemList>
+		<engines power="1" max="8" room="4" start="true" />
+		<oxygen power="1" max="3" room="1" start="true" />
+		<pilot power="1" max="3" room="0" start="true" />
+		<shields power="2" max="8" room="2" start="true" />
+		<weapons power="2" max="8" room="3" start="true" />
+	</systemList>
+	<weaponList missiles="4" load="WEAPONS_JELLY"/><!-- 1.25, was 6 --> 
+	<health amount="9"/>	
+	<maxPower amount ="7"/>
+	<crewCount amount = "3" max="4" class="slug"/><!-- 1.26.2 was 2-3 --> 
+	<boardingAI>sabotage</boardingAI>
+	<aug name="SLUG_GEL"/>
+</shipBlueprint>
+
+<shipBlueprint name="JELLY_CROISSANT_DLC" layout="jelly_croissant" img="jelly_croissant">
+	<class>Slug Light-Surveyor</class>
+	<minSector>1</minSector>
+	<systemList>
+		<pilot power="1" max="3" room="0"/> <!--0-->
+		<!-- <doors power="1" max="3" room="7" start="false"/>  -5-->
+		<oxygen power="1" max="3" room="4"/>  <!--4-->
+		<clonebay power="1" max="3" room="7" start="false"/>  <!--6-->
+		<shields power="2" max="10" room="3"/>  <!--3-->
+		<engines power="1" max="6" room="2"/>  <!--7-->
+		<weapons power="2" max="7" room="1"/>  <!--1-->
+		<mind power="1" max="2" room="6" start="false"/>  <!--new-->
+	</systemList>
+	<weaponList missiles="6" load="WEAPONS_JELLY"/><!-- 1.25, was 10 --> 
+	<health amount="10"/>	
+	<maxPower amount ="7"/>
+	<crewCount amount = "3" max="7" class="slug"/><!--CHANGED was 3/5-->
+	<boardingAI>sabotage</boardingAI>
+	<aug name="SLUG_GEL"/>
+</shipBlueprint>
+
+<shipBlueprint name="JELLY_CROISSANT_DLC_2" layout="jelly_croissant_dlc_2" img="jelly_croissant">
+	<class>Slug Light-Surveyor</class>
+	<minSector>1</minSector>
+	<systemList>
+		<clonebay power="1" max="3" room="6" start="false" />
+		<engines power="1" max="6" room="2" start="true" />
+		<mind power="1" max="2" room="5" start="false" />
+		<oxygen power="1" max="3" room="3" start="true" />
+		<pilot power="1" max="3" room="0" start="true" />
+		<shields power="2" max="10" room="9" start="true" />
+		<weapons power="2" max="7" room="7" start="true" />
+	</systemList>
+	<weaponList missiles="6" load="WEAPONS_JELLY"/><!-- 1.25, was 10 --> 
+	<health amount="10"/>	
+	<maxPower amount ="7"/>
+	<crewCount amount = "3" max="7" class="slug"/><!--CHANGED was 3/5-->
+	<boardingAI>sabotage</boardingAI>
+	<aug name="SLUG_GEL"/>
+</shipBlueprint>
+
+<shipBlueprint name="JELLY_CROISSANT_DLC_3" layout="jelly_croissant_dlc_3" img="jelly_croissant">
+	<class>Slug Light-Surveyor</class>
+	<minSector>1</minSector>
+	<systemList>
+		<clonebay power="1" max="3" room="4" start="false" />
+		<engines power="1" max="6" room="1" start="true" />
+		<mind power="1" max="2" room="3" start="false" />
+		<oxygen power="1" max="3" room="2" start="true" />
+		<pilot power="1" max="3" room="0" start="true" />
+		<shields power="2" max="10" room="8" start="true" />
+		<weapons power="2" max="7" room="7" start="true" />
+	</systemList>
+	<weaponList missiles="6" load="WEAPONS_JELLY"/><!-- 1.25, was 10 --> 
+	<health amount="10"/>	
+	<maxPower amount ="7"/>
+	<crewCount amount = "3" max="7" class="slug"/><!--CHANGED was 3/5-->
+	<boardingAI>sabotage</boardingAI>
+	<aug name="SLUG_GEL"/>
+</shipBlueprint>
+  
+<shipBlueprint name="JELLY_TRUFFLE_DLC" layout="jelly_truffle" img="jelly_truffle">
+	<class>Slug Instigator</class>
+	<minSector>4</minSector>
+	<systemList>
+		<pilot power="1" max="3" room="0"/>  <!--0-->
+		<mind power="1" max="2" room="4" start="false"/>  <!--doors 1-->
+		<oxygen power="1" max="3" room="6"/>  <!--4-->
+		<clonebay power="1" max="3" room="7" start="false"/>  <!--3-->
+		<shields power="2" max="10" room="5"/>  <!--6-->
+		<engines power="1" max="5" room="3"/>  <!--2-->
+		<weapons power="2" max="9" room="1"/>  <!--5-->
+		<cloaking power="1" max="1" room="2" start="false"/>  <!--7-->
+	</systemList>
+	<weaponList missiles="8" load="WEAPONS_JELLY"/><!-- 1.25, was 14 --> 
+	<health amount="11"/>	
+	<maxPower amount ="10"/>
+	<crewCount amount = "4" max="8" class="slug"/> <!--CHANGED was 4/6-->
+	<boardingAI>sabotage</boardingAI>
+	<aug name="SLUG_GEL"/>
+</shipBlueprint>
+
+<shipBlueprint name="JELLY_TRUFFLE_DLC_2" layout="jelly_truffle_dlc_2" img="jelly_truffle">
+	<class>Slug Instigator</class>
+	<minSector>4</minSector>
+	<systemList>
+		<cloaking power="1" max="1" room="1" start="false" />
+		<clonebay power="1" max="3" room="6" start="false" />
+		<engines power="1" max="5" room="2" start="true" />
+		<mind power="1" max="2" room="3" start="false" />
+		<oxygen power="1" max="3" room="5" start="true" />
+		<pilot power="1" max="3" room="7" start="true" />
+		<shields power="2" max="10" room="4" start="true" />
+		<weapons power="2" max="9" room="0" start="true" />
+	</systemList>
+	<weaponList missiles="8" load="WEAPONS_JELLY"/><!-- 1.25, was 14 -->
+	<health amount="11"/>	
+	<maxPower amount ="10"/>
+	<crewCount amount = "4" max="8" class="slug"/> <!--CHANGED was 4/6-->
+	<boardingAI>sabotage</boardingAI>
+	<aug name="SLUG_GEL"/>
+</shipBlueprint>
+
+<shipBlueprint name="JELLY_TRUFFLE_DLC_3" layout="jelly_truffle_dlc_3" img="jelly_truffle">
+	<class>Slug Instigator</class>
+	<minSector>4</minSector>
+	<systemList>
+		<cloaking power="1" max="1" room="7" start="false" />
+		<clonebay power="1" max="3" room="8" start="false" />
+		<engines power="1" max="5" room="1" start="true" />
+		<mind power="1" max="2" room="9" start="false" />
+		<oxygen power="1" max="3" room="6" start="true" />
+		<pilot power="1" max="3" room="0" start="true" />
+		<shields power="2" max="10" room="2" start="true" />
+		<weapons power="2" max="9" room="3" start="true" />
+	</systemList>
+	<weaponList missiles="8" load="WEAPONS_JELLY"/><!-- 1.25, was 14 -->
+	<health amount="11"/>	
+	<maxPower amount ="10"/>
+	<crewCount amount = "4" max="8" class="slug"/> <!--CHANGED was 4/6-->
+	<boardingAI>sabotage</boardingAI>
+	<aug name="SLUG_GEL"/>
+</shipBlueprint>
+
+
+		
+<!--
+ ROCK SHIPS!
+  -->
+
+<shipBlueprint name="ROCK_SCOUT_DLC" layout="rock_scout" img="rock_scout">
+	<class>Rock Investigator</class>
+	<maxSector>5</maxSector>
+	<systemList>
+		<pilot power="1" max="3" room="3"/>  <!--3-->
+		<teleporter power="1" max="2" room="0" start="false"/> <!-- doors 5-->
+		<oxygen power="1" max="3" room="5"/> <!--0-->
+		<clonebay power="1" max="3" room="6" start="false"/> <!--2-->
+		<shields power="2" max="8" room="2"/> <!--4-->
+		<engines power="1" max="5" room="1"/> <!--6-->
+		<weapons power="2" max="8" room="4"/> <!--1-->
+	</systemList>
+	<weaponList missiles="4" load="WEAPONS_ROCK"/><!-- 1.25, was 6 --> 
+	<health amount="8"/>	
+	<maxPower amount ="10"/>
+	<crewCount amount = "3" max="5" class="rock"/><!-- 1.26.2 was 2-4 --> 
+	<boardingAI>sabotage</boardingAI>
+	<aug name="ROCK_ARMOR"/>
+</shipBlueprint>
+
+<shipBlueprint name="ROCK_SCOUT_DLC_2" layout="rock_scout_dlc_2" img="rock_scout">
+	<class>Rock Investigator</class>
+	<maxSector>5</maxSector>
+	<systemList>
+		<clonebay power="1" max="3" room="5" start="false" />
+		<engines power="1" max="5" room="2" start="true" />
+		<oxygen power="1" max="3" room="4" start="true" />
+		<pilot power="1" max="3" room="0" start="true" />
+		<shields power="2" max="8" room="1" start="true" />
+		<teleporter power="1" max="2" room="6" start="false" />
+		<weapons power="2" max="8" room="3" start="true" />
+	</systemList>
+	<weaponList missiles="4" load="WEAPONS_ROCK"/><!-- 1.25, was 6 --> 
+	<health amount="8"/>	
+	<maxPower amount ="10"/>
+	<crewCount amount = "3" max="5" class="rock"/><!-- 1.26.2 was 2-4 --> 
+	<boardingAI>sabotage</boardingAI>
+	<aug name="ROCK_ARMOR"/>
+</shipBlueprint>
+
+<shipBlueprint name="ROCK_SCOUT_DLC_3" layout="rock_scout_dlc_3" img="rock_scout">
+	<class>Rock Investigator</class>
+	<maxSector>5</maxSector>
+	<systemList>
+		<clonebay power="1" max="3" room="5" start="false" />
+		<engines power="1" max="5" room="2" start="true" />
+		<oxygen power="1" max="3" room="4" start="true" />
+		<pilot power="1" max="3" room="7" start="true" />
+		<shields power="2" max="8" room="1" start="true" />
+		<teleporter power="1" max="2" room="6" start="false" />
+		<weapons power="2" max="8" room="3" start="true" />
+	</systemList>
+	<weaponList missiles="4" load="WEAPONS_ROCK"/><!-- 1.25, was 6 --> 
+	<health amount="8"/>	
+	<maxPower amount ="10"/>
+	<crewCount amount = "3" max="5" class="rock"/><!-- 1.26.2 was 2-4 --> 
+	<boardingAI>sabotage</boardingAI>
+	<aug name="ROCK_ARMOR"/>
+</shipBlueprint>
+
+<shipBlueprint name="ROCK_FIGHT_DLC" layout="rock_fight" img="rock_fight">
+	<class>Rock Interceptor</class>
+	<minSector>2</minSector>
+	<systemList>
+		<pilot power="1" max="3" room="3"/> <!--3-->
+		<teleporter power="1" max="2" room="6" start="false"/> <!--6-->
+		<oxygen power="1" max="3" room="4"/> <!--7-->
+		<clonebay power="1" max="3" room="0" start="false"/> <!--4-->
+		<shields power="2" max="8" room="8"/> <!--5-->
+		<engines power="2" max="5" room="7"/> <!--8-->
+		<weapons power="2" max="8" room="5"/> <!--0-->
+		<cloaking power="1" max="1" room="2" start="false"/> <!--0-->
+	</systemList>
+	<weaponList missiles="6" load="WEAPONS_ROCK"/><!-- 1.25, was 10 --> 
+	<health amount="10"/>	
+	<maxPower amount ="7"/>
+	<crewCount amount = "3" max="6" class="rock"/><!-- 1.26.2 was 2-5 --> 
+	<boardingAI>sabotage</boardingAI>
+	<aug name="ROCK_ARMOR"/>
+</shipBlueprint>
+
+<shipBlueprint name="ROCK_FIGHT_DLC_2" layout="rock_fight_dlc_2" img="rock_fight">
+	<class>Rock Interceptor</class>
+	<minSector>2</minSector>
+	<systemList>
+		<cloaking power="1" max="1" room="1" start="false" />
+		<clonebay power="1" max="3" room="0" start="false" />
+		<engines power="2" max="5" room="3" start="true" />
+		<oxygen power="1" max="3" room="6" start="true" />
+		<pilot power="1" max="3" room="5" start="true" />
+		<shields power="2" max="8" room="4" start="true" />
+		<teleporter power="1" max="2" room="2" start="false" />
+		<weapons power="2" max="8" room="7" start="true" />
+	</systemList>
+	<weaponList missiles="6" load="WEAPONS_ROCK"/><!-- 1.25, was 10 --> 
+	<health amount="10"/>	
+	<maxPower amount ="7"/>
+	<crewCount amount = "3" max="6" class="rock"/><!-- 1.26.2 was 2-5 --> 
+	<boardingAI>sabotage</boardingAI>
+	<aug name="ROCK_ARMOR"/>
+</shipBlueprint>
+
+<shipBlueprint name="ROCK_FIGHT_DLC_3" layout="rock_fight_dlc_3" img="rock_fight">
+	<class>Rock Interceptor</class>
+	<minSector>2</minSector>
+	<systemList>
+		<cloaking power="1" max="1" room="1" start="false" />
+		<clonebay power="1" max="3" room="0" start="false" />
+		<engines power="2" max="5" room="2" start="true" />
+		<oxygen power="1" max="3" room="4" start="true" />
+		<pilot power="1" max="3" room="6" start="true" />
+		<shields power="2" max="8" room="7" start="true" />
+		<teleporter power="1" max="2" room="3" start="false" />
+		<weapons power="2" max="8" room="5" start="true" />
+	</systemList>
+	<weaponList missiles="6" load="WEAPONS_ROCK"/><!-- 1.25, was 10 --> 
+	<health amount="10"/>	
+	<maxPower amount ="7"/>
+	<crewCount amount = "3" max="6" class="rock"/><!-- 1.26.2 was 2-5 --> 
+	<boardingAI>sabotage</boardingAI>
+	<aug name="ROCK_ARMOR"/>
+</shipBlueprint>
+
+
+
+<shipBlueprint name="ROCK_ASSAULT_DLC" layout="rock_assault" img="rock_assault">
+	<class>Rock Aggressor</class>
+	<minSector>5</minSector>
+	<systemList>
+		<pilot power="1" max="3" room="0"/> <!--0-->
+		<doors power="1" max="3" room="3" start="false"/> <!--3-->
+		<oxygen power="1" max="3" room="9"/> <!--9-->
+		<clonebay power="1" max="2" room="1" start="false"/> <!--1-->
+		<shields power="2" max="8" room="6"/> <!--6-->
+		<engines power="2" max="5" room="7"/> <!--7-->
+		<weapons power="2" max="8" room="5"/> <!--5-->
+		<cloaking power="1" max="2" room="4" start="false"/> <!--4-->
+		<teleporter power="1" max="2" room="8" start="false"/> <!--8-->
+	</systemList>
+	<weaponList missiles="6" load="WEAPONS_ROCK"/><!-- 1.25, was 10 --> 
+	<health amount="12"/>	
+	<maxPower amount ="7"/>
+	<crewCount amount = "3" max="7" class="rock"/><!-- 1.26.2 was 2-6 --> 
+	<boardingAI>sabotage</boardingAI>
+	<aug name="ROCK_ARMOR"/>
+</shipBlueprint>
+
+<shipBlueprint name="ROCK_ASSAULT_DLC_2" layout="rock_assault_dlc_2" img="rock_assault">
+	<class>Rock Aggressor</class>
+	<minSector>5</minSector>
+	<systemList>
+		<cloaking power="1" max="2" room="4" start="false" />
+		<clonebay power="1" max="2" room="1" start="false" />
+		<doors power="1" max="3" room="3" start="false" />
+		<engines power="2" max="5" room="7" start="true" />
+		<oxygen power="1" max="3" room="9" start="true" />
+		<pilot power="1" max="3" room="0" start="true" />
+		<shields power="2" max="8" room="6" start="true" />
+		<teleporter power="1" max="2" room="2" start="false" />
+		<weapons power="2" max="8" room="5" start="true" />
+	</systemList>
+	<weaponList missiles="6" load="WEAPONS_ROCK"/><!-- 1.25, was 10 --> 
+	<health amount="12"/>	
+	<maxPower amount ="7"/>
+	<crewCount amount = "3" max="7" class="rock"/><!-- 1.26.2 was 2-6 --> 
+	<boardingAI>sabotage</boardingAI>
+	<aug name="ROCK_ARMOR"/>
+</shipBlueprint>
+
+<shipBlueprint name="ROCK_ASSAULT_DLC_3" layout="rock_assault_dlc_3" img="rock_assault">
+	<class>Rock Aggressor</class>
+	<minSector>5</minSector>
+	<systemList>
+		<cloaking power="1" max="2" room="4" start="false" />
+		<clonebay power="1" max="2" room="1" start="false" />
+		<doors power="1" max="3" room="3" start="false" />
+		<engines power="2" max="5" room="7" start="true" />
+		<oxygen power="1" max="3" room="9" start="true" />
+		<pilot power="1" max="3" room="0" start="true" />
+		<shields power="2" max="8" room="6" start="true" />
+		<teleporter power="1" max="2" room="2" start="false" />
+		<weapons power="2" max="8" room="5" start="true" />
+	</systemList>
+	<weaponList missiles="6" load="WEAPONS_ROCK"/><!-- 1.25, was 10 --> 
+	<health amount="12"/>	
+	<maxPower amount ="7"/>
+	<crewCount amount = "3" max="7" class="rock"/><!-- 1.26.2 was 2-6 --> 
+	<boardingAI>sabotage</boardingAI>
+	<aug name="ROCK_ARMOR"/>
+</shipBlueprint>
+
+
+<!--
+ MANTIS SHIPS!
+  -->
+  
+<shipBlueprint name="MANTIS_SCOUT_DLC" layout="mantis_scout" img="mantis_scout">
+	<class>Mantis Interceptor</class>
+	<maxSector>5</maxSector>
+	<systemList>
+		<pilot power="1" max="3" room="5"/>  <!--1-->
+		<doors power="1" max="2" room="2" start="false"/> <!--2-->
+		<oxygen power="1" max="3" room="1"/> <!--5-->
+		<clonebay power="1" max="2" room="0" start="false"/> <!--6-->
+		<teleporter power="1" max="2" room="7" start="false"/> <!--4-->
+		<shields power="2" max="8" room="3"/> <!--0-->
+		<engines power="1" max="5" room="4"/> <!--7-->
+		<weapons power="2" max="7" room="6"/> <!--3-->
+	</systemList>
+	<weaponList missiles="4" load="WEAPONS_MANTIS"/><!-- 1.25, was 6 --> 
+	<health amount="7"/>	
+	<maxPower amount ="10"/>
+	<crewCount amount = "3" max="5" class="mantis"/><!-- 1.26.2 was 2-4 -->  
+	<boardingAI>sabotage</boardingAI>
+</shipBlueprint>
+
+<shipBlueprint name="MANTIS_SCOUT_DLC_2" layout="mantis_scout_dlc_2" img="mantis_scout">
+	<class>Mantis Interceptor</class>
+	<maxSector>5</maxSector>
+	<systemList>
+		<clonebay power="1" max="2" room="2" start="false" />
+		<doors power="1" max="2" room="1" start="false" />
+		<engines power="1" max="5" room="7" start="true" />
+		<oxygen power="1" max="3" room="0" start="true" />
+		<pilot power="1" max="3" room="3" start="true" />
+		<shields power="2" max="8" room="4" start="true" />
+		<teleporter power="1" max="2" room="5" start="false" />
+		<weapons power="2" max="7" room="6" start="true" />
+	</systemList>
+	<weaponList missiles="4" load="WEAPONS_MANTIS"/><!-- 1.25, was 6 --> 
+	<health amount="7"/>	
+	<maxPower amount ="10"/>
+	<crewCount amount = "3" max="5" class="mantis"/><!-- 1.26.2 was 2-4 -->  
+	<boardingAI>sabotage</boardingAI>
+</shipBlueprint>
+
+<shipBlueprint name="MANTIS_SCOUT_DLC_3" layout="mantis_scout_dlc_3" img="mantis_scout">
+	<class>Mantis Interceptor</class>
+	<maxSector>5</maxSector>
+	<systemList>
+		<clonebay power="1" max="2" room="2" start="false" />
+		<doors power="1" max="2" room="5" start="false" />
+		<engines power="1" max="5" room="1" start="true" />
+		<oxygen power="1" max="3" room="3" start="true" />
+		<pilot power="1" max="3" room="4" start="true" />
+		<shields power="2" max="8" room="6" start="true" />
+		<teleporter power="1" max="2" room="0" start="false" />
+		<weapons power="2" max="7" room="7" start="true" />
+	</systemList>
+	<weaponList missiles="4" load="WEAPONS_MANTIS"/><!-- 1.25, was 6 --> 
+	<health amount="7"/>	
+	<maxPower amount ="10"/>
+	<crewCount amount = "3" max="5" class="mantis"/><!-- 1.26.2 was 2-4 -->  
+	<boardingAI>sabotage</boardingAI>
+</shipBlueprint>
+  
+<shipBlueprint name="MANTIS_FIGHTER_DLC" layout="mantis_fighter" img="mantis_fighter">
+	<class>Mantis Assault</class>
+	<minSector>1</minSector>
+	<systemList>
+		<pilot power="1" max="3" room="9"/> <!--9-->
+		<doors power="1" max="3" room="5" start="false"/> <!--2-->
+		<oxygen power="1" max="3" room="8"/> <!--5-->
+		<clonebay power="1" max="3" room="0"/> <!--8-->
+		<teleporter power="1" max="2" room="7"/> <!--4-->
+		<shields power="2" max="7" room="3"/> <!--0-->
+		<engines power="1" max="5" room="4"/> <!--7-->
+		<weapons power="1" max="7" room="2"/> <!--3-->
+	</systemList>
+	<weaponList missiles="6" load="WEAPONS_MANTIS"/><!-- 1.25, was 10 --> 
+	<health amount="9"/>	
+	<maxPower amount ="11"/>
+	<crewCount amount = "3" max="6" class="mantis"/><!-- 1.26.2 was 2-5 --> 
+	<boardingAI>sabotage</boardingAI>
+</shipBlueprint>
+
+<shipBlueprint name="MANTIS_FIGHTER_DLC_2" layout="mantis_fighter_dlc_2" img="mantis_fighter">
+	<class>Mantis Assault</class>
+	<minSector>1</minSector>
+	<systemList>
+		<clonebay power="1" max="3" room="1" start="true" />
+		<doors power="1" max="3" room="0" start="false" />
+		<engines power="1" max="5" room="4" start="true" />
+		<oxygen power="1" max="3" room="2" start="true" />
+		<pilot power="1" max="3" room="5" start="true" />
+		<shields power="2" max="7" room="3" start="true" />
+		<teleporter power="1" max="2" room="7" start="true" />
+		<weapons power="1" max="7" room="6" start="true" />
+	</systemList>
+	<weaponList missiles="6" load="WEAPONS_MANTIS"/><!-- 1.25, was 10 --> 
+	<health amount="9"/>	
+	<maxPower amount ="11"/>
+	<crewCount amount = "3" max="6" class="mantis"/><!-- 1.26.2 was 2-5 --> 
+	<boardingAI>sabotage</boardingAI>
+</shipBlueprint>
+
+<shipBlueprint name="MANTIS_FIGHTER_DLC_3" layout="mantis_fighter_dlc_3" img="mantis_fighter">
+	<class>Mantis Assault</class>
+	<minSector>1</minSector>
+	<systemList>
+		<clonebay power="1" max="3" room="7" start="true" />
+		<doors power="1" max="3" room="0" start="false" />
+		<engines power="1" max="5" room="3" start="true" />
+		<oxygen power="1" max="3" room="2" start="true" />
+		<pilot power="1" max="3" room="1" start="true" />
+		<shields power="2" max="7" room="4" start="true" />
+		<teleporter power="1" max="2" room="5" start="true" />
+		<weapons power="1" max="7" room="9" start="true" />
+	</systemList>
+	<weaponList missiles="6" load="WEAPONS_MANTIS"/><!-- 1.25, was 10 --> 
+	<health amount="9"/>	
+	<maxPower amount ="11"/>
+	<crewCount amount = "3" max="6" class="mantis"/><!-- 1.26.2 was 2-5 --> 
+	<boardingAI>sabotage</boardingAI>
+</shipBlueprint>
+
+<shipBlueprint name="MANTIS_BOMBER_DLC" layout="mantis_bomber" img="mantis_bomber">
+	<class>Mantis Aggressor</class>
+	<minSector>4</minSector>
+	<systemList>
+		<pilot power="1" max="3" room="3"/>				 <!--3-->
+		<doors power="1" max="3" room="11" start="false"/> <!--9-->
+		<oxygen power="1" max="3" room="9"/> 			 <!--11-->
+		<clonebay power="1" max="1" room="0" start="false"/> <!--8-->
+		<teleporter power="1" max="2" room="4"/>			<!--4-->
+		<shields power="2" max="8" room="10"/>			<!--0-->
+		<engines power="1" max="5" room="7"/>		<!--7-->
+		<weapons power="2" max="8" room="8"/>	<!--10-->
+	</systemList>
+	<weaponList missiles="8" load="WEAPONS_MANTIS"/><!-- 1.25, was 14 --> 
+	<health amount="11"/>	
+	<maxPower amount ="11"/>
+	<crewCount amount = "3" max="6" class="mantis"/>
+	<boardingAI>sabotage</boardingAI>
+</shipBlueprint>
+
+<shipBlueprint name="MANTIS_BOMBER_DLC_2" layout="mantis_bomber_dlc_2" img="mantis_bomber">
+	<class>Mantis Aggressor</class>
+	<minSector>4</minSector>
+	<systemList>
+		<clonebay power="1" max="1" room="0" start="false" />
+		<doors power="1" max="3" room="12" start="false" />
+		<engines power="1" max="5" room="2" start="true" />
+		<oxygen power="1" max="3" room="11" start="true" />
+		<pilot power="1" max="3" room="3" start="true" />
+		<shields power="2" max="8" room="9" start="true" />
+		<teleporter power="1" max="2" room="1" start="true" />
+		<weapons power="2" max="8" room="7" start="true" />
+	</systemList>
+	<weaponList missiles="8" load="WEAPONS_MANTIS"/><!-- 1.25, was 14 --> 
+	<health amount="11"/>	
+	<maxPower amount ="11"/>
+	<crewCount amount = "3" max="6" class="mantis"/>
+	<boardingAI>sabotage</boardingAI>
+</shipBlueprint>
+
+<shipBlueprint name="MANTIS_BOMBER_DLC_3" layout="mantis_bomber_dlc_3" img="mantis_bomber">
+	<class>Mantis Aggressor</class>
+	<minSector>4</minSector>
+	<systemList>
+		<clonebay power="1" max="1" room="0" start="false" />
+		<doors power="1" max="3" room="5" start="false" />
+		<engines power="1" max="5" room="2" start="true" />
+		<oxygen power="1" max="3" room="8" start="true" />
+		<pilot power="1" max="3" room="3" start="true" />
+		<shields power="2" max="8" room="9" start="true" />
+		<teleporter power="1" max="2" room="1" start="true" />
+		<weapons power="2" max="8" room="7" start="true" />
+	</systemList>
+	<weaponList missiles="8" load="WEAPONS_MANTIS"/><!-- 1.25, was 14 --> 
+	<health amount="11"/>	
+	<maxPower amount ="11"/>
+	<crewCount amount = "3" max="6" class="mantis"/>
+	<boardingAI>sabotage</boardingAI>
+</shipBlueprint>
+
+<!--
+ FED SHIPS!
+  -->
+
+<shipBlueprint name="FED_SCOUT_DLC" layout="fed_scout" img="fed_scout">
+	<class>Federation Outrider</class>
+	<maxSector>6</maxSector>
+	<systemList>
+		<pilot power="1" max="3" room="0"/> <!--0-->
+		<hacking power="1" max="1" room="2" start="false"/> <!--2-->
+		<oxygen power="1" max="3" room="5"/> <!--5-->
+		<shields power="2" max="8" room="3"/> <!--1-->
+		<engines power="1" max="5" room="4"/> <!--4-->
+		<weapons power="2" max="8" room="1"/> <!--3-->
+	</systemList>
+	<weaponList missiles="6" load="WEAPONS_FED"/><!-- 1.25, was 10 --> 
+	<droneList drones="4"/>
+	<health amount="7"/>	
+	<maxPower amount ="10"/>
+	<crewCount amount = "3" max="4" class="human"/><!-- 1.26.2 was 2-3 --> 
+	<boardingAI>sabotage</boardingAI>
+</shipBlueprint>
+
+<shipBlueprint name="FED_SCOUT_DLC_2" layout="fed_scout_dlc_2" img="fed_scout">
+	<class>Federation Outrider</class>
+	<maxSector>6</maxSector>
+	<systemList>
+		<engines power="1" max="5" room="2" start="true" />
+		<hacking power="1" max="1" room="3" start="false" />
+		<oxygen power="1" max="3" room="5" start="true" />
+		<pilot power="1" max="3" room="0" start="true" />
+		<shields power="2" max="8" room="1" start="true" />
+		<weapons power="2" max="8" room="4" start="true" />
+	</systemList>
+	<weaponList missiles="6" load="WEAPONS_FED"/><!-- 1.25, was 10 --> 
+	<droneList drones="4"/>
+	<health amount="7"/>	
+	<maxPower amount ="10"/>
+	<crewCount amount = "3" max="4" class="human"/><!-- 1.26.2 was 2-3 --> 
+	<boardingAI>sabotage</boardingAI>
+</shipBlueprint>
+
+<shipBlueprint name="FED_SCOUT_DLC_3" layout="fed_scout_dlc_3" img="fed_scout">
+	<class>Federation Outrider</class>
+	<maxSector>6</maxSector>
+	<systemList>
+		<engines power="1" max="5" room="1" start="true" />
+		<hacking power="1" max="1" room="4" start="false" />
+		<oxygen power="1" max="3" room="0" start="true" />
+		<pilot power="1" max="3" room="2" start="true" />
+		<shields power="2" max="8" room="5" start="true" />
+		<weapons power="2" max="8" room="3" start="true" />
+	</systemList>
+	<weaponList missiles="6" load="WEAPONS_FED"/><!-- 1.25, was 10 --> 
+	<droneList drones="4"/>
+	<health amount="7"/>	
+	<maxPower amount ="10"/>
+	<crewCount amount = "3" max="4" class="human"/><!-- 1.26.2 was 2-3 --> 
+	<boardingAI>sabotage</boardingAI>
+</shipBlueprint>
+  
+<shipBlueprint name="FED_BOMBER_DLC" layout="fed_bomber" img="fed_bomber">
+	<class>Federation Hacker</class>
+	<minSector>1</minSector>
+	<systemList>
+		<pilot power="1" max="3" room="0"/> <!--0-->
+		<hacking power="1" max="1" room="2" start="false"/> <!--doors 2-->
+		<clonebay power="1" max="3" room="8" start="false"/> <!--8-->
+		<oxygen power="1" max="3" room="5"/> <!--5--> 
+		<shields power="2" max="8" room="9"/> <!--1-->
+		<engines power="1" max="5" room="6"/>  <!--9-->
+		<weapons power="2" max="8" room="1"/> <!--6--> 
+	</systemList>
+	<weaponList missiles="6" load="WEAPONS_FED"/><!-- 1.25, was 10 --> 
+	<droneList drones="4"/>
+	<health amount="9"/>	
+	<maxPower amount ="7"/>
+	<crewCount amount = "3" max="7" class="human"/><!-- 1.26.2 was 2-6 --> 
+</shipBlueprint>
+
+<shipBlueprint name="FED_BOMBER_DLC_2" layout="fed_bomber_dlc_2" img="fed_bomber">
+	<class>Federation Hacker</class>
+	<minSector>1</minSector>
+	<systemList>
+		<clonebay power="1" max="3" room="3" start="false" />
+		<engines power="1" max="5" room="10" start="true" />
+		<hacking power="1" max="1" room="4" start="false" />
+		<oxygen power="1" max="3" room="7" start="true" />
+		<pilot power="1" max="3" room="0" start="true" />
+		<shields power="2" max="8" room="6" start="true" />
+		<weapons power="2" max="8" room="1" start="true" />
+	</systemList>
+	<weaponList missiles="6" load="WEAPONS_FED"/><!-- 1.25, was 10 --> 
+	<droneList drones="4"/>
+	<health amount="9"/>	
+	<maxPower amount ="7"/>
+	<crewCount amount = "3" max="7" class="human"/><!-- 1.26.2 was 2-6 --> 
+</shipBlueprint>
+
+<shipBlueprint name="FED_BOMBER_DLC_3" layout="fed_bomber_dlc_3" img="fed_bomber">
+	<class>Federation Hacker</class>
+	<minSector>1</minSector>
+	<systemList>
+		<clonebay power="1" max="3" room="5" start="false" />
+		<engines power="1" max="5" room="4" start="true" />
+		<hacking power="1" max="1" room="3" start="false" />
+		<oxygen power="1" max="3" room="8" start="true" />
+		<pilot power="1" max="3" room="0" start="true" />
+		<shields power="2" max="8" room="9" start="true" />
+		<weapons power="2" max="8" room="1" start="true" />
+	</systemList>
+	<weaponList missiles="6" load="WEAPONS_FED"/><!-- 1.25, was 10 --> 
+	<droneList drones="4"/>
+	<health amount="9"/>	
+	<maxPower amount ="7"/>
+	<crewCount amount = "3" max="7" class="human"/><!-- 1.26.2 was 2-6 --> 
+</shipBlueprint>
+
+
+<!--
+ CIRCLE SHIPS!
+  -->
+  
+<shipBlueprint name="CIRCLE_SCOUT_DLC" layout="circle_scout" img="circle_scout">
+	<class>Engi Outrider</class>
+	<maxSector>7</maxSector>
+	<systemList>
+		<pilot power="1" max="3" room="5"/> <!--5-->
+		<hacking power="1" max="2" room="2" start="false"/> <!--2-->
+		<clonebay power="1" max="3" room="6" start="false"/> <!--6-->
+		<oxygen power="1" max="3" room="7"/>  <!--3-->
+		<shields power="2" max="8" room="3"/> <!--1-->
+		<engines power="1" max="5" room="4"/> <!--7-->
+		<weapons power="2" max="6" room="1"/> <!--4-->
+		<drones power="2" max="8" room="0"/> <!--0-->
+	</systemList>
+	<weaponList missiles="4" load="WEAPONS_CIRCLE"/><!-- 1.25, was 6 --> 
+	<droneList drones="4" load="DRONES_DEFENSE"/>
+	<health amount="7"/>	
+	<maxPower amount ="8"/>
+	<crewCount amount = "3" max="6" class="engi"/><!-- 1.26.2 was 2-5 --> 
+	<aug name="NANO_MEDBAY"/>
+</shipBlueprint>
+
+<shipBlueprint name="CIRCLE_SCOUT_DLC_2" layout="circle_scout_dlc_2" img="circle_scout">
+	<class>Engi Outrider</class>
+	<maxSector>7</maxSector>
+	<systemList>
+		<clonebay power="1" max="3" room="5" start="false" />
+		<drones power="2" max="8" room="3" start="true" />
+		<engines power="1" max="5" room="0" start="true" />
+		<hacking power="1" max="2" room="1" start="false" />
+		<oxygen power="1" max="3" room="6" start="true" />
+		<pilot power="1" max="3" room="4" start="true" />
+		<shields power="2" max="8" room="2" start="true" />
+		<weapons power="2" max="6" room="7" start="true" />
+	</systemList>
+	<weaponList missiles="4" load="WEAPONS_CIRCLE"/><!-- 1.25, was 6 --> 
+	<droneList drones="4" load="DRONES_DEFENSE"/>
+	<health amount="7"/>	
+	<maxPower amount ="8"/>
+	<crewCount amount = "3" max="6" class="engi"/><!-- 1.26.2 was 2-5 --> 
+	<aug name="NANO_MEDBAY"/>
+</shipBlueprint>
+
+<shipBlueprint name="CIRCLE_SCOUT_DLC_3" layout="circle_scout_dlc_3" img="circle_scout">
+	<class>Engi Outrider</class>
+	<maxSector>7</maxSector>
+	<systemList>
+		<clonebay power="1" max="3" room="4" start="false" />
+		<drones power="2" max="8" room="7" start="true" />
+		<engines power="1" max="5" room="0" start="true" />
+		<hacking power="1" max="2" room="1" start="false" />
+		<oxygen power="1" max="3" room="5" start="true" />
+		<pilot power="1" max="3" room="3" start="true" />
+		<shields power="2" max="8" room="2" start="true" />
+		<weapons power="2" max="6" room="6" start="true" />
+	</systemList>
+	<weaponList missiles="4" load="WEAPONS_CIRCLE"/><!-- 1.25, was 6 --> 
+	<droneList drones="4" load="DRONES_DEFENSE"/>
+	<health amount="7"/>	
+	<maxPower amount ="8"/>
+	<crewCount amount = "3" max="6" class="engi"/><!-- 1.26.2 was 2-5 --> 
+	<aug name="NANO_MEDBAY"/>
+</shipBlueprint>
+
+<shipBlueprint name="CIRCLE_BOMBER_DLC" layout="circle_bomber" img="circle_bomber">
+	<class>Engi Hacker</class>
+	<minSector>1</minSector>
+	<systemList>
+		<pilot power="1" max="3" room="1"/>  <!--1-->
+		<doors power="1" max="3" room="2" start="false"/> <!--2-->
+		<clonebay power="1" max="3" room="4" start="false"/>  <!--4-->
+		<oxygen power="1" max="3" room="3"/> <!--3-->
+		<shields power="2" max="10" room="11"/>  <!--7-->
+		<engines power="1" max="5" room="7"/> <!--9-->
+		<weapons power="2" max="8" room="9"/> <!--11-->
+		<drones power="2" max="8" room="6"/> <!--5-->
+		<hacking power="1" max="3" room="8" start="false"/>
+	</systemList>
+	<weaponList missiles="6" load="WEAPONS_CIRCLE"/><!-- 1.25, was 10 --> 
+	<droneList drones="4" load="DRONES_DEFENSE"/>
+	<health amount="9"/>	
+	<maxPower amount ="8"/>
+	<crewCount amount = "3" max="6" class="engi"/><!--CHANGED was 2 3-->
+	<boardingAI>sabotage</boardingAI>
+	<aug name="NANO_MEDBAY"/>
+</shipBlueprint>
+
+<shipBlueprint name="CIRCLE_BOMBER_DLC_2" layout="circle_bomber_dlc_2" img="circle_bomber">
+	<class>Engi Hacker</class>
+	<minSector>1</minSector>
+	<systemList>
+		<clonebay power="1" max="3" room="4" start="false" />
+		<doors power="1" max="3" room="2" start="false" />
+		<drones power="2" max="8" room="7" start="true" />
+		<engines power="1" max="5" room="11" start="true" />
+		<hacking power="1" max="3" room="8" start="false" />
+		<oxygen power="1" max="3" room="3" start="true" />
+		<pilot power="1" max="3" room="1" start="true" />
+		<shields power="2" max="10" room="10" start="true" />
+		<weapons power="2" max="8" room="0" start="true" />
+	</systemList>
+	<weaponList missiles="6" load="WEAPONS_CIRCLE"/><!-- 1.25, was 10 --> 
+	<droneList drones="4" load="DRONES_DEFENSE"/>
+	<health amount="9"/>	
+	<maxPower amount ="8"/>
+	<crewCount amount = "3" max="6" class="engi"/><!--CHANGED was 2 3-->
+	<boardingAI>sabotage</boardingAI>
+	<aug name="NANO_MEDBAY"/>
+</shipBlueprint>
+
+<shipBlueprint name="CIRCLE_BOMBER_DLC_3" layout="circle_bomber_dlc_3" img="circle_bomber">
+	<class>Engi Hacker</class>
+	<minSector>1</minSector>
+	<systemList>
+		<clonebay power="1" max="3" room="4" start="false" />
+		<doors power="1" max="3" room="2" start="false" />
+		<drones power="2" max="8" room="8" start="true" />
+		<engines power="1" max="5" room="9" start="true" />
+		<hacking power="1" max="3" room="7" start="false" />
+		<oxygen power="1" max="3" room="3" start="true" />
+		<pilot power="1" max="3" room="5" start="true" />
+		<shields power="2" max="10" room="11" start="true" />
+		<weapons power="2" max="8" room="1" start="true" />
+	</systemList>
+	<weaponList missiles="6" load="WEAPONS_CIRCLE"/><!-- 1.25, was 10 --> 
+	<droneList drones="4" load="DRONES_DEFENSE"/>
+	<health amount="9"/>	
+	<maxPower amount ="8"/>
+	<crewCount amount = "3" max="6" class="engi"/><!--CHANGED was 2 3-->
+	<boardingAI>sabotage</boardingAI>
+	<aug name="NANO_MEDBAY"/>
+</shipBlueprint>
+
+
+
+
+
+<!--
+ ZOLTAN  SHIPS!
+  -->
+  
+<shipBlueprint name="ZOLTAN_FIGHTER_DLC" layout="energy_fighter" img="energy_fighter">
+	<class>Zoltan Instigator</class>
+	<minSector>2</minSector><!-- 1.27 -->
+	<systemList>
+		<pilot power="1" max="3" room="0"/> <!--5-->
+		<mind power="1" max="1" room="1" start="false"/> <!--2-->
+		<clonebay power="1" max="3" room="6" start="false"/> <!--6-->
+		<oxygen power="1" max="3" room="4"/>  <!--3-->
+		<shields power="2" max="8" room="2"/> <!--1-->
+		<engines power="1" max="5" room="5"/> <!--0-->
+		<weapons power="2" max="8" room="3"/> <!--4-->
+	</systemList>
+	<weaponList missiles="6" load="WEAPONS_ZOLTAN"/><!-- 1.25, was 10 --> 
+	<health amount="7"/>
+	<aug name="ENERGY_SHIELD"/>
+	<maxPower amount ="12"/>
+	<crewCount amount = "3" max="4" class="energy"/><!-- 1.26.2 was 2-3 --> 
+	<boardingAI>sabotage</boardingAI>
+</shipBlueprint>
+
+<shipBlueprint name="ZOLTAN_FIGHTER_DLC_2" layout="energy_fighter_dlc_2" img="energy_fighter">
+	<class>Zoltan Instigator</class>
+	<minSector>2</minSector><!-- 1.27 -->
+	<systemList>
+		<clonebay power="1" max="3" room="6" start="false" />
+		<engines power="1" max="5" room="5" start="true" />
+		<mind power="1" max="1" room="1" start="false" />
+		<oxygen power="1" max="3" room="4" start="true" />
+		<pilot power="1" max="3" room="0" start="true" />
+		<shields power="2" max="8" room="2" start="true" />
+		<weapons power="2" max="8" room="3" start="true" />
+	</systemList>
+	<weaponList missiles="6" load="WEAPONS_ZOLTAN"/><!-- 1.25, was 10 --> 
+	<health amount="7"/>
+	<aug name="ENERGY_SHIELD"/>
+	<maxPower amount ="12"/>
+	<crewCount amount = "3" max="4" class="energy"/><!-- 1.26.2 was 2-3 --> 
+	<boardingAI>sabotage</boardingAI>
+</shipBlueprint>
+
+<shipBlueprint name="ZOLTAN_FIGHTER_DLC_3" layout="energy_fighter_dlc_3" img="energy_fighter">
+	<class>Zoltan Instigator</class>
+	<minSector>2</minSector><!-- 1.27 -->
+	<systemList>
+		<clonebay power="1" max="3" room="6" start="false" />
+		<engines power="1" max="5" room="5" start="true" />
+		<mind power="1" max="1" room="1" start="false" />
+		<oxygen power="1" max="3" room="4" start="true" />
+		<pilot power="1" max="3" room="0" start="true" />
+		<shields power="2" max="8" room="2" start="true" />
+		<weapons power="2" max="8" room="3" start="true" />
+	</systemList>
+	<weaponList missiles="6" load="WEAPONS_ZOLTAN"/><!-- 1.25, was 10 --> 
+	<health amount="7"/>
+	<aug name="ENERGY_SHIELD"/>
+	<maxPower amount ="12"/>
+	<crewCount amount = "3" max="4" class="energy"/><!-- 1.26.2 was 2-3 --> 
+	<boardingAI>sabotage</boardingAI>
+</shipBlueprint>
+
+
+<shipBlueprint name="ZOLTAN_BOMBER_DLC" layout="energy_bomber" img="energy_bomber">
+	<class>Zoltan Hacker</class>
+	<minSector>3</minSector>
+	<systemList>
+		<pilot power="1" max="3" room="1"/>  <!--1-->
+		<doors power="1" max="3" room="2" start="false"/> <!--2-->
+		<clonebay power="1" max="3" room="7" start="false"/> <!--6-->
+		<oxygen power="1" max="3" room="5"/>  <!--5-->
+		<shields power="2" max="8" room="4"/>  <!--3-->
+		<engines power="1" max="5" room="6"/> <!--7-->
+		<weapons power="2" max="8" room="3"/> <!--4-->
+		<hacking power="1" max="2" room="0" start="false"/> <!--0-->
+	</systemList>
+	<weaponList missiles="6" load="WEAPONS_ZOLTAN"/><!-- 1.25, was 10 --> 
+	<droneList drones="5" load="DRONES_COMBAT"/>
+	<health amount="7"/>	
+	<aug name="ENERGY_SHIELD"/>
+	<maxPower amount ="15"/>
+	<crewCount amount = "3" max="6" class="energy"/> <!--CHANGED was 3 4-->
+	<boardingAI>sabotage</boardingAI>
+</shipBlueprint>
+
+<shipBlueprint name="ZOLTAN_BOMBER_DLC_2" layout="energy_bomber_dlc_2" img="energy_bomber">
+	<class>Zoltan Hacker</class>
+	<minSector>3</minSector>
+	<systemList>
+		<clonebay power="1" max="3" room="8" start="false" />
+		<doors power="1" max="3" room="1" start="false" />
+		<engines power="1" max="5" room="7" start="true" />
+		<hacking power="1" max="2" room="6" start="false" />
+		<oxygen power="1" max="3" room="4" start="true" />
+		<pilot power="1" max="3" room="0" start="true" />
+		<shields power="2" max="8" room="3" start="true" />
+		<weapons power="2" max="8" room="2" start="true" />
+	</systemList>
+	<weaponList missiles="6" load="WEAPONS_ZOLTAN"/><!-- 1.25, was 10 --> 
+	<droneList drones="5" load="DRONES_COMBAT"/>
+	<health amount="7"/>	
+	<aug name="ENERGY_SHIELD"/>
+	<maxPower amount ="15"/>
+	<crewCount amount = "3" max="6" class="energy"/> <!--CHANGED was 3 4-->
+	<boardingAI>sabotage</boardingAI>
+</shipBlueprint>
+
+<shipBlueprint name="ZOLTAN_BOMBER_DLC_3" layout="energy_bomber_dlc_3" img="energy_bomber">
+	<class>Zoltan Hacker</class>
+	<minSector>3</minSector>
+	<systemList>
+		<clonebay power="1" max="3" room="7" start="false" />
+		<doors power="1" max="3" room="1" start="false" />
+		<engines power="1" max="5" room="8" start="true" />
+		<hacking power="1" max="2" room="6" start="false" />
+		<oxygen power="1" max="3" room="4" start="true" />
+		<pilot power="1" max="3" room="0" start="true" />
+		<shields power="2" max="8" room="3" start="true" />
+		<weapons power="2" max="8" room="2" start="true" />
+	</systemList>
+	<weaponList missiles="6" load="WEAPONS_ZOLTAN"/><!-- 1.25, was 10 --> 
+	<droneList drones="5" load="DRONES_COMBAT"/>
+	<health amount="7"/>	
+	<aug name="ENERGY_SHIELD"/>
+	<maxPower amount ="15"/>
+	<crewCount amount = "3" max="6" class="energy"/> <!--CHANGED was 3 4-->
+	<boardingAI>sabotage</boardingAI>
+</shipBlueprint>
+
+
+
+<!--
+ CRYSTAL SHIPS!
+  -->
+
+  
+<shipBlueprint name="CRYSTAL_SCOUT_DLC" layout="crystal_scout" img="crystal_scout">
+	<class>Crystal Outrider</class>
+	<systemList>
+		<pilot power="1" max="3" room="3"/>
+		<clonebay power="1" max="3" room="5" start="false"/>
+		<oxygen power="1" max="3" room="0"/>
+		<shields power="2" max="8" room="1"/>
+		<engines power="1" max="5" room="4"/>
+		<weapons power="4" max="8" room="2"/> 
+	</systemList>
+	<weaponList missiles="6" load="WEAPONS_CRYSTAL"/><!-- 1.25, was 10 --> 
+	<health amount="6"/>	<!-- 1.27.1 was 7 -->
+	<maxPower amount ="9"/>
+	<crewCount amount = "3" max="4" class="crystal"/><!-- 1.26.2 was 2-3 --> 
+	<boardingAI>sabotage</boardingAI>
+	<aug name="CRYSTAL_SHARDS" /> <!-- 1.27.1 -->
+</shipBlueprint>
+
+<shipBlueprint name="CRYSTAL_SCOUT_DLC_2" layout="crystal_scout_dlc_2" img="crystal_scout">
+	<class>Crystal Outrider</class>
+	<systemList>
+		<clonebay power="1" max="3" room="4" start="false" />
+		<engines power="1" max="5" room="2" start="true" />
+		<oxygen power="1" max="3" room="0" start="true" />
+		<pilot power="1" max="3" room="3" start="true" />
+		<shields power="2" max="8" room="1" start="true" />
+		<weapons power="2" max="8" room="5" start="true" />
+	</systemList>
+	<weaponList missiles="6" load="WEAPONS_CRYSTAL"/><!-- 1.25, was 10 --> 
+	<health amount="6"/>	<!-- 1.27.1 was 7 -->
+	<maxPower amount ="9"/>
+	<crewCount amount = "3" max="4" class="crystal"/><!-- 1.26.2 was 2-3 --> 
+	<boardingAI>sabotage</boardingAI>
+	<aug name="CRYSTAL_SHARDS" /> <!-- 1.27.1 -->
+</shipBlueprint>
+
+<shipBlueprint name="CRYSTAL_SCOUT_DLC_3" layout="crystal_scout_dlc_3" img="crystal_scout">
+	<class>Crystal Outrider</class>
+	<systemList>
+		<clonebay power="1" max="3" room="3" start="false" />
+		<engines power="1" max="5" room="1" start="true" />
+		<oxygen power="1" max="3" room="0" start="true" />
+		<pilot power="1" max="3" room="2" start="true" />
+		<shields power="2" max="8" room="5" start="true" />
+		<weapons power="2" max="8" room="4" start="true" />
+	</systemList>
+	<weaponList missiles="6" load="WEAPONS_CRYSTAL"/><!-- 1.25, was 10 --> 
+	<health amount="6"/>	<!-- 1.27.1 was 7 -->
+	<maxPower amount ="9"/>
+	<crewCount amount = "3" max="4" class="crystal"/><!-- 1.26.2 was 2-3 --> 
+	<boardingAI>sabotage</boardingAI>
+	<aug name="CRYSTAL_SHARDS" /> <!-- 1.27.1 -->
+</shipBlueprint>
+
+<shipBlueprint name="CRYSTAL_BOMBER_DLC" layout="crystal_bomber" img="crystal_bomber">
+	<class>Crystal Instigator</class>
+	<systemList>
+		<pilot power="1" max="3" room="2"/> 
+		<doors power="1" max="3" room="8" start="false"/>
+		<clonebay power="1" max="3" room="0" start="false"/> 
+		<oxygen power="1" max="3" room="6"/> 
+		<shields power="2" max="10" room="4"/>  
+		<engines power="1" max="5" room="5"/>
+		<weapons power="2" max="10" room="7"/>
+		<cloaking power="1" max="2" room="1"/>
+		<teleporter power="1" max="2" room="3"/>
+	</systemList>
+	<weaponList missiles="6" load="WEAPONS_CRYSTAL"/><!-- 1.25, was 10 --> 
+	<health amount="7"/>	<!-- 1.27.1 was 9 -->
+	<maxPower amount ="9"/>
+	<crewCount amount = "3" max="6" class="crystal"/><!-- 1.26.2 was 2-5 --> 
+	<boardingAI>sabotage</boardingAI>
+	<aug name="CRYSTAL_SHARDS" /> <!-- 1.27.1 -->
+</shipBlueprint>
+
+<shipBlueprint name="CRYSTAL_BOMBER_DLC_2" layout="crystal_bomber_dlc_2" img="crystal_bomber">
+	<class>Crystal Instigator</class>
+	<systemList>
+		<cloaking power="1" max="2" room="1" start="true" />
+		<clonebay power="1" max="3" room="7" start="false" />
+		<doors power="1" max="3" room="6" start="false" />
+		<engines power="1" max="5" room="4" start="true" />
+		<oxygen power="1" max="3" room="9" start="true" />
+		<pilot power="1" max="3" room="2" start="true" />
+		<shields power="2" max="10" room="3" start="true" />
+		<teleporter power="1" max="2" room="0" start="true" />
+		<weapons power="2" max="10" room="5" start="true" />
+	</systemList>
+	<weaponList missiles="6" load="WEAPONS_CRYSTAL"/><!-- 1.25, was 10 --> 
+	<health amount="7"/>	<!-- 1.27.1 was 9 -->
+	<maxPower amount ="9"/>
+	<crewCount amount = "3" max="6" class="crystal"/><!-- 1.26.2 was 2-5 --> 
+	<boardingAI>sabotage</boardingAI>
+	<aug name="CRYSTAL_SHARDS" /> <!-- 1.27.1 -->
+</shipBlueprint>
+
+<shipBlueprint name="CRYSTAL_BOMBER_DLC_3" layout="crystal_bomber_dlc_3" img="crystal_bomber">
+	<class>Crystal Instigator</class>
+	<systemList>
+		<doors power="1" max="3" room="8" start="false" />
+		<engines power="1" max="5" room="5" start="true" />
+		<medbay power="1" max="3" room="0" start="false" />
+		<oxygen power="1" max="3" room="6" start="true" />
+		<pilot power="1" max="3" room="2" start="true" />
+		<shields power="2" max="10" room="4" start="true" />
+		<weapons power="2" max="10" room="7" start="true" />
+	</systemList>
+	<weaponList missiles="6" load="WEAPONS_CRYSTAL"/><!-- 1.25, was 10 --> 
+	<health amount="7"/>	<!-- 1.27.1 was 9 -->
+	<maxPower amount ="9"/>
+	<crewCount amount = "3" max="6" class="crystal"/><!-- 1.26.2 was 2-5 --> 
+	<boardingAI>sabotage</boardingAI>
+	<aug name="CRYSTAL_SHARDS" /> <!-- 1.27.1 -->
+</shipBlueprint>
+ 
+
+<!-- CE weapons -->
+
+
+
+<blueprintList name="WEAPONS_MISSILES_EVENTS"> <!-- for an event that asks for missiles-->
+	<name>MISSILES_1</name>
+	<name>MISSILES_KARAKURT</name><!-- 1.26 -->
+	<name>MISSILES_V3</name><!-- 1.26 -->
+	<name>ORDEN2_MISSILES</name><!-- 1.26 -->
+	<name>ORDEN3_MISSILES</name><!-- 1.26 -->
+	<name>MISSILES_2_PLAYER</name>
+	<name>MISSILES_2_PLAYER</name>
+	<name>MISSILES_3</name>
+	<name>MISSILES_BURST</name>
+	<name>MISSILES_BREACH</name>
+	<name>MISSILE_CHARGEGUN</name>
+	<name>BA_MISSILES_ASTERIA</name>
+	<name>BA_MISSILES_PERYTON</name>
+	<name>BA_MISSILES_COCKATRICE</name>
+	<name>BA_MISSILES_SIMURGH</name>
+	<name>BA_MISSILES_FIRE</name> 
+	<name>BA_MISSILES_ONI</name>
+	<name>BA_MISSILES_IFRIT</name>
+	<name>BA_MISSILES_4</name>
+	<name>MISSILES_MEGA</name>
+	<name>MISSILES_HYDRA</name>
+	<name>MISSILES_ARU_GOLIAPH</name> <!-- 1.26.1 -->
+	<name>MISSILES_SYS1</name><!-- 1.25.1 -->
+	<name>MISSILES_SYS2</name><!-- 1.25.1 -->
+	<name>BA_MISSILES_FOBOS</name><!-- 1.25.3 -->
+	<name>BA_MISSILES_DEIMOS</name><!-- 1.25.3 -->
+	<name>BA_MISSILES_SWARM_1</name>
+	<name>BA_MISSILES_SWARM_2</name>
+	<name>BA_MISSILES_SWARM_3</name>
+	<name>BA_SHOTGUN_MISSILES</name>
+	<name>BA_SHOTGUN_MISSILES2</name>
+	<name>BA_SHOTGUN_MISSILES3</name>
+	<name>BA_MISSILE_CHARGEGUN_SMALL</name>
+	<name>MISSILES_HULL</name>
+	<name>BA_MISSILES_HULL_SMALL</name>
+	
+	<name>MISSILES_1_M</name>
+	<name>MISSILES_KARAKURT_M</name>
+	<name>MISSILES_V3_M</name><!-- 1.26 -->
+	<name>ORDEN2_MISSILES_M</name><!-- 1.26 -->
+	<name>ORDEN3_MISSILES_M</name><!-- 1.26 -->
+	<name>MISSILES_2_PLAYER_M</name>
+	<name>MISSILES_3_M</name>
+	<name>MISSILES_BURST_M</name>
+	<name>MISSILES_BREACH_M</name>
+	<name>MISSILE_CHARGEGUN_M</name>
+	<name>BA_MISSILES_ASTERIA_M</name>
+	<name>BA_MISSILES_PERYTON_M</name>
+	<name>BA_MISSILES_COCKATRICE_M</name>
+	<name>BA_MISSILES_SIMURGH_M</name>
+	<name>BA_MISSILES_FIRE_M</name> 
+	<name>BA_MISSILES_ONI_M</name>
+	<name>BA_MISSILES_IFRIT_M</name>
+	<name>BA_MISSILES_4_M</name>
+	<name>MISSILES_MEGA_M</name>
+	<name>MISSILES_ARU_GOLIAPH_M</name> <!-- 1.26.1 -->
+	<name>MISSILES_HYDRA_M</name>
+	<name>MISSILES_SYS1_M</name><!-- 1.25.1 -->
+	<name>MISSILES_SYS2_M</name><!-- 1.25.1 -->
+	<name>BA_MISSILES_FOBOS_M</name><!-- 1.26 -->
+	<name>BA_MISSILES_DEIMOS_M</name><!-- 1.26 -->
+	<name>BA_MISSILES_SWARM_1_M</name>
+	<name>BA_MISSILES_SWARM_2_M</name>
+	<name>BA_MISSILES_SWARM_3_M</name>
+	<name>BA_SHOTGUN_MISSILES_M</name>
+	<name>BA_SHOTGUN_MISSILES2_M</name>
+	<name>BA_SHOTGUN_MISSILES3_M</name>
+	<name>BA_MISSILE_CHARGEGUN_SMALL_M</name>
+	<name>MISSILES_HULL_M</name>
+	<name>BA_MISSILES_HULL_SMALL_M</name>
+	<!-- 1.26 -->
+	<name>MISSILES_HYDRA_FRC</name>
+	<name>MISSILES_HYDRA_BRC</name>
+	<name>MISSILES_HYDRA_CLD</name>
+	<name>MISSILES_HYDRA_POW</name>
+	<name>MISSILES_MEGA_FRC</name>
+	<name>MISSILES_MEGA_BRC</name>
+	<name>MISSILES_MEGA_CLD</name>
+	<name>MISSILES_MEGA_POW</name>
+	<name>MISSILES_1_FRC</name>
+	<name>MISSILES_1_BRC</name>
+	<name>MISSILES_1_CLD</name>
+	<name>MISSILES_2_PLAYER_FRC</name>
+	<name>MISSILES_2_PLAYER_BRC</name>
+	<name>MISSILES_2_PLAYER_CLD</name>
+	<name>MISSILES_3_FRC</name>
+	<name>MISSILES_3_BRC</name>
+	<name>MISSILES_3_CLD</name>
+	<name>MISSILES_3_POW</name>
+	<name>MISSILES_BURST_FRC</name>
+	<name>MISSILES_BURST_BRC</name>
+	<name>MISSILES_BURST_CLD</name>
+	<name>MISSILES_BURST_POW</name>
+	<name>MISSILES_BREACH_FRC</name>
+	<name>MISSILES_BREACH_BRC</name>
+	<name>MISSILES_BREACH_CLD</name>
+	<name>MISSILES_BREACH_POW</name>
+	<name>BA_MISSILE_CHARGEGUN_SMALL_FRC</name>
+	<name>BA_MISSILE_CHARGEGUN_SMALL_BRC</name>
+	<name>BA_MISSILE_CHARGEGUN_SMALL_CLD</name>
+	<name>MISSILE_CHARGEGUN_FRC</name>
+	<name>MISSILE_CHARGEGUN_BRC</name>
+	<name>MISSILE_CHARGEGUN_CLD</name>
+	<name>MISSILE_CHARGEGUN_POW</name>
+	<name>BA_SHOTGUN_MISSILES_BRC</name>
+	<name>BA_SHOTGUN_MISSILES_CLD</name>
+	<name>BA_SHOTGUN_MISSILES_POW</name>
+	<name>BA_SHOTGUN_MISSILES2_BRC</name>
+	<name>BA_SHOTGUN_MISSILES2_CLD</name>
+	<name>BA_SHOTGUN_MISSILES2_POW</name>
+	<name>BA_SHOTGUN_MISSILES3_BRC</name>
+	<name>BA_SHOTGUN_MISSILES3_CLD</name>
+	<name>BA_SHOTGUN_MISSILES3_POW</name>
+	<name>BA_MISSILES_ONI_FRC</name>
+	<name>BA_MISSILES_ONI_BRC</name>
+	<name>BA_MISSILES_ONI_CLD</name>
+	<name>BA_MISSILES_ONI_POW</name>
+	<name>BA_MISSILES_IFRIT_CLD</name>
+	<name>BA_MISSILES_IFRIT_POW</name>
+	<name>MISSILES_SYS1_FRC</name>
+	<name>MISSILES_SYS1_CLD</name>
+	<name>MISSILES_SYS2_FRC</name>
+	<name>MISSILES_SYS2_CLD</name>
+	<name>BA_MISSILES_FOBOS_FRC</name>
+	<name>BA_MISSILES_FOBOS_CLD</name>
+	<name>BA_MISSILES_DEIMOS_FRC</name>
+	<name>BA_MISSILES_DEIMOS_CLD</name>
+	<name>BA_MISSILES_DEIMOS_POW</name>
+	<name>BA_MISSILES_SWARM_1_FRC</name>
+	<name>BA_MISSILES_SWARM_1_CLD</name>
+	<name>BA_MISSILES_SWARM_2_FRC</name>
+	<name>BA_MISSILES_SWARM_2_BRC</name>
+	<name>BA_MISSILES_SWARM_2_CLD</name>
+	<name>BA_MISSILES_SWARM_2_POW</name>
+	<name>BA_MISSILES_SWARM_3_FRC</name>
+	<name>BA_MISSILES_SWARM_3_BRC</name>
+	<name>BA_MISSILES_SWARM_3_CLD</name>
+	<name>BA_MISSILES_SWARM_3_POW</name>
+	<name>BA_MISSILES_ASTERIA_CLD</name>
+	<name>BA_MISSILES_HULL_SMALL_BRC</name>
+	<name>BA_MISSILES_HULL_SMALL_CLD</name>
+	<name>MISSILES_HULL_BRC</name>
+	<name>MISSILES_HULL_CLD</name>
+	<name>MISSILES_HULL_POW</name>
+	<name>BA_MISSILES_4_FRC</name>
+	<name>BA_MISSILES_4_BRC</name>
+	<name>BA_MISSILES_4_CLD</name>
+	<name>BA_MISSILES_4_POW</name>
+	<name>BA_MISSILES_PERYTON_CLD</name>
+	<name>BA_MISSILES_PERYTON_POW</name>
+	<name>BA_MISSILES_COCKATRICE_CLD</name>
+	<name>BA_MISSILES_COCKATRICE_POW</name>
+	<name>BA_MISSILES_FIRE_FRC</name>
+	<name>BA_MISSILES_FIRE_CLD</name>
+	<name>BA_MISSILES_FIRE_POW</name>
+	<name>BA_MISSILES_SIMURGH_CLD</name>
+	<name>BA_MISSILES_SIMURGH_POW</name>
+	<name>ORDEN2_MISSILES_FRC</name>
+	<name>ORDEN2_MISSILES_CLD</name>
+	<name>ORDEN2_MISSILES_POW</name>
+	<name>ORDEN3_MISSILES_FRC</name>
+	<name>ORDEN3_MISSILES_CLD</name>
+	<name>ORDEN3_MISSILES_POW</name>
+	<name>MISSILES_KARAKURT_FRC</name>
+	<name>MISSILES_KARAKURT_BRC</name>
+	<name>MISSILES_KARAKURT_CLD</name>
+	<name>MISSILES_KARAKURT_POW</name>
+	<name>MISSILES_V3_CLD</name>
+	<name>MISSILES_V3_POW</name>
+	<!-- 1.26.6 -->
+	<name>MISSILES_HYDRA_M_FRC</name>
+	<name>MISSILES_HYDRA_M_BRC</name>
+	<name>MISSILES_HYDRA_M_CLD</name>
+	<name>MISSILES_HYDRA_M_POW</name>
+	<name>MISSILES_MEGA_M_FRC</name>
+	<name>MISSILES_MEGA_M_BRC</name>
+	<name>MISSILES_MEGA_M_CLD</name>
+	<name>MISSILES_MEGA_M_POW</name>
+	<name>MISSILES_1_M_FRC</name>
+	<name>MISSILES_1_M_BRC</name>
+	<name>MISSILES_1_M_CLD</name>
+	<name>MISSILES_2_PLAYER_M_FRC</name>
+	<name>MISSILES_2_PLAYER_M_BRC</name>
+	<name>MISSILES_2_PLAYER_M_CLD</name>
+	<name>MISSILES_3_M_FRC</name>
+	<name>MISSILES_3_M_BRC</name>
+	<name>MISSILES_3_M_CLD</name>
+	<name>MISSILES_3_M_POW</name>
+	<name>MISSILES_BURST_M_FRC</name>
+	<name>MISSILES_BURST_M_BRC</name>
+	<name>MISSILES_BURST_M_CLD</name>
+	<name>MISSILES_BURST_M_POW</name>
+	<name>MISSILES_BREACH_M_FRC</name>
+	<name>MISSILES_BREACH_M_BRC</name>
+	<name>MISSILES_BREACH_M_CLD</name>
+	<name>MISSILES_BREACH_M_POW</name>
+	<name>BA_MISSILE_CHARGEGUN_SMALL_M_FRC</name>
+	<name>BA_MISSILE_CHARGEGUN_SMALL_M_BRC</name>
+	<name>BA_MISSILE_CHARGEGUN_SMALL_M_CLD</name>
+	<name>MISSILE_CHARGEGUN_M_FRC</name>
+	<name>MISSILE_CHARGEGUN_M_BRC</name>
+	<name>MISSILE_CHARGEGUN_M_CLD</name>
+	<name>MISSILE_CHARGEGUN_M_POW</name>
+	<name>BA_SHOTGUN_MISSILES_M_BRC</name>
+	<name>BA_SHOTGUN_MISSILES_M_CLD</name>
+	<name>BA_SHOTGUN_MISSILES_M_POW</name>
+	<name>BA_SHOTGUN_MISSILES2_M_BRC</name>
+	<name>BA_SHOTGUN_MISSILES2_M_CLD</name>
+	<name>BA_SHOTGUN_MISSILES2_M_POW</name>
+	<name>BA_SHOTGUN_MISSILES3_M_BRC</name>
+	<name>BA_SHOTGUN_MISSILES3_M_CLD</name>
+	<name>BA_SHOTGUN_MISSILES3_M_POW</name>
+	<name>BA_MISSILES_ONI_M_FRC</name>
+	<name>BA_MISSILES_ONI_M_BRC</name>
+	<name>BA_MISSILES_ONI_M_CLD</name>
+	<name>BA_MISSILES_ONI_M_POW</name>
+	<name>BA_MISSILES_IFRIT_M_CLD</name>
+	<name>BA_MISSILES_IFRIT_M_POW</name>
+	<name>MISSILES_SYS1_M_FRC</name>
+	<name>MISSILES_SYS1_M_CLD</name>
+	<name>MISSILES_SYS2_M_FRC</name>
+	<name>MISSILES_SYS2_M_CLD</name>
+	<name>BA_MISSILES_FOBOS_M_FRC</name>
+	<name>BA_MISSILES_FOBOS_M_CLD</name>
+	<name>BA_MISSILES_DEIMOS_M_FRC</name>
+	<name>BA_MISSILES_DEIMOS_M_CLD</name>
+	<name>BA_MISSILES_DEIMOS_M_POW</name>
+	<name>BA_MISSILES_SWARM_1_M_FRC</name>
+	<name>BA_MISSILES_SWARM_1_M_CLD</name>
+	<name>BA_MISSILES_SWARM_2_M_FRC</name>
+	<name>BA_MISSILES_SWARM_2_M_BRC</name>
+	<name>BA_MISSILES_SWARM_2_M_CLD</name>
+	<name>BA_MISSILES_SWARM_2_M_POW</name>
+	<name>BA_MISSILES_SWARM_3_M_FRC</name>
+	<name>BA_MISSILES_SWARM_3_M_BRC</name>
+	<name>BA_MISSILES_SWARM_3_M_CLD</name>
+	<name>BA_MISSILES_SWARM_3_M_POW</name>
+	<name>BA_MISSILES_ASTERIA_M_CLD</name>
+	<name>BA_MISSILES_HULL_SMALL_M_BRC</name>
+	<name>BA_MISSILES_HULL_SMALL_M_CLD</name>
+	<name>MISSILES_HULL_M_BRC</name>
+	<name>MISSILES_HULL_M_CLD</name>
+	<name>MISSILES_HULL_M_POW</name>
+	<name>BA_MISSILES_4_M_FRC</name>
+	<name>BA_MISSILES_4_M_BRC</name>
+	<name>BA_MISSILES_4_M_CLD</name>
+	<name>BA_MISSILES_4_M_POW</name>
+	<name>BA_MISSILES_PERYTON_M_CLD</name>
+	<name>BA_MISSILES_PERYTON_M_POW</name>
+	<name>BA_MISSILES_COCKATRICE_M_CLD</name>
+	<name>BA_MISSILES_COCKATRICE_M_POW</name>
+	<name>BA_MISSILES_FIRE_M_FRC</name>
+	<name>BA_MISSILES_FIRE_M_CLD</name>
+	<name>BA_MISSILES_FIRE_M_POW</name>
+	<name>BA_MISSILES_SIMURGH_M_CLD</name>
+	<name>BA_MISSILES_SIMURGH_M_POW</name>
+	<name>ORDEN2_MISSILES_M_FRC</name>
+	<name>ORDEN2_MISSILES_M_CLD</name>
+	<name>ORDEN2_MISSILES_M_POW</name>
+	<name>ORDEN3_MISSILES_M_FRC</name>
+	<name>ORDEN3_MISSILES_M_CLD</name>
+	<name>ORDEN3_MISSILES_M_POW</name>
+	<name>MISSILES_KARAKURT_M_FRC</name>
+	<name>MISSILES_KARAKURT_M_BRC</name>
+	<name>MISSILES_KARAKURT_M_CLD</name>
+	<name>MISSILES_KARAKURT_M_POW</name>
+	<name>MISSILES_V3_M_CLD</name>
+	<name>MISSILES_V3_M_POW</name>
+	
+	<name>SILV_MISSILES_ASTERIA</name>
+	<name>SILV_MISSILES_ASTERIA_FRC</name>
+	<name>SILV_MISSILES_ASTERIA_BRC</name>
+	<name>SILV_MISSILES_ASTERIA_CLD</name>
+	<name>SILV_MISSILES_ASTERIA_UNI</name>
+	<name>SILV_MISSILES_BURST</name>
+	<name>SILV_MISSILES_BURST_FRC</name>
+	<name>SILV_MISSILES_BURST_BRC</name>
+	<name>SILV_MISSILES_BURST_CLD</name>
+	<name>SILV_MISSILES_BURST_POW</name>
+	<name>SILV_MISSILES_BURST_UNI</name>
+	<name>SILV_MISSILES_HYDRA</name>
+	<name>SILV_MISSILES_HYDRA_FRC</name>
+	<name>SILV_MISSILES_HYDRA_BRC</name>
+	<name>SILV_MISSILES_HYDRA_CLD</name>
+	<name>SILV_MISSILES_HYDRA_POW</name>
+	<name>SILV_MISSILES_HYDRA_UNI</name>
+	<name>SILV_MISSILES_ASTERIA_M</name>
+	<name>SILV_MISSILES_ASTERIA_M_FRC</name>
+	<name>SILV_MISSILES_ASTERIA_M_BRC</name>
+	<name>SILV_MISSILES_ASTERIA_M_CLD</name>
+	<name>SILV_MISSILES_ASTERIA_M_UNI</name>
+	<name>SILV_MISSILES_BURST_M</name>
+	<name>SILV_MISSILES_BURST_M_FRC</name>
+	<name>SILV_MISSILES_BURST_M_BRC</name>
+	<name>SILV_MISSILES_BURST_M_CLD</name>
+	<name>SILV_MISSILES_BURST_M_POW</name>
+	<name>SILV_MISSILES_BURST_M_UNI</name>
+	<name>SILV_MISSILES_HYDRA_M</name>
+	<name>SILV_MISSILES_HYDRA_M_FRC</name>
+	<name>SILV_MISSILES_HYDRA_M_BRC</name>
+	<name>SILV_MISSILES_HYDRA_M_CLD</name>
+	<name>SILV_MISSILES_HYDRA_M_POW</name>
+	<name>SILV_MISSILES_HYDRA_M_UNI</name>
+</blueprintList>
+
+<blueprintList name="WEAPONS_MISSILES_PIRAT">
+	<name>MISSILES_1</name>
+	<name>MISSILES_2_PLAYER</name>
+	<name>MISSILES_2_PLAYER</name>
+	<name>MISSILES_3</name>
+	<name>MISSILES_BURST</name>
+	<name>MISSILES_BREACH</name>
+	<name>MISSILE_CHARGEGUN</name>
+	<name>BA_MISSILES_ASTERIA</name>
+	<name>BA_MISSILES_PERYTON</name>
+	<name>BA_MISSILES_COCKATRICE</name>
+	<name>BA_MISSILES_SIMURGH</name>
+	<name>BA_MISSILES_FIRE</name> 
+	<name>BA_MISSILES_ONI</name>
+	<name>BA_MISSILES_IFRIT</name>
+	<name>BA_MISSILES_4</name>
+	<name>MISSILES_MEGA</name>
+	<name>MISSILES_ARU_GOLIAPH</name> <!-- 1.26.1 -->
+	<name>MISSILES_HYDRA</name>
+	<name>MISSILES_SYS1</name><!-- 1.25.1 -->
+	<name>MISSILES_SYS2</name><!-- 1.25.1 -->
+	<name>BA_MISSILES_FOBOS</name><!-- 1.25.3 -->
+	<name>BA_MISSILES_DEIMOS</name><!-- 1.25.3 -->
+	<name>BA_MISSILES_SWARM_1</name>
+	<name>BA_MISSILES_SWARM_2</name>
+	<name>BA_MISSILES_SWARM_3</name>
+	<name>BA_SHOTGUN_MISSILES</name>
+	<name>BA_SHOTGUN_MISSILES2</name>
+	<name>BA_SHOTGUN_MISSILES3</name>
+	<name>BA_MISSILE_CHARGEGUN_SMALL</name>
+	<name>MISSILES_HULL</name>
+	<name>BA_MISSILES_HULL_SMALL</name>
+</blueprintList>
+
+<blueprintList name="WEAPONS_BURST_PLUS"> 
+	<name>LASER_BURST_1P</name>
+	<name>LASER_BURST_2P</name>
+	<name>LASER_BURST_3P</name>
+	<name>LASER_BURST_4P</name>
+	<name>LASER_BURST_5</name>
+</blueprintList>
+
+
+<blueprintList name="OVERRIDE_DRONES_STANDARD">  <!-- Unchanged -->
+	<name>COMBAT_1_OLD</name>
+	<name>COMBAT_2</name>
+	<name>COMBAT_BEAM_OLD</name>	
+	<name>DEFENSE_1_OLD</name>
+	<name>DEFENSE_2</name>
+	<name>REPAIR_OLD</name>
+	<name>BATTLE</name>
+	<name>BOARDER</name>
+	<name>BOARDER_ION</name>
+	<name>DRONE_SHIELD</name>
+	<name>ANTI_DRONE</name>
+	<name>COMBAT_BEAM_2</name>
+	<name>COMBAT_BEAM_3</name>
+	<name>COMBAT_FIRE</name>
+	<name>COMBAT_FIRE_2</name>
+	<name>COMBAT_FIRE_3</name>
+   	<name>DE_DRONE_PLASMA</name>
+   	<name>DE_DRONE_ION_1</name>
+   	<name>DE_DRONE_ION_2</name>
+	<name>DE_DRONE_ION_3</name>
+	<name>DE_DRONE_ION_PIERCE</name>
+	<name>DE_DRONE_LIGHT_1</name>
+	<name>DE_DRONE_LIGHT_2</name>
+	<name>DE_DRONE_LIGHT_MISSILE</name>
+	<name>DE_DRONE_LIGHT_MISSILE_FIRE</name>
+    <name>DE_DRONE_MISSILES_BARRAGE</name>
+    <name>DE_DRONE_MINE_SMALL</name>
+    <name>DE_DRONE_MINE_MEDIUM</name>
+	<name>DE_DRONE_HEAVY_SCATTER</name>
+	<name>DE_DRONE_LIGHT_SCATTER</name>
+	<name>DE_DRONE_SCATTER</name>
+	<name>DE_DRONE_BEAM_FOCUS</name>
+	<name>DE_DRONE_HEAVY_1</name>
+	<name>DE_DRONE_HEAVY_2</name>
+	<name>DRONE_FLAK1</name>
+	<name>DE_DRONE_HULL_1</name>
+	<name>DE_DRONE_HULL_2</name>
+	<name>DE_DRONE_DEFENSE_LIGHT_1</name>
+	<name>DE_DRONE_DEFENSE_LIGHT_2</name>
+	<name>DE_DRONE_DEFENSE_LIGHT_MISSILE</name>
+	<name>DE_DRONE_DEFENSE_SWARM_MISSILE</name>
+	<name>DE_DRONE_DEFENSE_GAUSS</name><!-- 1.21 -->
+	<name>DE_DRONE_DEFENSE_HEAVY</name>
+	<name>DE_DRONE_DEFENSE_HEAVY_SMALL</name>
+	<name>DE_DRONE_DEFENSE_SCATTER</name>
+	<name>DE_DRONE_DEFENSE_3</name>
+	<name>DE_REPAIR_2</name>
+	<name>DE_REPAIR_3</name>
+	<name>DE_REPAIR_4</name>
+	<name>DE_BATTLE_2</name>
+	<name>DE_BATTLE_3</name>
+	<name>DE_BATTLE_4</name>
+	<name>DE_BOARDER_2</name>
+	<name>DE_BOARDER_3</name>
+	<name>DE_BOARDER_4</name>
+	<name>TB_SHIP_REPAIR</name>
+	<name>DE_DRONE_STEALTH_BEAM_1</name>
+	<name>DE_DRONE_STEALTH_BEAM_2</name>
+	<name>DE_DRONE_SHIELD_SMALL</name>
+	<name>DE_DRONE_SHIELD_BIG</name>
+	<name>DE_DRONE_LIGHT_MISSILE_STUN_ENEMY</name>
+	<name>DE_DRONE_LIGHT_MISSILE_STUN_ENEMY2</name><!-- 1.23 -->
+	<name>DE_ANTI_DRONE_2</name>
+	<name>DE_ANTI_DRONE_EFFECTOR</name>
+	<name>DE_ANTI_DRONE_MISSILES</name>
+	<name>DE_ANTI_DRONE_LASER_HEAVY</name>
+</blueprintList>
+
+<blueprintList name="OVERRIDE_DRONES_COMBAT">  <!-- 1.25 -->
+	<name>COMBAT_1_OLD</name>
+	<name>COMBAT_2</name>
+	<name>COMBAT_BEAM_2</name>
+	<name>COMBAT_BEAM_3</name>
+	<name>COMBAT_BEAM_OLD</name>
+	<name>COMBAT_FIRE_2</name>
+	<name>COMBAT_FIRE_3</name>
+	<name>COMBAT_FIRE</name>
+	<name>DE_DRONE_BEAM_2</name>
+	<name>DE_DRONE_BEAM_FOCUS2</name>
+	<name>DE_DRONE_BEAM_FOCUS</name>
+	<name>DE_DRONE_HEAVY_1</name>
+	<name>DE_DRONE_HEAVY_2</name>
+	<name>DE_DRONE_HEAVY_SCATTER</name>
+	<name>DE_DRONE_HULL_1</name>
+	<name>DE_DRONE_HULL_2</name>
+	<name>DE_DRONE_HULL_BEAM</name>
+	<name>DE_DRONE_ION_1</name>
+	<name>DE_DRONE_ION_2</name>
+	<name>DE_DRONE_ION_3</name>
+	<name>DE_DRONE_ION_PIERCE</name>
+	<name>DE_DRONE_LIGHT_1</name>
+	<name>DE_DRONE_LIGHT_2</name>
+	<name>DE_DRONE_LIGHT_MISSILE</name>
+	<name>DE_DRONE_LIGHT_MISSILE_FIRE</name>
+	<name>DE_DRONE_LIGHT_MISSILE_STUN_ENEMY2</name>
+	<name>DE_DRONE_LIGHT_MISSILE_STUN_ENEMY</name>
+	<name>DE_DRONE_LIGHT_SCATTER</name>
+	<name>DE_DRONE_MINE_MEDIUM</name>
+   	<name>DE_DRONE_MINE_SMALL</name>
+   	<name>DE_DRONE_MISSILES_1</name>
+   	<name>DE_DRONE_MISSILES_2</name>
+   	<name>DE_DRONE_MISSILES_3</name>
+   	<name>DE_DRONE_MISSILES_BARRAGE</name>
+   	<name>DE_DRONE_PLASMA</name>
+	<name>DE_DRONE_SCATTER</name>
+	<name>DE_DRONE_STEALTH_BEAM_1</name>
+	<name>DE_DRONE_STEALTH_BEAM_2</name>
+	<name>DRONE_FLAK1</name>
+	<name>DRONE_ION_V3</name>
+	<name>DRONE_ION_V4</name>
+	<name>DRONE_LOCKER_1</name>
+	<name>DRONE_LOCKER_2</name>
+	<name>DRONE_TRASS1</name>
+	<name>DRONE_TRASS2</name>
+	<!-- <name>PPL_BEAM_DRONE</name> --><!-- 1.27 -->
+	<name>PSLD_1_BEAM_DRONE</name>
+	<name>PSLD_2_BEAM_DRONE</name>
+	<name>DRONE_CHAFF</name>
+</blueprintList>
+
+
+
+<blueprintList name="OVERRIDE_WEAPONS_REBEL">
+	<name>LASER_CHAIN_1</name>
+	<name>LASER_CHAIN_2</name>
+	<name>LASER_CHAIN_LONG_1</name> <!-- 1.26 -->
+	<name>LASER_CHAIN_LONG_2</name> <!-- 1.26 -->
+	<name>LASER_CHARGEGUN_1</name>
+	<name>LASER_CHARGEGUN_2</name>
+	<name>LASER_BURST_1</name>
+	<name>LASER_HEAVY_1</name>
+	<name>LASER_STANDARD_1</name>
+	<name>LASER_STANDARD_2</name>
+	<name>LASER_DUAL_1</name>
+	<name>LASER_DUAL_2</name>
+	<name>BA_SHOTGUN_SMALL</name>
+	<name>BA_PLASMA_1</name>
+	<name>BA_LASER_AUTO_1</name>
+	<name>BA_LASER_AUTO_2</name>
+	<name>BA_LASER_BURST_SCATTER_1</name>
+	<name>BA_LASER_BURST_SCATTER_2</name>
+	<name>BA_LASER_HEAVY_SCATTER_1</name>
+	<name>BA_LASER_HEAVY_SCATTER_2</name>
+	<name>BA_LASER_HULL_SMALL</name>
+	
+	<name>LASER_SUPER_HEAVY_1</name><!-- 1.26 -->
+	<name>LASER_AL_1</name> <!-- 1.26.2 -->
+	<name>BA_LASER_WAR_1</name><!-- 1.26 -->
+	<name>BA_LASER_WAR_2</name><!-- 1.26 -->
+	<name>BA_LASER_WAR_3</name><!-- 1.26 -->
+	<name>LASER_PIERCE_1</name>
+	<name>LASER_PIERCE_2</name>
+	<name>SHTURM_LASER_1</name>
+	<name>SHTURM_LASER_2</name>
+	<name>LASER_HEAVY_CHAIN</name>
+	<name>LASER_AUTO_CHAIN</name>
+	<name>LASER_CHAIN_3</name>
+	<name>LASER_CHAIN_LONG_3</name> <!-- 1.26 -->
+	<name>LASER_CHARGEGUN_3</name>
+	<name>LASER_BURST_2</name>
+	<name>LASER_HEAVY_2</name>
+	<name>LASER_HEAVY_PIERCE_1</name>
+	<name>SHOTGUN</name>
+	<name>BA_PLASMA_2</name>
+	<name>BA_LASER_AUTO_3</name>
+	<name>BA_LASER_BURST_SCATTER_3</name>
+	<name>LASER_SCATTERCHAIN</name><!-- 1.25.1 -->
+	<name>BA_LASER_ARTILLERY_1</name>
+	<name>BA_LASER_HULLCRUSHER</name>
+	<name>LASER_HULL_1</name>
+	<name>LASER_HULL_2</name>
+	<name>LASER_IMP_2</name><!-- 1.25.1 -->
+	<name>LASER_IMP_3</name><!-- 1.25.1 -->
+	<name>LASER_HULLCHAIN</name><!-- 1.25.1 -->
+	
+	<name>LASER_SUPER_HEAVY_2</name><!-- 1.26 -->
+	<name>LASER_AL_2</name> <!-- 1.26.2 -->
+	<name>RAIL_DRIVER</name>
+	<name>LASER_CHAINGUN</name>
+	<name>HEAVY_MINIGUN</name>
+	<name>LASER_FIRE_CHAINGUN</name>
+	<name>LASER_HEAVY_CHARGE_1</name>
+	<name>LASER_HEAVY_CHARGE_2</name>
+	<name>LASER_CHARGEGUN_4</name>
+	<name>LASER_BURST_3</name>
+	<name>LASER_BURST_4</name>
+	<name>LASER_HEAVY_PIERCE_2</name>
+	<name>SHOTGUN_2</name>
+	<name>SHOTGUN_007</name>
+	<name>BA_SHOTGUN_SCATTER</name>
+	<name>SHTURM_FLAK</name>
+	<name>CHARGEGUN_SHOTGUN</name>
+	<name>BA_PLASMA_3</name>
+	<name>BA_LASER_ARTILLERY_2</name>
+	<name>BA_LASER_HULLCRUSHER_2</name>
+	<name>BA_LASER_HULLCRUSHER_3</name>
+	
+	<name>MPP_LASER_1</name><!-- 1.26 -->
+	<name>MPP_LASER_2</name><!-- 1.26 -->
+	<name>LASER_LIGHT_1</name>
+	<name>LASER_LIGHT_SCATTER_1</name>
+	<name>BA_STUNGUN_1</name>
+	<name>BA_BEAM_BATON</name>
+	
+	<name>BEAM_1</name>
+	<name>BEAM_LONG</name>
+	<name>BA_BEAM_K2</name><!-- 1.25.3 -->
+	<name>BA_BEAM_HASTA</name>
+	<name>BA_BEAM_K1</name><!-- 1.25.3 -->
+	<name>BA_BEAM_HULL_SMALL</name>
+	<name>BA_BEAM_HULL_MINI</name><!-- 1.25.3 -->
+	<name>BA_BEAM_AUTO</name>
+	<name>BA_BEAM_ADAPTIVE_1</name>
+	<name>BA_BEAM_BARDICHE</name>
+	
+	<name>BEAM_1_2</name>
+	<name>BEAM_HULL</name>
+	<name>BA_BEAM_ADAPTIVE_2</name>
+	<name>BA_BEAM_SCYTHE</name>
+	<name>BA_BEAM_PERNACH</name>
+	<name>BEAM_FIRE</name>
+	<name>BEAM_2</name>
+	<name>BA_BEAM_POLLAXE</name><!-- 1.26 -->
+	<name>BEAM_SP_DAITO</name>
+	
+	<name>BEAM_FAUCHARD</name>
+	<name>BA_BEAM_ADAPTIVE_3</name>
+	<name>BA_BEAM_FLAIL_DAMAGE</name>
+	<name>BA_BEAM_NAGINATA</name>
+	<name>BA_BEAM_MAUL</name>
+	<name>BA_BEAM_FIRE_2</name>
+	<name>BEAM_FIRECHAIN</name><!-- 1.26.3 -->
+	<name>BA_BEAM_FIRE_FOCUS</name>
+	<name>BA_BEAM_FIRE_FOCUS2</name>
+	<name>BA_BEAM_HOT_1</name><!-- 1.26.5 -->
+	<name>BA_BEAM_HOT_2</name><!-- 1.26.5 -->
+	<name>BA_BEAM_HOT_3</name><!-- 1.26.5 -->
+	<name>BEAM_3</name>
+	<name>BA_BEAM_PARTISAN</name><!-- 1.26 -->
+	<name>BEAM_SP_KATANA</name>
+	<name>BEAM_BIOFIRE</name>
+	
+	<name>BOMB_STUN</name>
+	<name>BOMB_1</name>
+	<name>BA_BOMB_FIRE_SMALL</name>
+	<name>BOMB_BREACH_1</name>
+	<name>BA_BOMB_CLUSTER_STUN_ENEMY</name>
+	<name>BA_BOMB_CLUSTER_STUN_ENEMY2</name><!-- 1.23 -->
+	
+	<name>BOMB_FIRE</name>
+	<name>BA_BOMB_CLUSTER_BREACH</name>
+	<name>BA_BOMB_CLUSTER_1</name>
+	<name>BA_BOMB_CLUSTER_ION</name>
+	
+	<name>MISSILES_1</name>
+	<name>MISSILES_2_PLAYER</name>
+	<name>BA_MISSILE_CHARGEGUN_SMALL</name>
+	<name>MISSILES_SYS1</name><!-- 1.25.1 -->
+	<name>MISSILES_SYS2</name><!-- 1.25.1 -->
+	<name>BA_MISSILES_FOBOS</name><!-- 1.25.3 -->
+	<name>BA_MISSILES_DEIMOS</name><!-- 1.25.3 -->
+	<name>BA_MISSILES_SWARM_1</name>
+	<name>BA_MISSILES_SWARM_2</name>
+	<name>BA_MISSILES_ASTERIA</name>
+	<name>BA_MISSILES_HULL_SMALL</name>
+	<name>BA_MINES_SMALL</name>
+	
+	<name>MISSILES_3</name>
+	<name>MISSILES_BURST</name>
+	<name>MISSILE_CHARGEGUN</name>
+	<name>BA_SHOTGUN_MISSILES</name>
+	<name>BA_MISSILES_ONI</name>
+	<name>BA_MISSILES_SWARM_3</name>
+	<name>MISSILES_HULL</name>
+	<name>BA_MISSILES_PERYTON</name>
+	<name>BA_MISSILES_4</name>
+	<name>BA_MISSILES_COCKATRICE</name>
+	<name>BA_MINES_MEDIUM</name>
+	<name>BA_MINES_TECH</name>
+	<name>BA_MINES_MEDIUM_M2</name> <!-- 1.25 -->
+	<name>BA_MINES_MEDIUM_M3</name> <!-- 1.25 -->
+	
+	<name>ION_STUN</name>
+	<name>ION_CHAINGUN</name>
+	<name>BA_SHOTGUN_ION_1</name>
+	<name>BA_ION_2_STUN</name>
+	<name>BA_ION_BURST_1_STUN</name>
+	<name>BA_ION_PIERCE_1</name>
+	<name>BA_EFFECTOR_1</name>
+	<name>BA_ION_BURST_1</name>
+	<name>ION_HEAVY_1</name>
+	<name>ION_BLAST_1</name>
+	
+	<name>ION_CHARGEGUN</name>
+	<name>BA_ION_VULKAN</name>
+	<name>BA_SHOTGUN_ION_2</name>
+	<name>BA_ION_PIERCE_2</name>
+	<name>BA_EFFECTOR_2</name>
+	<name>BA_EFFECTOR_ADAPTIVE</name>
+	<name>BA_ION_BURST_2</name>
+	<name>ION_BLAST_3</name>
+	<name>BA_ION_CHAIN_MINI</name> <!-- 1.23 -->
+</blueprintList>
+
+<blueprintList name="OVERRIDE_WEAPONS_AUTO">
+	<name>LASER_CHAIN_1</name>
+	<name>LASER_CHAIN_2</name>
+	<name>LASER_CHAIN_LONG_1</name> <!-- 1.26 -->
+	<name>LASER_CHAIN_LONG_2</name> <!-- 1.26 -->
+	<name>LASER_CHARGEGUN_1</name>
+	<name>LASER_CHARGEGUN_2</name>
+	<name>LASER_BURST_1</name>
+	<name>LASER_HEAVY_1</name>
+	<name>LASER_STANDARD_1</name>
+	<name>LASER_STANDARD_2</name>
+	<name>LASER_DUAL_1</name>
+	<name>LASER_DUAL_2</name>
+	<name>BA_SHOTGUN_SMALL</name>
+	<name>BA_PLASMA_1</name>
+	<name>BA_LASER_AUTO_1</name>
+	<name>BA_LASER_AUTO_2</name>
+	<name>BA_LASER_BURST_SCATTER_1</name>
+	<name>BA_LASER_BURST_SCATTER_2</name>
+	<name>BA_LASER_HEAVY_SCATTER_1</name>
+	<name>BA_LASER_HEAVY_SCATTER_2</name>
+	<name>BA_LASER_HULL_SMALL</name>
+	
+	<name>LASER_SUPER_HEAVY_1</name><!-- 1.26 -->
+	<name>LASER_AL_1</name> <!-- 1.26.2 -->
+	<name>BA_LASER_WAR_1</name><!-- 1.26 -->
+	<name>BA_LASER_WAR_2</name><!-- 1.26 -->
+	<name>BA_LASER_WAR_3</name><!-- 1.26 -->
+	<name>LASER_PIERCE_1</name>
+	<name>LASER_PIERCE_2</name>
+	<name>SHTURM_LASER_1</name>
+	<name>SHTURM_LASER_2</name>
+	<name>LASER_HEAVY_CHAIN</name>
+	<name>LASER_AUTO_CHAIN</name>
+	<name>LASER_CHAIN_3</name>
+	<name>LASER_CHAIN_LONG_3</name> <!-- 1.26 -->
+	<name>LASER_CHARGEGUN_3</name>
+	<name>LASER_BURST_2</name>
+	<name>LASER_HEAVY_2</name>
+	<name>LASER_HEAVY_PIERCE_1</name>
+	<name>SHOTGUN</name>
+	<name>BA_PLASMA_2</name>
+	<name>BA_LASER_AUTO_3</name>
+	<name>BA_LASER_BURST_SCATTER_3</name>
+	<name>LASER_SCATTERCHAIN</name><!-- 1.25.1 -->
+	<name>BA_LASER_ARTILLERY_1</name>
+	<name>BA_LASER_HULLCRUSHER</name>
+	<name>LASER_HULL_1</name>
+	<name>LASER_HULL_2</name>
+	<name>LASER_IMP_2</name><!-- 1.25.1 -->
+	<name>LASER_IMP_3</name><!-- 1.25.1 -->
+	<name>LASER_HULLCHAIN</name><!-- 1.25.1 -->
+	
+	<name>LASER_SUPER_HEAVY_2</name><!-- 1.26 -->
+	<name>LASER_AL_2</name> <!-- 1.26.2 -->
+	<name>RAIL_DRIVER</name>
+	<name>LASER_CHAINGUN</name>
+	<name>HEAVY_MINIGUN</name>
+	<name>LASER_FIRE_CHAINGUN</name>
+	<name>LASER_HEAVY_CHARGE_1</name>
+	<name>LASER_HEAVY_CHARGE_2</name>
+	<name>LASER_CHARGEGUN_4</name>
+	<name>LASER_BURST_3</name>
+	<name>LASER_BURST_4</name>
+	<name>LASER_HEAVY_PIERCE_2</name>
+	<name>SHOTGUN_2</name>
+	<name>SHOTGUN_007</name>
+	<name>BA_SHOTGUN_SCATTER</name>
+	<name>SHTURM_FLAK</name>
+	<name>CHARGEGUN_SHOTGUN</name>
+	<name>BA_PLASMA_3</name>
+	<name>BA_LASER_ARTILLERY_2</name>
+	<name>BA_LASER_HULLCRUSHER_2</name>
+	<name>BA_LASER_HULLCRUSHER_3</name>
+	
+	<name>MPP_LASER_1</name><!-- 1.26 -->
+	<name>MPP_LASER_2</name><!-- 1.26 -->
+	<name>LASER_LIGHT_1</name>
+	<name>LASER_LIGHT_SCATTER_1</name>
+	<name>BA_STUNGUN_1</name>
+	<name>BA_BEAM_BATON</name>
+	
+	<name>BEAM_1</name>
+	<name>BEAM_LONG</name>
+	<name>BA_BEAM_K2</name><!-- 1.25.3 -->
+	<name>BA_BEAM_HASTA</name>
+	<name>BA_BEAM_K1</name><!-- 1.25.3 -->
+	<name>BA_BEAM_HULL_SMALL</name>
+	<name>BA_BEAM_HULL_MINI</name><!-- 1.25.3 -->
+	<name>BA_BEAM_AUTO</name>
+	<name>BA_BEAM_ADAPTIVE_1</name>
+	<name>BA_BEAM_BARDICHE</name>
+	
+	<name>BEAM_1_2</name>
+	<name>BEAM_HULL</name>
+	<name>BA_BEAM_ADAPTIVE_2</name>
+	<name>BA_BEAM_SCYTHE</name>
+	<name>BA_BEAM_PERNACH</name>
+	<name>BEAM_FIRE</name>
+	<name>BEAM_2</name>
+	<name>BA_BEAM_POLLAXE</name><!-- 1.26 -->
+	<name>BEAM_SP_DAITO</name>
+	
+	<name>BOMB_STUN</name>
+	<name>BOMB_1</name>
+	<name>BA_BOMB_FIRE_SMALL</name>
+	<name>BOMB_BREACH_1</name>
+	<name>BA_BOMB_CLUSTER_STUN_ENEMY</name>
+	<name>BA_BOMB_CLUSTER_STUN_ENEMY2</name><!-- 1.23 -->
+	
+	<name>BOMB_FIRE</name>
+	<name>BA_BOMB_CLUSTER_BREACH</name>
+	<name>BA_BOMB_CLUSTER_1</name>
+	<name>BA_BOMB_CLUSTER_ION</name>
+	
+	<name>MISSILES_1</name>
+	<name>MISSILES_2_PLAYER</name>
+	<name>BA_MISSILE_CHARGEGUN_SMALL</name>
+	<name>MISSILES_SYS1</name><!-- 1.25.1 -->
+	<name>MISSILES_SYS2</name><!-- 1.25.1 -->
+	<name>BA_MISSILES_FOBOS</name><!-- 1.25.3 -->
+	<name>BA_MISSILES_DEIMOS</name><!-- 1.25.3 -->
+	<name>BA_MISSILES_SWARM_1</name>
+	<name>BA_MISSILES_SWARM_2</name>
+	<name>BA_MISSILES_ASTERIA</name>
+	<name>BA_MISSILES_HULL_SMALL</name>
+	<name>BA_MINES_SMALL</name>
+	
+	<name>MISSILES_3</name>
+	<name>MISSILES_BURST</name>
+	<name>MISSILE_CHARGEGUN</name>
+	<name>BA_SHOTGUN_MISSILES</name>
+	<name>BA_MISSILES_ONI</name>
+	<name>BA_MISSILES_SWARM_3</name>
+	<name>MISSILES_HULL</name>
+	<name>BA_MISSILES_PERYTON</name>
+	<name>BA_MISSILES_4</name>
+	<name>BA_MISSILES_COCKATRICE</name>
+	<name>BA_MINES_MEDIUM</name>
+	<name>BA_MINES_TECH</name>
+	<name>BA_MINES_MEDIUM_M2</name> <!-- 1.25 -->
+	<name>BA_MINES_MEDIUM_M3</name> <!-- 1.25 -->
+	
+	<name>MISSILES_ARU_GOLIAPH</name> <!-- 1.26.1 -->
+	<name>MISSILES_HYDRA</name>
+	<name>MISSILES_MEGA</name>
+	<name>MISSILES_BREACH</name>
+	<name>BA_SHOTGUN_MISSILES2</name>
+	<name>BA_SHOTGUN_MISSILES3</name>
+	<name>BA_MISSILES_IFRIT</name>
+	<name>BA_MISSILES_FIRE</name>
+	<name>BA_MISSILES_SIMURGH</name>
+	<name>BA_MINES_BIG</name>
+	
+	<name>ION_STUN</name>
+	<name>ION_CHAINGUN</name>
+	<name>BA_SHOTGUN_ION_1</name>
+	<name>BA_ION_2_STUN</name>
+	<name>BA_ION_BURST_1_STUN</name>
+	<name>BA_ION_PIERCE_1</name>
+	<name>BA_EFFECTOR_1</name>
+	<name>BA_ION_BURST_1</name>
+	<name>ION_HEAVY_1</name>
+	<name>ION_BLAST_1</name>
+	
+	<name>ION_CHARGEGUN</name>
+	<name>BA_ION_VULKAN</name>
+	<name>BA_SHOTGUN_ION_2</name>
+	<name>BA_ION_PIERCE_2</name>
+	<name>BA_EFFECTOR_2</name>
+	<name>BA_EFFECTOR_ADAPTIVE</name>
+	<name>BA_ION_BURST_2</name>
+	<name>ION_BLAST_3</name>
+	<name>BA_ION_CHAIN_MINI</name> <!-- 1.23 -->
+</blueprintList>
+
+<blueprintList name="OVERRIDE_WEAPONS_JELLY">  
+	<name>LASER_CHAIN_1</name>
+	<name>LASER_CHAIN_2</name>
+	<name>LASER_CHAIN_LONG_1</name> <!-- 1.26 -->
+	<name>LASER_CHAIN_LONG_2</name> <!-- 1.26 -->
+	<name>LASER_CHARGEGUN_1</name>
+	<name>LASER_CHARGEGUN_2</name>
+	<name>LASER_BURST_1</name>
+	<name>LASER_HEAVY_1</name>
+	<name>LASER_STANDARD_1</name>
+	<name>LASER_STANDARD_2</name>
+	<name>LASER_DUAL_1</name>
+	<name>LASER_DUAL_2</name>
+	<name>BA_SHOTGUN_SMALL</name>
+	<name>BA_PLASMA_1</name>
+	<name>BA_LASER_AUTO_1</name>
+	<name>BA_LASER_AUTO_2</name>
+	<name>BA_LASER_BURST_SCATTER_1</name>
+	<name>BA_LASER_BURST_SCATTER_2</name>
+	<name>BA_LASER_HEAVY_SCATTER_1</name>
+	<name>BA_LASER_HEAVY_SCATTER_2</name>
+	<name>BA_LASER_HULL_SMALL</name>
+	
+	<name>LASER_SUPER_HEAVY_1</name><!-- 1.26 -->
+	<name>LASER_AL_1</name> <!-- 1.26.2 -->
+	<name>BA_LASER_WAR_1</name><!-- 1.26 -->
+	<name>BA_LASER_WAR_2</name><!-- 1.26 -->
+	<name>BA_LASER_WAR_3</name><!-- 1.26 -->
+	<name>LASER_PIERCE_1</name>
+	<name>LASER_PIERCE_2</name>
+	<name>SHTURM_LASER_1</name>
+	<name>SHTURM_LASER_2</name>
+	<name>LASER_HEAVY_CHAIN</name>
+	<name>LASER_AUTO_CHAIN</name>
+	<name>LASER_CHAIN_3</name>
+	<name>LASER_CHAIN_LONG_3</name> <!-- 1.26 -->
+	<name>LASER_CHARGEGUN_3</name>
+	<name>LASER_BURST_2</name>
+	<name>LASER_HEAVY_2</name>
+	<name>LASER_HEAVY_PIERCE_1</name>
+	<name>SHOTGUN</name>
+	<name>BA_PLASMA_2</name>
+	<name>BA_LASER_AUTO_3</name>
+	<name>BA_LASER_BURST_SCATTER_3</name>
+	<name>LASER_SCATTERCHAIN</name><!-- 1.25.1 -->
+	<name>BA_LASER_ARTILLERY_1</name>
+	<name>BA_LASER_HULLCRUSHER</name>
+	<name>LASER_HULL_1</name>
+	<name>LASER_HULL_2</name>
+	<name>LASER_IMP_2</name><!-- 1.25.1 -->
+	<name>LASER_IMP_3</name><!-- 1.25.1 -->
+	<name>LASER_HULLCHAIN</name><!-- 1.25.1 -->
+	
+	<name>MPP_LASER_1</name><!-- 1.26 -->
+	<name>MPP_LASER_2</name><!-- 1.26 -->
+	<name>LASER_LIGHT_1</name>
+	<name>LASER_LIGHT_SCATTER_1</name>
+	<name>BA_STUNGUN_1</name>
+	<name>BA_BEAM_BATON</name>
+	
+	<name>LASER_LIGHT_2</name>
+	<name>LASER_LIGHT_SCATTER_2</name>
+	<name>BA_STUNGUN_2</name>
+	<name>BA_BEAM_BO</name>
+	<!-- <name>BA_BEAM_BIO_2</name> --><!-- 1.27 -->
+	
+	<name>HEAVY_PPL</name>
+	<name>LASER_LIGHT_3</name>
+	<name>LIGHT_BREACH_LASER_1</name><!-- 1.24 -->
+	<name>LIGHT_BREACH_LASER_2</name><!-- 1.24 -->
+	<name>LIGHT_BREACH_VULCAN</name><!-- 1.24 -->
+	<name>LASER_LIGHT_AUTO</name>
+	<name>LASER_LIGHT_SCATTER_3</name>
+	<name>BA_LASER_LIGHT_ARTILLERY</name>
+	<name>BA_LASER_LIGHT_CHAINGUN</name>
+	<!-- <name>BEAM_BIO</name> --><!-- 1.27 -->
+	<!-- <name>BEAM_CHAIN_BIO</name> --><!-- 1.25.3 --><!-- 1.27 -->
+	<!-- <name>BA_BEAM_BIO_SP1</name> --><!-- 1.25.1 --><!-- 1.27 -->
+	<!-- <name>BA_BEAM_BIO_SP2</name> --><!-- 1.25.1 --><!-- 1.27 -->
+	<name>BA_BEAM_SHEST</name><!-- 1.26 -->
+	<name>BA_BEAM_SMASHER</name><!-- 1.26 / 1.25.3 -->
+	<!-- <name>BA_BEAM_BIO_FOCUS</name> --><!-- 1.27 -->
+	
+	<name>BEAM_1</name>
+	<name>BEAM_LONG</name>
+	<name>BA_BEAM_K2</name><!-- 1.25.3 -->
+	<name>BA_BEAM_HASTA</name>
+	<name>BA_BEAM_K1</name><!-- 1.25.3 -->
+	<name>BA_BEAM_HULL_SMALL</name>
+	<name>BA_BEAM_HULL_MINI</name><!-- 1.25.3 -->
+	<name>BA_BEAM_AUTO</name>
+	<name>BA_BEAM_ADAPTIVE_1</name>
+	<name>BA_BEAM_BARDICHE</name>
+	
+	<name>BEAM_1_2</name>
+	<name>BEAM_HULL</name>
+	<name>BA_BEAM_ADAPTIVE_2</name>
+	<name>BA_BEAM_SCYTHE</name>
+	<name>BA_BEAM_PERNACH</name>
+	<name>BEAM_FIRE</name>
+	<name>BEAM_2</name>
+	<name>BA_BEAM_POLLAXE</name><!-- 1.26 -->
+	<name>BEAM_SP_DAITO</name>
+	
+	<name>BOMB_STUN</name>
+	<name>BOMB_1</name>
+	<name>BA_BOMB_FIRE_SMALL</name>
+	<name>BOMB_BREACH_1</name>
+	<name>BA_BOMB_CLUSTER_STUN_ENEMY</name>
+	<name>BA_BOMB_CLUSTER_STUN_ENEMY2</name><!-- 1.23 -->
+	
+	<name>BOMB_FIRE</name>
+	<name>BA_BOMB_CLUSTER_BREACH</name>
+	<name>BA_BOMB_CLUSTER_1</name>
+	<name>BA_BOMB_CLUSTER_ION</name>
+	
+	<name>BA_BOMB_BIG</name>
+	<name>BA_BOMB_TIMER</name><!-- 1.25 -->
+	<name>BA_BOMB_FIRE_2</name>
+	<name>BA_BOMB_CLUSTER_FIRE</name>
+	<name>BA_BOMB_BIO</name>
+	<name>BOMB_BREACH_2</name>
+	<name>BOMB_BREACH_3</name>
+	<name>BOMB_ION</name>
+	
+	<name>MISSILES_1</name>
+	<name>MISSILES_2_PLAYER</name>
+	<name>BA_MISSILE_CHARGEGUN_SMALL</name>
+	<name>MISSILES_SYS1</name><!-- 1.25.1 -->
+	<name>MISSILES_SYS2</name><!-- 1.25.1 -->
+	<name>BA_MISSILES_FOBOS</name><!-- 1.25.3 -->
+	<name>BA_MISSILES_DEIMOS</name><!-- 1.25.3 -->
+	<name>BA_MISSILES_SWARM_1</name>
+	<name>BA_MISSILES_SWARM_2</name>
+	<name>BA_MISSILES_ASTERIA</name>
+	<name>BA_MISSILES_HULL_SMALL</name>
+	<name>BA_MINES_SMALL</name>
+	
+	<name>MISSILES_3</name>
+	<name>MISSILES_BURST</name>
+	<name>MISSILE_CHARGEGUN</name>
+	<name>BA_SHOTGUN_MISSILES</name>
+	<name>BA_MISSILES_ONI</name>
+	<name>BA_MISSILES_SWARM_3</name>
+	<name>MISSILES_HULL</name>
+	<name>BA_MISSILES_PERYTON</name>
+	<name>BA_MISSILES_4</name>
+	<name>BA_MISSILES_COCKATRICE</name>
+	<name>BA_MINES_MEDIUM</name>
+	<name>BA_MINES_TECH</name>
+	<name>BA_MINES_MEDIUM_M2</name> <!-- 1.25 -->
+	<name>BA_MINES_MEDIUM_M3</name> <!-- 1.25 -->
+	
+	<name>ION_STUN</name>
+	<name>ION_CHAINGUN</name>
+	<name>BA_SHOTGUN_ION_1</name>
+	<name>BA_ION_2_STUN</name>
+	<name>BA_ION_BURST_1_STUN</name>
+	<name>BA_ION_PIERCE_1</name>
+	<name>BA_EFFECTOR_1</name>
+	<name>BA_ION_BURST_1</name>
+	<name>ION_HEAVY_1</name>
+	<name>ION_BLAST_1</name>
+	
+	<name>ION_CHARGEGUN</name>
+	<name>BA_ION_VULKAN</name>
+	<name>BA_SHOTGUN_ION_2</name>
+	<name>BA_ION_PIERCE_2</name>
+	<name>BA_EFFECTOR_2</name>
+	<name>BA_EFFECTOR_ADAPTIVE</name>
+	<name>BA_ION_BURST_2</name>
+	<name>ION_BLAST_3</name>
+	<name>BA_ION_CHAIN_MINI</name> <!-- 1.23 -->
+</blueprintList>
+<!-- 1.26 -->
+<!-- <blueprintList name="OVERRIDE_WEAPONS_ROCK_PRO"> 
+	<name>SOLAR_BARRAGE_ARRAY</name>
+</blueprintList> -->
+	
+<blueprintList name="OVERRIDE_WEAPONS_ROCK"> 
+	<name>LASER_CHAIN_1</name>
+	<name>LASER_CHAIN_2</name>
+	<name>LASER_CHAIN_LONG_1</name> <!-- 1.26 -->
+	<name>LASER_CHAIN_LONG_2</name> <!-- 1.26 -->
+	<name>LASER_CHARGEGUN_1</name>
+	<name>LASER_CHARGEGUN_2</name>
+	<name>LASER_BURST_1</name>
+	<name>LASER_HEAVY_1</name>
+	<name>LASER_STANDARD_1</name>
+	<name>LASER_STANDARD_2</name>
+	<name>LASER_DUAL_1</name>
+	<name>LASER_DUAL_2</name>
+	<name>BA_SHOTGUN_SMALL</name>
+	<name>BA_PLASMA_1</name>
+	<name>BA_LASER_AUTO_1</name>
+	<name>BA_LASER_AUTO_2</name>
+	<name>BA_LASER_BURST_SCATTER_1</name>
+	<name>BA_LASER_BURST_SCATTER_2</name>
+	<name>BA_LASER_HEAVY_SCATTER_1</name>
+	<name>BA_LASER_HEAVY_SCATTER_2</name>
+	<name>BA_LASER_HULL_SMALL</name>
+
+	<name>LASER_SUPER_HEAVY_1</name><!-- 1.26 -->
+	<name>LASER_AL_1</name> <!-- 1.26.2 -->
+	<name>BA_LASER_WAR_1</name><!-- 1.26 -->
+	<name>BA_LASER_WAR_2</name><!-- 1.26 -->
+	<name>BA_LASER_WAR_3</name><!-- 1.26 -->
+	<name>LASER_PIERCE_1</name>
+	<name>LASER_PIERCE_2</name>
+	<name>SHTURM_LASER_1</name>
+	<name>SHTURM_LASER_2</name>
+	<name>LASER_HEAVY_CHAIN</name>
+	<name>LASER_AUTO_CHAIN</name>
+	<name>LASER_CHAIN_3</name>
+	<name>LASER_CHAIN_LONG_3</name> <!-- 1.26 -->
+	<name>LASER_CHARGEGUN_3</name>
+	<name>LASER_BURST_2</name>
+	<name>LASER_HEAVY_2</name>
+	<name>LASER_HEAVY_PIERCE_1</name>
+	<name>SHOTGUN</name>
+	<name>BA_PLASMA_2</name>
+	<name>BA_LASER_AUTO_3</name>
+	<name>BA_LASER_BURST_SCATTER_3</name>
+	<name>LASER_SCATTERCHAIN</name><!-- 1.25.1 -->
+	<name>BA_LASER_ARTILLERY_1</name>
+	<name>BA_LASER_HULLCRUSHER</name>
+	<name>LASER_HULL_1</name>
+	<name>LASER_HULL_2</name>
+	<name>LASER_IMP_2</name><!-- 1.25.1 -->
+	<name>LASER_IMP_3</name><!-- 1.25.1 -->
+	<name>LASER_HULLCHAIN</name><!-- 1.25.1 -->
+	
+	<name>BEAM_1</name>
+	<name>BEAM_LONG</name>
+	<name>BA_BEAM_K2</name><!-- 1.25.3 -->
+	<name>BA_BEAM_HASTA</name>
+	<name>BA_BEAM_K1</name><!-- 1.25.3 -->
+	<name>BA_BEAM_HULL_SMALL</name>
+	<name>BA_BEAM_HULL_MINI</name><!-- 1.25.3 -->
+	<name>BA_BEAM_AUTO</name>
+	<name>BA_BEAM_ADAPTIVE_1</name>
+	<name>BA_BEAM_BARDICHE</name>
+	
+	<name>BEAM_1_2</name>
+	<name>BEAM_HULL</name>
+	<name>BA_BEAM_ADAPTIVE_2</name>
+	<name>BA_BEAM_SCYTHE</name>
+	<name>BA_BEAM_PERNACH</name>
+	<name>BEAM_FIRE</name>
+	<name>BEAM_2</name>
+	<name>BA_BEAM_POLLAXE</name><!-- 1.26 -->
+	<name>BEAM_SP_DAITO</name>
+	
+	<name>BOMB_STUN</name>
+	<name>BOMB_1</name>
+	<name>BA_BOMB_FIRE_SMALL</name>
+	<name>BOMB_BREACH_1</name>
+	<name>BA_BOMB_CLUSTER_STUN_ENEMY</name>
+	<name>BA_BOMB_CLUSTER_STUN_ENEMY2</name><!-- 1.23 -->
+	
+	<name>BOMB_FIRE</name>
+	<name>BA_BOMB_CLUSTER_BREACH</name>
+	<name>BA_BOMB_CLUSTER_1</name>
+	<name>BA_BOMB_CLUSTER_ION</name>
+	
+	<name>BA_BOMB_BIG</name>
+	<name>BA_BOMB_TIMER</name><!-- 1.25 -->
+	<name>BA_BOMB_FIRE_2</name>
+	<name>BA_BOMB_CLUSTER_FIRE</name>
+	<name>BA_BOMB_BIO</name>
+	<name>BOMB_BREACH_2</name>
+	<name>BOMB_BREACH_3</name>
+	<name>BOMB_ION</name>
+	
+	<name>MISSILES_1</name>
+	<name>MISSILES_2_PLAYER</name>
+	<name>BA_MISSILE_CHARGEGUN_SMALL</name>
+	<name>MISSILES_SYS1</name><!-- 1.25.1 -->
+	<name>MISSILES_SYS2</name><!-- 1.25.1 -->
+	<name>BA_MISSILES_FOBOS</name><!-- 1.25.3 -->
+	<name>BA_MISSILES_DEIMOS</name><!-- 1.25.3 -->
+	<name>BA_MISSILES_SWARM_1</name>
+	<name>BA_MISSILES_SWARM_2</name>
+	<name>BA_MISSILES_ASTERIA</name>
+	<name>BA_MISSILES_HULL_SMALL</name>
+	<name>BA_MINES_SMALL</name>
+	
+	<name>MISSILES_3</name>
+	<name>MISSILES_BURST</name>
+	<name>MISSILE_CHARGEGUN</name>
+	<name>BA_SHOTGUN_MISSILES</name>
+	<name>BA_MISSILES_ONI</name>
+	<name>BA_MISSILES_SWARM_3</name>
+	<name>MISSILES_HULL</name>
+	<name>BA_MISSILES_PERYTON</name>
+	<name>BA_MISSILES_4</name>
+	<name>BA_MISSILES_COCKATRICE</name>
+	<name>BA_MINES_MEDIUM</name>
+	<name>BA_MINES_TECH</name>
+	<name>BA_MINES_MEDIUM_M2</name> <!-- 1.25 -->
+	<name>BA_MINES_MEDIUM_M3</name> <!-- 1.25 -->
+	
+	<name>MISSILES_ARU_GOLIAPH</name> <!-- 1.26.1 -->
+	<name>MISSILES_HYDRA</name>
+	<name>MISSILES_MEGA</name>
+	<name>MISSILES_BREACH</name>
+	<name>BA_SHOTGUN_MISSILES2</name>
+	<name>BA_SHOTGUN_MISSILES3</name>
+	<name>BA_MISSILES_IFRIT</name>
+	<name>BA_MISSILES_FIRE</name>
+	<name>BA_MISSILES_SIMURGH</name>
+	<name>BA_MINES_BIG</name>
+	
+	<name>ION_STUN</name>
+	<name>ION_CHAINGUN</name>
+	<name>BA_SHOTGUN_ION_1</name>
+	<name>BA_ION_2_STUN</name>
+	<name>BA_ION_BURST_1_STUN</name>
+	<name>BA_ION_PIERCE_1</name>
+	<name>BA_EFFECTOR_1</name>
+	<name>BA_ION_BURST_1</name>
+	<name>ION_HEAVY_1</name>
+	<name>ION_BLAST_1</name>
+	
+	<name>ION_CHARGEGUN</name>
+	<name>BA_ION_VULKAN</name>
+	<name>BA_SHOTGUN_ION_2</name>
+	<name>BA_ION_PIERCE_2</name>
+	<name>BA_EFFECTOR_2</name>
+	<name>BA_EFFECTOR_ADAPTIVE</name>
+	<name>BA_ION_BURST_2</name>
+	<name>ION_BLAST_3</name>
+	<name>BA_ION_CHAIN_MINI</name> <!-- 1.23 -->
+</blueprintList>
+
+	
+
+<blueprintList name="OVERRIDE_WEAPONS_MANTIS"> 
+	<name>LASER_CHAIN_1</name>
+	<name>LASER_CHAIN_2</name>
+	<name>LASER_CHAIN_LONG_1</name> <!-- 1.26 -->
+	<name>LASER_CHAIN_LONG_2</name> <!-- 1.26 -->
+	<name>LASER_CHARGEGUN_1</name>
+	<name>LASER_CHARGEGUN_2</name>
+	<name>LASER_BURST_1</name>
+	<name>LASER_HEAVY_1</name>
+	<name>LASER_STANDARD_1</name>
+	<name>LASER_STANDARD_2</name>
+	<name>LASER_DUAL_1</name>
+	<name>LASER_DUAL_2</name>
+	<name>BA_SHOTGUN_SMALL</name>
+	<name>BA_PLASMA_1</name>
+	<name>BA_LASER_AUTO_1</name>
+	<name>BA_LASER_AUTO_2</name>
+	<name>BA_LASER_BURST_SCATTER_1</name>
+	<name>BA_LASER_BURST_SCATTER_2</name>
+	<name>BA_LASER_HEAVY_SCATTER_1</name>
+	<name>BA_LASER_HEAVY_SCATTER_2</name>
+	<name>BA_LASER_HULL_SMALL</name>
+
+
+	<name>LASER_SUPER_HEAVY_1</name><!-- 1.26 -->
+	<name>LASER_AL_1</name> <!-- 1.26.2 -->
+	<name>BA_LASER_WAR_1</name><!-- 1.26 -->
+	<name>BA_LASER_WAR_2</name><!-- 1.26 -->
+	<name>BA_LASER_WAR_3</name><!-- 1.26 -->
+	<name>LASER_PIERCE_1</name>
+	<name>LASER_PIERCE_2</name>
+	<name>SHTURM_LASER_1</name>
+	<name>SHTURM_LASER_2</name>
+	<name>LASER_HEAVY_CHAIN</name>
+	<name>LASER_AUTO_CHAIN</name>
+	<name>LASER_CHAIN_3</name>
+	<name>LASER_CHAIN_LONG_3</name> <!-- 1.26 -->
+	<name>LASER_CHARGEGUN_3</name>
+	<name>LASER_BURST_2</name>
+	<name>LASER_HEAVY_2</name>
+	<name>LASER_HEAVY_PIERCE_1</name>
+	<name>SHOTGUN</name>
+	<name>BA_PLASMA_2</name>
+	<name>BA_LASER_AUTO_3</name>
+	<name>BA_LASER_BURST_SCATTER_3</name>
+	<name>LASER_SCATTERCHAIN</name><!-- 1.25.1 -->
+	<name>BA_LASER_ARTILLERY_1</name>
+	<name>BA_LASER_HULLCRUSHER</name>
+	<name>LASER_HULL_1</name>
+	<name>LASER_HULL_2</name>
+	<name>LASER_IMP_2</name><!-- 1.25.1 -->
+	<name>LASER_IMP_3</name><!-- 1.25.1 -->
+	<name>LASER_HULLCHAIN</name><!-- 1.25.1 -->
+	
+	<name>LASER_SUPER_HEAVY_2</name><!-- 1.26 -->
+	<name>LASER_AL_2</name> <!-- 1.26.2 -->
+	<name>RAIL_DRIVER</name>
+	<name>LASER_CHAINGUN</name>
+	<name>HEAVY_MINIGUN</name>
+	<name>LASER_FIRE_CHAINGUN</name>
+	<name>LASER_HEAVY_CHARGE_1</name>
+	<name>LASER_HEAVY_CHARGE_2</name>
+	<name>LASER_CHARGEGUN_4</name>
+	<name>LASER_BURST_3</name>
+	<name>LASER_BURST_4</name>
+	<name>LASER_HEAVY_PIERCE_2</name>
+	<name>SHOTGUN_2</name>
+	<name>SHOTGUN_007</name>
+	<name>BA_SHOTGUN_SCATTER</name>
+	<name>SHTURM_FLAK</name>
+	<name>CHARGEGUN_SHOTGUN</name>
+	<name>BA_PLASMA_3</name>
+	<name>BA_LASER_ARTILLERY_2</name>
+	<name>BA_LASER_HULLCRUSHER_2</name>
+	<name>BA_LASER_HULLCRUSHER_3</name>
+	
+	<name>BEAM_1</name>
+	<name>BEAM_LONG</name>
+	<name>BA_BEAM_K2</name><!-- 1.25.3 -->
+	<name>BA_BEAM_HASTA</name>
+	<name>BA_BEAM_K1</name><!-- 1.25.3 -->
+	<name>BA_BEAM_HULL_SMALL</name>
+	<name>BA_BEAM_HULL_MINI</name><!-- 1.25.3 -->
+	<name>BA_BEAM_AUTO</name>
+	<name>BA_BEAM_ADAPTIVE_1</name>
+	<name>BA_BEAM_BARDICHE</name>
+	
+	<name>BOMB_STUN</name>
+	<name>BOMB_1</name>
+	<name>BA_BOMB_FIRE_SMALL</name>
+	<name>BOMB_BREACH_1</name>
+	<name>BA_BOMB_CLUSTER_STUN_ENEMY</name>
+	<name>BA_BOMB_CLUSTER_STUN_ENEMY2</name><!-- 1.23 -->
+	
+	<name>BOMB_FIRE</name>
+	<name>BA_BOMB_CLUSTER_BREACH</name>
+	<name>BA_BOMB_CLUSTER_1</name>
+	<name>BA_BOMB_CLUSTER_ION</name>
+	
+	<name>MISSILES_1</name>
+	<name>MISSILES_2_PLAYER</name>
+	<name>BA_MISSILE_CHARGEGUN_SMALL</name>
+	<name>MISSILES_SYS1</name><!-- 1.25.1 -->
+	<name>MISSILES_SYS2</name><!-- 1.25.1 -->
+	<name>BA_MISSILES_FOBOS</name><!-- 1.25.3 -->
+	<name>BA_MISSILES_DEIMOS</name><!-- 1.25.3 -->
+	<name>BA_MISSILES_SWARM_1</name>
+	<name>BA_MISSILES_SWARM_2</name>
+	<name>BA_MISSILES_ASTERIA</name>
+	<name>BA_MISSILES_HULL_SMALL</name>
+	<name>BA_MINES_SMALL</name>
+	
+	<name>MISSILES_3</name>
+	<name>MISSILES_BURST</name>
+	<name>MISSILE_CHARGEGUN</name>
+	<name>BA_SHOTGUN_MISSILES</name>
+	<name>BA_MISSILES_ONI</name>
+	<name>BA_MISSILES_SWARM_3</name>
+	<name>MISSILES_HULL</name>
+	<name>BA_MISSILES_PERYTON</name>
+	<name>BA_MISSILES_4</name>
+	<name>BA_MISSILES_COCKATRICE</name>
+	<name>BA_MINES_MEDIUM</name>
+	<name>BA_MINES_TECH</name>
+	<name>BA_MINES_MEDIUM_M2</name> <!-- 1.25 -->
+	<name>BA_MINES_MEDIUM_M3</name> <!-- 1.25 -->
+	
+	<name>ION_STUN</name>
+	<name>ION_CHAINGUN</name>
+	<name>BA_SHOTGUN_ION_1</name>
+	<name>BA_ION_2_STUN</name>
+	<name>BA_ION_BURST_1_STUN</name>
+	<name>BA_ION_PIERCE_1</name>
+	<name>BA_EFFECTOR_1</name>
+	<name>BA_ION_BURST_1</name>
+	<name>ION_HEAVY_1</name>
+	<name>ION_BLAST_1</name>
+</blueprintList>
+
+<blueprintList name="OVERRIDE_WEAPONS_FED"> 
+	<name>LASER_CHAIN_1</name>
+	<name>LASER_CHAIN_2</name>
+	<name>LASER_CHAIN_LONG_1</name> <!-- 1.26 -->
+	<name>LASER_CHAIN_LONG_2</name> <!-- 1.26 -->
+	<name>LASER_CHARGEGUN_1</name>
+	<name>LASER_CHARGEGUN_2</name>
+	<name>LASER_BURST_1</name>
+	<name>LASER_HEAVY_1</name>
+	<name>LASER_STANDARD_1</name>
+	<name>LASER_STANDARD_2</name>
+	<name>LASER_DUAL_1</name>
+	<name>LASER_DUAL_2</name>
+	<name>BA_SHOTGUN_SMALL</name>
+	<name>BA_PLASMA_1</name>
+	<name>BA_LASER_AUTO_1</name>
+	<name>BA_LASER_AUTO_2</name>
+	<name>BA_LASER_BURST_SCATTER_1</name>
+	<name>BA_LASER_BURST_SCATTER_2</name>
+	<name>BA_LASER_HEAVY_SCATTER_1</name>
+	<name>BA_LASER_HEAVY_SCATTER_2</name>
+	<name>BA_LASER_HULL_SMALL</name>
+
+	<name>LASER_SUPER_HEAVY_1</name><!-- 1.26 -->
+	<name>LASER_AL_1</name> <!-- 1.26.2 -->
+	<name>BA_LASER_WAR_1</name><!-- 1.26 -->
+	<name>BA_LASER_WAR_2</name><!-- 1.26 -->
+	<name>BA_LASER_WAR_3</name><!-- 1.26 -->
+	<name>LASER_PIERCE_1</name>
+	<name>LASER_PIERCE_2</name>
+	<name>SHTURM_LASER_1</name>
+	<name>SHTURM_LASER_2</name>
+	<name>LASER_HEAVY_CHAIN</name>
+	<name>LASER_AUTO_CHAIN</name>
+	<name>LASER_CHAIN_3</name>
+	<name>LASER_CHAIN_LONG_3</name> <!-- 1.26 -->
+	<name>LASER_CHARGEGUN_3</name>
+	<name>LASER_BURST_2</name>
+	<name>LASER_HEAVY_2</name>
+	<name>LASER_HEAVY_PIERCE_1</name>
+	<name>SHOTGUN</name>
+	<name>BA_PLASMA_2</name>
+	<name>BA_LASER_AUTO_3</name>
+	<name>BA_LASER_BURST_SCATTER_3</name>
+	<name>LASER_SCATTERCHAIN</name><!-- 1.25.1 -->
+	<name>BA_LASER_ARTILLERY_1</name>
+	<name>BA_LASER_HULLCRUSHER</name>
+	<name>LASER_HULL_1</name>
+	<name>LASER_HULL_2</name>
+	<name>LASER_IMP_2</name><!-- 1.25.1 -->
+	<name>LASER_IMP_3</name><!-- 1.25.1 -->
+	<name>LASER_HULLCHAIN</name><!-- 1.25.1 -->
+	
+	<name>MPP_LASER_1</name><!-- 1.26 -->
+	<name>MPP_LASER_2</name><!-- 1.26 -->
+	<name>LASER_LIGHT_1</name>
+	<name>LASER_LIGHT_SCATTER_1</name>
+	<name>BA_STUNGUN_1</name>
+	<name>BA_BEAM_BATON</name>
+	
+	<name>LASER_LIGHT_2</name>
+	<name>LASER_LIGHT_SCATTER_2</name>
+	<name>BA_STUNGUN_2</name>
+	<name>BA_BEAM_BO</name>
+	<!-- <name>BA_BEAM_BIO_2</name> --><!-- 1.27 -->
+	
+	<name>BEAM_1</name>
+	<name>BEAM_LONG</name>
+	<name>BA_BEAM_K2</name><!-- 1.25.3 -->
+	<name>BA_BEAM_HASTA</name>
+	<name>BA_BEAM_K1</name><!-- 1.25.3 -->
+	<name>BA_BEAM_HULL_SMALL</name>
+	<name>BA_BEAM_HULL_MINI</name><!-- 1.25.3 -->
+	<name>BA_BEAM_AUTO</name>
+	<name>BA_BEAM_ADAPTIVE_1</name>
+	<name>BA_BEAM_BARDICHE</name>
+	
+	<name>BEAM_1_2</name>
+	<name>BEAM_HULL</name>
+	<name>BA_BEAM_ADAPTIVE_2</name>
+	<name>BA_BEAM_SCYTHE</name>
+	<name>BA_BEAM_PERNACH</name>
+	<name>BEAM_FIRE</name>
+	<name>BEAM_2</name>
+	<name>BA_BEAM_POLLAXE</name><!-- 1.26 -->
+	<name>BEAM_SP_DAITO</name>
+	
+	<name>BOMB_STUN</name>
+	<name>BOMB_1</name>
+	<name>BA_BOMB_FIRE_SMALL</name>
+	<name>BOMB_BREACH_1</name>
+	<name>BA_BOMB_CLUSTER_STUN_ENEMY</name>
+	<name>BA_BOMB_CLUSTER_STUN_ENEMY2</name><!-- 1.23 -->
+	
+	<name>BOMB_FIRE</name>
+	<name>BA_BOMB_CLUSTER_BREACH</name>
+	<name>BA_BOMB_CLUSTER_1</name>
+	<name>BA_BOMB_CLUSTER_ION</name>
+	
+	<name>MISSILES_1</name>
+	<name>MISSILES_2_PLAYER</name>
+	<name>BA_MISSILE_CHARGEGUN_SMALL</name>
+	<name>MISSILES_SYS1</name><!-- 1.25.1 -->
+	<name>MISSILES_SYS2</name><!-- 1.25.1 -->
+	<name>BA_MISSILES_FOBOS</name><!-- 1.25.3 -->
+	<name>BA_MISSILES_DEIMOS</name><!-- 1.25.3 -->
+	<name>BA_MISSILES_SWARM_1</name>
+	<name>BA_MISSILES_SWARM_2</name>
+	<name>BA_MISSILES_ASTERIA</name>
+	<name>BA_MISSILES_HULL_SMALL</name>
+	<name>BA_MINES_SMALL</name>
+	
+	<name>MISSILES_3</name>
+	<name>MISSILES_BURST</name>
+	<name>MISSILE_CHARGEGUN</name>
+	<name>BA_SHOTGUN_MISSILES</name>
+	<name>BA_MISSILES_ONI</name>
+	<name>BA_MISSILES_SWARM_3</name>
+	<name>MISSILES_HULL</name>
+	<name>BA_MISSILES_PERYTON</name>
+	<name>BA_MISSILES_4</name>
+	<name>BA_MISSILES_COCKATRICE</name>
+	<name>BA_MINES_MEDIUM</name>
+	<name>BA_MINES_TECH</name>
+	<name>BA_MINES_MEDIUM_M2</name> <!-- 1.25 -->
+	<name>BA_MINES_MEDIUM_M3</name> <!-- 1.25 -->
+	
+	<name>ION_STUN</name>
+	<name>ION_CHAINGUN</name>
+	<name>BA_SHOTGUN_ION_1</name>
+	<name>BA_ION_2_STUN</name>
+	<name>BA_ION_BURST_1_STUN</name>
+	<name>BA_ION_PIERCE_1</name>
+	<name>BA_EFFECTOR_1</name>
+	<name>BA_ION_BURST_1</name>
+	<name>ION_HEAVY_1</name>
+	<name>ION_BLAST_1</name>
+	
+	<name>ION_CHARGEGUN</name>
+	<name>BA_ION_VULKAN</name>
+	<name>BA_SHOTGUN_ION_2</name>
+	<name>BA_ION_PIERCE_2</name>
+	<name>BA_EFFECTOR_2</name>
+	<name>BA_EFFECTOR_ADAPTIVE</name>
+	<name>BA_ION_BURST_2</name>
+	<name>ION_BLAST_3</name>
+	<name>BA_ION_CHAIN_MINI</name> <!-- 1.23 -->
+</blueprintList>
+
+
+
+<blueprintList name="OVERRIDE_WEAPONS_CIRCLE"> 
+	<name>LASER_CHAIN_1</name>
+	<name>LASER_CHAIN_2</name>
+	<name>LASER_CHAIN_2</name>
+	<name>LASER_CHAIN_LONG_1</name> <!-- 1.26 -->
+	<name>LASER_CHAIN_LONG_2</name> <!-- 1.26 -->
+	<name>LASER_CHARGEGUN_1</name>
+	<name>LASER_CHARGEGUN_2</name>
+	<name>LASER_BURST_1</name>
+	<name>LASER_HEAVY_1</name>
+	<name>LASER_STANDARD_1</name>
+	<name>LASER_STANDARD_2</name>
+	<name>LASER_DUAL_1</name>
+	<name>LASER_DUAL_2</name>
+	<name>BA_SHOTGUN_SMALL</name>
+	<name>BA_PLASMA_1</name>
+	<name>BA_LASER_AUTO_1</name>
+	<name>BA_LASER_AUTO_2</name>
+	<name>BA_LASER_BURST_SCATTER_1</name>
+	<name>BA_LASER_BURST_SCATTER_2</name>
+	<name>BA_LASER_HEAVY_SCATTER_1</name>
+	<name>BA_LASER_HEAVY_SCATTER_2</name>
+	<name>BA_LASER_HULL_SMALL</name>
+	
+	<name>MPP_LASER_1</name><!-- 1.26 -->
+	<name>MPP_LASER_2</name><!-- 1.26 -->
+	<name>LASER_LIGHT_1</name>
+	<name>LASER_LIGHT_SCATTER_1</name>
+	<name>BA_STUNGUN_1</name>
+	<name>BA_BEAM_BATON</name>
+	
+	<name>LASER_LIGHT_2</name>
+	<name>LASER_LIGHT_SCATTER_2</name>
+	<name>BA_STUNGUN_2</name>
+	<name>BA_BEAM_BO</name>
+	<!-- <name>BA_BEAM_BIO_2</name> --><!-- 1.27 -->
+	
+	<name>BEAM_1</name>
+	<name>BEAM_LONG</name>
+	<name>BA_BEAM_K2</name><!-- 1.25.3 -->
+	<name>BA_BEAM_HASTA</name>
+	<name>BA_BEAM_K1</name><!-- 1.25.3 -->
+	<name>BA_BEAM_HULL_SMALL</name>
+	<name>BA_BEAM_HULL_MINI</name><!-- 1.25.3 -->
+	<name>BA_BEAM_AUTO</name>
+	<name>BA_BEAM_ADAPTIVE_1</name>
+	<name>BA_BEAM_BARDICHE</name>
+	
+	<name>BEAM_1_2</name>
+	<name>BEAM_HULL</name>
+	<name>BA_BEAM_ADAPTIVE_2</name>
+	<name>BA_BEAM_SCYTHE</name>
+	<name>BA_BEAM_PERNACH</name>
+	<name>BEAM_FIRE</name>
+	<name>BEAM_2</name>
+	<name>BA_BEAM_POLLAXE</name><!-- 1.26 -->
+	<name>BEAM_SP_DAITO</name>
+	
+	<name>BOMB_STUN</name>
+	<name>BOMB_1</name>
+	<name>BA_BOMB_FIRE_SMALL</name>
+	<name>BOMB_BREACH_1</name>
+	<name>BA_BOMB_CLUSTER_STUN_ENEMY</name>
+	<name>BA_BOMB_CLUSTER_STUN_ENEMY2</name><!-- 1.23 -->
+	
+	<name>BOMB_FIRE</name>
+	<name>BA_BOMB_CLUSTER_BREACH</name>
+	<name>BA_BOMB_CLUSTER_1</name>
+	<name>BA_BOMB_CLUSTER_ION</name>
+	
+	<name>BA_BOMB_BIG</name>
+	<name>BA_BOMB_TIMER</name><!-- 1.25 -->
+	<name>BA_BOMB_FIRE_2</name>
+	<name>BA_BOMB_CLUSTER_FIRE</name>
+	<name>BA_BOMB_BIO</name>
+	<name>BOMB_BREACH_2</name>
+	<name>BOMB_BREACH_3</name>
+	<name>BOMB_ION</name>
+	
+	<name>MISSILES_1</name>
+	<name>MISSILES_2_PLAYER</name>
+	<name>BA_MISSILE_CHARGEGUN_SMALL</name>
+	<name>MISSILES_SYS1</name><!-- 1.25.1 -->
+	<name>MISSILES_SYS2</name><!-- 1.25.1 -->
+	<name>BA_MISSILES_FOBOS</name><!-- 1.25.3 -->
+	<name>BA_MISSILES_DEIMOS</name><!-- 1.25.3 -->
+	<name>BA_MISSILES_SWARM_1</name>
+	<name>BA_MISSILES_SWARM_2</name>
+	<name>BA_MISSILES_ASTERIA</name>
+	<name>BA_MISSILES_HULL_SMALL</name>
+	<name>BA_MINES_SMALL</name>
+	
+	<name>MISSILES_3</name>
+	<name>MISSILES_BURST</name>
+	<name>MISSILE_CHARGEGUN</name>
+	<name>BA_SHOTGUN_MISSILES</name>
+	<name>BA_MISSILES_ONI</name>
+	<name>BA_MISSILES_SWARM_3</name>
+	<name>MISSILES_HULL</name>
+	<name>BA_MISSILES_PERYTON</name>
+	<name>BA_MISSILES_4</name>
+	<name>BA_MISSILES_COCKATRICE</name>
+	<name>BA_MINES_MEDIUM</name>
+	<name>BA_MINES_TECH</name>
+	<name>BA_MINES_MEDIUM_M2</name> <!-- 1.25 -->
+	<name>BA_MINES_MEDIUM_M3</name> <!-- 1.25 -->
+	
+	<name>ION_STUN</name>
+	<name>ION_CHAINGUN</name>
+	<name>BA_SHOTGUN_ION_1</name>
+	<name>BA_ION_2_STUN</name>
+	<name>BA_ION_BURST_1_STUN</name>
+	<name>BA_ION_PIERCE_1</name>
+	<name>BA_EFFECTOR_1</name>
+	<name>BA_ION_BURST_1</name>
+	<name>ION_HEAVY_1</name>
+	<name>ION_BLAST_1</name>
+	
+	<name>ION_CHARGEGUN</name>
+	<name>BA_ION_VULKAN</name>
+	<name>BA_SHOTGUN_ION_2</name>
+	<name>BA_ION_PIERCE_2</name>
+	<name>BA_EFFECTOR_2</name>
+	<name>BA_EFFECTOR_ADAPTIVE</name>
+	<name>BA_ION_BURST_2</name>
+	<name>ION_BLAST_3</name>
+	<name>BA_ION_CHAIN_MINI</name> <!-- 1.23 -->
+	
+	<name>ION_CHARGEGUN_2</name>
+	<name>BA_EFFECTOR_3</name>
+	<name>BA_ION_BURST_3</name>
+	<name>ION_HEAVY_2</name>
+	<name>ION_HEAVY_3</name>
+</blueprintList>
+
+
+
+
+
+<blueprintList name="OVERRIDE_WEAPONS_ZOLTAN">
+	<name>LASER_CHAIN_1</name>
+	<name>LASER_CHAIN_2</name>
+	<name>LASER_CHAIN_LONG_1</name> <!-- 1.26 -->
+	<name>LASER_CHAIN_LONG_2</name> <!-- 1.26 -->
+	<name>LASER_CHARGEGUN_1</name>
+	<name>LASER_CHARGEGUN_2</name>
+	<name>LASER_BURST_1</name>
+	<name>LASER_HEAVY_1</name>
+	<name>LASER_STANDARD_1</name>
+	<name>LASER_STANDARD_2</name>
+	<name>LASER_DUAL_1</name>
+	<name>LASER_DUAL_2</name>
+	<name>BA_SHOTGUN_SMALL</name>
+	<name>BA_PLASMA_1</name>
+	<name>BA_LASER_AUTO_1</name>
+	<name>BA_LASER_AUTO_2</name>
+	<name>BA_LASER_BURST_SCATTER_1</name>
+	<name>BA_LASER_BURST_SCATTER_2</name>
+	<name>BA_LASER_HEAVY_SCATTER_1</name>
+	<name>BA_LASER_HEAVY_SCATTER_2</name>
+	<name>BA_LASER_HULL_SMALL</name>
+	
+	<name>MPP_LASER_1</name><!-- 1.26 -->
+	<name>MPP_LASER_2</name><!-- 1.26 -->
+	<name>LASER_LIGHT_1</name>
+	<name>LASER_LIGHT_SCATTER_1</name>
+	<name>BA_STUNGUN_1</name>
+	<name>BA_BEAM_BATON</name>
+	
+	<name>LASER_LIGHT_2</name>
+	<name>LASER_LIGHT_SCATTER_2</name>
+	<name>BA_STUNGUN_2</name>
+	<name>BA_BEAM_BO</name>
+	<!-- <name>BA_BEAM_BIO_2</name> --><!-- 1.27 -->
+	
+	<name>BEAM_1</name>
+	<name>BEAM_LONG</name>
+	<name>BA_BEAM_K2</name><!-- 1.25.3 -->
+	<name>BA_BEAM_HASTA</name>
+	<name>BA_BEAM_K1</name><!-- 1.25.3 -->
+	<name>BA_BEAM_HULL_SMALL</name>
+	<name>BA_BEAM_HULL_MINI</name><!-- 1.25.3 -->
+	<name>BA_BEAM_AUTO</name>
+	<name>BA_BEAM_ADAPTIVE_1</name>
+	<name>BA_BEAM_BARDICHE</name>
+	
+	<name>BEAM_1_2</name>
+	<name>BEAM_HULL</name>
+	<name>BA_BEAM_ADAPTIVE_2</name>
+	<name>BA_BEAM_SCYTHE</name>
+	<name>BA_BEAM_PERNACH</name>
+	<name>BEAM_FIRE</name>
+	<name>BEAM_2</name>
+	<name>BA_BEAM_POLLAXE</name><!-- 1.26 -->
+	<name>BEAM_SP_DAITO</name>
+	
+	<name>BEAM_FAUCHARD</name>
+	<name>BA_BEAM_ADAPTIVE_3</name>
+	<name>BA_BEAM_FLAIL_DAMAGE</name>
+	<name>BA_BEAM_NAGINATA</name>
+	<name>BA_BEAM_MAUL</name>
+	<name>BA_BEAM_FIRE_2</name>
+	<name>BEAM_FIRECHAIN</name><!-- 1.26.3 -->
+	<name>BA_BEAM_FIRE_FOCUS</name>
+	<name>BA_BEAM_FIRE_FOCUS2</name>
+	<name>BA_BEAM_HOT_1</name><!-- 1.26.5 -->
+	<name>BA_BEAM_HOT_2</name><!-- 1.26.5 -->
+	<name>BA_BEAM_HOT_3</name><!-- 1.26.5 -->
+	<name>BEAM_3</name>
+	<name>BA_BEAM_PARTISAN</name><!-- 1.26 -->
+	<name>BEAM_SP_KATANA</name>
+	<name>BEAM_BIOFIRE</name>
+	
+	<name>BOMB_STUN</name>
+	<name>BOMB_1</name>
+	<name>BA_BOMB_FIRE_SMALL</name>
+	<name>BOMB_BREACH_1</name>
+	<name>BA_BOMB_CLUSTER_STUN_ENEMY</name>
+	<name>BA_BOMB_CLUSTER_STUN_ENEMY2</name><!-- 1.23 -->
+	
+	<name>BOMB_FIRE</name>
+	<name>BA_BOMB_CLUSTER_BREACH</name>
+	<name>BA_BOMB_CLUSTER_1</name>
+	<name>BA_BOMB_CLUSTER_ION</name>
+	
+	<name>MISSILES_1</name>
+	<name>MISSILES_2_PLAYER</name>
+	<name>BA_MISSILE_CHARGEGUN_SMALL</name>
+	<name>MISSILES_SYS1</name><!-- 1.25.1 -->
+	<name>MISSILES_SYS2</name><!-- 1.25.1 -->
+	<name>BA_MISSILES_FOBOS</name><!-- 1.25.3 -->
+	<name>BA_MISSILES_DEIMOS</name><!-- 1.25.3 -->
+	<name>BA_MISSILES_SWARM_1</name>
+	<name>BA_MISSILES_SWARM_2</name>
+	<name>BA_MISSILES_ASTERIA</name>
+	<name>BA_MISSILES_HULL_SMALL</name>
+	<name>BA_MINES_SMALL</name>
+	
+	<name>MISSILES_3</name>
+	<name>MISSILES_BURST</name>
+	<name>MISSILE_CHARGEGUN</name>
+	<name>BA_SHOTGUN_MISSILES</name>
+	<name>BA_MISSILES_ONI</name>
+	<name>BA_MISSILES_SWARM_3</name>
+	<name>MISSILES_HULL</name>
+	<name>BA_MISSILES_PERYTON</name>
+	<name>BA_MISSILES_4</name>
+	<name>BA_MISSILES_COCKATRICE</name>
+	<name>BA_MINES_MEDIUM</name>
+	<name>BA_MINES_TECH</name>
+	<name>BA_MINES_MEDIUM_M2</name> <!-- 1.25 -->
+	<name>BA_MINES_MEDIUM_M3</name> <!-- 1.25 -->
+	
+	<name>ION_STUN</name>
+	<name>ION_CHAINGUN</name>
+	<name>BA_SHOTGUN_ION_1</name>
+	<name>BA_ION_2_STUN</name>
+	<name>BA_ION_BURST_1_STUN</name>
+	<name>BA_ION_PIERCE_1</name>
+	<name>BA_EFFECTOR_1</name>
+	<name>BA_ION_BURST_1</name>
+	<name>ION_HEAVY_1</name>
+	<name>ION_BLAST_1</name>
+	
+	<name>ION_CHARGEGUN</name>
+	<name>BA_ION_VULKAN</name>
+	<name>BA_SHOTGUN_ION_2</name>
+	<name>BA_ION_PIERCE_2</name>
+	<name>BA_EFFECTOR_2</name>
+	<name>BA_EFFECTOR_ADAPTIVE</name>
+	<name>BA_ION_BURST_2</name>
+	<name>ION_BLAST_3</name>
+	<name>BA_ION_CHAIN_MINI</name> <!-- 1.23 -->
+	
+	<name>ION_CHARGEGUN_2</name>
+	<name>BA_EFFECTOR_3</name>
+	<name>BA_ION_BURST_3</name>
+	<name>ION_HEAVY_2</name>
+	<name>ION_HEAVY_3</name>
+</blueprintList>
+
+
+
+
+
+<blueprintList name="OVERRIDE_WEAPONS_AI">
+	<name>LASER_CHAIN_1</name>
+	<name>LASER_CHAIN_2</name>
+	<name>LASER_CHAIN_LONG_1</name> <!-- 1.26 -->
+	<name>LASER_CHAIN_LONG_2</name> <!-- 1.26 -->
+	<name>LASER_CHARGEGUN_1</name>
+	<name>LASER_CHARGEGUN_2</name>
+	<name>LASER_BURST_1</name>
+	<name>LASER_HEAVY_1</name>
+	<name>LASER_STANDARD_1</name>
+	<name>LASER_STANDARD_2</name>
+	<name>LASER_DUAL_1</name>
+	<name>LASER_DUAL_2</name>
+	<name>BA_SHOTGUN_SMALL</name>
+	<name>BA_PLASMA_1</name>
+	<name>BA_LASER_AUTO_1</name>
+	<name>BA_LASER_AUTO_2</name>
+	<name>BA_LASER_BURST_SCATTER_1</name>
+	<name>BA_LASER_BURST_SCATTER_2</name>
+	<name>BA_LASER_HEAVY_SCATTER_1</name>
+	<name>BA_LASER_HEAVY_SCATTER_2</name>
+	<name>BA_LASER_HULL_SMALL</name>
+
+	<name>LASER_SUPER_HEAVY_1</name><!-- 1.26 -->
+	<name>LASER_AL_1</name> <!-- 1.26.2 -->
+	<name>BA_LASER_WAR_1</name><!-- 1.26 -->
+	<name>BA_LASER_WAR_2</name><!-- 1.26 -->
+	<name>BA_LASER_WAR_3</name><!-- 1.26 -->
+	<name>LASER_PIERCE_1</name>
+	<name>LASER_PIERCE_2</name>
+	<name>SHTURM_LASER_1</name>
+	<name>SHTURM_LASER_2</name>
+	<name>LASER_HEAVY_CHAIN</name>
+	<name>LASER_AUTO_CHAIN</name>
+	<name>LASER_CHAIN_3</name>
+	<name>LASER_CHAIN_LONG_3</name> <!-- 1.26 -->
+	<name>LASER_CHARGEGUN_3</name>
+	<name>LASER_BURST_2</name>
+	<name>LASER_HEAVY_2</name>
+	<name>LASER_HEAVY_PIERCE_1</name>
+	<name>SHOTGUN</name>
+	<name>BA_PLASMA_2</name>
+	<name>BA_LASER_AUTO_3</name>
+	<name>BA_LASER_BURST_SCATTER_3</name>
+	<name>LASER_SCATTERCHAIN</name><!-- 1.25.1 -->
+	<name>BA_LASER_ARTILLERY_1</name>
+	<name>BA_LASER_HULLCRUSHER</name>
+	<name>LASER_HULL_1</name>
+	<name>LASER_HULL_2</name>
+	<name>LASER_IMP_2</name><!-- 1.25.1 -->
+	<name>LASER_IMP_3</name><!-- 1.25.1 -->
+	<name>LASER_HULLCHAIN</name><!-- 1.25.1 -->
+	
+	<name>MPP_LASER_1</name><!-- 1.26 -->
+	<name>MPP_LASER_2</name><!-- 1.26 -->
+	<name>LASER_LIGHT_1</name>
+	<name>LASER_LIGHT_SCATTER_1</name>
+	<name>BA_STUNGUN_1</name>
+	<name>BA_BEAM_BATON</name>
+	
+	<name>LASER_LIGHT_2</name>
+	<name>LASER_LIGHT_SCATTER_2</name>
+	<name>BA_STUNGUN_2</name>
+	<name>BA_BEAM_BO</name>
+	<!-- <name>BA_BEAM_BIO_2</name> --><!-- 1.27 -->
+	
+	<name>HEAVY_PPL</name>
+	<name>LASER_LIGHT_3</name>
+	<name>LIGHT_BREACH_LASER_1</name><!-- 1.24 -->
+	<name>LIGHT_BREACH_LASER_2</name><!-- 1.24 -->
+	<name>LIGHT_BREACH_VULCAN</name><!-- 1.24 -->
+	<name>LASER_LIGHT_AUTO</name>
+	<name>LASER_LIGHT_SCATTER_3</name>
+	<name>BA_LASER_LIGHT_ARTILLERY</name>
+	<name>BA_LASER_LIGHT_CHAINGUN</name>
+	<!-- <name>BEAM_BIO</name> --><!-- 1.27 -->
+	<!-- <name>BEAM_CHAIN_BIO</name> --><!-- 1.25.3 --><!-- 1.27 -->
+	<!-- <name>BA_BEAM_BIO_SP1</name> --><!-- 1.25.1 --><!-- 1.27 -->
+	<!-- <name>BA_BEAM_BIO_SP2</name> --><!-- 1.25.1 --><!-- 1.27 -->
+	<name>BA_BEAM_SHEST</name><!-- 1.26 -->
+	<name>BA_BEAM_SMASHER</name><!-- 1.26 / 1.25.3 -->
+	<!-- <name>BA_BEAM_BIO_FOCUS</name> --><!-- 1.27 -->
+	
+	<name>BEAM_1</name>
+	<name>BEAM_LONG</name>
+	<name>BA_BEAM_K2</name><!-- 1.25.3 -->
+	<name>BA_BEAM_HASTA</name>
+	<name>BA_BEAM_K1</name><!-- 1.25.3 -->
+	<name>BA_BEAM_HULL_SMALL</name>
+	<name>BA_BEAM_HULL_MINI</name><!-- 1.25.3 -->
+	<name>BA_BEAM_AUTO</name>
+	<name>BA_BEAM_ADAPTIVE_1</name>
+	<name>BA_BEAM_BARDICHE</name>
+	
+	<name>BEAM_1_2</name>
+	<name>BEAM_HULL</name>
+	<name>BA_BEAM_ADAPTIVE_2</name>
+	<name>BA_BEAM_SCYTHE</name>
+	<name>BA_BEAM_PERNACH</name>
+	<name>BEAM_FIRE</name>
+	<name>BEAM_2</name>
+	<name>BA_BEAM_POLLAXE</name><!-- 1.26 -->
+	<name>BEAM_SP_DAITO</name>
+	
+	<name>BOMB_STUN</name>
+	<name>BOMB_1</name>
+	<name>BA_BOMB_FIRE_SMALL</name>
+	<name>BOMB_BREACH_1</name>
+	<name>BA_BOMB_CLUSTER_STUN_ENEMY</name>
+	<name>BA_BOMB_CLUSTER_STUN_ENEMY2</name><!-- 1.23 -->
+	
+	<name>BOMB_FIRE</name>
+	<name>BA_BOMB_CLUSTER_BREACH</name>
+	<name>BA_BOMB_CLUSTER_1</name>
+	<name>BA_BOMB_CLUSTER_ION</name>
+	
+	<name>BA_BOMB_BIG</name>
+	<name>BA_BOMB_TIMER</name><!-- 1.25 -->
+	<name>BA_BOMB_FIRE_2</name>
+	<name>BA_BOMB_CLUSTER_FIRE</name>
+	<name>BA_BOMB_BIO</name>
+	<name>BOMB_BREACH_2</name>
+	<name>BOMB_BREACH_3</name>
+	<name>BOMB_ION</name>
+	
+	<name>MISSILES_1</name>
+	<name>MISSILES_2_PLAYER</name>
+	<name>BA_MISSILE_CHARGEGUN_SMALL</name>
+	<name>MISSILES_SYS1</name><!-- 1.25.1 -->
+	<name>MISSILES_SYS2</name><!-- 1.25.1 -->
+	<name>BA_MISSILES_FOBOS</name><!-- 1.25.3 -->
+	<name>BA_MISSILES_DEIMOS</name><!-- 1.25.3 -->
+	<name>BA_MISSILES_SWARM_1</name>
+	<name>BA_MISSILES_SWARM_2</name>
+	<name>BA_MISSILES_ASTERIA</name>
+	<name>BA_MISSILES_HULL_SMALL</name>
+	<name>BA_MINES_SMALL</name>
+	
+	<name>ION_STUN</name>
+	<name>ION_CHAINGUN</name>
+	<name>BA_SHOTGUN_ION_1</name>
+	<name>BA_ION_2_STUN</name>
+	<name>BA_ION_BURST_1_STUN</name>
+	<name>BA_ION_PIERCE_1</name>
+	<name>BA_EFFECTOR_1</name>
+	<name>BA_ION_BURST_1</name>
+	<name>ION_HEAVY_1</name>
+	<name>ION_BLAST_1</name>
+</blueprintList>
+
+<blueprintList name="OVERRIDE_WEAPONS_LIGHT_LASER">
+	<name>MPP_LASER_1</name><!-- 1.26 -->
+	<name>MPP_LASER_2</name><!-- 1.26 -->
+	<name>LASER_LIGHT_1</name>
+	<name>LASER_LIGHT_2</name>
+	<name>LASER_LIGHT_3</name>
+	<name>LIGHT_BREACH_LASER_1</name><!-- 1.24 -->
+	<name>LIGHT_BREACH_LASER_2</name><!-- 1.24 -->
+	<name>LIGHT_BREACH_VULCAN</name><!-- 1.24 -->
+	<name>LASER_LIGHT_SCATTER_1</name>
+	<name>LASER_LIGHT_SCATTER_2</name>
+	<name>LASER_LIGHT_SCATTER_3</name>
+	<name>BA_LASER_LIGHT_ARTILLERY</name>
+	<name>BA_LASER_LIGHT_CHAINGUN</name>
+	<name>HEAVY_PPL</name>
+	<name>LASER_LIGHT_AUTO</name><!-- 1.25.1 -->
+</blueprintList>
+
+
+
+<blueprintList name="OVERRIDE_DRONES_BOARDER">
+	<name>BOARDER</name>
+	<name>DE_BOARDER_2</name>
+	<name>DE_BOARDER_3</name>
+	<name>DE_BOARDER_4</name>
+	<name>BOARDER_ION</name>
+	
+	<name>DE_BOARDER_2_R</name><!-- 1.25 -->
+	<name>DE_BOARDER_3_R</name><!-- 1.25 -->
+	<name>DE_BOARDER_4_R</name><!-- 1.25 -->
+</blueprintList>
+
+<blueprintList name="OVERRIDE_DRONES_DEFENSE">
+	<name>DEFENSE_1_OLD</name>
+	<name>DEFENSE_2</name>
+
+	<name>DRONE_SHIELD</name>
+	<name>ANTI_DRONE</name>
+
+	<name>DE_DRONE_DEFENSE_LIGHT_MISSILE</name>
+	<name>DE_DRONE_DEFENSE_SWARM_MISSILE</name>
+	<name>DE_DRONE_DEFENSE_LIGHT_1</name>
+	<name>DE_DRONE_DEFENSE_LIGHT_2</name>
+	<name>DE_DRONE_DEFENSE_GAUSS</name><!-- 1.21 -->
+	<name>DE_DRONE_DEFENSE_HEAVY</name>
+	<name>DE_DRONE_DEFENSE_HEAVY_SMALL</name>
+	<name>DE_DRONE_DEFENSE_SCATTER</name>
+	<name>DE_DRONE_DEFENSE_3</name>
+	<name>DE_DRONE_DEFENSE_MINESWEEPER</name>
+	<name>DE_DRONE_DEFENSE_SVCH</name><!-- 1.25 -->
+	<name>TB_SHIP_REPAIR</name>
+
+	<name>DE_ANTI_DRONE_2</name>
+	<name>DE_ANTI_DRONE_EFFECTOR</name>
+	<name>DE_ANTI_DRONE_MISSILES</name>
+	<name>DE_ANTI_DRONE_LASER_HEAVY</name>
+</blueprintList>
+
+
+
+
+<blueprintList name="OVERRIDE_CE_DRONES_AUTO_CONSTRUCTION">
+	<name>REPAIR_OLD</name>
+
+	<name>ANTI_DRONE</name>
+	<name>BOARDER_ION</name>
+
+	<name>TB_SHIP_REPAIR</name>
+	<name>DE_DRONE_DEFENSE_GAUSS</name><!-- 1.21 -->
+	<name>DE_DRONE_DEFENSE_HEAVY</name>
+	<name>DE_DRONE_DEFENSE_HEAVY_SMALL</name>
+
+	<name>DE_DRONE_SHIELD_SMALL</name>
+	<name>DE_ANTI_DRONE_LASER_HEAVY</name>
+</blueprintList>
+
+<blueprintList name="OVERRIDE_CE_ZOLTAN_SHIELD">
+	<name>DE_DRONE_DEFENSE_GAUSS</name><!-- 1.21 -->
+	<name>DE_DRONE_DEFENSE_HEAVY</name>
+	<name>DE_DRONE_DEFENSE_HEAVY_SMALL</name>
+	<name>DE_DRONE_SHIELD_SMALL</name>
+	<name>DE_DRONE_SHIELD_BIG</name>
+	<name>DE_ANTI_DRONE_LASER_HEAVY</name>
+</blueprintList>
+
+

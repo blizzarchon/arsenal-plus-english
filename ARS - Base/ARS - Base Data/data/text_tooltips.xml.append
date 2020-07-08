@@ -1,0 +1,6 @@
+<!-- change dummy text to something very general so there's no confusion -->
+<text name="tooltip_artillery">Artillery: This ship's signature weapon. View its description in the Upgrades tab. More power means faster cooldown.</text>
+<!-- mentions all nearby ships -->
+<text name="tooltip_pulsar">You're close to a pulsar. Periodic waves of electromagnetic energy will disrupt systems of all nearby ships.</text>
+<!-- added new line after first sentence so "Hotkey: ..." is on its own line -->
+<text name="tooltip_autofire">Toggle to activate/deactivate weapons automatically firing.\nHotkey: \1\n\n\2 + AIM can force a weapon to do the opposite of current setting</text> <!-- \1: autofire key, \2: invert autofire key -->

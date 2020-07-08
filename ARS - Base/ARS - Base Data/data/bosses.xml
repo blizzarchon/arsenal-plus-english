@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<!-- 
+-
+-
+NO DLC 
+-
+-
+-->
+
+<shipBlueprint name="BOSS_1_EASY" layout="boss_1_easy" img="boss_1">
+	<class>Rebel Flagship</class>
+	<systemList>
+		<pilot power="3" room="0"/> 
+		<shields power="6" room="1"/> 
+		<doors power="3" room="17"/> 
+		<!--<teleporter power="2" room="3"/> -->
+		<cloaking power="2" room="15"/> 
+		<!--<weapons power="1" room="6"/> -->
+		<!--<sensors power="2" room="13"/>-->
+		<medbay power="3" room="5"/> 
+		<engines power="2" room="8"/> 
+		<oxygen power="2" room="7"/>
+		<!--<drones power="1" room="12"/>-->
+		<artillery power="2" room="9" weapon="ARTILLERY_BOSS_1_EASY"/>
+		<artillery power="2" room="10" weapon="ARTILLERY_BOSS_2_EASY" />
+		<artillery power="2" room="14" weapon="ARTILLERY_BOSS_3_EASY"/>
+		<artillery power="2" room="18" weapon="ARTILLERY_BOSS_4_EASY"/>
+	</systemList>
+	<weaponList count="0" missiles="10"/>
+	<droneList count="0" drones="2"/>
+	<health amount="18"/>	
+	<maxPower amount ="45"/>
+</shipBlueprint>
+<shipBlueprint name="BOSS_2_EASY" layout="boss_2_easy" img="boss_2">
+	<class>Rebel Flagship</class>
+	<systemList>
+		<pilot power="3" room="0"/> 
+		<shields power="6" room="1"/>  
+		<!--<teleporter power="2" room="3"/>  -->
+		<!--<weapons power="1" room="6"/>  -->
+		<medbay power="3" room="5"/>  
+		<engines power="4" room="8"/> 
+		<oxygen power="2" room="7"/>
+		<!--<sensors power="2" room="13"/>-->
+		<drones power="4" room="12"/>
+		<artillery power="2" room="9" weapon="ARTILLERY_BOSS_1_EASY"/>
+		<artillery power="2" room="10" weapon="ARTILLERY_BOSS_2_EASY"/>
+		<artillery power="2" room="14" weapon="ARTILLERY_BOSS_3_EASY"/>
+	</systemList>
+	<weaponList count="0" missiles="10"/>
+	<droneList count="4" drones="4">
+		<drone name="BOSS_DRONES_1_SLOT_EASY"/>
+		<drone name="BOSS_DRONES_2_SLOT_EASY"/>
+		<drone name="BOSS_DRONES_3_SLOT_EASY"/>
+		<drone name="BOSS_DRONES_4_SLOT_EASY"/>
+	</droneList>
+	<health amount="18"/>	
+	<maxPower amount ="45"/>
+</shipBlueprint>
+<shipBlueprint name="BOSS_3_EASY" layout="boss_3_easy" img="boss_3">
+	<class>Rebel Flagship</class>
+	<systemList>
+		<pilot power="3" room="0"/>  
+		<shields power="6" room="1"/>  
+		<teleporter power="2" room="3"/> 
+		<!--<weapons power="4" room="6"/>  -->
+		<medbay power="3" room="5"/>   
+		<engines power="6" room="8"/>
+		<oxygen power="2" room="7"/>
+		<artillery power="2" room="9" weapon="ARTILLERY_BOSS_1_EASY"/>
+		<artillery power="2" room="10" weapon="ARTILLERY_BOSS_2_EASY"/>
+	</systemList>
+	<weaponList count="0" missiles="10"/>
+		<!--<weapon name="ION_HEAVY_1"/>
+		<weapon name="BEAM_FIRE"/>
+	</weaponList>-->
+	<health amount="18"/>	
+	<maxPower amount ="45"/>
+	<boardingAI>invasion</boardingAI>
+</shipBlueprint>
+
+
+<shipBlueprint name="BOSS_1_NORMAL" layout="boss_1" img="bossN_1"> <!-- 1.25 -->
+	<class>Rebel Flagship</class>
+	<systemList>
+		<pilot power="3" room="0"/> 
+		<shields power="8" room="1"/> 
+		<doors power="3" room="17"/> 
+		<!--<teleporter power="2" room="3"/> -->
+		<cloaking power="2" room="15"/> 
+		<!--<weapons power="1" room="6"/> -->
+		<!--<sensors power="2" room="13"/>-->
+		<medbay power="3" room="5"/> 
+		<engines power="2" room="8"/> 
+		<oxygen power="2" room="7"/>
+		<!--<drones power="1" room="12"/>-->
+		<artillery power="4" room="9" weapon="ARTILLERY_BOSS_1"/>
+		<artillery power="4" room="10" weapon="ARTILLERY_BOSS_2_NORMALLIST" /> <!-- 1.27 -->
+		<artillery power="3" room="14" weapon="ARTILLERY_BOSS_3"/>
+		<artillery power="3" room="18" weapon="ARTILLERY_BOSS_4_NORMALLIST"/><!-- 1.27 -->
+	</systemList>
+	<weaponList count="0" missiles="10"/>
+	<droneList count="0" drones="2"/>
+	<health amount="20"/>	
+	<maxPower amount ="45"/>
+	<aug name="FTL_JAMMER"/>
+	<!-- <aug name="SHIELD_RECHARGE"/> --> <!-- 1.25 -->
+</shipBlueprint>
+<shipBlueprint name="BOSS_2_NORMAL" layout="boss_2" img="bossN_2"> <!-- 1.25 -->
+	<class>Rebel Flagship</class>
+	<systemList>
+		<pilot power="3" room="0"/> 
+		<shields power="8" room="1"/>  
+		<!--<teleporter power="2" room="3"/>  -->
+		<!--<weapons power="1" room="6"/>  -->
+		<medbay power="3" room="5"/>  
+		<engines power="4" room="8"/> 
+		<oxygen power="2" room="7"/>
+		<!--<sensors power="2" room="13"/>-->
+		<drones power="6" room="12"/>
+		<artillery power="4" room="9" weapon="ARTILLERY_BOSS_1"/>
+		<artillery power="4" room="10" weapon="ARTILLERY_BOSS_2_NORMALLIST" /> <!-- 1.27 -->
+		<artillery power="3" room="14" weapon="ARTILLERY_BOSS_3"/>
+	</systemList>
+	<weaponList count="0" missiles="10"/>
+	<droneList count="4" drones="8">
+		<drone name="BOSS_DRONES_1_SLOT_NORMAL"/>
+		<drone name="BOSS_DRONES_2_SLOT_NORMAL"/>
+		<drone name="BOSS_DRONES_3_SLOT_NORMAL"/>
+		<drone name="BOSS_DRONES_4_SLOT_NORMAL"/>
+	</droneList>
+	<health amount="20"/>	
+	<maxPower amount ="45"/>
+	<aug name="FTL_JAMMER"/>
+	<!-- <aug name="SHIELD_RECHARGE"/> --> <!-- 1.25 -->
+</shipBlueprint>
+<shipBlueprint name="BOSS_3_NORMAL" layout="boss_3" img="bossN_3"> <!-- 1.25 -->
+	<class>Rebel Flagship</class>
+	<systemList>
+		<pilot power="3" room="0"/>  
+		<shields power="8" room="1"/>  
+		<teleporter power="2" room="3"/> 
+		<!--<weapons power="4" room="6"/>  -->
+		<drones power="6" room="6"/>   
+		<engines power="6" room="8"/>
+		<oxygen power="2" room="7"/>
+		<artillery power="4" room="9" weapon="ARTILLERY_BOSS_1"/>
+		<artillery power="4" room="10" weapon="ARTILLERY_BOSS_2_NORMALLIST" /> <!-- 1.27 -->
+	</systemList>
+	<weaponList count="0" missiles="10"/>
+	<droneList count="4" drones="4">
+		<drone name="REPAIR_OLD"/>
+		<!-- <drone name="REPAIR_OLD"/> --> <!-- 1.25 -->
+		<drone name="DE_BATTLE_3"/>
+		<!-- <drone name="DE_BATTLE_3"/> --> <!-- 1.25 -->
+	</droneList>
+	<health amount="20"/>	
+	<maxPower amount ="45"/>
+	<boardingAI>invasion</boardingAI>
+	<!-- <aug name="SHIELD_RECHARGE"/> --> <!-- 1.25 -->
+</shipBlueprint>
+
+
+<shipBlueprint name="BOSS_1_HARD" layout="boss_1" img="bossH_1"> <!-- 1.25 -->
+	<class>Rebel Flagship</class>
+	<systemList>
+		<pilot power="3" room="0"/> 
+		<shields power="8" room="1"/> 
+		<doors power="3" room="17"/> 
+		<!--<teleporter power="2" room="3"/> -->
+		<cloaking power="2" room="15"/> 
+		<!--<weapons power="1" room="6"/> -->
+		<!--<sensors power="2" room="13"/> -->
+		<medbay power="3" room="4"/> <!-- 1.25, room was 5 -->
+		<engines power="2" room="8"/> 
+		<oxygen power="2" room="7"/>
+		<!--<drones power="1" room="12"/>-->
+		<artillery power="4" room="9" weapon="ARTILLERY_BOSS_1_HARD"/>
+		<artillery power="4" room="10" weapon="ARTILLERY_BOSS_2_HARDLIST" /> <!-- 1.27 -->
+		<artillery power="3" room="14" weapon="ARTILLERY_BOSS_3_HARD"/>
+		<artillery power="3" room="18" weapon="ARTILLERY_BOSS_4_HARDLIST"/><!-- 1.27 -->
+	</systemList>
+	<weaponList count="0" missiles="10"/>
+	<droneList count="0" drones="2"/>
+	<health amount="22"/>	
+	<maxPower amount ="45"/>
+	<!-- <aug name="SHIELD_RECHARGE"/> --> <!-- 1.25 -->
+	<aug name="FTL_JAMMER"/>
+	<!-- <aug name="SHIELD_RECHARGE"/> --> <!-- 1.25 -->
+</shipBlueprint>
+<shipBlueprint name="BOSS_2_HARD" layout="boss_2" img="bossH_2"> <!-- 1.25 -->
+	<class>Rebel Flagship</class>
+	<systemList>
+		<pilot power="3" room="0"/> 
+		<shields power="8" room="1"/>  
+		<!--<teleporter power="2" room="3"/>  -->
+		<!--<weapons power="1" room="6"/>  -->
+		<medbay power="3" room="4"/>  <!-- 1.25, room was 5 -->
+		<engines power="4" room="8"/> 
+		<oxygen power="2" room="7"/>
+		<!--<sensors power="2" room="13"/>-->
+		<drones power="8" room="12"/>
+		<artillery power="4" room="9" weapon="ARTILLERY_BOSS_1_HARD"/>
+		<artillery power="4" room="10" weapon="ARTILLERY_BOSS_2_HARDLIST" /> <!-- 1.27 -->
+		<artillery power="3" room="14" weapon="ARTILLERY_BOSS_3_HARD"/>
+	</systemList>
+	<weaponList count="0" missiles="10"/>
+	<droneList count="4" drones="12">
+		<drone name="BOSS_DRONES_1_SLOT_HARD"/>
+		<drone name="BOSS_DRONES_2_SLOT_HARD"/>
+		<drone name="BOSS_DRONES_3_SLOT_HARD"/>
+		<drone name="BOSS_DRONES_4_SLOT_HARD"/>
+	</droneList>
+	<health amount="22"/>	
+	<maxPower amount ="45"/>
+	<aug name="FTL_JAMMER"/>
+	<!-- <aug name="SHIELD_RECHARGE"/> --> <!-- 1.25 -->
+	<!-- <aug name="SHIELD_RECHARGE"/> --> <!-- 1.25 -->
+</shipBlueprint>
+<shipBlueprint name="BOSS_3_HARD" layout="boss_3" img="bossH_3"> <!-- 1.25 -->
+	<class>Rebel Flagship</class>
+	<systemList>
+		<pilot power="3" room="0"/>  
+		<shields power="8" room="1"/>  
+		<teleporter power="2" room="5"/> <!-- 1.25, room was 3 -->
+		<drones power="6" room="6"/>
+		<!--<weapons power="4" room="6"/>  -->
+		<medbay power="3" room="4"/> <!-- 1.25, room was 5 -->
+		<engines power="6" room="8"/>
+		<oxygen power="2" room="7"/>
+		<artillery power="4" room="9" weapon="ARTILLERY_BOSS_1_HARD"/>
+		<artillery power="4" room="10" weapon="ARTILLERY_BOSS_2_HARDLIST" /> <!-- 1.27 -->
+	</systemList>
+	<weaponList count="0" missiles="10"/>
+	<droneList count="3" drones="8">
+		<drone name="REPAIR_OLD"/>
+		<drone name="REPAIR_OLD"/>
+		<drone name="DE_BATTLE_3"/>
+		<drone name="DE_BATTLE_3"/>
+	</droneList>
+	<health amount="22"/>	
+	<maxPower amount ="45"/>
+	<boardingAI>invasion</boardingAI>
+	<aug name="SLUG_GEL"/>
+	<!-- <aug name="SHIELD_RECHARGE"/> --> <!-- 1.25 -->
+	<!-- <aug name="SHIELD_RECHARGE"/> --> <!-- 1.25 -->
+</shipBlueprint>
+
+
+
+
+
+
+
+<!-- 
+-
+-
+DLC!!!
+-
+-
+-->
+
+<shipBlueprint name="BOSS_1_EASY_DLC" layout="boss_1_easy" img="boss_1">
+	<class>Rebel Flagship</class>
+	<systemList>
+		<pilot power="3" room="0"/> 
+		<shields power="8" room="1"/> 
+		<doors power="3" room="17"/> 
+		<!--<teleporter power="2" room="3"/> -->
+		<cloaking power="2" room="15"/> 
+		<!--<weapons power="1" room="6"/> -->
+		<!--<sensors power="2" room="13"/>-->
+		<medbay power="3" room="5"/> 
+		<engines power="2" room="8"/> 
+		<oxygen power="2" room="7"/>
+		<!--<drones power="1" room="12"/>-->
+		<hacking power="3" room="2"/>
+		<!--<mind power="1" room="4"/>-->
+		<artillery power="2" room="9" weapon="ARTILLERY_BOSS_1_EASY"/>
+		<artillery power="2" room="10" weapon="ARTILLERY_BOSS_2_EASY" />
+		<artillery power="2" room="14" weapon="ARTILLERY_BOSS_3_EASY"/>
+		<artillery power="2" room="18" weapon="ARTILLERY_BOSS_4_EASY"/>
+	</systemList>
+	<weaponList count="0" missiles="10"/>
+	<droneList count="0" drones="2"/>
+	<health amount="18"/>	
+	<maxPower amount ="45"/>
+</shipBlueprint>
+<shipBlueprint name="BOSS_2_EASY_DLC" layout="boss_2_easy" img="boss_2">
+	<class>Rebel Flagship</class>
+	<systemList>
+		<pilot power="3" room="0"/> 
+		<shields power="8" room="1"/>  
+		<!--<teleporter power="2" room="3"/>  -->
+		<!--<weapons power="1" room="6"/>  -->
+		<medbay power="3" room="5"/>  
+		<engines power="4" room="8"/> 
+		<oxygen power="2" room="7"/>
+		<!--<sensors power="2" room="13"/>-->
+		<drones power="4" room="12"/>
+		<!--<hacking power="1" room="2"/>-->
+		<!--<mind power="1" room="4"/>-->
+		<artillery power="2" room="9" weapon="ARTILLERY_BOSS_1_EASY"/>
+		<artillery power="2" room="10" weapon="ARTILLERY_BOSS_2_EASY" />
+		<artillery power="2" room="14" weapon="ARTILLERY_BOSS_3_EASY"/>
+	</systemList>
+	<weaponList count="0" missiles="10"/>
+	<droneList count="4" drones="4">
+		<drone name="BOSS_DRONES_1_SLOT_EASY"/>
+		<drone name="BOSS_DRONES_2_SLOT_EASY"/>
+		<drone name="BOSS_DRONES_3_SLOT_EASY"/>
+		<drone name="BOSS_DRONES_4_SLOT_EASY"/>
+	</droneList>
+	<health amount="18"/>	
+	<maxPower amount ="45"/>
+</shipBlueprint>
+<shipBlueprint name="BOSS_3_EASY_DLC" layout="boss_3_easy" img="boss_3">
+	<class>Rebel Flagship</class>
+	<systemList>
+		<pilot power="3" room="0"/>  
+		<shields power="8" room="1"/>  
+		<teleporter power="2" room="3"/> 
+		<!--<weapons power="4" room="6"/>  -->
+		<medbay power="3" room="5"/>   
+		<engines power="6" room="8"/>
+		<oxygen power="2" room="7"/>
+		<!--<hacking power="1" room="2"/>-->
+		<mind power="3" room="4"/>
+		<artillery power="2" room="9" weapon="ARTILLERY_BOSS_1_EASY"/>
+		<artillery power="2" room="10" weapon="ARTILLERY_BOSS_2_EASY" />
+	</systemList>
+	<weaponList count="0" missiles="10"/>
+		<!--<weapon name="ION_HEAVY_1"/>
+		<weapon name="BEAM_FIRE"/>
+	</weaponList>-->
+	<health amount="18"/>	
+	<maxPower amount ="45"/>
+	<boardingAI>invasion</boardingAI>
+</shipBlueprint>
+
+
+<shipBlueprint name="BOSS_1_NORMAL_DLC" layout="boss_1" img="bossN_1">
+	<class>Rebel Flagship</class>
+	<systemList>
+		<pilot power="3" room="0"/> 
+		<shields power="8" room="1"/> 
+		<doors power="3" room="17"/> 
+		<!--<teleporter power="2" room="3"/> -->
+		<cloaking power="2" room="15"/> 
+		<!--<weapons power="1" room="6"/> -->
+		<!--<sensors power="2" room="13"/>-->
+		<medbay power="3" room="5"/> 
+		<engines power="2" room="8"/> 
+		<oxygen power="2" room="7"/>
+		<!--<drones power="1" room="12"/>-->
+		<hacking power="3" room="2"/>
+		<!--<mind power="1" room="4"/>-->
+		<artillery power="4" room="9" weapon="ARTILLERY_BOSS_1"/>
+		<artillery power="4" room="10" weapon="ARTILLERY_BOSS_2_NORMALLIST" /> <!-- 1.27 -->
+		<artillery power="3" room="14" weapon="ARTILLERY_BOSS_3"/>
+		<artillery power="3" room="18" weapon="ARTILLERY_BOSS_4_NORMALLIST"/><!-- 1.27 -->
+	</systemList>
+	<weaponList count="0" missiles="10"/>
+	<droneList count="0" drones="4"/>
+	<health amount="20"/>	
+	<maxPower amount ="45"/>
+	<aug name="FTL_JAMMER"/>
+	<!-- <aug name="SHIELD_RECHARGE"/> --> <!-- 1.25 -->
+</shipBlueprint>
+<shipBlueprint name="BOSS_2_NORMAL_DLC" layout="bossN_2" img="bossN_2">
+	<class>Rebel Flagship</class>
+	<systemList>
+		<pilot power="3" room="0"/> 
+		<shields power="8" room="1"/>  
+		<!--<teleporter power="2" room="3"/>  -->
+		<!--<weapons power="1" room="6"/>  -->
+		<medbay power="3" room="5"/>  
+		<engines power="4" room="8"/> 
+		<oxygen power="2" room="7"/>
+		<!--<sensors power="2" room="13"/>-->
+		<drones power="6" room="12"/>
+		<!--<hacking power="1" room="2"/>-->
+		<!--<mind power="1" room="4"/>-->
+		<artillery power="4" room="9" weapon="ARTILLERY_BOSS_1"/>
+		<artillery power="4" room="10" weapon="ARTILLERY_BOSS_2_NORMALLIST" /> <!-- 1.27 -->
+		<artillery power="3" room="14" weapon="ARTILLERY_BOSS_3"/>
+	</systemList>
+	<weaponList count="0" missiles="10"/>
+	<droneList count="4" drones="8">
+		<drone name="BOSS_DRONES_1_SLOT_NORMAL"/>
+		<drone name="BOSS_DRONES_2_SLOT_NORMAL"/>
+		<drone name="BOSS_DRONES_3_SLOT_NORMAL"/>
+		<drone name="BOSS_DRONES_4_SLOT_NORMAL"/>
+	</droneList>
+	<health amount="20"/>	
+	<maxPower amount ="45"/>
+	<aug name="FTL_JAMMER"/>
+	<!-- <aug name="SHIELD_RECHARGE"/> --> <!-- 1.25 -->
+</shipBlueprint>
+<shipBlueprint name="BOSS_3_NORMAL_DLC" layout="bossN_3" img="bossN_3">
+	<class>Rebel Flagship</class>
+	<systemList>
+		<pilot power="3" room="0"/>  
+		<shields power="8" room="1"/>  
+		<teleporter power="2" room="3"/> 
+		<!--<weapons power="4" room="6"/>  -->
+		<drones power="6" room="6"/>   
+		<engines power="6" room="8"/>
+		<oxygen power="2" room="7"/>
+		<!--<hacking power="1" room="2"/>-->
+		<mind power="3" room="4"/>
+		<artillery power="4" room="9" weapon="ARTILLERY_BOSS_1"/>
+		<artillery power="4" room="10" weapon="ARTILLERY_BOSS_2_NORMALLIST" /> <!-- 1.27 -->
+	</systemList>
+	<weaponList count="0" missiles="10"/>
+	<droneList count="4" drones="4">
+		<drone name="REPAIR_OLD"/>
+		<!-- <drone name="REPAIR_OLD"/> --> <!-- 1.25 -->
+		
+		<drone name="DE_BATTLE_3"/>
+		<!-- <drone name="DE_BATTLE_3"/> --> <!-- 1.25 -->
+	</droneList>
+		<!--<weapon name="ION_HEAVY_1"/>
+		<weapon name="BEAM_FIRE"/>
+	</weaponList>-->
+	<health amount="20"/>	
+	<maxPower amount ="45"/>
+	<boardingAI>invasion</boardingAI>
+	<!-- <aug name="SHIELD_RECHARGE"/> --> <!-- 1.25 -->
+</shipBlueprint>
+
+
+<shipBlueprint name="BOSS_1_HARD_DLC" layout="bossH_1" img="bossH_1"><!-- 1.25 --> <!-- new txt and xml -->
+	<class>Rebel Flagship</class>
+	<systemList>
+		<pilot power="3" room="0"/> 
+		<shields power="8" room="1"/> 
+		<doors power="3" room="17"/> 
+		<!--<teleporter power="2" room="3"/> -->
+		<cloaking power="2" room="15"/> 
+		<!--<weapons power="1" room="6"/> -->
+		<!--<sensors power="2" room="13"/>-->
+		<medbay power="3" room="4"/> <!-- 1.25, room was 5 -->
+		<engines power="2" room="8"/> 
+		<oxygen power="2" room="7"/>
+		<!--<drones power="1" room="12"/>-->
+		<hacking power="3" room="2"/>
+		<!--<mind power="1" room="4"/>-->
+		<artillery power="4" room="9" weapon="ARTILLERY_BOSS_1_HARD"/>
+		<artillery power="4" room="10" weapon="ARTILLERY_BOSS_2_HARDLIST" /> <!-- 1.27 -->
+		<artillery power="3" room="14" weapon="ARTILLERY_BOSS_3_HARD"/>
+		<artillery power="3" room="18" weapon="ARTILLERY_BOSS_4_HARDLIST"/><!-- 1.27 -->
+	</systemList>
+	<weaponList count="0" missiles="10"/>
+	<droneList count="0" drones="6"/>
+	<health amount="22"/>	
+	<maxPower amount ="45"/>
+	<aug name="FTL_JAMMER"/>
+	<!-- <aug name="SHIELD_RECHARGE"/> --> <!-- 1.25 -->
+	<!-- <aug name="SHIELD_RECHARGE"/> --> <!-- 1.25 -->
+</shipBlueprint>
+<shipBlueprint name="BOSS_2_HARD_DLC" layout="bossH_2" img="bossH_2"><!-- 1.25 --> <!-- new txt and xml -->
+	<class>Rebel Flagship</class>
+	<systemList>
+		<pilot power="3" room="0"/> 
+		<shields power="8" room="1"/>  
+		<!--<teleporter power="2" room="3"/>  -->
+		<!--<weapons power="1" room="6"/>  -->
+		<medbay power="3" room="4"/> <!-- 1.25, room was 5 -->
+		<engines power="4" room="8"/> 
+		<oxygen power="2" room="7"/>
+		<!--<sensors power="2" room="13"/>-->
+		<drones power="8" room="12"/>
+		<!--<hacking power="1" room="2"/>-->
+		<!--<mind power="1" room="4"/>-->
+		<artillery power="4" room="9" weapon="ARTILLERY_BOSS_1_HARD"/>
+		<artillery power="4" room="10" weapon="ARTILLERY_BOSS_2_HARDLIST" /> <!-- 1.27 -->
+		<artillery power="3" room="14" weapon="ARTILLERY_BOSS_3_HARD"/>
+	</systemList>
+	<weaponList count="0" missiles="10"/>
+	<droneList count="4" drones="12">
+		<drone name="BOSS_DRONES_1_SLOT_HARD"/>
+		<drone name="BOSS_DRONES_2_SLOT_HARD"/>
+		<drone name="BOSS_DRONES_3_SLOT_HARD"/>
+		<drone name="BOSS_DRONES_4_SLOT_HARD"/>
+	</droneList>
+	<health amount="22"/>	
+	<maxPower amount ="45"/>
+	<aug name="FTL_JAMMER"/>
+	<!-- <aug name="SHIELD_RECHARGE"/> --> <!-- 1.25 -->
+	<!-- <aug name="SHIELD_RECHARGE"/> --> <!-- 1.25 -->
+</shipBlueprint>
+<shipBlueprint name="BOSS_3_HARD_DLC" layout="bossH_3" img="bossH_3"><!-- 1.26 --> <!-- new bossH_3_gib3.png -->
+	<class>Rebel Flagship</class>
+	<systemList>
+		<pilot power="3" room="0"/>  
+		<shields power="8" room="1"/>  
+		<teleporter power="2" room="5"/> <!-- 1.25, room was 3 -->
+		<drones power="6" room="6"/>
+		<!--<weapons power="4" room="6"/>  -->
+		<medbay power="3" room="4"/> <!-- 1.25, room was 5 -->
+		<engines power="6" room="8"/>
+		<oxygen power="2" room="7"/>
+		<!--<hacking power="1" room="2"/>-->
+		<mind power="3" room="3"/> <!-- 1.25, room was 4 -->
+		<artillery power="4" room="9" weapon="ARTILLERY_BOSS_1_HARD"/>
+		<artillery power="4" room="10" weapon="ARTILLERY_BOSS_2_HARDLIST" /> <!-- 1.27 -->
+	</systemList>
+	<weaponList count="0" missiles="10"/>
+	<droneList count="4" drones="8">
+		<drone name="REPAIR_OLD"/>
+		<drone name="REPAIR_OLD"/>
+		<drone name="DE_BATTLE_3"/>
+		<drone name="DE_BATTLE_3"/>
+	</droneList>
+	<health amount="22"/>	
+	<maxPower amount ="45"/>
+	<boardingAI>invasion</boardingAI>
+	<aug name="SLUG_GEL"/>
+	<!-- <aug name="SHIELD_RECHARGE"/> --> <!-- 1.25 -->
+	<!-- <aug name="SHIELD_RECHARGE"/> --> <!-- 1.25 -->
+</shipBlueprint>

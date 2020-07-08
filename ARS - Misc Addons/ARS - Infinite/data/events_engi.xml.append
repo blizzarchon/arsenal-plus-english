@@ -1,0 +1,6 @@
+
+<mod:findName type="eventList" name="QUESTS_MORPH">
+	<mod:findLike type="event"><mod:selector load="MENGI_CRYSTAL_EVENT" />
+		<mod:removeTag />
+	</mod:findLike>
+</mod:findName>

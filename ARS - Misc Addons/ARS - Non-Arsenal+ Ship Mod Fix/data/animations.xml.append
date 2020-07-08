@@ -1,0 +1,51 @@
+<!-- in case the ship mod adds these animation names back in -->
+
+<!-- vanilla non-AE ion weapon art -->
+<mod:findName type="animSheet" name="ion_1">
+	<mod:setAttributes name="ion_blast_1" />
+</mod:findName>
+<mod:findName type="weaponAnim" name="ion_1">
+	<mod:setAttributes name="ion_blast_1" />
+	<mod-overwrite:sheet>ion_blast_1</mod-overwrite:sheet>
+</mod:findName>
+
+<mod:findName type="animSheet" name="ion_2">
+	<mod:setAttributes name="ion_blast_2" />
+</mod:findName>
+<mod:findName type="weaponAnim" name="ion_2">
+	<mod:setAttributes name="ion_blast_2" />
+	<mod-overwrite:sheet>ion_blast_2</mod-overwrite:sheet>
+</mod:findName>
+
+<mod:findName type="animSheet" name="ion_4">
+	<mod:setAttributes name="ion_blast_3" />
+</mod:findName>
+<mod:findName type="weaponAnim" name="ion_4">
+	<mod:setAttributes name="ion_blast_3" />
+	<mod-overwrite:sheet>ion_blast_3</mod-overwrite:sheet>
+</mod:findName>
+
+<!-- vanilla non-AE ion projectiles -->
+<mod:findName type="animSheet" name="ion_1_shot">
+	<mod:setAttributes name="ion_blast_1_shot" />
+</mod:findName>
+<mod:findName type="anim" name="ion_1_shot">
+	<mod:setAttributes name="ion_blast_1_shot" />
+	<mod-overwrite:sheet>ion_blast_1_shot</mod-overwrite:sheet>
+</mod:findName>
+
+<mod:findName type="animSheet" name="ion_2_shot">
+	<mod:setAttributes name="ion_blast_2_shot" />
+</mod:findName>
+<mod:findName type="anim" name="ion_2_shot">
+	<mod:setAttributes name="ion_blast_2_shot" />
+	<mod-overwrite:sheet>ion_blast_2_shot</mod-overwrite:sheet>
+</mod:findName>
+
+<mod:findName type="animSheet" name="ion_4_shot">
+	<mod:setAttributes name="ion_blast_3_shot" />
+</mod:findName>
+<mod:findName type="anim" name="ion_4_shot">
+	<mod:setAttributes name="ion_blast_3_shot" />
+	<mod-overwrite:sheet>ion_blast_3_shot</mod-overwrite:sheet>
+</mod:findName>

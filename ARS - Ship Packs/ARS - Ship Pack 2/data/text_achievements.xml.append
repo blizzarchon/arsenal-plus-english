@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- KESTREL ACHIEVEMENTS -->
+<text name="ACH_UNITED_FEDERATION_desc">Have six unique aliens on the starting ship simultaneously.</text>
+<text name="ACH_FULL_ARSENAL_desc">Have 11 systems installed on the starting ship at one time.</text>
+<text name="ACH_TOUGH_SHIP_desc">As the starting ship, repair back to full health when it only has 1 HP remaining.</text>
+
+<!-- STEALTH ACHIEVEMENTS -->
+<text name="ACH_STEALTH_DESTROY_desc">Destroy a ship at full health during a single cloak in a Hacker ship or a Drone.</text>
+<text name="ACH_STEALTH_AVOID_desc">With a Hacker ship or a Drone, avoid 9 points of damage during a single cloak.</text>
+<text name="ACH_STEALTH_TACTICAL_desc">With a Hacker ship or a Drone, get to sector 8 without jumping to a beacon with an environmental danger.</text>
+
+<!-- FEDERATION CRUISER ACHIEVEMENTS -->
+<text name="ACH_FED_DIPLOMACY_desc">While using a Federation transport, Marauder or Order Flagship, use your crew in 4 special blue event choices by sector 5.</text>
+<text name="ACH_FED_UPGRADE_desc">Get to sector 5 in a Federation transport, Marauder or Order Flagship without upgrading your Weapons system.</text>

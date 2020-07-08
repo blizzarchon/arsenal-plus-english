@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<text name="ACH_NO_MISSILES_desc">Get to sector 8 without using missiles, mines, or bombs.</text>
+
+<text name="ACH_ONLY_DRONES_desc">With the Engi Cruiser, destroy an enemy ship without using any weapons.</text><!-- using "only" drones is a lie! -->
+
+<text name="ACH_FED_PATIENCE_desc">Use only the Artillery system to destroy an enemy ship while taking no hull damage.</text>
+<text name="ACH_FED_DIPLOMACY_desc">While using the Federation Cruiser, use your crew in 4 special blue event choices by sector 5 (talking to crew doesn't count).</text>

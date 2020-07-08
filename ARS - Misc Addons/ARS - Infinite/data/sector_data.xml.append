@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<sectorDescription name="CRYSTAL_HOME" minSector="7" unique="true"> <!-- !!! -->
+	<nameList>
+		<name>Remote Sector</name>
+	</nameList>
+	<trackList>
+		<track>kepler</track><!-- 1.25 -->
+		<track>infinity</track>
+		<track>calm</track>
+		<track>colonial</track>
+		<track>demiurge</track>
+		<track>lostship</track>
+		<track>rock</track>
+		<track>vacuum</track>
+		<track>void</track>
+		<track>deepspace</track>
+		<track>engi</track>
+		<track>slug</track>
+		<track>debris</track>
+		<track>burn</track>
+		<track>mantis</track>
+		<track>ramble</track>
+		<track>hacking</track>
+		<track>incursor</track>
+		<track>wasteland</track>
+		<track>zoltan</track>
+		<track>cosmos</track>
+		<track>nebulaha</track>
+		<track>milkyway</track>
+		<track>civilian</track>
+		<track>solar</track>
+		<track>nebulagri</track>
+		<track>shrike</track>
+		<track>ntr</track>
+	</trackList>
+	<rarityList>
+		<blueprint name="engi" rarity="2"/>
+		<blueprint name="mantis" rarity="3"/>
+		<blueprint name="energy" rarity="4"/>
+		<blueprint name="slug" rarity="4"/>
+		<blueprint name="rock" rarity="3"/>
+		<blueprint name="human" rarity="1"/>
+		<blueprint name="ghost" rarity="4"/>
+		<blueprint name="crystal" rarity="5"/>
+		<blueprint name="anaerobic" rarity="5"/>
+		
+		<blueprint name="PREIGNITE_SHOTGUN_IMPULSE_1" rarity="5"/><!-- 1.23 -->
+		<blueprint name="PREIGNITE_SHOTGUN_IMPULSE_2" rarity="5"/><!-- 1.23 -->
+		<blueprint name="PREIGNITE_SHOTGUN_IMPULSE_3" rarity="5"/><!-- 1.23 -->
+		<blueprint name="PREIGNITE_PP_IMPULSE_1" rarity="5"/><!-- 1.23 -->
+		<blueprint name="PREIGNITE_PP_IMPULSE_2" rarity="5"/><!-- 1.23 -->
+		<blueprint name="PREIGNITE_PP_IMPULSE_3" rarity="5"/><!-- 1.23 -->
+		<blueprint name="PREIGNITE_ION_IMPULSE_1" rarity="5"/><!-- 1.23 -->
+		<blueprint name="PREIGNITE_ION_IMPULSE_2" rarity="5"/><!-- 1.23 -->
+		<blueprint name="PREIGNITE_ION_IMPULSE_3" rarity="5"/><!-- 1.23 -->
+		<blueprint name="PREIGNITE_PLASMA_IMPULSE_1" rarity="5"/><!-- 1.23 -->
+		<blueprint name="PREIGNITE_PLASMA_IMPULSE_2" rarity="5"/><!-- 1.23 -->
+		<blueprint name="PREIGNITE_PLASMA_IMPULSE_3" rarity="5"/><!-- 1.23 -->
+		
+		<blueprint name="ORDEN2_MISSILES" rarity="5"/>
+		<blueprint name="ORDEN3_MISSILES" rarity="5"/>
+		<blueprint name="LASER_DUAL_ORDEN" rarity="5"/>
+		<blueprint name="LASER_DUAL_ORDEN_2" rarity="5"/>
+		<blueprint name="BA_LASER_ADDFIRE" rarity="5"/>
+		<blueprint name="LASER_HEAVY_CUMULATIVE" rarity="5"/>
+		<blueprint name="GAUSS_ORDEN_MOD1" rarity="5"/>
+		<blueprint name="GAUSS_ORDEN_MOD2" rarity="5"/>
+		<blueprint name="GAUSS_ORDEN_PP" rarity="5"/>
+		<blueprint name="GAUSS_MIXER_M1" rarity="5"/>
+		<blueprint name="GAUSS_MIXER_M2" rarity="5"/>
+		<blueprint name="GAUSS_MIXER_M3" rarity="5"/>
+		<blueprint name="BEAM_SCALPEL" rarity="5"/>
+		<blueprint name="FIRE_HELL_BEAM" rarity="5"/>
+		<blueprint name="MISSILES_KARAKURT" rarity="5"/>
+		<blueprint name="MISSILES_V3" rarity="5"/>
+		<blueprint name="MESON_CANNON" rarity="5"/>
+		<blueprint name="ION_HEAVY_FIRE_1" rarity="5"/>
+		<blueprint name="ION_HEAVY_FIRE_2" rarity="5"/>
+		<blueprint name="ION_HEAVY_FIRE_3" rarity="5"/>
+		<blueprint name="ION_BLAST_FIRE_1" rarity="5"/>
+		<blueprint name="ION_BLAST_FIRE_2" rarity="5"/>
+		<blueprint name="ION_BLAST_FIRE_3" rarity="5"/>
+		<blueprint name="PHOTO_1" rarity="5"/>
+		<blueprint name="PHOTO_2" rarity="5"/>
+		<blueprint name="PHOTO_HEAVY_1" rarity="5"/>
+		<blueprint name="PHOTO_HEAVY_2" rarity="5"/>
+		<blueprint name="PHOTO_CHAINGUN" rarity="5"/>
+		<blueprint name="BOMB_LOCK" rarity="5"/>
+		<blueprint name="CRYSTAL_BURST_1" rarity="5"/>
+		<blueprint name="CRYSTAL_BURST_2" rarity="5"/>
+		<blueprint name="CRYSTAL_HEAVY_1" rarity="5"/>
+		<blueprint name="CRYSTAL_HEAVY_2" rarity="5"/>
+		<blueprint name="BA_CRYSTAL_LIGHT_1" rarity="5"/>
+		<blueprint name="BA_CRYSTAL_LIGHT_2" rarity="5"/>
+		<blueprint name="BA_CRYSTAL_HEAVY_LOCKDOWN_1" rarity="5"/>
+		<blueprint name="BA_CRYSTAL_HEAVY_LOCKDOWN_2" rarity="5"/>
+		<blueprint name="BA_BOMB_LOCK_2" rarity="5"/>
+		<blueprint name="DE_DRONE_CRYSTAL" rarity="5"/>
+		<blueprint name="DE_DRONE_CRYSTAL_2" rarity="5"/>
+		<blueprint name="DE_DRONE_CRYSTAL_HEAVY" rarity="5"/>
+		<blueprint name="DE_DRONE_CRYSTAL_LIGHT" rarity="5"/>
+		<blueprint name="DE_DRONE_DEFENSE_CRYSTAL_LIGHT" rarity="5"/>
+		<blueprint name="DE_DRONE_ANTI_CRYSTAL_HEAVY" rarity="5"/>
+		<!-- 1.26 -->
+		<blueprint name="EP_BA_BEAM_BARDICHE" rarity="5"/>
+		<blueprint name="EP_BA_BEAM_BO" rarity="5"/>
+		<blueprint name="EP_BA_BEAM_SCYTHE" rarity="5"/>
+		<blueprint name="EP_BA_BEAM_HASTA" rarity="5"/>
+		<blueprint name="EP_BA_BEAM_NAGINATA" rarity="5"/>
+		<blueprint name="EP_BA_BEAM_FLAIL_DAMAGE" rarity="5"/>
+		<blueprint name="EP_BA_BEAM_SHEST" rarity="5"/>
+		<blueprint name="EP_BA_BEAM_K1" rarity="5"/>
+		<blueprint name="EP_BA_BEAM_K2" rarity="5"/>
+		<blueprint name="EP_BEAM_2" rarity="5"/>
+		<blueprint name="EP_BEAM_3" rarity="5"/>
+		<blueprint name="EP_BEAM_BIOFIRE" rarity="5"/>
+		<blueprint name="EP_BEAM_FAUCHARD" rarity="5"/>
+		<blueprint name="EP_BEAM_GUISARME" rarity="5"/>
+		<blueprint name="EP_BEAM_LONG" rarity="5"/>
+		<blueprint name="EP_BEAM_SP_KATANA" rarity="5"/>
+		<blueprint name="EP_BEAM_SP_DAITO" rarity="5"/>
+		<blueprint name="BA_ION_HVBURST_1" rarity="5"/>
+		<blueprint name="BA_ION_HVBURST_2" rarity="5"/>
+		<blueprint name="BA_ION_HVBURST_3" rarity="5"/>
+		
+		<blueprint name="UWB_LASER_BURST_1" rarity="5"/>
+		<blueprint name="UWB_LASER_HEAVY_1" rarity="5"/>
+		<blueprint name="UWB_LASER_STANDARD_1" rarity="5"/>
+		<blueprint name="UWB_LASER_STANDARD_2" rarity="5"/>
+		<blueprint name="UWB_LASER_DUAL_1" rarity="5"/>
+		<blueprint name="UWB_LASER_DUAL_2" rarity="5"/>
+		<blueprint name="UWB_BA_SHOTGUN_SMALL" rarity="5"/>
+		<blueprint name="UWB_BA_PLASMA_1" rarity="5"/>
+		<blueprint name="UWB_BA_LASER_AUTO_1" rarity="5"/>
+		<blueprint name="UWB_BA_LASER_AUTO_2" rarity="5"/>
+		<blueprint name="UWB_BA_LASER_BURST_SCATTER_1" rarity="5"/>
+		<blueprint name="UWB_BA_LASER_BURST_SCATTER_2" rarity="5"/>
+		<blueprint name="UWB_BA_LASER_HEAVY_SCATTER_1" rarity="5"/>
+		<blueprint name="UWB_BA_LASER_HEAVY_SCATTER_2" rarity="5"/>
+		<blueprint name="UWB_BA_LASER_HULL_SMALL" rarity="5"/>
+		<blueprint name="UWB_SHTURM_LASER_1" rarity="5"/>
+		<blueprint name="UWB_SHTURM_LASER_2" rarity="5"/>
+		<blueprint name="UWB_LASER_BURST_2" rarity="5"/>
+		<blueprint name="UWB_LASER_HEAVY_2" rarity="5"/>
+		<blueprint name="UWB_SHOTGUN" rarity="5"/>
+		<blueprint name="UWB_BA_PLASMA_2" rarity="5"/>
+		<blueprint name="UWB_BA_LASER_AUTO_3" rarity="5"/>
+		<blueprint name="UWB_BA_LASER_BURST_SCATTER_3" rarity="5"/>
+		<blueprint name="UWB_BA_LASER_ARTILLERY_1" rarity="5"/>
+		<blueprint name="UWB_BA_LASER_HULLCRUSHER" rarity="5"/>
+		<blueprint name="UWB_LASER_HULL_1" rarity="5"/>
+		<blueprint name="UWB_LASER_HULL_2" rarity="5"/>
+		<blueprint name="UWB_LASER_IMP_2" rarity="5"/>
+		<blueprint name="UWB_LASER_IMP_3" rarity="5"/>
+		<blueprint name="UWB_LASER_LIGHT_1" rarity="5"/>
+		<blueprint name="UWB_LASER_LIGHT_2" rarity="5"/>
+		<blueprint name="UWB_LASER_LIGHT_SCATTER_1" rarity="5"/>
+		<blueprint name="UWB_LASER_LIGHT_SCATTER_2" rarity="5"/>
+		<blueprint name="UWB_BA_BEAM_BATON" rarity="5"/>
+		<blueprint name="UWB_BA_BEAM_BO" rarity="5"/>
+		<blueprint name="UWB_BA_BEAM_BIO_2" rarity="5"/>
+		<blueprint name="UWB_BEAM_1" rarity="5"/>
+		<blueprint name="UWB_BEAM_LONG" rarity="5"/>
+		<blueprint name="UWB_BEAM_GUISARME" rarity="5"/>
+		<blueprint name="UWB_BA_BEAM_HASTA" rarity="5"/>
+		<blueprint name="UWB_BA_BEAM_HULL_SMALL" rarity="5"/>
+		<blueprint name="UWB_BA_BEAM_AUTO" rarity="5"/>
+		<blueprint name="UWB_BA_BEAM_BARDICHE" rarity="5"/>
+		<blueprint name="UWB_BA_BEAM_SCYTHE" rarity="5"/>
+		<blueprint name="UWB_BEAM_1_2" rarity="5"/>
+		<blueprint name="UWB_BEAM_HULL" rarity="5"/>
+		<blueprint name="UWB_BEAM_FIRE" rarity="5"/>
+		<blueprint name="UWB_BEAM_2" rarity="5"/>
+		<blueprint name="UWB_MISSILES_1" rarity="5"/>
+		<blueprint name="UWB_MISSILES_2_PLAYER" rarity="5"/>
+		<blueprint name="UWB_MISSILES_SYS1" rarity="5"/>
+		<blueprint name="UWB_MISSILES_SYS2" rarity="5"/>
+		<blueprint name="UWB_BA_MISSILES_ASTERIA" rarity="5"/>
+		<blueprint name="UWB_BA_MISSILES_HULL_SMALL" rarity="5"/>
+		<blueprint name="UWB_MISSILES_3" rarity="5"/>
+		<blueprint name="UWB_MISSILES_BURST" rarity="5"/>
+		<blueprint name="UWB_BA_MISSILES_ONI" rarity="5"/>
+		<blueprint name="UWB_MISSILES_HULL" rarity="5"/>
+		<blueprint name="UWB_BA_MISSILES_4" rarity="5"/>
+		<blueprint name="UWB_BA_MISSILES_PERYTON" rarity="5"/>
+		<blueprint name="UWB_BA_MISSILES_COCKATRICE" rarity="5"/>
+		<blueprint name="UWB_MISSILES_MEGA" rarity="5"/>
+		<blueprint name="UWB_ION_STUN" rarity="5"/>
+		<blueprint name="UWB_BA_SHOTGUN_ION_1" rarity="5"/>
+		<blueprint name="UWB_BA_ION_2_STUN" rarity="5"/>
+		<blueprint name="UWB_BA_ION_BURST_1_STUN" rarity="5"/>
+		<blueprint name="UWB_BA_ION_BURST_1" rarity="5"/>
+		<blueprint name="UWB_ION_HEAVY_1" rarity="5"/>
+		<blueprint name="UWB_ION_BLAST_1" rarity="5"/>
+		<blueprint name="UWB_BA_SHOTGUN_ION_2" rarity="5"/>
+		<blueprint name="UWB_BA_ION_BURST_2" rarity="5"/>
+		<blueprint name="UWB_ION_BLAST_2" rarity="5"/>
+		<blueprint name="UWB_ION_BLAST_3" rarity="5"/>
+		<blueprint name="UWB_JADE_CANNON_PLAYER" rarity="5"/>
+		<!-- 1.26.4 -->
+		<blueprint name="SILV_BEAM_1" rarity="5"/>
+		<blueprint name="SILV_BOMB_BREACH_3" rarity="5"/>
+		<blueprint name="SILV_BOMB_FIRE_2" rarity="5"/>
+		<blueprint name="SILV_ION_BLAST_2" rarity="5"/>
+		<blueprint name="SILV_ION_HEAVY_2" rarity="5"/>
+		<blueprint name="SILV_ION_PIERCE_1" rarity="5"/>
+		<blueprint name="SILV_LASER_AUTO_1" rarity="5"/>
+		<blueprint name="SILV_LASER_BURST_SCATTER_1" rarity="5"/>
+		<blueprint name="SILV_LASER_BURST_2" rarity="5"/>
+		<blueprint name="SILV_MISSILES_ASTERIA" rarity="5"/>
+		<blueprint name="SILV_MISSILES_BURST" rarity="5"/>
+		<blueprint name="SILV_MISSILES_HYDRA" rarity="5"/>
+		<blueprint name="SILV_SHOTGUN" rarity="5"/>
+		<!-- 1.27 -->
+		<blueprint name="MORPHGUN_R" rarity="5"/>
+		<blueprint name="MORPHGUN_Z" rarity="5"/>
+		<blueprint name="MORPHGUN_M" rarity="5"/>
+		<blueprint name="MORPHGUN_S" rarity="5"/>
+	</rarityList>
+	<startEvent>START_BEACON_NEW</startEvent>
+	<event name="STORE_ALL" min="0" max="3"/><!-- 1.27? min was 2 -->
+	<event name="ITEMS_ALL" min="0" max="3"/><!-- 1.27? min was 2 -->
+	<event name="NEUTRAL_ALL" min="2" max="3"/><!-- 1.27? max was 4 -->
+	<event name="NOTHING_ALL" min="2" max="2"/><!-- 1.27? min was 0 -->
+	<event name="DISTRESS_BEACON_ALL" min="2" max="4"/>
+	<event name="HOSTILE_ALL" min="5" max="7"/><!-- 1.27? was 4-6 -->
+	<event name="NEBULA_ALL" min="0" max="8"/>
+	<event name="BOARDING_ALL" min="1" max="1"/><!-- 1.27? min was 0 -->
+	<event name="QUESTS_ALL" min="1" max="2"/>
+</sectorDescription>

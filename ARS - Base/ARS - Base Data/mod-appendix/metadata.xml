@@ -1,0 +1,71 @@
+<metadata>
+  <!-- CDATA tags mean no need to escape special characters. -->
+  <!-- Don't worry about spaces at the start/end. That gets trimmed. -->
+
+
+  <!-- The title of this mod. -->
+  <title><![CDATA[ Arsenal+ English Data ]]></title>
+
+
+  <!--
+    This mod's thread on ftlgame.com.
+    If there's no thread yet, create one to announce your upcoming mod in
+    the 'Mod Development' forum. Then paste the url here.
+  -->
+  <threadUrl><![CDATA[ https://www.subsetgames.com/forum/viewtopic.php?f=11&t=29891 ]]></threadUrl>
+
+
+  <!-- Your forum user name. -->
+  <author><![CDATA[ bamalf, KBA3u, and mr_easy_money ]]></author>
+
+
+  <!--
+    Version can be any string, preferably at least a number.
+    Examples:
+      0.3
+      2.1c Ships Only WIP
+      2.4.1 Hi-res Bkgs
+      1.0 for FTL 1.03.1
+  -->
+  <version><![CDATA[ 1.27.1/1.9.x ]]></version>
+
+
+  <description>
+<![CDATA[
+This mod contains the data for the Arsenal+ game expansion. Must be loaded alongside the Arsenal+ English Resource Pack for Arsenal+ to work properly.
+
+Arsenal+ is a Cyrillic FTL mod that combines assets from other total conversion mods such as Captain's Edition and Insurrection, along with weapons from various other mods, with a plethora of original content mixed in to expand the game, bringing in a whole new FTL experience.
+
+The events, although probably inspired by other mods, are all original to this mod. Furthermore, though this mod uses assets from other mods for the initial creation of weapons, drones, etc., but the ending balance and characteristics of these assets are specific to this mod.
+
+Captain's Edition's assets are correctly given credit, and Captain's Edition can be found here: https://www.subsetgames.com/forum/viewtopic.php?f=11&t=15663
+]]>
+  </description>
+
+  <!--
+  Mod is NOT guaranteed to work if installed upon repacks{differently packages game versions, possibly translated or reduced}. 
+  
+  After mod installation launch Font8_Patch.exe in game folder to install compact{condensed} fonts." -->
+  
+  <!--
+    Suggestions for the description...
+
+    Write a short paragraph about the mod's effect first (what style ship,
+    how does it affect gameplay). No need to introduce yourself.
+
+    Optionally add a paragraph of background flavor.
+
+    Optionally list important features.
+
+    List any concerns about mod compatibility, preferred order, or
+    requirements.
+
+    Mention "Replaces the XYZ ship." if relevant.
+      Kestrel-A, Stealth-A, Mantis-A,
+      Engi-A,    Fed-A,     Slug-A,
+      Rock-A,    Zoltan-A,  Crystal-A
+
+    Above all, keep the description general, so you won't have to edit
+    that again for each new version.
+  -->
+</metadata>

@@ -1,0 +1,674 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<mod:findWithChildLike child-type="cost">
+	<mod:selector>1</mod:selector>
+	<mod-overwrite:cost>2.001</mod-overwrite:cost>
+</mod:findWithChildLike>
+
+<mod:findWithChildLike child-type="cost">
+	<mod:selector>2</mod:selector>
+	<mod-overwrite:cost>3.001</mod-overwrite:cost>
+</mod:findWithChildLike>
+
+<mod:findWithChildLike child-type="cost">
+	<mod:selector>3</mod:selector>
+	<mod-overwrite:cost>4.001</mod-overwrite:cost>
+</mod:findWithChildLike>
+
+<mod:findWithChildLike child-type="cost">
+	<mod:selector>4</mod:selector>
+	<mod-overwrite:cost>5.001</mod-overwrite:cost>
+</mod:findWithChildLike>
+
+<mod:findWithChildLike child-type="cost">
+	<mod:selector>8</mod:selector>
+	<mod-overwrite:cost>12.001</mod-overwrite:cost>
+</mod:findWithChildLike>
+
+<mod:findWithChildLike child-type="cost">
+	<mod:selector>10</mod:selector>
+	<mod-overwrite:cost>15.001</mod-overwrite:cost>
+</mod:findWithChildLike>
+
+<mod:findWithChildLike child-type="cost">
+	<mod:selector>12</mod:selector>
+	<mod-overwrite:cost>18.001</mod-overwrite:cost>
+</mod:findWithChildLike>
+
+<mod:findWithChildLike child-type="cost">
+	<mod:selector>15</mod:selector>
+	<mod-overwrite:cost>20.001</mod-overwrite:cost>
+</mod:findWithChildLike>
+
+<mod:findWithChildLike child-type="cost">
+	<mod:selector>20</mod:selector>
+	<mod-overwrite:cost>25.001</mod-overwrite:cost>
+</mod:findWithChildLike>
+
+<mod:findWithChildLike child-type="cost">
+	<mod:selector>25</mod:selector>
+	<mod-overwrite:cost>30.001</mod-overwrite:cost>
+</mod:findWithChildLike>
+
+<mod:findWithChildLike child-type="cost">
+	<mod:selector>30</mod:selector>
+	<mod-overwrite:cost>35.001</mod-overwrite:cost>
+</mod:findWithChildLike>
+
+<mod:findWithChildLike child-type="cost">
+	<mod:selector>35</mod:selector>
+	<mod-overwrite:cost>45.001</mod-overwrite:cost>
+</mod:findWithChildLike>
+
+<mod:findWithChildLike child-type="cost">
+	<mod:selector>40</mod:selector>
+	<mod-overwrite:cost>50.001</mod-overwrite:cost>
+</mod:findWithChildLike>
+
+<mod:findWithChildLike child-type="cost">
+	<mod:selector>45</mod:selector>
+	<mod-overwrite:cost>55.001</mod-overwrite:cost>
+</mod:findWithChildLike>
+
+<mod:findWithChildLike child-type="cost">
+	<mod:selector>50</mod:selector>
+	<mod-overwrite:cost>60.001</mod-overwrite:cost>
+</mod:findWithChildLike>
+
+<mod:findWithChildLike child-type="cost">
+	<mod:selector>55</mod:selector>
+	<mod-overwrite:cost>65.001</mod-overwrite:cost>
+</mod:findWithChildLike>
+
+<mod:findWithChildLike child-type="cost">
+	<mod:selector>60</mod:selector>
+	<mod-overwrite:cost>70.001</mod-overwrite:cost>
+</mod:findWithChildLike>
+
+<mod:findWithChildLike child-type="cost">
+	<mod:selector>65</mod:selector>
+	<mod-overwrite:cost>80.001</mod-overwrite:cost>
+</mod:findWithChildLike>
+
+<mod:findWithChildLike child-type="cost">
+	<mod:selector>70</mod:selector>
+	<mod-overwrite:cost>85.001</mod-overwrite:cost>
+</mod:findWithChildLike>
+
+<mod:findWithChildLike child-type="cost">
+	<mod:selector>75</mod:selector>
+	<mod-overwrite:cost>90.001</mod-overwrite:cost>
+</mod:findWithChildLike>
+
+<mod:findWithChildLike child-type="cost">
+	<mod:selector>80</mod:selector>
+	<mod-overwrite:cost>95.001</mod-overwrite:cost>
+</mod:findWithChildLike>
+
+<mod:findWithChildLike child-type="cost">
+	<mod:selector>85</mod:selector>
+	<mod-overwrite:cost>100.001</mod-overwrite:cost>
+</mod:findWithChildLike>
+
+<mod:findWithChildLike child-type="cost">
+	<mod:selector>90</mod:selector>
+	<mod-overwrite:cost>110.001</mod-overwrite:cost>
+</mod:findWithChildLike>
+
+<mod:findWithChildLike child-type="cost">
+	<mod:selector>95</mod:selector>
+	<mod-overwrite:cost>115.001</mod-overwrite:cost>
+</mod:findWithChildLike>
+
+<mod:findWithChildLike child-type="cost">
+	<mod:selector>100</mod:selector>
+	<mod-overwrite:cost>120.001</mod-overwrite:cost>
+</mod:findWithChildLike>
+
+<mod:findWithChildLike child-type="cost">
+	<mod:selector>105</mod:selector>
+	<mod-overwrite:cost>125.001</mod-overwrite:cost>
+</mod:findWithChildLike>
+
+<mod:findWithChildLike child-type="cost">
+	<mod:selector>110</mod:selector>
+	<mod-overwrite:cost>135.001</mod-overwrite:cost>
+</mod:findWithChildLike>
+
+<mod:findWithChildLike child-type="cost">
+	<mod:selector>115</mod:selector>
+	<mod-overwrite:cost>140.001</mod-overwrite:cost>
+</mod:findWithChildLike>
+
+<mod:findWithChildLike child-type="cost">
+	<mod:selector>120</mod:selector>
+	<mod-overwrite:cost>145.001</mod-overwrite:cost>
+</mod:findWithChildLike>
+
+<mod:findWithChildLike child-type="cost">
+	<mod:selector>125</mod:selector>
+	<mod-overwrite:cost>150.001</mod-overwrite:cost>
+</mod:findWithChildLike>
+
+<mod:findWithChildLike child-type="cost">
+	<mod:selector>130</mod:selector>
+	<mod-overwrite:cost>155.001</mod-overwrite:cost>
+</mod:findWithChildLike>
+
+<mod:findWithChildLike child-type="cost">
+	<mod:selector>135</mod:selector>
+	<mod-overwrite:cost>160.001</mod-overwrite:cost>
+</mod:findWithChildLike>
+
+<mod:findWithChildLike child-type="cost">
+	<mod:selector>140</mod:selector>
+	<mod-overwrite:cost>165.001</mod-overwrite:cost>
+</mod:findWithChildLike>
+
+<mod:findWithChildLike child-type="cost">
+	<mod:selector>145</mod:selector>
+	<mod-overwrite:cost>170.001</mod-overwrite:cost>
+</mod:findWithChildLike>
+
+<mod:findWithChildLike child-type="cost">
+	<mod:selector>150</mod:selector>
+	<mod-overwrite:cost>175.001</mod-overwrite:cost>
+</mod:findWithChildLike>
+
+<mod:findWithChildLike child-type="cost">
+	<mod:selector>155</mod:selector>
+	<mod-overwrite:cost>180.001</mod-overwrite:cost>
+</mod:findWithChildLike>
+
+<mod:findWithChildLike child-type="cost">
+	<mod:selector>160</mod:selector>
+	<mod-overwrite:cost>185.001</mod-overwrite:cost>
+</mod:findWithChildLike>
+
+<mod:findWithChildLike child-type="cost">
+	<mod:selector>165</mod:selector>
+	<mod-overwrite:cost>190.001</mod-overwrite:cost>
+</mod:findWithChildLike>
+
+<mod:findWithChildLike child-type="cost">
+	<mod:selector>170</mod:selector>
+	<mod-overwrite:cost>195.001</mod-overwrite:cost>
+</mod:findWithChildLike>
+
+<mod:findWithChildLike child-type="cost">
+	<mod:selector>175</mod:selector>
+	<mod-overwrite:cost>200.001</mod-overwrite:cost>
+</mod:findWithChildLike>
+
+
+
+<mod:findName type="droneBlueprint" name="DRONE_HACKING">
+	<mod:findLike type="dodge">
+		<mod:removeTag/>
+	</mod:findLike>
+</mod:findName>
+
+
+
+<mod:findName type="weaponBlueprint" name="CRYSTAL_PRO_LIGHT">
+	<mod-overwrite:power>3</mod-overwrite:power>
+</mod:findName>
+
+<mod:findName type="weaponBlueprint" name="CRYSTAL_PRO_HEAVY">
+	<mod-overwrite:power>3</mod-overwrite:power>
+</mod:findName>
+
+<mod:findName type="weaponBlueprint" name="OMICRON_AEGON_ROCKET_1">
+	<mod-overwrite:power>4</mod-overwrite:power>
+</mod:findName>
+
+<mod:findName type="weaponBlueprint" name="OMICRON_TRIPLE_BLASTER_1">
+	<mod-overwrite:power>2</mod-overwrite:power>
+</mod:findName>
+
+<mod:findName type="weaponBlueprint" name="SOLAR_BARRAGE_ARRAY">
+	<mod-overwrite:power>4</mod-overwrite:power>
+</mod:findName>
+
+<mod:findName type="weaponBlueprint" name="OMICRON_IMPACT_ION_BEAM_1">
+	<mod-overwrite:power>4</mod-overwrite:power>
+</mod:findName>
+
+<mod:findName type="weaponBlueprint" name="OMICRON_AUTOCANNON_1">
+	<mod-overwrite:power>2</mod-overwrite:power>
+</mod:findName>
+
+<mod:findName type="weaponBlueprint" name="OMICRON_PLASMA_RAILCANNON_1">
+	<mod-overwrite:power>4</mod-overwrite:power>
+</mod:findName>
+
+<mod:findName type="weaponBlueprint" name="OMICRON_PERFORATOR_1">
+	<mod-overwrite:power>4</mod-overwrite:power>
+</mod:findName>
+
+<mod:findName type="weaponBlueprint" name="OMICRON_OMNI_CANNON2_1">
+	<mod-overwrite:power>4</mod-overwrite:power>
+</mod:findName>
+
+<mod:findName type="weaponBlueprint" name="ORDEN_PROTOTYPE">
+	<mod-overwrite:power>4</mod-overwrite:power>
+</mod:findName>
+
+<mod:findName type="weaponBlueprint" name="HAL_PROTOTYPE_1">
+	<mod-overwrite:power>4</mod-overwrite:power>
+</mod:findName>
+
+<!-- 1.26.5 -->
+<mod:findName type="weaponBlueprint" name="PROTOTYPE_ZOLTON_BEAM_1">
+	<mod-overwrite:power>4</mod-overwrite:power>
+</mod:findName>
+
+<mod:findName type="weaponBlueprint" name="PROTOTYPE_ZOLTON_MISSILE_1">
+	<mod-overwrite:power>4</mod-overwrite:power>
+</mod:findName>
+
+<mod:findName type="weaponBlueprint" name="SOLAR_BARRAGE_ARRAY_FRC">
+	<mod-overwrite:power>4</mod-overwrite:power>
+</mod:findName>
+<mod:findName type="weaponBlueprint" name="SOLAR_BARRAGE_ARRAY_CLD">
+	<mod-overwrite:power>4</mod-overwrite:power>
+</mod:findName>
+<mod:findName type="weaponBlueprint" name="SOLAR_BARRAGE_ARRAY_POW">
+	<mod-overwrite:power>3</mod-overwrite:power><!-- 1.27 -->
+</mod:findName>
+<mod:findName type="weaponBlueprint" name="OMICRON_IMPACT_ION_BEAM_1_BRC">
+	<mod-overwrite:power>4</mod-overwrite:power>
+</mod:findName>
+<mod:findName type="weaponBlueprint" name="OMICRON_IMPACT_ION_BEAM_1_CLD">
+	<mod-overwrite:power>4</mod-overwrite:power>
+</mod:findName>
+<mod:findName type="weaponBlueprint" name="OMICRON_IMPACT_ION_BEAM_1_POW">
+	<mod-overwrite:power>3</mod-overwrite:power><!-- 1.27 -->
+</mod:findName>
+<mod:findName type="weaponBlueprint" name="OMICRON_AUTOCANNON_1_BRC">
+	<mod-overwrite:power>2</mod-overwrite:power>
+</mod:findName>
+<mod:findName type="weaponBlueprint" name="OMICRON_AUTOCANNON_1_CLD">
+	<mod-overwrite:power>2</mod-overwrite:power>
+</mod:findName>
+<mod:findName type="weaponBlueprint" name="OMICRON_AUTOCANNON_1_POW">
+	<mod-overwrite:power>1</mod-overwrite:power><!-- 1.27 -->
+</mod:findName>
+<mod:findName type="weaponBlueprint" name="OMICRON_PLASMA_RAILCANNON_1_PRC">
+	<mod-overwrite:power>4</mod-overwrite:power>
+</mod:findName>
+<mod:findName type="weaponBlueprint" name="OMICRON_PLASMA_RAILCANNON_1_FRC">
+	<mod-overwrite:power>4</mod-overwrite:power>
+</mod:findName>
+<mod:findName type="weaponBlueprint" name="OMICRON_PLASMA_RAILCANNON_1_CLD">
+	<mod-overwrite:power>4</mod-overwrite:power>
+</mod:findName>
+<mod:findName type="weaponBlueprint" name="OMICRON_PLASMA_RAILCANNON_1_POW">
+	<mod-overwrite:power>3</mod-overwrite:power><!-- 1.27 -->
+</mod:findName>
+<mod:findName type="weaponBlueprint" name="OMICRON_PERFORATOR_1_CLD">
+	<mod-overwrite:power>4</mod-overwrite:power>
+</mod:findName>
+<mod:findName type="weaponBlueprint" name="OMICRON_PERFORATOR_1_POW">
+	<mod-overwrite:power>3</mod-overwrite:power><!-- 1.27 -->
+</mod:findName>
+<mod:findName type="weaponBlueprint" name="OMICRON_OMNI_CANNON2_1_PRC">
+	<mod-overwrite:power>4</mod-overwrite:power>
+</mod:findName>
+<mod:findName type="weaponBlueprint" name="OMICRON_OMNI_CANNON2_1_FRC">
+	<mod-overwrite:power>4</mod-overwrite:power>
+</mod:findName>
+<mod:findName type="weaponBlueprint" name="OMICRON_OMNI_CANNON2_1_BRC">
+	<mod-overwrite:power>4</mod-overwrite:power>
+</mod:findName>
+<mod:findName type="weaponBlueprint" name="OMICRON_OMNI_CANNON2_1_CLD">
+	<mod-overwrite:power>4</mod-overwrite:power>
+</mod:findName>
+<mod:findName type="weaponBlueprint" name="OMICRON_OMNI_CANNON2_1_POW">
+	<mod-overwrite:power>3</mod-overwrite:power><!-- 1.27 -->
+</mod:findName>
+<mod:findName type="weaponBlueprint" name="OMICRON_TRIPLE_BLASTER_1_BRC">
+	<mod-overwrite:power>2</mod-overwrite:power>
+</mod:findName>
+<mod:findName type="weaponBlueprint" name="OMICRON_TRIPLE_BLASTER_1_CLD">
+	<mod-overwrite:power>2</mod-overwrite:power>
+</mod:findName>
+<mod:findName type="weaponBlueprint" name="OMICRON_TRIPLE_BLASTER_1_POW">
+	<mod-overwrite:power>1</mod-overwrite:power><!-- 1.27 -->
+</mod:findName>
+<mod:findName type="weaponBlueprint" name="OMICRON_AEGON_ROCKET_1_FRC">
+	<mod-overwrite:power>4</mod-overwrite:power>
+</mod:findName>
+<mod:findName type="weaponBlueprint" name="OMICRON_AEGON_ROCKET_1_BRC">
+	<mod-overwrite:power>4</mod-overwrite:power>
+</mod:findName>
+<mod:findName type="weaponBlueprint" name="OMICRON_AEGON_ROCKET_1_CLD">
+	<mod-overwrite:power>4</mod-overwrite:power>
+</mod:findName>
+<mod:findName type="weaponBlueprint" name="OMICRON_AEGON_ROCKET_1_POW">
+	<mod-overwrite:power>3</mod-overwrite:power><!-- 1.27 -->
+</mod:findName>
+<mod:findName type="weaponBlueprint" name="CRYSTAL_PRO_LIGHT_BRC">
+	<mod-overwrite:power>3</mod-overwrite:power>
+</mod:findName>
+<mod:findName type="weaponBlueprint" name="CRYSTAL_PRO_LIGHT_CLD">
+	<mod-overwrite:power>3</mod-overwrite:power>
+</mod:findName>
+<mod:findName type="weaponBlueprint" name="CRYSTAL_PRO_LIGHT_POW">
+	<mod-overwrite:power>2</mod-overwrite:power><!-- 1.27 -->
+</mod:findName>
+<mod:findName type="weaponBlueprint" name="CRYSTAL_PRO_HEAVY_BRC">
+	<mod-overwrite:power>3</mod-overwrite:power>
+</mod:findName>
+<mod:findName type="weaponBlueprint" name="CRYSTAL_PRO_HEAVY_CLD">
+	<mod-overwrite:power>3</mod-overwrite:power>
+</mod:findName>
+<mod:findName type="weaponBlueprint" name="CRYSTAL_PRO_HEAVY_POW">
+	<mod-overwrite:power>2</mod-overwrite:power><!-- 1.27 -->
+</mod:findName>
+<mod:findName type="weaponBlueprint" name="ORDEN_PROTOTYPE_PRC">
+	<mod-overwrite:power>4</mod-overwrite:power>
+</mod:findName>
+<mod:findName type="weaponBlueprint" name="ORDEN_PROTOTYPE_FRC">
+	<mod-overwrite:power>4</mod-overwrite:power>
+</mod:findName>
+<mod:findName type="weaponBlueprint" name="ORDEN_PROTOTYPE_CLD">
+	<mod-overwrite:power>4</mod-overwrite:power>
+</mod:findName>
+<mod:findName type="weaponBlueprint" name="ORDEN_PROTOTYPE_POW">
+	<mod-overwrite:power>3</mod-overwrite:power><!-- 1.27 -->
+</mod:findName>
+<mod:findName type="weaponBlueprint" name="HAL_PROTOTYPE_1_CLD">
+	<mod-overwrite:power>4</mod-overwrite:power>
+</mod:findName>
+<mod:findName type="weaponBlueprint" name="HAL_PROTOTYPE_1_POW">
+	<mod-overwrite:power>4</mod-overwrite:power>
+</mod:findName>
+<mod:findName type="weaponBlueprint" name="SLURMS_PROTOTYPE_CLD">
+	<mod-overwrite:power>4</mod-overwrite:power>
+</mod:findName>
+<mod:findName type="weaponBlueprint" name="SLURMS_PROTOTYPE_POW">
+	<mod-overwrite:power>3</mod-overwrite:power><!-- 1.27 -->
+</mod:findName>
+<mod:findName type="weaponBlueprint" name="PROTOTYPE_ZOLTON_BEAM_1_PRC">
+	<mod-overwrite:power>4</mod-overwrite:power>
+</mod:findName>
+<mod:findName type="weaponBlueprint" name="PROTOTYPE_ZOLTON_BEAM_1_BRC">
+	<mod-overwrite:power>4</mod-overwrite:power>
+</mod:findName>
+<mod:findName type="weaponBlueprint" name="PROTOTYPE_ZOLTON_BEAM_1_CLD">
+	<mod-overwrite:power>4</mod-overwrite:power>
+</mod:findName>
+<mod:findName type="weaponBlueprint" name="PROTOTYPE_ZOLTON_BEAM_1_POW">
+	<mod-overwrite:power>3</mod-overwrite:power><!-- 1.27 -->
+</mod:findName>
+<mod:findName type="weaponBlueprint" name="PROTOTYPE_ZOLTON_MISSILE_1_FRC">
+	<mod-overwrite:power>4</mod-overwrite:power>
+</mod:findName>
+<mod:findName type="weaponBlueprint" name="PROTOTYPE_ZOLTON_MISSILE_1_CLD">
+	<mod-overwrite:power>4</mod-overwrite:power>
+</mod:findName>
+<mod:findName type="weaponBlueprint" name="PROTOTYPE_ZOLTON_MISSILE_1_POW">
+	<mod-overwrite:power>3</mod-overwrite:power><!-- 1.27 -->
+</mod:findName>
+<mod:findName type="weaponBlueprint" name="SOLAR_BARRAGE_ARRAY_UNI">
+	<mod-overwrite:power>4</mod-overwrite:power>
+</mod:findName>
+<mod:findName type="weaponBlueprint" name="OMICRON_IMPACT_ION_BEAM_1_UNI">
+	<mod-overwrite:power>4</mod-overwrite:power>
+</mod:findName>
+<mod:findName type="weaponBlueprint" name="OMICRON_AUTOCANNON_1_UNI">
+	<mod-overwrite:power>2</mod-overwrite:power>
+</mod:findName>
+<mod:findName type="weaponBlueprint" name="OMICRON_PLASMA_RAILCANNON_1_UNI">
+	<mod-overwrite:power>4</mod-overwrite:power>
+</mod:findName>
+<mod:findName type="weaponBlueprint" name="OMICRON_PERFORATOR_1_UNI">
+	<mod-overwrite:power>4</mod-overwrite:power>
+</mod:findName>
+<mod:findName type="weaponBlueprint" name="OMICRON_OMNI_CANNON2_1_UNI">
+	<mod-overwrite:power>4</mod-overwrite:power>
+</mod:findName>
+<mod:findName type="weaponBlueprint" name="OMICRON_TRIPLE_BLASTER_1_UNI">
+	<mod-overwrite:power>2</mod-overwrite:power>
+</mod:findName>
+<mod:findName type="weaponBlueprint" name="OMICRON_AEGON_ROCKET_1_UNI">
+	<mod-overwrite:power>4</mod-overwrite:power>
+</mod:findName>
+<mod:findName type="weaponBlueprint" name="CRYSTAL_PRO_LIGHT_UNI">
+	<mod-overwrite:power>3</mod-overwrite:power>
+</mod:findName>
+<mod:findName type="weaponBlueprint" name="CRYSTAL_PRO_HEAVY_UNI">
+	<mod-overwrite:power>3</mod-overwrite:power>
+</mod:findName>
+<mod:findName type="weaponBlueprint" name="ORDEN_PROTOTYPE_UNI">
+	<mod-overwrite:power>4</mod-overwrite:power>
+</mod:findName>
+<mod:findName type="weaponBlueprint" name="HAL_PROTOTYPE_1_UNI">
+	<mod-overwrite:power>4</mod-overwrite:power>
+</mod:findName>
+<mod:findName type="weaponBlueprint" name="SLURMS_PROTOTYPE_UNI">
+	<mod-overwrite:power>4</mod-overwrite:power>
+</mod:findName>
+<mod:findName type="weaponBlueprint" name="PROTOTYPE_ZOLTON_BEAM_1_UNI">
+	<mod-overwrite:power>4</mod-overwrite:power>
+</mod:findName>
+<mod:findName type="weaponBlueprint" name="PROTOTYPE_ZOLTON_MISSILE_1_UNI">
+	<mod-overwrite:power>4</mod-overwrite:power>
+</mod:findName>
+<!-- 1.27 -->
+<mod:findName type="weaponBlueprint" name="PROTOTYPE_MORPHGUN"> 
+	<mod-overwrite:power>4</mod-overwrite:power>
+</mod:findName>
+<mod:findName type="weaponBlueprint" name="PROTOTYPE_MORPHGUN_FRC">
+	<mod-overwrite:power>4</mod-overwrite:power>
+</mod:findName>
+<mod:findName type="weaponBlueprint" name="PROTOTYPE_MORPHGUN_BRC">
+	<mod-overwrite:power>4</mod-overwrite:power>
+</mod:findName>
+<mod:findName type="weaponBlueprint" name="PROTOTYPE_MORPHGUN_CLD">
+	<mod-overwrite:power>4</mod-overwrite:power>
+</mod:findName>
+<mod:findName type="weaponBlueprint" name="PROTOTYPE_MORPHGUN_POW">
+	<mod-overwrite:power>3</mod-overwrite:power>
+</mod:findName>
+<mod:findName type="weaponBlueprint" name="PROTOTYPE_MORPHGUN_UNI">
+	<mod-overwrite:power>4</mod-overwrite:power>
+</mod:findName>
+<mod:findName type="weaponBlueprint" name="PROTOTYPE_ZOLTON_BEAM_1_RDY">
+	<mod-overwrite:power>4</mod-overwrite:power>
+</mod:findName>
+<mod:findName type="weaponBlueprint" name="PROTOTYPE_ZOLTON_MISSILE_1_RDY">
+	<mod-overwrite:power>4</mod-overwrite:power>
+</mod:findName>
+
+
+
+
+
+<mod:findName type="systemBlueprint" name="clonebay">
+	<mod:findLike type="upgradeCost">
+		<mod:removeTag />
+	</mod:findLike>
+	<mod-append:upgradeCost>
+		<level>50</level>
+		<level>60</level>
+    </mod-append:upgradeCost>
+</mod:findName>
+
+<mod:findName type="systemBlueprint" name="hacking">
+	<mod-overwrite:desc>Launches a hacking drone at a system, locking down its doors and granting the ability to temporarily disable or disrupt it. Requires drone part to launch.</mod-overwrite:desc>
+	<mod:findLike type="upgradeCost">
+		<mod:removeTag />
+	</mod:findLike>
+	<mod-append:upgradeCost>
+		<level>50</level>
+		<level>80</level>
+    </mod-append:upgradeCost>
+</mod:findName>
+
+<mod:findName type="systemBlueprint" name="battery">
+	<mod:findLike type="upgradeCost">
+		<mod:removeTag />
+	</mod:findLike>
+	<mod-append:upgradeCost>
+		<level>60</level>
+		<level>60</level>
+    </mod-append:upgradeCost>
+</mod:findName>
+
+<mod:findName type="systemBlueprint" name="mind">
+	<mod:findLike type="upgradeCost">
+		<mod:removeTag />
+	</mod:findLike>
+	<mod-append:upgradeCost>
+		<level>50</level>
+		<level>70</level>
+    </mod-append:upgradeCost>
+</mod:findName>
+
+<mod:findName type="systemBlueprint" name="oxygen">
+	<mod:findLike type="upgradeCost">
+		<mod:removeTag />
+	</mod:findLike>
+	<mod-append:upgradeCost>
+		<level>25</level>
+		<level>45</level>
+		<level>90</level>
+    </mod-append:upgradeCost>
+</mod:findName>
+
+<mod:findName type="systemBlueprint" name="teleporter">
+	<mod:findLike type="upgradeCost">
+		<mod:removeTag />
+	</mod:findLike>
+	<mod-append:upgradeCost>
+		<level>50</level>
+		<level>85</level>
+    </mod-append:upgradeCost>
+</mod:findName>
+
+<mod:findName type="systemBlueprint" name="cloaking">
+	<mod:findLike type="upgradeCost">
+		<mod:removeTag />
+	</mod:findLike>
+	<mod-append:upgradeCost>
+		<level>35</level>
+		<level>60</level>
+    </mod-append:upgradeCost>
+</mod:findName>
+
+<mod:findName type="systemBlueprint" name="pilot">
+	<mod:findLike type="upgradeCost">
+		<mod:removeTag />
+	</mod:findLike>
+	<mod-append:upgradeCost>
+		<level>30</level>
+		<level>60</level>
+    </mod-append:upgradeCost>
+</mod:findName>
+
+<mod:findName type="systemBlueprint" name="medbay">
+	<mod:findLike type="upgradeCost">
+		<mod:removeTag />
+	</mod:findLike>
+	<mod-append:upgradeCost>
+		<level>50</level>
+		<level>60</level>
+    </mod-append:upgradeCost>
+</mod:findName>
+
+<mod:findName type="systemBlueprint" name="shields">
+	<mod:findLike type="upgradeCost">
+		<mod:removeTag />
+	</mod:findLike>
+	<mod-append:upgradeCost>
+		<level>120</level>
+		<level>25</level>
+		<level>35</level>
+		<level>50</level>
+		<level>70</level>
+		<level>95</level>
+		<level>100</level>
+		<level>110</level>
+    </mod-append:upgradeCost>
+</mod:findName>
+
+<mod:findName type="systemBlueprint" name="artillery">
+	<mod:findLike type="upgradeCost">
+		<mod:removeTag />
+	</mod:findLike>
+	<mod-append:upgradeCost>
+		<level>50</level>
+		<level>80</level>
+		<level>120</level>
+    </mod-append:upgradeCost>
+</mod:findName>
+
+<mod:findName type="systemBlueprint" name="engines">
+	<mod:findLike type="upgradeCost">
+		<mod:removeTag />
+	</mod:findLike>
+	<mod-append:upgradeCost>
+		<level>15</level>
+		<level>25</level>
+		<level>35</level>
+		<level>55</level>
+		<level>80</level>
+		<level>110</level>
+		<level>145</level>
+		<level>175</level>
+    </mod-append:upgradeCost>
+</mod:findName>
+
+<mod:findName type="systemBlueprint" name="weapons">
+	<mod:findLike type="upgradeCost">
+		<mod:removeTag />
+	</mod:findLike>
+	<mod-append:upgradeCost>
+		<level>50</level>
+		<level>30</level>
+		<level>45</level>
+		<level>60</level>
+		<level>85</level>
+		<level>115</level>
+		<level>150</level>
+		<level>155</level>
+    </mod-append:upgradeCost>
+</mod:findName>
+
+<mod:findName type="systemBlueprint" name="drones">
+	<mod:findLike type="upgradeCost">
+		<mod:removeTag />
+	</mod:findLike>
+	<mod-append:upgradeCost>
+		<level>15</level>
+		<level>25</level>
+		<level>35</level> 
+		<level>50</level>
+		<level>60</level>
+		<level>80</level>
+		<level>95</level>
+		<level>115</level>
+    </mod-append:upgradeCost>
+</mod:findName>
+
+<mod:findName type="systemBlueprint" name="sensors">
+	<mod:findLike type="upgradeCost">
+		<mod:removeTag />
+	</mod:findLike>
+	<mod-append:upgradeCost>
+		<level>35</level>
+		<level>60</level>
+    </mod-append:upgradeCost>
+</mod:findName>
+
+<mod:findName type="systemBlueprint" name="doors">
+	<mod:findLike type="upgradeCost">
+		<mod:removeTag />
+	</mod:findLike>
+	<mod-append:upgradeCost>
+		<level>45</level>
+		<level>60</level>
+    </mod-append:upgradeCost>
+</mod:findName>

@@ -1,0 +1,7 @@
+<!-- upgrades to piloting through event will mess with Arsenal+ Infinite progression -->
+<mod:findName type="eventList" name="TRADER_UPGRADES_LIST">
+	<!-- find the event with at least 1 child <choice req="pilot">, and then delete it altogether -->
+	<mod:findWithChildLike type="event" child-type="choice"><mod:selector req="pilot" />
+		<mod:removeTag />
+	</mod:findWithChildLike>
+</mod:findName>

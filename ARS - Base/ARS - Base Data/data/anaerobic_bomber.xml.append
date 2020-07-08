@@ -1,0 +1,23 @@
+<mod:findLike type="explosion">
+	<mod-overwrite:gib5>
+		<velocity min="1" max="3"/>
+		<direction min="-180" max="180"/>
+		<angular min="-1" max="1"/>
+		<x>200</x>
+		<y>85</y>
+	</mod-overwrite:gib5>
+        <mod-overwrite:gib6>
+		<velocity min="1" max="3"/>
+		<direction min="-180" max="180"/>
+		<angular min="-1" max="1"/>
+		<x>120</x>
+		<y>60</y>
+	</mod-overwrite:gib6>
+        <mod-overwrite:gib7>
+		<velocity min="1" max="3"/>
+		<direction min="-180" max="180"/>
+		<angular min="-1" max="1"/>
+		<x>300</x>
+		<y>170</y>
+	</mod-overwrite:gib7>
+</mod:findLike>

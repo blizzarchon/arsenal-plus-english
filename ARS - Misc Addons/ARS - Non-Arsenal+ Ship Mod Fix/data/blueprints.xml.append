@@ -1,0 +1,100 @@
+<mod:findComposite>
+	<!-- finds all the player ships -->
+	<mod:par op="OR">
+		<mod:findName name="PLAYER_SHIP_HARD" />
+		<mod:findName name="PLAYER_SHIP_HARD_2" />
+		<mod:findName name="PLAYER_SHIP_MANTIS" />
+		<mod:findName name="PLAYER_SHIP_MANTIS_2" />
+		<mod:findName name="PLAYER_SHIP_STEALTH" />
+		<mod:findName name="PLAYER_SHIP_STEALTH_2" />
+		<mod:findName name="PLAYER_SHIP_CIRCLE" />
+		<mod:findName name="PLAYER_SHIP_CIRCLE_2" />
+		<mod:findName name="PLAYER_SHIP_FED" />
+		<mod:findName name="PLAYER_SHIP_FED_2" />
+		<mod:findName name="PLAYER_SHIP_JELLY" />
+		<mod:findName name="PLAYER_SHIP_JELLY_2" />
+		<mod:findName name="PLAYER_SHIP_ROCK" />
+		<mod:findName name="PLAYER_SHIP_ROCK_2" />
+		<mod:findName name="PLAYER_SHIP_ENERGY" />
+		<mod:findName name="PLAYER_SHIP_ENERGY_2" />
+		<mod:findName name="PLAYER_SHIP_CRYSTAL" />
+		<mod:findName name="PLAYER_SHIP_CRYSTAL_2" />
+		<mod:findName name="PLAYER_SHIP_ANAEROBIC" />
+		<mod:findName name="PLAYER_SHIP_ANAEROBIC_2" />
+		<mod:findName name="PLAYER_SHIP_HARD_3" />
+		<mod:findName name="PLAYER_SHIP_CIRCLE_3" />
+		<mod:findName name="PLAYER_SHIP_FED_3" />
+		<mod:findName name="PLAYER_SHIP_JELLY_3" />
+		<mod:findName name="PLAYER_SHIP_STEALTH_3" />
+		<mod:findName name="PLAYER_SHIP_ENERGY_3" />
+		<mod:findName name="PLAYER_SHIP_ROCK_3" />
+		<mod:findName name="PLAYER_SHIP_MANTIS_3" />
+	</mod:par>
+	<!-- Vanilla Weapons -->
+	<mod:findLike type="weaponList">
+		<!-- Basic Laser = Standard Laser 1 -->
+		<mod:findLike type="weapon"><mod:selector name="LASER_BURST_1" /><mod:setAttributes name="LASER_STANDARD_1" /></mod:findLike>
+		<!-- Dual Lasers = Dual Laser 1 -->
+		<mod:findLike type="weapon"><mod:selector name="LASER_BURST_2" /><mod:setAttributes name="LASER_DUAL_1" /></mod:findLike>
+		<!-- Burst Laser 1 -->
+		<mod:findLike type="weapon"><mod:selector name="LASER_BURST_2_A" /><mod:setAttributes name="LASER_BURST_1" /></mod:findLike>
+		<!-- Burst Laser 2 -->
+		<mod:findLike type="weapon"><mod:selector name="LASER_BURST_3" /><mod:setAttributes name="LASER_BURST_2" /></mod:findLike>
+		<!-- Burst Laser 3 = Burst Laser 4 -->
+		<mod:findLike type="weapon"><mod:selector name="LASER_BURST_5" /><mod:setAttributes name="LASER_BURST_4" /></mod:findLike>
+		<!-- Heavy Pierce Laser Mark I -->
+		<mod:findLike type="weapon"><mod:selector name="LASER_HEAVY_1_SP" /><mod:setAttributes name="LASER_HEAVY_PIERCE_1" /></mod:findLike>
+		<!-- Ion Blast 1 -->
+		<mod:findLike type="weapon"><mod:selector name="ION_1" /><mod:setAttributes name="ION_BLAST_1" /></mod:findLike>
+		<!-- Heavy Ion -->
+		<mod:findLike type="weapon"><mod:selector name="ION_2" /><mod:setAttributes name="ION_HEAVY_1" /></mod:findLike>
+		<!-- Ion Blast 2 = Ion Blast 3 -->
+		<mod:findLike type="weapon"><mod:selector name="ION_4" /><mod:setAttributes name="ION_BLAST_3" /></mod:findLike>
+		<!-- Breach Bomb 2 = Breach Bomb 3 -->
+		<mod:findLike type="weapon"><mod:selector name="BOMB_BREACH_2" /><mod:setAttributes name="BOMB_BREACH_3" /></mod:findLike>
+		<!-- Chain Burst Laser ~= Chain Burst Laser 1 -->
+		<mod:findLike type="weapon"><mod:selector name="LASER_CHAINGUN" /><mod:setAttributes name="LASER_CHAIN_1" /></mod:findLike>
+		<!-- Chain Vulcan | don't fix this one before the chain laser, else the chain laser fix breaks this -->
+		<mod:findLike type="weapon"><mod:selector name="LASER_CHAINGUN_2" /><mod:setAttributes name="LASER_CHAINGUN" /></mod:findLike>
+		<!-- One-Power Charge Laser -->
+		<mod:findLike type="weapon"><mod:selector name="LASER_CHARGEGUN_PLAYER" /><mod:setAttributes name="LASER_CHARGEGUN_PLUS" /></mod:findLike>
+		<!-- Two-Power Charge Laser -->
+		<mod:findLike type="weapon"><mod:selector name="LASER_CHARGEGUN" /><mod:setAttributes name="LASER_CHARGEGUN_1" /></mod:findLike>
+		<!-- Three-Power Charge Laser 4 shots -->
+		<mod:findLike type="weapon"><mod:selector name="LASER_CHARGEGUN_2" /><mod:setAttributes name="LASER_CHARGEGUN_3" /></mod:findLike>
+	</mod:findLike>
+	<mod:findLike type="droneList">
+		<!-- Drone Roulette Shenanigans fix -->
+		<mod:findLike type="drone"><mod:selector name="COMBAT_1" /><mod:setAttributes name="COMBAT_1_OLD" /></mod:findLike>
+		<mod:findLike type="drone"><mod:selector name="COMBAT_BEAM" /><mod:setAttributes name="COMBAT_BEAM_OLD" /></mod:findLike>
+		<mod:findLike type="drone"><mod:selector name="DEFENSE_1" /><mod:setAttributes name="DEFENSE_1_OLD" /></mod:findLike>
+		<mod:findLike type="drone"><mod:selector name="REPAIR" /><mod:setAttributes name="REPAIR_OLD" /></mod:findLike>
+	</mod:findLike>
+	<!-- fix for weapons in artillery -->
+	<mod:findLike type="systemList">
+		<mod:findLike type="artillery"><mod:selector weapon="LASER_BURST_1" /><mod:setAttributes weapon="LASER_STANDARD_1" /></mod:findLike>
+		<mod:findLike type="artillery"><mod:selector weapon="LASER_BURST_2" /><mod:setAttributes weapon="LASER_DUAL_1" /></mod:findLike>
+		<mod:findLike type="artillery"><mod:selector weapon="LASER_BURST_2_A" /><mod:setAttributes weapon="LASER_BURST_1" /></mod:findLike>
+		<mod:findLike type="artillery"><mod:selector weapon="LASER_BURST_3" /><mod:setAttributes weapon="LASER_BURST_2" /></mod:findLike>
+		<mod:findLike type="artillery"><mod:selector weapon="LASER_BURST_5" /><mod:setAttributes weapon="LASER_BURST_4" /></mod:findLike>
+		<mod:findLike type="artillery"><mod:selector weapon="LASER_HEAVY_1_SP" /><mod:setAttributes weapon="LASER_HEAVY_PIERCE_1" /></mod:findLike>
+		<mod:findLike type="artillery"><mod:selector weapon="ION_1" /><mod:setAttributes weapon="ION_BLAST_1" /></mod:findLike>
+		<mod:findLike type="artillery"><mod:selector weapon="ION_2" /><mod:setAttributes weapon="ION_HEAVY_1" /></mod:findLike>
+		<mod:findLike type="artillery"><mod:selector weapon="ION_4" /><mod:setAttributes weapon="ION_BLAST_3" /></mod:findLike>
+		<mod:findLike type="artillery"><mod:selector weapon="BOMB_BREACH_2" /><mod:setAttributes weapon="BOMB_BREACH_3" /></mod:findLike>
+		<mod:findLike type="artillery"><mod:selector weapon="LASER_CHAINGUN" /><mod:setAttributes weapon="LASER_CHAIN_1" /></mod:findLike>
+		<mod:findLike type="artillery"><mod:selector weapon="LASER_CHAINGUN_2" /><mod:setAttributes weapon="LASER_CHAINGUN" /></mod:findLike>
+		<mod:findLike type="artillery"><mod:selector weapon="LASER_CHARGEGUN_PLAYER" /><mod:setAttributes weapon="LASER_CHARGEGUN_PLUS" /></mod:findLike>
+		<mod:findLike type="artillery"><mod:selector weapon="LASER_CHARGEGUN" /><mod:setAttributes weapon="LASER_CHARGEGUN_1" /></mod:findLike>
+		<mod:findLike type="artillery"><mod:selector weapon="LASER_CHARGEGUN_2" /><mod:setAttributes weapon="LASER_CHARGEGUN_3" /></mod:findLike>
+	</mod:findLike>
+</mod:findComposite>
+<!-- fix to reference new animation names -->
+<mod:findLike type="weaponBlueprint">
+	<mod:findLike type="weaponArt"><mod:selector>ion_1</mod:selector><mod:setValue>ion_blast_1</mod:setValue></mod:findLike>
+	<mod:findLike type="weaponArt"><mod:selector>ion_2</mod:selector><mod:setValue>ion_blast_2</mod:setValue></mod:findLike>
+	<mod:findLike type="weaponArt"><mod:selector>ion_4</mod:selector><mod:setValue>ion_blast_3</mod:setValue></mod:findLike>
+	<mod:findLike type="image"><mod:selector>ion_1_shot</mod:selector><mod:setValue>ion_blast_1_shot</mod:setValue></mod:findLike>
+	<mod:findLike type="image"><mod:selector>ion_2_shot</mod:selector><mod:setValue>ion_blast_2_shot</mod:setValue></mod:findLike>
+	<mod:findLike type="image"><mod:selector>ion_4_shot</mod:selector><mod:setValue>ion_blast_3_shot</mod:setValue></mod:findLike>
+</mod:findLike>

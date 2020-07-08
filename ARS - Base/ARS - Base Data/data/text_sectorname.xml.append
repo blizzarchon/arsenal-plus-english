@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FTL>
+	<!-- Remove Vanilla FTL texts to avoid 'doubly defined name' in FTL.log -->
+	<mod:findComposite>
+		<mod:par op="OR">
+			<mod:findLike type="text"><mod:selector name="sectorname_CIVILIAN_SECTOR" /></mod:findLike>
+			<mod:findLike type="text"><mod:selector name="sectorname_CRYSTAL_HOME" /></mod:findLike>
+			<mod:findLike type="text"><mod:selector name="sectorname_LANIUS_SECTOR" /></mod:findLike>
+			
+			<mod:findLike type="text"><mod:selector name="sectorname_short_CIVILIAN_SECTOR" /></mod:findLike>
+			<mod:findLike type="text"><mod:selector name="sectorname_short_CRYSTAL_HOME" /></mod:findLike>
+			<mod:findLike type="text"><mod:selector name="sectorname_short_LANIUS_SECTOR" /></mod:findLike>
+		</mod:par>
+		<mod:removeTag />
+	</mod:findComposite>
+	<!-- shown on Beacon Map -->
+	<text name="sectorname_CIVILIAN_SECTOR">Civilian Sector</text><!-- starting sector -->
+	<text name="sectorname_NEW_CIVILIAN_SECTOR">Civilian Sector</text><!-- actual -->
+	<text name="sectorname_TRADE_SECTOR">Trade Sector</text>
+	<text name="sectorname_BORDER_SECTOR">Border Sector</text>
+	<text name="sectorname_ORDEN_SECTOR_MINIBOSS">Order Stronghold</text>
+	<text name="sectorname_ORDEN_SECTOR">Order Controlled Sector</text>
+	<text name="sectorname_HAL_SECTOR">HAL System</text>
+	<text name="sectorname_HAL_SECTOR_HOME">HAL Coreworlds</text>
+	<text name="sectorname_SLURM_SECTOR">Slig Abode</text>
+	<text name="sectorname_AVATAR_SECTOR">Avatar Controlled Sector</text>
+	<text name="sectorname_AVATAR_SECTOR_HOME">Avatar Home Nebula</text>
+	<text name="sectorname_UNSTABLE_SECTOR">Unstable Zone</text>
+	<text name="sectorname_ULTRA_UNSTABLE_SECTOR">Ultra Unstable Zone</text>
+	<text name="sectorname_CRYSTAL_HOME">Crystal Homeworlds</text>
+	<text name="sectorname_LANIUS_SECTOR">Lanius Controlled Sector</text>
+	<text name="sectorname_LANIUS_SECTOR_HOME">Lanius Homeworlds</text>
+	<text name="sectorname_ZOLTON_SECTOR">Zolton Controlled Sector</text> <!-- 1.26 -->
+	<text name="sectorname_ZOLTON_HOME">Zolton Homeworlds</text> <!-- 1.26 -->
+	<text name="sectorname_MORPH_SECTOR">Morph Controlled Sector</text><!-- 1.27 -->
+	<text name="sectorname_MORPH_HOME">Morph Homeworlds</text><!-- 1.27 -->
+	<!-- shown on Sector Map -->
+	<text name="sectorname_short_CIVILIAN_SECTOR">Civilian Sector</text><!-- starting sector -->
+	<text name="sectorname_short_NEW_CIVILIAN_SECTOR">Civilian Sector</text><!-- actual -->
+	<text name="sectorname_short_TRADE_SECTOR">Trade Sector</text>
+	<text name="sectorname_short_BORDER_SECTOR">Border Sector</text>
+	<text name="sectorname_short_ORDEN_SECTOR_MINIBOSS">Order Stronghold</text>
+	<text name="sectorname_short_ORDEN_SECTOR">Order Controlled</text>
+	<text name="sectorname_short_HAL_SECTOR">HAL System</text>
+	<text name="sectorname_short_HAL_SECTOR_HOME">HAL Coreworlds</text>
+	<text name="sectorname_short_SLURM_SECTOR">Slig Abode</text>
+	<text name="sectorname_short_AVATAR_SECTOR">Avatar Controlled</text>
+	<text name="sectorname_short_AVATAR_SECTOR_HOME">Avatar Home Nebula</text>
+	<text name="sectorname_short_UNSTABLE_SECTOR">Unstable Zone</text>
+	<text name="sectorname_short_ULTRA_UNSTABLE_SECTOR">Ultra Unstable Zone</text>
+	<text name="sectorname_short_CRYSTAL_HOME">Crystal Homeworlds</text>
+	<text name="sectorname_short_LANIUS_SECTOR">Lanius Controlled</text>
+	<text name="sectorname_short_LANIUS_SECTOR_HOME">Lanius Homeworlds</text>
+	<text name="sectorname_short_ZOLTON_SECTOR">Zolton Controlled</text><!-- 1.26 -->
+	<text name="sectorname_short_ZOLTON_HOME">Zolton Homeworlds</text><!-- 1.26 -->
+	<text name="sectorname_short_MORPH_SECTOR">Morph Controlled</text><!-- 1.27 -->
+	<text name="sectorname_short_MORPH_HOME">Morph Homeworlds</text><!-- 1.27 -->
+</FTL>

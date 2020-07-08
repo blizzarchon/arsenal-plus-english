@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--Copyright (c) 2012 by Subset Games. All rights reserved.-->
+<img x="-36" y="-81" w="112" h="245" />
+<offsets>
+	<floor x="56" y="122" />
+	<cloak x="56" y="122" />
+</offsets>
+<weaponMounts>
+	<mount x="45" y="618" rotate="false" mirror="false" gib="4" slide="no" />
+</weaponMounts>
+<explosion>
+	<gib1>
+		<velocity min="5.00" max="5.00" />
+		<direction min="275" max="276" />
+		<angular min="-9.82" max="9.82" />
+		<x>38</x>
+		<y>80</y>
+	</gib1>
+	<gib2>
+		<velocity min="5.00" max="5.00" />
+		<direction min="319" max="322" />
+		<angular min="-5.00" max="5.00" />
+		<x>33</x>
+		<y>24</y>
+	</gib2>
+	<gib3>
+		<velocity min="5.00" max="5.00" />
+		<direction min="92" max="94" />
+		<angular min="-5.00" max="5.00" />
+		<x>6</x>
+		<y>100</y>
+	</gib3>
+	<gib4>
+		<velocity min="5.00" max="5.00" />
+		<direction min="175" max="180" />
+		<angular min="-9.86" max="9.86" />
+		<x>19</x>
+		<y>128</y>
+	</gib4>
+	<gib5>
+		<velocity min="5.00" max="5.00" />
+		<direction min="60" max="63" />
+		<angular min="-5.00" max="5.00" />
+		<x>12</x>
+		<y>25</y>
+	</gib5>
+	<gib6>
+		<velocity min="5.00" max="5.00" />
+		<direction min="90" max="97" />
+		<angular min="0.00" max="0.00" />
+		<x>2</x>
+		<y>6</y>
+	</gib6>
+	<gib7>
+		<velocity min="5.00" max="5.00" />
+		<direction min="262" max="265" />
+		<angular min="0.00" max="0.00" />
+		<x>13</x>
+		<y>7</y>
+	</gib7>
+	<gib8>
+		<velocity min="4.00" max="4.00" />
+		<direction min="91" max="108" />
+		<angular min="0.00" max="0.00" />
+		<x>14</x>
+		<y>6</y>
+	</gib8>
+	<gib9>
+		<velocity min="4.00" max="4.00" />
+		<direction min="270" max="278" />
+		<angular min="0.00" max="0.00" />
+		<x>3</x>
+		<y>7</y>
+	</gib9>
+	<gib10>
+		<velocity min="4.50" max="4.50" />
+		<direction min="91" max="108" />
+		<angular min="0.00" max="0.00" />
+		<x>12</x>
+		<y>6</y>
+	</gib10>
+	<gib11>
+		<velocity min="4.50" max="4.50" />
+		<direction min="270" max="278" />
+		<angular min="0.00" max="0.00" />
+		<x>4</x>
+		<y>7</y>
+	</gib11>
+</explosion>
+

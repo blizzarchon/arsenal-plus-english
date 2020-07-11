@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<mod:findName type="eventList" name="HOSTILE_BORDER_ALIEN">
+	<mod-append:event load="ORCHID_FIGHT"/>
+</mod:findName>
+
+<ship name="GLORY_SHIP" auto_blueprint="GLORY_SHIPS">   
+	<destroyed load="DESTROYED_DEFAULT"/>
+	<deadCrew load="DEAD_CREW_ORDEN"/>
+	<crew>
+		<crewMember type="order_human" prop="0.70"/>
+		<crewMember type="order_female" prop="0.30"/>
+	</crew>
+</ship>
+
+<ship name="ORDEN_DREDNOUT_FIGHT" auto_blueprint="CIV_GLORY_FLAGSHIP_SHIPS">
+	<destroyed>
+		<text>Флагман Ордена уничтожен. Вы собираете его обломки и среди них находите уцелевшее орудие.</text>
+		<autoReward level="MED">standard</autoReward>
+		<weapon name="WEAPONS_ORDEN"/>
+	</destroyed>
+	<deadCrew>
+		<text>Команда флагмана Ордена уничтожена. Вы забираете всё ценное с их корабля, в том числе и уцелевшее в бою орудие.</text>
+		<autoReward level="HIGH">standard</autoReward>
+		<weapon name="WEAPONS_ORDEN"/>
+	</deadCrew>
+	<crew>
+		<crewMember type="order_human" prop="0.70"/>
+		<crewMember type="order_female" prop="0.30"/>
+	</crew>
+</ship>

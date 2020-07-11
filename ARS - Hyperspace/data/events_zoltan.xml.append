@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<eventList name="ZOLTON_EYE_LIST">
+	<event>
+		<text>Как только вы приблизились, древний инопланетный голос говорит с вами: «Ваша миссия принесла вам великие битвы и великие поражения. Это облегчит вашу боль...» Несколькими минутами позже вы находите ремонтное оборудование на корабле!</text>
+		<weapon name="WEAPONS_BOMB_HEAL"/>
+	</event>
+	<event>
+		<text>Как только вы приблизились, древний инопланетный голос говорит с вами: «Ваша миссия принесла вам великие битвы и великие поражения. Это облегчит вашу боль...» Несколькими минутами позже вы находите ремонтное оборудование на корабле!</text>
+		<weapon name="WEAPONS_BOMB_REPAIR"/>
+	</event>
+	<event>
+		<text>Вы приближаетесь к Глазу и ждёте, но ничего не происходит. Внезапно из FTL-прыжка поблизости выходит корабль золтонцев: «За незаконное нахождение на данном маяке вы будете ликвидированы».</text>
+		<ship load="ZOLTON_SHIP" hostile="true"/><!--- 1.27 -->
+		<status type="loss" target="enemy" system="reactor" amount="4"/> <!-- 1.26.4 -->
+	</event>
+	<event>
+		<text>Вы осторожно приближаетесь к Глазу. И он, видимо, почувствовал ваши мысли, поскольку в вашем трюме неизвестно откуда появилась куча лома!</text>
+		<autoReward level="HIGH">scrap_only</autoReward>
+	</event>
+	<event>
+		<text>Как только вы приближаетесь к Глазу, калейдоскоп цветов заполняет экран, и один из вашего экипажа начинает быстро молодеть, в итоге исчезая в пустоте. Будем надеяться, он таким образом переступил пределы физического существования, а не просто исчез в небытие...</text>
+		<choice req="CREW_ALL" hidden="true" blue="false"><!-- 1.24 -->
+			<text id="continue"/>
+			<event>
+				<removeCrew>
+					<clone>false</clone>
+					<text>Вы проверяете клон-отсек, но он бездействует. Последствия того, что произошло с членом вашего экипажа, необратимы.</text>
+				</removeCrew>
+			</event>
+		</choice>
+		<choice req="CREW_ALL" lvl="0" max_lvl="0" hidden="true" blue="false">
+			<text id="continue"/>
+			<event>
+				<text>Так как ваш корабль находится под управлением ИИ, вам не следует опасаться смерти всего экипажа.</text>
+			</event>
+		</choice>
+	</event>
+	<event>
+		<text>Вы приближаетесь к Глазу и вглядываетесь в него. Неожиданно вы замечаете стазис-капсулу, летящую в вашем направлении. Вы отдаёте приказ поймать её и доставить на корабль. В капсуле находился кристалин, который после пробуждения готов служить вам.</text>
+		<crewMember amount="1" class="crystal"/>
+	</event>
+	<event>
+		<text>Приблизившись к Глазу, вы вглядываетесь в него. Яркий луч на мгновение соединяет ваш корабль с Глазом, и на борту вашего корабля появляется новый член экипажа.</text>
+		<crewMember amount="1" class="energyx"/>
+	</event>
+	<event>
+		<text>Вы приближаетесь к Великому Золтонскому Глазу, и он внезапно начинает светиться зелёной аурой. Сияние переходит на ваш корабль и образует вокруг него барьер. С удивлением вы понимаете, что это золтанский щит! Вы благодарите судьбу и готовитесь к отлёту.</text>
+		<augment name="ENERGY_SHIELD"/>
+	</event>
+	<event>
+		<text>Вы приближаетесь к Великому Золтонскому Глазу, и он начинает светиться ярким красным светом. Вместе с этим температура начинает стремительно подниматься, и вот уже ваш корабль объят пламенем! Нужно срочно убираться отсюда!</text>
+		<damage amount="1" system="room" effect="fire"/>
+		<damage amount="1" system="room" effect="fire"/>
+		<damage amount="1" system="room" effect="fire"/>
+		<damage amount="1" system="room" effect="fire"/>
+		<damage amount="1" system="room" effect="fire"/>
+		<damage amount="1" system="room" effect="fire"/>
+	</event>
+	<event>
+		<text>Вы разворачиваете корабль в сторону Глаза и отдаёте команду приблизиться. Как только до него остаются считанные метры, он неожиданно разрывается на тысячи осколков! Значительная часть их вонзилась в обшивку вашего корабля, превратив его в решето.</text>
+		<damage amount="1" system="oxygen" effect="breach"/>
+		<damage amount="0" system="random" effect="breach"/>
+		<damage amount="0" system="random" effect="breach"/>
+		<damage amount="0" system="random" effect="breach"/>
+		<damage amount="0" system="random" effect="breach"/>
+		<damage amount="0" system="random" effect="breach"/>
+		<damage amount="0" system="random" effect="breach"/>
+		<damage amount="0" system="random" effect="breach"/>
+		<damage amount="0" system="random" effect="breach"/>
+		<damage amount="0" system="random" effect="breach"/>
+		<damage amount="0" system="random" effect="breach"/>
+		<damage amount="0" system="random" effect="breach"/>
+		<damage amount="0" system="random" effect="breach"/>
+		<damage amount="0" system="random" effect="breach"/>
+		<damage amount="0" system="random" effect="breach"/>
+		<damage amount="0" system="random" effect="breach"/>
+		<damage amount="0" system="random" effect="breach"/>
+		<damage amount="0" system="random" effect="breach"/>
+		<damage amount="0" system="random" effect="breach"/>
+		<damage amount="0" system="random" effect="breach"/>
+		<damage amount="0" system="random" effect="breach"/>
+		<damage amount="0" system="random" effect="breach"/>
+		<damage amount="0" system="random" effect="breach"/>
+		<damage amount="0" system="random" effect="breach"/>
+		<damage amount="0" system="random" effect="breach"/>
+		<damage amount="0" system="random" effect="breach"/>
+		<damage amount="0" system="random" effect="breach"/>
+		<damage amount="0" system="random" effect="breach"/>
+		<damage amount="0" system="random" effect="breach"/>
+		<damage amount="0" system="random" effect="breach"/>
+	</event>
+	<event>
+		<text>Как только вы приближаетесь к Глазу, мощнейшая вспышка прорезает пространство в направлении флота повстанцев. Телепатически Глаз дал вам понять, что ваши преследователи теперь полностью дезорганизованы и не скоро догонят вас.</text>
+		<modifyPursuit amount="-4"/>
+	</event>
+	<event>
+		<text>Вы приближаетесь к Великому Золтонскому Глазу, но внезапно раздаются звуки телепортирующейся команды и несколько взрывов! Похоже, что он оказался приманкой для таких доверчивых путешественников, как вы. Вы готовитесь отбиваться.</text>
+		<boarders min="2" max="4" class="energyx"/>
+		<damage amount="4" system="random" effect="fire"/> 
+		<damage amount="-4" system="random" effect="breach"/>
+	</event>
+	<event>
+		<text>Вы приближаетесь к Великому Золтонскому Глазу и наводите все сенсоры на него. Внезапно Глаз начинает вибрировать, от него откалывается небольшой осколок и летит в вашу сторону. Вы отдаёте приказ заряжать орудия, но осколок меняет очертания и превращается в оружие! Вы подбираете его и готовитесь к отлёту.</text>
+		<weapon name="WEAPONS_ZOLTON_REWARD"/>
+	</event>
+	<event>
+		<text>Вы приближаетесь к Великому Золтонскому Глазу и наводите все сенсоры на него. Внезапно Глаз начинает вибрировать, от него откалывается небольшой осколок и летит в вашу сторону. Вы отдаёте приказ заряжать орудия, но осколок меняет очертания и превращается в оружие! Вы подбираете его и готовитесь к отлёту.</text>
+		<weapon name="WEAPONS_UWB"/>
+	</event>
+	<event>
+		<text>Вы приближаетесь к Великому Золтонскому Глазу, и он начинает светиться чёрным светом. Что-то странное начинает происходить в вашем двигательном отсеке — топливные баки сильно вибрируют и нагреваются. Опасаясь взрыва, вы отдаёте приказ слить часть топлива. Кажется, это сработало, и монолит снова вернулся в обычное состояние.</text>
+		<item_modify steal="true">
+			<item type="fuel" min="-10" max="-5"/>
+		</item_modify>
+	</event>
+	<event>
+		<text>Вы подлетаете ближе, и Великий Золтонский Глаз начинает сиять чистым белым светом. Этот свет накрывает ваш корабль, и вы с удивлением наблюдаете, как исчезают все повреждения корпуса. Вы благодарите судьбу и отправляетесь к следующему маяку.</text>
+		<damage amount="-30"/>
+	</event>
+</eventList>
+
+<eventList name="EVENT_CON_TRANSPORTTOPLANET_RUS_RAND">
+	<event>
+		<text>Золтонец-инспектор внимательно осматривает ваш корабль. Зайдя в трюм, он видит, что спрятанные урановые стержни нагрелись и вызвали возгорание! Золтонец тут же вызывает подкрепление и атакует вас.</text>
+		<ship hostile="true"/>
+		<damage amount="0" system="room" effect="fire"/>
+		<boarders min="1" max="1" class="energyx"/>
+	</event>
+	<event>
+		<text>Золтонец-инспектор внимательно осматривает ваш корабль и, не найдя ничего подозрительного, уходит. Когда он ушёл, вы замечаете, что урановые стержни раскалились и вызвали небольшой пожар! Надо скорее от них избавляться...</text>
+		<damage amount="0" system="room" effect="fire"/>
+		<choice hidden="true">
+			<text id="continue"/>
+			<event>
+				<text>Вы доставляете товар на планету, и местные жители щедро оплачивают вашу работу.</text>
+				<autoReward level="MED">standard</autoReward>
+			</event>		
+		</choice>
+	</event>
+	<event>
+		<text>Золтонец-инспектор внимательно осматривает ваш корабль и, не найдя ничего подозрительного, уходит.</text>
+		<choice hidden="true">
+			<text id="continue"/>
+			<event>
+				<text>Вы доставляете товар на планету, и местные жители щедро оплачивают вашу работу.</text>
+				<autoReward level="MED">standard</autoReward>
+			</event>		
+		</choice>
+	</event>
+	<!-- more -->
+</eventList>
+
+<eventList name="EVENT_CON_TRANSPORTTOPLANET_GIP_RAND">
+	<event>
+		<text>Золтонец-инспектор внимательно осматривает ваш корабль. Зайдя в трюм, он слишком близко подходит к клетке с гигантскими пауками и случайно наступает на лапу одному из них. Паук в ярости заливает кислотой голову золтонца, отчего тот умирает на месте! Патрульный корабль золтонцев готовится уничтожить "проклятых контрабандистов", то есть вас.</text>
+		<ship hostile="true"/>
+	</event>
+	<event>
+		<text>Золтонец-инспектор внимательно осматривает ваш корабль. Зайдя в трюм, он обнаруживает, что гигантские пауки сорвали брезент и пытаются выбраться из клетки! Золтонец тут же вызывает подкрепление и атакует вас.</text>
+		<ship hostile="true"/>
+		<boarders min="1" max="1" class="energyx"/>
+	</event>
+	<event>
+		<text>Золтонец-инспектор внимательно осматривает ваш корабль и, не найдя ничего подозрительного, уходит.</text>
+		<choice hidden="true">
+			<text id="continue"/>
+			<event>
+				<text>Вы доставляете товар на планету, и местные жители щедро оплачивают вашу работу.</text>
+				<autoReward level="MED">standard</autoReward>
+			</event>		
+		</choice>
+	</event>
+	<!-- more -->
+</eventList>
+
+<eventList name="EVENT_CON_TRANSPORTTOPLANET_ZTR_RAND">
+	<event>
+		<text>Золтонец-инспектор внимательно осматривает ваш корабль и уже собирается уходить, как вдруг реактор в трюме от резонанса начинает дребезжать и привлекает его внимание!</text>
+		<boarders min="1" max="1" class="energyx"/>
+		<ship hostile="true"/>
+	</event>
+	<event>
+		<text>Золтонец-инспектор внимательно осматривает ваш корабль и, не найдя ничего подозрительного, уходит.</text>
+		<choice hidden="true">
+			<text id="continue"/>
+			<event>
+				<text>Вы доставляете товар на планету, и местные жители щедро оплачивают вашу работу.</text>
+				<autoReward level="MED">standard</autoReward>
+			</event>		
+		</choice>
+	</event>
+	<!-- more  -->
+</eventList>
+
+<eventList name="ZOLTAN_BLINK_X2_WIN_REACT"><!-- 1.26.3 -->
+	<event>
+		<text>Вы полностью отключаете реактор своего судна. Светящийся шар в ответ успокаивается, а на борту у вас оказывается золтанец. Похоже, вы сделали всё правильно!</text>
+		<crewMember amount="1" class="energyx"/>
+		<status type="limit" target="player" system="reactor" amount="1"/>
+	</event>
+	<event>
+		<text>Вы полностью отключаете реактор своего судна. Светящийся шар в ответ успокаивается, а на борту у вас оказывается груда лома. Похоже, вы сделали всё правильно!</text>
+		<autoReward level="RANDOM">scrap_only</autoReward>
+		<status type="limit" target="player" system="reactor" amount="1"/>
+	</event>
+	<event>
+		<text>Вы полностью отключаете реактор своего судна. Светящийся шар в ответ успокаивается, а реактор вашего корабля начинает улучшаться под воздействием какой-то силы извне! Похоже, вы сделали всё правильно!</text>
+		<upgrade amount="1" system="reactor"/>
+		<status type="limit" target="player" system="reactor" amount="1"/>
+	</event>	
+</eventList>
+<eventList name="ZOLTAN_BLINK_X2_WIN_ATK"><!-- 1.26.3 -->
+	<event>
+		<text>Вы показываете боевую мощь своего корабля. Светящийся шар в ответ успокаивается, а на борту у вас оказывается золтанец. Похоже, вы сделали всё правильно!</text>
+		<crewMember amount="1" class="energyx"/>
+	</event>
+	<event>
+		<text>Вы показываете боевую мощь своего корабля. Светящийся шар в ответ успокаивается, а на борту у вас оказывается груда лома. Похоже, вы сделали всё правильно!</text>
+		<autoReward level="RANDOM">scrap_only</autoReward>
+	</event>
+	<event>
+		<text>Вы показываете боевую мощь своего корабля. Светящийся шар в ответ успокаивается, а реактор вашего корабля начинает улучшаться под воздействием какой-то силы извне! Похоже, вы сделали всё правильно!</text>
+		<upgrade amount="1" system="reactor"/>
+	</event>	
+</eventList>
+<eventList name="ZOLTAN_BLINK_X2_WIN_WHO"><!-- 1.26.3 -->
+	<event>
+		<text>Вы быстро рассказываете о своей миссии в коммуникатор. Светящийся шар в ответ успокаивается, а на борту у вас оказывается золтанец. Похоже, вы сделали всё правильно!</text>
+		<crewMember amount="1" class="energyx"/>
+	</event>
+	<event>
+		<text>Вы быстро рассказываете о своей миссии в коммуникатор. Светящийся шар в ответ успокаивается, а на борту у вас оказывается груда лома. Похоже, вы сделали всё правильно!</text>
+		<autoReward level="RANDOM">scrap_only</autoReward>
+	</event>
+	<event>
+		<text>Вы быстро рассказываете о своей миссии в коммуникатор. Светящийся шар в ответ успокаивается, а реактор вашего корабля начинает улучшаться под воздействием какой-то силы извне! Похоже, вы сделали всё правильно!</text>
+		<upgrade amount="1" system="reactor"/>
+	</event>	
+</eventList>
+<eventList name="ZOLTAN_BLINK_X2_WIN_WEAP"><!-- 1.26.3 -->
+	<event>
+		<text>Вы полностью отключаете орудийную систему своего судна. Светящийся шар в ответ успокаивается, а на борту у вас оказывается золтанец. Похоже, вы сделали всё правильно!</text>
+		<crewMember amount="1" class="energyx"/>
+		<status type="limit" target="player" system="weapons" amount="0"/>
+	</event>
+	<event>
+		<text>Вы полностью отключаете орудийную систему своего судна. Светящийся шар в ответ успокаивается, а на борту у вас оказывается груда лома. Похоже, вы сделали всё правильно!</text>
+		<autoReward level="RANDOM">scrap_only</autoReward>
+		<status type="limit" target="player" system="weapons" amount="0"/>
+	</event>
+	<event>
+		<text>Вы полностью отключаете орудийную систему своего судна. Светящийся шар в ответ успокаивается, а реактор вашего корабля начинает улучшаться под воздействием какой-то силы извне! Похоже, вы сделали всё правильно!</text>
+		<upgrade amount="1" system="reactor"/>
+		<status type="limit" target="player" system="weapons" amount="0"/>
+	</event>	
+</eventList>
+<eventList name="ZOLTAN_BLINK_X2_WIN_ENG"><!-- 1.26.3 -->
+	<event>
+		<text>Вы гасите мощность работы двигателей до минимального значения. Светящийся шар в ответ успокаивается, а на борту у вас оказывается золтанец. Похоже, вы сделали всё правильно!</text>
+		<crewMember amount="1" class="energyx"/>
+		<status type="limit" target="player" system="engines" amount="1"/>
+	</event>
+	<event>
+		<text>Вы гасите мощность работы двигателей до минимального значения. Светящийся шар в ответ успокаивается, а на борту у вас оказывается груда лома. Похоже, вы сделали всё правильно!</text>
+		<autoReward level="RANDOM">scrap_only</autoReward>
+		<status type="limit" target="player" system="engines" amount="1"/>
+	</event>
+	<event>
+		<text>Вы гасите мощность работы двигателей до минимального значения. Светящийся шар в ответ успокаивается, а реактор вашего корабля начинает улучшаться под воздействием какой-то силы извне! Похоже, вы сделали всё правильно!</text>
+		<upgrade amount="1" system="reactor"/>
+		<status type="limit" target="player" system="engines" amount="1"/>
+	</event>	
+</eventList>
+
+<event name="ZOLTON_BOARDERS" unique="true">
+	<text>Патрульный корабль золтонцев на этом маяке настаивает на досмотре ваших трюмов. Вы пускаете на борт группу золтонцев, и в груде неучтённого лома они находят запрещённое оборудование! Вам некогда объяснять им, что такое ржавый холодильник... К бою!</text>
+	<ship load="ZOLTON_SHIP" hostile="true"/>
+	<status type="loss" target="enemy" system="reactor" amount="4"/> <!-- 1.26.4 -->
+	<boarders min="3" max="4" class="energyx"/>
+	<autoReward level="LOW">scrap_only</autoReward>
+</event>

@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<blueprintList name="TULLY_AUG">
+	<name>O2_MASKS_CREW_STIMS</name>
+	<name>ENERGY_SHIELD_ZOLTAN_BYPASS</name>
+	<name>SLUG_GEL_FIRE_EXTINGUISHERS</name>
+	<name>CRYSTAL_SHARDS_ROCK_ARMOR</name>
+	<name>SYSTEM_CASING_ION_ARMOR</name>
+	<name>WEAPON_PREIGNITE_AUTO_COOLDOWN</name>
+	<name>SHIELD_RECHARGE_CLOAK_FIRE</name>
+</blueprintList>
+
+<blueprintList name="FTL_JUMPER">
+	<name>FTL_JUMPER</name>
+	<name>FTL_JUMPER_GOOD</name>
+</blueprintList>
+
+<blueprintList name="energy">
+	<name>energy</name>
+	<name>energy_w</name>
+</blueprintList>
+
+<blueprintList name="energyx">
+	<name>energyx</name>
+	<name>energyx_w</name>
+</blueprintList>
+
+<blueprintList name="order_human">
+	<name>order_human</name>
+	<name>order_female</name>
+</blueprintList>
+
+<blueprintList name="mushrooms">
+	<name>mushroom</name>
+	<name>mushroom_b</name>
+	<name>mushroom_f</name>
+</blueprintList>
+
+<mod:findName type="blueprintList" name="CREW_ENERGY">
+	<mod-append:name>energy_w</mod-append:name>
+</mod:findName>
+
+<mod:findName type="blueprintList" name="WEAPONS_PROTOTYPES">
+	<mod-append:name>MAGMAN_PROTOTYPE_1</mod-append:name>
+	<mod-append:name>MAGMAN_PROTOTYPE_2</mod-append:name>
+	<mod-append:name>ORCHID_PROTOTYPE_1</mod-append:name>
+	<mod-append:name>ORCHID_PROTOTYPE_2</mod-append:name>
+	<mod-append:name>ORCHID_PROTOTYPE_1_BRC</mod-append:name>
+	<mod-append:name>ORCHID_PROTOTYPE_1_CLD</mod-append:name>
+	<mod-append:name>ORCHID_PROTOTYPE_1_POW</mod-append:name>
+	<mod-append:name>ORCHID_PROTOTYPE_1_UNI</mod-append:name>
+	<mod-append:name>ORCHID_PROTOTYPE_1_RDY</mod-append:name>
+	<mod-append:name>ORCHID_PROTOTYPE_2_BRC</mod-append:name>
+	<mod-append:name>ORCHID_PROTOTYPE_2_CLD</mod-append:name>
+	<mod-append:name>ORCHID_PROTOTYPE_2_POW</mod-append:name>
+	<mod-append:name>ORCHID_PROTOTYPE_2_UNI</mod-append:name>
+	<mod-append:name>ORCHID_PROTOTYPE_2_RDY</mod-append:name>
+	<mod-append:name>MAGMAN_PROTOTYPE_1_CLD</mod-append:name>
+	<mod-append:name>MAGMAN_PROTOTYPE_1_POW</mod-append:name>
+	<mod-append:name>MAGMAN_PROTOTYPE_1_UNI</mod-append:name>
+	<mod-append:name>MAGMAN_PROTOTYPE_1_RDY</mod-append:name>
+	<mod-append:name>MAGMAN_PROTOTYPE_2_CLD</mod-append:name>
+	<mod-append:name>MAGMAN_PROTOTYPE_2_POW</mod-append:name>
+	<mod-append:name>MAGMAN_PROTOTYPE_2_UNI</mod-append:name>
+	<mod-append:name>MAGMAN_PROTOTYPE_2_RDY</mod-append:name>
+</mod:findName>
+
+<mod:findName type="blueprintList" name="WEAPONS_PROTOTYPES_INJ">
+	<mod-append:name>ORCHID_PROTOTYPE_1_BRC</mod-append:name>
+	<mod-append:name>ORCHID_PROTOTYPE_1_CLD</mod-append:name>
+	<mod-append:name>ORCHID_PROTOTYPE_1_POW</mod-append:name>
+	<mod-append:name>ORCHID_PROTOTYPE_1_UNI</mod-append:name>
+	<mod-append:name>ORCHID_PROTOTYPE_1_RDY</mod-append:name>
+	<mod-append:name>ORCHID_PROTOTYPE_2_BRC</mod-append:name>
+	<mod-append:name>ORCHID_PROTOTYPE_2_CLD</mod-append:name>
+	<mod-append:name>ORCHID_PROTOTYPE_2_POW</mod-append:name>
+	<mod-append:name>ORCHID_PROTOTYPE_2_UNI</mod-append:name>
+	<mod-append:name>ORCHID_PROTOTYPE_2_RDY</mod-append:name>
+	<mod-append:name>MAGMAN_PROTOTYPE_1_CLD</mod-append:name>
+	<mod-append:name>MAGMAN_PROTOTYPE_1_POW</mod-append:name>
+	<mod-append:name>MAGMAN_PROTOTYPE_1_UNI</mod-append:name>
+	<mod-append:name>MAGMAN_PROTOTYPE_1_RDY</mod-append:name>
+	<mod-append:name>MAGMAN_PROTOTYPE_2_CLD</mod-append:name>
+	<mod-append:name>MAGMAN_PROTOTYPE_2_POW</mod-append:name>
+	<mod-append:name>MAGMAN_PROTOTYPE_2_UNI</mod-append:name>
+	<mod-append:name>MAGMAN_PROTOTYPE_2_RDY</mod-append:name>
+</mod:findName>
+
+<mod:findName type="blueprintList" name="WEAPONS_PROTOTYPES_BROKEN">
+	<mod-append:name>ORCHID_PROTOTYPE_2</mod-append:name>
+	<mod-append:name>ORCHID_PROTOTYPE_2_BRC</mod-append:name>
+	<mod-append:name>ORCHID_PROTOTYPE_2_CLD</mod-append:name>
+	<mod-append:name>ORCHID_PROTOTYPE_2_POW</mod-append:name>
+	<mod-append:name>ORCHID_PROTOTYPE_2_UNI</mod-append:name>
+	<mod-append:name>ORCHID_PROTOTYPE_2_RDY</mod-append:name>
+	<mod-append:name>MAGMAN_PROTOTYPE_2</mod-append:name>
+	<mod-append:name>MAGMAN_PROTOTYPE_2_CLD</mod-append:name>
+	<mod-append:name>MAGMAN_PROTOTYPE_2_POW</mod-append:name>
+	<mod-append:name>MAGMAN_PROTOTYPE_2_UNI</mod-append:name>
+	<mod-append:name>MAGMAN_PROTOTYPE_2_RDY</mod-append:name>
+</mod:findName>
+
+<mod:findName type="blueprintList" name="WEAPONS_PROTOTYPES_REGULAR">
+	<mod-append:name>MAGMAN_PROTOTYPE_1</mod-append:name>
+	<mod-append:name>MAGMAN_PROTOTYPE_2</mod-append:name>
+	<mod-append:name>ORCHID_PROTOTYPE_1</mod-append:name>
+	<mod-append:name>ORCHID_PROTOTYPE_2</mod-append:name>
+</mod:findName>
+
+<mod:findName type="shipBlueprint" name="CIV_GLORY_SUP_1">
+    <mod-overwrite:crewCount amount="3" max="5" class="order_human"/>
+</mod:findName>
+
+<mod:findName type="shipBlueprint" name="CIV_GLORY_SUP_2">
+    <mod-overwrite:crewCount amount="3" max="5" class="order_human"/>
+</mod:findName>
+
+<mod:findName type="shipBlueprint" name="CIV_GLORY_SUP_3">
+    <mod-overwrite:crewCount amount="3" max="5" class="order_human"/>
+</mod:findName>
+
+<mod:findName type="shipBlueprint" name="CIV_GLORY">
+    <mod-overwrite:crewCount amount="4" max="8" class="order_human"/>
+</mod:findName>
+
+<mod:findName type="shipBlueprint" name="CIV_GLORY_2">
+    <mod-overwrite:crewCount amount="4" max="8" class="order_human"/>
+</mod:findName>
+
+<mod:findName type="shipBlueprint" name="CIV_GLORY_3">
+    <mod-overwrite:crewCount amount="4" max="8" class="order_human"/>
+</mod:findName>
+
+<mod:findName type="shipBlueprint" name="CIV_GLORY_CLASSIC">
+    <mod-overwrite:crewCount amount="3" max="6" class="order_human"/>
+</mod:findName>
+
+<mod:findName type="shipBlueprint" name="CIV_GLORY_CLASSIC_2">
+    <mod-overwrite:crewCount amount="3" max="6" class="order_human"/>
+</mod:findName>
+
+<mod:findName type="shipBlueprint" name="CIV_GLORY_CLASSIC_3">
+    <mod-overwrite:crewCount amount="3" max="6" class="order_human"/>
+</mod:findName>
+
+<mod:findName type="shipBlueprint" name="CIV_GLORY_BOMBER">
+    <mod-overwrite:crewCount amount="4" max="6" class="order_human"/>
+</mod:findName>
+
+<mod:findName type="shipBlueprint" name="CIV_GLORY_BOMBER_2">
+    <mod-overwrite:crewCount amount="4" max="6" class="order_human"/>
+</mod:findName>
+
+<mod:findName type="shipBlueprint" name="CIV_GLORY_BOMBER_3">
+    <mod-overwrite:crewCount amount="4" max="6" class="order_human"/>
+</mod:findName>
+
+<mod:findName type="shipBlueprint" name="CIV_GLORY_ART">
+    <mod-overwrite:crewCount amount="3" max="6" class="order_human"/>
+</mod:findName>
+
+<mod:findName type="shipBlueprint" name="CIV_GLORY_ART_2">
+    <mod-overwrite:crewCount amount="3" max="6" class="order_human"/>
+</mod:findName>
+
+<mod:findName type="shipBlueprint" name="CIV_GLORY_ART_3">
+    <mod-overwrite:crewCount amount="3" max="6" class="order_human"/>
+</mod:findName>
+
+<mod:findName type="shipBlueprint" name="CIV_GLORY_FLAGSHIP">
+    <mod-overwrite:crewCount amount="6" max="8" class="order_human"/>
+</mod:findName>
+
+<mod:findName type="shipBlueprint" name="CIV_GLORY_FLAGSHIP_2">
+    <mod-overwrite:crewCount amount="6" max="8" class="order_human"/>
+</mod:findName>
+
+<mod:findName type="shipBlueprint" name="CIV_GLORY_FLAGSHIP_3">
+    <mod-overwrite:crewCount amount="6" max="10" class="order_human"/>
+</mod:findName>
+
+<mod:findName type="shipBlueprint" name="CIV_GLORY_STATION">
+    <mod-overwrite:crewCount amount="6" max="10" class="order_human"/>
+</mod:findName>
+
+<mod:findName type="shipBlueprint" name="BCIRCLE_EZ_SCOUT_1">
+    <mod-overwrite:crewCount amount="3" max="6" class="morph"/>
+</mod:findName>
+
+<mod:findName type="shipBlueprint" name="BCIRCLE_EZ_SCOUT_2">
+    <mod-overwrite:crewCount amount="3" max="6" class="morph"/>
+</mod:findName>
+
+<mod:findName type="shipBlueprint" name="BCIRCLE_EZ_SCOUT_1B">
+    <mod-overwrite:crewCount amount="3" max="6" class="morph"/>
+</mod:findName>
+
+<mod:findName type="shipBlueprint" name="BCIRCLE_EZ_SCOUT_2B">
+    <mod-overwrite:crewCount amount="3" max="6" class="morph"/>
+</mod:findName>
+
+<mod:findName type="shipBlueprint" name="BCIRCLE_EZ_BOMBER_1">
+    <mod-overwrite:crewCount amount="4" max="6" class="morph"/>
+</mod:findName>
+
+<mod:findName type="shipBlueprint" name="BCIRCLE_EZ_BOMBER_2">
+    <mod-overwrite:crewCount amount="4" max="6" class="morph"/>
+</mod:findName>
+
+<mod:findName type="shipBlueprint" name="BCIRCLE_EZ_BOMBER_1B">
+    <mod-overwrite:crewCount amount="4" max="6" class="morph"/>
+</mod:findName>
+
+<mod:findName type="shipBlueprint" name="BCIRCLE_EZ_BOMBER_2B">
+    <mod-overwrite:crewCount amount="4" max="6" class="morph"/>
+</mod:findName>
+
+<mod:findName type="shipBlueprint" name="BCIRCLE_ES_SCOUT_1">
+    <mod-overwrite:crewCount amount="3" max="6" class="morph"/>
+</mod:findName>
+
+<mod:findName type="shipBlueprint" name="BCIRCLE_ES_SCOUT_1B">
+    <mod-overwrite:crewCount amount="3" max="6" class="morph"/>
+</mod:findName>
+
+<mod:findName type="shipBlueprint" name="BCIRCLE_ES_SCOUT_2B">
+    <mod-overwrite:crewCount amount="3" max="6" class="morph"/>
+</mod:findName>
+
+<mod:findName type="shipBlueprint" name="BCIRCLE_ES_BOMBER_1">
+    <mod-overwrite:crewCount amount="4" max="6" class="morph"/>
+</mod:findName>
+
+<mod:findName type="shipBlueprint" name="BCIRCLE_ES_BOMBER_2">
+    <mod-overwrite:crewCount amount="4" max="6" class="morph"/>
+</mod:findName>
+
+<mod:findName type="shipBlueprint" name="BCIRCLE_ES_BOMBER_1B">
+    <mod-overwrite:crewCount amount="4" max="6" class="morph"/>
+</mod:findName>
+
+<mod:findName type="shipBlueprint" name="BCIRCLE_ES_BOMBER_2B">
+    <mod-overwrite:crewCount amount="4" max="6" class="morph"/>
+</mod:findName>
+
+<mod:findName type="shipBlueprint" name="BCIRCLE_ER_SCOUT_1">
+    <mod-overwrite:crewCount amount="3" max="6" class="morph"/>
+</mod:findName>
+
+<mod:findName type="shipBlueprint" name="BCIRCLE_ER_SCOUT_2">
+    <mod-overwrite:crewCount amount="3" max="6" class="morph"/>
+</mod:findName>
+
+<mod:findName type="shipBlueprint" name="BCIRCLE_ER_SCOUT_1B">
+    <mod-overwrite:crewCount amount="3" max="6" class="morph"/>
+</mod:findName>
+
+<mod:findName type="shipBlueprint" name="BCIRCLE_ER_SCOUT_2B">
+    <mod-overwrite:crewCount amount="3" max="6" class="morph"/>
+</mod:findName>
+
+<mod:findName type="shipBlueprint" name="BCIRCLE_ER_BOMBER_1">
+    <mod-overwrite:crewCount amount="4" max="6" class="morph"/>
+</mod:findName>
+
+<mod:findName type="shipBlueprint" name="BCIRCLE_ER_BOMBER_2">
+    <mod-overwrite:crewCount amount="4" max="6" class="morph"/>
+</mod:findName>
+
+<mod:findName type="shipBlueprint" name="BCIRCLE_ER_BOMBER_1B">
+    <mod-overwrite:crewCount amount="4" max="6" class="morph"/>
+</mod:findName>
+
+<mod:findName type="shipBlueprint" name="BCIRCLE_ER_BOMBER_2B">
+    <mod-overwrite:crewCount amount="4" max="6" class="morph"/>
+</mod:findName>
+
+<mod:findName type="shipBlueprint" name="BCIRCLE_EM_SCOUT_1">
+    <mod-overwrite:crewCount amount="3" max="6" class="morph"/>
+</mod:findName>
+
+<mod:findName type="shipBlueprint" name="BCIRCLE_EM_SCOUT_2">
+    <mod-overwrite:crewCount amount="3" max="6" class="morph"/>
+</mod:findName>
+
+<mod:findName type="shipBlueprint" name="BCIRCLE_EM_SCOUT_1B">
+    <mod-overwrite:crewCount amount="3" max="6" class="morph"/>
+</mod:findName>
+
+<mod:findName type="shipBlueprint" name="BCIRCLE_EM_SCOUT_2B">
+    <mod-overwrite:crewCount amount="3" max="6" class="morph"/>
+</mod:findName>
+
+<mod:findName type="shipBlueprint" name="BCIRCLE_EM_BOMBER_1">
+    <mod-overwrite:crewCount amount="4" max="6" class="morph"/>
+</mod:findName>
+
+<mod:findName type="shipBlueprint" name="BCIRCLE_EM_BOMBER_2">
+    <mod-overwrite:crewCount amount="4" max="6" class="morph"/>
+</mod:findName>
+
+<mod:findName type="shipBlueprint" name="BCIRCLE_EM_BOMBER_1B">
+    <mod-overwrite:crewCount amount="4" max="6" class="morph"/>
+</mod:findName>
+
+<mod:findName type="shipBlueprint" name="BCIRCLE_EM_BOMBER_2B">
+    <mod-overwrite:crewCount amount="4" max="6" class="morph"/>
+</mod:findName>
+
+<mod:findName type="shipBlueprint" name="BCIRCLE_BOSSNOZLT">
+    <mod-overwrite:crewCount amount="5" max="8" class="morph"/>
+</mod:findName>
+
+<mod:findName type="shipBlueprint" name="BCIRCLE_BOSSNOSLG">
+    <mod-overwrite:crewCount amount="5" max="8" class="morph"/>
+</mod:findName>
+
+<mod:findName type="shipBlueprint" name="BCIRCLE_BOSSNORCK">
+    <mod-overwrite:crewCount amount="5" max="8" class="morph"/>
+</mod:findName>
+
+<mod:findName type="shipBlueprint" name="BCIRCLE_BOSSNOMAN">
+    <mod-overwrite:crewCount amount="5" max="8" class="morph"/>
+</mod:findName>
+
+<mod:findName type="shipBlueprint" name="WEAK_BCIRCLE_EZ_SCOUT_1">
+    <mod-overwrite:crewCount amount="3" max="6" class="morph"/>
+</mod:findName>
+
+<mod:findName type="shipBlueprint" name="WEAK_BCIRCLE_ES_BOMBER_1">
+    <mod-overwrite:crewCount amount="4" max="6" class="morph"/>
+</mod:findName>
+
+<mod:findName type="shipBlueprint" name="WEAK_BCIRCLE_ER_SCOUT_1">
+    <mod-overwrite:crewCount amount="3" max="6" class="morph"/>
+</mod:findName>
+
+<mod:findName type="shipBlueprint" name="WEAK_BCIRCLE_EM_BOMBER_1">
+    <mod-overwrite:crewCount amount="4" max="6" class="morph"/>
+</mod:findName>
+
+<mod:findName type="shipBlueprint" name="ENERGYX_BOMBER_1">
+    <mod-overwrite:crewCount amount="5" max="8" class="energyx"/>
+</mod:findName>
+
+<mod:findName type="shipBlueprint" name="ENERGYX_BOMBER_2">
+    <mod-overwrite:crewCount amount="5" max="8" class="energyx"/>
+</mod:findName>
+
+<mod:findName type="shipBlueprint" name="ENERGYX_BOMBER_3">
+    <mod-overwrite:crewCount amount="5" max="8" class="energyx"/>
+</mod:findName>
+
+<mod:findName type="shipBlueprint" name="ENERGYX_BOMBER_4">
+    <mod-overwrite:crewCount amount="5" max="8" class="energyx"/>
+</mod:findName>
+
+<mod:findName type="shipBlueprint" name="ENERGYX_FIGHTER_1">
+    <mod-overwrite:crewCount amount="5" max="7" class="energyx"/>
+</mod:findName>
+
+<mod:findName type="shipBlueprint" name="ENERGYX_FIGHTER_2">
+    <mod-overwrite:crewCount amount="5" max="7" class="energyx"/>
+</mod:findName>
+
+<mod:findName type="shipBlueprint" name="ENERGYX_FIGHTER_3">
+    <mod-overwrite:crewCount amount="5" max="7" class="energyx"/>
+</mod:findName>
+
+<mod:findName type="shipBlueprint" name="ENERGYX_FIGHTER_4">
+    <mod-overwrite:crewCount amount="5" max="7" class="energyx"/>
+</mod:findName>
+
+<mod:findName type="shipBlueprint" name="ENERGYX_SCOUT_1">
+    <mod-overwrite:crewCount amount="5" max="6" class="energyx"/>
+</mod:findName>
+
+<mod:findName type="shipBlueprint" name="ENERGYX_SCOUT_2">
+    <mod-overwrite:crewCount amount="5" max="6" class="energyx"/>
+</mod:findName>
+
+<mod:findName type="shipBlueprint" name="ENERGYX_SCOUT_3">
+    <mod-overwrite:crewCount amount="5" max="6" class="energyx"/>
+</mod:findName>
+
+<mod:findName type="shipBlueprint" name="ENERGYX_SCOUT_4">
+    <mod-overwrite:crewCount amount="5" max="6" class="energyx"/>
+</mod:findName>
+
+<mod:findName type="shipBlueprint" name="ENERGYX_BOSS_1">
+    <mod-overwrite:crewCount amount="7" max="10" class="energyx"/>
+</mod:findName>
+
+<mod:findName type="shipBlueprint" name="ENERGYX_BOSS_2">
+    <mod-overwrite:crewCount amount="7" max="10" class="energyx"/>
+</mod:findName>
+
+<mod:findName type="shipBlueprint" name="BS_ENERGYX">
+    <mod-overwrite:crewCount amount="7" max="10" class="energyx"/>
+</mod:findName>
+
+<mod:findName type="shipBlueprint" name="ENERGYX_BOMBER_1_S">
+    <mod-overwrite:crewCount amount="3" max="6" class="energyx"/>
+</mod:findName>
+
+<mod:findName type="shipBlueprint" name="ENERGYX_FIGHTER_1_S">
+    <mod-overwrite:crewCount amount="3" max="5" class="energyx"/>
+</mod:findName>
+
+<mod:findName type="shipBlueprint" name="ENERGYX_SCOUT_1_S">
+    <mod-overwrite:crewCount amount="3" max="4" class="energyx"/>
+</mod:findName>
+
+<mod:findName type="shipBlueprint" name="ENERGYX_HUNTER_1">
+    <mod-overwrite:crewCount amount="5" max="8" class="energyx"/>
+</mod:findName>
+
+<mod:findName type="shipBlueprint" name="ENERGYX_HUNTER_2">
+    <mod-overwrite:crewCount amount="5" max="8" class="energyx"/>
+</mod:findName>
+
+<mod:findName type="shipBlueprint" name="ENERGYX_HUNTER_3">
+    <mod-overwrite:crewCount amount="5" max="8" class="energyx"/>
+</mod:findName>
+
+<mod:findName type="shipBlueprint" name="ENERGYX_STATION_M">
+    <mod-overwrite:crewCount amount="4" max="6" class="energyx"/>
+</mod:findName>
+
+<mod:findName type="shipBlueprint" name="SLURM_AS_1">
+    <mod-overwrite:crewCount amount="13" max="13" class="slig"/>
+</mod:findName>
+
+<mod:findName type="shipBlueprint" name="SLURM_AS_2">
+    <mod-overwrite:crewCount amount="13" max="13" class="slig"/>
+</mod:findName>
+
+<mod:findName type="shipBlueprint" name="SLURM_AS_3">
+    <mod-overwrite:crewCount amount="13" max="13" class="slig"/>
+</mod:findName>
+
+<mod:findName type="shipBlueprint" name="SLURM_TR_1">
+    <mod-overwrite:crewCount amount="8" max="10" class="slig"/>
+</mod:findName>
+
+<mod:findName type="shipBlueprint" name="SLURM_TR_2">
+    <mod-overwrite:crewCount amount="8" max="10" class="slig"/>
+</mod:findName>
+
+<mod:findName type="shipBlueprint" name="SLURM_TR_3">
+    <mod-overwrite:crewCount amount="8" max="10" class="slig"/>
+</mod:findName>
+
+<mod:findName type="shipBlueprint" name="SLURM_CR_1">
+    <mod-overwrite:crewCount amount="7" max="10" class="slig"/>
+</mod:findName>
+
+<mod:findName type="shipBlueprint" name="SLURM_CR_2">
+    <mod-overwrite:crewCount amount="7" max="10" class="slig"/>
+</mod:findName>
+
+<mod:findName type="shipBlueprint" name="SLURM_CR_3">
+    <mod-overwrite:crewCount amount="7" max="10" class="slig"/>
+</mod:findName>
+
+<mod:findName type="shipBlueprint" name="SLURM_QUEENY">
+    <mod-overwrite:crewCount amount="13" max="15" class="slig"/>
+</mod:findName>

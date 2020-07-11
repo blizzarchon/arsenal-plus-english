@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<eventList name="EVENT_SLURM_ESCORT_POINT">
+	<event>
+		<img planet="PLANET_POPULATED"/>
+		<ship load="SLURM_SHIP_PARAMETERS" hostile="true"/>
+		<boarders min="2" max="3" class="slig"/>
+		<text>Корабль слёрмов поблизости атакует вас, а тот, что вы сопровождали, отправляет группу захватчиков-слёрмов. Это ловушка!</text>
+	</event>
+	<event>
+		<img planet="PLANET_POPULATED"/>
+		<ship load="SLURM_SHIP_PARAMETERS" hostile="false"/>
+		<text>Группа кораблей слёрмов поблизости благодарят вас за сопровождение их соратника и неплохо снабжают вас материалами.</text>
+		<autoReward level="HIGH">standard</autoReward>
+	</event>
+	<event>
+		<img planet="PLANET_POPULATED"/>
+		<ship load="SLURM_SHIP_PARAMETERS" hostile="false"/>
+		<text>Группа кораблей слёрмов поблизости благодарят вас за сопровождение их соратника и неплохо снабжают вас материалами.</text>
+		<autoReward level="HIGH">standard</autoReward>
+	</event>
+	<event>
+		<img planet="PLANET_POPULATED"/>
+		<ship load="SLURM_SHIP_PARAMETERS" hostile="false"/>
+		<text>Группа кораблей слёрмов поблизости благодарят вас за сопровождение их соратника и неплохо снабжают вас материалами.</text>
+		<autoReward level="HIGH">standard</autoReward>
+	</event>
+</eventList>
+
+<eventList name="EVENT_SLURM_TAMOZNA_PAY">
+	<event>
+		<text>«...отлично, кажетссся у вассс всссё в порядке ссс "документами". Можете продолжить сссвой полёт».</text>
+	</event>
+	<event>
+		<text>«...капитан, мне кажется у вассс маловато "документов". Необходимо дополнительно провести осмотр вашшшего трюма...»</text>
+		<choice hidden="true">
+			<text>Позволить им осмотреть свой трюм.</text>
+			<event load="EVENT_SLURM_TAMOZNA_OSMOTR"/>
+		</choice>
+		<choice hidden="true">
+			<text>Отказать им.</text>
+			<event>
+				<text>«...капитан, вам лучшшше быть более сссговорчивыми в чужих краях. Активировать противокорабельную батарею!..»</text>
+				<ship hostile="true"/>
+				<status type="clear" target="enemy" system="teleporter" amount="100"/>
+				<environment type="PDS" target="player"/>
+			</event>
+		</choice>
+	</event>
+	<event>
+		<text>«...отлично, кажетссся у вассс всссё в порядке ссс "документами". Можете продолжить сссвой полёт. Также, сссогласссно нашим правилам, вам полагаетссся ссстандартное вооружение для защиты от вредителей».</text>
+		<weapon name="SLURMGUN_A"/>
+	</event>
+	<event>
+		<text>«...отлично, кажетссся у вассс всссё в порядке ссс "документами". Можете продолжить сссвой полёт. Также сссогласссно нашим правилам, вам полагаетссся сссопровождение».</text>
+		<crewMember amount="1" class="slig">Слёрм</crewMember>
+	</event>
+</eventList>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<mod:findName type="sectorDescription" name="ENGI_SECTOR"> 
+	<mod:findLike type="rarityList">
+		<mod-append:blueprint name="energy_w" rarity="4"/>
+	</mod:findLike>
+</mod:findName>
+
+<mod:findName type="sectorDescription" name="ENGI_HOME"> 
+	<mod:findLike type="rarityList">
+		<mod-append:blueprint name="energy_w" rarity="4"/>
+	</mod:findLike>
+</mod:findName>
+
+<mod:findName type="sectorDescription" name="ORDEN_SECTOR"> 
+	<mod:findLike type="rarityList">
+		<mod-append:blueprint name="order_human" rarity="1"/>
+		<mod-append:blueprint name="order_female" rarity="1"/>
+		<mod-append:blueprint name="human" rarity="0"/>
+	</mod:findLike>
+</mod:findName>
+
+<mod:findName type="sectorDescription" name="ORDEN_SECTOR_MINIBOSS"> 
+	<mod:findLike type="rarityList">
+		<mod-append:blueprint name="order_human" rarity="1"/>
+		<mod-append:blueprint name="order_female" rarity="1"/>
+		<mod-append:blueprint name="human" rarity="0"/>
+	</mod:findLike>
+</mod:findName>
+
+<mod:findName type="sectorDescription" name="BORDER_SECTOR"> 
+	<mod:findLike type="rarityList">
+		<mod-append:blueprint name="order_human" rarity="1"/>
+		<mod-append:blueprint name="order_female" rarity="1"/>
+		<mod-append:blueprint name="magman" rarity="1"/>
+		<mod-append:blueprint name="orchid" rarity="1"/>
+		<mod-append:blueprint name="shell" rarity="1"/>
+		<mod-append:blueprint name="slug_armored" rarity="1"/>
+		<mod-append:blueprint name="slig" rarity="1"/>
+		<mod-append:blueprint name="morph" rarity="1"/>
+		<mod-append:blueprint name="energyx" rarity="1"/>
+		<mod-append:blueprint name="energyx_w" rarity="1"/>
+		<mod-append:blueprint name="energy_w" rarity="1"/>
+	</mod:findLike>
+</mod:findName>
+
+<mod:findName type="sectorDescription" name="MANTIS_SECTOR"> 
+	<mod:findLike type="rarityList">
+		<mod-append:blueprint name="energy_w" rarity="0"/>
+	</mod:findLike>
+</mod:findName>
+
+<mod:findName type="sectorDescription" name="MANTIS_HOME"> 
+	<mod:findLike type="rarityList">
+		<mod-append:blueprint name="energy_w" rarity="0"/>
+	</mod:findLike>
+</mod:findName>
+
+<mod:findName type="sectorDescription" name="AVATAR_SECTOR"> 
+	<mod:findLike type="rarityList">
+		<mod-append:blueprint name="energy_w" rarity="0"/>
+	</mod:findLike>
+</mod:findName>
+
+<mod:findName type="sectorDescription" name="AVATAR_SECTOR_HOME"> 
+	<mod:findLike type="rarityList">
+		<mod-append:blueprint name="energy_w" rarity="0"/>
+	</mod:findLike>
+</mod:findName>
+
+<mod:findName type="sectorDescription" name="SLURM_SECTOR"> 
+	<mod:findLike type="rarityList">
+		<mod-append:blueprint name="slig" rarity="1"/>
+		<mod-append:blueprint name="slug" rarity="0"/>
+		<mod-append:blueprint name="energy_w" rarity="4"/>
+	</mod:findLike>
+</mod:findName>
+
+<mod:findName type="sectorDescription" name="NEBULA_SECTOR"> 
+	<mod:findLike type="rarityList">
+		<mod-append:blueprint name="energy_w" rarity="4"/>
+	</mod:findLike>
+</mod:findName>
+
+<mod:findName type="sectorDescription" name="MORPH_SECTOR"> 
+	<mod:findLike type="rarityList">
+		<mod-append:blueprint name="morph" rarity="1"/>
+		<mod-append:blueprint name="engi" rarity="0"/>
+		<mod-append:blueprint name="energy_w" rarity="4"/>
+	</mod:findLike>
+</mod:findName>
+
+<mod:findName type="sectorDescription" name="MORPH_HOME"> 
+	<mod:findLike type="rarityList">
+		<mod-append:blueprint name="morph" rarity="1"/>
+		<mod-append:blueprint name="engi" rarity="0"/>
+		<mod-append:blueprint name="energy_w" rarity="4"/>
+	</mod:findLike>
+</mod:findName>
+
+<mod:findName type="sectorDescription" name="SLUG_HOME"> 
+	<mod:findLike type="rarityList">
+		<mod-append:blueprint name="energy_w" rarity="4"/>
+	</mod:findLike>
+</mod:findName>
+
+<mod:findName type="sectorDescription" name="SLUG_SECTOR"> 
+	<mod:findLike type="rarityList">
+		<mod-append:blueprint name="energy_w" rarity="4"/>
+	</mod:findLike>
+</mod:findName>
+
+<mod:findName type="sectorDescription" name="UNSTABLE_SECTOR"> 
+	<mod:findLike type="rarityList">
+		<mod-append:blueprint name="energy_w" rarity="4"/>
+	</mod:findLike>
+</mod:findName>
+
+<mod:findName type="sectorDescription" name="ULTRA_UNSTABLE_SECTOR"> 
+	<mod:findLike type="rarityList">
+		<mod-append:blueprint name="energy_w" rarity="4"/>
+	</mod:findLike>
+</mod:findName>
+
+<mod:findName type="sectorDescription" name="ZOLTAN_SECTOR"> 
+	<mod:findLike type="rarityList">
+		<mod-append:blueprint name="energy_w" rarity="1"/>
+	</mod:findLike>
+</mod:findName>
+
+<mod:findName type="sectorDescription" name="ZOLTAN_HOME"> 
+	<mod:findLike type="rarityList">
+		<mod-append:blueprint name="energy_w" rarity="1"/>
+	</mod:findLike>
+</mod:findName>
+
+<mod:findName type="sectorDescription" name="ZOLTON_SECTOR"> 
+	<mod:findLike type="rarityList">
+		<mod-append:blueprint name="energyx" rarity="1"/>
+		<mod-append:blueprint name="energyx_w" rarity="1"/>
+		<mod-append:blueprint name="energy" rarity="0"/>
+		<mod-append:blueprint name="energy_w" rarity="0"/>
+	</mod:findLike>
+</mod:findName>
+
+<mod:findName type="sectorDescription" name="ZOLTON_HOME"> 
+	<mod:findLike type="rarityList">
+		<mod-append:blueprint name="energyx" rarity="1"/>
+		<mod-append:blueprint name="energyx_w" rarity="1"/>
+		<mod-append:blueprint name="energy" rarity="0"/>
+		<mod-append:blueprint name="energy_w" rarity="0"/>
+	</mod:findLike>
+</mod:findName>
+
+<mod:findName type="sectorDescription" name="ROCK_SECTOR"> 
+	<mod:findLike type="rarityList">
+		<mod-append:blueprint name="energy_w" rarity="3"/>
+	</mod:findLike>
+</mod:findName>
+
+<mod:findName type="sectorDescription" name="ROCK_HOME"> 
+	<mod:findLike type="rarityList">
+		<mod-append:blueprint name="energy_w" rarity="3"/>
+	</mod:findLike>
+</mod:findName>
+
+<mod:findName type="sectorDescription" name="CRYSTAL_HOME"> 
+	<mod:findLike type="rarityList">
+		<mod-append:blueprint name="energy_w" rarity="0"/>
+	</mod:findLike>
+</mod:findName>
+
+<mod:findName type="sectorDescription" name="LANIUS_SECTOR"> 
+	<mod:findLike type="rarityList">
+		<mod-append:blueprint name="energy_w" rarity="0"/>
+	</mod:findLike>
+</mod:findName>
+
+<mod:findName type="sectorDescription" name="LANIUS_SECTOR_HOME"> 
+	<mod:findLike type="rarityList">
+		<mod-append:blueprint name="energy_w" rarity="0"/>
+	</mod:findLike>
+</mod:findName>
+
+<mod:findName type="sectorType" name="CIVILIAN">
+	<mod-append:sector>ORCHID_SECTOR</mod-append:sector>
+	<mod-append:sector>ORCHID_SECTOR</mod-append:sector>
+	<mod-append:sector>ORCHID_SECTOR</mod-append:sector>
+	<mod-append:sector>ORCHID_HOME</mod-append:sector>
+</mod:findName>

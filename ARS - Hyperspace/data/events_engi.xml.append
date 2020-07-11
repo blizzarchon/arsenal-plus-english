@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<eventList name="MENGI_LIFEFORM_EXPERIMENT_EVENT_END">
+	<event>
+		<text>Один из морфов хочет отправиться в путешествие ради поиска новых видов жизни и просится к вам в команду.</text>
+		<crewMember amount="1" class="morph"/>
+	</event>
+	<event>
+		<text>Один из морфов хочет отправиться в путешествие ради поиска новых видов жизни и просится к вам в команду.</text>
+		<crewMember amount="1" class="morph"/>
+	</event>
+	<event/>
+</eventList>
+<eventList name="MORPH_BRK_SHIELD_W"> 
+	<event>
+		<text>Челнок врезается в астероид и взрывается. Корабль морфов вдруг становится агрессивным.</text>
+		<ship hostile="true"/>
+		<status type="clear" target="enemy" system="teleporter" amount="100"/>
+	</event>
+	<event>
+		<text>Челнок успешно добирается до вас, и на борт поднимается новый член экипажа. А ваша команда быстро разбирает капсулу на лом.</text>
+		<crewMember amount="1" class="morph"/>
+		<item_modify>
+			<item type="scrap" min="3" max="10"/>
+		</item_modify>
+	</event>
+</eventList>
+<eventList name="MORPH_BRK_SHIELD_K1"> 
+	<event>
+		<text>Ваш кран ловит капсулу, но при этом совершает неловкое движение, и корабль получает мощный удар в одну из несущих конструкций. На борт поднимается новый член экипажа, а команда быстро разбирает капсулу на лом.</text>
+		<damage amount="1" effect="breach"/>
+		<damage amount="1" system="random" effect="breach"/>
+		<crewMember amount="1" class="morph"/>
+		<item_modify>
+			<item type="scrap" min="3" max="10"/>
+		</item_modify>
+	</event>
+	<event>
+		<text>Ваш кран с лёгкостью ловит капсулу, и на борт поднимается новый член экипажа. А ваша команда быстро разбирает капсулу на лом.</text>
+		<crewMember amount="1" class="morph"/>
+		<item_modify>
+			<item type="scrap" min="3" max="10"/>
+		</item_modify>
+	</event>
+	<event>
+		<text>Ваш кран с лёгкостью ловит капсулу, и на борт поднимается новый член экипажа. А ваша команда быстро разбирает капсулу на лом.</text>
+		<crewMember amount="1" class="morph"/>
+		<item_modify>
+			<item type="scrap" min="3" max="10"/>
+		</item_modify>
+	</event>
+</eventList>
+
+<event name="MENGI_SELL_UNKNOWN_ATTACK">
+	<text>Поняв, что сделка не состоится, корабль морфов отстыковывается и нападает на вас! Часть их команды остаётся у вас на борту и начинает крушить всё подряд.</text>
+	<boarders min="2" max="4" class="morph"/>
+	<ship hostile="true"/>
+	<status type="clear" target="enemy" system="teleporter" amount="100"/>
+</event>

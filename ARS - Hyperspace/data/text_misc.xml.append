@@ -1,0 +1,96 @@
+<mod:findName type="text" name="no_type_c">
+  <mod:setValue>Нет корабля</mod:setValue>
+</mod:findName>
+
+<mod:findName type="text" name="window_title">
+  <mod:setValue>FTL: Hyperspace Arsenal +</mod:setValue>
+</mod:findName>
+
+<mod:findName type="text" name="version">
+  <mod:setValue>FTL v.\1 (Hyperspace 0.4.1)</mod:setValue>
+</mod:findName>
+
+<text name="augment_no_effect">При установке этого усиления не будут работать следующие усиления:</text>
+
+<text name="seed_prompt">Seed</text>
+<text name="menu_status_seed">Seed</text>
+<text name="unlocks_disabled">Разблокировки кораблей отключены</text>
+
+<text name="power_not_ready_player_ship">Не готово: не на корабле игрока</text>
+<text name="power_not_ready_enemy_ship">Не готово: не на вражеском корабле</text>
+<text name="power_not_ready_enemy_in_room">Не готово: в отсеке нет врагов</text>
+<text name="power_not_ready_friendly_in_room">Не готово: в отсеке нет союзников</text>
+<text name="power_not_ready_system_in_room">Не готово: в отсеке нет системы</text>
+<text name="power_not_ready_activated">Способность активна</text>
+<text name="power_not_ready_ai_disabled">Not Ready: Power disabled for AI (shouldn't see this)</text>
+<text name="power_not_ready_has_clonebay">Не готово: нет клон-отсека</text>
+<text name="power_not_ready_out_of_combat">Не готово: нельзя применить в бою</text>
+<text name="power_not_ready_in_combat">Не готово: нет вражеского корабля</text>
+
+<text name="button_mushroom_b">СПОРЫ</text>
+<text name="power_mushroom_ready">Готово: Нажмите, чтобы оглушить врагов на 5 секунд в этом отсеке\nГорячая клавиша: \1</text>
+
+<text name="button_mushroom">СПОРЫ</text>
+<text name="power_mushroom_ready">Готово: Нажмите, чтобы оглушить врагов на 10 секунд в этом отсеке\nГорячая клавиша: \1</text>
+
+<!-- <text name="button_magman">ПОДЖОГ</text>
+<text name="power_magman_ready">Готово: Нажмите, чтобы поджечь текущий отсек\nГорячая клавиша: \1</text>
+
+<text name="button_avatar">АПГРЕЙД</text>
+<text name="power_avatar_ready">Готово: Нажмите, чтобы полностью восстановить здоровье\nГорячая клавиша: \1</text>
+
+<text name="button_human">ЯРОСТЬ</text>
+<text name="power_human_ready">Готово: Нажмите, чтобы увеличить урон в полтора раза на 10 секунд\nГорячая клавиша: \1</text>
+
+<text name="button_orchid">КИСЛОРОД</text>
+<text name="power_orchid_ready">Готово: Нажмите, чтобы улучшить работу кислородного отсека на 10 секунд\nГорячая клавиша: \1</text>
+
+<text name="button_shell">ПАНЦИРЬ</text>
+<text name="power_shell_ready">Готово: Нажмите, чтобы снизить любой получаемый урон в 4 раза на 10 секунд\nГорячая клавиша: \1</text>
+
+<text name="button_slug">ПОДРЫВ</text>
+<text name="power_slug_ready">Готово: Нажмите, чтобы нанести 1 урона вражеской системе\nГорячая клавиша: \1</text>
+
+<text name="button_energy">ВЗРЫВ</text>
+<text name="power_energy_ready">Готово: Нажмите, чтобы нанести 15 урона врагам в этом отсеке\nГорячая клавиша: \1</text>
+
+<text name="button_energyx">ПУЛЬСАР</text>
+<text name="power_energy_readyx">Готово: Нажмите, чтобы нанести 3 ионного урона вражеской системе\nГорячая клавиша: \1</text>
+
+<text name="button_morph">ПОЧИНКА</text>
+<text name="power_morph_ready">Готово: Нажмите, чтобы восстановить 1 прочности этой системы\nГорячая клавиша: \1</text>
+
+<text name="button_engi">ЭНЕРГОЩИТ</text>
+<text name="power_engi_ready">Готово: Нажмите, чтобы включить неуязвимость на 10 секунд. В этом режиме инжи не может атаковать врагов\nГорячая клавиша: \1</text>
+
+<text name="button_mantis">САБОТАЖ</text>
+<text name="power_mantis_ready">Готово: Нажмите, чтобы наносить тройной урон вражеским системам в течение 5 секунд\nГорячая клавиша: \1</text>
+
+<text name="button_crystal">МЕСТЬ</text>
+<text name="power_crystal_ready">Готово: Нажмите, чтобы запереть текущий отсек и увеличить урон по системам в 1.5 раза на 5 секунд.\nГорячая клавиша: \1</text>
+
+<text name="button_mantis">РЫВОК</text>
+<text name="power_mantis_ready">Готово: Нажмите, чтобы увеличить скорость передвижения рока в три раза на 5 секунд\nГорячая клавиша: \1</text>
+
+<text name="button_anaerobic">ОТКАЧКА</text>
+<text name="power_anaerobic_ready">Готово: Нажмите, чтобы создать пробоину в текущем отсеке и увеличить скорость поглощения кислорода на 10 секунд\nГорячая клавиша: \1</text> -->
+
+<text name="created_by">Разработчики:</text>
+<text name="matthew_justin">Александр "bamalf" Алферов, Константин "KBA3u" Морозов\nи Мстислав "Al'Hazrad" Соколов</text>
+
+<text name="addition_code">Разработчики Hyperspace:</text>
+<text name="andrew_church">TheSwiftTiger, ih8ih8sn0w и Winderps</text>
+
+<text name="music_by">При участии:</text>
+<text name="ben_prunty">woona</text>
+
+<text name="family_friends">Alex Vinst, Anthonest, Arfy, Biohazard063, Chrono Vortex, D:\side\, Dark Gamer, DemiSir, Fotos, GianTell, Gigaxp, Harpuae, Katabatic, Laythe, LordTrilobite, MantisManMike, NarnKar, Noobjuice, PLIOU, R4V3-0N, Sleeper Service, TaxiService, Twinge, madhatter, slowriderxcorps, speedoflight, splette и другие</text>
+
+<text name="defense_friendly">Ваш защитный дрон 1 уровня: \nСбивает ракеты, мины, мусор, астероиды и дрона-взломщика. Будет работать, пока не будет уничтожен, или вы не совершите прыжок.</text>
+<text name="defense_enemy">Защитный дрон 1 уровня: \nСбивает ракеты, мины, мусор, астероиды и дрона-взломщика. Может быть отключён повреждением вражеской системы управления дронами.</text>
+
+<text name="defense_2_friendly">Ваш защитный дрон 2 уровня: \nСбивает любые снаряды. Будет работать, пока его не уничтожат, или вы не совершите прыжок.</text>
+<text name="defense_2_enemy">Защитный дрон 2 уровня: \nСбивает любые снаряды. Может быть отключён повреждением вражеской системы управления дронами.</text>
+
+<text name="anti_combat_friendly">Ваш анти-боевой дрон: \nОглушает и уничтожает вражеских дронов. Будет работать, пока его не уничтожат, или вы не совершите прыжок.</text>
+<text name="anti_combat_enemy">Вражеский анти-боевой дрон: \nОглушает и уничтожает ваших дронов. Может быть отключён нанесением урона по системе управления дронами вражеского корабля.</text>

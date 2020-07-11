@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<mod:findName type="eventList" name="OVERRIDE_NEUTRAL">
+	<mod-append:event load="SHELL_FIGHT"/>
+	<mod-append:event load="SHELL_FIGHT"/>
+</mod:findName>

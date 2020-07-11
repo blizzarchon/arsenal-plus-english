@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <!-- Copyright (c) 2012 by Subset Games. All rights reserved -->
-
+<FTL>
 <!-- fire stuff -->
 <animSheet name="fire_large" w="256" h="32" fw="32" fh="32">effects/fire_L1_strip8.png</animSheet>
 <animSheet name="fire_small" w="256" h="32" fw="32" fh="32">effects/fire_S1_strip8.png</animSheet>
@@ -410,7 +410,7 @@
 
 <weaponAnim name="beam_hull">
 	<sheet>beam_hull</sheet>
-	<desc length="7" x="0" y="0"/> <!-- 1.27 was 8 -->
+	<desc length="7" x="0" y="0"/> <!-- 1.27 -->
 	<chargedFrame>1</chargedFrame>
 	<fireFrame>2</fireFrame>
 	<firePoint  x="18" y="10"/>
@@ -880,18 +880,158 @@
 </anim>
 
 <!-- same as crew teleport -->
+<!-- 1.28 --> <!-- also added new ghost sprites into img\people -->
 <anim name="ghost_death">
-	<sheet>human</sheet>
+	<sheet>ghost</sheet>
 	<desc length="9" x="0" y="3"/>
 	<time>1.5</time>
 </anim>
 
 
 <anim name="ghost_portrait">
-	<sheet>human</sheet>
+	<sheet>ghost</sheet>
 	<desc length="1" x="0" y="0"/>
 	<time>1</time>
 </anim>
+
+<animSheet name="ghost" w="315" h="455" fw="35" fh="35">people/ghost_base.png</animSheet>
+
+<anim name="ghost_clone">
+	<sheet>ghost</sheet>
+	<desc length="6" x="0" y="2"/>
+	<time>0.75</time>
+</anim>
+
+
+<anim name="ghost_death_right">
+	<sheet>ghost</sheet>
+	<desc length="9" x="0" y="3"/>
+	<time>0.75</time>
+</anim>
+
+<anim name="ghost_death_left">
+	<sheet>ghost</sheet>
+	<desc length="9" x="0" y="3"/>
+	<time>0.75</time>
+</anim>
+
+<anim name="ghost_walk_down">
+	<sheet>ghost</sheet>
+	<desc length="4" x="0" y="12"/>
+	<time>1.0</time>
+</anim>
+
+<anim name="ghost_walk_right">
+	<sheet>ghost</sheet>
+	<desc length="4" x="4" y="12"/>
+	<time>1.0</time>
+</anim>
+
+<anim name="ghost_walk_up">
+	<sheet>ghost</sheet>
+	<desc length="4" x="0" y="11"/>
+	<time>1.0</time>
+</anim>
+
+<anim name="ghost_walk_left">
+	<sheet>ghost</sheet>
+	<desc length="4" x="4" y="11"/>
+	<time>1.0</time>
+</anim>
+
+<anim name="ghost_shoot_down">
+	<sheet>ghost</sheet>
+	<desc length="3" x="0" y="10"/>
+	<time>1.0</time>
+</anim>
+
+<anim name="ghost_shoot_right">
+	<sheet>ghost</sheet>
+	<desc length="3" x="3" y="10"/>
+	<time>1.0</time>
+</anim>
+
+<anim name="ghost_shoot_up">
+	<sheet>ghost</sheet>
+	<desc length="3" x="6" y="10"/>
+	<time>1.0</time>
+</anim>
+
+<anim name="ghost_shoot_left">
+	<sheet>ghost</sheet>
+	<desc length="3" x="0" y="1"/>
+	<time>1.0</time>
+</anim>
+
+<anim name="ghost_fire_down">
+	<sheet>ghost</sheet>
+	<desc length="4" x="0" y="9"/>
+	<time>1.0</time>
+</anim>
+
+<anim name="ghost_fire_right">
+	<sheet>ghost</sheet>
+	<desc length="4" x="4" y="9"/>
+	<time>1.0</time>
+</anim>
+
+<anim name="ghost_fire_up">
+	<sheet>ghost</sheet>
+	<desc length="4" x="0" y="8"/>
+	<time>1.0</time>
+</anim>
+
+<anim name="ghost_fire_left">
+	<sheet>ghost</sheet>
+	<desc length="4" x="4" y="8"/>
+	<time>1.0</time>
+</anim>
+
+<anim name="ghost_repair">
+	<sheet>ghost</sheet>
+	<desc length="9" x="0" y="7"/>
+	<time>1.0</time>
+</anim>
+
+<anim name="ghost_punch_up">
+	<sheet>ghost</sheet>
+	<desc length="6" x="3" y="1"/>
+	<time>1.0</time>
+</anim>
+
+<anim name="ghost_punch_down">
+	<sheet>ghost</sheet>
+	<desc length="6" x="0" y="6"/>
+	<time>1.0</time>
+</anim>
+
+<anim name="ghost_teleport">
+	<sheet>ghost</sheet>
+	<desc length="9" x="0" y="3"/>
+	<time>0.5</time>
+</anim>
+
+<anim name="ghost_type_right">
+	<sheet>ghost</sheet>
+	<desc length="4" x="0" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="ghost_type_left">
+	<sheet>ghost</sheet>
+	<desc length="4" x="4" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="ghost_type_up">
+	<sheet>ghost</sheet>
+	<desc length="4" x="0" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="ghost_type_down">
+	<sheet>ghost</sheet>
+	<desc length="4" x="4" y="4"/>
+	<time>0.75</time>
+</anim>
+
 
 <!--
 	REPAIR MAN  ANIMATIONS 
@@ -2023,9 +2163,9 @@ ENGINEER ANIMATIONS
 <animSheet name="ba_ion_heavy_fire_1" w="216" h="52" fw="27" fh="52">weapons/ion_2_fire_strip8.png</animSheet>
 <animSheet name="ba_ion_heavy_fire_2" w="216" h="66" fw="27" fh="66">weapons/ba_ion_heavy_fire_2_strip8.png</animSheet>
 <animSheet name="ba_ion_heavy_fire_3" w="216" h="66" fw="27" fh="66">weapons/ba_ion_heavy_fire_3_strip8.png</animSheet>
-<animSheet name="ba_ion_burst_1" w="256" h="44" fw="32" fh="44">weapons/ba_ion_burst_1_strip8.png</animSheet><!-- 1.26 --> <!-- new png -->
-<animSheet name="ba_ion_burst_2" w="256" h="54" fw="32" fh="54">weapons/ba_ion_burst_2_strip8.png</animSheet><!-- 1.26 --> <!-- new png -->
-<animSheet name="ba_ion_burst_3" w="280" h="65" fw="35" fh="65">weapons/ba_ion_burst_3_strip8.png</animSheet><!-- 1.26 --> <!-- new png -->
+<animSheet name="ba_ion_burst_1" w="256" h="44" fw="32" fh="44">weapons/ba_ion_burst_1_strip8.png</animSheet> <!-- 1.26 --> <!-- new png -->
+<animSheet name="ba_ion_burst_2" w="256" h="54" fw="32" fh="54">weapons/ba_ion_burst_2_strip8.png</animSheet> <!-- 1.26 --> <!-- new png -->
+<animSheet name="ba_ion_burst_3" w="280" h="65" fw="35" fh="65">weapons/ba_ion_burst_3_strip8.png</animSheet> <!-- 1.26 --> <!-- new png -->
 <animSheet name="ba_effector_1" w="93" h="46" fw="31" fh="46">weapons/ba_effector_1_strip3.png</animSheet>
 <animSheet name="ba_effector_2" w="123" h="62" fw="41" fh="62">weapons/ba_effector_2_strip3.png</animSheet>
 <animSheet name="ba_effector_3" w="138" h="72" fw="46" fh="72">weapons/ba_effector_3_strip3.png</animSheet>
@@ -2115,7 +2255,7 @@ ENGINEER ANIMATIONS
 
 <weaponAnim name="ba_beam_shest">
 	<sheet>ba_beam_shest</sheet>
-	<desc length="7" x="0" y="0"/> <!-- 1.26 was 8 -->
+	<desc length="7" x="0" y="0"/> <!-- 1.26 -->
 	<chargedFrame>1</chargedFrame>
 	<fireFrame>2</fireFrame>
 	<firePoint  x="17" y="16"/>
@@ -2751,7 +2891,7 @@ ENGINEER ANIMATIONS
 
 <weaponAnim name="ba_beam_hull_small">
 	<sheet>ba_beam_hull_small</sheet>
-	<desc length="8" x="0" y="0"/>
+	<desc length="7" x="0" y="0"/> <!-- 1.28 -->
 	<chargedFrame>1</chargedFrame>
 	<fireFrame>2</fireFrame>
 	<firePoint  x="18" y="11"/>
@@ -2793,7 +2933,7 @@ ENGINEER ANIMATIONS
 	<chargedFrame>1</chargedFrame>
 	<fireFrame>2</fireFrame>
 	<firePoint x="21" y="11" />
-	<mountPoint x="3" y="35" /><!-- 1.25, was 7 and 25 -->
+	<mountPoint x="3" y="35" /><!-- 1.25 -->
 	<chargeImage>weapons/ba_minelauncher_big_glow.png</chargeImage>
 </weaponAnim>
 
@@ -2803,7 +2943,7 @@ ENGINEER ANIMATIONS
 	<chargedFrame>1</chargedFrame>
 	<fireFrame>2</fireFrame>
 	<firePoint x="18" y="4" />
-	<mountPoint x="3" y="28" /><!-- 1.25, was 8 and 13 -->
+	<mountPoint x="3" y="28" /><!-- 1.25 -->
 	<chargeImage>weapons/ba_minelauncher_medium_glow.png</chargeImage>
 </weaponAnim>
 
@@ -2813,7 +2953,7 @@ ENGINEER ANIMATIONS
 	<chargedFrame>1</chargedFrame>
 	<fireFrame>2</fireFrame>
 	<firePoint x="18" y="32" />
-	<mountPoint x="3" y="54" /><!-- 1.25, was 8 and 42 -->
+	<mountPoint x="3" y="54" /><!-- 1.25 -->
 	<chargeImage>weapons/ba_minelauncher_tech_glow.png</chargeImage>
 </weaponAnim>
 
@@ -2823,7 +2963,7 @@ ENGINEER ANIMATIONS
 	<chargedFrame>1</chargedFrame>
 	<fireFrame>2</fireFrame>
 	<firePoint x="19" y="9" />
-	<mountPoint x="3" y="33" /><!-- 1.25, was 7 and 19 -->
+	<mountPoint x="3" y="33" /><!-- 1.25 -->
 	<chargeImage>weapons/ba_minelauncher_small_glow.png</chargeImage>
 </weaponAnim>
 
@@ -2836,14 +2976,6 @@ ENGINEER ANIMATIONS
 	<mountPoint x="7" y="19" />
 </weaponAnim>
 
-<weaponAnim name="ce_artillery_invisible">
-	<sheet>ce_minelauncher_invisible</sheet>
-	<desc length="3" x="0" y="0"/>
-	<chargedFrame>1</chargedFrame>
-	<fireFrame>2</fireFrame>
-	<firePoint x="10" y="0" />
-	<mountPoint x="7" y="19" />
-</weaponAnim>
 
 
 <weaponAnim name="ba_bomb_cluster_1">
@@ -4113,8 +4245,7 @@ ENGINEER ANIMATIONS
 <animSheet name="missile_3" w="256" h="80" fw="32" fh="80">weapons/missile_3_strip8.png</animSheet>
 <animSheet name="missile_breach" w="256" h="80" fw="32" fh="80">weapons/missile_breach_strip8.png</animSheet>
 <animSheet name="missile_hull" w="256" h="80" fw="32" fh="80">weapons/missile_hull_strip8.png</animSheet>
-<animSheet name="missile_ion_1" w="256" h="80" fw="32" fh="80">weapons/missile_ion_1_strip8.png</animSheet>
-<animSheet name="missile_ion_2" w="256" h="80" fw="32" fh="80">weapons/missile_ion_2_strip8.png</animSheet>
+
 
 
 
@@ -4190,7 +4321,6 @@ ENGINEER ANIMATIONS
 	<desc length="8" x="0" y="0"/>
 	<time>0.05</time>
 </anim>
-
 <!-- 1.25.2 -->
 <!-- <anim name="missile_ion_1">
 	<sheet>missile_ion_1</sheet>
@@ -4981,12 +5111,13 @@ ENGINEER ANIMATIONS
 
 <!-- Custom Hangar -->
 
-<animSheet name="custom_type" w="1680" h="400" fw="280" fh="400">customizeUI/hangar_anim_left_strip6.png</animSheet>
+<animSheet name="custom_type" w="1680" h="400" fw="280" fh="400">customizeUI/hangar_anim_left_strip6.png</animSheet> <!--  1.26.6 --> <!-- new png -->
 <anim name="custom_type">
 	<sheet>custom_type</sheet>
 	<desc length="6" x="0" y="0"/>
 	<time>6</time>
 </anim>
+
 
 <!-- Rock Prototype -->
 
@@ -5049,7 +5180,7 @@ ENGINEER ANIMATIONS
 <animSheet name="omicron_impact_ion_beam" w="240" h="48" fw="48" fh="48">weapons/impact_ion_beam_contact.png</animSheet>
 <anim name="omicron_impact_ion_beam">
 	<sheet>omicron_impact_ion_beam</sheet>
-	<desc length="5" x="0" y="0"/><!-- 1.26.6 y was 3 -->
+	<desc length="5" x="0" y="0"/><!-- 1.26.6 -->
 	<time>0.5</time>
 </anim>
 
@@ -5058,7 +5189,7 @@ ENGINEER ANIMATIONS
 <animSheet name="shark_beam_contact" w="240" h="48" fw="48" fh="48">weapons/shark_beam_contact.png</animSheet>
 <anim name="shark_beam_contact">
 	<sheet>shark_beam_contact</sheet>
-	<desc length="5" x="0" y="0"/><!-- 1.26.6 y was 3 -->
+	<desc length="5" x="0" y="0"/><!-- 1.26.6 -->
 	<time>0.4</time>
 </anim>
 
@@ -5329,7 +5460,7 @@ ENGINEER ANIMATIONS
 	<boost>chainlaser_2b_charge</boost>
 </weaponAnim>
 
-<animSheet name="md_heavy_laser_charger5_charge" w="135" h="65" fw="27" fh="65">weapons/md_heavy_laser_charger5_chargeglow.png</animSheet>
+<!-- <animSheet name="md_heavy_laser_charger5_charge" w="135" h="65" fw="27" fh="65">weapons/md_heavy_laser_charger5_chargeglow.png</animSheet>
 <anim name="md_heavy_laser_charger5_charge">
 	<sheet>md_heavy_laser_charger5_charge</sheet>
 	<desc length="5" x="0" y="0"/>
@@ -5344,7 +5475,8 @@ ENGINEER ANIMATIONS
 	<firePoint  x="14" y="13" charge="0"/>
 	<mountPoint x="4" y="49"/>
 	<boost>md_heavy_laser_charger5_charge</boost>
-</weaponAnim>
+</weaponAnim> -->
+
 
 
 <animSheet name="jade_blank" w="1" h="1" fw="1" fh="1">weapons/jade_blank_strip1.png</animSheet>
@@ -5421,7 +5553,7 @@ ENGINEER ANIMATIONS
 	<chargeImage>weapons/laser_prism3_glow.png</chargeImage>
 </weaponAnim>
 
-<animSheet name="laser_minigun_charge" w="160" h="100" fw="32" fh="100">weapons/laser_minigun_charge5.png</animSheet> <!-- 1.25.1 fixed width and frame width -->
+<animSheet name="laser_minigun_charge" w="160" h="100" fw="32" fh="100">weapons/laser_minigun_charge5.png</animSheet> <!-- 1.25.1 -->
 <anim name="laser_minigun_charge">
 	<sheet>laser_minigun_charge</sheet>
 	<desc length="5" x="0" y="0"/>
@@ -5486,26 +5618,26 @@ ENGINEER ANIMATIONS
 	<desc length="14" x="0" y="0"/>
 	<chargedFrame>1</chargedFrame>
 	<fireFrame>2</fireFrame>
-	<firePoint  x="27" y="9" charge="2"/><!-- 1.25.1 charge was 15.. but what does that do? -->
+	<firePoint  x="27" y="9" charge="2"/><!-- 1.25.1 -->
 	<mountPoint x="5" y="25"/>
 	<chargeImage>weapons/flak_charger_glow.png</chargeImage>
 	<boost>flak_charger_charge</boost>
 </weaponAnim>
 
-<animSheet name="chaingun_heavy_charge" w="81" h="68" fw="27" fh="68">weapons/heavy_chain_chargeglow.png</animSheet> <!-- 1.25.1 fixed dimensions -->
+<animSheet name="chaingun_heavy_charge" w="81" h="68" fw="27" fh="68">weapons/heavy_chain_chargeglow.png</animSheet> <!-- 1.25.1 -->
 <anim name="chaingun_heavy_charge">
 	<sheet>chaingun_heavy_charge</sheet>
 	<desc length="3" x="0" y="0"/>
 	<time>1.0</time>
 </anim>
-<animSheet name="heavy_chain" w="324" h="68" fw="27" fh="68">weapons/heavy_chain_strip8.png</animSheet> <!-- 1.25.1 fixed dimensions -->
+<animSheet name="heavy_chain" w="324" h="68" fw="27" fh="68">weapons/heavy_chain_strip8.png</animSheet> <!-- 1.25.1 -->
 <weaponAnim name="heavy_chain">
 	<sheet>heavy_chain</sheet>
-	<desc length="8" x="0" y="0"/>
-	<chargedFrame>1</chargedFrame>
-	<fireFrame>5</fireFrame>
-	<firePoint  x="18" y="10"/>
-	<mountPoint x="6" y="45"/>
+	<desc length="12" x="0" y="0"/>
+	<chargedFrame>5</chargedFrame>
+	<fireFrame>10</fireFrame>
+	<firePoint  x="18" y="8"/>
+	<mountPoint x="3" y="50"/>
 	<chargeImage>weapons/heavy_chain_glow.png</chargeImage>
 	<boost>chaingun_heavy_charge</boost>
 </weaponAnim>
@@ -5881,22 +6013,7 @@ ENGINEER ANIMATIONS
 	<chargeImage>weapons/Beam_of_Ares_glow.png</chargeImage>
 </weaponAnim>
 
-<animSheet name="beam_ion" w="330" h="75" fw="33" fh="75">weapons/ionbeam_1_strip10.png</animSheet>
-<weaponAnim name="beam_ion">
-	<sheet>beam_ion</sheet>
-	<desc length="10" x="0" y="0"/>
-	<chargedFrame>1</chargedFrame>
-	<fireFrame>2</fireFrame>
-	<firePoint  x="19" y="40"/>
-	<mountPoint x="4" y="62"/>
-	<chargeImage>weapons/ionbeam_1_glow.png</chargeImage>
-</weaponAnim>
-<animSheet name="ionbeam_contact" w="240" h="48" fw="48" fh="48">weapons/ionbeam_contact.png</animSheet>
-<anim name="ionbeam_contact">
-	<sheet>ionbeam_contact</sheet>
-	<desc length="5" x="0" y="0"/>
-	<time>0.75</time>
-</anim>
+
 
 <animSheet name="beam_bioflame" w="240" h="50" fw="30" fh="50">weapons/beam_bioflame.png</animSheet>
 <weaponAnim name="beam_bioflame">
@@ -5978,7 +6095,7 @@ ENGINEER ANIMATIONS
 	<desc length="8" x="0" y="0"/>
 	<chargedFrame>1</chargedFrame>
 	<fireFrame>7</fireFrame>
-	<firePoint  x="12" y="36"/> <!-- 1.25, was 13 -->
+	<firePoint  x="12" y="36"/> <!-- 1.25 -->
 	<mountPoint x="2" y="92"/>
 	<chargeImage>weapons/eb_coil_gun_1_glow.png</chargeImage>
 </weaponAnim>
@@ -5989,7 +6106,7 @@ ENGINEER ANIMATIONS
 	<desc length="8" x="0" y="0"/>
 	<chargedFrame>1</chargedFrame>
 	<fireFrame>7</fireFrame>
-	<firePoint  x="12" y="36"/> <!-- 1.25, was 13 -->
+	<firePoint  x="12" y="36"/> <!-- 1.25 -->
 	<mountPoint x="2" y="92"/>
 	<chargeImage>weapons/eb_coil_gun_2_glow.png</chargeImage>
 </weaponAnim>
@@ -6106,14 +6223,14 @@ ENGINEER ANIMATIONS
 	<time>0.8</time>
 </anim>
 
-<animSheet name="minelauncher_ion_strip3" w="108" h="58" fw="36" fh="58">weapons/minelauncher_ion_strip3.png</animSheet><!-- 1.26 wrong file name -->
+<animSheet name="minelauncher_ion_strip3" w="108" h="58" fw="36" fh="58">weapons/minelauncher_ion_strip3.png</animSheet> <!-- 1.26 --> <!-- wrong file name -->
 <weaponAnim name="minelauncher_ion_strip3">
 	<sheet>minelauncher_ion_strip3</sheet>
 	<desc length="3" x="0" y="0"/>
 	<chargedFrame>1</chargedFrame>
 	<fireFrame>2</fireFrame>
 	<firePoint x="18" y="32" />
-	<mountPoint x="3" y="54" /><!-- 1.25, was 8 and 42 -->
+	<mountPoint x="3" y="54" /><!-- 1.25 -->
 	<chargeImage>weapons/minelauncher_ion_strip3_glow.png</chargeImage>
 </weaponAnim>
 <animSheet name="ion_mine_strip1" w="30" h="30" fw="30" fh="30">weapons/ion_mine_strip1.png</animSheet>
@@ -6152,16 +6269,34 @@ ENGINEER ANIMATIONS
 <!--
 	PHOTOCASTERS
 -->
+<!-- 1.26.5 --> <!-- new photons -->
 
-<animSheet name="photo_projectile" w="100" h="2" fw="100" fh="2">weapons/photo_proj_strip1.png</animSheet>
+<animSheet name="photocaster_light" w="100" h="2" fw="100" fh="2">weapons/photocaster_bolt_light.png</animSheet>
 
-<anim name="photo_projectile">
-   <sheet>photo_projectile</sheet>
+<anim name="photocaster_light">
+   <sheet>photocaster_light</sheet>
    <desc length="1" x="0" y="0"/>
    <time>0.2</time>
 </anim>
 
-<animSheet name="light_photo_I" w="253" h="60" fw="23" fh="60">weapons/photo1_Strip11.png</animSheet>
+<!-- <animSheet name="photocaster_medium" w="25" h="20" fw="25" fh="20">weapons/photocaster_bolt_medium.png</animSheet>
+
+<anim name="photocaster_medium">
+   <sheet>photocaster_medium</sheet>
+   <desc length="1" x="0" y="0"/>
+   <time>0.2</time>
+</anim>
+
+<animSheet name="photocaster_heavy" w="25" h="40" fw="25" fh="40">weapons/photocaster_bolt_heavy.png</animSheet>
+
+<anim name="photocaster_heavy">
+   <sheet>photocaster_heavy</sheet>
+   <desc length="1" x="0" y="0"/>
+   <time>0.2</time>
+</anim> -->
+
+
+<animSheet name="light_photo_I" w="253" h="60" fw="23" fh="60">weapons/photo1_Strip18.png</animSheet>
 <weaponAnim name="light_photo_I">
    <sheet>light_photo_I</sheet>
    <desc length="11" x="0" y="0"/>
@@ -6171,7 +6306,7 @@ ENGINEER ANIMATIONS
    <mountPoint x="2" y="50"/>
 </weaponAnim>
 
-<animSheet name="light_photo_2" w="253" h="74" fw="23" fh="74">weapons/photo2_Strip11.png</animSheet>
+<animSheet name="light_photo_2" w="253" h="74" fw="23" fh="74">weapons/photo2_Strip18.png</animSheet>
 <weaponAnim name="light_photo_2">
    <sheet>light_photo_2</sheet>
    <desc length="11" x="0" y="0"/>
@@ -6181,7 +6316,7 @@ ENGINEER ANIMATIONS
    <mountPoint x="2" y="65"/>
 </weaponAnim>
 
-<animSheet name="heavy_photo_3" w="308" h="74" fw="28" fh="74">weapons/photo3_Strip11.png</animSheet>
+<animSheet name="heavy_photo_3" w="308" h="74" fw="28" fh="74">weapons/photo3_Strip14.png</animSheet>
 <weaponAnim name="heavy_photo_3">
    <sheet>heavy_photo_3</sheet>
    <desc length="11" x="0" y="0"/>
@@ -6191,7 +6326,7 @@ ENGINEER ANIMATIONS
    <mountPoint x="2" y="65"/>
 </weaponAnim>
 
-<animSheet name="dual_photo_4" w="308" h="76" fw="28" fh="76">weapons/photo4_Strip11.png</animSheet>
+<animSheet name="dual_photo_4" w="308" h="76" fw="28" fh="76">weapons/photo4_Strip12.png</animSheet>
 <weaponAnim name="dual_photo_4">
    <sheet>dual_photo_4</sheet>
    <desc length="11" x="0" y="0"/>
@@ -6208,7 +6343,7 @@ ENGINEER ANIMATIONS
 	<time>1.0</time>
 </anim>
 
-<animSheet name="chainphoto" w="936" h="82" fw="36" fh="82">weapons/photo_chain_strip26.png</animSheet>
+<animSheet name="chainphoto" w="936" h="82" fw="36" fh="82">weapons/photo_chain_strip11.png</animSheet>
 <weaponAnim name="chainphoto">
 	<sheet>chainphoto</sheet>
 	<desc length="26" x="0" y="0"/>
@@ -6218,6 +6353,7 @@ ENGINEER ANIMATIONS
 	<mountPoint x="2" y="73"/>
 	<boost>chainphoto_charge</boost>
 </weaponAnim>
+<!-- 1.26.5 --> <!-- end new photons -->
 
 <!-- mod 2 -->
 <animSheet name="hcl_sptx_charge" w="90" h="73" fw="30" fh="73">weapons/sptx_chargelaser3_charge.png</animSheet>
@@ -6498,7 +6634,7 @@ ENGINEER ANIMATIONS
 	<chargedFrame>3</chargedFrame>
 	<fireFrame>5</fireFrame>
 	<firePoint  x="15" y="9"/>
-	<mountPoint x="9" y="60"/> <!-- 1.24, uhh, nothing changed... -->
+	<mountPoint x="9" y="60"/> <!-- 1.24 -->
 	<chargeImage>weapons/pulse_glow.png</chargeImage>
 </weaponAnim>
 
@@ -7149,8 +7285,8 @@ ENGINEER ANIMATIONS
 	<desc length="10" x="0" y="0"/>
 	<chargedFrame>1</chargedFrame>
 	<fireFrame>9</fireFrame>
-	<firePoint x="48" y="22"/>
-	<mountPoint x="23" y="77"/>
+	<firePoint x="34" y="15"/>
+	<mountPoint x="16" y="72"/>
 </weaponAnim>
 <animSheet name="ion_med_booster" w="730" h="138" fw="73" fh="138">weapons/ion_med_booster.png</animSheet> <!-- 1.25 --> <!-- new png -->
 <weaponAnim name="ion_med_booster">
@@ -7158,8 +7294,8 @@ ENGINEER ANIMATIONS
 	<desc length="10" x="0" y="0"/>
 	<chargedFrame>1</chargedFrame>
 	<fireFrame>9</fireFrame>
-	<firePoint x="48" y="22"/>
-	<mountPoint x="23" y="81"/>
+	<firePoint x="34" y="15"/>
+	<mountPoint x="21" y="71"/>
 </weaponAnim>
 <animSheet name="ion_low_booster" w="730" h="138" fw="73" fh="138">weapons/ion_low_booster.png</animSheet> <!-- 1.25 --> <!-- new png -->
 <weaponAnim name="ion_low_booster">
@@ -7167,8 +7303,8 @@ ENGINEER ANIMATIONS
 	<desc length="10" x="0" y="0"/>
 	<chargedFrame>1</chargedFrame>
 	<fireFrame>9</fireFrame>
-	<firePoint x="48" y="22"/>
-	<mountPoint x="27" y="81"/>
+	<firePoint x="34" y="14"/>
+	<mountPoint x="16" y="71"/>
 </weaponAnim>
 <animSheet name="pp_fast_booster" w="294" h="93" fw="49" fh="93">weapons/pp_fast_booster.png</animSheet>
 <weaponAnim name="pp_fast_booster">
@@ -7247,8 +7383,8 @@ ENGINEER ANIMATIONS
 	<boost>laser_tired_boost</boost>
 </weaponAnim>
 
-<!-- bamalf -->
-<animSheet name="plasmabooster_low" w="264" h="70" fw="44" fh="70">weapons/plasmabooster_low.png</animSheet> <!-- bamalf -->
+
+<animSheet name="plasmabooster_low" w="264" h="70" fw="44" fh="70">weapons/plasmabooster_low.png</animSheet>
 <weaponAnim name="plasmabooster_low">
 	<sheet>plasmabooster_low</sheet>
 	<desc length="6" x="0" y="0"/>
@@ -7258,7 +7394,7 @@ ENGINEER ANIMATIONS
 	<mountPoint x="4" y="44"/>
 </weaponAnim>
 
-<animSheet name="plasmabooster_med" w="264" h="70" fw="44" fh="70">weapons/plasmabooster_med.png</animSheet> <!-- bamalf -->
+<animSheet name="plasmabooster_med" w="264" h="70" fw="44" fh="70">weapons/plasmabooster_med.png</animSheet>
 <weaponAnim name="plasmabooster_med">
 	<sheet>plasmabooster_med</sheet>
 	<desc length="6" x="0" y="0"/>
@@ -7268,7 +7404,7 @@ ENGINEER ANIMATIONS
 	<mountPoint x="4" y="44"/>
 </weaponAnim>
 
-<animSheet name="plasmabooster_fast" w="264" h="70" fw="44" fh="70">weapons/plasmabooster_fast.png</animSheet> <!-- bamalf -->
+<animSheet name="plasmabooster_fast" w="264" h="70" fw="44" fh="70">weapons/plasmabooster_fast.png</animSheet>
 <weaponAnim name="plasmabooster_fast">
 	<sheet>plasmabooster_fast</sheet>
 	<desc length="6" x="0" y="0"/>
@@ -7366,17 +7502,17 @@ ENGINEER ANIMATIONS
 	<chargedFrame>4</chargedFrame>
 	<fireFrame>7</fireFrame>
 	<firePoint  x="15" y="15"/>
-	<mountPoint x="1" y="41"/><!-- 1.26.3 was 44 -->
+	<mountPoint x="1" y="41"/><!-- 1.26.3 -->
 </weaponAnim>
 
-<animSheet name="light_breach_laser_2" w="312" h="80" fw="26" fh="80">weapons/light_breach_laser_2.png</animSheet> <!-- 1.25, w was 311 -->
+<animSheet name="light_breach_laser_2" w="312" h="80" fw="26" fh="80">weapons/light_breach_laser_2.png</animSheet> <!-- 1.25 -->
 <weaponAnim name="light_breach_laser_2">
 	<sheet>light_breach_laser_2</sheet>
 	<desc length="12" x="0" y="0"/>
 	<chargedFrame>5</chargedFrame>
 	<fireFrame>8</fireFrame>
 	<firePoint  x="21" y="23"/>
-	<mountPoint x="1" y="58"/><!-- 1.26.3 was 62 -->
+	<mountPoint x="1" y="58"/><!-- 1.26.3 -->
 </weaponAnim>
 
 <animSheet name="light_breach_vulcan_charge" w="84" h="85" fw="28" fh="85">weapons/light_breach_vulcan_charge.png</animSheet>
@@ -7389,11 +7525,11 @@ ENGINEER ANIMATIONS
 <animSheet name="light_breach_vulcan" w="588" h="85" fw="28" fh="85">weapons/light_breach_vulcan.png</animSheet> <!-- 1.25 --> <!-- new png -->
 <weaponAnim name="light_breach_vulcan">
 	<sheet>light_breach_vulcan</sheet>
-	<desc length="18" x="0" y="0"/>
-	<chargedFrame>5</chargedFrame>
-	<fireFrame>9</fireFrame>
+	<desc length="21" x="0" y="0"/>
+	<chargedFrame>8</chargedFrame>
+	<fireFrame>12</fireFrame>
 	<firePoint  x="24" y="39"/>
-	<mountPoint x="2" y="75"/><!-- 1.25.1 was 1 and 77 -->
+	<mountPoint x="2" y="75"/><!-- 1.25.1 -->
 	<boost>light_breach_vulcan_charge</boost>
 </weaponAnim>
 
@@ -7436,7 +7572,43 @@ ENGINEER ANIMATIONS
 	<time>1.5</time>
 </anim>
 
-<animSheet name="slurm_gun_a" w="855" h="77" fw="57" fh="77">weapons/slurm_gun_a.png</animSheet><!-- 1.26 --> <!-- new png -->
+
+
+<!-- 1.28 --> <!-- new slurmguns animation to fix bug with cheat engine -->
+<animSheet name="slurm_gun_a" w="376" h="71" fw="47" fh="71">weapons/slurm_gun_a.png</animSheet>
+<weaponAnim name="slurm_gun_a">
+	<sheet>slurm_gun_a</sheet>
+	<desc length="8" x="0" y="0" />
+	<chargedFrame>3</chargedFrame>
+	<fireFrame>5</fireFrame>
+	<firePoint x="28" y="11" />
+	<mountPoint x="4" y="61" />
+	<chargeImage>weapons/slurm_gun_glow.png</chargeImage>
+</weaponAnim>
+
+<animSheet name="slurm_gun_b" w="376" h="71" fw="47" fh="71">weapons/slurm_gun_b.png</animSheet>
+<weaponAnim name="slurm_gun_b">
+	<sheet>slurm_gun_b</sheet>
+	<desc length="8" x="0" y="0" />
+	<chargedFrame>3</chargedFrame>
+	<fireFrame>5</fireFrame>
+	<firePoint x="28" y="11" />
+	<mountPoint x="4" y="61" />
+	<chargeImage>weapons/slurm_gun_glow.png</chargeImage>
+</weaponAnim>
+
+<animSheet name="slurm_gun_c" w="376" h="71" fw="47" fh="71">weapons/slurm_gun_c.png</animSheet>
+<weaponAnim name="slurm_gun_c">
+	<sheet>slurm_gun_c</sheet>
+	<desc length="8" x="0" y="0" />
+	<chargedFrame>3</chargedFrame>
+	<fireFrame>5</fireFrame>
+	<firePoint x="28" y="11" />
+	<mountPoint x="4" y="61" />
+	<chargeImage>weapons/slurm_gun_glow.png</chargeImage>
+</weaponAnim>
+
+<!-- <animSheet name="slurm_gun_a" w="855" h="77" fw="57" fh="77">weapons/slurm_gun_a.png</animSheet> 
 <weaponAnim name="slurm_gun_a">
 	<sheet>slurm_gun_a</sheet>
 	<desc length="15" x="0" y="0"/>
@@ -7447,7 +7619,7 @@ ENGINEER ANIMATIONS
 	<chargeImage>weapons/slurm_gun_glow.png</chargeImage>
 </weaponAnim>
 
-<animSheet name="slurm_gun_b" w="855" h="77" fw="57" fh="77">weapons/slurm_gun_b.png</animSheet><!-- 1.26 --> <!-- new png -->
+<animSheet name="slurm_gun_b" w="855" h="77" fw="57" fh="77">weapons/slurm_gun_b.png</animSheet>
 <weaponAnim name="slurm_gun_b">
 	<sheet>slurm_gun_b</sheet>
 	<desc length="15" x="0" y="0"/>
@@ -7458,7 +7630,7 @@ ENGINEER ANIMATIONS
 	<chargeImage>weapons/slurm_gun_glow.png</chargeImage>
 </weaponAnim>
 
-<animSheet name="slurm_gun_c" w="855" h="77" fw="57" fh="77">weapons/slurm_gun_c.png</animSheet><!-- 1.26 --> <!-- new png -->
+<animSheet name="slurm_gun_c" w="855" h="77" fw="57" fh="77">weapons/slurm_gun_c.png</animSheet>
 <weaponAnim name="slurm_gun_c">
 	<sheet>slurm_gun_c</sheet>
 	<desc length="15" x="0" y="0"/>
@@ -7467,7 +7639,7 @@ ENGINEER ANIMATIONS
 	<firePoint  x="37" y="7"/>
 	<mountPoint x="10" y="68"/>
 	<chargeImage>weapons/slurm_gun_glow.png</chargeImage>
-</weaponAnim>
+</weaponAnim> -->
 
 
 <animSheet name="slurm_prototype_explosion" w="320" h="32" fw="32" fh="32">effects/explosion1_strip10_g.png</animSheet> 
@@ -7563,7 +7735,7 @@ ENGINEER ANIMATIONS
 	<mountPoint x="6" y="45"/>
 </weaponAnim>
 
-<animSheet name="laser_burst_6" w="300" h="64" fw="25" fh="64">weapons/laser6_strip12_plus.png</animSheet><!-- 1.26 --> <!-- small fix -->
+<animSheet name="laser_burst_6" w="300" h="64" fw="25" fh="64">weapons/laser6_strip12_plus.png</animSheet> <!-- 1.26 --> <!-- small fix -->
 <weaponAnim name="laser_burst_6">
 	<sheet>laser_burst_6</sheet>
 	<desc length="12" x="0" y="0"/>
@@ -7729,15 +7901,14 @@ ENGINEER ANIMATIONS
 	<chargeImage>weapons/bossH_4_glow.png</chargeImage>
 </weaponAnim>
 
-
-<animSheet name="zoltan_blink_weapon" w="1200" h="300" fw="300" fh="300">weapons/zoltan_blink_weapon.png</animSheet>
-<weaponAnim name="zoltan_blink_weapon">
+<animSheet name="zoltan_blink_weapon" w="1200" h="700" fw="300" fh="700">weapons/zoltan_blink_weapon.png</animSheet>
+<weaponAnim name="zoltan_blink_weapon"> 
 	<sheet>zoltan_blink_weapon</sheet>
 	<desc length="4" x="0" y="0"/>
 	<chargedFrame>1</chargedFrame>
 	<fireFrame>3</fireFrame>
 	<firePoint  x="0" y="0"/>
-	<mountPoint x="150" y="550"/> <!-- 1.26 y was 150 -->
+	<mountPoint x="150" y="550"/> <!-- 1.26 -->
 	<delayChargeAnim>0.98</delayChargeAnim>
 </weaponAnim>
 <animSheet name="zoltan_blink_weapon_bomb" w="315" h="35" fw="35" fh="35">weapons/zoltan_blink_weapon_bomb.png</animSheet>
@@ -7748,7 +7919,7 @@ ENGINEER ANIMATIONS
 </anim>
 
 
-<animSheet name="slurm_barrel_1" w="63" h="33" fw="21" fh="33">weapons/slurm_barrel_1.png</animSheet><!-- 1.26 --> <!-- updated -->
+<animSheet name="slurm_barrel_1" w="63" h="33" fw="21" fh="33">weapons/slurm_barrel_1.png</animSheet> <!-- 1.26 --> <!-- updated -->
 <weaponAnim name="slurm_barrel_1">
 	<sheet>slurm_barrel_1</sheet>
 	<desc length="3" x="0" y="0"/>
@@ -7758,7 +7929,7 @@ ENGINEER ANIMATIONS
 	<mountPoint x="3" y="16"/>
 </weaponAnim>
 
-<animSheet name="slurm_barrel_2" w="93" h="49" fw="31" fh="49">weapons/slurm_barrel_2.png</animSheet><!-- 1.26 --> <!-- updated -->
+<animSheet name="slurm_barrel_2" w="93" h="49" fw="31" fh="49">weapons/slurm_barrel_2.png</animSheet> <!-- 1.26 --> <!-- updated -->
 <weaponAnim name="slurm_barrel_2">
 	<sheet>slurm_barrel_2</sheet>
 	<desc length="3" x="0" y="0"/>
@@ -7768,7 +7939,7 @@ ENGINEER ANIMATIONS
 	<mountPoint x="3" y="23"/>
 </weaponAnim>
 
-<animSheet name="slurm_barrel_3" w="63" h="33" fw="21" fh="33">weapons/slurm_barrel_3.png</animSheet><!-- 1.26 --> <!-- updated -->
+<animSheet name="slurm_barrel_3" w="63" h="33" fw="21" fh="33">weapons/slurm_barrel_3.png</animSheet> <!-- 1.26 --> <!-- updated -->
 <weaponAnim name="slurm_barrel_3">
 	<sheet>slurm_barrel_3</sheet>
 	<desc length="3" x="0" y="0"/>
@@ -7778,7 +7949,7 @@ ENGINEER ANIMATIONS
 	<mountPoint x="3" y="16"/>
 </weaponAnim>
 
-<animSheet name="slurm_barrel_4" w="93" h="49" fw="31" fh="49">weapons/slurm_barrel_4.png</animSheet><!-- 1.26 --> <!-- updated -->
+<animSheet name="slurm_barrel_4" w="93" h="49" fw="31" fh="49">weapons/slurm_barrel_4.png</animSheet> <!-- 1.26 --> <!-- updated -->
 <weaponAnim name="slurm_barrel_4">
 	<sheet>slurm_barrel_4</sheet>
 	<desc length="3" x="0" y="0"/>
@@ -7958,7 +8129,6 @@ ENGINEER ANIMATIONS
 </weaponAnim>
 
 
-
 <!-- 1.26 --> <!-- new animation -->
 <animSheet name="ba_missiles_sys1" w="525" h="60" fw="35" fh="60">weapons/ba_missiles_sys1.png</animSheet> 
 <weaponAnim name="ba_missiles_sys1">
@@ -7980,14 +8150,12 @@ ENGINEER ANIMATIONS
 	<mountPoint x="2" y="41"/>
 	<chargeImage>weapons/ba_missiles_sys2_glow.png</chargeImage>
 </weaponAnim>
-
 <animSheet name="ba_missile_small_2" w="32" h="43" fw="32" fh="43">weapons/ba_missile_small_2.png</animSheet>
 <anim name="ba_missile_small_2">
 	<sheet>ba_missile_small_2</sheet>
 	<desc length="1" x="0" y="0"/>
 	<time>1</time>
 </anim>
-
 
 
 <!-- 1.25.3 --> <!-- new pngs --> <!-- old animation did not work for some PCs -->
@@ -8012,7 +8180,7 @@ ENGINEER ANIMATIONS
 <animSheet name="laser_imp_2" w="280" h="71" fw="20" fh="71">weapons/laser_imp_2.png</animSheet> 
 <weaponAnim name="laser_imp_2">
 	<sheet>laser_imp_2</sheet>
-	<desc length="14" x="0" y="0"/><!-- 1.26 -->
+	<desc length="14" x="0" y="0"/> <!-- 1.26 -->
 	<chargedFrame>5</chargedFrame>
 	<fireFrame>10</fireFrame>
 	<firePoint x="13" y="10"/>
@@ -8021,22 +8189,23 @@ ENGINEER ANIMATIONS
 <animSheet name="laser_imp_3" w="300" h="71" fw="20" fh="71">weapons/laser_imp_3.png</animSheet> 
 <weaponAnim name="laser_imp_3">
 	<sheet>laser_imp_3</sheet>
-	<desc length="15" x="0" y="0"/><!-- 1.26 -->
+	<desc length="15" x="0" y="0"/> <!-- 1.26 -->
 	<chargedFrame>7</chargedFrame>
 	<fireFrame>11</fireFrame>
 	<firePoint x="13" y="10"/>
 	<mountPoint x="4" y="54"/>
 </weaponAnim>
 
+
 <!-- 1.25.2 -->
-<animSheet name="zoltan_blink2_weapon" w="1200" h="300" fw="300" fh="300">weapons/zoltan_blink2_weapon.png</animSheet>
+<animSheet name="zoltan_blink2_weapon" w="1200" h="700" fw="300" fh="700">weapons/zoltan_blink2_weapon.png</animSheet>
 <weaponAnim name="zoltan_blink2_weapon">
 	<sheet>zoltan_blink2_weapon</sheet>
 	<desc length="4" x="0" y="0"/>
 	<chargedFrame>1</chargedFrame>
 	<fireFrame>3</fireFrame>
 	<firePoint  x="0" y="0"/>
-	<mountPoint x="150" y="550"/> <!-- 1.26 y was 150 -->
+	<mountPoint x="150" y="550"/> <!-- 1.26 -->
 	<delayChargeAnim>0.98</delayChargeAnim>
 </weaponAnim>
 <animSheet name="zoltan_blink2_weapon_bomb" w="315" h="35" fw="35" fh="35">weapons/zoltan_blink2_weapon_bomb.png</animSheet>
@@ -8046,14 +8215,14 @@ ENGINEER ANIMATIONS
    <time>0.75</time>
 </anim>
 
-<animSheet name="zoltan_blink3_weapon" w="1200" h="300" fw="300" fh="300">weapons/zoltan_blink3_weapon.png</animSheet>
-<weaponAnim name="zoltan_blink3_weapon">
+<animSheet name="zoltan_blink3_weapon" w="1200" h="700" fw="300" fh="700">weapons/zoltan_blink3_weapon.png</animSheet>
+<weaponAnim name="zoltan_blink3_weapon"> 
 	<sheet>zoltan_blink3_weapon</sheet>
 	<desc length="4" x="0" y="0"/>
 	<chargedFrame>1</chargedFrame>
 	<fireFrame>3</fireFrame>
 	<firePoint  x="0" y="0"/>
-	<mountPoint x="150" y="550"/> <!-- 1.26 y was 150 -->
+	<mountPoint x="150" y="550"/> <!-- 1.26 -->
 	<delayChargeAnim>0.98</delayChargeAnim>
 </weaponAnim>
 <animSheet name="zoltan_blink3_weapon_bomb" w="315" h="35" fw="35" fh="35">weapons/zoltan_blink3_weapon_bomb.png</animSheet>
@@ -8063,14 +8232,14 @@ ENGINEER ANIMATIONS
    <time>0.75</time>
 </anim>
 
-<animSheet name="zoltan_blink4_weapon" w="1200" h="300" fw="300" fh="300">weapons/zoltan_blink4_weapon.png</animSheet>
-<weaponAnim name="zoltan_blink4_weapon">
+<animSheet name="zoltan_blink4_weapon" w="1200" h="700" fw="300" fh="700">weapons/zoltan_blink4_weapon.png</animSheet>
+<weaponAnim name="zoltan_blink4_weapon"> 
 	<sheet>zoltan_blink4_weapon</sheet>
 	<desc length="4" x="0" y="0"/>
 	<chargedFrame>1</chargedFrame>
 	<fireFrame>3</fireFrame>
 	<firePoint  x="0" y="0"/>
-	<mountPoint x="150" y="550"/> <!-- 1.26 y was 150 -->
+	<mountPoint x="150" y="550"/> <!-- 1.26 -->
 	<delayChargeAnim>0.98</delayChargeAnim>
 </weaponAnim>
 <animSheet name="zoltan_blink4_weapon_bomb" w="315" h="35" fw="35" fh="35">weapons/zoltan_blink4_weapon_bomb.png</animSheet>
@@ -8081,6 +8250,22 @@ ENGINEER ANIMATIONS
 </anim>
 
 
+<animSheet name="zoltan_blink5_weapon" w="1200" h="700" fw="300" fh="700">weapons/zoltan_blink5_weapon.png</animSheet>
+<weaponAnim name="zoltan_blink5_weapon">
+	<sheet>zoltan_blink5_weapon</sheet>
+	<desc length="4" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>3</fireFrame>
+	<firePoint  x="0" y="0"/>
+	<mountPoint x="150" y="550"/> <!-- 1.26 -->
+	<delayChargeAnim>0.98</delayChargeAnim>
+</weaponAnim>
+<animSheet name="zoltan_blink5_weapon_bomb" w="315" h="35" fw="35" fh="35">weapons/zoltan_blink5_weapon_bomb.png</animSheet>
+<anim name="zoltan_blink5_weapon_bomb">
+   <sheet>zoltan_blink5_weapon_bomb</sheet>
+   <desc length="9" x="0" y="0"/>
+   <time>0.75</time>
+</anim>
 
 <animSheet name="rock_art_x" w="390" h="73" fw="39" fh="73">weapons/rock_art_x.png</animSheet>
 <weaponAnim name="rock_art_x">
@@ -8198,6 +8383,8 @@ ENGINEER ANIMATIONS
 	<mountPoint x="3" y="42"/>
 	<chargeImage>weapons/ba_missiles_s_deimos_glow.png</chargeImage>
 </weaponAnim>
+
+
 
 <!-- 1.26 -->
 <!-- universal weapon box -->
@@ -8815,7 +9002,7 @@ ENGINEER ANIMATIONS
 	<chargedFrame>5</chargedFrame>
 	<fireFrame>10</fireFrame>
 	<firePoint  x="36" y="34"/>
-	<mountPoint x="-30" y="45"/> <!-- 1.26.5 was 10, 105 -->
+	<mountPoint x="-30" y="45"/> <!-- 1.26.5 -->
 	<chargeImage>weapons/ba_arts_oni3_glow.png</chargeImage>
 </weaponAnim>
 <animSheet name="ba_arts_crystal_cyan" w="336" h="82" fw="56" fh="82">weapons/ba_arts_crystal_cyan.png</animSheet>
@@ -8930,6 +9117,9 @@ ENGINEER ANIMATIONS
 	<time>0.5</time>
 </anim>
 
+
+
+
 <!-- 1.26.3 -->
 <animSheet name="beam_fchain_charger" w="117" h="84" fw="39" fh="84">weapons/beam_fchain_charger.png</animSheet>
 <anim name="beam_fchain_charger">
@@ -8949,7 +9139,8 @@ ENGINEER ANIMATIONS
 	<boost>beam_fchain_charger</boost>
 </weaponAnim>
 
-<!-- bamalf -->
+
+<!-- 1.26.4 -->
 <!-- SILVER PACK -->
 <animSheet name="silv_beam_1_strip8" w="192" h="33" fw="24" fh="33">weapons/silv_beam_1_strip8.png</animSheet>
 <weaponAnim name="silv_beam_1_strip8">
@@ -9124,6 +9315,7 @@ ENGINEER ANIMATIONS
 	<mountPoint x="4" y="68"/>
 	<chargeImage>weapons/ba_beam_hot3_glow.png</chargeImage>
 </weaponAnim>
+
 
 <!-- 1.26.6 -->
 <animSheet name="crystalb_heavy_1" w="444" h="63" fw="37" fh="63">weapons/crystalb_heavy_1_strip12.png</animSheet>
@@ -9454,3 +9646,36 @@ ENGINEER ANIMATIONS
 	<firePoint  x="13" y="26"/>
 	<mountPoint x="4" y="50"/>
 </weaponAnim>
+
+
+<!-- 1.28 -->
+<animSheet name="oru_missile" w="147" h="93" fw="49" fh="93">weapons/oru_missile.png</animSheet>
+<animSheet name="oru_missile_boost" w="49" h="93" fw="49" fh="93">weapons/oru_missile_boost.png</animSheet>
+<anim name="oru_missile_boost">
+	<sheet>oru_missile_boost</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<weaponAnim name="oru_missile">
+	<sheet>oru_missile</sheet>
+	<desc length="3" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>2</fireFrame>
+	<firePoint  x="24" y="32"/>
+	<mountPoint x="4" y="55"/>
+	<boost>oru_missile_boost</boost>
+	<chargeImage>weapons/oru_missile_glow.png</chargeImage>
+</weaponAnim>
+
+<animSheet name="ba_beam_healbio" w="140" h="55" fw="28" fh="55">weapons/ba_beam_healbio.png</animSheet>
+<weaponAnim name="ba_beam_healbio">
+	<sheet>ba_beam_healbio</sheet>
+	<desc length="5" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>2</fireFrame>
+	<firePoint  x="15" y="17"/>
+	<mountPoint x="2" y="42"/>
+	<chargeImage>weapons/ba_beam_healbio_glow.png</chargeImage>
+</weaponAnim>
+
+</FTL>

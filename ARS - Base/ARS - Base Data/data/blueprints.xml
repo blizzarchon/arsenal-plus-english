@@ -8294,7 +8294,7 @@ Some other weapon must be powered in order for it to work.</desc>
 	<speed>80</speed>
 	<rarity>0</rarity>
 	<projectiles>
-		<projectile count="1" fake="false">photo_projectile</projectile>
+		<projectile count="1" fake="false">photocaster_light</projectile>
 	</projectiles>
 	<launchSounds>
 		<sound>photocasterLight1</sound>
@@ -8337,7 +8337,7 @@ Some other weapon must be powered in order for it to work.</desc>
 	<speed>70</speed>
 	<rarity>0</rarity>
 	<projectiles>
-		<projectile count="1" fake="false">photo_projectile</projectile>
+		<projectile count="1" fake="false">photocaster_light</projectile>
 	</projectiles>
 	<launchSounds>
 		<sound>photocasterLight1</sound>
@@ -8380,7 +8380,7 @@ Some other weapon must be powered in order for it to work.</desc>
 	<speed>70</speed>
 	<rarity>0</rarity>
 	<projectiles>
-		<projectile count="1" fake="false">photo_projectile</projectile>
+		<projectile count="1" fake="false">photocaster_light</projectile>
 	</projectiles>
 	<launchSounds>
 		<sound>photocasterMedium</sound>
@@ -8423,7 +8423,7 @@ Some other weapon must be powered in order for it to work.</desc>
 	<speed>80</speed>
 	<rarity>0</rarity>
 	<projectiles>
-		<projectile count="1" fake="false">photo_projectile</projectile>
+		<projectile count="1" fake="false">photocaster_light</projectile>
 	</projectiles>
 	<launchSounds>
 		<sound>photocasterHeavy</sound>
@@ -8464,7 +8464,7 @@ Some other weapon must be powered in order for it to work.</desc>
 	<bp>2</bp>
 	<rarity>0</rarity>
 	<projectiles>
-		<projectile count="1" fake="false">photo_projectile</projectile>
+		<projectile count="1" fake="false">photocaster_light</projectile>
 	</projectiles>
 	<boost>
 		<type>cooldown</type>
@@ -32935,7 +32935,7 @@ This custom-built version is slightly faster and requires only 1 power.</desc>
 	<speed>80</speed>
 	<rarity>0</rarity> <!-- inj -->
 	<projectiles>
-		<projectile count="1" fake="false">photo_projectile</projectile>
+		<projectile count="1" fake="false">photocaster_light</projectile>
 	</projectiles>
 	<launchSounds>
 		<sound>photocasterLight1</sound>
@@ -32977,7 +32977,7 @@ This custom-built version is slightly faster and requires only 1 power.</desc>
 	<speed>80</speed>
 	<rarity>0</rarity> <!-- inj -->
 	<projectiles>
-		<projectile count="1" fake="false">photo_projectile</projectile>
+		<projectile count="1" fake="false">photocaster_light</projectile>
 	</projectiles>
 	<launchSounds>
 		<sound>photocasterLight1</sound>
@@ -33019,7 +33019,7 @@ This custom-built version is slightly faster and requires only 1 power.</desc>
 	<speed>80</speed>
 	<rarity>0</rarity> <!-- inj -->
 	<projectiles>
-		<projectile count="1" fake="false">photo_projectile</projectile>
+		<projectile count="1" fake="false">photocaster_light</projectile>
 	</projectiles>
 	<launchSounds>
 		<sound>photocasterLight1</sound>
@@ -33061,7 +33061,7 @@ This custom-built version is slightly faster and requires only 1 power.</desc>
 	<speed>80</speed>
 	<rarity>0</rarity> <!-- inj -->
 	<projectiles>
-		<projectile count="1" fake="false">photo_projectile</projectile>
+		<projectile count="1" fake="false">photocaster_light</projectile>
 	</projectiles>
 	<launchSounds>
 		<sound>photocasterLight1</sound>
@@ -33103,7 +33103,7 @@ This custom-built version is slightly faster and requires only 1 power.</desc>
 	<speed>70</speed>
 	<rarity>0</rarity> <!-- inj -->
 	<projectiles>
-		<projectile count="1" fake="false">photo_projectile</projectile>
+		<projectile count="1" fake="false">photocaster_light</projectile>
 	</projectiles>
 	<launchSounds>
 		<sound>photocasterLight1</sound>
@@ -33145,7 +33145,7 @@ This custom-built version is slightly faster and requires only 1 power.</desc>
 	<speed>70</speed>
 	<rarity>0</rarity> <!-- inj -->
 	<projectiles>
-		<projectile count="1" fake="false">photo_projectile</projectile>
+		<projectile count="1" fake="false">photocaster_light</projectile>
 	</projectiles>
 	<launchSounds>
 		<sound>photocasterLight1</sound>
@@ -33187,7 +33187,7 @@ This custom-built version is slightly faster and requires only 1 power.</desc>
 	<speed>70</speed>
 	<rarity>0</rarity> <!-- inj -->
 	<projectiles>
-		<projectile count="1" fake="false">photo_projectile</projectile>
+		<projectile count="1" fake="false">photocaster_light</projectile>
 	</projectiles>
 	<launchSounds>
 		<sound>photocasterLight1</sound>
@@ -33229,7 +33229,7 @@ This custom-built version is slightly faster and requires only 1 power.</desc>
 	<speed>70</speed>
 	<rarity>0</rarity> <!-- inj -->
 	<projectiles>
-		<projectile count="1" fake="false">photo_projectile</projectile>
+		<projectile count="1" fake="false">photocaster_light</projectile>
 	</projectiles>
 	<launchSounds>
 		<sound>photocasterLight1</sound>
@@ -33271,7 +33271,7 @@ This custom-built version is slightly faster and requires only 1 power.</desc>
 	<speed>70</speed>
 	<rarity>0</rarity> <!-- inj -->
 	<projectiles>
-		<projectile count="1" fake="false">photo_projectile</projectile>
+		<projectile count="1" fake="false">photocaster_light</projectile>
 	</projectiles>
 	<launchSounds>
 		<sound>photocasterMedium</sound>
@@ -33313,7 +33313,7 @@ This custom-built version is slightly faster and requires only 1 power.</desc>
 	<speed>70</speed>
 	<rarity>0</rarity> <!-- inj -->
 	<projectiles>
-		<projectile count="1" fake="false">photo_projectile</projectile>
+		<projectile count="1" fake="false">photocaster_light</projectile>
 	</projectiles>
 	<launchSounds>
 		<sound>photocasterMedium</sound>
@@ -33355,7 +33355,7 @@ This custom-built version is slightly faster and requires only 1 power.</desc>
 	<speed>70</speed>
 	<rarity>0</rarity> <!-- inj -->
 	<projectiles>
-		<projectile count="1" fake="false">photo_projectile</projectile>
+		<projectile count="1" fake="false">photocaster_light</projectile>
 	</projectiles>
 	<launchSounds>
 		<sound>photocasterMedium</sound>
@@ -33397,7 +33397,7 @@ This custom-built version is slightly faster and requires only 1 power.</desc>
 	<speed>70</speed>
 	<rarity>0</rarity> <!-- inj -->
 	<projectiles>
-		<projectile count="1" fake="false">photo_projectile</projectile>
+		<projectile count="1" fake="false">photocaster_light</projectile>
 	</projectiles>
 	<launchSounds>
 		<sound>photocasterMedium</sound>
@@ -33439,7 +33439,7 @@ This custom-built version is slightly faster and requires only 1 power.</desc>
 	<speed>70</speed>
 	<rarity>0</rarity> <!-- inj -->
 	<projectiles>
-		<projectile count="1" fake="false">photo_projectile</projectile>
+		<projectile count="1" fake="false">photocaster_light</projectile>
 	</projectiles>
 	<launchSounds>
 		<sound>photocasterMedium</sound>
@@ -33481,7 +33481,7 @@ This custom-built version is slightly faster and requires only 1 power.</desc>
 	<speed>80</speed>
 	<rarity>0</rarity> <!-- inj -->
 	<projectiles>
-		<projectile count="1" fake="false">photo_projectile</projectile>
+		<projectile count="1" fake="false">photocaster_light</projectile>
 	</projectiles>
 	<launchSounds>
 		<sound>photocasterHeavy</sound>
@@ -33522,7 +33522,7 @@ This custom-built version is slightly faster and requires only 1 power.</desc>
 	<speed>80</speed>
 	<rarity>0</rarity> <!-- inj -->
 	<projectiles>
-		<projectile count="1" fake="false">photo_projectile</projectile>
+		<projectile count="1" fake="false">photocaster_light</projectile>
 	</projectiles>
 	<launchSounds>
 		<sound>photocasterHeavy</sound>
@@ -33563,7 +33563,7 @@ This custom-built version is slightly faster and requires only 1 power.</desc>
 	<speed>80</speed>
 	<rarity>0</rarity> <!-- inj -->
 	<projectiles>
-		<projectile count="1" fake="false">photo_projectile</projectile>
+		<projectile count="1" fake="false">photocaster_light</projectile>
 	</projectiles>
 	<launchSounds>
 		<sound>photocasterHeavy</sound>
@@ -33604,7 +33604,7 @@ This custom-built version is slightly faster and requires only 1 power.</desc>
 	<speed>80</speed>
 	<rarity>0</rarity> <!-- inj -->
 	<projectiles>
-		<projectile count="1" fake="false">photo_projectile</projectile>
+		<projectile count="1" fake="false">photocaster_light</projectile>
 	</projectiles>
 	<launchSounds>
 		<sound>photocasterHeavy</sound>
@@ -33645,7 +33645,7 @@ This custom-built version is slightly faster and requires only 1 power.</desc>
 	<speed>80</speed>
 	<rarity>0</rarity> <!-- inj -->
 	<projectiles>
-		<projectile count="1" fake="false">photo_projectile</projectile>
+		<projectile count="1" fake="false">photocaster_light</projectile>
 	</projectiles>
 	<launchSounds>
 		<sound>photocasterHeavy</sound>
@@ -33685,7 +33685,7 @@ This custom-built version is slightly faster and requires only 1 power.</desc>
 	<bp>2</bp>
 	<rarity>0</rarity> <!-- inj -->
 	<projectiles>
-		<projectile count="1" fake="false">photo_projectile</projectile>
+		<projectile count="1" fake="false">photocaster_light</projectile>
 	</projectiles>
 	<boost>
 		<type>cooldown</type>
@@ -33731,7 +33731,7 @@ This custom-built version is slightly faster and requires only 1 power.</desc>
 	<bp>2</bp>
 	<rarity>0</rarity> <!-- inj -->
 	<projectiles>
-		<projectile count="1" fake="false">photo_projectile</projectile>
+		<projectile count="1" fake="false">photocaster_light</projectile>
 	</projectiles>
 	<boost>
 		<type>cooldown</type>
@@ -33777,7 +33777,7 @@ This custom-built version is slightly faster and requires only 1 power.</desc>
 	<bp>2</bp>
 	<rarity>0</rarity> <!-- inj -->
 	<projectiles>
-		<projectile count="1" fake="false">photo_projectile</projectile>
+		<projectile count="1" fake="false">photocaster_light</projectile>
 	</projectiles>
 	<boost>
 		<type>cooldown</type>
@@ -33823,7 +33823,7 @@ This custom-built version is slightly faster and requires only 1 power.</desc>
 	<bp>2</bp>
 	<rarity>0</rarity> <!-- inj -->
 	<projectiles>
-		<projectile count="1" fake="false">photo_projectile</projectile>
+		<projectile count="1" fake="false">photocaster_light</projectile>
 	</projectiles>
 	<boost>
 		<type>cooldown</type>
@@ -33869,7 +33869,7 @@ This custom-built version is slightly faster and requires only 1 power.</desc>
 	<bp>2</bp>
 	<rarity>0</rarity> <!-- inj -->
 	<projectiles>
-		<projectile count="1" fake="false">photo_projectile</projectile>
+		<projectile count="1" fake="false">photocaster_light</projectile>
 	</projectiles>
 	<boost>
 		<type>cooldown</type>

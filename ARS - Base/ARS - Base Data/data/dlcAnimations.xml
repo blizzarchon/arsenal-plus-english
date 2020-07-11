@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-
+<FTL>
 <animSheet name="stun_floor" w="700" h="70" fw="70" fh="70">effects/stun_floor.png</animSheet>
 
 <anim name="stun_spark_big">
@@ -345,7 +345,7 @@
 	<fireFrame>16</fireFrame>
 	<firePoint x="20" y="8" />
 	<mountPoint x="5" y="34" />
-	<delayChargeAnim>0</delayChargeAnim><!-- 1.25, was 0.98 -->
+	<delayChargeAnim>0</delayChargeAnim><!-- 1.25 -->
 	<chargeImage>weapons/bomblauncher_1_glow.png</chargeImage>
 </weaponAnim>
 <animSheet name="bomb_repair_anim" w="315" h="35" fw="35" fh="35">weapons/bomb_repair_strip9.png</animSheet>
@@ -643,6 +643,4 @@
 	<desc length="1" x="5" y="3"/>
 	<time>1</time>
 </anim>
-
-
-
+</FTL>

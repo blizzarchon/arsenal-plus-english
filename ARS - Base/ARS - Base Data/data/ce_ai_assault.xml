@@ -41,5 +41,12 @@
 		<x>18</x>
 		<y>192</y>
 	</gib4>
+	<gib5>
+		<velocity min="3.08" max="3.14" />
+		<direction min="-355" max="0" />
+		<angular min="-9.77" max="9.77" />
+		<x>102</x>
+		<y>210</y>
+	</gib5>
 </explosion>
 

@@ -97,4 +97,5 @@
 	<mod:findLike type="image"><mod:selector>ion_1_shot</mod:selector><mod:setValue>ion_blast_1_shot</mod:setValue></mod:findLike>
 	<mod:findLike type="image"><mod:selector>ion_2_shot</mod:selector><mod:setValue>ion_blast_2_shot</mod:setValue></mod:findLike>
 	<mod:findLike type="image"><mod:selector>ion_4_shot</mod:selector><mod:setValue>ion_blast_3_shot</mod:setValue></mod:findLike>
+	<mod:findLike type="weaponArt"><mod:selector>bomb_heal</mod:selector><mod:setValue>bomblauncher_heal</mod:setValue></mod:findLike>
 </mod:findLike>

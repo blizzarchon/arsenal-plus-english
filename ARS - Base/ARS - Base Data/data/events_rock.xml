@@ -762,45 +762,7 @@ Environmnt:
 	<text>The burnt out hull of a Rock mine layer drifts by. Behind the wreck drifts a live mine; an automated drone that drills into ships' hulls before exploding. It locks onto your ship's signature and heads your way!</text>
 	<choice hidden="true">
 		<text>Attempt evasive maneuvers.</text>
-		<event>
-			<text>The ship's turning circle proves too wide and the mine bites down onto the hull. You can hear it now, chewing through the armor.</text>
-			<choice hidden="true">
-				<text>Send someone out there to defuse it.</text>
-				<event load="ROCK_STARSHIP_MINE_DEFUSE"/>
-			</choice>
-			<choice hidden="true" req="human"> <!-- 1.27.1 -->
-				<text>(Human Crew Member) Your Human says that they're familiar with this type of mine.</text>
-				<event>
-					<text>They quickly open up the mine and simultaneously tear through both the red and blue wires...</text>
-					<choice hidden="true">
-						<text id="continue"/>
-						<event load="ROCK_STARSHIP_MINE_DEFUSE3"/>  
-					</choice>
-				</event>
-			</choice>
-			<choice hidden="true" req="WEAPONS_MISSILES_EVENTS"> <!--JUSTIN — TO DO — Missile weapons-->
-				<text>(Missile Weapon) Attempt a controlled detonation using a missile.</text>
-				<event>
-					<text>After drawing straws, a crewmember goes out to fix a modified warhead to the mine. You detonate the missile in a way that dislodges the mine. It blows up shortly after. The ship takes some damage in the blasts, but you're still sailing.</text>
-					<damage amount="3"/>
-					<damage amount="1" system="random"/>  <!--DLC-->
-					<item_modify>
-						<item type="missiles" min="-1" max="-1"/>
-					</item_modify>
-					<autoReward level="LOW">scrap_only</autoReward>
-				</event>
-			</choice>
-			<choice hidden="true" req="COMBAT_BEAM_DRONE_LIST">
-				<text>(Beam Drone) Use a drone to cut away the mine with a precision beam.</text>
-				<event>
-					<text>Carefully guided from the bridge, your beam drone removes the mine's grappling arms and sends it drifting off into space, where you shoot at it until it detonates at a safe distance.</text>
-					<item_modify>
-						<item type="drones" min="-1" max="-1"/>
-					</item_modify>
-					<autoReward level="LOW">scrap_only</autoReward>
-				</event>
-			</choice>			
-		</event>
+		<event load="ROCK_STARSHIP_MINE_2"/> <!-- 1.28 -->		
 	</choice>
 	<choice hidden="true" req="engines" lvl="5">
 		<text>(Advanced Engines) Reverse thrusters!</text>
@@ -808,6 +770,55 @@ Environmnt:
 			<text>It stresses the inertial dampeners, but you reverse course and outrun the mine. You prepare to jump off.</text>
 		</event>
 	</choice>
+</event>
+<event name="ROCK_STARSHIP_MINE_2">  <!-- 1.28 -->
+	<text>The ship's turning circle proves too wide and the mine bites down onto the hull. You can hear it now, chewing through the armor.</text>
+	<choice hidden="true">
+		<text>Send someone out there to defuse it.</text>
+		<event load="ROCK_STARSHIP_MINE_DEFUSE"/>
+	</choice>
+	<choice hidden="true" max_group="0" req="human"> <!-- 1.27.1 --><!-- 1.28 added max_group-->
+		<text>(Human Crew Member) Your Human says that they're familiar with this type of mine.</text>
+		<event>
+			<text>They quickly open up the mine and simultaneously tear through both the red and blue wires...</text>
+			<choice hidden="true">
+				<text id="continue"/>
+				<event load="ROCK_STARSHIP_MINE_DEFUSE3"/>  
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" max_group="0" req="order_human"> <!-- 1.28 added req for order human -->
+		<text>(Human Crew Member) Your Human says that they're familiar with this type of mine.</text>
+		<event>
+			<text>They quickly open up the mine and simultaneously tear through both the red and blue wires...</text>
+			<choice hidden="true">
+				<text id="continue"/>
+				<event load="ROCK_STARSHIP_MINE_DEFUSE3"/> 
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="WEAPONS_MISSILES_EVENTS"> <!--JUSTIN — TO DO — Missile weapons-->
+		<text>(Missile Weapon) Attempt a controlled detonation using a missile.</text>
+		<event>
+			<text>After drawing straws, a crewmember goes out to fix a modified warhead to the mine. You detonate the missile in a way that dislodges the mine. It blows up shortly after. The ship takes some damage in the blasts, but you're still sailing.</text>
+			<damage amount="3"/>
+			<damage amount="1" system="random"/>  <!--DLC-->
+			<item_modify>
+				<item type="missiles" min="-1" max="-1"/>
+			</item_modify>
+			<autoReward level="LOW">scrap_only</autoReward>
+		</event>
+	</choice>
+	<choice hidden="true" req="COMBAT_BEAM_DRONE_LIST">
+		<text>(Beam Drone) Use a drone to cut away the mine with a precision beam.</text>
+		<event>
+			<text>Carefully guided from the bridge, your beam drone removes the mine's grappling arms and sends it drifting off into space, where you shoot at it until it detonates at a safe distance.</text>
+			<item_modify>
+				<item type="drones" min="-1" max="-1"/>
+			</item_modify>
+			<autoReward level="LOW">scrap_only</autoReward>
+		</event>
+	</choice>			
 </event>
 <eventList name="ROCK_STARSHIP_MINE_DEFUSE">
 	<event>
@@ -948,6 +959,15 @@ Environmnt:
 					<augment name="RANDOM"/>
 					<autoReward level="LOW">scrap_only</autoReward>
 				</event>					
+			</choice>
+			<choice hidden="true" req="orchid"> <!-- 1.28 -->
+				<text>(Член экипажа орхид) Передать её вместе с небольшим свадебным подарком.</text>
+				<event>
+					<text>Великий Василиск очень признателен вам за помощь в организации свадьбы и лично благодарит: «Настоящим я объявляю вас, капитан неизвестного корабля пришельцев, почётным гражданином Нумы-5. Позвольте мне представить этот скромный подарок».</text>
+					<autoReward level="HIGH">scrap_only</autoReward>
+					<weapon name="BEAM_FIRE_P"/>
+					<crewMember amount="-1" class="orchid"/>
+				</event>
 			</choice>
 			<choice hidden="true">
 				<text>Refuse to comply.</text>

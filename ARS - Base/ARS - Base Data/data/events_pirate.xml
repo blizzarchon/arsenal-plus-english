@@ -69,7 +69,7 @@ Boarders:
 	<event load="EVENT_TRADE_FUMIDR"/><!-- 1.26 -->
 	
 	<event load="RETRANSLATOR"/><!-- 1.27.1 -->
-	
+	<event load="PEACEFUL_MAN_EVENT"/><!-- 1.28 -->
 </eventList>
 
 

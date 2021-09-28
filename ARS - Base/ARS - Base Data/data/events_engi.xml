@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <!-- Copyright (c) 2012 by Subset Games. All rights reserved -->
-
+<FTL>
 
 <!--   
 			SUMMARY  — 
@@ -296,7 +296,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 		<autoReward level="LOW">augment</autoReward>
 	</event>
 	<event><!-- eliminates damage just doesn't make sense in English -->
-		<text>The Engi calm down and send a hull repair drone to your ship, which patches up your ship.</text>
+		<text>The Engi calm down and Send your hull repair drone to your ship, which patches up your ship.</text>
 		<damage amount="-10"/>
 	</event>
 </eventList>
@@ -640,7 +640,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 </event>
 <eventList name="DISTRESS_ENGI_REACTOR_LIST1">
 	<event>
-		<text>You send an away team to investigate, but there's nothing save for the acidic stench of burnt Engi parts. This place is dead.</text>
+		<text>You Send your away team to investigate, but there's nothing save for the acidic stench of burnt Engi parts. This place is dead.</text>
 	</event>
 	<event>
 		<text>Your away team reports a wounded Engi and a functioning drone schematic. Then someone yells. The station reactor is overloading and they're running out of time!</text>
@@ -749,7 +749,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 	<text>Scans reveal the station's reactor is overloading! Not only that, but an injured Engi and a functioning drone schematic are still on board! There's not time for both...</text>
 	<choice hidden="true">
 		<text>Save the Engi!</text>
-		<event><!-- flagged, Engi is not "it", Engi is they -->
+		<event>
 			<text>Your away team heads straight for the Engi and returns with time to spare. You put some distance on the station before it blows and the Engi is so impressed by your crew that they volunteer to join you!</text>
 			<crewMember amount="1" class="engi"/>  
 			<autoReward level="LOW">scrap_only</autoReward>
@@ -862,7 +862,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 				</event>
 			</choice><!--   REMOVED THIS TO PREVENT DOUBLE QUESTS
 			<choice>
-				<text>Ignore communications and attack.</text><!-- diff. from vanilla, although, this choice is not used, not even in vanilla --><!--
+				<text>Ignore communications and attack.</text><!- - diff. from vanilla, although, this choice is not used, not even in vanilla --><!--
 				<event>
 					<text>"But we..." You cut the transmission and prepare an FTL message containing the coordinates to send to the Engies. You then focus on the battle.</text>
 				</event>
@@ -2093,7 +2093,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 			</item_modify>
 		</event>
 	</choice>
-	<choice req="OMICRON_IMPACT_ION_BEAM_12_BRC" hidden="false">
+	<!-- <choice req="OMICRON_IMPACT_ION_BEAM_12_BRC" hidden="false">
 		<text>(Engi Prototype €) Ask them to repair this weapon.</text>
 		<event>
 			<text load="REPAIR_ENGI_PROTOTYPES_REPAIR_IN_PROGRESS" />
@@ -2109,7 +2109,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 				<item type="scrap" min="-10" max="-10"/>
 			</item_modify>
 		</event>
-	</choice>
+	</choice> --><!-- 1.28 -->
 	<choice req="OMICRON_IMPACT_ION_BEAM_12_CLD" hidden="false">
 		<text>(Engi Prototype ‡) Ask them to repair this weapon.</text>
 		<event>
@@ -2808,6 +2808,194 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 			</item_modify>
 		</event>
 	</choice>
+	<!-- 1.28 -->
+	<choice req="ORCHID_PROTOTYPE_2" hidden="false">
+		<text>(Orchid Prototype) Ask them to repair this weapon.</text>
+		<event>
+			<text load="REPAIR_ENGI_PROTOTYPES_REPAIR_IN_PROGRESS" />
+			<choice hidden="true">
+				<text id="continue" />
+				<event>
+					<text load="REPAIR_ENGI_PROTOTYPES_REPAIR_FINISHED" />
+					<weapon name="ORCHID_PROTOTYPE_1"/>
+				</event>
+			</choice>
+			<remove name="ORCHID_PROTOTYPE_2"/>
+			<item_modify>
+				<item type="scrap" min="-10" max="-10"/>
+			</item_modify>
+		</event>
+	</choice>
+	<choice req="ORCHID_PROTOTYPE_2_RDY" hidden="false">
+		<text>(Orchid Prototype ^) Ask them to repair this weapon.</text>
+		<event>
+			<text load="REPAIR_ENGI_PROTOTYPES_REPAIR_IN_PROGRESS" />
+			<choice hidden="true">
+				<text id="continue" />
+				<event>
+					<text load="REPAIR_ENGI_PROTOTYPES_REPAIR_FINISHED" />
+					<weapon name="ORCHID_PROTOTYPE_1_RDY"/>
+				</event>
+			</choice>
+			<remove name="ORCHID_PROTOTYPE_2_RDY"/>
+			<item_modify>
+				<item type="scrap" min="-10" max="-10"/>
+			</item_modify>
+		</event>
+	</choice>
+	<choice req="ORCHID_PROTOTYPE_2_BRC" hidden="false">
+		<text>(Orchid Prototype €) Ask them to repair this weapon.</text>
+		<event>
+			<text load="REPAIR_ENGI_PROTOTYPES_REPAIR_IN_PROGRESS" />
+			<choice hidden="true">
+				<text id="continue" />
+				<event>
+					<text load="REPAIR_ENGI_PROTOTYPES_REPAIR_FINISHED" />
+					<weapon name="ORCHID_PROTOTYPE_1_BRC"/>
+				</event>
+			</choice>
+			<remove name="ORCHID_PROTOTYPE_2_BRC"/>
+			<item_modify>
+				<item type="scrap" min="-10" max="-10"/>
+			</item_modify>
+		</event>
+	</choice>
+	<choice req="ORCHID_PROTOTYPE_2_CLD" hidden="false">
+		<text>(Orchid Prototype ‡) Ask them to repair this weapon.</text>
+		<event>
+			<text load="REPAIR_ENGI_PROTOTYPES_REPAIR_IN_PROGRESS" />
+			<choice hidden="true">
+				<text id="continue" />
+				<event>
+					<text load="REPAIR_ENGI_PROTOTYPES_REPAIR_FINISHED" />
+					<weapon name="ORCHID_PROTOTYPE_1_CLD"/>
+				</event>
+			</choice>
+			<remove name="ORCHID_PROTOTYPE_2_CLD"/>
+			<item_modify>
+				<item type="scrap" min="-10" max="-10"/>
+			</item_modify>
+		</event>
+	</choice>
+	<choice req="ORCHID_PROTOTYPE_2_POW" hidden="false">
+		<text>(Orchid Prototype †) Ask them to repair this weapon.</text>
+		<event>
+			<text load="REPAIR_ENGI_PROTOTYPES_REPAIR_IN_PROGRESS" />
+			<choice hidden="true">
+				<text id="continue" />
+				<event>
+					<text load="REPAIR_ENGI_PROTOTYPES_REPAIR_FINISHED" />
+					<weapon name="ORCHID_PROTOTYPE_1_POW"/>
+				</event>
+			</choice>
+			<remove name="ORCHID_PROTOTYPE_2_POW"/>
+			<item_modify>
+				<item type="scrap" min="-10" max="-10"/>
+			</item_modify>
+		</event>
+	</choice>
+	<choice req="ORCHID_PROTOTYPE_2_UNI" hidden="false">
+		<text>(Orchid Prototype √) Ask them to repair this weapon.</text>
+		<event>
+			<text load="REPAIR_ENGI_PROTOTYPES_REPAIR_IN_PROGRESS" />
+			<choice hidden="true">
+				<text id="continue" />
+				<event>
+					<text load="REPAIR_ENGI_PROTOTYPES_REPAIR_FINISHED" />
+					<weapon name="ORCHID_PROTOTYPE_1_UNI"/>
+				</event>
+			</choice>
+			<remove name="ORCHID_PROTOTYPE_2_UNI"/>
+			<item_modify>
+				<item type="scrap" min="-10" max="-10"/>
+			</item_modify>
+		</event>
+	</choice>
+	<choice req="MAGMAN_PROTOTYPE_2" hidden="false">
+		<text>(Magman Prototype) Ask them to repair this weapon.</text>
+		<event>
+			<text load="REPAIR_ENGI_PROTOTYPES_REPAIR_IN_PROGRESS" />
+			<choice hidden="true">
+				<text id="continue" />
+				<event>
+					<text load="REPAIR_ENGI_PROTOTYPES_REPAIR_FINISHED" />
+					<weapon name="MAGMAN_PROTOTYPE_1"/>
+				</event>
+			</choice>
+			<remove name="MAGMAN_PROTOTYPE_2"/>
+			<item_modify>
+				<item type="scrap" min="-10" max="-10"/>
+			</item_modify>
+		</event>
+	</choice>
+	<choice req="MAGMAN_PROTOTYPE_2_RDY" hidden="false">
+		<text>(Magman Prototype ^) Ask them to repair this weapon.</text>
+		<event>
+			<text load="REPAIR_ENGI_PROTOTYPES_REPAIR_IN_PROGRESS" />
+			<choice hidden="true">
+				<text id="continue" />
+				<event>
+					<text load="REPAIR_ENGI_PROTOTYPES_REPAIR_FINISHED" />
+					<weapon name="MAGMAN_PROTOTYPE_1_RDY"/>
+				</event>
+			</choice>
+			<remove name="MAGMAN_PROTOTYPE_2_RDY"/>
+			<item_modify>
+				<item type="scrap" min="-10" max="-10"/>
+			</item_modify>
+		</event>
+	</choice>
+	<choice req="MAGMAN_PROTOTYPE_2_CLD" hidden="false">
+		<text>(Magman Prototype ‡) Ask them to repair this weapon.</text>
+		<event>
+			<text load="REPAIR_ENGI_PROTOTYPES_REPAIR_IN_PROGRESS" />
+			<choice hidden="true">
+				<text id="continue" />
+				<event>
+					<text load="REPAIR_ENGI_PROTOTYPES_REPAIR_FINISHED" />
+					<weapon name="MAGMAN_PROTOTYPE_1_CLD"/>
+				</event>
+			</choice>
+			<remove name="MAGMAN_PROTOTYPE_2_CLD"/>
+			<item_modify>
+				<item type="scrap" min="-10" max="-10"/>
+			</item_modify>
+		</event>
+	</choice>
+	<choice req="MAGMAN_PROTOTYPE_2_POW" hidden="false">
+		<text>(Magman Prototype †) Ask them to repair this weapon.</text>
+		<event>
+			<text load="REPAIR_ENGI_PROTOTYPES_REPAIR_IN_PROGRESS" />
+			<choice hidden="true">
+				<text id="continue" />
+				<event>
+					<text load="REPAIR_ENGI_PROTOTYPES_REPAIR_FINISHED" />
+					<weapon name="MAGMAN_PROTOTYPE_1_POW"/>
+				</event>
+			</choice>
+			<remove name="MAGMAN_PROTOTYPE_2_POW"/>
+			<item_modify>
+				<item type="scrap" min="-10" max="-10"/>
+			</item_modify>
+		</event>
+	</choice>
+	<choice req="MAGMAN_PROTOTYPE_2_UNI" hidden="false">
+		<text>(Magman Prototype √) Ask them to repair this weapon.</text>
+		<event>
+			<text load="REPAIR_ENGI_PROTOTYPES_REPAIR_IN_PROGRESS" />
+			<choice hidden="true">
+				<text id="continue" />
+				<event>
+					<text load="REPAIR_ENGI_PROTOTYPES_REPAIR_FINISHED" />
+					<weapon name="MAGMAN_PROTOTYPE_1_UNI"/>
+				</event>
+			</choice>
+			<remove name="MAGMAN_PROTOTYPE_2_UNI"/>
+			<item_modify>
+				<item type="scrap" min="-10" max="-10"/>
+			</item_modify>
+		</event>
+	</choice>
 	<choice hidden="true">
 		<text>Check their prices for repairs and supplies.</text>
 		<event load="REPAIR_ENGI_COST"/>
@@ -2946,7 +3134,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 	<text load="NOTHING_MORPH"/>
 	<choice hidden="true">
 		<text id="continue"/>
-		<event load="TALK_WITH_CREW"/>
+		<event load="TALK_WITH_CREW_MORPH"/><!-- 1.28 -->
 	</choice>
 </event>
 
@@ -3030,17 +3218,17 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 		<text>Attack the ship.</text>
 		<event load="MENGI_EVENT_ATTACK"/>
 	</choice>
-	<choice req="engi" lvl="0" max_lvl="0" hidden="true" blue="false">
+	<choice req="ENGI_AND_MORPH" lvl="0" max_lvl="0" hidden="true" blue="false"> <!-- 1.28 req was engi -->
 		<text>Hail the ship.</text>
 		<event load="MENGI_CRYSTAL_EVENT_NOTALK"/>
 	</choice>
-	<choice req="engi" lvl="1" hidden="true" blue="false">
+	<choice req="ENGI_AND_MORPH" lvl="1" hidden="true" blue="false"> <!-- 1.28 req was engi -->
 		<text>Hail the ship.</text>
 		<event load="MENGI_CRYSTAL_EVENT_TALK"/>
 	</choice>
 	<choice hidden="true">
 		<text>Ignore the ship and talk to the crew while the FTL drive charges.</text>
-		<event load="TALK_WITH_CREW"/>
+		<event load="TALK_WITH_CREW_MORPH"/><!-- 1.28 -->
 	</choice>	
 </event>
 <event name="MENGI_CRYSTAL_EVENT_NOTALK">
@@ -3051,7 +3239,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 	</choice>
 	<choice hidden="true">
 		<text>Leave the ship alone.</text>
-		<event load="TALK_WITH_CREW"/>
+		<event load="TALK_WITH_CREW_MORPH"/><!-- 1.28 -->
 	</choice>
 </event>
 <event name="MENGI_CRYSTAL_EVENT_TALK">
@@ -3064,7 +3252,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 	</choice>
 	<choice hidden="true">
 		<text>Talk to the crew while the FTL drive charges.</text>
-		<event load="TALK_WITH_CREW"/>
+		<event load="TALK_WITH_CREW_MORPH"/><!-- 1.28 -->
 	</choice>
 </event>
 <event name="MENGI_CRYSTAL_EVENTQ">
@@ -3082,7 +3270,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 	</choice>
 	<choice hidden="true">
 		<text>Ignore them and talk to the crew while the FTL drive charges.</text>
-		<event load="TALK_WITH_CREW"/>
+		<event load="TALK_WITH_CREW_MORPH"/><!-- 1.28 -->
 	</choice>	
 </event>
 <eventList name="MENGI_CRYSTAL_EVENTQ1"> 
@@ -3428,7 +3616,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 	</choice>
 	<choice hidden="true">
 		<text>Ignore them and talk to the crew while the FTL drive charges.</text>
-		<event load="TALK_WITH_CREW"/>
+		<event load="TALK_WITH_CREW_MORPH"/><!-- 1.28 -->
 	</choice>	
 </event>
 <textList name="TIMETEXT_MORPH">
@@ -3684,7 +3872,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 		</choice>
 		<choice hidden="true">
 			<text>Send them an "N" and talk to the crew while the FTL drive charges.</text>
-			<event load="TALK_WITH_CREW"/>
+		<event load="TALK_WITH_CREW_MORPH"/><!-- 1.28 -->
 		</choice>
 		<choice hidden="true" req="engi">
 			<text>(Engi Crew Member) Your Engi checked their database and reports that the animals are peaceful and safe.</text>
@@ -3744,7 +3932,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 		</choice>
 		<choice hidden="true">
 			<text>Send them an "N" and talk to the crew while the FTL drive charges.</text>
-			<event load="TALK_WITH_CREW"/>
+		<event load="TALK_WITH_CREW_MORPH"/><!-- 1.28 -->
 		</choice>
 		<choice hidden="true" req="engi">
 			<text>(Engi Crew Member) Your Engi checked their database and reports that the animals are extremely aggressive and dangerous.</text>
@@ -4076,7 +4264,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 			</choice>
 			<choice hidden="true">
 				<text>Ignore the transmission and talk to the crew while the FTL drive charges.</text>
-				<event load="TALK_WITH_CREW"/>
+				<event load="TALK_WITH_CREW_MORPH"/><!-- 1.28 -->
 			</choice>
 		</event>
 	</choice>
@@ -4101,7 +4289,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 			<event>
 				<text>The Morphs quickly refuel and get ready to fly away...</text>
 				<item_modify>
-					<item type="fuel" min="-2" max="-6"/>
+					<item type="fuel" min="-6" max="-2"/> <!-- 1.28 min was higher than max -->
 				</item_modify>
 				<choice hidden="true">
 					<text id="continue"/>
@@ -4152,7 +4340,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 			<event>
 				<text>The Morphs quickly refuel and get ready to fly away...</text>
 				<item_modify>
-					<item type="fuel" min="-2" max="-6"/>
+					<item type="fuel" min="-6" max="-2"/> <!-- 1.28 min was higher than max -->
 				</item_modify>
 				<choice hidden="true">
 					<text id="continue"/>
@@ -4388,7 +4576,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 	</choice>
 	<choice hidden="true">
 		<text>Send them an "N" and talk to the crew while the FTL drive charges.</text>
-		<event load="TALK_WITH_CREW"/>
+		<event load="TALK_WITH_CREW_MORPH"/><!-- 1.28 -->
 	</choice>
 	<choice hidden="true">
 		<text>Attack them.</text>
@@ -4465,8 +4653,8 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 	</choice>
 </event>
 <eventList name="MENGI_HUNT1_EVENT_GONE"> 
-	<event load="TALK_WITH_CREW"/>
-	<event load="TALK_WITH_CREW"/>
+	<event load="TALK_WITH_CREW_MORPH"/><!-- 1.28 -->
+	<event load="TALK_WITH_CREW_MORPH"/><!-- 1.28 -->
 	<event>
 		<text>Going to talk with the crew, you hear a rattle coming from under the ship. It turns out the Slugs decided to quietly drain your fuel! Realizing they've been caught, they power up their weapons!</text>
 		<ship hostile="true"/>
@@ -4835,7 +5023,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 	</choice>
 	<choice hidden="true">
 		<text>Send them an "N" and talk to the crew while the FTL drive charges.</text>
-		<event load="TALK_WITH_CREW"/>
+		<event load="TALK_WITH_CREW_MORPH"/><!-- 1.28 -->
 	</choice>
 	<choice hidden="true">
 		<text>Attack them.</text>
@@ -4874,7 +5062,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 	</choice>
 	<choice hidden="true">
 		<text>Just talk to the crew while the FTL drive charges.</text>
-		<event load="TALK_WITH_CREW"/>
+		<event load="TALK_WITH_CREW_MORPH"/><!-- 1.28 -->
 	</choice>
 </event>
 <eventList name="MORPH_PRO_EVENT_WHO_IS_BOSS">
@@ -5147,11 +5335,14 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 			</choice>
 		</event>
 	</choice>
-	<choice>
+	<choice><!-- 1.28 event was in event -->
 		<text>Fly past them.</text>
 		<event>
 			<text>You are not ready to fight in such conditions. Maybe another time.</text>
-			<event load="TALK_WITH_CREW"/>
+			<choice>
+				<text id="continue"/>
+				<event load="TALK_WITH_CREW_MORPH"/><!-- 1.28 -->
+			</choice>
 		</event>
 	</choice>
 </event>
@@ -5170,7 +5361,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 	</choice>
 	<choice hidden="true">
 		<text>Ignore them and talk to the crew before charging the FTL drive.</text>
-		<event load="TALK_WITH_CREW"/>
+		<event load="TALK_WITH_CREW_MORPH"/><!-- 1.28 -->
 	</choice>
 </event>
 <event name="MENGI_INJS_EVENT_PRIMENIT" unique="true">
@@ -5497,11 +5688,41 @@ Date: 03/12/18
 					</choice>
 				</event>
 			</choice>
+			<choice req="order_human" hidden="true"><!-- 1.28 -->
+				<text>(Human) Give away this crew member.</text>
+				<event>
+					<text>The human resists for a long time: they suddenly tell you of a rare heart disease and a sick liver. Eventually, they go to the Morphs. In return, you get only a bit of fuel and scrap: humans are common, and Morphs always have enough of such test subjects.</text>
+					<crewMember amount="-1" class="human"/>
+					<item_modify>
+						<item type="fuel" min="3" max="5"/>
+						<item type="scrap" min="30" max="30"/>
+					</item_modify>
+					<choice hidden="true">
+						<text id="continue"/>
+						<event load="MENGI_LIFEFORM_EXPERIMENT_EVENT_END"/>
+					</choice>
+				</event>
+			</choice>
 			<choice req="engi" hidden="true">
 				<text>(Engi) Give away this crew member.</text>
 				<event>
 					<text>Since the Morphs have enough Engi for experimentation, they offer your former crew member a job as a 'janitor'. As compensation, the Morphs provide you with some scrap and drone parts: you suppose it's better than nothing...</text>
 					<crewMember amount="-1" class="engi"/>
+					<item_modify>
+						<item type="drones" min="5" max="7"/>
+						<item type="scrap" min="30" max="30"/>
+					</item_modify>
+					<choice hidden="true">
+						<text id="continue"/>
+						<event load="MENGI_LIFEFORM_EXPERIMENT_EVENT_END"/>
+					</choice>
+				</event>
+			</choice>
+			<choice req="morph" hidden="true"><!-- 1.28 -->
+				<text>(Morph) Give away this crew member.</text>
+				<event>
+					<text>Since the Morphs have no shortage of their own DNA, they offer your former crew member a job as a 'janitor'. As compensation, the Morphs provide you with some scrap and drone parts: you suppose it's better than nothing...</text>
+					<crewMember amount="-1" class="morph"/>
 					<item_modify>
 						<item type="drones" min="5" max="7"/>
 						<item type="scrap" min="30" max="30"/>
@@ -5543,11 +5764,145 @@ Date: 03/12/18
 					</choice>
 				</event>
 			</choice>
+			<choice req="magman" hidden="true"><!-- 1.28 -->
+				<text>(Magman) Give away this crew member.</text>
+				<event>
+					<text>The Morphs are pleased to have the chance to first-hand see the incendiary properties of the Magmen. Impressed by the results, they offer some supplies.</text>
+					<crewMember amount="-1" class="magman"/>
+					<item_modify>
+						<item type="fuel" min="3" max="7"/>
+						<item type="drones" min="2" max="5"/>
+						<item type="missiles" min="1" max="3"/>
+						<item type="scrap" min="30" max="30"/>
+					</item_modify>
+					<choice hidden="true">
+						<text id="continue"/>
+						<event load="MENGI_LIFEFORM_EXPERIMENT_EVENT_END"/>
+					</choice>
+				</event>
+			</choice>
+			<choice req="mushroom_f" hidden="true"><!-- 1.28 -->
+				<text>(Young Mushroom) Give away this crew member.</text>
+				<event>
+					<text>This is the first time the Morphs have seen a Mushroom of this size. They pull out quite the number of dissection instruments before leaving you with some useful materials.</text>
+					<crewMember amount="-1" class="mushroom_f"/>
+					<item_modify>
+						<item type="fuel" min="3" max="7"/>
+						<item type="drones" min="2" max="5"/>
+						<item type="missiles" min="1" max="3"/>
+						<item type="scrap" min="30" max="30"/>
+					</item_modify>
+					<choice hidden="true">
+						<text id="continue"/>
+						<event load="MENGI_LIFEFORM_EXPERIMENT_EVENT_END"/>
+					</choice>
+				</event>
+			</choice>
+			<choice req="mushroom_b" hidden="true"><!-- 1.28 -->
+				<text>(Mature Mushroom) Give away this crew member.</text>
+				<event>
+					<text>This is the first time the Morphs have seen a Mushroom of this size. They pull out quite the number of dissection instruments before leaving you with some useful materials.</text>
+					<crewMember amount="-1" class="mushroom_b"/>
+					<item_modify>
+						<item type="fuel" min="3" max="7"/>
+						<item type="drones" min="2" max="5"/>
+						<item type="missiles" min="1" max="3"/>
+						<item type="scrap" min="40" max="40"/>
+					</item_modify>
+					<choice hidden="true">
+						<text id="continue"/>
+						<event load="MENGI_LIFEFORM_EXPERIMENT_EVENT_END"/>
+					</choice>
+				</event>
+			</choice>
+			<choice req="mushroom" hidden="true"><!-- 1.28 -->
+				<text>(Old Mushroom) Give away this crew member.</text>
+				<event>
+					<text>This is the first time the Morphs have seen a Mushroom of this size. They pull out quite the number of dissection instruments before leaving you with some useful materials.</text>
+					<crewMember amount="-1" class="mushroom"/>
+					<item_modify>
+						<item type="fuel" min="3" max="7"/>
+						<item type="drones" min="2" max="5"/>
+						<item type="missiles" min="1" max="3"/>
+						<item type="scrap" min="50" max="50"/>
+					</item_modify>
+					<choice hidden="true">
+						<text id="continue"/>
+						<event load="MENGI_LIFEFORM_EXPERIMENT_EVENT_END"/>
+					</choice>
+				</event>
+			</choice>
+			<choice req="orchid" hidden="true"><!-- 1.28 -->
+				<text>(Orchid) Give away this crew member.</text>
+				<event>
+					<text>The Morphs are interested to conduct several experiments on the Orchid. Fire experiments. Impressed with the results, they give you supplies.</text>
+					<crewMember amount="-1" class="orchid"/>
+					<item_modify>
+						<item type="fuel" min="3" max="7"/>
+						<item type="drones" min="2" max="5"/>
+						<item type="missiles" min="1" max="3"/>
+						<item type="scrap" min="30" max="30"/>
+					</item_modify>
+					<choice hidden="true">
+						<text id="continue"/>
+						<event load="MENGI_LIFEFORM_EXPERIMENT_EVENT_END"/>
+					</choice>
+				</event>
+			</choice>
+			<choice req="shell" hidden="true"><!-- 1.28 -->
+				<text>(Shell) Give away this crew member.</text>
+				<event>
+					<text>The Morphs are interested to conduct several experiments on the Shell. Asphyxiation experiments. Impressed with the results, they give you supplies.</text>
+					<crewMember amount="-1" class="shell"/>
+					<item_modify>
+						<item type="fuel" min="3" max="7"/>
+						<item type="drones" min="2" max="5"/>
+						<item type="missiles" min="1" max="3"/>
+						<item type="scrap" min="40" max="40"/>
+					</item_modify>
+					<choice hidden="true">
+						<text id="continue"/>
+						<event load="MENGI_LIFEFORM_EXPERIMENT_EVENT_END"/>
+					</choice>
+				</event>
+			</choice>
+			<choice req="slug_armored" hidden="true"><!-- 1.28 -->
+				<text>(Armored Slug) Give away this crew member.</text>
+				<event>
+					<text>The Morphs are interested in dissecting the Slug from its shell. Impressed by the results, they give you supplies.</text>
+					<crewMember amount="-1" class="slug_armored"/>
+					<item_modify>
+						<item type="fuel" min="3" max="7"/>
+						<item type="drones" min="2" max="5"/>
+						<item type="missiles" min="1" max="3"/>
+						<item type="scrap" min="50" max="50"/>
+					</item_modify>
+					<choice hidden="true">
+						<text id="continue"/>
+						<event load="MENGI_LIFEFORM_EXPERIMENT_EVENT_END"/>
+					</choice>
+				</event>
+			</choice>
 			<choice req="energy" hidden="true">
 				<text>(Zoltan) Give away this crew member.</text>
 				<event>
 					<text>The Morphs have long been interested in the Zoltans' ability of energy generation and self-destruction. The Morphs don't say exactly what they plan to do with your crew member, but offer some scrap and a reactor upgrade as compensation.</text>
 					<crewMember amount="-1" class="energy"/>
+					<item_modify>
+						<item type="scrap" min="40" max="60"/>
+					</item_modify>
+					<upgrade amount="1" system="reactor"/>
+					<choice hidden="true">
+						<text id="continue"/>
+						<event load="MENGI_LIFEFORM_EXPERIMENT_EVENT_END"/>
+					</choice>
+				</event>
+			</choice>
+			<choice req="energyx" hidden="true"><!-- 1.28 -->
+				<text>(Zolton) Give away this crew member.</text>
+				<event>
+					<text>The Morphs have long been interested in the Zoltons' ability of energy generation. The Morphs don't say exactly what they plan to do with your crew member, but offer some scrap and a reactor upgrade as compensation.</text>
+					<crewMember amount="-1" class="energyx"/>
 					<item_modify>
 						<item type="scrap" min="40" max="60"/>
 					</item_modify>
@@ -5564,6 +5919,23 @@ Date: 03/12/18
 					<text>The Slugs' survival instincts make them very difficult to corner and capture alive, and therefore among the rarest test subjects for the Morphs. After catching your Slug, who was prudently hiding between the ship's plating, the Morphs leave you one of their weapons.</text>
 					<crewMember amount="-1" class="slug"/>
 					<weapon name="MORPHGUNS"/><!-- 1.28 was RANDOM -->
+					<choice hidden="true">
+						<text id="continue"/>
+						<event load="MENGI_LIFEFORM_EXPERIMENT_EVENT_END"/>
+					</choice>
+				</event>
+			</choice>
+			<choice req="slig" hidden="true"><!-- 1.28 --><!-- flagged 'their favorite drink' may be worded better. may be obvious whose it is but grammatically ambiguous. also it is 'your problem' so that too.-->
+				<text>(Slig) Give away this crew member.</text>
+				<event>
+					<text>The Morphs are happy to study the Sligs' addiction to their favorite drink. This particular Slig is on a strict regimen, but that's not your problem... You take your reward and prepare to jump.</text>
+					<crewMember amount="-1" class="slig"/>
+					<item_modify>
+						<item type="fuel" min="3" max="7"/>
+						<item type="drones" min="2" max="5"/>
+						<item type="missiles" min="1" max="3"/>
+						<item type="scrap" min="50" max="50"/>
+					</item_modify>
 					<choice hidden="true">
 						<text id="continue"/>
 						<event load="MENGI_LIFEFORM_EXPERIMENT_EVENT_END"/>
@@ -5611,8 +5983,8 @@ Date: 03/12/18
 		</event>
 	</choice>
 	<choice hidden="true">
-		<text>Don't send anyone, instead talk to one of them while the FTL drive charges.</text>
-		<event load="TALK_WITH_CREW"/>
+		<text>Don't Send youryone, instead talk to one of them while the FTL drive charges.</text>
+		<event load="TALK_WITH_CREW_MORPH"/><!-- 1.28 -->
 	</choice>
 </event>
 <eventList name="MENGI_LIFEFORM_EXPERIMENT_EVENT_END">
@@ -5696,7 +6068,7 @@ Date: 03/12/18
 </event>
 <eventList name="MENGI_SELL_UNKNOWN_EVENT">
 	<event>
-		<text>The Morphs send a message: "Greetings. Purpose: Exchange... 1010011000110010... Offer: 00111100 scrap... ERROR... RESTART... Approval = Y/N?" It's not clear what exactly the Morphs want to trade.</text>
+		<text>The Morphs Send your message: "Greetings. Purpose: Exchange... 1010011000110010... Offer: 00111100 scrap... ERROR... RESTART... Approval = Y/N?" It's not clear what exactly the Morphs want to trade.</text>
 		<ship load="MENGI_SHIP_PARAM" hostile="false"/>
 		<status type="limit" target="enemy" system="teleporter" amount="0"/>
 		<choice req="CREW_ALL" hidden="true" blue="false">
@@ -5713,11 +6085,11 @@ Date: 03/12/18
 		</choice>
 		<choice hidden="true">
 			<text>Send them an "N" and talk to the crew while the FTL drive charges.</text>
-			<event load="TALK_WITH_CREW"/>
+			<event load="TALK_WITH_CREW_MORPH"/><!-- 1.28 -->
 		</choice>
 	</event>
 	<event>
-		<text>The Morphs send a message: "Greetings. Purpose: Exchange... 1010011000110010... Offer: 00101101 scrap... ERROR... RESTART... Approval = Y/N?" It's not clear what exactly the Morphs want to trade.</text>
+		<text>The Morphs Send your message: "Greetings. Purpose: Exchange... 1010011000110010... Offer: 00101101 scrap... ERROR... RESTART... Approval = Y/N?" It's not clear what exactly the Morphs want to trade.</text>
 		<ship load = "MENGI_SHIP_PARAM" hostile ="false"/>
 		<status type="limit" target="enemy" system="teleporter" amount="0"/>
 		<choice req="CREW_ALL" hidden="true" blue="false">
@@ -5734,11 +6106,11 @@ Date: 03/12/18
 		</choice>
 		<choice hidden="true">
 			<text>Send them an "N" and talk to the crew while the FTL drive charges.</text>
-			<event load="TALK_WITH_CREW"/>
+			<event load="TALK_WITH_CREW_MORPH"/><!-- 1.28 -->
 		</choice>
 	</event>
 	<event>
-		<text>The Morphs send a message: "Greetings. Purpose: Exchange... 1010011000110010... Offer: 00011110 scrap... ERROR... RESTART... Approval = Y/N?" It's not clear what exactly the Morphs want to trade.</text>
+		<text>The Morphs Send your message: "Greetings. Purpose: Exchange... 1010011000110010... Offer: 00011110 scrap... ERROR... RESTART... Approval = Y/N?" It's not clear what exactly the Morphs want to trade.</text>
 		<ship load = "MENGI_SHIP_PARAM" hostile ="false"/>
 		<status type="limit" target="enemy" system="teleporter" amount="0"/>
 		<choice req="CREW_ALL" hidden="true" blue="false">
@@ -5755,7 +6127,7 @@ Date: 03/12/18
 		</choice>
 		<choice hidden="true">
 			<text>Send them an "N" and talk to the crew while the FTL drive charges.</text>
-			<event load="TALK_WITH_CREW"/>
+			<event load="TALK_WITH_CREW_MORPH"/><!-- 1.28 -->
 		</choice>
 	</event>
 </eventList>
@@ -6085,7 +6457,7 @@ Date: 03/12/18
 <event name="MENGI_ZOND_S_EVENT" unique="true"> 
 	<text load="MENGI_ZOND_TEXT"/>
 	<ship load="MENGI_ZOND_S_PARAM" hostile="false"/>
-	<choice hidden="true" req="slug" max_group="0" blue="false">
+	<choice hidden="true" req="SLUG_AND_ARMORED_SLUG" max_group="0" blue="false"><!-- 1.28 was slug -->
 		<text id="continue"/>
 		<event>
 			<text>The probe quickly scans your ship and freezes in anticipation of a command.</text>
@@ -6113,7 +6485,7 @@ Date: 03/12/18
 			</choice>
 		</event>
 	</choice>
-	<choice hidden="true" req="slug" lvl="0" max_group="0" blue="false">
+	<choice hidden="true" req="SLUG_AND_ARMORED_SLUG" lvl="0" max_group="0" blue="false"><!-- 1.28 was slug -->
 		<text id="continue"/>
 		<event>
 			<text>The probe detects your appearance and switches to combat mode.</text>	
@@ -6250,16 +6622,16 @@ Date: 03/12/18
 
 
 <textList name="MORPH_BAD_LANG_T">
-	<text>You arrive at the distress beacon to find a Morph ship. They send a strange message: "0110 0010 0110 0001 0110 0100 0110 1100 0110 0001 0110 1110 0110 0111".</text>
-	<text>You arrive at the distress beacon to find a Morph ship. They send a strange message: "0110 1001 0110 0100 0110 1011 0111 0111 0110 1001 0110 1101 0011 1111".</text>
-	<text>You arrive at the distress beacon to find a Morph ship. They send a strange message: "0110 1011 0110 1001 0110 1100 0110 1100 0010 0000 0110 1101 0110 0101".</text>
+	<text>You arrive at the distress beacon to find a Morph ship. They Send your strange message: "0110 0010 0110 0001 0110 0100 0110 1100 0110 0001 0110 1110 0110 0111".</text>
+	<text>You arrive at the distress beacon to find a Morph ship. They Send your strange message: "0110 1001 0110 0100 0110 1011 0111 0111 0110 1001 0110 1101 0011 1111".</text>
+	<text>You arrive at the distress beacon to find a Morph ship. They Send your strange message: "0110 1011 0110 1001 0110 1100 0110 1100 0010 0000 0110 1101 0110 0101".</text>
 </textList>
-<event name="MORPH_BAD_LANG" unique="true">
+<event name="MORPH_BAD_LANG" unique="true"><!-- flagged: test this event -->
 	<text load="MORPH_BAD_LANG_T"/>
 	<distressBeacon/>
 	<ship load="MENGI_SHIP_NO_SURRENDER_PARAM" hostile="false"/>
 	<status type="limit" target="enemy" system="teleporter" amount="0"/>
-	<choice hidden="false" req="engi">
+	<choice hidden="false" req="engi" max_group="0"><!-- 1.28 -->
 		<text>(Engi Crew Member) Your Engi deciphers the message to be a request for fuel. Help them.</text>
 		<event>
 			<text>You ship fuel to the Morphs and patiently wait to be thanked...</text>
@@ -6279,7 +6651,27 @@ Date: 03/12/18
 			</choice>
 		</event>
 	</choice>
-	<choice hidden="true">
+	<choice hidden="false" req="morph" max_group="0"><!-- 1.28 -->
+		<text>(Morph Crew Member) Your Morph deciphers the message to be a request for fuel. Help them.</text>
+		<event>
+			<text>You ship fuel to the Morphs and patiently wait to be thanked...</text>
+			<item_modify>
+				<item type="fuel" min="-8" max="-4"/>
+			</item_modify>
+			<choice hidden="true">
+				<text id="continue"/>
+				<event>
+					<text>The Morphs give you some valuable materials.</text>
+					<item_modify>
+						<item type="scrap" min="30" max="60"/>
+						<item type="drones" min="2" max="5"/>
+						<item type="missiles" min="2" max="9"/>
+					</item_modify>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="engines" lvl="1" blue="false" max_group="1">
 		<text>Send them a "?".</text>
 		<event>
 			<text>Your message only seems to irritate them. The Morphs attack!</text>
@@ -6287,7 +6679,7 @@ Date: 03/12/18
 			<status type="clear" target="enemy" system="teleporter" amount="100"/>
 		</event>
 	</choice>
-	<choice hidden="true">
+	<choice hidden="true" req="engines" lvl="1" blue="false" max_group="2">
 		<text>Attack them.</text>
 		<event>
 			<text>It's not clear what kind of problems the Morphs had, but you solve them in the simplest way: no Morphs, no problems.</text>
@@ -6297,9 +6689,9 @@ Date: 03/12/18
 			</choice>
 		</event>
 	</choice>
-	<choice hidden="true">
+	<choice hidden="true" req="engines" lvl="1" blue="false" max_group="3">
 		<text>Ignore the Morphs and talk to the crew while the FTL drive charges.</text>
-		<event load="TALK_WITH_CREW"/>
+		<event load="TALK_WITH_CREW_MORPH"/><!-- 1.28 -->
 	</choice>
 </event>
 
@@ -6312,7 +6704,7 @@ Date: 03/12/18
 	<environment type="asteroid"/>
 	<distressBeacon/>
 	<ship load="MENGI_SHIP_NO_SURRENDER_PARAM" hostile="false"/>
-	<status type="limit" target="enemy" system="shield" amount="0"/>
+	<status type="limit" target="enemy" system="shields" amount="0"/> <!-- 1.28 was shield -->
 	<choice hidden="true">
 		<text id="continue"/>
 		<event>
@@ -6423,7 +6815,7 @@ Date: 03/12/18
 	</choice>
 	<choice hidden="true">
 		<text>Ignore the ship and talk to the crew while the FTL drive charges.</text>
-		<event load="TALK_WITH_CREW"/>
+		<event load="TALK_WITH_CREW_MORPH"/><!-- 1.28 -->
 	</choice>
 </event>
 <eventList name="SWORDFISH_R1"> 
@@ -6465,50 +6857,94 @@ Date: 03/12/18
 <event name="MORPH_SYSREPATBEACON" unique="true">
 	<text>Exiting the jump, you see that a Morph repairbot is chained to the jump beacon. Nearby are several explosive warheads... it looks like someone has decided to blow up the robot.</text>
 	<choice req="CREW_ALL" hidden="true" blue="false">
-		<text>Choose from the crew who will go to free the repairbot</text>
+		<text>Choose from the crew who will go to free the repairbot.</text>
 		<event>
 			<text>You inspect the crew in search of a volunteer for this dangerous operation...</text>
 			<choice hidden="true" req="human">
-				<text>(Human Crew Member) Send a Human.</text>
+				<text>(Human Crew Member) Send your Human.</text>
 				<event load="MORPH_SYSREPATBEACON_HUM"/>
 			</choice>
+			<choice hidden="true" req="order_human"> <!-- 1.28 -->
+				<text>(Order Human Crew Member) Send your Order Human.</text>
+				<event load="MORPH_SYSREPATBEACON_ORDER_HUM"/>
+			</choice>
 			<choice hidden="true" req="engi">
-				<text>(Engi Crew Member) Send an Engi.</text>
+				<text>(Engi Crew Member) Send your Engi.</text>
 				<event load="MORPH_SYSREPATBEACON_ENG"/>
 			</choice>
+			<choice hidden="true" req="morph"><!-- 1.28 -->
+				<text>(Morph Crew Member) Send your Morph.</text>
+				<event load="MORPH_SYSREPATBEACON_MRPH"/>
+			</choice>
 			<choice hidden="true" req="energy">
-				<text>(Zoltan Crew Member) Send a Zoltan.</text>
+				<text>(Zoltan Crew Member) Send your Zoltan.</text>
 				<event load="MORPH_SYSREPATBEACON_ENR"/>
 			</choice>
+			<choice hidden="true" req="energyx"><!-- 1.28 -->
+				<text>(Zolton Crew Member) Send your Zolton.</text>
+				<event load="MORPH_SYSREPATBEACON_ENRX"/>
+			</choice>
 			<choice hidden="true" req="rock">
-				<text>(Rock Crew Member) Send a Rockman.</text>
+				<text>(Rock Crew Member) Send your Rockman.</text>
 				<event load="MORPH_SYSREPATBEACON_RCK"/>
 			</choice>
+			<choice hidden="true" req="magman"> <!-- 1.28 -->
+				<text>(Magman Crew Member) Send your Magman.</text>
+				<event load="MORPH_SYSREPATBEACON_MGM"/>
+			</choice>
+			<choice hidden="true" req="mushroom_f"> <!-- 1.28 -->
+				<text>(Young Mushroom Crew Member) Send your Mushroom.</text>
+				<event load="MORPH_SYSREPATBEACON_MSH_F"/>
+			</choice>
+			<choice hidden="true" req="mushroom_b"> <!-- 1.28 -->
+				<text>(Mature Mushroom Crew Member) Send your Mushroom.</text>
+				<event load="MORPH_SYSREPATBEACON_MSH_B"/>
+			</choice>
+			<choice hidden="true" req="mushroom"> <!-- 1.28 -->
+				<text>(Old Mushroom Crew Member) Send your Mushroom.</text>
+				<event load="MORPH_SYSREPATBEACON_MSH"/>
+			</choice>
+			<choice hidden="true" req="orchid"> <!-- 1.28 -->
+				<text>(Orchid Crew Member) Send your Orchid.</text>
+				<event load="MORPH_SYSREPATBEACON_ORCH"/>
+			</choice>
+			<choice hidden="true" req="shell"> <!-- 1.28 -->
+				<text>(Shell Crew Member) Send your Shell.</text>
+				<event load="MORPH_SYSREPATBEACON_SHELL"/>
+			</choice>
+			<choice hidden="true" req="slug_armored"> <!-- 1.28 -->
+				<text>(Armored Slug Crew Member) Send your Armored Slug.</text>
+				<event load="MORPH_SYSREPATBEACON_ARM_SLG"/>
+			</choice>
 			<choice hidden="true" req="anaerobic">
-				<text>(Lanius Crew Member) Send a Lanius.</text>
+				<text>(Lanius Crew Member) Send your Lanius.</text>
 				<event load="MORPH_SYSREPATBEACON_ANA"/>
 			</choice>
 			<choice hidden="true" req="crystal">
-				<text>(Crystal Crew Member) Send a Crystal.</text>
+				<text>(Crystal Crew Member) Send your Crystal.</text>
 				<event load="MORPH_SYSREPATBEACON_CRY"/>
 			</choice>
 			<choice hidden="true" req="ghost">
-				<text>(Avatar Crew Member) Send an Avatar.</text>
+				<text>(Avatar Crew Member) Send your Avatar.</text>
 				<event load="MORPH_SYSREPATBEACON_GHO"/>
 			</choice>
 			<choice hidden="true" req="mantis">
-				<text>(Mantis Crew Member) Send a Mantis.</text>
+				<text>(Mantis Crew Member) Send your Mantis.</text>
 				<event load="MORPH_SYSREPATBEACON_MAN"/>
 			</choice>
 			<choice hidden="true" req="slug">
-				<text>(Slug Crew Member) Send a Slug.</text>
+				<text>(Slug Crew Member) Send your Slug.</text>
 				<event load="MORPH_SYSREPATBEACON_SLG"/>
+			</choice>
+			<choice hidden="true" req="slig"><!-- 1.28 -->
+				<text>(Slig Crew Member) Send your Slig.</text>
+				<event load="MORPH_SYSREPATBEACON_SLIG"/>
 			</choice>
 		</event>
 	</choice>
 	<choice hidden="true">
 		<text>Don't touch anything and just talk to the crew while the FTL drive charges.</text>
-		<event load="TALK_WITH_CREW"/>
+		<event load="TALK_WITH_CREW_MORPH"/><!-- 1.28 -->
 	</choice>
 </event>
 <eventList name="MORPH_SYSREPATBEACON_HUM"> 
@@ -6528,6 +6964,29 @@ Date: 03/12/18
 	</event>
 	<event>
 		<text>The Human cuts the wrong wire, and a powerful explosion is heard.</text>
+		<removeCrew class="human">
+			<clone>true</clone>
+			<text>Fortunately, a clone of the dead crew member is ready.</text>
+		</removeCrew>
+	</event>
+</eventList>
+<eventList name="MORPH_SYSREPATBEACON_ORDER_HUM"> <!-- 1.28 -->
+	<event>
+		<text>The Order Human gently cuts the wires, freeing both the repairbot and the warheads, and loads it all into the hold.</text>
+		<drone name="MORPH_REPAIR"/>
+		<item_modify>
+			<item type="missiles" min="5" max="10"/>
+		</item_modify>
+	</event>
+	<event>
+		<text>The Order Human gently cuts the wires, freeing both the repairbot and the warheads, and loads it all into the hold.</text>
+		<drone name="MORPH_REPAIR"/>
+		<item_modify>
+			<item type="missiles" min="5" max="10"/>
+		</item_modify>
+	</event>
+	<event>
+		<text>The Order Human cuts the wrong wire, and a powerful explosion is heard.</text>
 		<removeCrew class="human">
 			<clone>true</clone>
 			<text>Fortunately, a clone of the dead crew member is ready.</text>
@@ -6559,6 +7018,22 @@ Date: 03/12/18
 		</removeCrew>
 	</event>
 </eventList>
+<eventList name="MORPH_SYSREPATBEACON_ENRX"> 
+	<event>
+		<text>The Zolton gently cuts the wires, freeing both the repairbot and the warheads and loads it all into the hold.</text>
+		<drone name="MORPH_REPAIR"/>
+		<item_modify>
+			<item type="missiles" min="5" max="10"/>
+		</item_modify>
+	</event>
+	<event>
+		<text>The Zolton cuts the wrong wire, and a powerful explosion is heard.</text>
+		<removeCrew class="energyx">
+			<clone>true</clone>
+			<text>Fortunately, a clone of the dead crew member is ready.</text>
+		</removeCrew>
+	</event>
+</eventList>
 <eventList name="MORPH_SYSREPATBEACON_RCK"> 
 	<event>
 		<text>The Rockman gently cuts the wires, freeing both the repairbot and the warheads and loads it all into the hold.</text>
@@ -6570,6 +7045,118 @@ Date: 03/12/18
 	<event>
 		<text>The Rockman cuts the wrong wire, and a powerful explosion is heard.</text>
 		<removeCrew class="rock">
+			<clone>true</clone>
+			<text>Fortunately, a clone of the dead crew member is ready.</text>
+		</removeCrew>
+	</event>
+</eventList>
+<eventList name="MORPH_SYSREPATBEACON_MGM"> <!-- 1.28 -->
+	<event>
+		<text>The Magman gently cuts the wires, freeing both the repairbot and the warheads and loads it all into the hold.</text>
+		<drone name="MORPH_REPAIR"/>
+		<item_modify>
+			<item type="missiles" min="5" max="10"/>
+		</item_modify>
+	</event>
+	<event>
+		<text>The Magman cuts the wrong wire, and a powerful explosion is heard.</text>
+		<removeCrew class="rock">
+			<clone>true</clone>
+			<text>Fortunately, a clone of the dead crew member is ready.</text>
+		</removeCrew>
+	</event>
+</eventList>
+<eventList name="MORPH_SYSREPATBEACON_MSH_F"> <!-- 1.28 -->
+	<event>
+		<text>The Mushroom gently cuts the wires, freeing both the repairbot and the warheads and loads it all into the hold.</text>
+		<drone name="MORPH_REPAIR"/>
+		<item_modify>
+			<item type="missiles" min="5" max="10"/>
+		</item_modify>
+	</event>
+	<event>
+		<text>The Mushroom cuts the wrong wire, and a powerful explosion is heard.</text>
+		<removeCrew class="mushroom_f">
+			<clone>true</clone>
+			<text>Fortunately, a clone of the dead crew member is ready.</text>
+		</removeCrew>
+	</event>
+</eventList>
+<eventList name="MORPH_SYSREPATBEACON_MSH_B"> <!-- 1.28 -->
+	<event>
+		<text>The Mushroom gently cuts the wires, freeing both the repairbot and the warheads and loads it all into the hold.</text>
+		<drone name="MORPH_REPAIR"/>
+		<item_modify>
+			<item type="missiles" min="5" max="10"/>
+		</item_modify>
+	</event>
+	<event>
+		<text>The Mushroom cuts the wrong wire, and a powerful explosion is heard.</text>
+		<removeCrew class="mushroom_b">
+			<clone>true</clone>
+			<text>Fortunately, a clone of the dead crew member is ready.</text>
+		</removeCrew>
+	</event>
+</eventList>
+<eventList name="MORPH_SYSREPATBEACON_MSH"> <!-- 1.28 -->
+	<event>
+		<text>The Mushroom gently cuts the wires, freeing both the repairbot and the warheads and loads it all into the hold.</text>
+		<drone name="MORPH_REPAIR"/>
+		<item_modify>
+			<item type="missiles" min="5" max="10"/>
+		</item_modify>
+	</event>
+	<event>
+		<text>The Mushroom cuts the wrong wire, and a powerful explosion is heard.</text>
+		<removeCrew class="mushroom">
+			<clone>true</clone>
+			<text>Fortunately, a clone of the dead crew member is ready.</text>
+		</removeCrew>
+	</event>
+</eventList>
+<eventList name="MORPH_SYSREPATBEACON_ORCH"> <!-- 1.28 -->
+	<event>
+		<text>The Orchid gently cuts the wires, freeing both the repairbot and the warheads and loads it all into the hold.</text>
+		<drone name="MORPH_REPAIR"/>
+		<item_modify>
+			<item type="missiles" min="5" max="10"/>
+		</item_modify>
+	</event>
+	<event>
+		<text>The Orchid cuts the wrong wire, and a powerful explosion is heard.</text>
+		<removeCrew class="orchid">
+			<clone>true</clone>
+			<text>Fortunately, a clone of the dead crew member is ready.</text>
+		</removeCrew>
+	</event>
+</eventList>
+<eventList name="MORPH_SYSREPATBEACON_ARM_SLG"> <!-- 1.28 -->
+	<event>
+		<text>The Slug gently cuts the wires, freeing both the repairbot and the warheads and loads it all into the hold.</text>
+		<drone name="MORPH_REPAIR"/>
+		<item_modify>
+			<item type="missiles" min="5" max="10"/>
+		</item_modify>
+	</event>
+	<event>
+		<text>The Slug cuts the wrong wire, and a powerful explosion is heard.</text>
+		<removeCrew class="slug_armored">
+			<clone>true</clone>
+			<text>Fortunately, a clone of the dead crew member is ready.</text>
+		</removeCrew>
+	</event>
+</eventList>
+<eventList name="MORPH_SYSREPATBEACON_SHELL"> <!-- 1.28 -->
+	<event>
+		<text>The Shell gently cuts the wires, freeing both the repairbot and the warheads and loads it all into the hold.</text>
+		<drone name="MORPH_REPAIR"/>
+		<item_modify>
+			<item type="missiles" min="5" max="10"/>
+		</item_modify>
+	</event>
+	<event>
+		<text>The Shell cuts the wrong wire, and a powerful explosion is heard.</text>
+		<removeCrew class="shell">
 			<clone>true</clone>
 			<text>Fortunately, a clone of the dead crew member is ready.</text>
 		</removeCrew>
@@ -6662,6 +7249,22 @@ Date: 03/12/18
 		</removeCrew>
 	</event>
 </eventList>
+<eventList name="MORPH_SYSREPATBEACON_SLIG"> <!-- 1.28 -->
+	<event>
+		<text>The Slig gently cuts the wires, freeing both the repairbot and the warheads and loads it all into the hold.</text>
+		<drone name="MORPH_REPAIR"/>
+		<item_modify>
+			<item type="missiles" min="5" max="10"/>
+		</item_modify>
+	</event>
+	<event>
+		<text>The Slig cuts the wrong wire, and a powerful explosion is heard.</text>
+		<removeCrew class="slig">
+			<clone>true</clone>
+			<text>Fortunately, a clone of the dead crew member is ready.</text>
+		</removeCrew>
+	</event>
+</eventList>
 
 
 <event name="DISTRESSED_MENGI_FIGHT" unique="false"> 
@@ -6672,7 +7275,7 @@ Date: 03/12/18
 <textList name="DISTRESSED_MENGI_FIGHT_TEXT">
 	<text>You see a Morph ship near the beacon. It turns the distress signal on and off, but there is no sign they need help. Seeing you, the Morphs attack.</text>
 	<text>Arriving at the distress call, you only find hostile Morphs. Was it a trap?</text>
-	<text>The Morphs sent the disress signal. When they see you, they send a message: "10010101, 00111101, 11010110... SYNTAX ERROR... RESTART... Greetings. Thanks for the help. Your ship is required. Reason: Ion storm damage... 11110010... ERROR... RESTART..." They look determined to get your ship!</text>
+	<text>The Morphs sent the disress signal. When they see you, they Send your message: "10010101, 00111101, 11010110... SYNTAX ERROR... RESTART... Greetings. Thanks for the help. Your ship is required. Reason: Ion storm damage... 11110010... ERROR... RESTART..." They look determined to get your ship!</text>
 	<text>Arriving at the beacon, you notice a Morph ship. But it doesn't look like they need help — as soon as they see you, they go on the attack!</text>
 </textList>
 
@@ -6869,7 +7472,7 @@ Date: 03/12/18
 	</choice>
 	<choice hidden="true">
 		<text>Ignore the station and talk to the crew while the FTL drive charges.</text>
-		<event load="TALK_WITH_CREW"/>
+		<event load="TALK_WITH_CREW_MORPH"/><!-- 1.28 -->
 	</choice>
 </event>
 <event name="NEBULA_REPAIRMENGI_REPAIR">
@@ -6997,7 +7600,7 @@ Date: 03/12/18
 	</choice>
 	<choice hidden="true">
 		<text>Ignore the station and talk to the crew while the FTL drive charges.</text>
-		<event load="TALK_WITH_CREW"/>
+		<event load="TALK_WITH_CREW_MORPH"/><!-- 1.28 -->
 	</choice>
 </event>
 <textList name="RDY_INJ_SEL_TEXT">
@@ -7057,6 +7660,9 @@ Date: 03/12/18
 	<choice req="BA_ION_CHAIN_MINI" hidden="false"><text load="RDY_DID_TEXT"/><event><text load="RDY_INJ_DID_TEXT"/><remove name="BA_ION_CHAIN_MINI"/><weapon name="BA_ION_CHAIN_MINI_RDY"/><item_modify><item type="scrap" min="-60" max="-60"/></item_modify></event></choice>
 	<choice req="UWB_HEAVY_MINIGUN" hidden="false"><text load="RDY_DID_TEXT"/><event><text load="RDY_INJ_DID_TEXT"/><remove name="UWB_HEAVY_MINIGUN"/><weapon name="UWB_HEAVY_MINIGUN_RDY"/><item_modify><item type="scrap" min="-60" max="-60"/></item_modify></event></choice>
 	<choice req="UWB_LASER_CHAINGUN" hidden="false"><text load="RDY_DID_TEXT"/><event><text load="RDY_INJ_DID_TEXT"/><remove name="UWB_LASER_CHAINGUN"/><weapon name="UWB_LASER_CHAINGUN_RDY"/><item_modify><item type="scrap" min="-60" max="-60"/></item_modify></event></choice>
+	<!-- 1.28 -->
+	<choice req="KERNEL_CHAIN" hidden="false"><text load="RDY_DID_TEXT"/><event><text load="RDY_INJ_DID_TEXT"/><remove name="KERNEL_CHAIN"/><weapon name="KERNEL_CHAIN_RDY"/><item_modify><item type="scrap" min="-60" max="-60"/></item_modify></event></choice>
+	<choice req="KERNEL_CHAIN_M" hidden="false"><text load="RDY_DID_TEXT"/><event><text load="RDY_INJ_DID_TEXT"/><remove name="KERNEL_CHAIN_M"/><weapon name="KERNEL_CHAIN_M_RDY"/><item_modify><item type="scrap" min="-60" max="-60"/></item_modify></event></choice>
 	<choice hidden="true">
 		<text>Decline their services.</text>
 		<event/>
@@ -7150,7 +7756,7 @@ Date: 03/12/18
 	</choice>
 	<choice hidden="true">
 		<text>Ignore the Morphs and talk with the crew while the FTL drive charges.</text>
-		<event load="TALK_WITH_CREW"/>
+		<event load="TALK_WITH_CREW_MORPH"/><!-- 1.28 -->
 	</choice>
 </event>
 <ship name="MENGI_ZOND_VERYBAD_PARAM" auto_blueprint="BCIRCLE_ZONDS">
@@ -7178,7 +7784,7 @@ Date: 03/12/18
 	</choice>
 	<choice hidden="true">
 		<text>Don't get any closer and talk to the crew while the FTL drive charges.</text>
-		<event load="TALK_WITH_CREW"/>
+		<event load="TALK_WITH_CREW_MORPH"/><!-- 1.28 -->
 	</choice>
 </event>
 <eventList name="NEBULA_MENGI_DAMAGED_EVENT_R"> 
@@ -7273,3 +7879,702 @@ Date: 03/12/18
 		<status type="clear" target="player" system="hacking" amount="100" />
 	</deadCrew>
 </ship>
+
+
+<!-- 1.28 -->
+<!-- ORCHID SECTOR EVENT LISTS -->
+<eventList name="ITEMS_ORCHID">
+	<event load="ORCHID_FIND_DRONE"/>
+	<event load="ORCHID_FIND_WEAPON"/>
+	<event load="ORCHID_FREE_ITEMS"/>
+	<event load="ORCHID_FREE_CREW"/>
+	<event load="REFUEL_STATION"/>
+	<event load="REPAIR_STATION"/>
+	<event load="SELL_DRONES_STATION"/>
+	<event load="SELL_MISSILES_STATION"/>
+	<event load="TRADER_CIV"/>
+	<event load="TAVERN_HIRE"/>
+	<event load="TRADER_UPGRADES"/>
+	<event load="TRADER_UPGRADES_EXCHANGE"/>
+</eventList>
+<eventList name="DISTRESS_BEACON_ORCHID">
+	<event load="TRAP_BEACON"/>
+	<event load="STRANDED_BEACON"/>
+	<event load="ESCORT_BEACON"/>
+	<event load="DISTRESS_SATELLITE_DEFENSE"/>
+	<event load="DISTRESS_STATION_FIRE"/>
+	<event load="REFUGEE_GHOST"/>
+	<event load="REFUGEE_DISTRESS"/>
+	<event load="ORCHID_DISTRESS_EMPTY_SHIP"/>
+	<event load="ORCHID_DISTRESS_COLONY_FIRE"/>
+</eventList>
+<eventList name="QUESTS_ORCHID">
+	<event load="QUEST_ESCORT"/>
+	<event load="MERCHANT_REQUEST"/>
+	<event load="FEDERATION_PLANET_SIGNAL"/>
+	<event load="ORCHID_ZOLTAN_QUEST_START"/>
+</eventList>
+<eventList name="NEUTRAL_ORCHID">
+	<event load="MERCENARY"/>
+	<event load="REFUGEE_NO_DISTRESS"/>
+	<event load="FUELING_STATION"/>
+	<event load="ORCHID_UNDER_ATTACK_PIRATE"/>
+	<event load="ORCHID_UNARMED_TRADER"/>
+	<event load="ORCHID_SLAVES"/>
+	<event load="ORCHID_BOTANICAL_GALLERY"/>
+	<event load="ORCHID_SLUG_TAUNT"/>
+</eventList>
+<eventList name="HOSTILE_ORCHID">
+	<event load="ORCHID_FIGHT"/>
+	<event load="ORCHID_FIGHT"/>
+	<event load="ORCHID_PIRATE_FIGHT"/>
+	<event load="ORCHID_ROCK_FIGHT"/>
+	<event load="ORCHID_MANTIS_FIGHT"/>
+	<event load="ORCHID_REBEL_FIGHT"/>
+	<event load="ORCHID_AUTO_FIGHT"/>
+	<event load="ORCHID_CAPTURED_REBEL_FIGHT"/>
+	<event load="ORCHID_PIRATE_FRIENDLY_ASB"/>
+</eventList>
+<!-- ORCHID SECTOR EVENTS -->
+<!-- STRUCTURE -->
+<event name="START_BEACON_ORCHID">
+	<text>On your way to escape the Rebel fleet, you jump into an Orchid sector. Even though humans have named them after Earth plants, they have little in common with them.</text>
+	<choice hidden="true">
+		<text id="continue"/>
+		<event load="AUGMENTS_ON_START_BEACON"/>
+	</choice>
+</event>
+<event name="STORE_ORCHID" unique="false">
+	<text load="STORE_ORCHID"/>
+	<store/>
+</event>
+<textList name="STORE_ORCHID">
+	<text>This beacon is an Orchid trade hub. Even though most of their equipment is made of plant matter, Orchids find some use for scrap metal as well, and are willing to trade it.</text>
+	<text>Located at the beacon is a giant Orchid trade station protected by several warships. As you dock and enter the station, you can't help but notice how quiet yet peaceful it is inside.</text>
+	<text>A lone trading Orchid vessel awaits you at the beacon. Its crew sends you a simple message: "Military goods available for sale."</text>
+	<text>You stumble upon an Orchid trading station dealing with common goods made from organic materials originating from the Orchid homeworlds. Learning that you represent the Federation, the Orchids agree to sell some military goods as well.</text>
+</textList>
+<event name="NOTHING_ORCHID" unique="false">
+	<text load="NOTHING_ORCHID"/>
+	<choice hidden="true">
+		<text id="continue"/>
+		<event load="TALK_WITH_CREW_ORCHID"/>
+	</choice>
+</event>
+<textList name="NOTHING_ORCHID">
+	<text>Orchid space is famous for being calm and peaceful. This beacon exemplifies that.</text>
+	<text back="BG_DARK" planet="NONE">This beacon serves as a connection. You notice how it is located very far from the local star. Probably as a means of protection against solar flares.</text>
+	<text planet="PLANET_UNPOPULATED">You arrive at a beacon located near a planet in process of terraforming to support plant life. There are no ships around. You prepare to jump away.</text>
+	<text back="BG_DARK" planet="NONE">This beacon is devoid of any activity at the moment. The star is too dim, providing insufficient energy for light dependent flora.</text>
+</textList>
+<!-- ITEMS -->
+<event name="ORCHID_FIND_DRONE" unique="false">
+	<text load="ORCHID_FIND_DRONE"/>
+	<autoReward level="LOW">drone</autoReward>
+</event>
+<textList name="ORCHID_FIND_DRONE">
+	<text>Given how fragile Orchids are, they often resort to using drones to deal with emergencies on their ships. A drone factory, still loyal to Federation, is located at the beacon. Orchid engineers offer one of their creations for free.</text>
+	<text>An Orchid freighter is waiting at the beacon. As soon as you jump in, they message you: "Too much cargo. Can't move. Please take some."</text>
+	<text>While the FTL drive charges, you decide to explore the surface of a planet nearby. A depowered drone is hidden within the foliage of a giant tree, probably left by pirates. You can find some use for it in your journey.</text>
+</textList>
+<event name="ORCHID_FIND_WEAPON" unique="false">
+	<text load="ORCHID_FIND_WEAPON"/>
+	<autoReward level="LOW">weapon</autoReward>
+</event>
+<textList name="ORCHID_FIND_WEAPON">
+	<text>You are surprised to find a secret Federation station deep within Orchid space. Its crew went as far as using traditional Orchid materials like leaves and bark to hide the base. Allies at the station offer a weapon to help on your journey.</text>
+	<text>An Orchid colony at the nearby moon agrees to give you a weapon in exchange for some rare plant specimen from your home planet you were lucky to have on hand.</text>
+	<text>As you complete the jump, an Orchid ship explodes nearby for unknown reasons. The only things that survive the explosion are some melted metal parts and a single weapon.</text>
+</textList>
+<event name="ORCHID_FREE_ITEMS" unique="false">
+	<text load="ORCHID_FREE_ITEMS"/>
+	<autoReward level="MED">standard</autoReward>
+</event>
+<textList name="ORCHID_FREE_ITEMS">
+	<text>A friendly Orchid station at the beacon is offering scrap metal for free. "We don't need it. We prefer titanwood."</text>
+	<text back="BG_DARK" planet="NONE">The beacon is empty, with no ships or stars around. A single container, resembling a giant seed, is drifting through space. There are some useful scrap and resources within.</text>
+	<text back="BG_DARK" planet="NONE">The beacon is located far away from systems populated by Orchids. Some remains of destroyed ships are floating around: aftermath of a battle long ago. You harvest what you can.</text>
+</textList>
+<event name="ORCHID_FREE_CREW" unique="true">
+	<text>You encounter a gigantic Orchid passenger ship with a military escort. One of the passengers contacts you using a makeshift communicator: "Please take me. I can fight. I've stolen a shuttle."</text>
+	<choice>
+		<text>Offer them a position on your ship.</text>
+		<event>
+			<text>The new addition to your crew turns out to be an Orchid youth. They take a combat pose and excrete chemicals that fill your other crewmembers with determination.</text>
+			<crewMember amount="1" class="orchid"/>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Decline.</text>
+		<event/>
+	</choice>
+</event>
+<!-- DISTRESS -->
+<event name="ORCHID_DISTRESS_EMPTY_SHIP" unique="true">
+	<distressBeacon/>
+	<ship hostile="false" load="ORCHID_SHIP"/> <!-- woona -->
+	<text>A distress signal is coming from an Orchid ship, drifting far away from common interstellar routes. You try to communicate but there is no answer.</text>
+	<choice hidden="true">
+		<text>Board the ship.</text>
+		<event load="ORCHID_DISTRESS_EMPTY_SHIP_LIST"/>
+	</choice>
+	<choice hidden="true">
+		<text>Ignore it.</text>
+		<event/>
+	</choice>
+</event>
+<eventList name="ORCHID_DISTRESS_EMPTY_SHIP_LIST">
+	<event>
+		<text>You board the ship to find the aftermath of explosion and fire. You can only guess what was the reason of the accident. Most of equipment is burnt, and there is no one alive, but you still manage to find some useful scrap and resources.</text>
+		<autoReward level="MED">standard</autoReward>
+	</event>
+	<event>
+		<text>The only being alive on the ship is a dehydrated Orchid. The ship ran out of water and life support systems broke down. The entire crew is dead except for one resilient Orchid. Refreshing them back to life with water, they seem eager to be of service.</text><!-- "who was reanimated after irrigation" -->
+		<crewMember amount="1" class="orchid"/>
+	</event>
+	<event>
+		<text>The boarding team went into the ship to look for survivors. After a while, your crew went into uncontrollable rage. They were returned back to the ship as soon as possible, but one of the crewmembers was affected so strongly that he went mad upon coming back to the ship.</text>
+		<choice hidden="true" req="orchid">
+			<text>(Orchid Crewmember) Let the Orchid calm the madman.</text>
+			<event>
+				<text>The Orchid sprays soothing pollen, and the madman gradually comes to their senses. The whole team sighs in relief.</text>
+			</event>
+		</choice>
+		<choice hidden="true" req="CREW_STIMS">
+			<text>(Mantis Pheromones) Treat the madman with pheromones.</text>
+			<event>
+				<text>As soon as a fresh portion of pheromones enters the crewmember's lungs, they get better.</text>
+			</event>
+		</choice>
+		<choice req="CREW_ALL" hidden="true" blue="false">
+			<text id="continue"/>
+			<event>
+				<text>There is no other way but to kill the poor fellow.</text>	<crewMember amount="-1" class="traitor"/>
+			</event>
+		</choice>
+		<choice req="CREW_ALL" lvl="0" max_lvl="0" hidden="true" blue="false">
+			<text id="continue"/>
+			<event>
+				<text>As your ship is under the control of AI, you need not fear the death of any crew.</text>
+			</event>
+		</choice>
+	</event>
+</eventList>
+<event name="ORCHID_DISTRESS_COLONY_FIRE" unique="true">
+	<distressBeacon/>
+	<text>A distress signal is coming from the surface of a planet near the beacon. The wildfire is spreading towards a small Orchid colony which lacks the resources to put fires out, or evacuate in time.</text>
+	<choice hidden="true">
+		<text>Help to evacuate as many Orchids as you can.</text>
+		<event>
+			<text>The ecosystem on the Orchid planet is so vulnerable to fire that even your entire crew isn't enough to save the Orchid colony in time. You succeeded in helping the more resilient individuals but most of the Orchid seeds and saplings were lost to the fire.</text>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>This incident does not concern us.</text>
+		<event/>
+	</choice>
+	<choice hidden="true" req="FIRE_EXTINGUISHERS">
+		<text>(Fire Suppression) Use the augment to save the colony.</text>
+		<event>
+			<text>The Fire Suppression system is deployed in the colony and helps tremendously in holding back wildfires at key points while the Orchids evacuate. One of the Orchids is so impressed by your performance that they ask to join your crew.</text>
+			<crewMember amount="1" class="orchid"/>
+		</event>
+	</choice>
+	<choice hidden="true" req="CREW_STIMS">
+		<text>(Mantis Pheromones) Use the augment to speed up evacuation.</text>
+		<event>
+			<text>Affected by pheromones, your crew and Orchid civilians move a lot faster, leaving no one behind. After the colony is evacuated, one of the Orchids is so impressed by your performance that they ask to join your crew.</text>
+			<crewMember amount="1" class="orchid"/>
+		</event>
+	</choice>
+	<choice hidden="true" req="crystal">
+		<text>(Crystal Crew) Block the wildfire from spreading to win some time.</text>
+		<event>
+			<text>Your crewmember erects giant crystalline walls in mere seconds. The flames are slowed down and all of the colony manages to escape to safety. One of the Orchids is so impressed by your performance that they ask to join your crew.</text>
+			<crewMember amount="1" class="orchid"/>
+		</event>
+	</choice>
+	<choice hidden="true" req="WEAPONS_CRYSTAL_BOMB_REQ">
+		<text>(Lockdown Bomb) Block the wildfire from spreading to win some time.</text>
+		<event>
+			<text>The bomb is used to erect giant crystalline walls in mere seconds. The flames are slowed down and all of the colony manages to escape to safety. One of the Orchids is so impressed by your performance that they ask to join your crew.</text>
+			<crewMember amount="1" class="orchid"/>
+			<item_modify>
+				<item max="-2" min="-2" type="missiles"/>
+			</item_modify>
+		</event>
+	</choice>
+	<!-- problem is this needs battle drones as well. perhaps use hyperspace to go back to beginning choice? go from this augment to drones you have equipped? repair drones, antipersonnel drones, boarding drones?
+	<choice hidden="true" req="DRONE_SPEED">
+		<text>(Drone Accelerator) Send some quick drones to help.</text>
+		<event>
+			<text>You decide which drone to use...</text>
+			<choice hidden="false" req="DRONES_REPAIR_LIST">
+				<text>(Repair Drone) Quickly put out the fires.</text>
+				<event>
+					<text>Your repair drones are both efficient and quick at putting out fires around the Orchids, enabling them to evacuate safely.</text>
+					<item_modify>
+						<item max="=2" min="-2" type="drones" />
+					</item_modify>
+					<choice hidden="true">
+						<text id="continue" />
+						<event>
+							<text>One of the Orchids is so impressed by your performance that they ask to join your crew.</text>
+							<crewMember amount="1" class="orchid" />
+						</event>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="false" req="DRONES_BATTLE"> ~ like a Rockman on pheromones
+				<text>(Anti-Personnel Drone) Carry the Orchids to safety.</text>
+				<event>
+					<text>You reprogram some battle drones to assist the Orchids instead of fighting. Their strength combined with their agility enables them to carry away the Orchids' seeds and saplings to safety, letting the rest of the Orchids evacuate themselves.</text>
+					<item_modify>
+						<item max="=2" min="-2" type="drones" />
+					</item_modify>
+					<choice hidden="true">
+						<text id="continue" />
+						<event>
+							<text>One of the Orchids is so impressed by your performance that they ask to join your crew.</text>
+							<crewMember amount="1" class="orchid" />
+						</event>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="false" req="DRONES_BOARDER">
+				<text>(Boarding Drone) Carry the Orchids to safety.</text>
+				<event>
+					<text>You reprogram some boarding drones to assist the Orchids instead of fighting. Their strength combined with their agility enables them to carry away the Orchids' seeds and saplings to safety, letting the rest of the Orchids evacuate themselves.</text>
+					<item_modify>
+						<item max="=2" min="-2" type="drones" />
+					</item_modify>
+					<choice hidden="true">
+						<text id="continue" />
+						<event>
+							<text>One of the Orchids is so impressed by your performance that they ask to join your crew.</text>
+							<crewMember amount="1" class="orchid" />
+						</event>
+					</choice>
+				</event>
+			</choice>
+			<choice>
+				<text>Change your mind.</text>
+				<event load="ORCHID_DISTRESS_COLONY_FIRE_AGAIN" />
+			</choice>
+		</event>
+	</choice>
+	add at top-level
+	<event name="ORCHID_DISTRESS_COLONY_FIRE_AGAIN">
+		<event />
+	</event>"
+	add to hyperspace.xml.append
+	<event name="ORCHID_DISTRESS_COLONY_FIRE_AGAIN">
+        <loadEvent>ORCHID_DISTRESS_COLONY_FIRE</loadEvent>
+    </event> -->
+</event>
+<!-- QUESTS -->
+<event name="ORCHID_ZOLTAN_QUEST_START" unique="true">
+	<text>An unarmed Zoltan ship greets you. "Our vessel is on a diplomatic mission to Orchid worlds. We would like to hire you to go on ahead of us and offer a small gift to the Orchid council to herald our arrival."</text>
+	<choice hidden="true">
+		<text>Agree to deliver a gift.</text>
+		<event>
+			<text>The Zoltans transfer coordinates of their destination and a box containing a gift to Orchids. The package contains a replica of a Zoltan spaceship of unusual shape, radiating light and heat. It's made from high quality metals, resistant to damage, and very pleasant to look at.</text>
+			<quest event="ORCHID_ZOLTAN_QUEST_FINISH"/>
+			<autoReward level="LOW">standard</autoReward>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Decline.</text>
+		<event/>
+	</choice>
+</event>
+<event name="ORCHID_ZOLTAN_QUEST_FINISH">
+	<text>You arrive at the coordinates of the Orchid council, and transfer over the symbolic gift of the Zoltans. Even though they are unable to talk themselves, the Orchids perfectly understand any language. They seem satisfied and offer you a  reward.</text>
+	<autoReward level="HIGH">standard</autoReward>
+</event>
+<!-- NEUTRAL -->
+<event name="ORCHID_UNDER_ATTACK_PIRATE" unique="false">
+	<text>An unarmed Orchid vessel is trying to flee from a ship with the markings of a space pirate that is chasing behind.</text>
+	<choice hidden="true">
+		<text>Help the Orchid ship.</text>
+		<event>
+			<text>You fire a warning shot and the pirate ship changes direction to face you. "That ship is even bigger! Let's loot this one instead." The Orchid vessel stopped far beyond firing distance to watch the battle.</text>
+			<ship hostile="true" load="ORCHID_UNDER_ATTACK_PIRATE_SHIP"/>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Do not intervene.</text>
+		<event/>
+	</choice>
+</event>
+<ship auto_blueprint="SHIPS_PIRATE" name="ORCHID_UNDER_ATTACK_PIRATE_SHIP">
+	<destroyed>
+		<text>The pirate ship breaks apart. You hasten to contact the Orchid ship.</text>
+		<autoReward level="MED">standard</autoReward>
+		<choice hidden="true">
+			<text id="continue"/>
+			<event load="ORCHID_SAVED_LIST"/>
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>No more life signs detected on the pirate ship. You hasten to contact the Orchid ship.</text>
+		<autoReward level="HIGH">standard</autoReward>
+		<choice hidden="true">
+			<text id="continue"/>
+			<event load="ORCHID_SAVED_LIST"/>
+		</choice>
+	</deadCrew>
+</ship>
+<eventList name="ORCHID_SAVED_LIST">
+	<event>
+		<text>The Orchid ship had taken heavy damage before you came to help. The only surviving Orchid offers to join your crew.</text>
+		<crewMember amount="1" class="orchid"/>
+	</event>
+	<event>
+		<text>The Orchid ship offers you some resources as a reward for saving them.</text>
+		<autoReward level="LOW">standard</autoReward>
+	</event>
+	<event>
+		<text>As you fought the pirate, the Orchid ship charged its FTL-drive and jumped away.</text>
+	</event>
+</eventList>
+<event name="ORCHID_UNARMED_TRADER" unique="true">
+	<text>A tiny Orchid trading vessel awaits you at the beacon. Learning that you are from the Federation, they offer some of their supplies to help your cause.</text>
+	<choice>
+		<text>Accept their offer.</text>
+		<event>
+			<autoReward level="LOW">standard</autoReward>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Extort additional resources: they surely have more.</text>
+		<event load="ORCHID_UNARMED_TRADER_EXTORTION"/>
+	</choice>
+</event>
+<eventList name="ORCHID_UNARMED_TRADER_EXTORTION">
+	<event>
+		<text>The trader sends a distress signal, and an Orchid military ship jumps in immediately to help with weapons online.</text>
+		<ship hostile="true" load="ORCHID_UNARMED_TRADER_EXTORTION_SHIP"/>
+	</event>
+	<event>
+		<text>The Orchid ship sent a distress signal asking for help... but nobody comes. They have to give up all of their goods to save their lives.</text>
+		<autoReward level="MED">standard</autoReward>
+	</event>
+</eventList>
+<ship auto_blueprint="SHIPS_ORCHID" name="ORCHID_UNARMED_TRADER_EXTORTION_SHIP">
+	<destroyed>
+		<text>By the time you dealt with the Orchid military ship, the trading vessel has already escaped the system. You loot the destroyed ship, harvesting some useful scrap material.</text>
+		<autoReward level="MED">standard</autoReward>
+	</destroyed>
+	<deadCrew>
+		<text>By the time you dealt with the Orchid military ship, the trading vessel has already escaped the system. You loot the empty ship, harvesting all resources.</text>
+		<autoReward level="HIGH">standard</autoReward>
+	</deadCrew>
+</ship>
+<event name="ORCHID_SLAVES" unique="true">
+	<text>A rogue ship awaits you at the beacon. "Laborers for cheap! Can be used as oxygen emitters, cannon fodder, gifts to tribal chiefs, firewood, or healthy food."</text>
+	<ship hostile="false" load="ORCHID_SLAVES_SHIP"/>
+	<choice hidden="true">
+		<text>Save the enslaved Orchids!</text>
+		<event>
+			<ship hostile="true"/>
+		</event>
+	</choice>
+	<choice>
+		<text>Buy one Orchid slave.</text>
+		<event>
+			<crewMember amount="1" class="orchid"/>
+			<item_modify>
+				<item max="-20" min="-30" type="scrap"/>
+			</item_modify>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Decline and jump away.</text>
+		<event/>
+	</choice>
+</event>
+<ship auto_blueprint="SHIPS_PIRATE" name="ORCHID_SLAVES_SHIP">
+	<surrender chance="0.2" max="4" min="2">
+		<text>The slavers surrender. "You can take one of these for free! Use them for whatever purpose you want. Just let us go."</text>
+		<choice>
+			<text>Accept their offer.</text>
+			<event>
+				<crewMember amount="1" class="orchid"/> <!-- woona -->
+				<ship hostile="false"/>
+			</event>
+		</choice>
+		<choice>
+			<text>Surrender is not an option.</text>
+			<event/>
+		</choice>
+	</surrender>
+	<escape chance="0.5" load="PIRATE_ESCAPE" max="4" min="2"/>
+	<destroyed>
+		<text>The slave ship is destroyed. They won't continue their evil trade, but many lives were probably lost on that ship.</text>
+		<autoReward level="MED">standard</autoReward>
+	</destroyed>
+	<deadCrew>
+		<text>With all of the overlords dead, one of enslaved Orchids accepts an offer to join your crew.</text>
+		<crewMember amount="1" class="orchid"/>
+		<autoReward level="MED">standard</autoReward>
+	</deadCrew>
+</ship>
+<event name="ORCHID_BOTANICAL_GALLERY" unique="true">
+	<text>A giant Orchid station is located at the beacon. It's marked as an "Augmented Botanical Gallery" on your star map.</text>
+	<choice hidden="true">
+		<text>Visit the station.</text>
+		<event>
+			<text>An atmosphere of tranquility with a small touch of curiosity fills the main hall. There are all kinds of strange exhibits in the gallery. You wonder which to visit.</text>
+			<choice>
+				<text>Pay an entry fee to visit "May's Burst".</text>
+				<event>
+					<text>The exhibit contains a giant sphere, protected from all sides with reinforced metal coating. Giant trees are growing inside. You feel a bit disappointed...</text>
+					<item_modify>
+						<item max="-9" min="-12" type="scrap"/>
+					</item_modify>
+					<choice hidden="true">
+						<text id="continue"/>
+						<event>
+							<text>Suddenly, a series of explosions shakes the entire station. The trees' fruits are bursting, releasing giant kernels in all directions. The protective sphere can barely stop the kernels from destroying the station. An Orchid employee offers a weapon created for firing kernels for free.</text>
+							<weapon name="KERNEL_1"/>
+						</event>
+					</choice>
+				</event>
+			</choice>
+			<choice>
+				<text>Pay an entry fee to visit "Ham Pie".</text>
+				<event>
+					<text>The exhibit contains a field of... grass. It looks like usual Earth grass with plain flowers but a strangely familiar leaf pattern. Was it really worth it?</text>
+					<item_modify>
+						<item type="scrap" min="-12" max="-9" />
+					</item_modify>
+					<choice hidden="true">
+						<text id="continue" />
+						<event>
+							<text>After a few minutes on the meadow you feel your worries go away, a desire to laugh, and an irresistible urge to hug a Mantis nearby. After a while, you and the Mantis who turned out to be another visitor become best friends and they agree to join your crew.</text>
+							<crewMember amount="1" class="mantis" />
+						</event>
+					</choice>
+				</event>
+			</choice>
+			<choice>
+				<text>Pay an entry fee to visit "Quick Sap".</text>
+				<event>
+					<text>This exhibit is an unusual machine made entirely of plant matter. The contraption pumps out sap from slender white-barked trees and moves it to the processing area, which outputs a liquid, advertised as high quality FTL fuel.</text>
+					<item_modify>
+						<item type="scrap" min="-12" max="-9" />
+					</item_modify>
+					<choice hidden="true">
+						<text id="continue" />
+						<event>
+							<text>Since you have already paid for entry, the Orchids are offering some of their experimental fuel for free.</text>
+							<item_modify>
+								<item type="fuel" min="5" max="7" />
+							</item_modify>
+						</event>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>Leave the gallery without visiting anything.</text>
+				<event/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Charge the FTL drive.</text>
+		<event load="TALK_WITH_CREW_ORCHID"/>
+	</choice>
+</event>
+<event name="ORCHID_SLUG_TAUNT" unique="true">
+	<text>You are surprised to find a Slug ship in a system mostly populated by Orchids. The Slugs are requesting to communicate using an encrypted channel.</text>
+	<ship hostile="false" load="JELLY"/>
+	<choice hidden="true">
+		<text>Agree to talk with the Slugs.</text>
+		<event>
+			<text>"Greetingss, two-legged meatsssack. We have been looking for sssuch a fine ssspecimen for a century. You are truly the ugliessst human in the galaxy and deserve to be embalmed and shown in a museum. I only wonder what your mom looksss like."</text>
+			<choice hidden="true">
+				<text>Open fire!</text>
+				<event>
+					<text>You fire at the Slug ship and they immediately respond with evasive maneuvers. The Slug captain sends a distress message to a nearby Orchid planet claiming to be attacked by pirates. To your surprise, the Orchids respond by locking an Anti-Ship Battery onto your ship. It was all a part of the Slugs' plan...</text>
+					<ship hostile="true"/>
+					<environment target="player" type="PDS"/>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>Close communications and leave the beacon.</text>
+				<event/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Decline and talk to the crew while the FTL drive charges.</text>
+		<event load="TALK_WITH_CREW_ORCHID"/>
+	</choice>
+</event>
+<!-- HOSTILE -->
+<event name="ORCHID_FIGHT" unique="false">
+	<text load="ORCHID_FIGHT"/>
+	<ship hostile="true" load="ORCHID_SHIP"/>
+</event>
+<textList name="ORCHID_FIGHT">
+	<text>A hostile Orchid ship awaits you at the beacon. Without a single word, they open fire.</text>
+	<text>The Orchids at the beacon behave unusually aggressive. One of the ships moves in your direction with weapons online. Scans indicate that the crew is being consumed by some form of alien plant parasites.</text>
+	<text>An Orchid military ship approaches and scans your ship. Having found that you're far from being peaceful, the Orchids arm their weapons to protect their home.</text>
+	<text>An unusually verbose Orchid ship at the beacon messages you: "We got reports that you aliens are feeding upon sentient flora after cooking them with fire! For that crime you shall be punished!"</text>
+	<text>An Orchid ship awaits you at the beacon. An ominous message appears on communication screen: "In this world... It's KILL or BE killed!"</text>
+</textList>
+<event name="ORCHID_SURRENDER">
+	<text load="ORCHID_SURRENDER"/>
+	<choice>
+		<text>Accept their offer.</text>
+		<event>
+			<ship hostile="false"/>
+			<autoReward level="RANDOM">stuff</autoReward>
+		</event>
+	</choice>
+	<choice>
+		<text>We will not accept surrender!</text>
+		<event/>
+	</choice>
+</event>
+<textList name="ORCHID_SURRENDER">
+	<text>The Orchid ship turns all weapons offline hoping that you will do the same.</text>
+	<text>The Orchid ship is nearly destroyed. Its crew is sending you pictures symbolizing peace, and valuable cargo, probably asking to surrender.</text>
+	<text>The Orchids on screen frantically wave their leaves and hastily peck away at the keyboard. You then receive a message full of typos: "we surender, pleeze cese fier!"</text>
+</textList>
+<event name="ORCHID_PIRATE_FIGHT" unique="false">
+	<text load="ORCHID_PIRATE_FIGHT"/>
+	<ship hostile="true" load="PIRATE"/>
+</event>
+<textList name="ORCHID_PIRATE_FIGHT">
+	<text>The Orchids put a lot of effort into maintaining security of their homeworlds, but a pirate still managed to slip through their defenses. Prepare for battle!</text>
+	<text>The Orchid sectors are considered relatively safe and attract traders and refugees. Those, in turn, attract pirates.</text>
+	<text>A ship with pirate markings awaits you at the beacon. You overhear a conversation on their ship: "Those aren't space weeds." "Whatever. Kill them anyway."</text>
+	<text planet="PLANET_POPULATED">You were enjoying the view of an overgrown Orchid jungle planet when a pirate jumps in out of nowhere. Conflict is inevitable.</text>
+</textList>
+<event name="ORCHID_ROCK_FIGHT" unique="false">
+	<text load="ORCHID_ROCK_FIGHT"/>
+	<ship hostile="true" load="ROCK_SHIP"/>
+</event>
+<textList name="ORCHID_ROCK_FIGHT">
+	<text>Rock ships are often seen in Orchid sectors. Contrary to their xenophobic nature, Rocks are quite fond of Orchids. This particular ship is acting hostile towards you, though.</text>
+	<text>Rocks are often seen as useful by Orchids for their ability to withstand fire and how easy they are to manipulate. A Rock ship at the beacon sees you as a threat to their floral overlords and attacks!</text>
+	<text>Orchid sectors are a common destination for wealthier Rock travelers. Having a body overgrown with rare plants is considered fashionable in Rock culture. A Rock ship at the beacon considers you threatening and retaliates.</text>
+</textList>
+<event name="ORCHID_MANTIS_FIGHT" unique="false">
+	<text load="ORCHID_MANTIS_FIGHT"/>
+	<ship hostile="true" load="MANTIS_FIGHT"/>
+</event>
+<textList name="ORCHID_MANTIS_FIGHT">
+	<text>The warlike Mantis send their ships all over the galaxy to hunt other ships for loot and glory. Orchid sectors are no exception.</text>
+	<text>The Orchids put tremendous effort into pacifying invading Mantis and forming friendly relations with them. But some Mantis will never leave the path of a warrior. The ship at the beacon belongs to those.</text>
+	<text>Some Mantis are influenced by Orchids so much that they begin to worship all kinds of plants and do the only thing they think would please their gods: kill everyone who doesn't belong.</text>
+</textList>
+<event name="ORCHID_REBEL_FIGHT" unique="false">
+	<text load="ORCHID_REBEL_FIGHT"/>
+	<ship hostile="true" load="REBEL"/>
+</event>
+<textList name="ORCHID_REBEL_FIGHT">
+	<text>A Rebel fighter awaits you at the beacon. An image of a human officer appears on the comm screen: "We have come to weed-out this sector from aliens and Federation sympathizers. Starting with you!"</text>
+	<text>An aggressive Rebel ship has chosen a beacon far away from primary Orchid worlds to wait for your potential arrival. As soon as it sees you, it moves closer with weapons armed.</text>
+	<text>This beacon was marked as populated by friendly Orchids on the sector map but the Rebel fleet has already began to invade it. One of the smaller Rebel ships attacks.</text>
+</textList>
+<event name="ORCHID_AUTO_FIGHT" unique="false">
+	<text load="ORCHID_AUTO_FIGHT"/>
+	<ship hostile="true" load="REBEL_AUTO"/>
+</event>
+<textList name="ORCHID_AUTO_FIGHT">
+	<text>Learning that many Federation ships are using Orchid homeworlds as a hiding place, the Rebels sent many automated ships to hunt those who oppose the Rebellion. One of those crewless ships is waiting for you at the beacon.</text>
+	<text>An automated ship is broadcasting a message: "Plant life outlawed. Only humans allowed in the sector. Glory to Rebellion." It's openly hostile to everyone except Rebels.</text>
+	<text>The remains of an Orchid civilian ship are drifting at the beacon. The culprit, an automated Rebel ship, turns around and moves towards you with weapons warming-up.</text>
+</textList>
+<event name="ORCHID_CAPTURED_REBEL_FIGHT" unique="false">
+	<text load="ORCHID_CAPTURED_REBEL_FIGHT"/>
+	<ship hostile="true" load="ORCHID_CAPTURED_REBEL_SHIP"/>
+</event>
+<textList name="ORCHID_CAPTURED_REBEL_FIGHT">
+	<text>You are surprised to hear the crew of an Orchid ship talk in human language: "Surrender. All nearby worlds are controlled by Rebellion forces. Resistance is futile."</text>
+	<text>An Orchid ship behaves unusually aggressively. Scans show that it is captured by humans wearing Rebel uniform.</text>
+	<text>The Orchid ship located at the beacon moves back and forth. The Rebels who captured it haven't learned how to pilot it yet, but are already attacking you.</text>
+</textList>
+<ship auto_blueprint="SHIPS_ORCHID" name="ORCHID_CAPTURED_REBEL_SHIP">
+	<!-- <surrender chance="0.5" load="PIRATE_SURRENDER" max="3" min="2"/> -->
+	<!-- <escape chance="0.5" load="PIRATE_ESCAPE" max="4" min="3"/> -->
+	<destroyed load="DESTROYED_DEFAULT"/>
+	<deadCrew load="DEAD_CREW_DEFAULT"/>
+	<crew>
+		<crewMember prop="1" type="human"/>
+	</crew>
+</ship>
+<event name="ORCHID_PIRATE_FRIENDLY_ASB" unique="true">
+	<img back="BACKGROUND" planet="PLANET_POPULATED"/>
+	<text>A pirate ship worn out by many battles moves in your direction from behind an Orchid planet. Maybe it's time to check how well the Orchids are keeping their systems safe?</text>
+	<ship hostile="true" load="PIRATE"/>
+	<choice hidden="true">
+		<text>Engage the pirate alone.</text>
+		<event/>
+	</choice>
+	<choice hidden="true">
+		<text>Ask for help.</text>
+		<event>
+			<text>You send a distress signal, and Orchid military stationed at the planet respond immediately and target the pirate with anti-ship battery.</text>
+			<environment target="enemy" type="PDS"/>
+		</event>
+	</choice>
+</event>
+
+<event name="ORCHID_BOSS_EVENT" unique="true">
+	<text>A massive Orchid mother ship patrols the area. As soon as you appear, it turns in your direction, clearly charging their unusual kernel launcher prototype.</text>
+	<ship hostile="true" load="ORCHID_BOSS_SHIP"/>
+</event>
+<ship name="ORCHID_BOSS_SHIP" auto_blueprint="ORCHID_BOSS">
+	<destroyed>
+		<text>The mother ship breaks apart, and you collect its wreckage...</text>
+		<autoReward level="HIGH">standard</autoReward>
+		<choice hidden="true">
+			<text id="continue"/>
+			<event load="ORCHID_BOSS_REW1"/>
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>With the mother ship captured, you take everything of value...</text>
+		<autoReward level="HIGH">standard</autoReward>
+		<choice hidden="true">
+			<text id="continue"/>
+			<event load="ORCHID_BOSS_REW2"/>
+		</choice>
+	</deadCrew>
+</ship>
+
+<eventList name="ORCHID_BOSS_REW1">
+	<event>
+		<text>Fortunately their prototype was not damaged in the battle, and you transfer it to your ship.</text>
+		<weapon name="ORCHID_PROTOTYPE_1"/>
+	</event>
+	<event>
+		<text>Their prototype was damaged in the battle but still works. You transfer it to your ship.</text>
+		<weapon name="ORCHID_PROTOTYPE_2"/>
+	</event>
+	<event>
+		<text>Their prototype was damaged in the battle but still works. You transfer it to your ship.</text>
+		<weapon name="ORCHID_PROTOTYPE_2"/>
+	</event>
+</eventList>
+<eventList name="ORCHID_BOSS_REW2">
+	<event>
+		<text>Fortunately their prototype was not damaged in the battle, and you transfer it to your ship.</text>
+		<weapon name="ORCHID_PROTOTYPE_1"/>
+	</event>
+	<event>
+		<text>Fortunately their prototype was not damaged in the battle, and you transfer it to your ship.</text>
+		<weapon name="ORCHID_PROTOTYPE_1"/>
+	</event>
+	<event>
+		<text>Their prototype was damaged in the battle but still works. You transfer it to your ship.</text>
+		<weapon name="ORCHID_PROTOTYPE_2"/>
+	</event>
+</eventList>
+
+</FTL>

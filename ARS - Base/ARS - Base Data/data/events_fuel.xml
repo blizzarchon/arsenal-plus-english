@@ -916,6 +916,25 @@ Beacon On!!!!
 			</choice>
 		</event>
 	</choice>
+	<choice req="morph" hidden="true"><!-- 1.28 -->
+		<text>(Engi Crewmember) Negotiate a better trade.</text>
+		<event>
+			<text>Your Engi analyzes scans of the extensive damage to their hull, calculating potential repair costs. The refugees grumble and protest, but in the end, they admit that their need for repairs is greater than their fuel surplus and offer a better trade.</text>
+			<choice>
+				<text>Accept the offer.</text>
+				<event>
+					<item_modify>
+						<item type="fuel" min="6" max="6"/>
+						<item type="scrap" min="-10" max="-10"/>
+					</item_modify>
+				</event>
+			</choice>
+			<choice>
+				<text>Refuse it.</text>
+				<event/>
+			</choice>
+		</event>
+	</choice>
 	<choice>
 		<text>Refuse their offer.</text>
 		<event load="NO_FUEL_REFUGEE_REFUSE"/>

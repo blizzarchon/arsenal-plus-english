@@ -34,6 +34,8 @@
 	<text name="sectorname_ZOLTON_HOME">Zolton Homeworlds</text> <!-- 1.26 -->
 	<text name="sectorname_MORPH_SECTOR">Morph Controlled Sector</text><!-- 1.27 -->
 	<text name="sectorname_MORPH_HOME">Morph Homeworlds</text><!-- 1.27 -->
+	<text name="sectorname_ORCHID_SECTOR">Orchid Controlled Sector</text> <!-- 1.28 -->
+	<text name="sectorname_ORCHID_HOME">Orchid Homeworlds</text> <!-- 1.28 -->
 	<!-- shown on Sector Map -->
 	<text name="sectorname_short_CIVILIAN_SECTOR">Civilian Sector</text><!-- starting sector -->
 	<text name="sectorname_short_NEW_CIVILIAN_SECTOR">Civilian Sector</text><!-- actual -->
@@ -55,4 +57,6 @@
 	<text name="sectorname_short_ZOLTON_HOME">Zolton Homeworlds</text><!-- 1.26 -->
 	<text name="sectorname_short_MORPH_SECTOR">Morph Controlled</text><!-- 1.27 -->
 	<text name="sectorname_short_MORPH_HOME">Morph Homeworlds</text><!-- 1.27 -->
+	<text name="sectorname_short_ORCHID_SECTOR">Orchid Controlled</text> <!-- 1.28 -->
+	<text name="sectorname_short_ORCHID_HOME">Orchid Homeworlds</text> <!-- 1.28 -->
 </FTL>

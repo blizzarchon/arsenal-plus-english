@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Copyright (c) 2012 by Subset Games. All rights reserved -->
-
+<FTL>
 <!-- music tracks -->
 <music><!-- 1.26 --> <!-- all music converted to ogg 128 kbs/44kHz, old ogg's too (to reduce files size)-->
 	<track>
@@ -462,9 +462,9 @@
 
 
 <!-- <flashbang volume="4">explosions/flashbang_explode1.ogg</flashbang> volume was 5 -->
-<flashbang volume="4">explosions/flashbang_explode1.ogg</flashbang><!-- annoying whine -->
+<flashbang volume="4">explosions/flashbang_explode1.ogg</flashbang><!-- annoying whine --><!-- 1.28, nothing changed-->
 
-<flashbangPlayer volume="4">explosions/flashbang_explode1_player.ogg</flashbangPlayer> <!-- 1.25 -->
+<flashbangPlayer volume="3">explosions/flashbang_explode1_player.ogg</flashbangPlayer> <!-- 1.25 | 1.28 volume down to 3 from 4 -->
 
 <simmedLaser1 volume="5">weapons/laser_c1.wav</simmedLaser1>
 <simmedLaser2 volume="5">weapons/laser_c2.wav</simmedLaser2>
@@ -638,8 +638,8 @@
 <roar volume="10">weapons/roar.ogg</roar>
 
 <!-- 1.27 -->
-<morph_fire volume="3">weapons/sfx_gauss_fire.wav</morph_fire>
-<morph_hit volume="3">weapons/sfx_gauss_hit.wav</morph_hit>
+<morph_fire volume="2">weapons/sfx_gauss_fire.wav</morph_fire><!-- 1.27.1 volume was 3 -->
+<morph_hit volume="2">weapons/sfx_gauss_hit.wav</morph_hit><!-- 1.27.1 volume was 3 -->
 
 <terra_fire_1 volume="3">weapons/terra01.ogg</terra_fire_1>
 <terra_fire_2 volume="3">weapons/terra02.ogg</terra_fire_2>
@@ -648,5 +648,7 @@
 
 
 
-<!-- bamalf -->
+<!-- bamalf --><!-- 1.28 there was a change here but it happened in a previous update -->
 <nebula_noise volume="3">weapons/nebula_noise.ogg</nebula_noise>
+
+</FTL>

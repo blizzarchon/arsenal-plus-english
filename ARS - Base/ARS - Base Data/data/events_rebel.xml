@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-
+<FTL>
 <!-- Copyright (c) 2012 by Subset Games. All rights reserved -->
 
 <!--   
@@ -821,7 +821,7 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
 	<text load="NOTHING_ORDEN_TEXT"/>
 	<choice hidden="true">
 		<text id="continue" />
-		<event load="TALK_WITH_CREW"/>
+		<event load="TALK_WITH_CREW_ORDER_HUMAN"/> <!-- 1.28 was regular -->
 	</choice>
 </event>
 <textList name="NOTHING_ORDEN_TEXT">
@@ -836,7 +836,7 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
 
 <event name="BOARDERS_ORDEN_CLEAR">
 	<text load="BOARDERS_ORDEN_CLEAR_TEXT"/>
-	<boarders min="3" max="6" class="human"/><!-- 1.25, max was 7 -->
+	<boarders min="3" max="6" class="order_human"/><!-- 1.25, max was 7 | 1.28 class was human -->
 	<damage amount="0" system="random" effect="fire"/><!-- 1.25 -->
 	<damage amount="0" system="random" effect="fire"/><!-- 1.25 -->
 	<damage amount="0" system="random" effect="fire"/><!-- 1.25 -->
@@ -852,7 +852,7 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
 <event name="ASTEROID_BOARDERS_ORDEN">
 	<environment type="asteroid"/>
 	<text load="BOARDERS_ORDEN_ASTEROID_TEXT"/>
-	<boarders min="2" max="4" class="human"/>
+	<boarders min="2" max="4" class="order_human"/><!-- 1.28 class was human -->
 </event>
 <textList name="BOARDERS_ORDEN_ASTEROID_TEXT">
 	<text planet="NONE">Immediately upon exiting the jump, a group of thugs teleports on board. You'll have to fight them right in the asteroid field!</text>
@@ -862,7 +862,7 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
 
 <event name="BOARDERS_ORDEN_ANGRYSHIP">
 	<text load="BOARDERS_ORDEN_SHIP_TEXT"/>
-	<boarders min="2" max="3" class="human"/>
+	<boarders min="2" max="3" class="order_human"/><!-- 1.28 class was human -->
 	<ship load="GLORY_SHIP" hostile="true"/>
 </event>
 <textList name="BOARDERS_ORDEN_SHIP_TEXT">
@@ -1112,8 +1112,17 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
 
 <event name="ITEM_ORDEN_BOX_FOR_HUMAN_SCAN">
 	<text>Who will go to open the container?</text>
-	<choice hidden="true" req="human">
+	<choice hidden="true" req="human"> <!-- 1.28, Blizz did not add max_group -->
 		<text>(Human Crewmember) Human.</text>
+		<event>
+			<text>Your human touches the detector box and the sensor lights green — the lid is open.</text>
+			<item_modify>
+				<item type="missiles" min="10" max="15"/>
+			</item_modify>
+		</event>
+	</choice>
+	<choice hidden="true" req="order_human"> <!-- 1.28, Blizz did not add max_group -->
+		<text>(Order Human Crewmember) Order Human.</text>
 		<event>
 			<text>Your human touches the detector box and the sensor lights green — the lid is open.</text>
 			<item_modify>
@@ -1129,6 +1138,10 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
 		<text>(Zoltan Crewmember) Zoltan.</text>
 		<event load="BOOM_ENERGY"/>
 	</choice>
+	<choice hidden="true" req="energyx"><!-- 1.28 -->
+		<text>(Zolton Crewwmember) Zolton.</text>
+		<event load="BOOM_ENERGYX"/>
+	</choice>
 	<choice hidden="true" req="mantis">
 		<text>(Mantis Crewmember) Mantis.</text>
 		<event load="BOOM_MANTIS"/>
@@ -1140,6 +1153,38 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
 	<choice hidden="true" req="rock">
 		<text>(Rock Crewmember) Rock.</text>
 		<event load="BOOM_ROCK"/>
+	</choice>
+	<choice hidden="true" req="slig"><!-- 1.28 -->
+		<text>(Slig Crewmember) Slig.</text>
+		<event load="BOOM_SLIG"/>
+	</choice>
+	<choice hidden="true" req="magman"> <!-- 1.28 -->
+		<text>(Magman Crewmember) Magman.</text>
+		<event load="BOOM_MAGMAN"/>
+	</choice>
+	<choice hidden="true" req="mushroom_f"> <!-- 1.28 -->
+		<text>(молодой машрум Crewmember) Машрум.</text>
+		<event load="BOOM_MUSHROOM_F"/>
+	</choice>
+	<choice hidden="true" req="mushroom_b"> <!-- 1.28 -->
+		<text>(зрелый машрум Crewmember) Машрум.</text>
+		<event load="BOOM_MUSHROOM_B"/>
+	</choice>
+	<choice hidden="true" req="mushroom"> <!-- 1.28 -->
+		<text>(старый машрум Crewmember) Машрум.</text>
+		<event load="BOOM_MUSHROOM"/>
+	</choice>
+	<choice hidden="true" req="orchid"> <!-- 1.28 -->
+		<text>(Orchid Crewmember) Orchid.</text>
+		<event load="BOOM_ORCHID"/>
+	</choice>
+	<choice hidden="true" req="shell"> <!-- 1.28 -->
+		<text>(броненосец Crewmember) Броненосец.</text>
+		<event load="BOOM_SHELL"/>
+	</choice>
+	<choice hidden="true" req="slug_armored"> <!-- 1.28 -->
+		<text>(слаг в панцире Crewmember) Слаг в панцире.</text>
+		<event load="BOOM_ARM_SLUG"/>
 	</choice>
 	<choice hidden="true" req="anaerobic">
 		<text>(Lanius Crewmember) Lanius.</text>
@@ -1171,6 +1216,14 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
 		<text>Fortunately, the clonebay successfully creates a copy of the dead crewmember.</text>
 	</removeCrew>
 </event>
+<event name="BOOM_ENERGYX"><!-- 1.28 -->
+	<text>Your Zolton touches the detector, and the container's sensors light up red. At the same moment an explosion is heard, which obliterates the poor fellow to shreds.</text>
+	<damage amount="2" system="room" effect="fire"/>
+	<removeCrew class="energyx">
+		<clone>true</clone>
+		<text>Fortunately, the clonebay successfully creates a copy of the dead crewmember.</text>
+	</removeCrew>
+</event>
 <event name="BOOM_MANTIS">
 	<text>Your Mantis touches the detector, and the container's sensors light up red. At the same moment an explosion is heard, which obliterates the poor fellow to shreds.</text>
 	<damage amount="2" system="room" effect="fire"/>
@@ -1187,10 +1240,74 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
 		<text>Fortunately, the clonebay successfully creates a copy of the dead crewmember.</text>
 	</removeCrew>
 </event>
+<event name="BOOM_SLIG"><!-- 1.28 -->
+	<text>Your Слёрм touches the detector, and the container's sensors light up red. At the same moment an explosion is heard, which obliterates the poor fellow to shreds.</text>
+	<damage amount="2" system="room" effect="fire"/>
+	<removeCrew class="slig">
+		<clone>true</clone>
+		<text>Fortunately, the clonebay successfully creates a copy of the dead crewmember.</text>
+	</removeCrew>
+</event>
 <event name="BOOM_ROCK">
 	<text>Your Rockman touches the detector, and the container's sensors light up red. At the same moment an explosion is heard, which obliterates the poor fellow to shreds.</text>
 	<damage amount="2" system="room" effect="fire"/>
 	<removeCrew class="rock">
+		<clone>true</clone>
+		<text>Fortunately, the clonebay successfully creates a copy of the dead crewmember.</text>
+	</removeCrew>
+</event>
+<event name="BOOM_MAGMAN"> <!-- 1.28 -->
+	<text>Your Magman touches the detector, and the container's sensors light up red. At the same moment an explosion is heard, which obliterates the poor fellow to shreds.</text>
+	<damage amount="2" system="room" effect="fire"/>
+	<removeCrew class="magman">
+		<clone>true</clone>
+		<text>Fortunately, the clonebay successfully creates a copy of the dead crewmember.</text>
+	</removeCrew>
+</event>
+<event name="BOOM_MUSHROOM_F"> <!-- 1.28 -->
+	<text>Your Машрум touches the detector, and the container's sensors light up red. At the same moment an explosion is heard, which obliterates the poor fellow to shreds.</text>
+	<damage amount="2" system="room" effect="fire"/>
+	<removeCrew class="mushroom_f">
+		<clone>true</clone>
+		<text>Fortunately, the clonebay successfully creates a copy of the dead crewmember.</text>
+	</removeCrew>
+</event>
+<event name="BOOM_MUSHROOM_B"> <!-- 1.28 -->
+	<text>Your Машрум touches the detector, and the container's sensors light up red. At the same moment an explosion is heard, which obliterates the poor fellow to shreds.</text>
+	<damage amount="2" system="room" effect="fire"/>
+	<removeCrew class="mushroom_b">
+		<clone>true</clone>
+		<text>Fortunately, the clonebay successfully creates a copy of the dead crewmember.</text>
+	</removeCrew>
+</event>
+<event name="BOOM_MUSHROOM"> <!-- 1.28 -->
+	<text>Your Машрум touches the detector, and the container's sensors light up red. At the same moment an explosion is heard, which obliterates the poor fellow to shreds.</text>
+	<damage amount="2" system="room" effect="fire"/>
+	<removeCrew class="mushroom">
+		<clone>true</clone>
+		<text>Fortunately, the clonebay successfully creates a copy of the dead crewmember.</text>
+	</removeCrew>
+</event>
+<event name="BOOM_ORCHID"> <!-- 1.28 -->
+	<text>Your Орхид touches the detector, and the container's sensors light up red. At the same moment an explosion is heard, which obliterates the poor fellow to shreds.</text>
+	<damage amount="2" system="room" effect="fire"/>
+	<removeCrew class="orchid">
+		<clone>true</clone>
+		<text>Fortunately, the clonebay successfully creates a copy of the dead crewmember.</text>
+	</removeCrew>
+</event>
+<event name="BOOM_SHELL"> <!-- 1.28 -->
+	<text>Your Броненосец touches the detector, and the container's sensors light up red. At the same moment an explosion is heard, which obliterates the poor fellow to shreds.</text>
+	<damage amount="2" system="room" effect="fire"/>
+	<removeCrew class="shell">
+		<clone>true</clone>
+		<text>Fortunately, the clonebay successfully creates a copy of the dead crewmember.</text>
+	</removeCrew>
+</event>
+<event name="BOOM_ARM_SLUG"> <!-- 1.28 -->
+	<text>Your Слаг touches the detector, and the container's sensors light up red. At the same moment an explosion is heard, which obliterates the poor fellow to shreds.</text>
+	<damage amount="2" system="room" effect="fire"/>
+	<removeCrew class="slug_armored">
 		<clone>true</clone>
 		<text>Fortunately, the clonebay successfully creates a copy of the dead crewmember.</text>
 	</removeCrew>
@@ -1314,6 +1431,15 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
 			</item_modify>
 		</event>
 	</choice>
+	<choice hidden="true" max_group="0" req="order_human"> <!-- 1.28 -->
+		<text>(Order Human Crewmember) Order Human.</text>
+		<event>
+			<text>Your Order human touches the detector box and the sensor lights green — the lid is open.</text>
+			<item_modify>
+				<item type="fuel" min="4" max="8"/>
+			</item_modify>
+		</event>
+	</choice>
 	<choice hidden="true" req="engi">
 		<text>(Engi Crewmember) Engi.</text>
 		<event load="BOOM_ENGI"/>
@@ -1321,6 +1447,10 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
 	<choice hidden="true" req="energy">
 		<text>(Zoltan Crewmember) Zoltan.</text>
 		<event load="BOOM_ENERGY"/>
+	</choice>
+	<choice hidden="true" req="energyx"><!-- 1.28 -->
+		<text>(Zolton Crewmember) Zolton.</text>
+		<event load="BOOM_ENERGYX"/>
 	</choice>
 	<choice hidden="true" req="mantis">
 		<text>(Mantis Crewmember) Mantis.</text>
@@ -1333,6 +1463,38 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
 	<choice hidden="true" req="rock">
 		<text>(Rock Crewmember) Rock.</text>
 		<event load="BOOM_ROCK"/>
+	</choice>
+	<choice hidden="true" req="slig"><!-- 1.28 -->
+		<text>(Slig Crewmember) Slig.</text>
+		<event load="BOOM_SLIG"/>
+	</choice>
+	<choice hidden="true" req="magman"> <!-- 1.28 -->
+		<text>(магмен Crewmember) Магмен.</text>
+		<event load="BOOM_MAGMAN"/>
+	</choice>
+	<choice hidden="true" req="mushroom_f"> <!-- 1.28 -->
+		<text>(молодой машрум Crewmember) Машрум.</text>
+		<event load="BOOM_MUSHROOM_F"/>
+	</choice>
+	<choice hidden="true" req="mushroom_b"> <!-- 1.28 -->
+		<text>(зрелый машрум Crewmember) Машрум.</text>
+		<event load="BOOM_MUSHROOM_B"/>
+	</choice>
+	<choice hidden="true" req="mushroom"> <!-- 1.28 -->
+		<text>(старый машрум Crewmember) Машрум.</text>
+		<event load="BOOM_MUSHROOM"/>
+	</choice>
+	<choice hidden="true" req="orchid"> <!-- 1.28 -->
+		<text>(орхид Crewmember) Орхид.</text>
+		<event load="BOOM_ORCHID"/>
+	</choice>
+	<choice hidden="true" req="shell"> <!-- 1.28 -->
+		<text>(броненосец Crewmember) Броненосец.</text>
+		<event load="BOOM_SHELL"/>
+	</choice>
+	<choice hidden="true" req="slug_armored"> <!-- 1.28 -->
+		<text>(слаг в панцире Crewmember) Слаг в панцире.</text>
+		<event load="BOOM_ARM_SLUG"/>
 	</choice>
 	<choice hidden="true" req="anaerobic">
 		<text>(Lanius Crewmember) Lanius.</text>
@@ -1689,7 +1851,7 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
 	<environment type="nebula"/>
 	<choice hidden="true">
 		<text id="continue" />
-		<event load="TALK_WITH_CREW"/>
+		<event load="TALK_WITH_CREW_ORDER_HUMAN"/> <!-- 1.28 was regular -->
 	</choice>
 </event>
 <textList name="NEBULA_ORDEN_TEXT">
@@ -2607,7 +2769,7 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
 		<text planet="NONE">The beacon is empty. Apparently, the Order ship flew away in a different direction.</text>
 		<choice hidden="true">
 			<text id="continue" />
-			<event load="TALK_WITH_CREW"/>
+			<event load="TALK_WITH_CREW_ORDER_HUMAN"/> <!-- 1.28 was regular -->
 		</choice>
 	</event>
 	<event>
@@ -2682,7 +2844,7 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
 		<text planet="NONE">The beacon is empty. Apparently, the Rockmen flew off in a different direction.</text>
 		<choice hidden="true">
 			<text id="continue" />
-			<event load="TALK_WITH_CREW"/>
+			<event load="TALK_WITH_CREW_ORDER_HUMAN"/> <!-- 1.28 was regular -->
 		</choice>
 	</event>
 	<event>
@@ -2752,15 +2914,15 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
 		<ship load="GLORY_SHIP" hostile="true"/>
 	</event>
 	<event>
-		<img  planet="CIV_CONVOY"/>
+		<img planet="CIV_CONVOY"/>
 		<text>Soon after you arrive, the ship that you were escorting stops nearby. They thank you for your help and offer a reward, and repair drones repair your ship.</text>
 		<autoReward level="LOW">standard</autoReward>
-		<damage amount="-5"/>
+		<damage amount="-15"/> <!-- 1.28 was -5 -->
 	</event>
 	<event>
-		<img  planet="CIV_CONVOY"/>
+		<img planet="CIV_CONVOY"/>
 		<text>The ship you were escorting thanks you, and the caravan of civilian ships releases a group of repair drones in your direction. After a couple minutes the ship looks as good as new, or at least, in much better condition.</text>
-		<damage amount="-10"/>
+		<damage amount="-20"/> <!-- 1.28 was -10 -->
 	</event>
 </eventList>
 
@@ -4819,13 +4981,19 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXX --><!-- 1.21 -->
 	<event>
 		<text>There were no survivors. You quickly gather what supplies you can find and then leave.</text>
 		<autoReward level="LOW">stuff</autoReward>
-		<event load="HAL_PIRATE_HELP_END"/>
+		<choice hidden="true"> <!-- 1.28 added choice layer -->
+			<text id="continue"/>
+			<event load="HAL_PIRATE_HELP_END"/>
+		</choice>
 	</event>
 	<event>
 		<text>Collecting supplies from the ship, you find a surviving pirate. They say that they will correct themselves and surely serve you. </text>
 		<crewMember amount="1" class="human"/>
 		<autoReward level="LOW">stuff</autoReward>
-		<event load="HAL_PIRATE_HELP_END"/>
+		<choice hidden="true"> <!-- 1.28 added choice layer -->
+			<text id="continue"/>
+			<event load="HAL_PIRATE_HELP_END"/>
+		</choice>
 	</event>
 	<event>
 		<text>As soon as you fly closer, part of the ship explodes, damaging your hull! You don't take any further risks and fly away from this dangerous place.</text>
@@ -4886,6 +5054,10 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXX --><!-- 1.21 -->
 				<text>(Human Crewmember) Send your Human.</text>
 				<event load="MONOLITH_HUMAN"/>
 			</choice>
+			<choice hidden="true" req="order_human"> <!-- 1.28 -->
+				<text>(Order Human Crewmember) Send your Order Human.</text>
+				<event load="MONOLITH_ORDER_HUMAN"/>
+			</choice>
 			<choice hidden="true" req="engi">
 				<text>(Engi Crewmember) Send your Engi.</text>
 				<event load="MONOLITH_ENGI"/>
@@ -4894,9 +5066,41 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXX --><!-- 1.21 -->
 				<text>(Zoltan Crewmember) Send your Zoltan.</text>
 				<event load="MONOLITH_ENERGY"/>
 			</choice>
+			<choice hidden="true" req="energyx"><!-- 1.28 -->
+				<text>(Zolton Crewmember) Send your Zolton.</text>
+				<event load="MONOLITH_ENERGYX"/>
+			</choice>
 			<choice hidden="true" req="rock">
 				<text>(Rock Crewmember) Send your Rockman.</text>
 				<event load="MONOLITH_ROCK"/>
+			</choice>
+			<choice hidden="true" req="magman"><!-- 1.28 -->
+				<text>(Magman Crewmember) Send your Magman.</text>
+				<event load="MONOLITH_MAGMAN"/>
+			</choice>
+			<choice hidden="true" req="mushroom_f"><!-- 1.28 -->
+				<text>(молодой машрум Crewmember) Send your машрума.</text>
+				<event load="MONOLITH_MUSHROOM_F"/>
+			</choice>
+			<choice hidden="true" req="mushroom_b"><!-- 1.28 -->
+				<text>(зрелый машрум Crewmember) Send your машрума.</text>
+				<event load="MONOLITH_MUSHROOM_B"/>
+			</choice>
+			<choice hidden="true" req="mushroom"><!-- 1.28 -->
+				<text>(старый машрум Crewmember) Send your машрума.</text>
+				<event load="MONOLITH_MUSHROOM"/>
+			</choice>
+			<choice hidden="true" req="orchid"><!-- 1.28 -->
+				<text>(Orchid Crewmember) Send your Orchid.</text>
+				<event load="MONOLITH_ORCHID"/>
+			</choice>
+			<choice hidden="true" req="shell"><!-- 1.28 -->
+				<text>(броненосец Crewmember) Send your броненосца.</text>
+				<event load="MONOLITH_SHELL"/>
+			</choice>
+			<choice hidden="true" req="slug_armored"><!-- 1.28 -->
+				<text>(слаг в панцире Crewmember) Send your слага в панцире.</text>
+				<event load="MONOLITH_ARM_SLUG"/>
 			</choice>
 			<choice hidden="true" req="anaerobic">
 				<text>(Lanius Crewmember) Send your Lanius.</text>
@@ -4918,6 +5122,10 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXX --><!-- 1.21 -->
 				<text>(Slug Crewmember) Send your Slug.</text>
 				<event load="MONOLITH_SLUG"/>
 			</choice>
+			<choice hidden="true" req="slig"><!-- 1.28 -->
+				<text>(Slig Crewmember) Send your Slig.</text>
+				<event load="MONOLITH_SLIG"/>
+			</choice>
 		</event>
 	</choice>
 	<choice hidden="true">
@@ -4937,6 +5145,30 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXX --><!-- 1.21 -->
 	<event>
 		<text>Your crew member approaches the monolith in a small shuttle. As soon as they reach its surface, a bright flash sprays them into molecules...</text>
 		<removeCrew class="human">
+			<clone>false</clone>
+			<text>Unfortunately, there's absolutely nothing left of the crewmember from which to make a clone...</text>
+		</removeCrew>
+	</event>
+	<event>
+		<text>As soon as your crew member touches the surface of the monolith, you notice a new weapon in the hold.</text>
+		<weapon name="RANDOM"/>
+	</event>
+	<event>
+		<text>Upon approach, your crew member feels a sharp sensation of heat from the monolith and, worrying for their life, comes back to the ship.</text>
+	</event>
+	<event>
+		<text>Your crew member touches the surface of the monolith and then returns, filled with knowledge about this sector.</text>
+		<reveal_map/>
+	</event>
+	<event>
+		<text>As soon as your crew member approaches the monolith, a phantom copy of your ship flies out from the opposite side of it. Charging the FTL Drive, the ghost ship rushes towards the Rebels. This should delay them significantly.</text>
+		<modifyPursuit amount="-3"/>
+	</event>
+</eventList>
+<eventList name="MONOLITH_ORDER_HUMAN"><!-- 1.28 -->
+	<event>
+		<text>Your crew member approaches the monolith in a small shuttle. As soon as they reach its surface, a bright flash sprays them into molecules...</text>
+		<removeCrew class="order_human">
 			<clone>false</clone>
 			<text>Unfortunately, there's absolutely nothing left of the crewmember from which to make a clone...</text>
 		</removeCrew>
@@ -5005,6 +5237,30 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXX --><!-- 1.21 -->
 		<modifyPursuit amount="-3"/>
 	</event>
 </eventList>
+<eventList name="MONOLITH_ENERGYX"><!-- 1.28 -->
+	<event>
+		<text>Your crew member approaches the monolith in a small shuttle. As soon as they reach its surface, a bright flash sprays them into molecules...</text>
+		<removeCrew class="energyx">
+			<clone>false</clone>
+			<text>Unfortunately, there's absolutely nothing left of the crewmember from which to make a clone...</text>
+		</removeCrew>
+	</event>
+	<event>
+		<text>As soon as your crew member touches the surface of the monolith, you notice a new weapon in the hold.</text>
+		<weapon name="RANDOM"/>
+	</event>
+	<event>
+		<text>Upon approach, your crew member feels a sharp sensation of heat from the monolith and, worrying for their life, comes back to the ship.</text>
+	</event>
+	<event>
+		<text>Your crew member touches the surface of the monolith and then returns, filled with knowledge about this sector.</text>
+		<reveal_map/>
+	</event>
+	<event>
+		<text>As soon as your crew member approaches the monolith, a phantom copy of your ship flies out from the opposite side of it. Charging the FTL Drive, the ghost ship rushes towards the Rebels. This should delay them significantly.</text>
+		<modifyPursuit amount="-3"/>
+	</event>
+</eventList>
 <eventList name="MONOLITH_ROCK">
 	<event>
 		<text>Your crew member approaches the monolith in a small shuttle. As soon as they reach its surface, a bright flash sprays them into molecules...</text>
@@ -5019,6 +5275,181 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXX --><!-- 1.21 -->
 	</event>
 	<event>
 		<text>Upon approach, your crew member feels a sharp sensation of heat from the monolith, however, the Rockman isn't bothered by it. They touch the monolith, and after a few seconds, you notice a new weapon in the hold.</text>
+		<weapon name="RANDOM"/>
+	</event>
+	<event>
+		<text>Your crew member touches the surface of the monolith and then returns, filled with knowledge about this sector.</text>
+		<reveal_map/>
+	</event>
+	<event>
+		<text>As soon as your crew member approaches the monolith, a phantom copy of your ship flies out from the opposite side of it. Charging the FTL Drive, the ghost ship rushes towards the Rebels. This should delay them significantly.</text>
+		<modifyPursuit amount="-3"/>
+	</event>
+</eventList>
+<eventList name="MONOLITH_MAGMAN"><!-- 1.28 -->
+	<event>
+		<text>Your crew member approaches the monolith in a small shuttle. As soon as they reach its surface, a bright flash sprays them into molecules...</text>
+		<removeCrew class="magman">
+			<clone>false</clone>
+			<text>Unfortunately, there's absolutely nothing left of the crewmember from which to make a clone...</text>
+		</removeCrew>
+	</event>
+	<event>
+		<text>As soon as your crew member touches the surface of the monolith, you notice a new weapon in the hold.</text>
+		<weapon name="RANDOM"/>
+	</event>
+	<event>
+		<text>Upon approach, your crew member feels a sharp sensation of heat from the monolith, however, the Magman isn't bothered by it. They touch the monolith, and after a few seconds, you notice a new weapon in the hold.</text>
+		<weapon name="RANDOM"/>
+	</event>
+	<event>
+		<text>Your crew member touches the surface of the monolith and then returns, filled with knowledge about this sector.</text>
+		<reveal_map/>
+	</event>
+	<event>
+		<text>As soon as your crew member approaches the monolith, a phantom copy of your ship flies out from the opposite side of it. Charging the FTL Drive, the ghost ship rushes towards the Rebels. This should delay them significantly.</text>
+		<modifyPursuit amount="-3"/>
+	</event>
+</eventList>
+<eventList name="MONOLITH_MUSHROOM_F"><!-- 1.28 -->
+	<event>
+		<text>Your crew member approaches the monolith in a small shuttle. As soon as they reach its surface, a bright flash sprays them into molecules...</text>
+		<removeCrew class="mushroom_f">
+			<clone>false</clone>
+			<text>Unfortunately, there's absolutely nothing left of the crewmember from which to make a clone...</text>
+		</removeCrew>
+	</event>
+	<event>
+		<text>As soon as your crew member touches the surface of the monolith, you notice a new weapon in the hold.</text>
+		<weapon name="RANDOM"/>
+	</event>
+	<event>
+		<text>При приближении ваш член экипажа чувствует резкий нагрев монолита, однако, магмена это не беспокоит. Он касается монолита, и спустя несколько секунд вы замечаете в трюме новое орудие.</text>
+		<weapon name="RANDOM"/>
+	</event>
+	<event>
+		<text>Your crew member touches the surface of the monolith and then returns, filled with knowledge about this sector.</text>
+		<reveal_map/>
+	</event>
+	<event>
+		<text>As soon as your crew member approaches the monolith, a phantom copy of your ship flies out from the opposite side of it. Charging the FTL Drive, the ghost ship rushes towards the Rebels. This should delay them significantly.</text>
+		<modifyPursuit amount="-3"/>
+	</event>
+</eventList>
+<eventList name="MONOLITH_MUSHROOM_B"><!-- 1.28 -->
+	<event>
+		<text>Your crew member approaches the monolith in a small shuttle. As soon as they reach its surface, a bright flash sprays them into molecules...</text>
+		<removeCrew class="mushroom_b">
+			<clone>false</clone>
+			<text>Unfortunately, there's absolutely nothing left of the crewmember from which to make a clone...</text>
+		</removeCrew>
+	</event>
+	<event>
+		<text>As soon as your crew member touches the surface of the monolith, you notice a new weapon in the hold.</text>
+		<weapon name="RANDOM"/>
+	</event>
+	<event>
+		<text>При приближении ваш член экипажа чувствует резкий нагрев монолита, однако, магмена это не беспокоит. Он касается монолита, и спустя несколько секунд вы замечаете в трюме новое орудие.</text>
+		<weapon name="RANDOM"/>
+	</event>
+	<event>
+		<text>Your crew member touches the surface of the monolith and then returns, filled with knowledge about this sector.</text>
+		<reveal_map/>
+	</event>
+	<event>
+		<text>As soon as your crew member approaches the monolith, a phantom copy of your ship flies out from the opposite side of it. Charging the FTL Drive, the ghost ship rushes towards the Rebels. This should delay them significantly.</text>
+		<modifyPursuit amount="-3"/>
+	</event>
+</eventList>
+<eventList name="MONOLITH_MUSHROOM"><!-- 1.28 -->
+	<event>
+		<text>Your crew member approaches the monolith in a small shuttle. As soon as they reach its surface, a bright flash sprays them into molecules...</text>
+		<removeCrew class="mushroom">
+			<clone>false</clone>
+			<text>Unfortunately, there's absolutely nothing left of the crewmember from which to make a clone...</text>
+		</removeCrew>
+	</event>
+	<event>
+		<text>As soon as your crew member touches the surface of the monolith, you notice a new weapon in the hold.</text>
+		<weapon name="RANDOM"/>
+	</event>
+	<event>
+		<text>При приближении ваш член экипажа чувствует резкий нагрев монолита, однако, магмена это не беспокоит. Он касается монолита, и спустя несколько секунд вы замечаете в трюме новое орудие.</text>
+		<weapon name="RANDOM"/>
+	</event>
+	<event>
+		<text>Your crew member touches the surface of the monolith and then returns, filled with knowledge about this sector.</text>
+		<reveal_map/>
+	</event>
+	<event>
+		<text>As soon as your crew member approaches the monolith, a phantom copy of your ship flies out from the opposite side of it. Charging the FTL Drive, the ghost ship rushes towards the Rebels. This should delay them significantly.</text>
+		<modifyPursuit amount="-3"/>
+	</event>
+</eventList>
+<eventList name="MONOLITH_ORCHID"><!-- 1.28 -->
+	<event>
+		<text>Your crew member approaches the monolith in a small shuttle. As soon as they reach its surface, a bright flash sprays them into molecules...</text>
+		<removeCrew class="orchid">
+			<clone>false</clone>
+			<text>Unfortunately, there's absolutely nothing left of the crewmember from which to make a clone...</text>
+		</removeCrew>
+	</event>
+	<event>
+		<text>As soon as your crew member touches the surface of the monolith, you notice a new weapon in the hold.</text>
+		<weapon name="RANDOM"/>
+	</event>
+	<event>
+		<text>При приближении ваш член экипажа чувствует резкий нагрев монолита, однако, орхида это не беспокоит. Он касается монолита, и спустя несколько секунд вы замечаете в трюме новое орудие.</text>
+		<weapon name="RANDOM"/>
+	</event>
+	<event>
+		<text>Your crew member touches the surface of the monolith and then returns, filled with knowledge about this sector.</text>
+		<reveal_map/>
+	</event>
+	<event>
+		<text>As soon as your crew member approaches the monolith, a phantom copy of your ship flies out from the opposite side of it. Charging the FTL Drive, the ghost ship rushes towards the Rebels. This should delay them significantly.</text>
+		<modifyPursuit amount="-3"/>
+	</event>
+</eventList>
+<eventList name="MONOLITH_SHELL"><!-- 1.28 -->
+	<event>
+		<text>Your crew member approaches the monolith in a small shuttle. As soon as they reach its surface, a bright flash sprays them into molecules...</text>
+		<removeCrew class="shell">
+			<clone>false</clone>
+			<text>Unfortunately, there's absolutely nothing left of the crewmember from which to make a clone...</text>
+		</removeCrew>
+	</event>
+	<event>
+		<text>As soon as your crew member touches the surface of the monolith, you notice a new weapon in the hold.</text>
+		<weapon name="RANDOM"/>
+	</event>
+	<event>
+		<text>При приближении ваш член экипажа чувствует резкий нагрев монолита, однако, броненосца это не беспокоит. Он касается монолита, и спустя несколько секунд вы замечаете в трюме новое орудие.</text>
+		<weapon name="RANDOM"/>
+	</event>
+	<event>
+		<text>Your crew member touches the surface of the monolith and then returns, filled with knowledge about this sector.</text>
+		<reveal_map/>
+	</event>
+	<event>
+		<text>As soon as your crew member approaches the monolith, a phantom copy of your ship flies out from the opposite side of it. Charging the FTL Drive, the ghost ship rushes towards the Rebels. This should delay them significantly.</text>
+		<modifyPursuit amount="-3"/>
+	</event>
+</eventList>
+<eventList name="MONOLITH_ARM_SLUG"><!-- 1.28 -->
+	<event>
+		<text>Your crew member approaches the monolith in a small shuttle. As soon as they reach its surface, a bright flash sprays them into molecules...</text>
+		<removeCrew class="slug_armored">
+			<clone>false</clone>
+			<text>Unfortunately, there's absolutely nothing left of the crewmember from which to make a clone...</text>
+		</removeCrew>
+	</event>
+	<event>
+		<text>As soon as your crew member touches the surface of the monolith, you notice a new weapon in the hold.</text>
+		<weapon name="RANDOM"/>
+	</event>
+	<event>
+		<text>При приближении ваш член экипажа чувствует резкий нагрев монолита, однако, слага это не беспокоит. Он касается монолита, и спустя несколько секунд вы замечаете в трюме новое орудие.</text>
 		<weapon name="RANDOM"/>
 	</event>
 	<event>
@@ -5130,6 +5561,30 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXX --><!-- 1.21 -->
 	<event>
 		<text>Your crew member approaches the monolith in a small shuttle. As soon as they reach its surface, a bright flash sprays them into molecules...</text>
 		<removeCrew class="slug">
+			<clone>false</clone>
+			<text>Unfortunately, there's absolutely nothing left of the crewmember from which to make a clone...</text>
+		</removeCrew>
+	</event>
+	<event>
+		<text>As soon as your crew member touches the surface of the monolith, you notice a new weapon in the hold.</text>
+		<weapon name="RANDOM"/>
+	</event>
+	<event>
+		<text>Upon approach, your crew member feels a sharp sensation of heat from the monolith and, worrying for their life, comes back to the ship.</text>
+	</event>
+	<event>
+		<text>Your crew member touches the surface of the monolith and then returns, filled with knowledge about this sector.</text>
+		<reveal_map/>
+	</event>
+	<event>
+		<text>As soon as your crew member approaches the monolith, a phantom copy of your ship flies out from the opposite side of it. Charging the FTL Drive, the ghost ship rushes towards the Rebels. This should delay them significantly.</text>
+		<modifyPursuit amount="-3"/>
+	</event>
+</eventList>
+<eventList name="MONOLITH_SLIG"><!-- 1.28 -->
+	<event>
+		<text>Your crew member approaches the monolith in a small shuttle. As soon as they reach its surface, a bright flash sprays them into molecules...</text>
+		<removeCrew class="slig">
 			<clone>false</clone>
 			<text>Unfortunately, there's absolutely nothing left of the crewmember from which to make a clone...</text>
 		</removeCrew>
@@ -5702,7 +6157,7 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXX --><!-- 1.21 -->
 	</choice>
 </event>
 <ship name="MISSILE_SHIP_PARAMETERS" auto_blueprint="MISSILE_RADIATION_SHIPS"> 
-	<escape min="15" max="15" timer="30">
+	<escape min="15" max="15" timer="15"> <!-- 1.28 timer was 30 -->
 		<text>You notice energy growing within the FTL Drive of this missile! A crewman meanwhile detects dangerous radiation emanating from the missile.</text> <!-- 1.25, what changed?? -->
 	</escape>
 	<gotaway>
@@ -6623,3 +7078,4 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXX --><!-- 1.21 -->
 		<name>PREIGNITE_WEAPONS</name>
 	</weaponOverride>
 </ship>
+</FTL>

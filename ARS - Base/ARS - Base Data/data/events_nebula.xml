@@ -459,7 +459,7 @@ Storm Environment:
 	</event>
 </eventList>
 
-<event name="NEBULA_WEAPONS_TRADER" unique="true">
+<event name="NEBULA_WEAPONS_TRADER" unique="true"><!-- 1.28-english added armored slug req and shifted around max_group to maximize ach_fed_diplomacy -->
 	<text>A black market weapons trader spins you something unintelligible about the dangers lurking in the nebula before pushing his wares in front of you.</text><!-- not exactly vanilla -->
 	<environment type="nebula"/>
 	<ship load="PIRATE_NEIZ" hostile="false"/>
@@ -469,19 +469,23 @@ Storm Environment:
 			<ship hostile="true"/>
 		</event>
 	</choice>
-	<choice hidden="true" req="slug" lvl="0" max_group="0" blue="false"><!-- 1.25 -->
+	<choice hidden="true" req="SLUG_AND_ARMORED_SLUG" lvl="0" max_group="0" blue="false"><!-- 1.25 --><!-- 1.28 req added armored slug -->
 		<text>Purchase an unknown weapon for 35 scrap.</text> <!-- 1.22, was 45 scrap -->
 		<event load="NEBULA_WEAPONS_TRADER_LIST"/>
 	</choice>
-	<choice hidden="false" req="slug" lvl="1" max_group="0" blue="true"><!-- 1.25 -->
-		<text>(Slug Crewmember) Your Slug anticipates the outcome of the transaction...</text>
+	<choice hidden="false" req="slug_armored" lvl="1" max_group="0" blue="true"><!-- 1.25 -->
+		<text>(Slug Crew Member) Your Slug anticipates the outcome of the transaction...</text>
 		<event load="NEBULA_WEAPONS_TRADER_LIST"/>
 	</choice>
-	<choice> <!-- 1.22 -->
+	<choice hidden="false" req="slug" lvl="1" max_group="0" blue="true">
+		<text>(Slug Crew Member) Your Slug anticipates the outcome of the transaction...</text>
+		<event load="NEBULA_WEAPONS_TRADER_LIST"/>
+	</choice>
+	<choice req="engines" blue="false" max_group="1"> <!-- 1.22 -->
 		<text>Ignore the ship.</text>
 		<event/>
 	</choice>
-	<choice req="mind" hidden="true"> <!--DLC-->
+	<choice req="mind" hidden="true" max_group="2"> <!--DLC-->
 		<text>(Mind Control) Convince him to make it a better deal.</text>
 		<event load="NEBULA_WEAPONS_TRADER_LIST2"/>
 	</choice>
@@ -570,7 +574,7 @@ Storm Environment:
 	<gotaway>
 		<text>The pirate ship jumped away.</text>
 	</gotaway>
-	<deadCrew load="DEAD_CREW_DEFAULT"/>
+	<!-- <deadCrew load="DEAD_CREW_DEFAULT"/> --><!-- 1.28 -->
 	<deadCrew>
 		<text>You collect everything of value from the ship and look for the same "unknown weapon".</text>
 		<autoReward level="MED">standard</autoReward>
@@ -1367,6 +1371,7 @@ Storm Environment:
 	</event>
 	<event>
 		<text>As it turns out, their ship isn't too badly damaged at all. They're charging their weapons.</text>
+		<status type="clear" target="enemy" system="teleporter" amount="100"/><!-- 1.28 -->
 		<ship hostile="true"/>
 	</event>
 </eventList>

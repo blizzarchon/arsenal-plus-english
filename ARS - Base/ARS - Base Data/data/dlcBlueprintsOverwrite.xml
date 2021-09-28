@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-
+<FTL>
 <!-- Copyright (c) 2012 by Subset Games. All rights reserved -->
 
 <blueprintList name="DRONES_ZOLTANSHIELD">  <!-- Unchanged -->
@@ -2190,6 +2190,45 @@
 	<name>SILV_MISSILES_HYDRA_M_CLD</name>
 	<name>SILV_MISSILES_HYDRA_M_POW</name>
 	<name>SILV_MISSILES_HYDRA_M_UNI</name>
+	<!-- 1.28 -->
+	<name>ORU_MISSILE</name>
+	<name>ORU_MISSILE_CLD</name>
+	<name>ORU_MISSILE_BRC</name>
+	<name>ORU_MISSILE_UNI</name>
+	<name>ORU_MISSILE_M</name>
+	<name>ORU_MISSILE_M_CLD</name>
+	<name>ORU_MISSILE_M_BRC</name>
+	<name>ORU_MISSILE_M_UNI</name>
+	<name>KERNEL_1</name>
+	<name>KERNEL_2</name>
+	<name>KERNEL_CHAIN</name>
+	<name>KERNEL_1_BRC</name>
+	<name>KERNEL_1_CLD</name>
+	<name>KERNEL_1_UNI</name>
+	<name>KERNEL_2_BRC</name>
+	<name>KERNEL_2_CLD</name>
+	<name>KERNEL_2_POW</name>
+	<name>KERNEL_2_UNI</name>
+	<name>KERNEL_CHAIN_BRC</name>
+	<name>KERNEL_CHAIN_CLD</name>
+	<name>KERNEL_CHAIN_POW</name>
+	<name>KERNEL_CHAIN_UNI</name>
+	<name>KERNEL_CHAIN_RDY</name>
+	<name>KERNEL_1_M</name>
+	<name>KERNEL_2_M</name>
+	<name>KERNEL_CHAIN_M</name>
+	<name>KERNEL_1_M_BRC</name>
+	<name>KERNEL_1_M_CLD</name>
+	<name>KERNEL_1_M_UNI</name>
+	<name>KERNEL_2_M_BRC</name>
+	<name>KERNEL_2_M_CLD</name>
+	<name>KERNEL_2_M_POW</name>
+	<name>KERNEL_2_M_UNI</name>
+	<name>KERNEL_CHAIN_M_BRC</name>
+	<name>KERNEL_CHAIN_M_CLD</name>
+	<name>KERNEL_CHAIN_M_POW</name>
+	<name>KERNEL_CHAIN_M_UNI</name>
+	<name>KERNEL_CHAIN_M_RDY</name>
 </blueprintList>
 
 <blueprintList name="WEAPONS_MISSILES_PIRAT">
@@ -2433,8 +2472,8 @@
 	<name>BA_LASER_HULLCRUSHER_2</name>
 	<name>BA_LASER_HULLCRUSHER_3</name>
 	
-	<name>MPP_LASER_1</name><!-- 1.26 -->
-	<name>MPP_LASER_2</name><!-- 1.26 -->
+	<!-- <name>MPP_LASER_1</name> --><!-- 1.28 removed | 1.26 -->
+	<!-- <name>MPP_LASER_2</name> --><!-- 1.28 removed | 1.26 -->
 	<name>LASER_LIGHT_1</name>
 	<name>LASER_LIGHT_SCATTER_1</name>
 	<name>BA_STUNGUN_1</name>
@@ -2615,8 +2654,8 @@
 	<name>BA_LASER_HULLCRUSHER_2</name>
 	<name>BA_LASER_HULLCRUSHER_3</name>
 	
-	<name>MPP_LASER_1</name><!-- 1.26 -->
-	<name>MPP_LASER_2</name><!-- 1.26 -->
+	<!-- <name>MPP_LASER_1</name> --><!-- 1.28 removed | 1.26 -->
+	<!-- <name>MPP_LASER_2</name> --><!-- 1.28 removed | 1.26 -->
 	<name>LASER_LIGHT_1</name>
 	<name>LASER_LIGHT_SCATTER_1</name>
 	<name>BA_STUNGUN_1</name>
@@ -2769,8 +2808,8 @@
 	<name>LASER_IMP_3</name><!-- 1.25.1 -->
 	<name>LASER_HULLCHAIN</name><!-- 1.25.1 -->
 	
-	<name>MPP_LASER_1</name><!-- 1.26 -->
-	<name>MPP_LASER_2</name><!-- 1.26 -->
+	<!-- <name>MPP_LASER_1</name> --><!-- 1.28 removed | 1.26 -->
+	<!-- <name>MPP_LASER_2</name> --><!-- 1.28 removed | 1.26 -->
 	<name>LASER_LIGHT_1</name>
 	<name>LASER_LIGHT_SCATTER_1</name>
 	<name>BA_STUNGUN_1</name>
@@ -3051,7 +3090,161 @@
 	<name>BA_ION_CHAIN_MINI</name> <!-- 1.23 -->
 </blueprintList>
 
+
+<blueprintList name="OVERRIDE_WEAPONS_MAGMAN"> <!-- 1.28 -->
+	<name>LASER_CHAIN_1</name>
+	<name>LASER_CHAIN_2</name>
+	<name>LASER_CHAIN_LONG_1</name>
+	<name>LASER_CHAIN_LONG_2</name>
+	<name>LASER_CHARGEGUN_1</name>
+	<name>LASER_CHARGEGUN_2</name>
+	<name>LASER_BURST_1</name>
+	<name>LASER_HEAVY_1</name>
+	<name>LASER_STANDARD_1</name>
+	<name>LASER_STANDARD_2</name>
+	<name>LASER_DUAL_1</name>
+	<name>LASER_DUAL_2</name>
+	<name>BA_SHOTGUN_SMALL</name>
+	<name>BA_PLASMA_1</name>
+	<name>BA_LASER_AUTO_1</name>
+	<name>BA_LASER_AUTO_2</name>
+	<name>BA_LASER_BURST_SCATTER_1</name>
+	<name>BA_LASER_BURST_SCATTER_2</name>
+	<name>BA_LASER_HEAVY_SCATTER_1</name>
+	<name>BA_LASER_HEAVY_SCATTER_2</name>
+	<name>BA_LASER_HULL_SMALL</name>
+
+	<name>LASER_SUPER_HEAVY_1</name>
+	<name>LASER_AL_1</name> 
+	<name>BA_LASER_WAR_1</name>
+	<name>BA_LASER_WAR_2</name>
+	<name>BA_LASER_WAR_3</name>
+	<name>LASER_PIERCE_1</name>
+	<name>LASER_PIERCE_2</name>
+	<name>SHTURM_LASER_1</name>
+	<name>SHTURM_LASER_2</name>
+	<name>LASER_HEAVY_CHAIN</name>
+	<name>LASER_AUTO_CHAIN</name>
+	<name>LASER_CHAIN_3</name>
+	<name>LASER_CHAIN_LONG_3</name> 
+	<name>LASER_CHARGEGUN_3</name>
+	<name>LASER_BURST_2</name>
+	<name>LASER_HEAVY_2</name>
+	<name>LASER_HEAVY_PIERCE_1</name>
+	<name>SHOTGUN</name>
+	<name>BA_PLASMA_2</name>
+	<name>BA_LASER_AUTO_3</name>
+	<name>BA_LASER_BURST_SCATTER_3</name>
+	<name>LASER_SCATTERCHAIN</name>
+	<name>BA_LASER_ARTILLERY_1</name>
+	<name>BA_LASER_HULLCRUSHER</name>
+	<name>LASER_HULL_1</name>
+	<name>LASER_HULL_2</name>
+	<name>LASER_IMP_2</name>
+	<name>LASER_IMP_3</name>
+	<name>LASER_HULLCHAIN</name>
 	
+	<name>BEAM_1</name>
+	<name>BEAM_LONG</name>
+	<name>BA_BEAM_K2</name>
+	<name>BA_BEAM_HASTA</name>
+	<name>BA_BEAM_K1</name>
+	<name>BA_BEAM_HULL_SMALL</name>
+	<name>BA_BEAM_HULL_MINI</name>
+	<name>BA_BEAM_AUTO</name>
+	<name>BA_BEAM_ADAPTIVE_1</name>
+	<name>BA_BEAM_BARDICHE</name>
+	
+	<name>BEAM_1_2</name>
+	<name>BEAM_HULL</name>
+	<name>BA_BEAM_ADAPTIVE_2</name>
+	<name>BA_BEAM_SCYTHE</name>
+	<name>BA_BEAM_PERNACH</name>
+	<name>BEAM_FIRE</name>
+	<name>BEAM_2</name>
+	<name>BA_BEAM_POLLAXE</name>
+	<name>BEAM_SP_DAITO</name>
+	
+	<name>BOMB_STUN</name>
+	<name>BOMB_1</name>
+	<name>BA_BOMB_FIRE_SMALL</name>
+	<name>BOMB_BREACH_1</name>
+	<name>BA_BOMB_CLUSTER_STUN_ENEMY</name>
+	<name>BA_BOMB_CLUSTER_STUN_ENEMY2</name>
+	
+	<name>BOMB_FIRE</name>
+	<name>BA_BOMB_CLUSTER_BREACH</name>
+	<name>BA_BOMB_CLUSTER_1</name>
+	<name>BA_BOMB_CLUSTER_ION</name>
+	
+	<name>BA_BOMB_BIG</name>
+	<name>BA_BOMB_TIMER</name>
+	<name>BA_BOMB_FIRE_2</name>
+	<name>BA_BOMB_CLUSTER_FIRE</name>
+	<name>BA_BOMB_BIO</name>
+	<name>BOMB_BREACH_2</name>
+	<name>BOMB_BREACH_3</name>
+	<name>BOMB_ION</name>
+	
+	<name>MAGMAN_GUN_1</name>
+	<name>MAGMAN_GUN_1</name>
+	<name>MAGMAN_GUN_1</name>
+	<name>MAGMAN_GUN_1</name>
+	<name>MAGMAN_GUN_1</name>
+	<name>MAGMAN_GUN_1</name>
+	<name>MAGMAN_GUN_1</name>
+	<name>MAGMAN_GUN_1</name> 
+	<name>MAGMAN_GUN_1</name> 
+	<name>MAGMAN_GUN_1</name>
+	<name>MAGMAN_GUN_1</name>
+	<name>MAGMAN_GUN_1</name>
+	<name>MAGMAN_GUN_1</name>
+	<name>MAGMAN_GUN_1</name>
+	<name>MAGMAN_GUN_1</name>
+	<name>MAGMAN_GUN_1</name>
+	<name>MAGMAN_GUN_1</name> 
+	<name>MAGMAN_GUN_1</name>
+	<name>MAGMAN_GUN_1</name>
+	<name>MAGMAN_GUN_1</name>
+	<name>MAGMAN_GUN_1</name>
+	<name>MAGMAN_GUN_1</name>
+	<name>MAGMAN_GUN_1</name>
+	<name>MAGMAN_GUN_1</name>
+	<name>MAGMAN_GUN_1</name>
+	<name>MAGMAN_GUN_1</name> 
+	<name>MAGMAN_GUN_1</name> 	
+		
+	<name>MAGMAN_GUN_2</name>
+	<name>MAGMAN_GUN_2</name>
+	<name>MAGMAN_GUN_2</name>
+	<name>MAGMAN_GUN_2</name>
+	<name>MAGMAN_GUN_2</name>
+	<name>MAGMAN_GUN_2</name>
+	<name>MAGMAN_GUN_2</name>
+	<name>MAGMAN_GUN_2</name>
+	<name>MAGMAN_GUN_2</name>
+	<name>MAGMAN_GUN_2</name>
+	<name>MAGMAN_GUN_2</name>
+	<name>MAGMAN_GUN_2</name>
+	<name>MAGMAN_GUN_2</name>
+	<name>MAGMAN_GUN_2</name>
+	<name>MAGMAN_GUN_2</name>
+	<name>MAGMAN_GUN_2</name>
+	<name>MAGMAN_GUN_2</name>
+	<name>MAGMAN_GUN_2</name>
+	
+	<name>MAGMAN_GUN_3</name>
+	<name>MAGMAN_GUN_3</name>
+	<name>MAGMAN_GUN_3</name>
+	<name>MAGMAN_GUN_3</name>
+	<name>MAGMAN_GUN_3</name>
+	<name>MAGMAN_GUN_3</name>
+	<name>MAGMAN_GUN_3</name>
+	<name>MAGMAN_GUN_3</name>
+	<name>MAGMAN_GUN_3</name> 
+</blueprintList>
+
+		
 
 <blueprintList name="OVERRIDE_WEAPONS_MANTIS"> 
 	<name>LASER_CHAIN_1</name>
@@ -3245,8 +3438,8 @@
 	<name>LASER_IMP_3</name><!-- 1.25.1 -->
 	<name>LASER_HULLCHAIN</name><!-- 1.25.1 -->
 	
-	<name>MPP_LASER_1</name><!-- 1.26 -->
-	<name>MPP_LASER_2</name><!-- 1.26 -->
+	<!-- <name>MPP_LASER_1</name> --><!-- 1.28 removed | 1.26 -->
+	<!-- <name>MPP_LASER_2</name> --><!-- 1.28 removed | 1.26 -->
 	<name>LASER_LIGHT_1</name>
 	<name>LASER_LIGHT_SCATTER_1</name>
 	<name>BA_STUNGUN_1</name>
@@ -3367,8 +3560,8 @@
 	<name>BA_LASER_HEAVY_SCATTER_2</name>
 	<name>BA_LASER_HULL_SMALL</name>
 	
-	<name>MPP_LASER_1</name><!-- 1.26 -->
-	<name>MPP_LASER_2</name><!-- 1.26 -->
+	<!-- <name>MPP_LASER_1</name> --><!-- 1.28 removed | 1.26 -->
+	<!-- <name>MPP_LASER_2</name> --><!-- 1.28 removed | 1.26 -->
 	<name>LASER_LIGHT_1</name>
 	<name>LASER_LIGHT_SCATTER_1</name>
 	<name>BA_STUNGUN_1</name>
@@ -3505,8 +3698,8 @@
 	<name>BA_LASER_HEAVY_SCATTER_2</name>
 	<name>BA_LASER_HULL_SMALL</name>
 	
-	<name>MPP_LASER_1</name><!-- 1.26 -->
-	<name>MPP_LASER_2</name><!-- 1.26 -->
+	<!-- <name>MPP_LASER_1</name> --><!-- 1.28 removed | 1.26 -->
+	<!-- <name>MPP_LASER_2</name> --><!-- 1.28 removed | 1.26 -->
 	<name>LASER_LIGHT_1</name>
 	<name>LASER_LIGHT_SCATTER_1</name>
 	<name>BA_STUNGUN_1</name>
@@ -3681,8 +3874,8 @@
 	<name>LASER_IMP_3</name><!-- 1.25.1 -->
 	<name>LASER_HULLCHAIN</name><!-- 1.25.1 -->
 	
-	<name>MPP_LASER_1</name><!-- 1.26 -->
-	<name>MPP_LASER_2</name><!-- 1.26 -->
+	<!-- <name>MPP_LASER_1</name> --><!-- 1.28 removed | 1.26 -->
+	<!-- <name>MPP_LASER_2</name> --><!-- 1.28 removed | 1.26 -->
 	<name>LASER_LIGHT_1</name>
 	<name>LASER_LIGHT_SCATTER_1</name>
 	<name>BA_STUNGUN_1</name>
@@ -3779,8 +3972,8 @@
 </blueprintList>
 
 <blueprintList name="OVERRIDE_WEAPONS_LIGHT_LASER">
-	<name>MPP_LASER_1</name><!-- 1.26 -->
-	<name>MPP_LASER_2</name><!-- 1.26 -->
+	<!-- <name>MPP_LASER_1</name> --><!-- 1.28 removed | 1.26 -->
+	<!-- <name>MPP_LASER_2</name> --><!-- 1.28 removed | 1.26 -->
 	<name>LASER_LIGHT_1</name>
 	<name>LASER_LIGHT_2</name>
 	<name>LASER_LIGHT_3</name>
@@ -3864,3 +4057,4 @@
 </blueprintList>
 
 
+</FTL>

@@ -178,7 +178,7 @@ Special
 		<text>Attempt to break through with the weapons you have.</text>
 		<event load="CRYSTAL_CACHE_BREAK"/>
 	</choice>
-	<choice hidden="true" req="MISSILES_BREACH">
+	<choice hidden="true" req="MISSILES_BREACH_PLUS"> <!-- 1.28 added _PLUS -->
 		<text>(Breach Missiles) Use a Breach Missile.</text>
 		<event>
 			<text>Your Breach warheads dislodge and shatter a massive shard of crystal, leaving your away team enough space to climb down and take a look.</text>

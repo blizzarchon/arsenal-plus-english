@@ -39,7 +39,7 @@ shield research center — jams shields
 -->
 
 
-
+<FTL>
 <eventList name="HOSTILE_ZOLTAN">
 	<event load="ZOLTAN_FIGHT"/>
 	<event load="ZOLTAN_PIRATE"/>
@@ -1149,7 +1149,7 @@ shield research center — jams shields
 	<text load="NOTHING_ZOLTON"/>
 	<choice hidden="true">
 		<text id="continue"/>
-		<event load="TALK_WITH_CREW_ENERGY"/>
+		<event load="TALK_WITH_CREW_ENERGYX"/><!-- 1.28 was ENERGY -->
 	</choice>
 </event>
 <textList name="NOTHING_ZOLTON">
@@ -1342,7 +1342,7 @@ shield research center — jams shields
 			<text>You have important matters to attend to.</text>
 			<choice hidden="true">
 				<text id="continue"/>
-				<event load="TALK_WITH_CREW"/>
+				<event load="TALK_WITH_CREW_ENERGYX"/><!-- 1.28 was regular -->
 			</choice>
 		</event>
 	</choice>
@@ -1379,7 +1379,7 @@ shield research center — jams shields
 			<text>You've got better things to attend to.</text>
 			<choice hidden="true">
 				<text id="continue"/>
-				<event load="TALK_WITH_CREW"/>
+				<event load="TALK_WITH_CREW_ENERGYX"/><!-- 1.28 was regular -->
 			</choice>
 		</event>
 	</choice>
@@ -1468,6 +1468,7 @@ shield research center — jams shields
 
 <event name="EVENT_CON_LEADER" unique="true">
 	<ship load="SHIP_CONLEAD_PARAM" hostile="false"/>
+	<status type="limit" target="enemy" system="teleporter" amount="0"/> <!-- 1.28 -->
 	<text>A huge, heavily armed smuggler ship is settled at this beacon. The leader of the smugglers gets in touch: "We have a rich assortment of weapons from all over the Galaxy, and the quality of the products is guaranteed! Do you want to buy something?"</text>
 	<choice hidden="true">
 		<text>Ask just what exactly they sell.</text>
@@ -1507,6 +1508,7 @@ shield research center — jams shields
 								<event>
 									<text>You cut comms and start charging the weapons...</text>
 									<ship hostile="true"/>
+									<status type="clear" target="enemy" system="teleporter" amount="100"/> <!-- 1.28 -->
 								</event>
 							</choice>
 							<choice hidden="true">
@@ -1544,6 +1546,7 @@ shield research center — jams shields
 								<event>
 									<text>You cut comms and start charging the weapons...</text>
 									<ship hostile="true"/>
+									<status type="clear" target="enemy" system="teleporter" amount="100"/> <!-- 1.28 -->
 								</event>
 							</choice>
 							<choice hidden="true">
@@ -1581,6 +1584,7 @@ shield research center — jams shields
 								<event>
 									<text>You cut comms and start charging the weapons...</text>
 									<ship hostile="true"/>
+									<status type="clear" target="enemy" system="teleporter" amount="100"/> <!-- 1.28 -->
 								</event>
 							</choice>
 							<choice hidden="true">
@@ -1624,6 +1628,7 @@ shield research center — jams shields
 								<event>
 									<text>You cut comms and start charging the weapons...</text>
 									<ship hostile="true"/>
+									<status type="clear" target="enemy" system="teleporter" amount="100"/> <!-- 1.28 -->
 								</event>
 							</choice>
 							<choice hidden="true">
@@ -1661,6 +1666,7 @@ shield research center — jams shields
 								<event>
 									<text>You cut comms and start charging the weapons...</text>
 									<ship hostile="true"/>
+									<status type="clear" target="enemy" system="teleporter" amount="100"/> <!-- 1.28 -->
 								</event>
 							</choice>
 							<choice hidden="true">
@@ -1698,6 +1704,7 @@ shield research center — jams shields
 								<event>
 									<text>You cut comms and start charging the weapons...</text>
 									<ship hostile="true"/>
+									<status type="clear" target="enemy" system="teleporter" amount="100"/> <!-- 1.28 -->
 								</event>
 							</choice>
 							<choice hidden="true">
@@ -1741,6 +1748,7 @@ shield research center — jams shields
 								<event>
 									<text>You cut comms and start charging the weapons...</text>
 									<ship hostile="true"/>
+									<status type="clear" target="enemy" system="teleporter" amount="100"/> <!-- 1.28 -->
 								</event>
 							</choice>
 							<choice hidden="true">
@@ -1778,6 +1786,7 @@ shield research center — jams shields
 								<event>
 									<text>You cut comms and start charging the weapons...</text>
 									<ship hostile="true"/>
+									<status type="clear" target="enemy" system="teleporter" amount="100"/> <!-- 1.28 -->
 								</event>
 							</choice>
 							<choice hidden="true">
@@ -1815,6 +1824,7 @@ shield research center — jams shields
 								<event>
 									<text>You cut comms and start charging the weapons...</text>
 									<ship hostile="true"/>
+									<status type="clear" target="enemy" system="teleporter" amount="100"/> <!-- 1.28 -->
 								</event>
 							</choice>
 							<choice hidden="true">
@@ -1858,6 +1868,7 @@ shield research center — jams shields
 								<event>
 									<text>You cut comms and start charging the weapons...</text>
 									<ship hostile="true"/>
+									<status type="clear" target="enemy" system="teleporter" amount="100"/> <!-- 1.28 -->
 								</event>
 							</choice>
 							<choice hidden="true">
@@ -1895,6 +1906,7 @@ shield research center — jams shields
 								<event>
 									<text>You cut comms and start charging the weapons...</text>
 									<ship hostile="true"/>
+									<status type="clear" target="enemy" system="teleporter" amount="100"/> <!-- 1.28 -->
 								</event>
 							</choice>
 							<choice hidden="true">
@@ -1932,6 +1944,7 @@ shield research center — jams shields
 								<event>
 									<text>You cut comms and start charging the weapons...</text>
 									<ship hostile="true"/>
+									<status type="clear" target="enemy" system="teleporter" amount="100"/> <!-- 1.28 -->
 								</event>
 							</choice>
 							<choice hidden="true">
@@ -1975,6 +1988,7 @@ shield research center — jams shields
 								<event>
 									<text>You cut comms and start charging the weapons...</text>
 									<ship hostile="true"/>
+									<status type="clear" target="enemy" system="teleporter" amount="100"/> <!-- 1.28 -->
 								</event>
 							</choice>
 							<choice hidden="true">
@@ -2012,6 +2026,7 @@ shield research center — jams shields
 								<event>
 									<text>You cut comms and start charging the weapons...</text>
 									<ship hostile="true"/>
+									<status type="clear" target="enemy" system="teleporter" amount="100"/> <!-- 1.28 -->
 								</event>
 							</choice>
 							<choice hidden="true">
@@ -2049,6 +2064,7 @@ shield research center — jams shields
 								<event>
 									<text>You cut comms and start charging the weapons...</text>
 									<ship hostile="true"/>
+									<status type="clear" target="enemy" system="teleporter" amount="100"/> <!-- 1.28 -->
 								</event>
 							</choice>
 							<choice hidden="true">
@@ -2065,6 +2081,7 @@ shield research center — jams shields
 		<event>
 			<text>You cut comms and start charging the weapons...</text>
 			<ship hostile="true"/>
+			<status type="clear" target="enemy" system="teleporter" amount="100"/> <!-- 1.28 -->
 		</event>
 	</choice>
 	<choice hidden="true">
@@ -2108,36 +2125,40 @@ shield research center — jams shields
 	</choice>
 	<choice hidden="true">
 		<text>Fly away, without stopping.</text>
-		<event load="TALK_WITH_CREW_ENERGY"/>
+		<event load="TALK_WITH_CREW_ENERGYX"/><!-- 1.28 was ENERGY -->
 	</choice>
 </event>
-<event name="EVENT_QMULTI">
+<event name="EVENT_QMULTI"><!-- flagged: test this, check for lag -->
 	<text>You land next to a huge gear. On it you notice the inscription — "QUANTUM MULTIPLIER", as far as you can decipher the Zolton language. Looks like this pretty impressive installation is still working. Maybe it's worth it to throw something into it?</text>
-	<choice hidden="true">
+	<choice hidden="true" req="engines" blue="false" max_group="0">
 		<text>Throw missiles into it.</text>
 		<event load="EVENT_QMULTI_MISS"/>
 	</choice>
-	<choice hidden="true">
+	<choice hidden="true" req="engines" blue="false" max_group="1">
 		<text>Throw fuel into it.</text>
 		<event load="EVENT_QMULTI_FUEL"/>
 	</choice>
-	<choice hidden="true">
+	<choice hidden="true" req="engines" blue="false" max_group="2">
 		<text>Throw drone parts into it.</text>
 		<event load="EVENT_QMULTI_DRPR"/>
 	</choice>
-	<choice hidden="true">
+	<choice hidden="true" req="engines" blue="false" max_group="3">
 		<text>Throw some scrap into it.</text>
 		<event load="EVENT_QMULTI_SCRP"/>
 	</choice>
-	<choice req="CREW_ALL" hidden="true" blue="false">
+	<choice req="CREW_ALL" hidden="true" blue="false" max_group="4">
 		<text>Throw a crew member into it.</text>
 		<event load="EVENT_QMULTI_CREW"/>
 	</choice>
-	<choice req="slug" hidden="true" blue="true">
+	<choice req="slug" hidden="true" blue="true" max_group="5">
 		<text>(Slug Crew Member) Consult your Slug.</text>
 		<event load="EVENT_QMULTI_SLUG_ADVISE"/>
 	</choice>
-	<choice hidden="true">
+	<choice req="slug_armored" hidden="true" blue="true" max_group="5"><!-- 1.28, Blizz put regular crew type for diplomatic immunity, added max_group to preserve choice ordering -->
+		<text>(Slug Crew Member) Consult your Slug.</text>
+		<event load="EVENT_QMULTI_SLUG_ADVISE"/>
+	</choice>
+	<choice hidden="true" req="engines" blue="false" max_group="6">
 		<text>Leave this place as soon as possible.</text>
 		<event>
 			<text>You climb back into orbit and prepare to fly away.</text>
@@ -2473,57 +2494,167 @@ shield research center — jams shields
 	<choice hidden="true" req="human" blue="false">
 		<text>Human.</text>
 		<event>
-			<text>Your Human fearfully climbs into the huge installation.</text>
+			<text>Your Human fearfully climbs into the huge installation...</text>
 			<choice hidden="true">
 				<text id="continue"/>
 				<event load="EVENT_QMULTI_CREW_HUMAN"/>
 			</choice>
 		</event>
 	</choice>
+	<choice hidden="true" req="order_human" blue="false"> <!-- 1.28 -->
+		<text>Order Human.</text>
+		<event>
+			<text>Your Order Human fearfully climbs into the huge installation...</text>
+			<choice hidden="true">
+				<text id="continue"/>
+				<event load="EVENT_QMULTI_CREW_ORDER_HUMAN"/>
+			</choice>
+		</event>
+	</choice>
 	<choice hidden="true" req="engi" blue="false">
 		<text>Engi.</text>
 		<event>
-			<text>Your Engi indifferently climbs into the huge installation.</text>
+			<text>Your Engi indifferently climbs into the huge installation...</text>
 			<choice hidden="true">
 				<text id="continue"/>
 				<event load="EVENT_QMULTI_CREW_ENGI"/>
 			</choice>
 		</event>
 	</choice>
+	<choice hidden="true" req="morph" blue="false"><!-- 1.28 -->
+		<text>Morph.</text>
+		<event>
+			<text>Your Morph indifferently climbs into the huge installation...</text>
+			<choice hidden="true">
+				<text id="continue"/>
+				<event load="EVENT_QMULTI_CREW_MORPH"/>
+			</choice>
+		</event>
+	</choice>
 	<choice hidden="true" req="energy" blue="false">
 		<text>Zoltan.</text>
 		<event>
-			<text>Your Zoltan fearfully climbs into the huge installation.</text>
+			<text>Your Zoltan fearfully climbs into the huge installation...</text>
 			<choice hidden="true">
 				<text id="continue"/>
 				<event load="EVENT_QMULTI_CREW_ENERGY"/>
 			</choice>
 		</event>
 	</choice>
+	<choice hidden="true" req="energyx" blue="false"><!-- 1.28 -->
+		<text>Zolton.</text>
+		<event>
+			<text>Your Zolton fearfully climbs into the huge installation...</text>
+			<choice hidden="true">
+				<text id="continue"/>
+				<event load="EVENT_QMULTI_CREW_ENERGYX"/>
+			</choice>
+		</event>
+	</choice>
 	<choice hidden="true" req="rock" blue="false">
 		<text>Rock.</text>
 		<event>
-			<text>Your Rockman fearfully climbs into the huge installation.</text>
+			<text>Your Rockman fearfully climbs into the huge installation...</text>
 			<choice hidden="true">
 				<text id="continue"/>
 				<event load="EVENT_QMULTI_CREW_ROCK"/>
 			</choice>
 		</event>
 	</choice>
+	<choice hidden="true" req="magman" blue="false"><!-- 1.28 -->
+		<text>Magman.</text>
+		<event>
+			<text>Your Magman fearfullly climbs into the huge installation...</text>
+			<choice hidden="true">
+				<text id="continue"/>
+				<event load="EVENT_QMULTI_CREW_MAGMAN"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="mushroom_f" blue="false"><!-- 1.28 -->
+		<text>Young Mushroom.</text>
+		<event>
+			<text>Your Mushroom fearfully climbs into the huge installation...</text>
+			<choice hidden="true">
+				<text id="continue"/>
+				<event load="EVENT_QMULTI_CREW_MUSHROOM_F"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="mushroom_b" blue="false"><!-- 1.28 -->
+		<text>Mature Mushroom.</text>
+		<event>
+			<text>Your Mushroom fearfully climbs into the huge installation...</text>
+			<choice hidden="true">
+				<text id="continue"/>
+				<event load="EVENT_QMULTI_CREW_MUSHROOM_B"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="mushroom" blue="false"><!-- 1.28 -->
+		<text>Old Mushroom.</text>
+		<event>
+			<text>Your Mushroom fearfully climbs into the huge installation...</text>
+			<choice hidden="true">
+				<text id="continue"/>
+				<event load="EVENT_QMULTI_CREW_MUSHROOM"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="orchid" blue="false"><!-- 1.28 -->
+		<text>Orchid.</text>
+		<event>
+			<text>Your Orchid fearfully climbs into the huge installation...</text>
+			<choice hidden="true">
+				<text id="continue"/>
+				<event load="EVENT_QMULTI_CREW_ORCHID"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="shell" blue="false"><!-- 1.28 -->
+		<text>Броненосец.</text>
+		<event>
+			<text>Your Shell fearfully climbs into the huge installation...</text>
+			<choice hidden="true">
+				<text id="continue"/>
+				<event load="EVENT_QMULTI_CREW_SHELL"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="slug_armored" blue="false"><!-- 1.28 -->
+		<text>Armored Slug.</text>
+		<event>
+			<text>Your Armored Slug fearfully climbs into the huge installation...</text>
+			<choice hidden="true">
+				<text id="continue"/>
+				<event load="EVENT_QMULTI_CREW_ARM_SLUG"/>
+			</choice>
+		</event>
+	</choice>
 	<choice hidden="true" req="slug" blue="false">
 		<text>Slug.</text>
 		<event>
-			<text>Your Slug fearfully climbs into the huge installation.</text>
+			<text>Your Slug fearfully climbs into the huge installation...</text>
 			<choice hidden="true">
 				<text id="continue"/>
 				<event load="EVENT_QMULTI_CREW_SLUG"/>
 			</choice>
 		</event>
 	</choice>
+	<choice hidden="true" req="slig" blue="false"><!-- 1.28 -->
+		<text>Slig.</text>
+		<event>
+			<text>Your Slig fearfully climbs into the huge installation...</text>
+			<choice hidden="true">
+				<text id="continue"/>
+				<event load="EVENT_QMULTI_CREW_SLIG"/>
+			</choice>
+		</event>
+	</choice>
 	<choice hidden="true" req="mantis" blue="false">
 		<text>Mantis.</text>
 		<event>
-			<text>Your Mantis indifferently climbs into the huge installation.</text>
+			<text>Your Mantis indifferently climbs into the huge installation...</text>
 			<choice hidden="true">
 				<text id="continue"/>
 				<event load="EVENT_QMULTI_CREW_MANTIS"/>
@@ -2533,7 +2664,7 @@ shield research center — jams shields
 	<choice hidden="true" req="anaerobic" blue="false">
 		<text>Lanius.</text>
 		<event>
-			<text>Your Lanius indifferently climbs into the huge installation.</text>
+			<text>Your Lanius indifferently climbs into the huge installation...</text>
 			<choice hidden="true">
 				<text id="continue"/>
 				<event load="EVENT_QMULTI_CREW_ANAEROBIC"/>
@@ -2543,7 +2674,7 @@ shield research center — jams shields
 	<choice hidden="true" req="crystal" blue="false">
 		<text>Crystal.</text>
 		<event>
-			<text>Your Crystal fearfully climbs into the huge installation.</text>
+			<text>Your Crystal fearfully climbs into the huge installation...</text>
 			<choice hidden="true">
 				<text id="continue"/>
 				<event load="EVENT_QMULTI_CREW_CRYSTAL"/>
@@ -2553,7 +2684,7 @@ shield research center — jams shields
 	<choice hidden="true" req="ghost" blue="false">
 		<text>Avatar.</text>
 		<event>
-			<text>Your Avatar indifferently climbs into the huge installation.</text>
+			<text>Your Avatar indifferently climbs into the huge installation...</text>
 			<choice hidden="true">
 				<text id="continue"/>
 				<event load="EVENT_QMULTI_CREW_GHOST"/>
@@ -2828,11 +2959,11 @@ shield research center — jams shields
 </eventList>
 <eventList name="EVENT_QMULTI_CREW_HUMAN">
 	<event>
-		<text>..."QUANTUM MULTIPLIER" emits a bright flash, and out of it emerges 2 Humans. The first is your old crew member — the second is their quantum reflection.</text>
+		<text>..."QUANTUM MULTIPLIER" emits a bright flash, and out of it emerge 2 Humans. The first is your old crew member — the second is their quantum reflection.</text>
 		<crewMember amount="1" class="human">Quantum</crewMember>
 	</event>
 	<event>
-		<text>..."QUANTUM MULTIPLIER" emits a bright flash, and out of it emerges 2 Humans. The first is your old crew member — the second is their quantum reflection.</text>
+		<text>..."QUANTUM MULTIPLIER" emits a bright flash, and out of it emerge 2 Humans. The first is your old crew member — the second is their quantum reflection.</text>
 		<crewMember amount="1" class="human">Quantum</crewMember>
 	</event>
 	<event>
@@ -2840,13 +2971,27 @@ shield research center — jams shields
 		<crewMember amount="-1" class="human"/>
 	</event>
 </eventList>
+<eventList name="EVENT_QMULTI_CREW_ORDER_HUMAN"> <!-- 1.28 -->
+	<event>
+		<text>..."QUANTUM MULTIPLIER" emits a bright flash, and out of it emerge 2 Order Humans. The first is your old crew member — the second is their quantum reflection.</text>
+		<crewMember amount="1" class="order_human">Quantum</crewMember>
+	</event>
+	<event>
+		<text>..."QUANTUM MULTIPLIER" emits a bright flash, and out of it emerge 2 Order Humans. The first is your old crew member — the second is their quantum reflection.</text>
+		<crewMember amount="1" class="order_human">Quantum</crewMember>
+	</event>
+	<event>
+		<text>..."QUANTUM MULTIPLIER" emits a bright flash somewhere in the sky, and approaching it, you don't find any traces of your crew member. Looks like something went wrong.</text>
+		<crewMember amount="-1" class="order_human"/>
+	</event>
+</eventList>
 <eventList name="EVENT_QMULTI_CREW_ENGI">
 	<event>
-		<text>..."QUANTUM MULTIPLIER" emits a bright flash, and out of it emerges 2 Engi. The first is your old crew member — the second is their quantum reflection.</text>
+		<text>..."QUANTUM MULTIPLIER" emits a bright flash, and out of it emerge 2 Engi. The first is your old crew member — the second is their quantum reflection.</text>
 		<crewMember amount="1" class="engi">Quantum</crewMember>
 	</event>
 	<event>
-		<text>..."QUANTUM MULTIPLIER" emits a bright flash, and out of it emerges 2 Engi. The first is your old crew member — the second is their quantum reflection.</text>
+		<text>..."QUANTUM MULTIPLIER" emits a bright flash, and out of it emerge 2 Engi. The first is your old crew member — the second is their quantum reflection.</text>
 		<crewMember amount="1" class="engi">Quantum</crewMember>
 	</event>
 	<event>
@@ -2854,13 +2999,27 @@ shield research center — jams shields
 		<crewMember amount="-1" class="engi"/>
 	</event>
 </eventList>
+<eventList name="EVENT_QMULTI_CREW_MORPH"><!-- 1.28 -->
+	<event>
+		<text>..."QUANTUM MULTIPLIER" emits a bright flash, and out of it emerge 2 Morphs. The first is your old crew member — the second is their quantum reflection.</text>
+		<crewMember amount="1" class="morph">Quantum</crewMember>
+	</event>
+	<event>
+		<text>..."QUANTUM MULTIPLIER" emits a bright flash, and out of it emerge 2 Morphs. The first is your old crew member — the second is their quantum reflection.</text>
+		<crewMember amount="1" class="morph">Quantum</crewMember>
+	</event>
+	<event>
+		<text>..."QUANTUM MULTIPLIER" emits a bright flash somewhere in the sky, and approaching it, you don't find any traces of your crew member. Looks like something went wrong.</text>
+		<crewMember amount="-1" class="morph"/>
+	</event>
+</eventList>
 <eventList name="EVENT_QMULTI_CREW_ENERGY">
 	<event>
-		<text>..."QUANTUM MULTIPLIER" emits a bright flash, and out of it emerges 2 Zoltan. The first is your old crew member — the second is their quantum reflection.</text>
+		<text>..."QUANTUM MULTIPLIER" emits a bright flash, and out of it emerge 2 Zoltans. The first is your old crew member — the second is their quantum reflection.</text>
 		<crewMember amount="1" class="energy">Quantum</crewMember>
 	</event>
 	<event>
-		<text>..."QUANTUM MULTIPLIER" emits a bright flash, and out of it emerges 2 Zoltan. The first is your old crew member — the second is their quantum reflection.</text>
+		<text>..."QUANTUM MULTIPLIER" emits a bright flash, and out of it emerge 2 Zoltans. The first is your old crew member — the second is their quantum reflection.</text>
 		<crewMember amount="1" class="energy">Quantum</crewMember>
 	</event>
 	<event>
@@ -2868,13 +3027,27 @@ shield research center — jams shields
 		<crewMember amount="-1" class="energy"/>
 	</event>
 </eventList>
+<eventList name="EVENT_QMULTI_CREW_ENERGYX"><!-- 1.28 -->
+	<event>
+		<text>..."QUANTUM MULTIPLIER" emits a bright flash, and out of it emerge 2 Zoltons. The first is your old crew member — the second is their quantum reflection.</text>
+		<crewMember amount="1" class="energyx">Quantum</crewMember>
+	</event>
+	<event>
+		<text>..."QUANTUM MULTIPLIER" emits a bright flash, and out of it emerge 2 Zoltons. The first is your old crew member — the second is their quantum reflection.</text>
+		<crewMember amount="1" class="energyx">Quantum</crewMember>
+	</event>
+	<event>
+		<text>..."QUANTUM MULTIPLIER" emits a bright flash somewhere in the sky, and approaching it, you don't find any traces of your crew member. Looks like something went wrong.</text>
+		<crewMember amount="-1" class="energyx"/>
+	</event>
+</eventList>
 <eventList name="EVENT_QMULTI_CREW_ROCK">
 	<event>
-		<text>..."QUANTUM MULTIPLIER" emits a bright flash, and out of it emerges 2 Rockmen. The first is your old crew member — the second is their quantum reflection.</text>
+		<text>..."QUANTUM MULTIPLIER" emits a bright flash, and out of it emerge 2 Rockmen. The first is your old crew member — the second is their quantum reflection.</text>
 		<crewMember amount="1" class="rock">Quantum</crewMember>
 	</event>
 	<event>
-		<text>..."QUANTUM MULTIPLIER" emits a bright flash, and out of it emerges 2 Rockmen. The first is your old crew member — the second is their quantum reflection.</text>
+		<text>..."QUANTUM MULTIPLIER" emits a bright flash, and out of it emerge 2 Rockmen. The first is your old crew member — the second is their quantum reflection.</text>
 		<crewMember amount="1" class="rock">Quantum</crewMember>
 	</event>
 	<event>
@@ -2882,13 +3055,111 @@ shield research center — jams shields
 		<crewMember amount="-1" class="rock"/>
 	</event>
 </eventList>
+<eventList name="EVENT_QMULTI_CREW_MAGMAN"><!-- 1.28 -->
+	<event>
+		<text>..."QUANTUM MULTIPLIER" emits a bright flash, and out of it emerge 2 Magmen. The first is your old crew member — the second is their quantum reflection.</text>
+		<crewMember amount="1" class="magman">Quantum</crewMember>
+	</event>
+	<event>
+		<text>..."QUANTUM MULTIPLIER" emits a bright flash, and out of it emerge 2 Magmen. The first is your old crew member — the second is their quantum reflection.</text>
+		<crewMember amount="1" class="magman">Quantum</crewMember>
+	</event>
+	<event>
+		<text>..."QUANTUM MULTIPLIER" emits a bright flash somewhere in the sky, and approaching it, you don't find any traces of your crew member. Looks like something went wrong.</text>
+		<crewMember amount="-1" class="magman"/>
+	</event>
+</eventList>
+<eventList name="EVENT_QMULTI_CREW_MUSHROOM_F"><!-- 1.28 -->
+	<event>
+		<text>..."QUANTUM MULTIPLIER" emits a bright flash, and out of it emerge 2 Mushrooms. The first is your old crew member — the second is their quantum reflection.</text>
+		<crewMember amount="1" class="mushroom_f">Quantum</crewMember>
+	</event>
+	<event>
+		<text>..."QUANTUM MULTIPLIER" emits a bright flash, and out of it emerge 2 Mushrooms. The first is your old crew member — the second is their quantum reflection.</text>
+		<crewMember amount="1" class="mushroom_f">Quantum</crewMember>
+	</event>
+	<event>
+		<text>..."QUANTUM MULTIPLIER" emits a bright flash somewhere in the sky, and approaching it, you don't find any traces of your crew member. Looks like something went wrong.</text>
+		<crewMember amount="-1" class="mushroom_f"/>
+	</event>
+</eventList>
+<eventList name="EVENT_QMULTI_CREW_MUSHROOM_B"><!-- 1.28 -->
+	<event>
+		<text>..."QUANTUM MULTIPLIER" emits a bright flash, and out of it emerge 2 Mushrooms. The first is your old crew member — the second is their quantum reflection.</text>
+		<crewMember amount="1" class="mushroom_b">Quantum</crewMember>
+	</event>
+	<event>
+		<text>..."QUANTUM MULTIPLIER" emits a bright flash, and out of it emerge 2 Mushrooms. The first is your old crew member — the second is their quantum reflection.</text>
+		<crewMember amount="1" class="mushroom_b">Quantum</crewMember>
+	</event>
+	<event>
+		<text>..."QUANTUM MULTIPLIER" emits a bright flash somewhere in the sky, and approaching it, you don't find any traces of your crew member. Looks like something went wrong.</text>
+		<crewMember amount="-1" class="mushroom_b"/>
+	</event>
+</eventList>
+<eventList name="EVENT_QMULTI_CREW_MUSHROOM"><!-- 1.28 -->
+	<event>
+		<text>..."QUANTUM MULTIPLIER" emits a bright flash, and out of it emerge 2 Mushrooms. The first is your old crew member — the second is their quantum reflection.</text>
+		<crewMember amount="1" class="mushroom">Quantum</crewMember>
+	</event>
+	<event>
+		<text>..."QUANTUM MULTIPLIER" emits a bright flash, and out of it emerge 2 Mushrooms. The first is your old crew member — the second is their quantum reflection.</text>
+		<crewMember amount="1" class="mushroom">Quantum</crewMember>
+	</event>
+	<event>
+		<text>..."QUANTUM MULTIPLIER" emits a bright flash somewhere in the sky, and approaching it, you don't find any traces of your crew member. Looks like something went wrong.</text>
+		<crewMember amount="-1" class="mushroom"/>
+	</event>
+</eventList>
+<eventList name="EVENT_QMULTI_CREW_ORCHID"><!-- 1.28 -->
+	<event>
+		<text>..."QUANTUM MULTIPLIER" emits a bright flash, and out of it emerge 2 Orchids. The first is your old crew member — the second is their quantum reflection.</text>
+		<crewMember amount="1" class="orchid">Quantum</crewMember>
+	</event>
+	<event>
+		<text>..."QUANTUM MULTIPLIER" emits a bright flash, and out of it emerge 2 Orchids. The first is your old crew member — the second is their quantum reflection.</text>
+		<crewMember amount="1" class="orchid">Quantum</crewMember>
+	</event>
+	<event>
+		<text>..."QUANTUM MULTIPLIER" emits a bright flash somewhere in the sky, and approaching it, you don't find any traces of your crew member. Looks like something went wrong.</text>
+		<crewMember amount="-1" class="orchid"/>
+	</event>
+</eventList>
+<eventList name="EVENT_QMULTI_CREW_SHELL"><!-- 1.28 -->
+	<event>
+		<text>..."QUANTUM MULTIPLIER" emits a bright flash, and out of it emerge 2 Shells. The first is your old crew member — the second is their quantum reflection.</text>
+		<crewMember amount="1" class="shell">Quantum</crewMember>
+	</event>
+	<event>
+		<text>..."QUANTUM MULTIPLIER" emits a bright flash, and out of it emerge 2 Shells. The first is your old crew member — the second is their quantum reflection.</text>
+		<crewMember amount="1" class="shell">Quantum</crewMember>
+	</event>
+	<event>
+		<text>..."QUANTUM MULTIPLIER" emits a bright flash somewhere in the sky, and approaching it, you don't find any traces of your crew member. Looks like something went wrong.</text>
+		<crewMember amount="-1" class="shell"/>
+	</event>
+</eventList>
+<eventList name="EVENT_QMULTI_CREW_ARM_SLUG"><!-- 1.28 -->
+	<event>
+		<text>..."QUANTUM MULTIPLIER" emits a bright flash, and out of it emerge 2 Armored Slugs. The first is your old crew member — the second is their quantum reflection.</text>
+		<crewMember amount="1" class="slug_armored">Quantum</crewMember>
+	</event>
+	<event>
+		<text>..."QUANTUM MULTIPLIER" emits a bright flash, and out of it emerge 2 Armored Slugs. The first is your old crew member — the second is their quantum reflection.</text>
+		<crewMember amount="1" class="slug_armored">Quantum</crewMember>
+	</event>
+	<event>
+		<text>..."QUANTUM MULTIPLIER" emits a bright flash somewhere in the sky, and approaching it, you don't find any traces of your crew member. Looks like something went wrong.</text>
+		<crewMember amount="-1" class="slug_armored"/>
+	</event>
+</eventList>
 <eventList name="EVENT_QMULTI_CREW_MANTIS">
 	<event>
-		<text>..."QUANTUM MULTIPLIER" emits a bright flash, and out of it emerges 2 Mantis. The first is your old crew member — the second is their quantum reflection.</text>
+		<text>..."QUANTUM MULTIPLIER" emits a bright flash, and out of it emerge 2 Mantis. The first is your old crew member — the second is their quantum reflection.</text>
 		<crewMember amount="1" class="mantis">Quantum</crewMember>
 	</event>
 	<event>
-		<text>..."QUANTUM MULTIPLIER" emits a bright flash, and out of it emerges 2 Mantis. The first is your old crew member — the second is their quantum reflection.</text>
+		<text>..."QUANTUM MULTIPLIER" emits a bright flash, and out of it emerge 2 Mantis. The first is your old crew member — the second is their quantum reflection.</text>
 		<crewMember amount="1" class="mantis">Quantum</crewMember>
 	</event>
 	<event>
@@ -2910,13 +3181,27 @@ shield research center — jams shields
 		<crewMember amount="-1" class="slug"/>
 	</event>
 </eventList>
+<eventList name="EVENT_QMULTI_CREW_SLIG">
+	<event>
+		<text>..."QUANTUM MULTIPLIER" emits a bright flash, and out of it slither 2 Sligs. The first is your old crew member — the second is their quantum reflection.</text>
+		<crewMember amount="1" class="slig">Quantum</crewMember>
+	</event>
+	<event>
+		<text>..."QUANTUM MULTIPLIER" emits a bright flash, and out of it slither 2 Sligs. The first is your old crew member — the second is their quantum reflection.</text>
+		<crewMember amount="1" class="slig">Quantum</crewMember>
+	</event>
+	<event>
+		<text>..."QUANTUM MULTIPLIER" emits a bright flash somewhere in the sky, and approaching it, you don't find any traces of your crew member. Looks like something went wrong.</text>
+		<crewMember amount="-1" class="slig"/>
+	</event>
+</eventList>
 <eventList name="EVENT_QMULTI_CREW_CRYSTAL">
 	<event>
-		<text>..."QUANTUM MULTIPLIER" emits a bright flash, and out of it emerges 2 Crystals. The first is your old crew member — the second is their quantum reflection.</text>
+		<text>..."QUANTUM MULTIPLIER" emits a bright flash, and out of it emerge 2 Crystals. The first is your old crew member — the second is their quantum reflection.</text>
 		<crewMember amount="1" class="crystal">Quantum</crewMember>
 	</event>
 	<event>
-		<text>..."QUANTUM MULTIPLIER" emits a bright flash, and out of it emerges 2 Crystals. The first is your old crew member — the second is their quantum reflection.</text>
+		<text>..."QUANTUM MULTIPLIER" emits a bright flash, and out of it emerge 2 Crystals. The first is your old crew member — the second is their quantum reflection.</text>
 		<crewMember amount="1" class="crystal">Quantum</crewMember>
 	</event>
 	<event>
@@ -2926,11 +3211,11 @@ shield research center — jams shields
 </eventList>
 <eventList name="EVENT_QMULTI_CREW_ANAEROBIC">
 	<event>
-		<text>..."QUANTUM MULTIPLIER" emits a bright flash, and out of it emerges 2 Lanii. The first is your old crew member — the second is their quantum reflection.</text>
+		<text>..."QUANTUM MULTIPLIER" emits a bright flash, and out of it emerge 2 Lanii. The first is your old crew member — the second is their quantum reflection.</text>
 		<crewMember amount="1" class="anaerobic">Quantum</crewMember>
 	</event>
 	<event>
-		<text>..."QUANTUM MULTIPLIER" emits a bright flash, and out of it emerges 2 Lanii. The first is your old crew member — the second is their quantum reflection.</text>
+		<text>..."QUANTUM MULTIPLIER" emits a bright flash, and out of it emerge 2 Lanii. The first is your old crew member — the second is their quantum reflection.</text>
 		<crewMember amount="1" class="anaerobic">Quantum</crewMember>
 	</event>
 	<event>
@@ -2940,11 +3225,11 @@ shield research center — jams shields
 </eventList>
 <eventList name="EVENT_QMULTI_CREW_GHOST">
 	<event>
-		<text>..."QUANTUM MULTIPLIER" emits a bright flash, and out of it emerges 2 Avatars. The first is your old crew member — the second is their quantum reflection.</text>
+		<text>..."QUANTUM MULTIPLIER" emits a bright flash, and out of it emerge 2 Avatars. The first is your old crew member — the second is their quantum reflection.</text>
 		<crewMember amount="1" class="ghost">Quantum</crewMember>
 	</event>
 	<event>
-		<text>..."QUANTUM MULTIPLIER" emits a bright flash, and out of it emerges 2 Avatars. The first is your old crew member — the second is their quantum reflection.</text>
+		<text>..."QUANTUM MULTIPLIER" emits a bright flash, and out of it emerge 2 Avatars. The first is your old crew member — the second is their quantum reflection.</text>
 		<crewMember amount="1" class="ghost">Quantum</crewMember>
 	</event>
 	<event>
@@ -3022,7 +3307,9 @@ shield research center — jams shields
 	</choice>
 	<choice hidden="true">
 		<text>Don't throw anything.</text>
-		<event><text>You climb back into orbit and prepare to fly away.</text></event>
+		<event>
+			<text>You climb back into orbit and prepare to fly away.</text>
+		</event>
 	</choice>
 </event>
 <event name="EVENT_QMULTI_FUEL_OK">
@@ -3094,7 +3381,9 @@ shield research center — jams shields
 	</choice>
 	<choice hidden="true">
 		<text>Don't throw anything.</text>
-		<event><text>You climb back into orbit and prepare to fly away.</text></event>
+		<event>
+			<text>You climb back into orbit and prepare to fly away.</text>
+		</event>
 	</choice>
 </event>
 <event name="EVENT_QMULTI_DRPR_OK">
@@ -3166,7 +3455,9 @@ shield research center — jams shields
 	</choice>
 	<choice hidden="true">
 		<text>Don't throw anything.</text>
-		<event><text>You climb back into orbit and prepare to fly away.</text></event>
+		<event>
+			<text>You climb back into orbit and prepare to fly away.</text>
+		</event>
 	</choice>
 </event>
 <event name="EVENT_QMULTI_SCRP_OK">
@@ -3246,57 +3537,167 @@ shield research center — jams shields
 	<choice hidden="true" req="human" blue="false">
 		<text>Human.</text>
 		<event>
-			<text>Your Human fearfully climbs into the huge installation.</text>
+			<text>Your Human fearfully climbs into the huge installation...</text>
 			<choice hidden="true">
 				<text id="continue"/>
 				<event load="EVENT_QMULTI_CREW_HUMAN_OK"/>
 			</choice>
 		</event>
 	</choice>
+	<choice hidden="true" req="order_human" blue="false"><!-- 1.28 -->
+		<text>Order Human.</text>
+		<event>
+			<text>Your Order Human fearfully climbs into the huge installation...</text>
+			<choice hidden="true">
+				<text id="continue"/>
+				<event load="EVENT_QMULTI_ORDER_CREW_HUMAN_OK"/>
+			</choice>
+		</event>
+	</choice>
 	<choice hidden="true" req="engi" blue="false">
 		<text>Engi.</text>
 		<event>
-			<text>Your Engi indifferently climbs into the huge installation.</text>
+			<text>Your Engi indifferently climbs into the huge installation...</text>
 			<choice hidden="true">
 				<text id="continue"/>
 				<event load="EVENT_QMULTI_CREW_ENGI_OK"/>
 			</choice>
 		</event>
 	</choice>
+	<choice hidden="true" req="morph" blue="false"><!-- 1.28 -->
+		<text>Morph.</text>
+		<event>
+			<text>Your Morph indifferently climbs into the huge installation...</text>
+			<choice hidden="true">
+				<text id="continue"/>
+				<event load="EVENT_QMULTI_CREW_MORPH_OK"/>
+			</choice>
+		</event>
+	</choice>
 	<choice hidden="true" req="energy" blue="false">
 		<text>Zoltan.</text>
 		<event>
-			<text>Your Zoltan fearfully climbs into the huge installation.</text>
+			<text>Your Zoltan fearfully climbs into the huge installation...</text>
 			<choice hidden="true">
 				<text id="continue"/>
 				<event load="EVENT_QMULTI_CREW_ENERGY_OK"/>
 			</choice>
 		</event>
 	</choice>
+	<choice hidden="true" req="energyx" blue="false"><!-- 1.28 -->
+		<text>Zolton.</text>
+		<event>
+			<text>Your Zolton fearfully climbs into the huge installation...</text>
+			<choice hidden="true">
+				<text id="continue"/>
+				<event load="EVENT_QMULTI_CREW_ENERGYX_OK"/>
+			</choice>
+		</event>
+	</choice>
 	<choice hidden="true" req="rock" blue="false">
 		<text>Rock.</text>
 		<event>
-			<text>Your Rockman fearfully climbs into the huge installation.</text>
+			<text>Your Rockman fearfully climbs into the huge installation...</text>
 			<choice hidden="true">
 				<text id="continue"/>
 				<event load="EVENT_QMULTI_CREW_ROCK_OK"/>
 			</choice>
 		</event>
 	</choice>
+	<choice hidden="true" req="magman" blue="false"><!-- 1.28 -->
+		<text>Magman.</text>
+		<event>
+			<text>Your Magman fearfully climbs into the huge installation...</text>
+			<choice hidden="true">
+				<text id="continue"/>
+				<event load="EVENT_QMULTI_CREW_MAGMAN_OK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="mushroom_f" blue="false"><!-- 1.28 -->
+		<text>Young Mushroom.</text>
+		<event>
+			<text>Your Mushroom fearfully climbs into the huge installation...</text>
+			<choice hidden="true">
+				<text id="continue"/>
+				<event load="EVENT_QMULTI_CREW_MUSHROOM_F_OK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="mushroom_b" blue="false"><!-- 1.28 -->
+		<text>Mature Mushroom.</text>
+		<event>
+			<text>Your Mushroom fearfully climbs into the huge installation...</text>
+			<choice hidden="true">
+				<text id="continue"/>
+				<event load="EVENT_QMULTI_CREW_MUSHROOM_B_OK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="mushroom" blue="false"><!-- 1.28 -->
+		<text>Old Mushroom.</text>
+		<event>
+			<text>Your Mushroom fearfully climbs into the huge installation...</text>
+			<choice hidden="true">
+				<text id="continue"/>
+				<event load="EVENT_QMULTI_CREW_MUSHROOM_OK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="orchid" blue="false"><!-- 1.28 -->
+		<text>Orchid.</text>
+		<event>
+			<text>Your Orchid fearfully climbs into the huge installation...</text>
+			<choice hidden="true">
+				<text id="continue"/>
+				<event load="EVENT_QMULTI_CREW_ORCHID_OK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="shell" blue="false"><!-- 1.28 -->
+		<text>Shell.</text>
+		<event>
+			<text>Your Shell fearfully climbs into the huge installation...</text>
+			<choice hidden="true">
+				<text id="continue"/>
+				<event load="EVENT_QMULTI_CREW_SHELL_OK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="slug_armored" blue="false"><!-- 1.28 -->
+		<text>Armored Slug.</text>
+		<event>
+			<text>Your Armored Slug fearfully climbs into the huge installation...</text>
+			<choice hidden="true">
+				<text id="continue"/>
+				<event load="EVENT_QMULTI_CREW_ARM_SLUG_OK"/>
+			</choice>
+		</event>
+	</choice>
 	<choice hidden="true" req="slug" blue="false">
 		<text>Slug.</text>
 		<event>
-			<text>Your Slug fearfully climbs into the huge installation.</text>
+			<text>Your Slug fearfully climbs into the huge installation...</text>
 			<choice hidden="true">
 				<text id="continue"/>
 				<event load="EVENT_QMULTI_CREW_SLUG_OK"/>
 			</choice>
 		</event>
 	</choice>
+	<choice hidden="true" req="slig" blue="false"><!-- 1.28 -->
+		<text>Slig.</text>
+		<event>
+			<text>Your Slig fearfully climbs into the huge installation...</text>
+			<choice hidden="true">
+				<text id="continue"/>
+				<event load="EVENT_QMULTI_CREW_SLIG_OK"/>
+			</choice>
+		</event>
+	</choice>
 	<choice hidden="true" req="mantis" blue="false">
 		<text>Mantis.</text>
 		<event>
-			<text>Your Mantis indifferently climbs into the huge installation.</text>
+			<text>Your Mantis indifferently climbs into the huge installation...</text>
 			<choice hidden="true">
 				<text id="continue"/>
 				<event load="EVENT_QMULTI_CREW_MANTIS_OK"/>
@@ -3306,7 +3707,7 @@ shield research center — jams shields
 	<choice hidden="true" req="anaerobic" blue="false">
 		<text>Lanius.</text>
 		<event>
-			<text>Your Lanius indifferently climbs into the huge installation.</text>
+			<text>Your Lanius indifferently climbs into the huge installation...</text>
 			<choice hidden="true">
 				<text id="continue"/>
 				<event load="EVENT_QMULTI_CREW_ANAEROBIC_OK"/>
@@ -3316,7 +3717,7 @@ shield research center — jams shields
 	<choice hidden="true" req="crystal" blue="false">
 		<text>Crystal.</text>
 		<event>
-			<text>Your Crystal fearfully climbs into the huge installation.</text>
+			<text>Your Crystal fearfully climbs into the huge installation...</text>
 			<choice hidden="true">
 				<text id="continue"/>
 				<event load="EVENT_QMULTI_CREW_CRYSTAL_OK"/>
@@ -3326,7 +3727,7 @@ shield research center — jams shields
 	<choice hidden="true" req="ghost" blue="false">
 		<text>Avatar.</text>
 		<event>
-			<text>Your Avatar indifferently climbs into the huge installation.</text>
+			<text>Your Avatar indifferently climbs into the huge installation...</text>
 			<choice hidden="true">
 				<text id="continue"/>
 				<event load="EVENT_QMULTI_CREW_GHOST_OK"/>
@@ -3335,7 +3736,9 @@ shield research center — jams shields
 	</choice>
 	<choice hidden="true">
 		<text>Nobody! Leave this place.</text>
-		<event><text>You climb back into orbit and prepare to fly away.</text></event>
+		<event>
+			<text>You climb back into orbit and prepare to fly away.</text>
+		</event>
 	</choice>
 </event>
 
@@ -3461,31 +3864,91 @@ shield research center — jams shields
 </eventList>
 <eventList name="EVENT_QMULTI_CREW_HUMAN_OK">
 	<event>
-		<text>..."QUANTUM MULTIPLIER" emits a bright flash, and out of it emerges 2 Humans. The first is your old crew member — the second is their quantum reflection.</text>
+		<text>..."QUANTUM MULTIPLIER" emits a bright flash, and out of it emerge 2 Humans. The first is your old crew member — the second is their quantum reflection.</text>
 		<crewMember amount="1" class="human">Quantum</crewMember>
+	</event>
+</eventList>
+<eventList name="EVENT_QMULTI_ORDER_CREW_HUMAN_OK"><!-- 1.28 -->
+	<event>
+		<text>..."QUANTUM MULTIPLIER" emits a bright flash, and out of it emerge 2 Order Humans. The first is your old crew member — the second is their quantum reflection.</text>
+		<crewMember amount="1" class="order_human">Quantum</crewMember>
 	</event>
 </eventList>
 <eventList name="EVENT_QMULTI_CREW_ENGI_OK">
 	<event>
-		<text>..."QUANTUM MULTIPLIER" emits a bright flash, and out of it emerges 2 Engi. The first is your old crew member — the second is their quantum reflection.</text>
+		<text>..."QUANTUM MULTIPLIER" emits a bright flash, and out of it emerge 2 Engi. The first is your old crew member — the second is their quantum reflection.</text>
 		<crewMember amount="1" class="engi">Quantum</crewMember>
+	</event>
+</eventList>
+<eventList name="EVENT_QMULTI_CREW_MORPH_OK">
+	<event>
+		<text>..."QUANTUM MULTIPLIER" emits a bright flash, and out of it emerge 2 Morphs. The first is your old crew member — the second is their quantum reflection.</text>
+		<crewMember amount="1" class="morph">Quantum</crewMember>
 	</event>
 </eventList>
 <eventList name="EVENT_QMULTI_CREW_ENERGY_OK">
 	<event>
-		<text>..."QUANTUM MULTIPLIER" emits a bright flash, and out of it emerges 2 Zoltans. The first is your old crew member — the second is their quantum reflection.</text>
+		<text>..."QUANTUM MULTIPLIER" emits a bright flash, and out of it emerge 2 Zoltans. The first is your old crew member — the second is their quantum reflection.</text>
 		<crewMember amount="1" class="energy">Quantum</crewMember>
+	</event>
+</eventList>
+<eventList name="EVENT_QMULTI_CREW_ENERGYX_OK"><!-- 1.28 -->
+	<event>
+		<text>..."QUANTUM MULTIPLIER" emits a bright flash, and out of it emerge 2 Zoltons. The first is your old crew member — the second is their quantum reflection.</text>
+		<crewMember amount="1" class="energyx">Quantum</crewMember>
 	</event>
 </eventList>
 <eventList name="EVENT_QMULTI_CREW_ROCK_OK">
 	<event>
-		<text>..."QUANTUM MULTIPLIER" emits a bright flash, and out of it emerges 2 Rockmen. The first is your old crew member — the second is their quantum reflection.</text>
+		<text>..."QUANTUM MULTIPLIER" emits a bright flash, and out of it emerge 2 Rockmen. The first is your old crew member — the second is their quantum reflection.</text>
 		<crewMember amount="1" class="rock">Quantum</crewMember>
+	</event>
+</eventList>
+<eventList name="EVENT_QMULTI_CREW_MAGMAN_OK"><!-- 1.28 -->
+	<event>
+		<text>..."QUANTUM MULTIPLIER" emits a bright flash, and out of it emerge 2 Magmen. The first is your old crew member — the second is their quantum reflection.</text>
+		<crewMember amount="1" class="magman">Quantum</crewMember>
+	</event>
+</eventList>
+<eventList name="EVENT_QMULTI_CREW_MUSHROOM_F_OK"><!-- 1.28 -->
+	<event>
+		<text>..."QUANTUM MULTIPLIER" emits a bright flash, and out of it emerge 2 Mushrooms. The first is your old crew member — the second is their quantum reflection.</text>
+		<crewMember amount="1" class="mushroom_f">Quantum</crewMember>
+	</event>
+</eventList>
+<eventList name="EVENT_QMULTI_CREW_MUSHROOM_B_OK"><!-- 1.28 -->
+	<event>
+		<text>..."QUANTUM MULTIPLIER" emits a bright flash, and out of it emerge 2 Mushrooms. The first is your old crew member — the second is their quantum reflection.</text>
+		<crewMember amount="1" class="mushroom_b">Quantum</crewMember>
+	</event>
+</eventList>
+<eventList name="EVENT_QMULTI_CREW_MUSHROOM_OK"><!-- 1.28 -->
+	<event>
+		<text>..."QUANTUM MULTIPLIER" emits a bright flash, and out of it emerge 2 Mushrooms. The first is your old crew member — the second is their quantum reflection.</text>
+		<crewMember amount="1" class="mushroom">Quantum</crewMember>
+	</event>
+</eventList>
+<eventList name="EVENT_QMULTI_CREW_ORCHID_OK"><!-- 1.28 -->
+	<event>
+		<text>..."QUANTUM MULTIPLIER" emits a bright flash, and out of it emerge 2 Orchids. The first is your old crew member — the second is their quantum reflection.</text>
+		<crewMember amount="1" class="orchid">Quantum</crewMember>
+	</event>
+</eventList>
+<eventList name="EVENT_QMULTI_CREW_SHELL_OK"><!-- 1.28 -->
+	<event>
+		<text>..."QUANTUM MULTIPLIER" emits a bright flash, and out of it emerge 2 Shells. The first is your old crew member — the second is their quantum reflection.</text>
+		<crewMember amount="1" class="shell">Quantum</crewMember>
+	</event>
+</eventList>
+<eventList name="EVENT_QMULTI_CREW_ARM_SLUG_OK"><!-- 1.28 -->
+	<event>
+		<text>..."QUANTUM MULTIPLIER" emits a bright flash, and out of it emerge 2 Armored Slugs. The first is your old crew member — the second is their quantum reflection.</text>
+		<crewMember amount="1" class="slug_armored">Quantum</crewMember>
 	</event>
 </eventList>
 <eventList name="EVENT_QMULTI_CREW_MANTIS_OK">
 	<event>
-		<text>..."QUANTUM MULTIPLIER" emits a bright flash, and out of it emerges 2 Mantis. The first is your old crew member — the second is their quantum reflection.</text>
+		<text>..."QUANTUM MULTIPLIER" emits a bright flash, and out of it emerge 2 Mantis. The first is your old crew member — the second is their quantum reflection.</text>
 		<crewMember amount="1" class="mantis">Quantum</crewMember>
 	</event>
 </eventList>
@@ -3495,21 +3958,27 @@ shield research center — jams shields
 		<crewMember amount="1" class="slug">Quantum</crewMember>
 	</event>
 </eventList>
+<eventList name="EVENT_QMULTI_CREW_SLIG_OK"><!-- 1.28 -->
+	<event>
+		<text>..."QUANTUM MULTIPLIER" emits a bright flash, and out of it slither 2 Sligs. The first is your old crew member — the second is their quantum reflection.</text>
+		<crewMember amount="1" class="slig">Quantum</crewMember>
+	</event>
+</eventList>
 <eventList name="EVENT_QMULTI_CREW_CRYSTAL_OK">
 	<event>
-		<text>..."QUANTUM MULTIPLIER" emits a bright flash, and out of it emerges 2 Crystals. The first is your old crew member — the second is their quantum reflection.</text>
+		<text>..."QUANTUM MULTIPLIER" emits a bright flash, and out of it emerge 2 Crystals. The first is your old crew member — the second is their quantum reflection.</text>
 		<crewMember amount="1" class="crystal">Quantum</crewMember>
 	</event>
 </eventList>
 <eventList name="EVENT_QMULTI_CREW_ANAEROBIC_OK">
 	<event>
-		<text>..."QUANTUM MULTIPLIER" emits a bright flash, and out of it emerges 2 Lanius. The first is your old crew member — the second is their quantum reflection.</text>
+		<text>..."QUANTUM MULTIPLIER" emits a bright flash, and out of it emerge 2 Lanius. The first is your old crew member — the second is their quantum reflection.</text>
 		<crewMember amount="1" class="anaerobic">Quantum</crewMember>
 	</event>
 </eventList>
 <eventList name="EVENT_QMULTI_CREW_GHOST_OK">
 	<event>
-		<text>..."QUANTUM MULTIPLIER" emits a bright flash, and out of it emerges 2 Avatars. The first is your old crew member — the second is their quantum reflection.</text>
+		<text>..."QUANTUM MULTIPLIER" emits a bright flash, and out of it emerge 2 Avatars. The first is your old crew member — the second is their quantum reflection.</text>
 		<crewMember amount="1" class="ghost">Quantum</crewMember>
 	</event>
 </eventList>
@@ -3526,6 +3995,10 @@ shield research center — jams shields
 	</choice>
 	<choice hidden="true" req="energy">
 		<text>(Zoltan Crew Member) Your Zoltan can negotiate for more favorable terms of rent.</text>
+		<event load="EVENT_ZOLTON_RESEARCH_M2"/>
+	</choice>
+	<choice hidden="true" req="energyx"><!-- 1.28 -->
+		<text>(Zolton Crew Member) Your Zolton can negotiate for more favorable terms of rent.</text>
 		<event load="EVENT_ZOLTON_RESEARCH_M2"/>
 	</choice>
 	<choice hidden="true">
@@ -4503,7 +4976,7 @@ shield research center — jams shields
 		<event>
 			<text>The Zoltons take your payment and install the appropriate equipment.</text>
 			<item_modify>
-				<item type="scrap" min="-60" max="-60"/><!-- 1.26.5 -->
+				<item type="scrap" min="-55" max="-55"/><!-- 1.26.5 | 1.28 was 60 -->
 			</item_modify>
 			<upgrade amount="2" system="shields"/>
 		</event>
@@ -4513,7 +4986,7 @@ shield research center — jams shields
 		<event>
 			<text>The Zoltons take your payment and install the appropriate equipment.</text>
 			<item_modify>
-				<item type="scrap" min="-75" max="-75"/><!-- 1.26.5 -->
+				<item type="scrap" min="-70" max="-70"/><!-- 1.26.5 | 1.28 was 75 -->
 			</item_modify>
 			<upgrade amount="3" system="shields"/>
 		</event>
@@ -4523,7 +4996,7 @@ shield research center — jams shields
 		<event>
 			<text>The Zoltons take your payment and install the appropriate equipment.</text>
 			<item_modify>
-				<item type="scrap" min="-95" max="-95"/><!-- 1.26.5 -->
+				<item type="scrap" min="-90" max="-90"/><!-- 1.26.5 | 1.28 was 95 -->
 			</item_modify>
 			<upgrade amount="4" system="shields"/>
 		</event>
@@ -4542,7 +5015,7 @@ shield research center — jams shields
 		<event>
 			<text>The Zoltons take your payment and install the appropriate equipment.</text>
 			<item_modify>
-				<item type="scrap" min="-10" max="-10"/>
+				<item type="scrap" min="-5" max="-5"/><!-- 1.28 was 10 -->
 			</item_modify>
 			<upgrade amount="1" system="shields"/>
 		</event>
@@ -4552,7 +5025,7 @@ shield research center — jams shields
 		<event>
 			<text>The Zoltons take your payment and install the appropriate equipment.</text>
 			<item_modify>
-				<item type="scrap" min="-25" max="-25"/>
+				<item type="scrap" min="-20" max="-20"/><!-- 1.28 was 25 -->
 			</item_modify>
 			<upgrade amount="2" system="shields"/>
 		</event>
@@ -4562,7 +5035,7 @@ shield research center — jams shields
 		<event>
 			<text>The Zoltons take your payment and install the appropriate equipment.</text>
 			<item_modify>
-				<item type="scrap" min="-45" max="-45"/>
+				<item type="scrap" min="-40" max="-40"/><!-- 1.28 was 45 -->
 			</item_modify>
 			<upgrade amount="3" system="shields"/>
 		</event>
@@ -4572,7 +5045,7 @@ shield research center — jams shields
 		<event>
 			<text>The Zoltons take your payment and install the appropriate equipment.</text>
 			<item_modify>
-				<item type="scrap" min="-75" max="-75"/>
+				<item type="scrap" min="-70" max="-70"/><!-- 1.28 was 75 -->
 			</item_modify>
 			<upgrade amount="4" system="shields"/>
 		</event>
@@ -4670,7 +5143,7 @@ shield research center — jams shields
 		<event>
 			<text>The Zoltons take your payment and install the appropriate equipment.</text>
 			<item_modify>
-				<item type="scrap" min="-135" max="-135"/>
+				<item type="scrap" min="-140" max="-140"/><!-- 1.28 was 135 -->
 			</item_modify>
 			<upgrade amount="4" system="shields"/>
 		</event>
@@ -4709,7 +5182,7 @@ shield research center — jams shields
 		<event>
 			<text>The Zoltons take your payment and install the appropriate equipment.</text>
 			<item_modify>
-				<item type="scrap" min="-115" max="-115"/>
+				<item type="scrap" min="-120" max="-120"/><!-- 1.28 was 115 -->
 			</item_modify>
 			<upgrade amount="3" system="shields"/>
 		</event>
@@ -4738,7 +5211,7 @@ shield research center — jams shields
 		<event>
 			<text>The Zoltons take your payment and install the appropriate equipment.</text>
 			<item_modify>
-				<item type="scrap" min="-85" max="-85"/>
+				<item type="scrap" min="-90" max="-90"/><!-- 1.28 was 85 -->
 			</item_modify>
 			<upgrade amount="2" system="shields"/>
 		</event>
@@ -4757,7 +5230,7 @@ shield research center — jams shields
 		<event>
 			<text>The Zoltons take your payment and install the appropriate equipment.</text>
 			<item_modify>
-				<item type="scrap" min="-45" max="-45"/>
+				<item type="scrap" min="-50" max="-50"/><!-- 1.28 was 45 -->
 			</item_modify>
 			<upgrade amount="1" system="shields"/>
 		</event>
@@ -4779,15 +5252,19 @@ shield research center — jams shields
 </ship>
 
 
-
+<!-- flagged: test this -->
 <event name="EVENT_CONTRABAND" unique="true"> 
 	<ship load="SHIP_CON_PARAM" hostile="false"/>
 	<text>A smuggling ship hails you: "We sell excellent weapons at very low prices. Will you buy any?"</text>
-	<choice req="slug" hidden="true" blue="true">
+	<choice req="slug" hidden="true" blue="true" max_group="0">
 		<text>(Slug Crew Member) Ask what exactly they are selling. Let your Slug control the goods' quality.</text>
 		<event load="EVENT_CONTRABAND_BUYSLUG"/>
 	</choice>
-	<choice req="slug" hidden="true" lvl="0" max_lvl="0" blue="false">
+	<choice req="slug_armored" hidden="true" blue="true" max_group="0"><!-- 1.28, Blizz in favor of DI -->
+		<text>(Slug Crew Member) Ask what exactly they are selling. Let your Slug control the goods' quality.</text>
+		<event load="EVENT_CONTRABAND_BUYSLUG"/>
+	</choice>
+	<choice req="SLUG_AND_ARMORED_SLUG" hidden="true" lvl="0" max_group="0" blue="false"><!-- 1.28 max_group was max_lvl, req was slug -->
 		<text>Ask what exactly they are selling.</text>
 		<event>
 			<text>The smugglers show you their goods. What are you going to do?</text>
@@ -4817,14 +5294,14 @@ shield research center — jams shields
 			</choice>
 		</event>
 	</choice>
-	<choice hidden="true">
+	<choice hidden="true" req="engines" blue="false" max_group="1">
 		<text>Attack them.</text>
 		<event>
 			<text>You decide that illegal arms deals must be stopped. The smugglers don't care who they sell to, and the Rebels, after contacting them, will only get stronger.</text>
 			<ship hostile="true"/>
 		</event>
 	</choice>
-	<choice hidden="true">
+	<choice hidden="true" req="engines" blue="false" max_group="2">
 		<text>Ignore them.</text>
 		<event>
 			<text>You cut the comms channels and prepare to jump.</text>
@@ -6281,7 +6758,7 @@ shield research center — jams shields
 	</event>
 	<event>
 		<text>The Zolton were ready for your aggression and in response fired a cloaked mine at you!</text>
-		<damage amount="3" system="room" effect="random"/>
+		<damage amount="3" effect="random"/> <!-- 1.28 removed system="room" -->
 		<ship hostile="true"/>
 	</event>
 </eventList>
@@ -6982,7 +7459,7 @@ shield research center — jams shields
 			<text>You decide that it's better not to interfere, and prepare to jump.</text>
 			<choice hidden="true">
 				<text id="continue"/>
-				<event load="TALK_WITH_CREW"/>
+				<event load="TALK_WITH_CREW_ENERGYX"/><!-- 1.28 was regular -->
 			</choice>
 		</event>
 	</choice>
@@ -7091,7 +7568,7 @@ shield research center — jams shields
 			<text>You decide that it's better not to interfere, and prepare to jump.</text>
 			<choice hidden="true">
 				<text id="continue"/>
-				<event load="TALK_WITH_CREW"/>
+				<event load="TALK_WITH_CREW_ENERGYX"/><!-- 1.28 was regular -->
 			</choice>
 		</event>
 	</choice>
@@ -7199,7 +7676,7 @@ shield research center — jams shields
 	</choice>
 	<choice hidden="true">	
 		<text>Wait until the FTL drive charges before flying away.</text>
-		<event load="TALK_WITH_CREW"/>
+		<event load="TALK_WITH_CREW_ENERGYX"/><!-- 1.28 was regular -->
 	</choice>
 	<choice hidden="false">
 		<text>Try to get useful materials by detonating a stock of missiles in a large asteroid.</text> 
@@ -7330,6 +7807,13 @@ shield research center — jams shields
 			<status type="limit" target="enemy" system="pilot" amount="0"/>
 		</event>
 	</choice>
+	<choice hidden="true" req="energyx"> <!-- 1.28 -->
+		<text>(Zolton Crew Member) Activate the hacking drone on the automated ship.</text>
+		<event>
+			<text>The Zolton quickly types something on their console which sends a signal to the hacking drone. Now the ship is dead in the water!</text>
+			<status type="limit" target="enemy" system="pilot" amount="0"/>
+		</event>
+	</choice>
 </event>
 <eventList name="DISTRESS_ZOLTON_BASE_VS_AUTO_R">
 	<event>
@@ -7397,708 +7881,15 @@ shield research center — jams shields
 	</choice>
 </event>
 <eventList name="EVENT_TRADE_FUMIDR_R">
-	<event>
-		<text>...the mercenaries offer you a "very profitable" exchange. The crew is skeptical, but it's up to you.</text>
-		<choice hidden="false">
-			<text>Agree to the exchange.</text>
-			<event>
-				<text>You give the mercenaries valuable resources in exchange for equipment.</text>
-				<weapon name="RANDOM"/>
-				<item_modify>
-					<item type="fuel" min="-12" max="-8"/>
-				</item_modify>
-			</event>
-		</choice>
-		<choice hidden="true">
-			<text>Politely decline.</text><!-- lol .. "politely refuse" -->
-			<event/>
-		</choice>
-		<choice hidden="true">
-			<text>Attack them.</text>
-			<event>
-				<text>You decide to take them by force...</text>
-				<ship hostile="true"/>
-			</event>
-		</choice>
-		<choice hidden="true" req="human">
-			<text>(Human Crew Member) Let your Human suggest that they make an alternate trade.</text>
-			<event>
-				<text>The mercenaries, after a bit of thought, agree and offer something else...</text>
-				<choice hidden="false">
-					<text>Agree to the exchange.</text>
-					<event>
-						<text>You give the mercenaries valuable resources in exchange for equipment.</text>
-						<weapon name="RANDOM"/>
-						<item_modify>
-							<item type="fuel" min="-10" max="-6"/>
-						</item_modify>
-					</event>
-				</choice>
-				<choice hidden="true">
-					<text>Politely decline.</text>
-					<event/>
-				</choice>
-				<choice hidden="true">
-					<text>Attack them.</text>
-					<event>
-						<text>You decide to take them by force...</text>
-						<ship hostile="true"/>
-					</event>
-				</choice>
-			</event>
-		</choice>
-		<choice hidden="true" req="slug">
-			<text>(Slug Crew Member) Let your Slug "convince" them to offer an alternate trade.</text>
-			<event>
-				<text>The Slug takes some time to hypnotize the mercenaries, and soon after they offer something else...</text>
-				<choice hidden="false">
-					<text>Agree to the exchange.</text>
-					<event>
-						<text>You give the mercenaries valuable resources in exchange for equipment.</text>
-						<weapon name="RANDOM"/>
-						<item_modify>
-							<item type="fuel" min="-8" max="-4"/>
-						</item_modify>
-					</event>
-				</choice>
-				<choice hidden="true">
-					<text>Politely decline.</text>
-					<event/>
-				</choice>
-				<choice hidden="true">
-					<text>Attack them.</text>
-					<event>
-						<text>You decide to take them by force...</text>
-						<ship hostile="true"/>
-					</event>
-				</choice>
-			</event>
-		</choice>
-	</event>
-	<event>
-		<text>...the mercenaries offer you a "very profitable" exchange. The crew is skeptical, but it's up to you.</text>
-		<choice hidden="false">
-			<text>Agree to the exchange.</text>
-			<event>
-				<text>You give the mercenaries valuable resources in exchange for equipment.</text>
-				<drone name="RANDOM"/>
-				<item_modify>
-					<item type="fuel" min="-12" max="-8"/>
-				</item_modify>
-			</event>
-		</choice>
-		<choice hidden="true">
-			<text>Politely decline.</text>
-			<event/>
-		</choice>
-		<choice hidden="true">
-			<text>Attack them.</text>
-			<event>
-				<text>You decide to take them by force...</text>
-				<ship hostile="true"/>
-			</event>
-		</choice>
-		<choice hidden="true" req="human">
-			<text>(Human Crew Member) Let your Human suggest that they make an alternate trade.</text>
-			<event>
-				<text>The mercenaries, after a bit of thought, agree and offer something else...</text>
-				<choice hidden="false">
-					<text>Agree to the exchange.</text>
-					<event>
-						<text>You give the mercenaries valuable resources in exchange for equipment.</text>
-						<drone name="RANDOM"/>
-						<item_modify>
-							<item type="fuel" min="-10" max="-6"/>
-						</item_modify>
-					</event>
-				</choice>
-				<choice hidden="true">
-					<text>Politely decline.</text>
-					<event/>
-				</choice>
-				<choice hidden="true">
-					<text>Attack them.</text>
-					<event>
-						<text>You decide to take them by force...</text>
-						<ship hostile="true"/>
-					</event>
-				</choice>
-			</event>
-		</choice>
-		<choice hidden="true" req="slug">
-			<text>(Slug Crew Member) Let your Slug "convince" them to offer an alternate trade.</text>
-			<event>
-				<text>The Slug takes some time to hypnotize the mercenaries, and soon after they offer something else...</text>
-				<choice hidden="false">
-					<text>Agree to the exchange.</text>
-					<event>
-						<text>You give the mercenaries valuable resources in exchange for equipment.</text>
-						<drone name="RANDOM"/>
-						<item_modify>
-							<item type="fuel" min="-8" max="-4"/>
-						</item_modify>
-					</event>
-				</choice>
-				<choice hidden="true">
-					<text>Politely decline.</text>
-					<event/>
-				</choice>
-				<choice hidden="true">
-					<text>Attack them.</text>
-					<event>
-						<text>You decide to take them by force...</text>
-						<ship hostile="true"/>
-					</event>
-				</choice>
-			</event>
-		</choice>
-	</event>
-	<event>
-		<text>...the mercenaries offer you a "very profitable" exchange. The crew is skeptical, but it's up to you.</text>
-		<choice hidden="false">
-			<text>Agree to the exchange.</text>
-			<event>
-				<text>You give the mercenaries valuable resources in exchange for equipment.</text>
-				<augment name="RANDOM"/>
-				<item_modify>
-					<item type="fuel" min="-12" max="-8"/>
-				</item_modify>
-			</event>
-		</choice>
-		<choice hidden="true">
-			<text>Politely decline.</text>
-			<event/>
-		</choice>
-		<choice hidden="true">
-			<text>Attack them.</text>
-			<event>
-				<text>You decide to take them by force...</text>
-				<ship hostile="true"/>
-			</event>
-		</choice>
-		<choice hidden="true" req="human">
-			<text>(Human Crew Member) Let your Human suggest that they make an alternate trade.</text>
-			<event>
-				<text>The mercenaries, after a bit of thought, agree and offer something else...</text>
-				<choice hidden="false">
-					<text>Agree to the exchange.</text>
-					<event>
-						<text>You give the mercenaries valuable resources in exchange for equipment.</text>
-						<augment name="RANDOM"/>
-						<item_modify>
-							<item type="fuel" min="-10" max="-6"/>
-						</item_modify>
-					</event>
-				</choice>
-				<choice hidden="true">
-					<text>Politely decline.</text>
-					<event/>
-				</choice>
-				<choice hidden="true">
-					<text>Attack them.</text>
-					<event>
-						<text>You decide to take them by force...</text>
-						<ship hostile="true"/>
-					</event>
-				</choice>
-			</event>
-		</choice>
-		<choice hidden="true" req="slug">
-			<text>(Slug Crew Member) Let your Slug "convince" them to offer an alternate trade.</text>
-			<event>
-				<text>The Slug takes some time to hypnotize the mercenaries, and soon after they offer something else...</text>
-				<choice hidden="false">
-					<text>Agree to the exchange.</text>
-					<event>
-						<text>You give the mercenaries valuable resources in exchange for equipment.</text>
-						<augment name="RANDOM"/>
-						<item_modify>
-							<item type="fuel" min="-8" max="-4"/>
-						</item_modify>
-					</event>
-				</choice>
-				<choice hidden="true">
-					<text>Politely decline.</text>
-					<event/>
-				</choice>
-				<choice hidden="true">
-					<text>Attack them.</text>
-					<event>
-						<text>You decide to take them by force...</text>
-						<ship hostile="true"/>
-					</event>
-				</choice>
-			</event>
-		</choice>
-	</event>
-	<event>
-		<text>...the mercenaries offer you a "very profitable" exchange. The crew is skeptical, but it's up to you.</text>
-		<choice hidden="false">
-			<text>Agree to the exchange.</text>
-			<event>
-				<text>You give the mercenaries valuable resources in exchange for equipment.</text>
-				<weapon name="RANDOM"/>
-				<item_modify>
-					<item type="missiles" min="-25" max="-15"/>
-				</item_modify>
-			</event>
-		</choice>
-		<choice hidden="true">
-			<text>Politely decline.</text>
-			<event/>
-		</choice>
-		<choice hidden="true">
-			<text>Attack them.</text>
-			<event>
-				<text>You decide to take them by force...</text>
-				<ship hostile="true"/>
-			</event>
-		</choice>
-		<choice hidden="true" req="human">
-			<text>(Human Crew Member) Let your Human suggest that they make an alternate trade.</text>
-			<event>
-				<text>The mercenaries, after a bit of thought, agree and offer something else...</text>
-				<choice hidden="false">
-					<text>Agree to the exchange.</text>
-					<event>
-						<text>You give the mercenaries valuable resources in exchange for equipment.</text>
-						<weapon name="RANDOM"/>
-						<item_modify>
-							<item type="missiles" min="-20" max="-10"/>
-						</item_modify>
-					</event>
-				</choice>
-				<choice hidden="true">
-					<text>Politely decline.</text>
-					<event/>
-				</choice>
-				<choice hidden="true">
-					<text>Attack them.</text>
-					<event>
-						<text>You decide to take them by force...</text>
-						<ship hostile="true"/>
-					</event>
-				</choice>
-			</event>
-		</choice>
-		<choice hidden="true" req="slug">
-			<text>(Slug Crew Member) Let your Slug "convince" them to offer an alternate trade.</text>
-			<event>
-				<text>The Slug takes some time to hypnotize the mercenaries, and soon after they offer something else...</text>
-				<choice hidden="false">
-					<text>Agree to the exchange.</text>
-					<event>
-						<text>You give the mercenaries valuable resources in exchange for equipment.</text>
-						<weapon name="RANDOM"/>
-						<item_modify>
-							<item type="missiles" min="-15" max="-8"/>
-						</item_modify>
-					</event>
-				</choice>
-				<choice hidden="true">
-					<text>Politely decline.</text>
-					<event/>
-				</choice>
-				<choice hidden="true">
-					<text>Attack them.</text>
-					<event>
-						<text>You decide to take them by force...</text>
-						<ship hostile="true"/>
-					</event>
-				</choice>
-			</event>
-		</choice>
-	</event>
-	<event>
-		<text>...the mercenaries offer you a "very profitable" exchange. The crew is skeptical, but it's up to you.</text>
-		<choice hidden="false">
-			<text>Agree to the exchange.</text>
-			<event>
-				<text>You give the mercenaries valuable resources in exchange for equipment.</text>
-				<drone name="RANDOM"/>
-				<item_modify>
-					<item type="missiles" min="-25" max="-15"/>
-				</item_modify>
-			</event>
-		</choice>
-		<choice hidden="true">
-			<text>Politely decline.</text>
-			<event/>
-		</choice>
-		<choice hidden="true">
-			<text>Attack them.</text>
-			<event>
-				<text>You decide to take them by force...</text>
-				<ship hostile="true"/>
-			</event>
-		</choice>
-		<choice hidden="true" req="human">
-			<text>(Human Crew Member) Let your Human suggest that they make an alternate trade.</text>
-			<event>
-				<text>The mercenaries, after a bit of thought, agree and offer something else...</text>
-				<choice hidden="false">
-					<text>Agree to the exchange.</text>
-					<event>
-						<text>You give the mercenaries valuable resources in exchange for equipment.</text>
-						<drone name="RANDOM"/>
-						<item_modify>
-							<item type="missiles" min="-20" max="-10"/>
-						</item_modify>
-					</event>
-				</choice>
-				<choice hidden="true">
-					<text>Politely decline.</text>
-					<event/>
-				</choice>
-				<choice hidden="true">
-					<text>Attack them.</text>
-					<event>
-						<text>You decide to take them by force...</text>
-						<ship hostile="true"/>
-					</event>
-				</choice>
-			</event>
-		</choice>
-		<choice hidden="true" req="slug">
-			<text>(Slug Crew Member) Let your Slug "convince" them to offer an alternate trade.</text>
-			<event>
-				<text>The Slug takes some time to hypnotize the mercenaries, and soon after they offer something else...</text>
-				<choice hidden="false">
-					<text>Agree to the exchange.</text>
-					<event>
-						<text>You give the mercenaries valuable resources in exchange for equipment.</text>
-						<drone name="RANDOM"/>
-						<item_modify>
-							<item type="missiles" min="-15" max="-8"/>
-						</item_modify>
-					</event>
-				</choice>
-				<choice hidden="true">
-					<text>Politely decline.</text>
-					<event/>
-				</choice>
-				<choice hidden="true">
-					<text>Attack them.</text>
-					<event>
-						<text>You decide to take them by force...</text>
-						<ship hostile="true"/>
-					</event>
-				</choice>
-			</event>
-		</choice>
-	</event>
-	<event>
-		<text>...the mercenaries offer you a "very profitable" exchange. The crew is skeptical, but it's up to you.</text>
-		<choice hidden="false">
-			<text>Agree to the exchange.</text>
-			<event>
-				<text>You give the mercenaries valuable resources in exchange for equipment.</text>
-				<augment name="RANDOM"/>
-				<item_modify>
-					<item type="missiles" min="-25" max="-15"/>
-				</item_modify>
-			</event>
-		</choice>
-		<choice hidden="true">
-			<text>Politely decline.</text>
-			<event/>
-		</choice>
-		<choice hidden="true">
-			<text>Attack them.</text>
-			<event>
-				<text>You decide to take them by force...</text>
-				<ship hostile="true"/>
-			</event>
-		</choice>
-		<choice hidden="true" req="human">
-			<text>(Human Crew Member) Let your Human suggest that they make an alternate trade.</text>
-			<event>
-				<text>The mercenaries, after a bit of thought, agree and offer something else...</text>
-				<choice hidden="false">
-					<text>Agree to the exchange.</text>
-					<event>
-						<text>You give the mercenaries valuable resources in exchange for equipment.</text>
-						<augment name="RANDOM"/>
-						<item_modify>
-							<item type="missiles" min="-20" max="-10"/>
-						</item_modify>
-					</event>
-				</choice>
-				<choice hidden="true">
-					<text>Politely decline.</text>
-					<event/>
-				</choice>
-				<choice hidden="true">
-					<text>Attack them.</text>
-					<event>
-						<text>You decide to take them by force...</text>
-						<ship hostile="true"/>
-					</event>
-				</choice>
-			</event>
-		</choice>
-		<choice hidden="true" req="slug">
-			<text>(Slug Crew Member) Let your Slug "convince" them to offer an alternate trade.</text>
-			<event>
-				<text>The Slug takes some time to hypnotize the mercenaries, and soon after they offer something else...</text>
-				<choice hidden="false">
-					<text>Agree to the exchange.</text>
-					<event>
-						<text>You give the mercenaries valuable resources in exchange for equipment.</text>
-						<augment name="RANDOM"/>
-						<item_modify>
-							<item type="missiles" min="-15" max="-8"/>
-						</item_modify>
-					</event>
-				</choice>
-				<choice hidden="true">
-					<text>Politely decline.</text>
-					<event/>
-				</choice>
-				<choice hidden="true">
-					<text>Attack them.</text>
-					<event>
-						<text>You decide to take them by force...</text>
-						<ship hostile="true"/>
-					</event>
-				</choice>
-			</event>
-		</choice>
-	</event>
-	<event>
-		<text>...the mercenaries offer you a "very profitable" exchange. The crew is skeptical, but it's up to you.</text>
-		<choice hidden="false">
-			<text>Agree to the exchange.</text>
-			<event>
-				<text>You give the mercenaries valuable resources in exchange for equipment.</text>
-				<weapon name="RANDOM"/>
-				<item_modify>
-					<item type="drones" min="-16" max="-10"/>
-				</item_modify>
-			</event>
-		</choice>
-		<choice hidden="true">
-			<text>Politely decline.</text>
-			<event/>
-		</choice>
-		<choice hidden="true">
-			<text>Attack them.</text>
-			<event>
-				<text>You decide to take them by force...</text>
-				<ship hostile="true"/>
-			</event>
-		</choice>
-		<choice hidden="true" req="human">
-			<text>(Human Crew Member) Let your Human suggest that they make an alternate trade.</text>
-			<event>
-				<text>The mercenaries, after a bit of thought, agree and offer something else...</text>
-				<choice hidden="false">
-					<text>Agree to the exchange.</text>
-					<event>
-						<text>You give the mercenaries valuable resources in exchange for equipment.</text>
-						<weapon name="RANDOM"/>
-						<item_modify>
-							<item type="drones" min="-14" max="-8"/>
-						</item_modify>
-					</event>
-				</choice>
-				<choice hidden="true">
-					<text>Politely decline.</text>
-					<event/>
-				</choice>
-				<choice hidden="true">
-					<text>Attack them.</text>
-					<event>
-						<text>You decide to take them by force...</text>
-						<ship hostile="true"/>
-					</event>
-				</choice>
-			</event>
-		</choice>
-		<choice hidden="true" req="slug">
-			<text>(Slug Crew Member) Let your Slug "convince" them to offer an alternate trade.</text>
-			<event>
-				<text>The Slug takes some time to hypnotize the mercenaries, and soon after they offer something else...</text>
-				<choice hidden="false">
-					<text>Agree to the exchange.</text>
-					<event>
-						<text>You give the mercenaries valuable resources in exchange for equipment.</text>
-						<weapon name="RANDOM"/>
-						<item_modify>
-							<item type="drones" min="-12" max="-6"/>
-						</item_modify>
-					</event>
-				</choice>
-				<choice hidden="true">
-					<text>Politely decline.</text>
-					<event/>
-				</choice>
-				<choice hidden="true">
-					<text>Attack them.</text>
-					<event>
-						<text>You decide to take them by force...</text>
-						<ship hostile="true"/>
-					</event>
-				</choice>
-			</event>
-		</choice>
-	</event>
-	<event>
-		<text>...the mercenaries offer you a "very profitable" exchange. The crew is skeptical, but it's up to you.</text>
-		<choice hidden="false">
-			<text>Agree to the exchange.</text>
-			<event>
-				<text>You give the mercenaries valuable resources in exchange for equipment.</text>
-				<drone name="RANDOM"/>
-				<item_modify>
-					<item type="drones" min="-16" max="-10"/>
-				</item_modify>
-			</event>
-		</choice>
-		<choice hidden="true">
-			<text>Politely decline.</text>
-			<event/>
-		</choice>
-		<choice hidden="true">
-			<text>Attack them.</text>
-			<event>
-				<text>You decide to take them by force...</text>
-				<ship hostile="true"/>
-			</event>
-		</choice>
-		<choice hidden="true" req="human">
-			<text>(Human Crew Member) Let your Human suggest that they make an alternate trade.</text>
-			<event>
-				<text>The mercenaries, after a bit of thought, agree and offer something else...</text>
-				<choice hidden="false">
-					<text>Agree to the exchange.</text>
-					<event>
-						<text>You give the mercenaries valuable resources in exchange for equipment.</text>
-						<drone name="RANDOM"/>
-						<item_modify>
-							<item type="drones" min="-14" max="-8"/>
-						</item_modify>
-					</event>
-				</choice>
-				<choice hidden="true">
-					<text>Politely decline.</text>
-					<event/>
-				</choice>
-				<choice hidden="true">
-					<text>Attack them.</text>
-					<event>
-						<text>You decide to take them by force...</text>
-						<ship hostile="true"/>
-					</event>
-				</choice>
-			</event>
-		</choice>
-		<choice hidden="true" req="slug">
-			<text>(Slug Crew Member) Let your Slug "convince" them to offer an alternate trade.</text>
-			<event>
-				<text>The Slug takes some time to hypnotize the mercenaries, and soon after they offer something else...</text>
-				<choice hidden="false">
-					<text>Agree to the exchange.</text>
-					<event>
-						<text>You give the mercenaries valuable resources in exchange for equipment.</text>
-						<drone name="RANDOM"/>
-						<item_modify>
-							<item type="drones" min="-12" max="-6"/>
-						</item_modify>
-					</event>
-				</choice>
-				<choice hidden="true">
-					<text>Politely decline.</text>
-					<event/>
-				</choice>
-				<choice hidden="true">
-					<text>Attack them.</text>
-					<event>
-						<text>You decide to take them by force...</text>
-						<ship hostile="true"/>
-					</event>
-				</choice>
-			</event>
-		</choice>
-	</event>
-	<event>
-		<text>...the mercenaries offer you a "very profitable" exchange. The crew is skeptical, but it's up to you.</text>
-		<choice hidden="false">
-			<text>Agree to the exchange.</text>
-			<event>
-				<text>You give the mercenaries valuable resources in exchange for equipment.</text>
-				<augment name="RANDOM"/>
-				<item_modify>
-					<item type="drones" min="-16" max="-10"/>
-				</item_modify>
-			</event>
-		</choice>
-		<choice hidden="true">
-			<text>Politely decline.</text>
-			<event/>
-		</choice>
-		<choice hidden="true">
-			<text>Attack them.</text>
-			<event>
-				<text>You decide to take them by force...</text>
-				<ship hostile="true"/>
-			</event>
-		</choice>
-		<choice hidden="true" req="human">
-			<text>(Human Crew Member) Let your Human suggest that they make an alternate trade.</text>
-			<event>
-				<text>The mercenaries, after a bit of thought, agree and offer something else...</text>
-				<choice hidden="false">
-					<text>Agree to the exchange.</text>
-					<event>
-						<text>You give the mercenaries valuable resources in exchange for equipment.</text>
-						<augment name="RANDOM"/>
-						<item_modify>
-							<item type="drones" min="-14" max="-8"/>
-						</item_modify>
-					</event>
-				</choice>
-				<choice hidden="true">
-					<text>Politely decline.</text>
-					<event/>
-				</choice>
-				<choice hidden="true">
-					<text>Attack them.</text>
-					<event>
-						<text>You decide to take them by force...</text>
-						<ship hostile="true"/>
-					</event>
-				</choice>
-			</event>
-		</choice>
-		<choice hidden="true" req="slug">
-			<text>(Slug Crew Member) Let your Slug "convince" them to offer an alternate trade.</text>
-			<event>
-				<text>The Slug takes some time to hypnotize the mercenaries, and soon after they offer something else...</text>
-				<choice hidden="false">
-					<text>Agree to the exchange.</text>
-					<event>
-						<text>You give the mercenaries valuable resources in exchange for equipment.</text>
-						<augment name="RANDOM"/>
-						<item_modify>
-							<item type="drones" min="-12" max="-6"/>
-						</item_modify>
-					</event>
-				</choice>
-				<choice hidden="true">
-					<text>Politely decline.</text>
-					<event/>
-				</choice>
-				<choice hidden="true">
-					<text>Attack them.</text>
-					<event>
-						<text>You decide to take them by force...</text>
-						<ship hostile="true"/>
-					</event>
-				</choice>
-			</event>
-		</choice>
-	</event>
+	<event load="EVENT_TRADE_FUMIDR_R_FUEL" /><!-- 1.28 added order_human, Blizz reorganized -->
+	<event load="EVENT_TRADE_FUMIDR_R_FUEL" /><!-- 1.28 added order_human, Blizz reorganized -->
+	<event load="EVENT_TRADE_FUMIDR_R_FUEL" /><!-- 1.28 added order_human, Blizz reorganized -->
+	<event load="EVENT_TRADE_FUMIDR_R_MISSILES" /><!-- 1.28 added order_human, Blizz reorganized -->
+	<event load="EVENT_TRADE_FUMIDR_R_MISSILES" /><!-- 1.28 added order_human, Blizz reorganized -->
+	<event load="EVENT_TRADE_FUMIDR_R_MISSILES" /><!-- 1.28 added order_human, Blizz reorganized -->
+	<event load="EVENT_TRADE_FUMIDR_R_DRONES" /><!-- 1.28 added order_human, Blizz reorganized -->
+	<event load="EVENT_TRADE_FUMIDR_R_DRONES" /><!-- 1.28 added order_human, Blizz reorganized -->
+	<event load="EVENT_TRADE_FUMIDR_R_DRONES" /><!-- 1.28 added order_human, Blizz reorganized -->
 </eventList>
 <ship name="SHIPS_PIRATE_GONEAWAY" auto_blueprint="SHIPS_PIRATE">
 	<escape timer="40" min="30" max="30">
@@ -8111,7 +7902,324 @@ shield research center — jams shields
 	<deadCrew load="DEAD_CREW_DEFAULT"/>
 </ship>
 
+<!-- for checking purposes:
+1.28 1.28 1.28 -->
 
+<event name="EVENT_TRADE_FUMIDR_R_FUEL">
+	<text>...the smugglers offer you a "very profitable" exchange. The crew is skeptical, but it's up to you.</text>
+	<choice hidden="false">
+		<text>Agree to the exchange.</text>
+		<event>
+			<text>You give the smugglers valuable resources in exchange for equipment.</text>
+			<weapon name="RANDOM"/>
+			<item_modify>
+				<item type="fuel" min="-12" max="-8"/>
+			</item_modify>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Politely decline.</text>
+		<event/>
+	</choice>
+	<choice hidden="true">
+		<text>Attack them.</text>
+		<event>
+			<text>You decide to take them by force...</text>
+			<ship hostile="true"/>
+		</event>
+	</choice>
+	<choice hidden="true" req="human"><!-- 1.28, Blizz removed max_group is it necessary?-->
+		<text>(Human Crew Member) Let your Human suggest that they make an alternate trade.</text>
+		<event>
+			<text>The smugglers, after a bit of thought, agree and offer something else...</text>
+			<choice hidden="false">
+				<text>Agree to the exchange.</text>
+				<event>
+					<text>You give the smugglers valuable resources in exchange for equipment.</text>
+					<weapon name="RANDOM"/>
+					<item_modify>
+						<item type="fuel" min="-10" max="-6"/>
+					</item_modify>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>Politely decline.</text>
+				<event/>
+			</choice>
+			<choice hidden="true">
+				<text>Attack them.</text>
+				<event>
+					<text>You decide to take them by force...</text>
+					<ship hostile="true"/>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="order_human"><!-- 1.28, Blizz removed max_group is it necessary?-->
+		<text>(Order Human Crew Member) Let your Order Human suggest that they make an alternate trade.</text>
+		<event>
+			<text>The smugglers, after a bit of thought, agree and offer something else...</text>
+			<choice hidden="false">
+				<text>Agree to the exchange.</text>
+				<event>
+					<text>You give the smugglers valuable resources in exchange for equipment.</text>
+					<weapon name="RANDOM"/>
+					<item_modify>
+						<item type="fuel" min="-10" max="-6"/>
+					</item_modify>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>Politely decline.</text>
+				<event/>
+			</choice>
+			<choice hidden="true">
+				<text>Attack them.</text>
+				<event>
+					<text>You decide to take them by force...</text>
+					<ship hostile="true"/>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="slug">
+		<text>(Slug Crew Member) Let your Slug "convince" them to offer an alternate trade.</text>
+		<event>
+			<text>The Slug takes some time to hypnotize the smugglers, and soon after they offer something else...</text>
+			<choice hidden="false">
+				<text>Agree to the exchange.</text>
+				<event>
+					<text>You give the smugglers valuable resources in exchange for equipment.</text>
+					<weapon name="RANDOM"/>
+					<item_modify>
+						<item type="fuel" min="-8" max="-4"/>
+					</item_modify>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>Politely decline.</text>
+				<event/>
+			</choice>
+			<choice hidden="true">
+				<text>Attack them.</text>
+				<event>
+					<text>You decide to take them by force...</text>
+					<ship hostile="true"/>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+<event name="EVENT_TRADE_FUMIDR_R_MISSILES">
+	<text>...the smugglers offer you a "very profitable" exchange. The crew is skeptical, but it's up to you.</text>
+	<choice hidden="false">
+		<text>Agree to the exchange.</text>
+		<event>
+			<text>You give the smugglers valuable resources in exchange for equipment.</text>
+			<weapon name="RANDOM"/>
+			<item_modify>
+				<item type="missiles" min="-25" max="-15"/>
+			</item_modify>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Politely decline.</text>
+		<event/>
+	</choice>
+	<choice hidden="true">
+		<text>Attack them.</text>
+		<event>
+			<text>You decide to take them by force...</text>
+			<ship hostile="true"/>
+		</event>
+	</choice>
+	<choice hidden="true" req="human"><!-- 1.28, Blizz removed max_group is it necessary?-->
+		<text>(Human Crew Member) Let your Human suggest that they make an alternate trade.</text>
+		<event>
+			<text>The smugglers, after a bit of thought, agree and offer something else...</text>
+			<choice hidden="false">
+				<text>Agree to the exchange.</text>
+				<event>
+					<text>You give the smugglers valuable resources in exchange for equipment.</text>
+					<weapon name="RANDOM"/>
+					<item_modify>
+						<item type="missiles" min="-20" max="-10"/>
+					</item_modify>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>Politely decline.</text>
+				<event/>
+			</choice>
+			<choice hidden="true">
+				<text>Attack them.</text>
+				<event>
+					<text>You decide to take them by force...</text>
+					<ship hostile="true"/>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="order_human"><!-- 1.28, Blizz removed max_group is it necessary?-->
+		<text>(Order Human Crew Member) Let your Order Human suggest that they make an alternate trade.</text>
+		<event>
+			<text>The smugglers, after a bit of thought, agree and offer something else...</text>
+			<choice hidden="false">
+				<text>Agree to the exchange.</text>
+				<event>
+					<text>You give the smugglers valuable resources in exchange for equipment.</text>
+					<weapon name="RANDOM"/>
+					<item_modify>
+						<item type="missiles" min="-20" max="-10"/>
+					</item_modify>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>Politely decline.</text>
+				<event/>
+			</choice>
+			<choice hidden="true">
+				<text>Attack them.</text>
+				<event>
+					<text>You decide to take them by force...</text>
+					<ship hostile="true"/>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="slug">
+		<text>(Slug Crew Member) Let your Slug "convince" them to offer an alternate trade.</text>
+		<event>
+			<text>The Slug takes some time to hypnotize the smugglers, and soon after they offer something else...</text>
+			<choice hidden="false">
+				<text>Agree to the exchange.</text>
+				<event>
+					<text>You give the smugglers valuable resources in exchange for equipment.</text>
+					<weapon name="RANDOM"/>
+					<item_modify>
+						<item type="missiles" min="-15" max="-8"/>
+					</item_modify>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>Politely decline.</text>
+				<event/>
+			</choice>
+			<choice hidden="true">
+				<text>Attack them.</text>
+				<event>
+					<text>You decide to take them by force...</text>
+					<ship hostile="true"/>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+<event name="EVENT_TRADE_FUMIDR_R_DRONES">
+	<text>...the smugglers offer you a "very profitable" exchange. The crew is skeptical, but it's up to you.</text>
+	<choice hidden="false">
+		<text>Agree to the exchange.</text>
+		<event>
+			<text>You give the smugglers valuable resources in exchange for equipment.</text>
+			<weapon name="RANDOM"/>
+			<item_modify>
+				<item type="drones" min="-16" max="-10"/>
+			</item_modify>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Politely decline.</text>
+		<event/>
+	</choice>
+	<choice hidden="true">
+		<text>Attack them.</text>
+		<event>
+			<text>You decide to take them by force...</text>
+			<ship hostile="true"/>
+		</event>
+	</choice>
+	<choice hidden="true" req="human"><!-- 1.28, Blizz removed max_group is it necessary?-->
+		<text>(Human Crew Member) Let your Human suggest that they make an alternate trade.</text>
+		<event>
+			<text>The smugglers, after a bit of thought, agree and offer something else...</text>
+			<choice hidden="false">
+				<text>Agree to the exchange.</text>
+				<event>
+					<text>You give the smugglers valuable resources in exchange for equipment.</text>
+					<weapon name="RANDOM"/>
+					<item_modify>
+						<item type="drones" min="-14" max="-8"/>
+					</item_modify>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>Politely decline.</text>
+				<event/>
+			</choice>
+			<choice hidden="true">
+				<text>Attack them.</text>
+				<event>
+					<text>You decide to take them by force...</text>
+					<ship hostile="true"/>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="order_human"><!-- 1.28, Blizz removed max_group is it necessary?-->
+		<text>(Order Human Crew Member) Let your Order Human suggest that they make an alternate trade.</text>
+		<event>
+			<text>The smugglers, after a bit of thought, agree and offer something else...</text>
+			<choice hidden="false">
+				<text>Agree to the exchange.</text>
+				<event>
+					<text>You give the smugglers valuable resources in exchange for equipment.</text>
+					<weapon name="RANDOM"/>
+					<item_modify>
+						<item type="drones" min="-14" max="-8"/>
+					</item_modify>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>Politely decline.</text>
+				<event/>
+			</choice>
+			<choice hidden="true">
+				<text>Attack them.</text>
+				<event>
+					<text>You decide to take them by force...</text>
+					<ship hostile="true"/>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="slug">
+		<text>(Slug Crew Member) Let your Slug "convince" them to offer an alternate trade.</text>
+		<event>
+			<text>The Slug takes some time to hypnotize the smugglers, and soon after they offer something else...</text>
+			<choice hidden="false">
+				<text>Agree to the exchange.</text>
+				<event>
+					<text>You give the smugglers valuable resources in exchange for equipment.</text>
+					<weapon name="RANDOM"/>
+					<item_modify>
+						<item type="drones" min="-12" max="-6"/>
+					</item_modify>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>Politely decline.</text>
+				<event/>
+			</choice>
+			<choice hidden="true">
+				<text>Attack them.</text>
+				<event>
+					<text>You decide to take them by force...</text>
+					<ship hostile="true"/>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
 
 <event name="EVENT_TRADE_FUMIDRCON" unique="true"> 
 	<text>A small smuggler craft greets you cheerfully...</text>
@@ -8122,708 +8230,15 @@ shield research center — jams shields
 	</choice>
 </event>
 <eventList name="EVENT_TRADE_FUMIDRCON_R">
-	<event>
-		<text>...the smugglers offer you a "very profitable" exchange. The crew is skeptical, but it's up to you.</text>
-		<choice hidden="false">
-			<text>Agree to the exchange.</text>
-			<event>
-				<text>You give the smugglers valuable resources in exchange for equipment.</text>
-				<weapon name="RANDOM"/>
-				<item_modify>
-					<item type="fuel" min="-12" max="-8"/>
-				</item_modify>
-			</event>
-		</choice>
-		<choice hidden="true">
-			<text>Politely decline.</text>
-			<event/>
-		</choice>
-		<choice hidden="true">
-			<text>Attack them.</text>
-			<event>
-				<text>You decide to take them by force...</text>
-				<ship hostile="true"/>
-			</event>
-		</choice>
-		<choice hidden="true" req="human">
-			<text>(Human Crew Member) Let your Human suggest that they make an alternate trade.</text>
-			<event>
-				<text>The smugglers, after a bit of thought, agree and offer something else...</text>
-				<choice hidden="false">
-					<text>Agree to the exchange.</text>
-					<event>
-						<text>You give the smugglers valuable resources in exchange for equipment.</text>
-						<weapon name="RANDOM"/>
-						<item_modify>
-							<item type="fuel" min="-10" max="-6"/>
-						</item_modify>
-					</event>
-				</choice>
-				<choice hidden="true">
-					<text>Politely decline.</text>
-					<event/>
-				</choice>
-				<choice hidden="true">
-					<text>Attack them.</text>
-					<event>
-						<text>You decide to take them by force...</text>
-						<ship hostile="true"/>
-					</event>
-				</choice>
-			</event>
-		</choice>
-		<choice hidden="true" req="slug">
-			<text>(Slug Crew Member) Let your Slug "convince" them to offer an alternate trade.</text>
-			<event>
-				<text>The Slug takes some time to hypnotize the smugglers, and soon after they offer something else...</text>
-				<choice hidden="false">
-					<text>Agree to the exchange.</text>
-					<event>
-						<text>You give the smugglers valuable resources in exchange for equipment.</text>
-						<weapon name="RANDOM"/>
-						<item_modify>
-							<item type="fuel" min="-8" max="-4"/>
-						</item_modify>
-					</event>
-				</choice>
-				<choice hidden="true">
-					<text>Politely decline.</text>
-					<event/>
-				</choice>
-				<choice hidden="true">
-					<text>Attack them.</text>
-					<event>
-						<text>You decide to take them by force...</text>
-						<ship hostile="true"/>
-					</event>
-				</choice>
-			</event>
-		</choice>
-	</event>
-	<event>
-		<text>...the smugglers offer you a "very profitable" exchange. The crew is skeptical, but it's up to you.</text>
-		<choice hidden="false">
-			<text>Agree to the exchange.</text>
-			<event>
-				<text>You give the smugglers valuable resources in exchange for equipment.</text>
-				<drone name="RANDOM"/>
-				<item_modify>
-					<item type="fuel" min="-12" max="-8"/>
-				</item_modify>
-			</event>
-		</choice>
-		<choice hidden="true">
-			<text>Politely decline.</text>
-			<event/>
-		</choice>
-		<choice hidden="true">
-			<text>Attack them.</text>
-			<event>
-				<text>You decide to take them by force...</text>
-				<ship hostile="true"/>
-			</event>
-		</choice>
-		<choice hidden="true" req="human">
-			<text>(Human Crew Member) Let your Human suggest that they make an alternate trade.</text>
-			<event>
-				<text>The smugglers, after a bit of thought, agree and offer something else...</text>
-				<choice hidden="false">
-					<text>Agree to the exchange.</text>
-					<event>
-						<text>You give the smugglers valuable resources in exchange for equipment.</text>
-						<drone name="RANDOM"/>
-						<item_modify>
-							<item type="fuel" min="-10" max="-6"/>
-						</item_modify>
-					</event>
-				</choice>
-				<choice hidden="true">
-					<text>Politely decline.</text>
-					<event/>
-				</choice>
-				<choice hidden="true">
-					<text>Attack them.</text>
-					<event>
-						<text>You decide to take them by force...</text>
-						<ship hostile="true"/>
-					</event>
-				</choice>
-			</event>
-		</choice>
-		<choice hidden="true" req="slug">
-			<text>(Slug Crew Member) Let your Slug "convince" them to offer an alternate trade.</text>
-			<event>
-				<text>The Slug takes some time to hypnotize the smugglers, and soon after they offer something else...</text>
-				<choice hidden="false">
-					<text>Agree to the exchange.</text>
-					<event>
-						<text>You give the smugglers valuable resources in exchange for equipment.</text>
-						<drone name="RANDOM"/>
-						<item_modify>
-							<item type="fuel" min="-8" max="-4"/>
-						</item_modify>
-					</event>
-				</choice>
-				<choice hidden="true">
-					<text>Politely decline.</text>
-					<event/>
-				</choice>
-				<choice hidden="true">
-					<text>Attack them.</text>
-					<event>
-						<text>You decide to take them by force...</text>
-						<ship hostile="true"/>
-					</event>
-				</choice>
-			</event>
-		</choice>
-	</event>
-	<event>
-		<text>...the smugglers offer you a "very profitable" exchange. The crew is skeptical, but it's up to you.</text>
-		<choice hidden="false">
-			<text>Agree to the exchange.</text>
-			<event>
-				<text>You give the smugglers valuable resources in exchange for equipment.</text>
-				<augment name="RANDOM"/>
-				<item_modify>
-					<item type="fuel" min="-12" max="-8"/>
-				</item_modify>
-			</event>
-		</choice>
-		<choice hidden="true">
-			<text>Politely decline.</text>
-			<event/>
-		</choice>
-		<choice hidden="true">
-			<text>Attack them.</text>
-			<event>
-				<text>You decide to take them by force...</text>
-				<ship hostile="true"/>
-			</event>
-		</choice>
-		<choice hidden="true" req="human">
-			<text>(Human Crew Member) Let your Human suggest that they make an alternate trade.</text>
-			<event>
-				<text>The smugglers, after a bit of thought, agree and offer something else...</text>
-				<choice hidden="false">
-					<text>Agree to the exchange.</text>
-					<event>
-						<text>You give the smugglers valuable resources in exchange for equipment.</text>
-						<augment name="RANDOM"/>
-						<item_modify>
-							<item type="fuel" min="-10" max="-6"/>
-						</item_modify>
-					</event>
-				</choice>
-				<choice hidden="true">
-					<text>Politely decline.</text>
-					<event/>
-				</choice>
-				<choice hidden="true">
-					<text>Attack them.</text>
-					<event>
-						<text>You decide to take them by force...</text>
-						<ship hostile="true"/>
-					</event>
-				</choice>
-			</event>
-		</choice>
-		<choice hidden="true" req="slug">
-			<text>(Slug Crew Member) Let your Slug "convince" them to offer an alternate trade.</text>
-			<event>
-				<text>The Slug takes some time to hypnotize the smugglers, and soon after they offer something else...</text>
-				<choice hidden="false">
-					<text>Agree to the exchange.</text>
-					<event>
-						<text>You give the smugglers valuable resources in exchange for equipment.</text>
-						<augment name="RANDOM"/>
-						<item_modify>
-							<item type="fuel" min="-8" max="-4"/>
-						</item_modify>
-					</event>
-				</choice>
-				<choice hidden="true">
-					<text>Politely decline.</text>
-					<event/>
-				</choice>
-				<choice hidden="true">
-					<text>Attack them.</text>
-					<event>
-						<text>You decide to take them by force...</text>
-						<ship hostile="true"/>
-					</event>
-				</choice>
-			</event>
-		</choice>
-	</event>
-	<event>
-		<text>...the smugglers offer you a "very profitable" exchange. The crew is skeptical, but it's up to you.</text>
-		<choice hidden="false">
-			<text>Agree to the exchange.</text>
-			<event>
-				<text>You give the smugglers valuable resources in exchange for equipment.</text>
-				<weapon name="RANDOM"/>
-				<item_modify>
-					<item type="missiles" min="-25" max="-15"/>
-				</item_modify>
-			</event>
-		</choice>
-		<choice hidden="true">
-			<text>Politely decline.</text>
-			<event/>
-		</choice>
-		<choice hidden="true">
-			<text>Attack them.</text>
-			<event>
-				<text>You decide to take them by force...</text>
-				<ship hostile="true"/>
-			</event>
-		</choice>
-		<choice hidden="true" req="human">
-			<text>(Human Crew Member) Let your Human suggest that they make an alternate trade.</text>
-			<event>
-				<text>The smugglers, after a bit of thought, agree and offer something else...</text>
-				<choice hidden="false">
-					<text>Agree to the exchange.</text>
-					<event>
-						<text>You give the smugglers valuable resources in exchange for equipment.</text>
-						<weapon name="RANDOM"/>
-						<item_modify>
-							<item type="missiles" min="-20" max="-10"/>
-						</item_modify>
-					</event>
-				</choice>
-				<choice hidden="true">
-					<text>Politely decline.</text>
-					<event/>
-				</choice>
-				<choice hidden="true">
-					<text>Attack them.</text>
-					<event>
-						<text>You decide to take them by force...</text>
-						<ship hostile="true"/>
-					</event>
-				</choice>
-			</event>
-		</choice>
-		<choice hidden="true" req="slug">
-			<text>(Slug Crew Member) Let your Slug "convince" them to offer an alternate trade.</text>
-			<event>
-				<text>The Slug takes some time to hypnotize the smugglers, and soon after they offer something else...</text>
-				<choice hidden="false">
-					<text>Agree to the exchange.</text>
-					<event>
-						<text>You give the smugglers valuable resources in exchange for equipment.</text>
-						<weapon name="RANDOM"/>
-						<item_modify>
-							<item type="missiles" min="-15" max="-8"/>
-						</item_modify>
-					</event>
-				</choice>
-				<choice hidden="true">
-					<text>Politely decline.</text>
-					<event/>
-				</choice>
-				<choice hidden="true">
-					<text>Attack them.</text>
-					<event>
-						<text>You decide to take them by force...</text>
-						<ship hostile="true"/>
-					</event>
-				</choice>
-			</event>
-		</choice>
-	</event>
-	<event>
-		<text>...the smugglers offer you a "very profitable" exchange. The crew is skeptical, but it's up to you.</text>
-		<choice hidden="false">
-			<text>Agree to the exchange.</text>
-			<event>
-				<text>You give the smugglers valuable resources in exchange for equipment.</text>
-				<drone name="RANDOM"/>
-				<item_modify>
-					<item type="missiles" min="-25" max="-15"/>
-				</item_modify>
-			</event>
-		</choice>
-		<choice hidden="true">
-			<text>Politely decline.</text>
-			<event/>
-		</choice>
-		<choice hidden="true">
-			<text>Attack them.</text>
-			<event>
-				<text>You decide to take them by force...</text>
-				<ship hostile="true"/>
-			</event>
-		</choice>
-		<choice hidden="true" req="human">
-			<text>(Human Crew Member) Let your Human suggest that they make an alternate trade.</text>
-			<event>
-				<text>The smugglers, after a bit of thought, agree and offer something else...</text>
-				<choice hidden="false">
-					<text>Agree to the exchange.</text>
-					<event>
-						<text>You give the smugglers valuable resources in exchange for equipment.</text>
-						<drone name="RANDOM"/>
-						<item_modify>
-							<item type="missiles" min="-20" max="-10"/>
-						</item_modify>
-					</event>
-				</choice>
-				<choice hidden="true">
-					<text>Politely decline.</text>
-					<event/>
-				</choice>
-				<choice hidden="true">
-					<text>Attack them.</text>
-					<event>
-						<text>You decide to take them by force...</text>
-						<ship hostile="true"/>
-					</event>
-				</choice>
-			</event>
-		</choice>
-		<choice hidden="true" req="slug">
-			<text>(Slug Crew Member) Let your Slug "convince" them to offer an alternate trade.</text>
-			<event>
-				<text>The Slug takes some time to hypnotize the smugglers, and soon after they offer something else...</text>
-				<choice hidden="false">
-					<text>Agree to the exchange.</text>
-					<event>
-						<text>You give the smugglers valuable resources in exchange for equipment.</text>
-						<drone name="RANDOM"/>
-						<item_modify>
-							<item type="missiles" min="-15" max="-8"/>
-						</item_modify>
-					</event>
-				</choice>
-				<choice hidden="true">
-					<text>Politely decline.</text>
-					<event/>
-				</choice>
-				<choice hidden="true">
-					<text>Attack them.</text>
-					<event>
-						<text>You decide to take them by force...</text>
-						<ship hostile="true"/>
-					</event>
-				</choice>
-			</event>
-		</choice>
-	</event>
-	<event>
-		<text>...the smugglers offer you a "very profitable" exchange. The crew is skeptical, but it's up to you.</text>
-		<choice hidden="false">
-			<text>Agree to the exchange.</text>
-			<event>
-				<text>You give the smugglers valuable resources in exchange for equipment.</text>
-				<augment name="RANDOM"/>
-				<item_modify>
-					<item type="missiles" min="-25" max="-15"/>
-				</item_modify>
-			</event>
-		</choice>
-		<choice hidden="true">
-			<text>Politely decline.</text>
-			<event/>
-		</choice>
-		<choice hidden="true">
-			<text>Attack them.</text>
-			<event>
-				<text>You decide to take them by force...</text>
-				<ship hostile="true"/>
-			</event>
-		</choice>
-		<choice hidden="true" req="human">
-			<text>(Human Crew Member) Let your Human suggest that they make an alternate trade.</text>
-			<event>
-				<text>The smugglers, after a bit of thought, agree and offer something else...</text>
-				<choice hidden="false">
-					<text>Agree to the exchange.</text>
-					<event>
-						<text>You give the smugglers valuable resources in exchange for equipment.</text>
-						<augment name="RANDOM"/>
-						<item_modify>
-							<item type="missiles" min="-20" max="-10"/>
-						</item_modify>
-					</event>
-				</choice>
-				<choice hidden="true">
-					<text>Politely decline.</text>
-					<event/>
-				</choice>
-				<choice hidden="true">
-					<text>Attack them.</text>
-					<event>
-						<text>You decide to take them by force...</text>
-						<ship hostile="true"/>
-					</event>
-				</choice>
-			</event>
-		</choice>
-		<choice hidden="true" req="slug">
-			<text>(Slug Crew Member) Let your Slug "convince" them to offer an alternate trade.</text>
-			<event>
-				<text>The Slug takes some time to hypnotize the smugglers, and soon after they offer something else...</text>
-				<choice hidden="false">
-					<text>Agree to the exchange.</text>
-					<event>
-						<text>You give the smugglers valuable resources in exchange for equipment.</text>
-						<augment name="RANDOM"/>
-						<item_modify>
-							<item type="missiles" min="-15" max="-8"/>
-						</item_modify>
-					</event>
-				</choice>
-				<choice hidden="true">
-					<text>Politely decline.</text>
-					<event/>
-				</choice>
-				<choice hidden="true">
-					<text>Attack them.</text>
-					<event>
-						<text>You decide to take them by force...</text>
-						<ship hostile="true"/>
-					</event>
-				</choice>
-			</event>
-		</choice>
-	</event>
-	<event>
-		<text>...the smugglers offer you a "very profitable" exchange. The crew is skeptical, but it's up to you.</text>
-		<choice hidden="false">
-			<text>Agree to the exchange.</text>
-			<event>
-				<text>You give the smugglers valuable resources in exchange for equipment.</text>
-				<weapon name="RANDOM"/>
-				<item_modify>
-					<item type="drones" min="-16" max="-10"/>
-				</item_modify>
-			</event>
-		</choice>
-		<choice hidden="true">
-			<text>Politely decline.</text>
-			<event/>
-		</choice>
-		<choice hidden="true">
-			<text>Attack them.</text>
-			<event>
-				<text>You decide to take them by force...</text>
-				<ship hostile="true"/>
-			</event>
-		</choice>
-		<choice hidden="true" req="human">
-			<text>(Human Crew Member) Let your Human suggest that they make an alternate trade.</text>
-			<event>
-				<text>The smugglers, after a bit of thought, agree and offer something else...</text>
-				<choice hidden="false">
-					<text>Agree to the exchange.</text>
-					<event>
-						<text>You give the smugglers valuable resources in exchange for equipment.</text>
-						<weapon name="RANDOM"/>
-						<item_modify>
-							<item type="drones" min="-14" max="-8"/>
-						</item_modify>
-					</event>
-				</choice>
-				<choice hidden="true">
-					<text>Politely decline.</text>
-					<event/>
-				</choice>
-				<choice hidden="true">
-					<text>Attack them.</text>
-					<event>
-						<text>You decide to take them by force...</text>
-						<ship hostile="true"/>
-					</event>
-				</choice>
-			</event>
-		</choice>
-		<choice hidden="true" req="slug">
-			<text>(Slug Crew Member) Let your Slug "convince" them to offer an alternate trade.</text>
-			<event>
-				<text>The Slug takes some time to hypnotize the smugglers, and soon after they offer something else...</text>
-				<choice hidden="false">
-					<text>Agree to the exchange.</text>
-					<event>
-						<text>You give the smugglers valuable resources in exchange for equipment.</text>
-						<weapon name="RANDOM"/>
-						<item_modify>
-							<item type="drones" min="-12" max="-6"/>
-						</item_modify>
-					</event>
-				</choice>
-				<choice hidden="true">
-					<text>Politely decline.</text>
-					<event/>
-				</choice>
-				<choice hidden="true">
-					<text>Attack them.</text>
-					<event>
-						<text>You decide to take them by force...</text>
-						<ship hostile="true"/>
-					</event>
-				</choice>
-			</event>
-		</choice>
-	</event>
-	<event>
-		<text>...the smugglers offer you a "very profitable" exchange. The crew is skeptical, but it's up to you.</text>
-		<choice hidden="false">
-			<text>Agree to the exchange.</text>
-			<event>
-				<text>You give the smugglers valuable resources in exchange for equipment.</text>
-				<drone name="RANDOM"/>
-				<item_modify>
-					<item type="drones" min="-16" max="-10"/>
-				</item_modify>
-			</event>
-		</choice>
-		<choice hidden="true">
-			<text>Politely decline.</text>
-			<event/>
-		</choice>
-		<choice hidden="true">
-			<text>Attack them.</text>
-			<event>
-				<text>You decide to take them by force...</text>
-				<ship hostile="true"/>
-			</event>
-		</choice>
-		<choice hidden="true" req="human">
-			<text>(Human Crew Member) Let your Human suggest that they make an alternate trade.</text>
-			<event>
-				<text>The smugglers, after a bit of thought, agree and offer something else...</text>
-				<choice hidden="false">
-					<text>Agree to the exchange.</text>
-					<event>
-						<text>You give the smugglers valuable resources in exchange for equipment.</text>
-						<drone name="RANDOM"/>
-						<item_modify>
-							<item type="drones" min="-14" max="-8"/>
-						</item_modify>
-					</event>
-				</choice>
-				<choice hidden="true">
-					<text>Politely decline.</text>
-					<event/>
-				</choice>
-				<choice hidden="true">
-					<text>Attack them.</text>
-					<event>
-						<text>You decide to take them by force...</text>
-						<ship hostile="true"/>
-					</event>
-				</choice>
-			</event>
-		</choice>
-		<choice hidden="true" req="slug">
-			<text>(Slug Crew Member) Let your Slug "convince" them to offer an alternate trade.</text>
-			<event>
-				<text>The Slug takes some time to hypnotize the smugglers, and soon after they offer something else...</text>
-				<choice hidden="false">
-					<text>Agree to the exchange.</text>
-					<event>
-						<text>You give the smugglers valuable resources in exchange for equipment.</text>
-						<drone name="RANDOM"/>
-						<item_modify>
-							<item type="drones" min="-12" max="-6"/>
-						</item_modify>
-					</event>
-				</choice>
-				<choice hidden="true">
-					<text>Politely decline.</text>
-					<event/>
-				</choice>
-				<choice hidden="true">
-					<text>Attack them.</text>
-					<event>
-						<text>You decide to take them by force...</text>
-						<ship hostile="true"/>
-					</event>
-				</choice>
-			</event>
-		</choice>
-	</event>
-	<event>
-		<text>...the smugglers offer you a "very profitable" exchange. The crew is skeptical, but it's up to you.</text>
-		<choice hidden="false">
-			<text>Agree to the exchange.</text>
-			<event>
-				<text>You give the smugglers valuable resources in exchange for equipment.</text>
-				<augment name="RANDOM"/>
-				<item_modify>
-					<item type="drones" min="-16" max="-10"/>
-				</item_modify>
-			</event>
-		</choice>
-		<choice hidden="true">
-			<text>Politely decline.</text>
-			<event/>
-		</choice>
-		<choice hidden="true">
-			<text>Attack them.</text>
-			<event>
-				<text>You decide to take them by force...</text>
-				<ship hostile="true"/>
-			</event>
-		</choice>
-		<choice hidden="true" req="human">
-			<text>(Human Crew Member) Let your Human suggest that they make an alternate trade.</text>
-			<event>
-				<text>The smugglers, after a bit of thought, agree and offer something else...</text>
-				<choice hidden="false">
-					<text>Agree to the exchange.</text>
-					<event>
-						<text>You give the smugglers valuable resources in exchange for equipment.</text>
-						<augment name="RANDOM"/>
-						<item_modify>
-							<item type="drones" min="-14" max="-8"/>
-						</item_modify>
-					</event>
-				</choice>
-				<choice hidden="true">
-					<text>Politely decline.</text>
-					<event/>
-				</choice>
-				<choice hidden="true">
-					<text>Attack them.</text>
-					<event>
-						<text>You decide to take them by force...</text>
-						<ship hostile="true"/>
-					</event>
-				</choice>
-			</event>
-		</choice>
-		<choice hidden="true" req="slug">
-			<text>(Slug Crew Member) Let your Slug "convince" them to offer an alternate trade.</text>
-			<event>
-				<text>The Slug takes some time to hypnotize the smugglers, and soon after they offer something else...</text>
-				<choice hidden="false">
-					<text>Agree to the exchange.</text>
-					<event>
-						<text>You give the smugglers valuable resources in exchange for equipment.</text>
-						<augment name="RANDOM"/>
-						<item_modify>
-							<item type="drones" min="-12" max="-6"/>
-						</item_modify>
-					</event>
-				</choice>
-				<choice hidden="true">
-					<text>Politely decline.</text>
-					<event/>
-				</choice>
-				<choice hidden="true">
-					<text>Attack them.</text>
-					<event>
-						<text>You decide to take them by force...</text>
-						<ship hostile="true"/>
-					</event>
-				</choice>
-			</event>
-		</choice>
-	</event>
+	<event load="EVENT_TRADE_FUMIDR_R_FUEL" /><!-- 1.28 added order_human, Blizz reorganized -->
+	<event load="EVENT_TRADE_FUMIDR_R_FUEL" /><!-- 1.28 added order_human, Blizz reorganized -->
+	<event load="EVENT_TRADE_FUMIDR_R_FUEL" /><!-- 1.28 added order_human, Blizz reorganized -->
+	<event load="EVENT_TRADE_FUMIDR_R_MISSILES" /><!-- 1.28 added order_human, Blizz reorganized -->
+	<event load="EVENT_TRADE_FUMIDR_R_MISSILES" /><!-- 1.28 added order_human, Blizz reorganized -->
+	<event load="EVENT_TRADE_FUMIDR_R_MISSILES" /><!-- 1.28 added order_human, Blizz reorganized -->
+	<event load="EVENT_TRADE_FUMIDR_R_DRONES" /><!-- 1.28 added order_human, Blizz reorganized -->
+	<event load="EVENT_TRADE_FUMIDR_R_DRONES" /><!-- 1.28 added order_human, Blizz reorganized -->
+	<event load="EVENT_TRADE_FUMIDR_R_DRONES" /><!-- 1.28 added order_human, Blizz reorganized -->
 </eventList>
 <ship name="SHIPS_CONT_GONEAWAY" auto_blueprint="SHIPS_CON">
 	<escape timer="40" min="30" max="30">
@@ -8836,6 +8251,10 @@ shield research center — jams shields
 	<deadCrew load="DEAD_CREW_CON"/>
 </ship>
 
+<!-- for checking purposes:
+1.28 1.28 1.28
+1.28 1.28 1.28
+1.28 1.28 1.28 -->
 
 <event name="EVENT_ITB_VEK" unique="true">
 	<img back="BACKGROUND" planet="PLANET_POPULATED"/>
@@ -8981,7 +8400,7 @@ shield research center — jams shields
 	</choice>
 	<choice hidden="true">
 		<text>Ignore the capsule and move on.</text>
-		<event load="TALK_WITH_CREW"/>
+		<event load="TALK_WITH_CREW_ENERGYX"/><!-- 1.28 was regular -->
 	</choice>
 </event>
 <event name="CAPSULE_EVENT_SUN"> 
@@ -9002,7 +8421,7 @@ shield research center — jams shields
 	</choice>
 	<choice hidden="true">
 		<text>Ignore the capsule and move on.</text>
-		<event load="TALK_WITH_CREW"/>
+		<event load="TALK_WITH_CREW_ENERGYX"/><!-- 1.28 was regular -->
 	</choice>
 </event>
 <event name="CAPSULE_EVENT_ASTEROID"> 
@@ -9023,7 +8442,7 @@ shield research center — jams shields
 	</choice>
 	<choice hidden="true">
 		<text>Ignore the capsule and move on.</text>
-		<event load="TALK_WITH_CREW"/>
+		<event load="TALK_WITH_CREW_ENERGYX"/><!-- 1.28 was regular -->
 	</choice>
 </event>
 <eventList name="CAPSULE_EVENT_TALK"> 
@@ -9088,3 +8507,4 @@ shield research center — jams shields
 		</choice>
 	</deadCrew>
 </ship>
+</FTL>

@@ -96,6 +96,7 @@
 <text name="item_removed">Removed '\1'</text>  <!-- \1: item name -->
 
 <text name="type_beam_chain">Chain Beam</text><!-- 1.27 -->
+<text name="type_missile_chain">Chain Missile</text><!-- 1.28 -->
 
 <text name="artillery_1">Cooldown 1.25x‡</text>
 <text name="artillery_2">Cooldown 1x‡</text>
@@ -7263,7 +7264,8 @@
 <text name="tip_morph_f10_b8">Tip: Morph-gun rounds can't be intercepted, as they fly towards their targets through a parallel dimension. Not even shields can stop them.\n \n Fire Chance: 100%\n Breach Chance: 0%</text>
 <text name="tip_morph_f10_b9">Tip: Morph-gun rounds can't be intercepted, as they fly towards their targets through a parallel dimension. Not even shields can stop them.\n \n Fire Chance: 100%\n Breach Chance: 0%</text>
 <text name="tip_morph_f10_b10">Tip: Morph-gun rounds can't be intercepted, as they fly towards their targets through a parallel dimension. Not even shields can stop them.\n \n Fire Chance: 100%\n Breach Chance: 0%</text>
-
+<!-- 1.28 -->
+<text name="tip_magman_f10_b0">Совет: Снаряды пироформера невозможно сбить, так как они летят к цели сквозь параллельное измерение. Щиты не могут их остановить.\n \n Шанс возгорания: 100%\n Шанс пробить корпус: 0%</text>
 
 <!-- just chances -->
 <text name="tip_nothing_f0_b0">Fire Chance: 0%\n Breach Chance: 0%</text>

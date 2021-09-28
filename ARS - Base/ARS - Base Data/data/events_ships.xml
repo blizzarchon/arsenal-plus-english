@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-
+<FTL>
 <!-- Copyright (c) 2012 by Subset Games. All rights reserved -->
 
 <!-- ROCK_FIGHT texts need to be translated, but I'm pretty sure that's it for this file  -->
@@ -246,17 +246,21 @@ Special:
 <ship name="SQUAT_PIRATE_MERCENARY" auto_blueprint="SHIPS_PIRATE"> <!-- 1.23 -->
 	<surrender min="3" max="4">
 		<text>They hail your ship saying, "You win! We're not cut out for this!"</text>
-		<choice>
-			<text>Forget your promise, they die!</text>
-			<event/>
-		</choice>
-		<choice hidden="true" req="slug" lvl="0" max_group="0" blue="false">
+		<choice hidden="true" req="SLUG_AND_ARMORED_SLUG" lvl="0" max_group="0" blue="false"><!-- 1.28 req was slug -->
 			<text>Let them live and then return to the settlement.</text>
 			<event load="SQUAT_PIRATE_MERCENARY_REW"/>
 		</choice>
 		<choice hidden="false" req="slug" lvl="1" max_group="0" blue="true">
 			<text>(Slug Crewmember) Your Slug knows what they are going to offer you as a reward.</text>
 			<event load="SQUAT_PIRATE_MERCENARY_REW"/>
+		</choice>
+		<choice hidden="false" req="slug_armored" lvl="1" max_group="0" blue="true"><!-- 1.28, Blizz added separate choice in favor of DI -->
+			<text>(Slug Crewmember) Your Slug knows what they are going to offer you as a reward.</text>
+			<event load="SQUAT_PIRATE_MERCENARY_REW"/>
+		</choice>
+		<choice hidden="true" req="engines" blue="false" max_group="1"><!-- Blizz reorganized to vanilla -->
+			<text>Forget your promise, they die!</text>
+			<event/>
 		</choice>
 	</surrender>
 	<destroyed>
@@ -831,25 +835,33 @@ Special:
 	<destroyed>
 		<text>The Mantis ship breaks apart.</text>
 		<autoReward level="MED">standard</autoReward>
-		<choice hidden="true" req="slug" lvl="0" max_group="0" blue="false"> <!-- 1.25 -->
+		<choice hidden="true" req="SLUG_AND_ARMORED_SLUG" lvl="0" max_group="0" blue="false"> <!-- 1.25 | 1.28 req was slug -->
 			<text>Attempt to contact the Engi.</text>
 			<event load="SAVE_ENGI_STATION"/>    
 		</choice>
 		<choice hidden="true" req="slug" lvl="1" max_group="0" blue="false"> <!-- 1.25 -->
 			<text>Attempt to contact the Engi.</text>
-			<event load="SAVE_ENGI_STATION_WITH_SLUG"/>    
+			<event load="SAVE_ENGI_STATION_WITH_SLUG"/>
+		</choice>
+		<choice hidden="true" req="slug_armored" lvl="1" max_group="0" blue="false"> <!-- 1.25 | 1.28 Blizz added separate choice in favor of DI -->
+			<text>Attempt to contact the Engi.</text>
+			<event load="SAVE_ENGI_STATION_WITH_SLUG"/>
 		</choice>
 	</destroyed>
 	<deadCrew>
 		<text>No more life signs detected on the Mantis ship. You hasten to contact the Engi.</text>
 		<autoReward level="HIGH">standard</autoReward>
-		<choice hidden="true" req="slug" lvl="0" max_group="0" blue="false"> <!-- 1.25 -->
+		<choice hidden="true" req="SLUG_AND_ARMORED_SLUG" lvl="0" max_group="0" blue="false"> <!-- 1.25 | 1.28 req was slug -->
 			<text>Attempt to contact the Engi.</text>
 			<event load="SAVE_ENGI_STATION"/>    
 		</choice>
 		<choice hidden="true" req="slug" lvl="1" max_group="0" blue="false"> <!-- 1.25 -->
 			<text>Attempt to contact the Engi.</text>
-			<event load="SAVE_ENGI_STATION_WITH_SLUG"/>    
+			<event load="SAVE_ENGI_STATION_WITH_SLUG"/>
+		</choice>
+		<choice hidden="true" req="slug_armored" lvl="1" max_group="0" blue="false"> <!-- 1.25 | 1.28 Blizz added separate choice in favor of DI -->
+			<text>Attempt to contact the Engi.</text>
+			<event load="SAVE_ENGI_STATION_WITH_SLUG"/>
 		</choice>
 	</deadCrew>
 </ship>
@@ -1657,19 +1669,23 @@ Special:
 <ship name="CRYSTAL_SHIP" auto_blueprint="SHIPS_CRYSTAL">   
 	<surrender  chance="0.6" min="3" max="4">
 		<text load="CRYSTAL_SHIP_SURRENDER"/>
-		<choice hidden="true" req="slug" lvl="0" max_group="0" blue="false">
+		<choice hidden="true" req="SLUG_AND_ARMORED_SLUG" lvl="0" max_group="0" blue="false"><!-- 1.28 req was slug -->
 			<text>Accept their surrender.</text>
 			<event load="CRYSTAL_SHIP_SURRENDER"/>
-		</choice>
-		<choice hidden="true">
-			<text>Ignore them.</text>
-			<event>
-				<text>You cut off communications and prepare to finish them off.</text>
-			</event>
 		</choice>
 		<choice hidden="false" req="slug" lvl="1" max_group="0" blue="true">
 			<text>(Slug Crewmember) Your Slug knows what they want to give you.</text>
 			<event load="CRYSTAL_SHIP_SURRENDER"/>
+		</choice>
+		<choice hidden="false" req="slug_armored" lvl="1" max_group="0" blue="true"><!-- 1.28, Blizz added separate choice in favor of DI -->
+			<text>(Slug Crewmember) Your Slug knows what they want to give you.</text>
+			<event load="CRYSTAL_SHIP_SURRENDER"/>
+		</choice>
+		<choice hidden="true" req="engines" blue="false" max_group="1"><!-- Blizz reorganized to vanilla -->
+			<text>Ignore them.</text>
+			<event>
+				<text>You cut off communications and prepare to finish them off.</text>
+			</event>
 		</choice>
 	</surrender>
 	<destroyed load="DESTROYED_DEFAULT"/>
@@ -1848,5 +1864,76 @@ Special:
 	</deadCrew>
 </ship>
 
+<!-- 1.28 -->
+<ship name="ORCHID_SHIP" auto_blueprint="SHIPS_ORCHID"> 
+	<surrender chance="0.7" min="3" max="5" load="ORCHID_SURRENDER"/>
+	<destroyed load="DESTROYED_DEFAULT"/>
+	<deadCrew load="DEAD_CREW_DEFAULT"/>
+	<crew>
+		<crewMember type="orchid" prop="0.7"/>
+		<crewMember type="mushroom" prop="0.1"/>
+		<crewMember type="mushroom_b" prop="0.1"/>
+		<crewMember type="mushroom_f" prop="0.1"/>
+	</crew>
+</ship>
 
+<ship name="SHELL_SHIP" auto_blueprint="SHIPS_SHELL">
+	<destroyed load="DESTROYED_DEFAULT"/>
+	<deadCrew load="DEAD_CREW_SHELL"/>
+	<weaponOverride count="2">
+		<name>BOMB_DELAY_FIRE_STUN</name>
+		<name>BOMB_DELAY_BIO</name>
+		<name>W_LASER_HULL_BASIC</name>
+		<name>W_LASER_HULL_1_UPGRADED</name>
+		<name>W_LASER_HULL_2_UPGRADED</name>
+	</weaponOverride>
+</ship>
 
+<event name="DEAD_CREW_SHELL">
+	<text load="DEAD_CREW_SHELL_TEXT"/>
+	<choice req="slug" lvl="0" hidden="true" max_group="0" blue="false">
+		<text id="continue"/>
+		<event load="DEAD_CREW_DEFAULT"/>
+	</choice>
+	<choice req="slug" lvl="1" hidden="true" max_group="0" blue="false">
+		<text id="continue"/>
+		<event load="DEAD_CREW_SHELL_WITH_SLUG"/>
+	</choice>
+</event>
+
+<textList name="DEAD_CREW_SHELL_TEXT">
+	<text>The last wounded Shell makes a nasty squeak and dies...</text><!-- "terrible sound"? -->
+	<text>A wounded Shell is rolling around the ship in agony, and you finish them off in cold blood.</text>
+	<text>The mortally wounded Shell captain screeches desperately, but the sound soon subsides...</text>
+</textList>
+
+<eventList name="DEAD_CREW_SHELL_WITH_SLUG">
+	<event>
+		<text>While you're busy taking useful supplies from their ship, your Slug has become interested in the armor of one of the dead Shells...</text>
+		<autoReward level="RANDOM">standard</autoReward>
+		<choice hidden="true">
+			<text>Let the Slug take the carapace.</text>
+			<event><!-- I can probably make this sound badass ;) -->
+				<text>The Slug slithers inside with a satisfied look. Now their fragile body is protected for close combat! In honor of this event, the Slug chooses a new name...</text>
+				<crewMember amount="-1" class="slug"/>
+				<choice hidden="true">
+					<text id="continue"/>
+					<event>
+						<crewMember amount="1" class="slug_armored"/>
+					</event>
+				</choice>
+			</event>
+		</choice>
+		<choice hidden="true">
+			<text>Order them to discard the armor.</text>
+			<event>
+				<text>Your Slug hisses angrily, but obeys.</text>
+			</event>
+		</choice>
+	</event>
+	<event load="DEAD_CREW_DEFAULT"/>
+	<event load="DEAD_CREW_DEFAULT"/>
+	<event load="DEAD_CREW_DEFAULT"/>
+</eventList>
+
+</FTL>

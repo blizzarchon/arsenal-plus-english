@@ -3,7 +3,7 @@
 <!-- Copyright (c) 2012 by Subset Games. All rights reserved -->
 
 <!--     ' ,  " " "
-			SUMMARY  — 
+			SUMMARY  â€” 
 A list of all main events to be called by lists
 	does not include sub-events)
 	
@@ -135,7 +135,7 @@ Special
 	<text>Merchants are not highly respected among the Mantis race, so few undertake the profession. You're mildly surprised to receive an advertisement from a nearby space dock. You decide to see what they have to offer.</text>
 	<text>Identifying a Mantis trading post ahead, you signal them so that your approach won't be taken as a threat. The leader hails you: "You have scrap? Quickly, come dock before the warriors see you."</text>
 	<text>A struggling Mantis cargo ship headed for the node raises what's left of shields as you jump in. You power up your weapons as a show of force, and they reluctantly agree to offload some of their cargo to you - for a price.</text>
-	<text>The Rebels are already here! The crew braces for impact, but none comes. The sensors report the unmanned rebel supply ship is malfunctioning and is stuck in vending mode — for a little scrap you can take your pick.</text>
+	<text>The Rebels are already here! The crew braces for impact, but none comes. The sensors report the unmanned rebel supply ship is malfunctioning and is stuck in vending mode â€” for a little scrap you can take your pick.</text>
 </textList>
 
 <event name="NOTHING_MANTIS">
@@ -465,6 +465,13 @@ Special
 		<text>(Lifeform Scanner) Scan what is inside.</text>
 		<event load="MANTIS_SCAN_CREW_LIST"/>
 	</choice>
+	<choice hidden="true" req="orchid"> <!-- 1.28 -->
+		<text>(Orchid Crew Member) Заполнить отсек успокаивающим ароматом перед тем, как вскрыть капсулу.</text>
+		<event>
+			<text>Находившийся внутри мантис отдыхал. После пробуждения, он рад вдохнуть свежего воздуха и свободно двигать конечностями. Мантис предлагает присоединиться к вашему экипажу до тех пор, пока не найдёт дорогу домой.</text>
+			<crewMember amount="1" class="mantis"/>
+		</event>
+	</choice>
 </event>
 <eventList name="MANTIS_SCAN_CREW_LIST">	
 	<event>
@@ -643,13 +650,13 @@ Special
 				<text>(Improved Medbay) Quickly teleport him back to the medbay.</text>
 				<event>
 					<text>Your haste has paid off and you are able to bring him back from the brink of death. When his senses return he says, "I never thought I would see this day, but... I am willing to devote myself and my ships to your cause."</text>
-					<choice hidden="true">  <!-- NOTE � Add other options?-->
+					<choice hidden="true">  <!-- NOTE — Add other options?-->
 						<text>Accept.</text>
 						<event>
 							<text>KazaaakplethKilik joins your crew, offers the coordinates for a nearby stash of stolen military goods and transmits the coordinates for a custom cruiser he has been working on. You forward it to the Federation, sure they can make good use of it.</text>
 							<augment name="CREW_STIMS"/>
 							<autoReward level="HIGH">scrap_only</autoReward>
-							<crewMember amount="1" class="mantis" all_skills="2">Kazaaak</crewMember>  <!-- NOTE � Make him a special unique character/color?  At least give him the right name? -->
+							<crewMember amount="1" class="mantis" all_skills="2">Kazaaak</crewMember>  <!-- NOTE — Make him a special unique character/color?  At least give him the right name? -->
 							<quest event="MANTIS_NAMED_THIEF_STASH"/>
 							<unlockShip id="2">A Mantis cruiser has been unlocked and added to the hangar!</unlockShip>
 						</event>
@@ -660,13 +667,13 @@ Special
 				<text>(Improved Clonebay) Quickly configure the Clonebay to save him.</text>
 				<event>
 					<text>Your haste has paid off and you register him into the Clonebay's database. After he passes away he is quickly reconstructed on board your ship. When his senses return he says, "I never thought I would see this day, but... I am willing to devote myself and my ships to your cause."</text>
-					<choice hidden="true">  <!-- NOTE � Add other options?-->
+					<choice hidden="true">  <!-- NOTE — Add other options?-->
 						<text>Accept.</text>
 						<event>
 							<text>KazaaakplethKilik joins your crew, offers the coordinates for a nearby stash of stolen military goods and transmits the coordinates for a custom cruiser he has been working on. You forward it to the Federation, sure they can make good use of it.</text>
 							<augment name="CREW_STIMS"/>
 							<autoReward level="HIGH">scrap_only</autoReward>
-							<crewMember amount="1" class="mantis" all_skills="2">Kazaaak</crewMember>  <!-- NOTE � Make him a special unique character/color?  At least give him the right name? -->
+							<crewMember amount="1" class="mantis" all_skills="2">Kazaaak</crewMember>  <!-- NOTE — Make him a special unique character/color?  At least give him the right name? -->
 							<quest event="MANTIS_NAMED_THIEF_STASH"/>
 							<unlockShip id="2">A Mantis cruiser has been unlocked and added to the hangar!</unlockShip>
 						</event>
@@ -698,13 +705,13 @@ Special
 				<text>(Improved Medbay) Dock and quickly take him back to the medbay.</text>
 				<event>
 					<text>Your haste has paid off and you are able to bring him back from the brink of death. When his senses return he says, "I never thought I would see this day, but... I am willing to devote myself and my ships to your cause."</text>
-					<choice hidden="true">  <!-- NOTE � Add other options?-->
+					<choice hidden="true">  <!-- NOTE — Add other options?-->
 						<text>Accept.</text>
 						<event>
 							<text>KazaaakplethKilik joins your crew, offers the coordinates for a nearby stash of stolen military goods and transmits the coordinates for a custom cruiser he has been working on. You forward it to the Federation, sure they can make good use of it.</text>
 							<augment name="CREW_STIMS"/>
 							<autoReward level="HIGH">scrap_only</autoReward>
-							<crewMember amount="1" class="mantis" all_skills="2">Kazaaak</crewMember>  <!-- NOTE � Make him a special unique character/color?  At least give him the right name? -->
+							<crewMember amount="1" class="mantis" all_skills="2">Kazaaak</crewMember>  <!-- NOTE — Make him a special unique character/color?  At least give him the right name? -->
 							<quest event="MANTIS_NAMED_THIEF_STASH"/>
 							<unlockShip id="2">A Mantis cruiser has been unlocked and added to the hangar!</unlockShip>
 						</event>
@@ -715,13 +722,13 @@ Special
 				<text>(Improved Clonebay) Quickly configure the Clonebay to save him.</text>
 				<event>
 					<text>Your haste has paid off and you register him into the Clonebay's database. After he passes away he is quickly reconstructed on board your ship. When his senses return he says, "I never thought I would see this day, but... I am willing to devote myself and my ships to your cause."</text>
-					<choice hidden="true">  <!-- NOTE � Add other options?-->
+					<choice hidden="true">  <!-- NOTE — Add other options?-->
 						<text>Accept.</text>
 						<event>
 							<text>KazaaakplethKilik joins your crew, offers the coordinates for a nearby stash of stolen military goods and transmits the coordinates for a custom cruiser he has been working on. You forward it to the Federation, sure they can make good use of it.</text>
 							<augment name="CREW_STIMS"/>
 							<autoReward level="HIGH">scrap_only</autoReward>
-							<crewMember amount="1" class="mantis" all_skills="2">Kazaaak</crewMember>  <!-- NOTE � Make him a special unique character/color?  At least give him the right name? -->
+							<crewMember amount="1" class="mantis" all_skills="2">Kazaaak</crewMember>  <!-- NOTE — Make him a special unique character/color?  At least give him the right name? -->
 							<quest event="MANTIS_NAMED_THIEF_STASH"/>
 							<unlockShip id="2">A Mantis cruiser has been unlocked and added to the hangar!</unlockShip>
 						</event>

@@ -1198,7 +1198,7 @@ SHIPS
 	<aug name="EXPLOSIVE_REPLICATOR"/>
 </shipBlueprint>
 
-<shipBlueprint name="PLAYER_SHIP_ROCK_2" layout="rock_cruiser_2" img="rock_cruiser_2">
+<shipBlueprint name="PLAYER_SHIP_ROCK_2" layout="rock_cruiser_2" img="rock_cruiser_2"><!-- 1.28 --> <!-- floor move left by 1 pxl -->
 	<class>Rock Cruiser</class>
 	<name>Shivan</name> 
 	<unlock>Complete 2/3 of the Rock Cruiser Achievements to unlock this ship.</unlock>
@@ -1919,7 +1919,7 @@ TRAINING SHIPS
 		<medbay power="1" max="2" room="5"/>   
 		<engines power="3" max = "6" room="8"/> <!-- 1.23: min is now 3, was 2 -->
 		<oxygen power="1" max="2" room="7"/>
-		<hacking power="1" max="3" room="11" start="false"/> <!-- 1.26 max was 2, room was 2-->
+		<hacking power="1" max="3" room="4" start="false"/> <!-- 1.28 room was 11 | 1.26 max was 2, room was 2 -->
 		<mind power="1" max="3" room="2" start="false"/> <!-- 1.26 max was 2, room was 3 -->
 		<artillery power="1" max="4" room="9" weapon="ARTILLERY_BOSS_1"/>
 		<artillery power="1" max="4" room="10" weapon="ARTILLERY_BOSS_2"/>
@@ -2028,7 +2028,7 @@ TRAINING SHIPS
 		<level>40</level> <!-- level 2 -->
 		<level>70</level> <!-- level 3 -->
 	</upgradeCost>
-	<cost>100</cost>  <!--CHANGED was 75-->
+	<cost>85</cost>  <!-- 1.28 was 100 | CHANGED was 75 -->
 	<locked>1</locked>
 </systemBlueprint>
 
@@ -2085,12 +2085,12 @@ TRAINING SHIPS
 	<rarity>1</rarity>
 	<upgradeCost>
 		<level>100</level> <!-- level 2 -->
-		<level>20</level> <!-- level 3 -->
+		<level>10</level> <!-- level 3 --><!-- 1.28 was 20 -->
 		<level>30</level> <!-- level 4 -->
 		<level>40</level> <!-- level 5 -->
 		<level>60</level> <!-- level 6 -->
 		<level>80</level> <!-- level 7 -->
-		<level>85</level> <!-- level 8 -->
+		<level>100</level> <!-- level 8 --><!-- 1.28 was 85 -->
 		<level>90</level> <!-- Imaginary level 9 -->
 	</upgradeCost>
 	<cost>120</cost>
@@ -2145,9 +2145,9 @@ TRAINING SHIPS
 		<level>35</level> <!-- level 4 -->
 		<level>50</level> <!-- level 5 -->
 		<level>70</level> <!-- level 6 -->
-		<level>95</level> <!-- level 7 -->
-		<level>125</level> <!-- level 8 -->
-		<level>130</level> <!-- Imaginary level 9 -->
+		<level>100</level> <!-- level 7 --> <!-- 1.28 was 95 -->
+		<level>150</level> <!-- level 8 --> <!-- 1.28 was 125 -->
+		<level>180</level> <!-- Imaginary level 9 --> <!-- 1.28 was 130 -->
 	</upgradeCost>
 	<cost>20</cost>
 </systemBlueprint>
@@ -2188,7 +2188,7 @@ TRAINING SHIPS
 
 <systemBlueprint name="doors">
 	<type>doors</type>
-	<title>Door Control</title>
+	<title>Door Control</title><!-- 1.28 new Russian, gateways, locks? -->
 	<desc>Remote interior door and airlock control. Upgrades to Blast Doors that impede fire and intruder movement.</desc>
 	<startPower>1</startPower>
 	<maxPower>3</maxPower>
@@ -2394,11 +2394,11 @@ Can be applied to any weapon.</desc>
 
 <augBlueprint name="CREW_STIMS">
 	<title>Mantis Pheromones</title>
-	<desc>Your crew's movement speed is increased by 50 percent.</desc><!-- originally 25% -->
+	<desc>Your crew's movement speed is greatly increased.</desc><!-- 1.28 was 'is increased by 50 percent' | originally 25% -->
 	<cost>50</cost>
 	<bp>9</bp>
 	<rarity>0</rarity>
-	<value>0.50</value><!-- originally 0.25 -->
+	<value>5</value><!-- 1.28 was 0.50 | originally 0.25 -->
 	<stackable>false</stackable>
 </augBlueprint>
 
@@ -2509,7 +2509,7 @@ Can be applied to any weapon.</desc>
 </augBlueprint>
 
 <augBlueprint name="ROCK_ARMOR"> 
-	<title>Rock Armor Plating </title>
+	<title>Rock Armor Plating</title>
 	<desc>Superior hull armor provides a 33 percent chance to negate incoming hull damage (hit systems will still be damaged).</desc><!-- 1.26.5+ desc not changed was 25 percent -->
 	<cost>70</cost>
 	<bp>8</bp>
@@ -3341,7 +3341,7 @@ Can be applied to any weapon.</desc>
 	<bp>4</bp>
 	<rarity>0</rarity>
 	<powerList>
-		<power> Lockdown power (activate in crew box)</power> <!-- The ability to seal rooms with crystal shards | seal? pick up -->
+		<power> Ability: Locks down rooms</power> <!-- 1.28 was 'Lockdown power (activate in crew box)' | The ability to seal rooms with crystal shards | seal? pick up -->
 		<power> Reduced suffocation damage</power>
 		<power> Movement speed reduced by 20%</power>
 		<power> Max Health is increased to 125</power>
@@ -4664,6 +4664,128 @@ Some other weapon must be powered in order for it to work.</desc>
 	<weaponArt>ce_minelauncher_invisible</weaponArt> <!-- 1.24, probably so that nothing juts out? i don't know -->
 </weaponBlueprint>
 
+<!-- Player's artillery -->
+<weaponBlueprint name="ARTILLERY_MUSHROOM"> <!-- 1.28 -->
+	<type>LASER</type>
+	<title>Ионная фазовая артиллерия</title>
+	<short>Ионная фазовая артиллерия</short>
+	<desc>Отключает системы тройным тяжёлым фазовым ионным снарядом, не причиняя урона корпусу корабля. Оглушает экипаж на 10 сек. [40 ‡]</desc>
+	<tooltip>Отключает системы тройным тяжёлым фазовым ионным снарядом, не причиняя урона корпусу корабля. Оглушает экипаж на 10 сек. [40 ‡]</tooltip>
+	<damage>0</damage>
+	<stun>10</stun>
+	<ion>2</ion>
+	<sysDamage>0</sysDamage>
+	<speed>30</speed>
+	<shots>3</shots>
+	<sp>5</sp>
+	<spin>720</spin>
+	<fireChance>0</fireChance>
+	<breachChance>0</breachChance>
+	<cooldown>40.2</cooldown>
+	<power>1</power>
+	<cost>85</cost>
+	<bp>4</bp>
+	<rarity>0</rarity>
+	<image>ion_heavy_3_shot</image>
+	<explosion>ba_explosion_ion_hit_heavy</explosion>
+	<launchSounds>
+		<sound>ionShoot1</sound>
+		<sound>ionShoot2</sound>
+		<sound>ionShoot3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>ionHit1</sound>
+		<sound>ionHit2</sound>
+		<sound>ionHit3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>ionHit1</sound>
+		<sound>ionHit1</sound>
+		<sound>ionHit1</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>musgroom_art</weaponArt> 
+</weaponBlueprint>
+
+<weaponBlueprint name="ARTILLERY_SHELL"> <!-- 1.28 -->
+	<type>BOMB</type>
+	<tip>tip_bombs_f0_b0</tip>
+	<title>Разъедающий газ</title>
+	<short>Разъедающий газ</short>
+	<desc>Телепортируемое взрывное устройство. Наносит 150 урона экипажу. Взрыв задержан на 10 секунд. Не тратит боеприпасы. [10 ‡]</desc>
+	<tooltip>Телепортируемое взрывное устройство. Наносит 150 урона экипажу. Взрыв задержан на 10 секунд. Не тратит боеприпасы. [10 ‡]</tooltip>
+	<damage>0</damage>
+	<persDamage>10</persDamage>
+	<missiles>0</missiles>
+	<shots>1</shots>
+	<sp>0</sp>
+	<fireChance>0</fireChance>
+	<breachChance>0</breachChance>
+	<cooldown>10</cooldown>
+	<power>1</power>
+	<cost>40</cost>
+	<bp>4</bp>
+	<rarity>0</rarity>
+	<image>bomb_delay_bio_bomb</image>
+	<explosion>ba_explosion_artillery_hit</explosion>
+	<launchSounds>
+		<sound>bombTeleport</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>slurm_hit</sound>
+	</hitShipSounds>
+	<weaponArt>bomb_delay_bio_launcher</weaponArt>
+	<iconImage>bomb</iconImage>
+</weaponBlueprint>
+
+
+<weaponBlueprint name="ARTILLERY_ORCHID"><!-- 1.28 -->
+	<type>MISSILES</type>
+	<title>Цепной зерномёт</title>
+	<short>Цепной зерномёт</short>
+	<tip>tip_missiles_f0_b5</tip>
+	<desc>Стреляет зёрнами сквозь все щиты. Разгоняется с каждым выстрелом. Не тратит боеприпасы. [40 ‡]</desc>
+	<tooltip>Стреляет зёрнами сквозь все щиты. Разгоняется с каждым выстрелом. Не тратит боеприпасы. [40 ‡]</tooltip>
+	<damage>1</damage>
+	<missiles>0</missiles>
+	<shots>1</shots>
+	<sp>5</sp>
+	<stun>5</stun>
+	<fireChance>0</fireChance>
+	<breachChance>5</breachChance>
+	<cooldown>40.2</cooldown>
+	<power>1</power>
+	<cost>40</cost>
+	<bp>6</bp>
+	<rarity>0</rarity>
+	<image>kernel_projectile</image>
+	<boost>
+		<type>cooldown</type>
+		<amount>10</amount>
+		<count>3</count>
+	</boost>
+	<launchSounds>
+		<sound>kernel_launch1</sound>
+		<sound>kernel_launch2</sound>
+		<sound>kernel_launch3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>smallExplosion</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>orchid_artillery</weaponArt>
+	<iconImage>bomb</iconImage>
+</weaponBlueprint>
+
 <weaponBlueprint name="ARTILLERY_FED">
 	<type>BEAM</type>
 	<title>Vindicator Beam Artillery</title><!-- had to name this vindicator otherwise it would be too generic -->
@@ -4812,7 +4934,7 @@ Some other weapon must be powered in order for it to work.</desc>
 	<damage>0</damage>
 	<stun>5</stun><!-- 1.26.1 removed stunChance of 4 -->
 	<ion>4</ion>
-	<sysDamage>3</sysDamage><!-- 1.26.1 was 4 -->
+	<sysDamage>4</sysDamage><!-- 1.28 was 3 | 1.26.1 was 4 -->
 	<speed>30</speed>
 	<shots>1</shots>
 	<sp>0</sp>
@@ -7875,6 +7997,7 @@ Some other weapon must be powered in order for it to work.</desc>
 	<type>BURST</type>
 	<flavorType>Single-Charge Installation</flavorType>
 	<tip>tip_ozu_f0_b1</tip>
+	<drone_targetable>1</drone_targetable> <!-- 1.28 -->
 	<title>Flak Single-Charge Mark I</title>
 	<short>Flak S-Ch. I</short>
 	<desc>Fires one small salvo of debris over a wide area.</desc>
@@ -7924,6 +8047,7 @@ Some other weapon must be powered in order for it to work.</desc>
 	<type>BURST</type>
 	<flavorType>Single-Charge Installation</flavorType>
 	<tip>tip_ozu_f0_b2</tip>
+	<drone_targetable>1</drone_targetable> <!-- 1.28 -->
 	<title>Flak Single-Charge Mark II</title>
 	<short>Flak S-Ch. II</short>
 	<desc>Fires one medium salvo of debris over a wide area.</desc>
@@ -7973,6 +8097,7 @@ Some other weapon must be powered in order for it to work.</desc>
 	<type>BURST</type>
 	<flavorType>Single-Charge Installation</flavorType>
 	<tip>tip_ozu_f0_b3</tip>
+	<drone_targetable>1</drone_targetable> <!-- 1.28 -->
 	<title>Flak Single-Charge Mark III</title>
 	<short>Flak S-Ch. III</short>
 	<desc>Fires one powerful salvo of debris over a wide area.</desc>
@@ -8172,7 +8297,7 @@ Some other weapon must be powered in order for it to work.</desc>
 	<sp>5</sp>
 	<fireChance>0</fireChance>
 	<breachChance>0</breachChance>
-	<cooldown>13</cooldown>
+	<cooldown>11</cooldown> <!-- 1.28 was 13 --> <!-- rebalance -->
 	<power>2</power>
 	<cost>70</cost>
 	<bp>7</bp>
@@ -8210,7 +8335,7 @@ Some other weapon must be powered in order for it to work.</desc>
 	<sp>5</sp>
 	<fireChance>0</fireChance>
 	<breachChance>0</breachChance>
-	<cooldown>13</cooldown>
+	<cooldown>11</cooldown> <!-- 1.28 was 13 --> <!-- rebalance -->
 	<power>2</power>
 	<cost>85</cost>
 	<bp>7</bp>
@@ -8248,7 +8373,7 @@ Some other weapon must be powered in order for it to work.</desc>
 	<sp>5</sp>
 	<fireChance>0</fireChance>
 	<breachChance>0</breachChance>
-	<cooldown>13</cooldown>
+	<cooldown>11</cooldown> <!-- 1.28 was 13 --> <!-- rebalance -->
 	<power>2</power>
 	<cost>100</cost>
 	<bp>7</bp>
@@ -8287,7 +8412,7 @@ Some other weapon must be powered in order for it to work.</desc>
 	<sp>0</sp>
 	<fireChance>0</fireChance>
 	<breachChance>2</breachChance>
-	<cooldown>14</cooldown><!-- 1.25, was 15 -->
+	<cooldown>12</cooldown><!-- 1.28 was 14 | 1.25, was 15 -->
 	<power>1</power>
 	<cost>55</cost>
 	<bp>10</bp>
@@ -8330,7 +8455,7 @@ Some other weapon must be powered in order for it to work.</desc>
 	<sp>0</sp>
 	<fireChance>0</fireChance>
 	<breachChance>3</breachChance>
-	<cooldown>14</cooldown><!-- 1.25, was 15 -->
+	<cooldown>12</cooldown><!-- 1.28 was 14 | 1.25, was 15 -->
 	<power>1</power>
 	<cost>75</cost>
 	<bp>10</bp>
@@ -8373,7 +8498,7 @@ Some other weapon must be powered in order for it to work.</desc>
 	<sp>0</sp>
 	<fireChance>0</fireChance>
 	<breachChance>2</breachChance>
-	<cooldown>17</cooldown><!-- 1.25, was 19 -->
+	<cooldown>15</cooldown><!-- 1.28 was 17 | 1.25, was 19 -->
 	<power>2</power>
 	<cost>70</cost>
 	<bp>10</bp>
@@ -8416,7 +8541,7 @@ Some other weapon must be powered in order for it to work.</desc>
 	<sp>0</sp>
 	<fireChance>0</fireChance>
 	<breachChance>3</breachChance>
-	<cooldown>17</cooldown><!-- 1.25, was 19 -->
+	<cooldown>15</cooldown><!-- 1.28 was 17 | 1.25, was 19 -->
 	<power>2</power>
 	<cost>90</cost>
 	<bp>10</bp>
@@ -8507,7 +8632,7 @@ Some other weapon must be powered in order for it to work.</desc>
 	<breachChance>0</breachChance>
 	<cooldown>10</cooldown>
 	<power>1</power>
-	<cost>35</cost>
+	<cost>25</cost> <!-- 1.28 was 35 --> <!-- rebalance -->
 	<bp>2</bp>
 	<rarity>2</rarity>
 	<image>arrow_laser_1</image>
@@ -8545,7 +8670,7 @@ Some other weapon must be powered in order for it to work.</desc>
 	<breachChance>0</breachChance>
 	<cooldown>7</cooldown>
 	<power>1</power>
-	<cost>45</cost>
+	<cost>35</cost> <!-- 1.28 was 45 --> <!-- rebalance -->
 	<bp>2</bp>
 	<rarity>3</rarity>
 	<image>arrow_laser_1</image>
@@ -8659,9 +8784,9 @@ Some other weapon must be powered in order for it to work.</desc>
 	<sp>2</sp>
 	<fireChance>1</fireChance>
 	<breachChance>8</breachChance>
-	<cooldown>18</cooldown><!-- 1.25 was 21 -->
+	<cooldown>16</cooldown><!-- 1.28 was 18 | 1.25 was 21 -->
 	<power>4</power>
-	<cost>110</cost>
+	<cost>100</cost> <!-- 1.28 was 110 --> <!-- rebalance -->
 	<bp>7</bp>
 	<rarity>5</rarity>
 	<image>rail_driver_shot</image>
@@ -8696,9 +8821,9 @@ Some other weapon must be powered in order for it to work.</desc>
 	<sp>0</sp>
 	<fireChance>3</fireChance>
 	<breachChance>3</breachChance>
-	<cooldown>14</cooldown> <!-- was 13 -->
+	<cooldown>13</cooldown> <!-- 1.28 was 14 | was 13 -->
 	<power>2</power>
-	<cost>65</cost>
+	<cost>50</cost><!-- 1.28 was 65 --> <!-- rebalance -->
 	<bp>6</bp>
 	<rarity>4</rarity>
 	<image>laser_heavy1</image>
@@ -8742,7 +8867,7 @@ Some other weapon must be powered in order for it to work.</desc>
 	<breachChance>0</breachChance>
 	<cooldown>11.1</cooldown>
 	<power>4</power>
-	<cost>110</cost><!--originally 95-->
+	<cost>95</cost><!-- 1.28 was 110 | originally 95 -->
 	<bp>2</bp>
 	<rarity>5</rarity>
 	<image>laser_light1</image>
@@ -8788,7 +8913,7 @@ Some other weapon must be powered in order for it to work.</desc>
 	<breachChance>0</breachChance>
 	<cooldown>12.5</cooldown><!-- 1.25, was 13 -->
 	<power>4</power>
-	<cost>125</cost><!--originally 95-->
+	<cost>105</cost><!-- 1.28 was 125 | originally 95 -->
 	<bp>2</bp>
 	<rarity>5</rarity>
 	<image>laser_minigun_brust</image> <!-- 1.22 --> <!-- changed .png -->
@@ -8918,7 +9043,7 @@ Some other weapon must be powered in order for it to work.</desc>
 	<persDamage>0</persDamage>
 	<cooldown>5</cooldown>
 	<power>2</power>
-	<cost>70</cost>
+	<cost>50</cost><!-- 1.28 was 70 --> <!-- rebalance -->
 	<bp>7</bp>
 	<rarity>4</rarity>
 	<image>laser_light2</image>
@@ -9221,7 +9346,7 @@ Some other weapon must be powered in order for it to work.</desc>
 	<breachChance>0</breachChance>
 	<cooldown>10</cooldown>
 	<power>3</power>
-	<cost>100</cost>
+	<cost>80</cost> <!-- 1.28 was 100 --> <!-- rebalance -->
 	<bp>2</bp>
 	<rarity>5</rarity>
 	<image>rwp_laser_fire</image>
@@ -9348,7 +9473,7 @@ Some other weapon must be powered in order for it to work.</desc>
 	<sp>0</sp>
 	<fireChance>0</fireChance>
 	<breachChance>0</breachChance>
-	<cooldown>6</cooldown> <!-- was 4.2-->
+	<cooldown>5</cooldown> <!-- 1.28 was 6 | was 4.2-->
 	<power>1</power>
 	<cost>50</cost>
 	<bp>2</bp>
@@ -9390,9 +9515,9 @@ Some other weapon must be powered in order for it to work.</desc>
 	<sp>0</sp>
 	<fireChance>1</fireChance>
 	<breachChance>0</breachChance>
-	<cooldown>6</cooldown> <!-- was 4.2-->
+	<cooldown>5</cooldown> <!-- 1.28 was 6 | was 4.2-->
 	<power>2</power>
-	<cost>35</cost> <!-- was 45-->
+	<cost>20</cost> <!-- 1.28 was 35 | was 45-->
 	<bp>2</bp>
 	<rarity>3</rarity>
 	<image>laser_light1</image>
@@ -9432,7 +9557,7 @@ Some other weapon must be powered in order for it to work.</desc>
 	<sp>0</sp>
 	<fireChance>1</fireChance>
 	<breachChance>0</breachChance>
-	<cooldown>5.5</cooldown> <!-- 1.25, was 6 -->
+	<cooldown>4.5</cooldown> <!-- 1.28 was 5.5 | 1.25, was 6 -->
 	<power>2</power>
 	<cost>55</cost>
 	<bp>2</bp>
@@ -9474,9 +9599,9 @@ Some other weapon must be powered in order for it to work.</desc>
 	<sp>0</sp>
 	<fireChance>1</fireChance>
 	<breachChance>0</breachChance>
-	<cooldown>5</cooldown>
-	<power>3</power>
-	<cost>60</cost>
+	<cooldown>4</cooldown><!-- 1.28 was 5 --> <!-- rebalance -->
+	<power>2</power><!-- 1.28 was 3 --> <!-- rebalance -->
+	<cost>75</cost><!-- 1.28 was 60 --> <!-- rebalance -->
 	<bp>2</bp>
 	<rarity>5</rarity>
 	<image>laser_light1</image>
@@ -9515,9 +9640,9 @@ Some other weapon must be powered in order for it to work.</desc>
 	<sp>0</sp>
 	<fireChance>1</fireChance>
 	<breachChance>0</breachChance>
-	<cooldown>4.5</cooldown><!-- 1.25, was 5 -->
-	<power>3</power>
-	<cost>80</cost>
+	<cooldown>3.5</cooldown><!-- 1.28 was 4.5 | 1.25, was 5 -->
+	<power>2</power><!-- 1.28 was 3 --> <!-- rebalance -->
+	<cost>95</cost><!-- 1.28 was 80 --> <!-- rebalance -->
 	<bp>2</bp>
 	<rarity>5</rarity>
 	<image>laser_light1</image>
@@ -9558,9 +9683,9 @@ Some other weapon must be powered in order for it to work.</desc>
 	<sp>0</sp>
 	<fireChance>1</fireChance>
 	<breachChance>0</breachChance>
-	<cooldown>10</cooldown> <!--originally 11-->
+	<cooldown>9</cooldown> <!-- 1.28 was 10 originally 11 -->
 	<power>2</power>
-	<cost>20</cost><!-- 1.23, was 15 -->
+	<cost>25</cost><!-- 1.28 was 20 | 1.23, was 15 -->
 	<bp>4</bp>
 	<rarity>1</rarity>
 	<image>laser_light1</image>
@@ -9596,9 +9721,9 @@ Some other weapon must be powered in order for it to work.</desc>
 	<sp>0</sp>
 	<fireChance>1</fireChance>
 	<breachChance>0</breachChance>
-	<cooldown>9</cooldown> <!-- 1.25.1, was 10 -->
+	<cooldown>8</cooldown> <!-- 1.28 was 9 | 1.25.1, was 10 -->
 	<power>1</power>
-	<cost>30</cost><!-- 1.26 was 40 | 1.23 was 30 -->
+	<cost>40</cost><!-- 1.28 was 30 | 1.26 was 40 | 1.23 was 30 -->
 	<bp>4</bp>
 	<rarity>0</rarity>
 	<image>laser_light1</image>
@@ -9630,16 +9755,16 @@ Some other weapon must be powered in order for it to work.</desc>
 	<short>Burst Laser II</short>
 	<tip>tip_laser_f1_b0</tip>
 	<!-- <desc>Slightly improved version of the burst laser that's able to make a greater number of shots in one charge cycle.</desc> -->
-	<!-- <desc>Well-known burst laser used by veterans across the galaxy. The combination of great efficiency and relative ease-of-use makes for an effective, versatile weapon.</desc> -->
-	<desc>Uncommon burst-fire laser renowned for its efficiency, yet not quite as responsive as everyone claims.</desc>
+	<desc>Well-known burst laser used by veterans across the galaxy. The combination of great efficiency and relative ease-of-use makes for an effective, versatile weapon.</desc>
+	<!-- <desc>Uncommon burst-fire laser renowned for its efficiency, yet not quite as responsive as everyone claims.</desc> -->
 	<damage>1</damage>
 	<shots>3</shots>
 	<sp>0</sp>
 	<fireChance>1</fireChance>
 	<breachChance>0</breachChance>
-	<cooldown>14</cooldown>
+	<cooldown>12.5</cooldown> <!-- 1.28 was 14 --> <!-- rebalance -->
 	<power>2</power>
-	<cost>60</cost><!-- 1.26 was 50 | vanilla 80 -->
+	<cost>80</cost><!-- 1.28 was 60 | 1.26 was 50 | vanilla 80 -->
 	<bp>7</bp>
 	<rarity>3</rarity>
 	<image>laser_light2</image>
@@ -9670,15 +9795,15 @@ Some other weapon must be powered in order for it to work.</desc>
 	<title>Custom Burst Laser Mark II</title>
 	<short>Burst Laser II+</short>
 	<tip>tip_laser_f1_b0</tip><!-- 'requires less power' or 'has reduced power consumption'?-->
-	<desc>This custom blueprint requires one less power, making for astounding efficiency, though is still a bit hard to handle.</desc>
+	<desc>This custom blueprint requires one less power, making for astounding efficiency.</desc><!-- , though is still a bit hard to handle.</desc> -->
 	<damage>1</damage>
 	<shots>3</shots>
 	<sp>0</sp>
 	<fireChance>1</fireChance>
 	<breachChance>0</breachChance>
-	<cooldown>13</cooldown> <!-- 1.25.1, was 14 -->
+	<cooldown>11.5</cooldown> <!-- 1.28 was 13 | 1.25.1, was 14 -->
 	<power>1</power>
-	<cost>90</cost><!-- 1.26 was 100 -->
+	<cost>120</cost><!-- 1.28 was 90 | 1.26 was 100 -->
 	<bp>7</bp>
 	<rarity>0</rarity>
 	<image>laser_light2</image>
@@ -9710,15 +9835,15 @@ Some other weapon must be powered in order for it to work.</desc>
 	<short>Burst Laser III</short>
 	<!-- <desc>Powerful burst laser that fires quite the volley of projectiles.</desc> -->
 	<!-- <desc>High-power burst laser wielded by heavily-armed ships of all kinds. Fires a powerful and effective volley of lasers, though somewhat slow to charge.</desc> -->
-	<desc>Powerful burst laser that fires quite the projectile volley, though is somewhat cumbersome to use.</desc>
+	<desc>Powerful burst laser that fires quite the projectile volley.</desc><!-- , though is somewhat cumbersome to use.</desc> ... not cumbersome anymore! -->
 	<damage>1</damage>
 	<shots>4</shots>
 	<sp>0</sp>
 	<fireChance>1</fireChance>
 	<breachChance>0</breachChance>
-	<cooldown>18</cooldown>
-	<power>3</power>
-	<cost>80</cost>
+	<cooldown>15</cooldown> <!-- 1.28 was 18 --> <!-- rebalance -->
+	<power>2</power> <!-- 1.28 was 3 --> <!-- rebalance -->
+	<cost>100</cost> <!-- 1.28 was 80 --> <!-- rebalance -->
 	<bp>8</bp>
 	<rarity>4</rarity>
 	<image>laser_light2</image>
@@ -9748,15 +9873,15 @@ Some other weapon must be powered in order for it to work.</desc>
 	<tip>tip_laser_f1_b0</tip>
 	<title>Custom Burst Laser Mark III</title>
 	<short>Burst Laser III+</short><!-- 'requires less power' or 'has reduced power consumption'?-->
-	<desc>This custom blueprint requires one less power, granting great efficiency, yet is still somewhat cumbersome to use.</desc>
+	<desc>This custom blueprint requires one less power, granting great efficiency.</desc><!--, yet is still somewhat cumbersome to use.</desc> -->
 	<damage>1</damage>
 	<shots>4</shots>
 	<sp>0</sp>
 	<fireChance>1</fireChance>
 	<breachChance>0</breachChance>
-	<cooldown>17</cooldown> <!-- 1.25.1, was 18 -->
-	<power>2</power>
-	<cost>120</cost>
+	<cooldown>17</cooldown> <!-- 1.28 was 17 | 1.25.1, was 18 -->
+	<power>1</power><!-- 1.28 was 2 --> <!-- rebalance -->
+	<cost>150</cost><!-- 1.28 was 150 --> <!-- rebalance -->
 	<bp>8</bp>
 	<rarity>0</rarity>
 	<image>laser_light2</image>
@@ -9787,16 +9912,16 @@ Some other weapon must be powered in order for it to work.</desc>
 	<title>Burst Laser Mark IV</title>
 	<short>Burst Laser IV</short>
 	<!-- <desc>Powerful burst laser that's able to maintain an impressive barrage.</desc> -->
-	<!-- <desc>Awesome burst-fire laser that fires off an impressive barrage at the cost of difficult handling characteristics.</desc> -->
-	<desc>Awesome burst laser that's able to maintain an impressive barrage, but needs quite a while to generate said barrage.</desc>
+	<desc>Awesome burst-fire laser that fires off an impressive barrage.</desc><!-- at the cost of difficult handling characteristics.</desc> -->
+	<!-- <desc>Awesome burst laser that's able to maintain an impressive barrage, but needs quite a while to generate said barrage.</desc> -->
 	<damage>1</damage>
 	<shots>5</shots>
 	<sp>0</sp>
 	<fireChance>1</fireChance>
 	<breachChance>0</breachChance>
-	<cooldown>21</cooldown> <!-- 1.25 was 22 | was 25 -->
-	<power>3</power>
-	<cost>100</cost><!-- 1.26 was 105 -->
+	<cooldown>16.5</cooldown> <!-- 1.28 was 21 | 1.25 was 22 | was 25 -->
+	<power>2</power><!-- 1.28 was 3 -->
+	<cost>120</cost><!-- 1.28 was 100 | 1.26 was 105 -->
 	<bp>10</bp>
 	<rarity>5</rarity>
 	<image>laser_light2</image>
@@ -9826,15 +9951,15 @@ Some other weapon must be powered in order for it to work.</desc>
 	<tip>tip_laser_f1_b0</tip>
 	<title>Custom Burst Laser Mark IV</title>
 	<short>Burst Laser IV+</short><!-- 'requires less power' or 'has reduced power consumption'?-->
-	<desc>Awesome burst laser that's able to maintain an impressive barrage. This custom blueprint requires one less power, granting it great efficiency, but that doesn't solve its heavy-handed handling.</desc>
+	<desc>Awesome burst laser that's able to maintain an impressive barrage. This custom blueprint requires one less power, granting it great efficiency.</desc><!-- , but that doesn't solve its heavy-handed handling.</desc> -->
 	<damage>1</damage>
 	<shots>5</shots>
 	<sp>0</sp>
 	<fireChance>1</fireChance>
 	<breachChance>0</breachChance>
-	<cooldown>20</cooldown> <!-- 1.25.1, was 21 | 1.25, was 22 | was 25 -->
-	<power>2</power>
-	<cost>150</cost><!-- 1.26 was 160 -->
+	<cooldown>15.5</cooldown> <!-- 1.28 was 20 | 1.25.1, was 21 | 1.25, was 22 | was 25 -->
+	<power>1</power><!-- 1.28 was 2-->
+	<cost>180</cost><!-- 1.28 was 150 | 1.26 was 160 -->
 	<bp>10</bp>
 	<rarity>0</rarity>
 	<image>laser_light2</image>
@@ -9864,15 +9989,15 @@ Some other weapon must be powered in order for it to work.</desc>
 	<tip>tip_laser_f1_b0</tip>
 	<title>Burst Laser Mark V</title>
 	<short>Burst Laser V</short><!--  Shh.. it's a secret. -->
-	<desc>Secret development in the field of burst-fire lasers. Equally responsive as its predecessor.</desc>
+	<desc>Secret development in the field of burst-fire lasers.</desc><!-- Equally responsive as its predecessor.</desc> -->
 	<damage>1</damage>
 	<shots>6</shots>
 	<sp>0</sp>
 	<fireChance>1</fireChance>
 	<breachChance>0</breachChance>
-	<cooldown>20</cooldown><!-- 1.25.1, was 21 | 1.25, was 22 | 1.21, was 25 | was 28 -->
-	<power>3</power>
-	<cost>160</cost>
+	<cooldown>18</cooldown><!-- 1.28 was 20 | 1.25.1, was 21 | 1.25, was 22 | 1.21, was 25 | was 28 -->
+	<power>2</power><!-- 1.28 was 3 -->
+	<cost>200</cost><!-- 1.28 was 160 -->
 	<bp>10</bp>
 	<rarity>0</rarity>
 	<image>laser_light2</image>
@@ -10312,6 +10437,50 @@ Some other weapon must be powered in order for it to work.</desc>
 		<sound>miss</sound>
 	</missSounds>
 	<weaponArt>laser_tired</weaponArt> 
+</weaponBlueprint>
+
+<weaponBlueprint name="ORU_MISSILE"> <!-- 1.28 -->
+	<type>MISSILES</type>
+	<flavorType>Single-Charge Installation</flavorType>
+	<tip>tip_missiles_f0_b3</tip>
+	<title>Rhino Single-Charge</title>
+	<short>Rhino S-Ch.</short>
+	<desc>Эта одноразовая ракетная установка не требует питания, хотя всё ещё тратит ракеты. Требует запитки от другого оружия.</desc>
+	<speed>40</speed>
+	<damage>5</damage>
+	<missiles>1</missiles>
+	<stun>5</stun>
+	<shots>1</shots>
+	<sp>5</sp> <!-- 1.28 -->
+	<fireChance>0</fireChance>
+	<breachChance>3</breachChance>
+	<cooldown>10</cooldown>
+	<power>0</power>
+	<cost>40</cost>
+	<bp>2</bp>
+	<rarity>0</rarity>
+	<boost>
+		<type>cooldown</type>
+		<amount>10.1</amount>
+		<count>1</count>
+	</boost>
+	<image>missile_mega</image>
+	<explosion>ce_explosion_really_big</explosion>
+	<launchSounds>
+		<sound>largeMissile</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>smallExplosion</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>oru_missile</weaponArt> 
 </weaponBlueprint>
 
 <weaponBlueprint name="LASER_VERY_OLD">
@@ -10911,7 +11080,7 @@ Some other weapon must be powered in order for it to work.</desc>
 	<sp>0</sp>
 	<fireChance>0</fireChance>
 	<breachChance>1</breachChance>
-	<cooldown>12</cooldown>
+	<cooldown>10</cooldown><!-- 1.28 was 12 -->
 	<power>1</power>
 	<cost>25</cost>
 	<rarity>3</rarity>
@@ -10954,7 +11123,7 @@ Some other weapon must be powered in order for it to work.</desc>
 	<sp>0</sp>
 	<fireChance>0</fireChance>
 	<breachChance>1</breachChance>
-	<cooldown>14</cooldown>
+	<cooldown>12</cooldown><!-- 1.28 was 10 -->
 	<power>1</power>
 	<cost>35</cost>
 	<rarity>4</rarity>
@@ -10998,7 +11167,7 @@ Some other weapon must be powered in order for it to work.</desc>
 	<sp>3</sp>
 	<fireChance>0</fireChance>
 	<breachChance>4</breachChance>
-	<cooldown>12</cooldown>
+	<cooldown>10</cooldown><!-- 1.28 was 12 -->
 	<power>2</power>
 	<cost>50</cost>
 	<bp>7</bp>
@@ -11039,7 +11208,7 @@ This newer model was upgraded with cooldown and breach chance in mind.</desc>
 	<sp>3</sp>
 	<fireChance>0</fireChance>
 	<breachChance>6</breachChance>
-	<cooldown>10</cooldown>
+	<cooldown>8</cooldown><!-- 1.28 was 10 -->
 	<power>2</power>
 	<cost>60</cost>
 	<bp>7</bp>
@@ -11080,7 +11249,7 @@ This newer model was upgraded with cooldown and breach chance in mind.</desc>
 	<sp>3</sp>
 	<fireChance>0</fireChance>
 	<breachChance>5</breachChance>
-	<cooldown>12</cooldown>
+	<cooldown>10</cooldown><!-- 1.28 was 12 -->
 	<power>3</power>
 	<cost>85</cost>
 	<bp>2</bp>
@@ -11124,7 +11293,7 @@ This newer model was upgraded with cooldown and breach chance in mind.</desc>
 	<sp>2</sp>
 	<fireChance>0</fireChance>
 	<breachChance>1</breachChance>
-	<cooldown>12</cooldown>
+	<cooldown>6</cooldown><!-- 1.28 was 12 -->
 	<power>1</power>
 	<cost>20</cost>
 	<bp>7</bp>
@@ -11165,7 +11334,7 @@ This newer model was upgraded with cooldown and breach chance in mind.</desc>
 	<sp>2</sp>
 	<fireChance>0</fireChance>
 	<breachChance>1</breachChance>
-	<cooldown>14</cooldown>
+	<cooldown>9</cooldown><!-- 1.28 was 14 -->
 	<power>1</power>
 	<cost>30</cost>
 	<bp>7</bp>
@@ -11206,7 +11375,7 @@ This newer model was upgraded with cooldown and breach chance in mind.</desc>
 	<sp>2</sp>
 	<fireChance>0</fireChance>
 	<breachChance>2</breachChance>
-	<cooldown>16</cooldown>
+	<cooldown>12</cooldown><!-- 1.28 was 16 -->
 	<power>2</power>
 	<cost>40</cost>
 	<bp>7</bp>
@@ -11247,7 +11416,7 @@ This newer model was upgraded with cooldown and breach chance in mind.</desc>
 	<sp>2</sp>
 	<fireChance>0</fireChance>
 	<breachChance>1</breachChance>
-	<cooldown>4</cooldown>
+	<cooldown>3</cooldown><!-- 1.28 was 4 -->
 	<power>1</power>
 	<cost>55</cost>
 	<bp>7</bp>
@@ -11289,7 +11458,7 @@ This newer model was upgraded with cooldown and breach chance in mind.</desc>
 	<sp>1</sp>
 	<fireChance>0</fireChance>
 	<breachChance>3</breachChance>
-	<cooldown>11</cooldown>
+	<cooldown>5.5</cooldown><!-- 1.28 was 11 -->
 	<power>1</power>
 	<cost>20</cost>
 	<bp>7</bp>
@@ -11332,7 +11501,7 @@ This newer model was upgraded with cooldown and breach chance in mind.</desc>
 	<sp>1</sp>
 	<fireChance>0</fireChance>
 	<breachChance>4</breachChance>
-	<cooldown>10</cooldown>
+	<cooldown>5</cooldown><!-- 1.28 was 10 -->
 	<power>1</power>
 	<cost>45</cost>
 	<bp>7</bp>
@@ -11375,7 +11544,7 @@ This newer model was upgraded with cooldown and breach chance in mind.</desc>
 	<sp>1</sp>
 	<fireChance>0</fireChance>
 	<breachChance>6</breachChance>
-	<cooldown>9</cooldown>
+	<cooldown>4.5</cooldown><!-- 1.28 was 9 -->
 	<power>2</power>
 	<cost>55</cost>
 	<bp>7</bp>
@@ -11420,7 +11589,7 @@ This special version can pierce through stronger shields.</desc>
 	<sp>3</sp>
 	<fireChance>0</fireChance>
 	<breachChance>4</breachChance>
-	<cooldown>14</cooldown>
+	<cooldown>9</cooldown><!-- 1.28 was 14 -->
 	<power>3</power>
 	<cost>55</cost>
 	<bp>7</bp>
@@ -11461,7 +11630,7 @@ This special version can pierce through stronger shields.</desc>
 	<sp>2</sp>
 	<fireChance>0</fireChance>
 	<breachChance>1</breachChance>
-	<cooldown>6</cooldown>
+	<cooldown>4.5</cooldown><!-- 1.28 was 6 -->
 	<power>3</power>
 	<cost>80</cost>
 	<bp>2</bp>
@@ -11752,7 +11921,7 @@ This special version is faster and requires one less power.</desc>
 	<sp>0</sp>
 	<fireChance>0</fireChance>
 	<breachChance>1</breachChance>
-	<cooldown>20</cooldown>
+	<cooldown>17</cooldown><!-- 1.28 was 20 -->
 	<power>3</power>
 	<cost>100</cost>
 	<bp>10</bp>
@@ -11799,7 +11968,7 @@ This special version is faster and requires one less power.</desc>
 	<sp>0</sp>
 	<fireChance>0</fireChance>
 	<breachChance>1</breachChance>
-	<cooldown>24</cooldown>
+	<cooldown>18</cooldown><!-- 1.28 was 24 -->
 	<power>4</power>
 	<cost>150</cost>
 	<bp>10</bp>
@@ -11847,7 +12016,7 @@ This special version is faster and requires one less power.</desc>
 	<sp>0</sp>
 	<fireChance>0</fireChance>
 	<breachChance>1</breachChance>
-	<cooldown>24</cooldown>
+	<cooldown>18</cooldown><!-- 1.28 was 24 -->
 	<power>4</power>
 	<cost>10</cost>
 	<bp>10</bp>
@@ -11896,7 +12065,7 @@ This special version is faster and requires one less power.</desc>
 	<sp>0</sp>
 	<fireChance>0</fireChance>
 	<breachChance>1</breachChance>
-	<cooldown>17</cooldown>
+	<cooldown>15</cooldown><!-- 1.28 was 17 -->
 	<power>3</power>
 	<cost>70</cost>
 	<bp>10</bp>
@@ -11946,7 +12115,7 @@ This special version is faster and requires one less power.</desc>
 	<sp>0</sp>
 	<fireChance>0</fireChance>
 	<breachChance>1</breachChance>
-	<cooldown>16</cooldown><!-- 1.25, was 17 | 1.23, was 16 -->
+	<cooldown>14</cooldown><!-- 1.28 was 16 | 1.25, was 17 | 1.23, was 16 -->
 	<power>3</power>
 	<cost>70</cost>
 	<bp>10</bp>
@@ -12043,7 +12212,7 @@ This special version is faster and requires one less power.</desc>
 	<sp>1</sp><!-- 1.25.1, was 0 -->
 	<fireChance>6</fireChance>
 	<breachChance>0</breachChance>
-	<cooldown>15</cooldown>
+	<cooldown>10</cooldown><!-- 1.28 was 15 -->
 	<power>1</power>
 	<cost>40</cost> <!-- 1.25, was 55 -->
 	<bp>10</bp>
@@ -12086,7 +12255,7 @@ This special version is faster and requires one less power.</desc>
 	<sp>1</sp><!-- 1.25.1, was 0 -->
 	<fireChance>7</fireChance>
 	<breachChance>0</breachChance>
-	<cooldown>18</cooldown>
+	<cooldown>12</cooldown><!-- 1.28 was 18 -->
 	<power>2</power>
 	<cost>55</cost> <!-- 1.25, was 60 -->
 	<bp>10</bp>
@@ -12129,7 +12298,7 @@ This special version is faster and requires one less power.</desc>
 	<sp>1</sp><!-- 1.25.1, was 0 -->
 	<fireChance>8</fireChance>
 	<breachChance>0</breachChance>
-	<cooldown>21</cooldown>
+	<cooldown>14</cooldown><!-- 1.28 was 21 -->
 	<power>2</power><!-- 1.25, was 3 -->
 	<cost>70</cost> <!-- 1.25, was 80 -->
 	<bp>10</bp>
@@ -12207,7 +12376,7 @@ This special version is faster and requires one less power.</desc>
 	<cost>35</cost>
 	<bp>10</bp>
 	<speed>300</speed>
-	<rarity>3</rarity>
+	<rarity>4</rarity><!-- 1.28 was 3 -->
 	<explosion>ba_explosion_stungun</explosion>
 	<projectiles>
 		<projectile count="25" fake="false">ba_effector_impact_1</projectile>
@@ -12250,7 +12419,7 @@ This special version is faster and requires one less power.</desc>
 	<cost>45</cost>
 	<bp>10</bp>
 	<speed>300</speed>
-	<rarity>3</rarity>
+	<rarity>4</rarity><!-- 1.28 was 3 -->
 	<explosion>ba_explosion_stungun</explosion>
 	<projectiles>
 		<projectile count="45" fake="false">ba_effector_impact_1</projectile>
@@ -12289,7 +12458,7 @@ Can keep enemy crew locked in stun thanks to its fast cooldown.</desc>
 	<sp>5</sp>
 	<fireChance>0</fireChance>
 	<breachChance>0</breachChance>
-	<cooldown>9</cooldown>
+	<cooldown>7</cooldown><!-- 1.28 was 9 -->
 	<power>1</power>
 	<cost>100</cost>
 	<bp>10</bp>
@@ -12331,7 +12500,7 @@ Can keep enemy crew locked in stun thanks to its fast cooldown.</desc>
 	<sp>3</sp>
 	<fireChance>0</fireChance>
 	<breachChance>2</breachChance>
-	<cooldown>12</cooldown>
+	<cooldown>10</cooldown><!-- 1.28 was 12 -->
 	<power>1</power>
 	<cost>40</cost>
 	<bp>7</bp>
@@ -12370,7 +12539,7 @@ Can keep enemy crew locked in stun thanks to its fast cooldown.</desc>
 	<sp>3</sp>
 	<fireChance>0</fireChance>
 	<breachChance>4</breachChance>
-	<cooldown>12</cooldown>
+	<cooldown>10</cooldown><!-- 1.28 was 12 -->
 	<power>2</power>
 	<cost>50</cost>
 	<bp>7</bp>
@@ -12410,7 +12579,7 @@ Can keep enemy crew locked in stun thanks to its fast cooldown.</desc>
 	<fireChance>0</fireChance>
 	<breachChance>5</breachChance>
 	<lockdown>1</lockdown>
-	<cooldown>10</cooldown>
+	<cooldown>8</cooldown><!-- 1.28 was 10 -->
 	<power>1</power>
 	<speed>50</speed>
 	<cost>45</cost>
@@ -12451,7 +12620,7 @@ Can keep enemy crew locked in stun thanks to its fast cooldown.</desc>
 	<sp>1</sp>
 	<fireChance>0</fireChance>
 	<breachChance>7</breachChance>
-	<cooldown>16</cooldown>
+	<cooldown>12</cooldown><!-- 1.28 was 16 -->
 	<lockdown>1</lockdown>
 	<power>2</power>
 	<speed>50</speed>
@@ -12492,7 +12661,7 @@ Can keep enemy crew locked in stun thanks to its fast cooldown.</desc>
 	<fireChance>0</fireChance>
 	<breachChance>3</breachChance><!-- 1.22 -->
 	<stunChance>3</stunChance><!-- 1.22, was 5 -->
-	<cooldown>14</cooldown><!-- 1.25, was 16 -->
+	<cooldown>10</cooldown><!-- 1.28 was 14 | 1.25, was 16 -->
 	<power>2</power>
 	<speed>50</speed>
 	<cost>50</cost>
@@ -12530,7 +12699,7 @@ Can keep enemy crew locked in stun thanks to its fast cooldown.</desc>
 	<sp>1</sp>
 	<fireChance>0</fireChance>
 	<breachChance>5</breachChance><!-- 1.22, was 3 -->
-	<cooldown>12</cooldown><!-- 1.26 was 16 | 1.25 was 21 -->
+	<cooldown>10</cooldown><!-- 1.28 was 12 | 1.26 was 16 | 1.25 was 21 -->
 	<stunChance>5</stunChance><!-- 1.22 -->
 	<power>3</power><!-- 1.26 was 2 | 1.25 was 3 -->
 	<speed>50</speed>
@@ -12570,7 +12739,7 @@ Can keep enemy crew locked in stun thanks to its fast cooldown.</desc>
 	<fireChance>0</fireChance>
 	<breachChance>3</breachChance>
 	<stunChance>3</stunChance><!-- 1.22, was 5 -->
-	<cooldown>13</cooldown>
+	<cooldown>9</cooldown><!-- 1.28 was 13 -->
 	<power>1</power>
 	<speed>50</speed>
 	<cost>60</cost>
@@ -12609,7 +12778,7 @@ Can keep enemy crew locked in stun thanks to its fast cooldown.</desc>
 	<fireChance>0</fireChance>
 	<breachChance>10</breachChance>
 	<stunChance>5</stunChance><!-- 1.22, was 3 -->
-	<cooldown>15</cooldown> <!-- 1.25, was 19 -->
+	<cooldown>11</cooldown> <!-- 1.28 was 15 | 1.25, was 19 -->
 	<power>2</power> <!-- 1.25, was 3 -->
 	<speed>50</speed>
 	<cost>120</cost>
@@ -12652,7 +12821,7 @@ Can keep enemy crew locked in stun thanks to its fast cooldown.</desc>
 	<spin>1440</spin>
 	<fireChance>0</fireChance>
 	<breachChance>10</breachChance>
-	<cooldown>10</cooldown><!-- 1.27 was 15 -->
+	<cooldown>8</cooldown><!-- 1.28 was 10 | 1.27 was 15 -->
 	<power>3</power>
 	<speed>25</speed>
 	<cost>100</cost>
@@ -12695,7 +12864,7 @@ Can keep enemy crew locked in stun thanks to its fast cooldown.</desc>
 	<fireChance>0</fireChance>
 	<breachChance>5</breachChance>
 	<lockdown>1</lockdown>
-	<cooldown>20</cooldown>
+	<cooldown>19</cooldown><!-- 1.28 was 20 -->
 	<power>4</power>
 	<speed>50</speed>
 	<cost>120</cost>
@@ -12741,7 +12910,7 @@ Can keep enemy crew locked in stun thanks to its fast cooldown.</desc>
 	<breachChance>0</breachChance>
 	<cooldown>4</cooldown>
 	<power>2</power>
-	<cost>35</cost>
+	<cost>20</cost><!-- 1.28 was 35 -->
 	<bp>7</bp>
 	<rarity>1</rarity>
 	<image>laser_light2</image>
@@ -12778,7 +12947,7 @@ Can keep enemy crew locked in stun thanks to its fast cooldown.</desc>
 	<breachChance>0</breachChance>
 	<cooldown>3</cooldown>
 	<power>2</power>
-	<cost>55</cost>
+	<cost>35</cost><!-- 1.28 was 55 -->
 	<bp>7</bp>
 	<rarity>3</rarity>
 	<image>laser_light2</image>
@@ -12815,7 +12984,7 @@ Can keep enemy crew locked in stun thanks to its fast cooldown.</desc>
 	<breachChance>0</breachChance>
 	<cooldown>2.4</cooldown>
 	<power>2</power> <!-- 1.25 was 3. booyah! -->
-	<cost>90</cost>
+	<cost>50</cost><!-- 1.28 was 90 -->
 	<bp>7</bp>
 	<rarity>5</rarity><!-- 1.26 was 3 -->
 	<image>laser_light2</image>
@@ -12853,7 +13022,7 @@ Can keep enemy crew locked in stun thanks to its fast cooldown.</desc>
 	<sp>0</sp>
 	<fireChance>0</fireChance>
 	<breachChance>0</breachChance>
-	<cooldown>15</cooldown>
+	<cooldown>14</cooldown><!-- 1.28 was 15 -->
 	<power>2</power>
 	<cost>55</cost>
 	<bp>2</bp>
@@ -12942,7 +13111,7 @@ Can keep enemy crew locked in stun thanks to its fast cooldown.</desc>
 	<sp>0</sp>
 	<fireChance>0</fireChance>
 	<breachChance>0</breachChance>
-	<cooldown>12</cooldown> <!-- 1.23, was 14 -->
+	<cooldown>10</cooldown><!-- 1.28 was 12 | 1.23, was 14 -->
 	<power>2</power>
 	<cost>35</cost>
 	<bp>8</bp>
@@ -13190,10 +13359,10 @@ Can keep enemy crew locked in stun thanks to its fast cooldown.</desc>
 	<sp>1</sp>
 	<fireChance>0</fireChance>
 	<breachChance>7</breachChance>
-	<cooldown>16</cooldown><!-- 1.25 was 18 -->
+	<cooldown>14</cooldown><!-- 1.28 was 16 | 1.25 was 18 -->
 	<hullBust>1</hullBust>
 	<power>2</power> <!-- 1.26 was 3 -->
-	<cost>60</cost> <!-- 1.26 was 65 -->
+	<cost>40</cost> <!-- 1.28 was 60 | 1.26 was 65 -->
 	<rarity>3</rarity><!-- 1.26 was 4 -->
 	<speed>60</speed>
 	<image>ba_laser_artillery_1_shot</image>
@@ -13231,10 +13400,10 @@ Can keep enemy crew locked in stun thanks to its fast cooldown.</desc>
 	<sp>1</sp>
 	<fireChance>0</fireChance>
 	<breachChance>8</breachChance>
-	<cooldown>14</cooldown><!-- 1.25 was 16 -->
+	<cooldown>12</cooldown><!-- 1.28 was 14 | 1.25 was 16 -->
 	<hullBust>1</hullBust>
 	<power>2</power> <!-- 1.26 was 3 -->
-	<cost>70</cost> <!-- 1.26 was 80 -->
+	<cost>50</cost> <!-- 1.28 was 70 | 1.26 was 80 -->
 	<rarity>4</rarity>
 	<speed>60</speed>
 	<image>ba_laser_artillery_1_shot</image>
@@ -13272,10 +13441,10 @@ Can keep enemy crew locked in stun thanks to its fast cooldown.</desc>
 	<sp>1</sp>
 	<fireChance>0</fireChance>
 	<breachChance>9</breachChance>
-	<cooldown>12</cooldown><!-- 1.25 was 14 -->
+	<cooldown>10</cooldown><!-- 1.28 was 12 | 1.25 was 14 -->
 	<hullBust>1</hullBust>
 	<power>2</power> <!-- 1.26 was 3 -->
-	<cost>80</cost> <!-- 1.26 was 95 -->
+	<cost>60</cost> <!-- 1.28 was 80 | 1.26 was 95 -->
 	<rarity>5</rarity><!-- 1.26 was 4 -->
 	<speed>60</speed>
 	<image>ba_laser_artillery_1_shot</image>
@@ -13299,6 +13468,121 @@ Can keep enemy crew locked in stun thanks to its fast cooldown.</desc>
 	<weaponArt>ba_laser_hullcrusher_3</weaponArt> 
 </weaponBlueprint>
 
+<weaponBlueprint name="W_LASER_HULL_BASIC"> <!-- 1.28 -->
+	<type>LASER</type>
+	<title>Hull Laser Mark I+</title>
+	<short>Hull Laser I+</short>
+	<desc>This fast-charging laser inflicts double damage to systemless rooms.
+This upgraded version charges even faster.</desc>
+	<tip>tip_hull_f0_b3</tip>
+	<damage>1</damage>
+	<shots>1</shots>
+	<sp>0</sp>
+	<fireChance>0</fireChance>
+	<breachChance>3</breachChance>
+	<cooldown>5</cooldown>
+	<hullBust>1</hullBust>
+	<power>1</power>
+	<cost>40</cost>
+	<rarity>0</rarity>
+	<speed>75</speed>
+	<image>w_laser_hull</image>
+	<launchSounds>
+		<sound>heavyLaser1</sound>
+		<sound>heavyLaser2</sound>
+		<sound>heavyLaser3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull1</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>w_laser_hull_1</weaponArt>
+</weaponBlueprint>
+
+<weaponBlueprint name="W_LASER_HULL_1_UPGRADED"> <!-- 1.28 -->
+	<type>LASER</type>
+	<title>Hull Laser Mark II+</title>
+	<short>Hull Laser II+</short>
+	<desc>This burst-fire laser was bolstered with the ability to inflict double damage to systemless rooms.
+This upgraded version charges even faster.</desc>
+	<tip>tip_hull_f0_b4</tip>
+	<damage>1</damage>
+	<shots>2</shots>
+	<sp>0</sp>
+	<fireChance>0</fireChance>
+	<breachChance>4</breachChance>
+	<cooldown>10</cooldown>
+	<hullBust>1</hullBust>
+	<power>2</power>
+	<cost>60</cost>
+	<rarity>0</rarity>
+	<speed>75</speed>
+	<image>w_laser_hull</image>
+	<launchSounds>
+		<sound>heavyLaser1</sound>
+		<sound>heavyLaser2</sound>
+		<sound>heavyLaser3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull1</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>w_laser_hull_2</weaponArt>
+</weaponBlueprint>
+
+<weaponBlueprint name="W_LASER_HULL_2_UPGRADED"> <!-- 1.28 -->
+	<type>LASER</type>
+	<title>Hull Laser Mark III+</title>
+	<short>Hull Laser III+</short>
+	<desc>This enhanced version of its predecessor produces more shots at once, but also takes longer to charge.
+This upgraded version charges even faster.</desc>
+	<tip>tip_hull_f0_b5</tip>
+	<damage>1</damage>
+	<shots>3</shots>
+	<sp>0</sp>
+	<fireChance>0</fireChance>
+	<breachChance>5</breachChance>
+	<cooldown>14</cooldown>
+	<hullBust>1</hullBust>
+	<power>2</power>
+	<cost>90</cost>
+	<bp>7</bp>
+	<rarity>0</rarity>
+	<image>w_laser_hull</image>
+	<speed>75</speed>
+	<launchSounds>
+		<sound>heavyLaser1</sound>
+		<sound>heavyLaser2</sound>
+		<sound>heavyLaser3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull1</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>w_laser_hull_3</weaponArt>
+</weaponBlueprint>
+
 <!-- Hull Lasers -->
 <weaponBlueprint name="BA_LASER_HULL_SMALL">
 	<type>LASER</type>
@@ -13315,7 +13599,7 @@ Can keep enemy crew locked in stun thanks to its fast cooldown.</desc>
 	<cooldown>7</cooldown>
 	<hullBust>1</hullBust>
 	<power>1</power>
-	<cost>35</cost>
+	<cost>25</cost><!-- 1.28 was 35 -->
 	<bp>5</bp>
 	<rarity>1</rarity>
 	<speed>75</speed>
@@ -13356,7 +13640,7 @@ Can keep enemy crew locked in stun thanks to its fast cooldown.</desc>
 	<cooldown>13</cooldown>
 	<hullBust>1</hullBust>
 	<power>2</power>
-	<cost>55</cost>
+	<cost>45</cost><!-- 1.28 was 55 -->
 	<bp>5</bp>
 	<rarity>2</rarity>
 	<speed>75</speed>
@@ -13396,7 +13680,7 @@ Can keep enemy crew locked in stun thanks to its fast cooldown.</desc>
 	<cooldown>18</cooldown>
 	<hullBust>1</hullBust>
 	<power>2</power> <!-- 1.25, was 3 -->
-	<cost>85</cost>
+	<cost>65</cost><!-- 1.28 was 85 -->
 	<bp>7</bp>
 	<rarity>4</rarity>
 	<image>laser_hull_shot</image>
@@ -13432,10 +13716,10 @@ Can keep enemy crew locked in stun thanks to its fast cooldown.</desc>
 	<sp>0</sp>
 	<fireChance>0</fireChance>
 	<breachChance>4</breachChance>
-	<cooldown>17</cooldown>
+	<cooldown>15</cooldown><!-- 1.28 was 17-->
 	<hullBust>1</hullBust>
 	<power>2</power>
-	<cost>60</cost>
+	<cost>50</cost><!-- 1.28 was 60 -->
 	<bp>2</bp>
 	<rarity>3</rarity>
 	<speed>75</speed>
@@ -13471,14 +13755,14 @@ Can keep enemy crew locked in stun thanks to its fast cooldown.</desc>
 	<tip>tip_laser_f0_b3</tip>
 	<title>Energetic Laser Mark I</title>
 	<short>Energetic Laser I</short>
-	<desc>This analogue burst laser fires 2 projectiles at high velocities.</desc>
+	<desc>This analogue burst laser fires two projectiles at high velocities.</desc>
 	<!-- ...fast burst laser i... -->
 	<damage>1</damage>
 	<shots>2</shots>
 	<sp>0</sp>
 	<fireChance>0</fireChance>
 	<breachChance>3</breachChance>
-	<cooldown>10</cooldown> <!-- 1.26 was 11 -->
+	<cooldown>9</cooldown> <!-- 1.28 was 10 | 1.26 was 11 -->
 	<power>2</power>
 	<cost>40</cost>
 	<bp>4</bp>
@@ -13511,14 +13795,14 @@ Can keep enemy crew locked in stun thanks to its fast cooldown.</desc>
 	<title>Energetic Laser Mark II</title>
 	<short>Energetic Laser II</short>
 	<tip>tip_laser_f0_b3</tip>
-	<desc>This analogue burst laser fires 3 projectiles at high velocities.</desc>
+	<desc>This analogue burst laser fires three projectiles at high velocities.</desc>
 	<!-- ...fast burst laser ii... -->
 	<damage>1</damage>
 	<shots>3</shots>
 	<sp>0</sp>
 	<fireChance>0</fireChance>
 	<breachChance>3</breachChance>
-	<cooldown>14</cooldown><!-- 1.26 was 15 -->
+	<cooldown>12.5</cooldown><!-- 1.28 was 14 | 1.26 was 15 -->
 	<power>2</power>
 	<cost>75</cost><!-- 1.26 was 70 -->
 	<bp>7</bp>
@@ -13559,7 +13843,7 @@ Can keep enemy crew locked in stun thanks to its fast cooldown.</desc>
 	<sp>0</sp>
 	<fireChance>7</fireChance>
 	<breachChance>7</breachChance>
-	<cooldown>9</cooldown>
+	<cooldown>7</cooldown><!-- 1.28 was 9 -->
 	<power>1</power>
 	<cost>50</cost>
 	<bp>2</bp>
@@ -13597,7 +13881,7 @@ Can keep enemy crew locked in stun thanks to its fast cooldown.</desc>
 	<sp>0</sp>
 	<fireChance>8</fireChance>
 	<breachChance>8</breachChance>
-	<cooldown>11</cooldown>
+	<cooldown>9</cooldown><!-- 1.28 was 11 -->
 	<power>1</power> <!-- 1.26 was 2. how heavy lasers should be -->
 	<cost>60</cost>
 	<bp>6</bp>
@@ -13852,6 +14136,37 @@ Can keep enemy crew locked in stun thanks to its fast cooldown.</desc>
 
 
 <!-- BEAMS -->
+
+<weaponBlueprint name="BEAM_HEALBIO"> <!-- 1.28 -->
+	<type>BEAM</type>
+	<tip>tip_beams_bio_f0_b0</tip>
+	<title>Healbio Beam</title>
+	<short>Healbio Beam</short>
+	<desc>This beam restores the target ship's hull, but damages its crew.</desc>
+	<damage>-1</damage>
+	<persDamage>3</persDamage>
+	<color> 
+		<r>250</r>
+		<g>150</g>
+		<b>0</b>
+	</color>
+	<sp>7</sp>
+	<fireChance>0</fireChance>
+	<breachChance>0</breachChance>
+	<cooldown>12</cooldown>
+	<speed>9</speed>
+	<power>1</power>
+	<cost>50</cost>
+	<bp>12</bp>
+	<rarity>0</rarity>
+	<image>ba_bio_contact</image>
+	<length>80</length>
+	<launchSounds>
+		<sound>beam2_short</sound>
+	</launchSounds>
+	<weaponArt>ba_beam_healbio</weaponArt> 
+</weaponBlueprint>
+
 <!-- 1.26 for player -->
 <weaponBlueprint name="EP_BA_BEAM_BARDICHE">
 	<type>BEAM</type>
@@ -15115,6 +15430,35 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<weaponArt>beam_fire</weaponArt> 
 </weaponBlueprint>
 
+<weaponBlueprint name="BEAM_FIRE_P"> <!-- 1.28 -->
+	<type>BEAM</type>
+	<tip>tip_fire_beams_f8_b0</tip>
+	<title>Fire Beam+</title>  
+	<short>Fire Beam+</short>
+	<desc>A gift from the Great Basilisk himself, this beam fires off in half the time it takes its counterparts to fire.</desc>
+	<damage>0</damage>
+	<speed>8</speed>
+	<sp>0</sp>
+	<fireChance>8</fireChance>
+	<breachChance>0</breachChance>
+	<cooldown>10</cooldown>
+	<color>
+		<r>255</r>
+		<g>75</g>
+		<b>0</b>
+	</color>
+	<power>2</power>
+	<cost>65</cost>
+	<bp>6</bp>
+	<rarity>0</rarity>
+	<length>140</length>
+	<image>ba_fire_contact</image>
+	<launchSounds>
+		<sound>beam1_2</sound>
+	</launchSounds>
+	<weaponArt>beam_fire</weaponArt> 
+</weaponBlueprint>
+
 <weaponBlueprint name="BA_BEAM_FIRE_2">
 	<type>BEAM</type>
 	<flavorType>Fire Beam</flavorType>
@@ -15822,7 +16166,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<lockdown>1</lockdown>
 	<cooldown>10</cooldown><!-- 1.26.2 was 15 -->
 	<power>1</power>
-	<cost>50</cost>
+	<cost>30</cost><!-- 1.28 was 50 -->
 	<bp>4</bp>
 	<rarity>0</rarity>
 	<image>bomb_lockdown_shot</image>
@@ -15858,7 +16202,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<lockdown>1</lockdown>
 	<cooldown>13</cooldown><!-- 1.26.2 was 18 -->
 	<power>1</power>
-	<cost>70</cost> <!--was 60-->
+	<cost>50</cost> <!-- 1.28 was 70 | was 60 -->
 	<bp>4</bp>
 	<rarity>0</rarity>
 	<image>bomb_lockdown_shot</image>
@@ -15892,7 +16236,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<breachChance>0</breachChance>
 	<cooldown>13</cooldown>
 	<power>1</power>
-	<cost>45</cost> <!--was 55-->
+	<cost>40</cost> <!-- 1.28 was 45 | was 55 -->
 	<bp>4</bp>
 	<rarity>1</rarity>
 	<image>bomb1</image>
@@ -15923,9 +16267,9 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<sp>0</sp>
 	<fireChance>2</fireChance><!-- 1.23, was 3 -->
 	<breachChance>0</breachChance>
-	<cooldown>22</cooldown>
+	<cooldown>18</cooldown><!-- 1.28 was 22 -->
 	<power>2</power>
-	<cost>80</cost>
+	<cost>60</cost><!-- 1.28 was 80 -->
 	<bp>3</bp>
 	<rarity>3</rarity>
 	<image>ba_bomb_big</image>
@@ -15955,9 +16299,9 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<sp>0</sp>
 	<fireChance>7</fireChance>
 	<breachChance>7</breachChance>
-	<cooldown>8</cooldown> <!-- 1.26 was 15 -->
+	<cooldown>5</cooldown> <!-- 1.28 was 8 | 1.26 was 15 -->
 	<power>2</power>
-	<cost>75</cost>
+	<cost>55</cost><!-- 1.28 was 75 -->
 	<bp>5</bp>
 	<rarity>4</rarity>
 	<image>ba_bomb_timer</image>
@@ -15988,7 +16332,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<breachChance>0</breachChance>
 	<cooldown>12</cooldown>
 	<power>1</power>
-	<cost>45</cost>
+	<cost>35</cost><!-- 1.28 was 45 -->
 	<bp>4</bp>
 	<rarity>4</rarity>
 	<image>ba_bomb_healfire</image>
@@ -16021,9 +16365,9 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<sp>0</sp>
 	<fireChance>1</fireChance>
 	<breachChance>0</breachChance>
-	<cooldown>18</cooldown>
+	<cooldown>15</cooldown><!-- 1.28 was 18 -->
 	<power>2</power>
-	<cost>65</cost>
+	<cost>50</cost><!-- 1.28 was 65 -->
 	<bp>4</bp>
 	<rarity>3</rarity>
 	<image>ba_bomb_cluster_1_hit</image>
@@ -16054,9 +16398,9 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<sp>0</sp>
 	<fireChance>8</fireChance>
 	<breachChance>0</breachChance>
-	<cooldown>13</cooldown>
+	<cooldown>10</cooldown> <!-- 1.28 was 13 -->
 	<power>1</power>
-	<cost>50</cost>
+	<cost>40</cost><!-- 1.28 was 50 -->
 	<bp>4</bp>
 	<rarity>2</rarity>
 	<image>ba_bomb_fire_small</image>
@@ -16086,9 +16430,9 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<sp>0</sp>
 	<fireChance>9</fireChance><!-- 1.22, was 10 -->
 	<breachChance>0</breachChance>
-	<cooldown>16</cooldown>
+	<cooldown>13</cooldown><!-- 1.28 was 16 -->
 	<power>2</power>
-	<cost>65</cost>
+	<cost>50</cost><!-- 1.28 was 65 -->
 	<bp>5</bp>
 	<rarity>3</rarity>
 	<image>bomb_fire_shot</image>
@@ -16118,9 +16462,9 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<sp>0</sp>
 	<fireChance>10</fireChance>
 	<breachChance>0</breachChance>
-	<cooldown>19</cooldown>
+	<cooldown>16</cooldown><!-- 1.28 was 19 -->
 	<power>2</power> <!-- 1.25, was 3 -->
-	<cost>75</cost>
+	<cost>60</cost><!-- 1.28 was 75 -->
 	<bp>5</bp>
 	<rarity>4</rarity>
 	<image>ba_bomb_fire_2</image>
@@ -16150,7 +16494,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<sp>0</sp>
 	<fireChance>5</fireChance>
 	<breachChance>0</breachChance>
-	<cooldown>18</cooldown>
+	<cooldown>15</cooldown><!-- 1.28 was 18 -->
 	<power>2</power>
 	<cost>50</cost>
 	<bp>5</bp>
@@ -16164,6 +16508,66 @@ This modified Pike Beam inflicts extra system damage.</desc>
 		<sound>fireBomb</sound>
 	</hitShipSounds>
 	<weaponArt>ba_bomb_cluster_fire</weaponArt> <!-- 1.22 --> <!-- changed png file -->
+</weaponBlueprint>
+
+<weaponBlueprint name="BOMB_DELAY_FIRE_STUN"> <!-- 1.28 -->
+	<type>BOMB</type>
+	<title>Lingering Fire Bomb</title>
+	<short>L-Fire Bomb</short>
+	<desc>Teleported explosive device. Starts a fire and paralyzes the crew. The explosion is delayed for 10 seconds. Can be sent to your own ship.</desc>
+	<tip>tip_bombs_f10_b0</tip>
+	<damage>0</damage>
+	<stun>15</stun>
+	<missiles>1</missiles>
+	<shots>1</shots>
+	<sp>0</sp>
+	<fireChance>10</fireChance>
+	<breachChance>0</breachChance>
+	<cooldown>2</cooldown>
+	<power>1</power>
+	<cost>40</cost>
+	<bp>4</bp>
+	<rarity>0</rarity>
+	<image>bomb_delay_fire_stun_bomb</image>
+	<explosion>explosion_random</explosion>
+	<launchSounds>
+		<sound>bombTeleport</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>smallExplosion</sound>
+	</hitShipSounds>
+	<weaponArt>bomb_delay_fire_stun_launcher</weaponArt>
+	<iconImage>bomb</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="BOMB_DELAY_BIO"> <!-- 1.28 -->
+	<type>BOMB</type>
+	<title>Lingering Bio-Bomb</title>
+	<short>L-Bio-Bomb</short>
+	<desc>Teleported explosive device. Deals a lot of crew damage. The explosion is delayed for 10 seconds. Can be sent to your own ship.</desc>
+	<tip>tip_bombs_f0_b0</tip>
+	<damage>0</damage>
+	<persDamage>6</persDamage>
+	<missiles>1</missiles>
+	<shots>1</shots>
+	<sp>0</sp>
+	<fireChance>0</fireChance>
+	<breachChance>0</breachChance>
+	<cooldown>2</cooldown>
+	<power>1</power>
+	<cost>40</cost>
+	<bp>4</bp>
+	<rarity>0</rarity>
+	<image>bomb_delay_bio_bomb</image>
+	<explosion>explosion_random</explosion>
+	<launchSounds>
+		<sound>bombTeleport</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>smallExplosion</sound>
+	</hitShipSounds>
+	<weaponArt>bomb_delay_bio_launcher</weaponArt>
+	<iconImage>bomb</iconImage>
 </weaponBlueprint>
 
 <!-- Biological Bomb -->
@@ -16184,7 +16588,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<breachChance>0</breachChance>
 	<cooldown>8</cooldown>
 	<power>2</power>
-	<cost>60</cost>
+	<cost>30</cost><!-- 1.28 was 60 -->
 	<bp>4</bp>
 	<rarity>4</rarity>
 	<image>ba_bomb_bio</image>
@@ -16216,7 +16620,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<breachChance>0</breachChance>
 	<cooldown>6</cooldown>
 	<power>1</power>
-	<cost>40</cost>
+	<cost>10</cost><!-- 1.28 was 40 -->
 	<bp>4</bp>
 	<rarity>3</rarity>
 	<image>bomb_heal_shot</image>
@@ -16249,7 +16653,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<breachChance>0</breachChance>
 	<cooldown>10</cooldown>
 	<power>1</power>
-	<cost>30</cost>
+	<cost>10</cost><!-- 1.28 was 30 -->
 	<bp>4</bp>
 	<rarity>4</rarity>
 	<image>ba_bomb_heal_cluster</image>
@@ -16279,9 +16683,9 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<sp>0</sp>
 	<fireChance>0</fireChance>
 	<breachChance>8</breachChance><!-- 1.22, was 10 -->
-	<cooldown>13</cooldown><!-- 1.23, was 16 -->
+	<cooldown>10</cooldown><!-- 1.28 was 13 | 1.23, was 16 -->
 	<power>2</power>
-	<cost>50</cost>
+	<cost>40</cost><!-- 1.28 was 50 -->
 	<bp>4</bp>
 	<rarity>3</rarity>
 	<image>bomb_breach_shot</image>
@@ -16311,9 +16715,9 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<sp>0</sp>
 	<fireChance>0</fireChance>
 	<breachChance>9</breachChance><!-- 1.22, was 10 -->
-	<cooldown>16</cooldown><!-- 1.23, was 17 -->
+	<cooldown>13</cooldown><!-- 1.28 was 16 | 1.23, was 17 -->
 	<power>2</power><!-- 1.23, was 3, didn't really make sense. back to vanilla! (I think) -->
-	<cost>65</cost> <!--was 70-->
+	<cost>50</cost> <!-- 1.28 was 65 | was 70 -->
 	<bp>4</bp>
 	<rarity>4</rarity>
 	<image>bomb_breach_shot</image>
@@ -16343,9 +16747,9 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<sp>0</sp>
 	<fireChance>0</fireChance>
 	<breachChance>10</breachChance>
-	<cooldown>19</cooldown><!-- 1.23, was 18 -->
+	<cooldown>16</cooldown><!-- 1.28 was 19 | 1.23, was 18 -->
 	<power>2</power><!-- 1.23, was 3, pretty much each level is an upgrade in damage and breach chance but loss in cooldown -->
-	<cost>80</cost>
+	<cost>60</cost><!-- 1.28 was 80 -->
 	<bp>4</bp>
 	<rarity>5</rarity>
 	<image>bomb_breach_shot</image>
@@ -16377,9 +16781,9 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<sp>0</sp>
 	<fireChance>0</fireChance>
 	<breachChance>5</breachChance>
-	<cooldown>20</cooldown><!-- 1.22, was 22 -->
+	<cooldown>17</cooldown><!-- 1.28 was 20 | 1.22, was 22 -->
 	<power>2</power>
-	<cost>85</cost>
+	<cost>65</cost><!-- 1.28 was 85 -->
 	<bp>4</bp>
 	<rarity>5</rarity>
 	<image>ba_bomb_cluster_breach_hit</image>
@@ -16413,7 +16817,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<breachChance>0</breachChance>
 	<cooldown>12</cooldown>
 	<power>1</power>
-	<cost>35</cost>
+	<cost>15</cost><!-- 1.28 was 35 -->
 	<bp>4</bp>
 	<rarity>2</rarity>
 	<image>bomb_stun_anim</image>
@@ -16443,9 +16847,9 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<fireChance>0</fireChance>
 	<breachChance>0</breachChance>
 	<stunChance>2</stunChance>
-	<cooldown>18</cooldown> <!--was 21-->
+	<cooldown>15</cooldown> <!-- 1.28 was 18 | was 21 -->
 	<power>1</power>
-	<cost>55</cost> <!--was 65-->
+	<cost>50</cost> <!-- 1.28 was 55 | was 65 -->
 	<bp>4</bp>
 	<rarity>3</rarity>
 	<image>bomb_ion_shot</image>
@@ -16478,9 +16882,9 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<sp>0</sp>
 	<fireChance>0</fireChance>
 	<breachChance>0</breachChance>
-	<cooldown>18</cooldown><!-- 1.22, was 19 -->
+	<cooldown>15</cooldown><!-- 1.28 was 18 | 1.22, was 19 -->
 	<power>1</power>
-	<cost>50</cost>
+	<cost>45</cost><!-- 1.28 was 50 -->
 	<bp>4</bp>
 	<rarity>2</rarity>
 	<image>ba_bomb_cluster_ion_hit</image>
@@ -16514,7 +16918,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<breachChance>0</breachChance>
 	<cooldown>5</cooldown> <!-- vanilla was 18--><!--changed was 14-->
 	<power>1</power>
-	<cost>40</cost>
+	<cost>10</cost><!-- 1.28 was 40 -->
 	<bp>4</bp>
 	<rarity>3</rarity>
 	<image>bomb_repair_anim</image>
@@ -16546,7 +16950,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<breachChance>0</breachChance>
 	<cooldown>9</cooldown>
 	<power>1</power>
-	<cost>80</cost>
+	<cost>60</cost><!-- 1.28 was 80 -->
 	<bp>4</bp>
 	<rarity>4</rarity>
 	<image>ba_bomb_nano_1</image>
@@ -16577,7 +16981,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<breachChance>0</breachChance>
 	<cooldown>7</cooldown>
 	<power>2</power>
-	<cost>95</cost><!-- 1.25, was 105 -->
+	<cost>75</cost><!-- 1.28 was 95 | 1.25, was 105 -->
 	<bp>4</bp>
 	<rarity>5</rarity>
 	<image>ba_bomb_nano_2</image>
@@ -16609,7 +17013,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<breachChance>0</breachChance>
 	<cooldown>5</cooldown>
 	<power>3</power>
-	<cost>110</cost>
+	<cost>90</cost><!-- 1.28 was 110 -->
 	<bp>4</bp>
 	<rarity>5</rarity>
 	<image>ba_bomb_nano_2</image>
@@ -16675,7 +17079,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<breachChance>1</breachChance><!-- 1.25, was 0 -->
 	<cooldown>15</cooldown>
 	<power>1</power>
-	<cost>30</cost><!-- 1.23, was 35 -->
+	<cost>25</cost><!-- 1.28 was 30 | 1.23, was 35 -->
 	<bp>4</bp>
 	<rarity>3</rarity>
 	<image>ba_bomb_cluster_flashbang</image>
@@ -16709,7 +17113,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<breachChance>1</breachChance><!-- 1.25, was 0 -->
 	<cooldown>12</cooldown> <!-- was 15 -->
 	<power>1</power>
-	<cost>45</cost>
+	<cost>35</cost><!-- 1.28 was 45 -->
 	<bp>4</bp>
 	<rarity>4</rarity> <!-- was 3 -->
 	<image>ba_bomb_cluster_flashbang</image>
@@ -16815,6 +17219,128 @@ This modified Pike Beam inflicts extra system damage.</desc>
 
 <!-- Missiles and Mines-->
 
+<!-- 1.28 flagged -->
+<weaponBlueprint name="KERNEL_1">
+	<type>MISSILES</type>
+	<tip>tip_missiles_f0_b5</tip>
+	<title>Зерномёт Мод I</title>
+	<short>Зерномёт I</short>
+	<desc>Это орудие стреляет зёрнами огромных растений с родной планеты орхидов.</desc>
+	<damage>1</damage>
+	<missiles>1</missiles>
+	<shots>1</shots>
+	<sp>5</sp>
+	<stun>5</stun>
+	<fireChance>0</fireChance>
+	<breachChance>5</breachChance>
+	<cooldown>10</cooldown>
+	<power>1</power>
+	<cost>30</cost>
+	<bp>6</bp>
+	<rarity>0</rarity>
+	<image>kernel_projectile</image>
+	<launchSounds>
+		<sound>kernel_launch1</sound>
+		<sound>kernel_launch2</sound>
+		<sound>kernel_launch3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>smallExplosion</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>kernel_1</weaponArt>
+	<iconImage>missile</iconImage>
+</weaponBlueprint>
+<weaponBlueprint name="KERNEL_2">
+	<type>MISSILES</type>
+	<tip>tip_missiles_f0_b5</tip>
+	<title>Зерномёт Мод II</title>
+	<short>Зерномёт II</short>
+	<desc>Эта модель зерномёта выпускает 2 снаряда за один залп.</desc>
+	<damage>1</damage>
+	<missiles>1</missiles>
+	<shots>2</shots>
+	<sp>5</sp>
+	<stun>5</stun>
+	<fireChance>0</fireChance>
+	<breachChance>5</breachChance>
+	<cooldown>15</cooldown>
+	<power>2</power>
+	<cost>40</cost>
+	<bp>6</bp>
+	<rarity>0</rarity>
+	<image>kernel_projectile</image>
+	<launchSounds>
+		<sound>kernel_launch1</sound>
+		<sound>kernel_launch2</sound>
+		<sound>kernel_launch3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>smallExplosion</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>kernel_2</weaponArt>
+	<iconImage>missile</iconImage>
+</weaponBlueprint>
+<weaponBlueprint name="KERNEL_CHAIN">
+	<type>MISSILES</type>
+	<tip>tip_missiles_f0_b5</tip>
+	<title>Цепной зерномёт</title>
+	<short>Ц. зерномёт</short>
+	<desc>Единственное, что может остановить это орудие - недостаток боеприпасов.</desc>
+	<damage>1</damage>
+	<missiles>1</missiles>
+	<shots>1</shots>
+	<sp>5</sp>
+	<stun>5</stun>
+	<fireChance>0</fireChance>
+	<breachChance>5</breachChance>
+	<cooldown>12</cooldown>
+	<power>3</power>
+	<cost>50</cost>
+	<bp>6</bp>
+	<rarity>0</rarity>
+	<image>kernel_projectile</image>
+	<boost>
+		<type>cooldown</type>
+		<amount>3</amount>
+		<count>3</count>
+	</boost>
+	<launchSounds>
+		<sound>kernel_launch1</sound>
+		<sound>kernel_launch2</sound>
+		<sound>kernel_launch3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>smallExplosion</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>kernel_chain</weaponArt>
+	<iconImage>missile</iconImage>
+</weaponBlueprint>
+
+
 <weaponBlueprint name="MISSILES_ARU_GOLIAPH"> <!-- 1.26.1 -->
 	<type>MISSILES</type>
 	<flavorType>Adaptive Missile Platform</flavorType>
@@ -16831,7 +17357,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<breachChance>1</breachChance>
 	<cooldown>11</cooldown>
 	<power>1</power>
-	<cost>40</cost>
+	<cost>30</cost><!-- 1.28 was 40 -->
 	<bp>5</bp>
 	<boost>
 		<type>damage</type>
@@ -16875,7 +17401,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<stunChance>2</stunChance>
 	<cooldown>19</cooldown><!-- 1.25, was 22 -->
 	<power>3</power>
-	<cost>75</cost>
+	<cost>55</cost><!-- 1.28 was 75 -->
 	<bp>10</bp>
 	<speed>30</speed>
 	<rarity>4</rarity>
@@ -16917,7 +17443,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<stun>6</stun><!-- 1.22 was stunChance of 3 -->
 	<cooldown>20</cooldown><!-- 1.26 was 23 | 1.22.2 was 25 -->
 	<power>4</power>
-	<cost>90</cost>
+	<cost>70</cost><!-- 1.28 was 90 -->
 	<bp>6</bp>
 	<rarity>5</rarity>
 	<image>missile_mega</image>
@@ -16992,7 +17518,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<breachChance>1</breachChance>
 	<cooldown>11</cooldown>
 	<power>1</power>
-	<cost>35</cost>
+	<cost>30</cost><!-- 1.28 was 35 -->
 	<bp>5</bp>
 	<rarity>1</rarity>
 	<image>missile_2</image>
@@ -17028,7 +17554,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<breachChance>2</breachChance>
 	<cooldown>14</cooldown>
 	<power>3</power>
-	<cost>50</cost>
+	<cost>45</cost><!-- 1.28 was 50 -->
 	<bp>6</bp>
 	<rarity>2</rarity>
 	<image>missile_3</image>
@@ -17064,7 +17590,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<breachChance>2</breachChance>
 	<cooldown>18</cooldown><!-- 1.25 was 19 -->
 	<power>3</power>
-	<cost>70</cost><!-- 1.26 was 85 -->
+	<cost>50</cost><!-- 1.28 was 70 | 1.26 was 85 -->
 	<bp>7</bp>
 	<rarity>3</rarity>
 	<image>missile_2</image>
@@ -17101,7 +17627,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<breachChance>8</breachChance>
 	<cooldown>20</cooldown><!-- 1.25, was 22 -->
 	<power>3</power>
-	<cost>75</cost>
+	<cost>45</cost><!-- 1.28 was 75 -->
 	<bp>7</bp>
 	<rarity>4</rarity>
 	<image>missile_breach</image>
@@ -17187,7 +17713,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<cooldown>7</cooldown>
 	<power>2</power>
 	<chargeLevels>3</chargeLevels>
-	<cost>55</cost>
+	<cost>40</cost><!-- 1.28 was 55 -->
 	<bp>10</bp>
 	<speed>45</speed>
 	<rarity>3</rarity>
@@ -17231,7 +17757,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<breachChance>1</breachChance>
 	<cooldown>17</cooldown>
 	<power>3</power>
-	<cost>60</cost>
+	<cost>40</cost><!-- 1.28 was 60 -->
 	<bp>10</bp>
 	<speed>35</speed>
 	<rarity>4</rarity><!-- 1.25, was 3 -->
@@ -17283,7 +17809,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<breachChance>1</breachChance>
 	<cooldown>18</cooldown>
 	<power>3</power>
-	<cost>75</cost>
+	<cost>50</cost><!-- 1.28 was 75 -->
 	<bp>10</bp>
 	<speed>35</speed>
 	<rarity>4</rarity>
@@ -17335,7 +17861,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<breachChance>1</breachChance>
 	<cooldown>19</cooldown>
 	<power>3</power>
-	<cost>90</cost>
+	<cost>60</cost><!-- 1.28 was 90 -->
 	<bp>10</bp>
 	<speed>35</speed>
 	<rarity>5</rarity>
@@ -17388,7 +17914,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<breachChance>1</breachChance>
 	<cooldown>12</cooldown>
 	<power>2</power>
-	<cost>45</cost>
+	<cost>40</cost> <!-- 1.28 was 45 -->
 	<bp>5</bp>
 	<rarity>4</rarity>
 	<image>ba_missile_tech</image>
@@ -17428,7 +17954,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<breachChance>0</breachChance>
 	<cooldown>15</cooldown>
 	<power>3</power>
-	<cost>100</cost>
+	<cost>70</cost><!-- 1.28 was 100 -->
 	<bp>7</bp>
 	<rarity>5</rarity>
 	<image>ba_missile_tech_swarm</image>
@@ -17815,7 +18341,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<hullBust>1</hullBust>
 	<cooldown>15</cooldown>
 	<power>2</power>
-	<cost>55</cost>
+	<cost>40</cost><!-- 1.28 was 55 -->
 	<bp>6</bp>
 	<rarity>4</rarity>
 	<image>missile_hull</image>
@@ -17851,7 +18377,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<breachChance>2</breachChance>
 	<cooldown>17</cooldown> <!-- 1.25, was 19 | was 20 -->
 	<power>3</power> <!-- was 2 -->
-	<cost>70</cost>
+	<cost>50</cost><!-- 1.28 was 70 -->
 	<bp>6</bp>
 	<rarity>3</rarity>
 	<image>ba_missile_4</image>
@@ -17923,7 +18449,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<breachChance>0</breachChance>
 	<cooldown>15</cooldown>
 	<power>3</power>
-	<cost>60</cost>
+	<cost>40</cost><!-- 1.28 was 60 -->
 	<bp>7</bp>
 	<rarity>3</rarity>
 	<image>ba_missile_swarm_2</image>
@@ -17959,7 +18485,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<breachChance>0</breachChance>
 	<cooldown>16</cooldown>
 	<power>3</power>
-	<cost>70</cost>
+	<cost>50</cost><!-- 1.28 was 70 -->
 	<bp>7</bp>
 	<rarity>4</rarity>
 	<image>ba_missile_fire</image>
@@ -17995,7 +18521,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<breachChance>0</breachChance>
 	<cooldown>18</cooldown>
 	<power>3</power>
-	<cost>80</cost>
+	<cost>55</cost><!-- 1.28 was 80 -->
 	<bp>7</bp>
 	<rarity>4</rarity>
 	<image>ba_missile_swarm_3</image>
@@ -18034,7 +18560,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<breachChance>0</breachChance>
 	<cooldown>15</cooldown>
 	<power>2</power>
-	<cost>70</cost>
+	<cost>40</cost><!-- 1.28 was 70 -->
 	<bp>2</bp>
 	<rarity>0</rarity>
 	<image>orden_missile_proj</image>
@@ -18071,7 +18597,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<breachChance>0</breachChance>
 	<cooldown>19</cooldown>
 	<power>3</power>
-	<cost>95</cost>
+	<cost>55</cost><!-- 1.28 was 95 -->
 	<bp>2</bp>
 	<rarity>0</rarity>
 	<image>orden_missile_proj</image>
@@ -18435,7 +18961,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<breachChance>1</breachChance>
 	<cooldown>16</cooldown>
 	<power>2</power>
-	<cost>65</cost>
+	<cost>40</cost><!-- 1.28 was 65 -->
 	<speed>33</speed>
 	<bp>2</bp>
 	<rarity>0</rarity>
@@ -18474,7 +19000,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<breachChance>0</breachChance>
 	<cooldown>14</cooldown>
 	<power>2</power>
-	<cost>70</cost>
+	<cost>40</cost><!-- 1.28 was 70 -->
 	<speed>33</speed>
 	<bp>2</bp>
 	<rarity>0</rarity>
@@ -18514,7 +19040,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<breachChance>0</breachChance>
 	<cooldown>15</cooldown>
 	<power>2</power>
-	<cost>70</cost>
+	<cost>40</cost><!-- 1.28 -->
 	<bp>2</bp>
 	<rarity>0</rarity>
 	<image>orden_missile_proj</image>
@@ -18551,7 +19077,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<breachChance>0</breachChance>
 	<cooldown>19</cooldown>
 	<power>3</power>
-	<cost>95</cost>
+	<cost>55</cost><!-- 1.28 -->
 	<bp>2</bp>
 	<rarity>0</rarity>
 	<image>orden_missile_proj</image>
@@ -18589,7 +19115,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<breachChance>0</breachChance>
 	<cooldown>14</cooldown>
 	<power>2</power>
-	<cost>70</cost>
+	<cost>40</cost><!-- 1.28 -->
 	<speed>33</speed>
 	<bp>2</bp>
 	<rarity>0</rarity>
@@ -18628,7 +19154,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<breachChance>1</breachChance>
 	<cooldown>16</cooldown>
 	<power>2</power>
-	<cost>65</cost>
+	<cost>40</cost><!-- 1.28 -->
 	<speed>33</speed>
 	<bp>2</bp>
 	<rarity>0</rarity>
@@ -18648,6 +19174,50 @@ This modified Pike Beam inflicts extra system damage.</desc>
 		<sound>miss</sound>
 	</missSounds>
 	<weaponArt>missiles_karakurt_strip3</weaponArt> 
+</weaponBlueprint>
+
+<weaponBlueprint name="ORU_MISSILE_M"> <!-- 1.28 -->
+	<type>MISSILES</type>
+	<flavorType>ОРУ Носорог</flavorType>
+	<tip>tip_no_missiles_f0_b3</tip>
+	<title>Rhino Single-Charge*</title>
+	<short>Rhino S-Ch.*</short>
+	<desc>Эта одноразовая ракетная установка не требует питания. Требует запитки от другого оружия.</desc>
+	<speed>40</speed>
+	<damage>5</damage>
+	<missiles>0</missiles>
+	<stun>5</stun>
+	<shots>1</shots>
+	<sp>5</sp> <!-- 1.28 -->
+	<fireChance>0</fireChance>
+	<breachChance>3</breachChance>
+	<cooldown>10</cooldown>
+	<power>0</power>
+	<cost>40</cost>
+	<bp>2</bp>
+	<rarity>0</rarity>
+	<boost>
+		<type>cooldown</type>
+		<amount>10.1</amount>
+		<count>1</count>
+	</boost>
+	<image>missile_mega</image>
+	<explosion>ce_explosion_really_big</explosion>
+	<launchSounds>
+		<sound>largeMissile</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>smallExplosion</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>oru_missile</weaponArt> 
 </weaponBlueprint>
 
 <weaponBlueprint name="BA_MISSILES_ASTERIA_M">
@@ -18738,7 +19308,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<breachChance>2</breachChance>
 	<cooldown>17</cooldown> <!-- 1.25, was 19 | was 20 -->
 	<power>3</power> <!-- was 2 -->
-	<cost>70</cost>
+	<cost>50</cost><!-- 1.28 -->
 	<bp>6</bp>
 	<rarity>0</rarity>
 	<image>ba_missile_4</image>
@@ -18810,7 +19380,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<breachChance>0</breachChance>
 	<cooldown>15</cooldown>
 	<power>3</power>
-	<cost>60</cost>
+	<cost>40</cost><!-- 1.28 -->
 	<bp>7</bp>
 	<rarity>0</rarity>
 	<image>ba_missile_swarm_2</image>
@@ -18846,7 +19416,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<breachChance>0</breachChance>
 	<cooldown>16</cooldown>
 	<power>3</power>
-	<cost>70</cost> <!-- was 80, changed due to discrepancy with reg version -->
+	<cost>50</cost><!-- 1.28 was 70 --> <!-- was 80, changed due to discrepancy with reg version -->
 	<bp>7</bp>
 	<rarity>0</rarity>
 	<image>ba_missile_fire</image>
@@ -18882,7 +19452,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<breachChance>0</breachChance>
 	<cooldown>18</cooldown>
 	<power>3</power>
-	<cost>80</cost>
+	<cost>55</cost><!-- 1.28 -->
 	<bp>7</bp>
 	<rarity>0</rarity>
 	<image>ba_missile_swarm_3</image>
@@ -18922,7 +19492,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<breachChance>1</breachChance>
 	<cooldown>12</cooldown>
 	<power>2</power>
-	<cost>45</cost>
+	<cost>40</cost> <!-- 1.28 -->
 	<bp>5</bp>
 	<rarity>0</rarity>
 	<image>ba_missile_tech</image>
@@ -18962,7 +19532,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<breachChance>0</breachChance>
 	<cooldown>15</cooldown>
 	<power>3</power>
-	<cost>100</cost>
+	<cost>70</cost><!-- 1.28 -->
 	<bp>7</bp>
 	<rarity>0</rarity>
 	<image>ba_missile_tech_swarm</image>
@@ -19277,7 +19847,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<breachChance>1</breachChance>
 	<cooldown>17</cooldown>
 	<power>3</power>
-	<cost>60</cost>
+	<cost>40</cost><!-- 1.28 -->
 	<bp>10</bp>
 	<speed>35</speed>
 	<rarity>0</rarity>
@@ -19329,7 +19899,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<breachChance>1</breachChance>
 	<cooldown>18</cooldown>
 	<power>3</power>
-	<cost>75</cost>
+	<cost>50</cost><!-- 1.28 -->
 	<bp>10</bp>
 	<speed>35</speed>
 	<rarity>0</rarity>
@@ -19381,7 +19951,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<breachChance>1</breachChance>
 	<cooldown>19</cooldown>
 	<power>3</power>
-	<cost>90</cost>
+	<cost>60</cost><!-- 1.28 -->
 	<bp>10</bp>
 	<speed>35</speed>
 	<rarity>0</rarity>
@@ -19481,7 +20051,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<cooldown>7</cooldown>
 	<power>2</power>
 	<chargeLevels>3</chargeLevels>
-	<cost>55</cost>
+	<cost>40</cost><!-- 1.28 -->
 	<bp>10</bp>
 	<speed>45</speed>
 	<rarity>0</rarity>
@@ -19559,7 +20129,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<breachChance>1</breachChance>
 	<cooldown>11</cooldown>
 	<power>1</power>
-	<cost>35</cost>
+	<cost>30</cost><!-- 1.28 -->
 	<bp>5</bp>
 	<rarity>0</rarity>
 	<image>missile_2</image>
@@ -19595,7 +20165,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<breachChance>2</breachChance>
 	<cooldown>14</cooldown>
 	<power>3</power>
-	<cost>50</cost>
+	<cost>45</cost><!-- 1.28 -->
 	<bp>6</bp>
 	<rarity>0</rarity>
 	<image>missile_3</image>
@@ -19631,7 +20201,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<breachChance>2</breachChance>
 	<cooldown>18</cooldown><!-- 1.25 was 19 -->
 	<power>3</power>
-	<cost>70</cost><!-- 1.26 was 85 -->
+	<cost>50</cost><!-- 1.28 --><!-- 1.26 was 85 -->
 	<bp>7</bp>
 	<rarity>0</rarity>
 	<image>missile_2</image>
@@ -19668,7 +20238,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<breachChance>8</breachChance>
 	<cooldown>20</cooldown><!-- 1.25, was 22 -->
 	<power>3</power>
-	<cost>75</cost>
+	<cost>45</cost><!-- 1.28 -->
 	<bp>7</bp>
 	<rarity>0</rarity>
 	<image>missile_breach</image>
@@ -19706,7 +20276,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<hullBust>1</hullBust>
 	<cooldown>15</cooldown>
 	<power>2</power>
-	<cost>75</cost>
+	<cost>40</cost><!-- 1.28 -->
 	<bp>6</bp>
 	<rarity>0</rarity>
 	<image>missile_hull</image>
@@ -19742,7 +20312,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<stun>6</stun><!-- 1.22 was stunChance of 3 -->
 	<cooldown>20</cooldown><!-- 1.26 was 23 | 1.22.2 was 25 -->
 	<power>4</power>
-	<cost>90</cost>
+	<cost>70</cost><!-- 1.28 -->
 	<bp>6</bp>
 	<rarity>0</rarity>
 	<image>missile_mega</image>
@@ -19765,6 +20335,126 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<weaponArt>missiles_mega</weaponArt> 
 </weaponBlueprint>
 
+<weaponBlueprint name="KERNEL_1_M"><!-- 1.28 -->
+	<type>MISSILES</type>
+	<tip>tip_no_missiles_f0_b5</tip>
+	<title>Зерномёт Мод I</title>
+	<short>Зерномёт I</short>
+	<desc>Это орудие стреляет зёрнами огромных растений с родной планеты орхидов.</desc>
+	<damage>1</damage>
+	<missiles>0</missiles>
+	<shots>1</shots>
+	<sp>5</sp>
+	<stun>5</stun>
+	<fireChance>0</fireChance>
+	<breachChance>5</breachChance>
+	<cooldown>10</cooldown>
+	<power>1</power>
+	<cost>30</cost>
+	<bp>6</bp>
+	<rarity>0</rarity>
+	<image>kernel_projectile</image>
+	<launchSounds>
+		<sound>kernel_launch1</sound>
+		<sound>kernel_launch2</sound>
+		<sound>kernel_launch3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>smallExplosion</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>kernel_1</weaponArt>
+	<iconImage>missile</iconImage>
+</weaponBlueprint>
+<weaponBlueprint name="KERNEL_2_M"><!-- 1.28 -->
+	<type>MISSILES</type>
+	<tip>tip_no_missiles_f0_b5</tip>
+	<title>Зерномёт Мод II</title>
+	<short>Зерномёт II</short>
+	<desc>Эта модель зерномёта выпускает 2 снаряда за один залп.</desc>
+	<damage>1</damage>
+	<missiles>0</missiles>
+	<shots>2</shots>
+	<sp>5</sp>
+	<stun>5</stun>
+	<fireChance>0</fireChance>
+	<breachChance>5</breachChance>
+	<cooldown>15</cooldown>
+	<power>2</power>
+	<cost>40</cost>
+	<bp>6</bp>
+	<rarity>0</rarity>
+	<image>kernel_projectile</image>
+	<launchSounds>
+		<sound>kernel_launch1</sound>
+		<sound>kernel_launch2</sound>
+		<sound>kernel_launch3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>smallExplosion</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>kernel_2</weaponArt>
+	<iconImage>missile</iconImage>
+</weaponBlueprint>
+<weaponBlueprint name="KERNEL_CHAIN_M"><!-- 1.28 -->
+	<type>MISSILES</type>
+	<tip>tip_no_missiles_f0_b5</tip>
+	<title>Цепной зерномёт</title>
+	<short>Ц. зерномёт</short>
+	<desc>Единственное, что может остановить это орудие - недостаток боеприпасов (нет).</desc> <!-- 1.28 -->
+	<damage>1</damage>
+	<missiles>0</missiles>
+	<shots>1</shots>
+	<sp>5</sp>
+	<stun>5</stun>
+	<fireChance>0</fireChance>
+	<breachChance>5</breachChance>
+	<cooldown>12</cooldown>
+	<power>3</power>
+	<cost>50</cost>
+	<bp>6</bp>
+	<rarity>0</rarity>
+	<image>kernel_projectile</image>
+	<boost>
+		<type>cooldown</type>
+		<amount>3</amount>
+		<count>3</count>
+	</boost>
+	<launchSounds>
+		<sound>kernel_launch1</sound>
+		<sound>kernel_launch2</sound>
+		<sound>kernel_launch3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>smallExplosion</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>kernel_chain</weaponArt>
+	<iconImage>missile</iconImage>
+</weaponBlueprint>
+
 <weaponBlueprint name="MISSILES_ARU_GOLIAPH_M"> <!-- 1.26.1 -->
 	<type>MISSILES</type>
 	<flavorType>Adaptive Missile Platform</flavorType>
@@ -19781,7 +20471,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<breachChance>1</breachChance>
 	<cooldown>11</cooldown>
 	<power>1</power>
-	<cost>40</cost>
+	<cost>30</cost><!-- 1.28 -->
 	<bp>5</bp>
 	<boost>
 		<type>damage</type>
@@ -19825,7 +20515,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<stunChance>2</stunChance>
 	<cooldown>19</cooldown><!-- 1.25, was 22 -->
 	<power>3</power>
-	<cost>75</cost>
+	<cost>55</cost><!-- 1.28 -->
 	<bp>10</bp>
 	<speed>30</speed>
 	<rarity>0</rarity>
@@ -19867,7 +20557,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<sp>5</sp>
 	<fireChance>2</fireChance>
 	<breachChance>2</breachChance>
-	<cooldown>5</cooldown>
+	<cooldown>4</cooldown><!-- 1.28 -->
 	<power>1</power>
 	<cost>100</cost>
 	<bp>2</bp>
@@ -19903,7 +20593,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<sp>5</sp>
 	<fireChance>6</fireChance>
 	<breachChance>4</breachChance>
-	<cooldown>13</cooldown>
+	<cooldown>11</cooldown><!-- 1.28 -->
 	<power>2</power>
 	<cost>100</cost>
 	<bp>7</bp>
@@ -19942,7 +20632,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<fireChance>4</fireChance>
 	<breachChance>4</breachChance>
 	<stunChance>4</stunChance>
-	<cooldown>15</cooldown>
+	<cooldown>13</cooldown><!-- 1.28 -->
 	<power>2</power>
 	<cost>100</cost>
 	<bp>10</bp>
@@ -19990,7 +20680,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<spin>720</spin>
 	<fireChance>0</fireChance>
 	<breachChance>0</breachChance>
-	<cooldown>14</cooldown>
+	<cooldown>10</cooldown><!-- 1.28 was 14 -->
 	<power>3</power>
 	<cost>50</cost>
 	<bp>3</bp>
@@ -20035,9 +20725,9 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<spin>720</spin>
 	<fireChance>0</fireChance>
 	<breachChance>0</breachChance>
-	<cooldown>18</cooldown>
+	<cooldown>15</cooldown><!-- 1.28 was 18 -->
 	<power>3</power>
-	<cost>75</cost>
+	<cost>60</cost><!-- 1.28 was 75 -->
 	<bp>3</bp>
 	<rarity>0</rarity> 
 	<image>ion_heavy_2_shot</image>
@@ -20080,9 +20770,9 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<spin>720</spin>
 	<fireChance>0</fireChance>
 	<breachChance>0</breachChance>
-	<cooldown>22</cooldown>
+	<cooldown>20</cooldown><!-- 1.28 was 22-->
 	<power>3</power>
-	<cost>100</cost>
+	<cost>80</cost><!-- 1.28 was 100 -->
 	<bp>3</bp>
 	<rarity>0</rarity> 
 	<image>ion_blast_3_shot</image>
@@ -20123,9 +20813,9 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<fireChance>0</fireChance>
 	<speed>30</speed>
 	<breachChance>0</breachChance>
-	<cooldown>6.5</cooldown>
+	<cooldown>5.5</cooldown><!-- 1.28 was 6.5 -->
 	<power>2</power>
-	<cost>45</cost>
+	<cost>35</cost><!-- 1.28 was 45 -->
 	<bp>2</bp>
 	<rarity>3</rarity>
 	<image>ion_blast_1_shot</image>
@@ -20168,9 +20858,9 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<fireChance>0</fireChance>
 	<speed>35</speed>
 	<breachChance>0</breachChance>
-	<cooldown>5</cooldown>
+	<cooldown>4</cooldown><!-- 1.28 was 5 -->
 	<power>3</power>
-	<cost>70</cost>
+	<cost>50</cost><!-- 1.28 was 70 -->
 	<bp>2</bp>
 	<rarity>4</rarity>
 	<image>ion_blast_1_shot</image>
@@ -20214,7 +20904,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<fireChance>0</fireChance>
 	<breachChance>0</breachChance>
 	<stunChance>1</stunChance>
-	<cooldown>13</cooldown> <!--13-->
+	<cooldown>11</cooldown> <!-- 1.28 was 13 -->
 	<power>3</power>
 	<cost>45</cost>
 	<bp>3</bp>
@@ -20266,14 +20956,14 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<fireChance>0</fireChance>
 	<breachChance>0</breachChance>
 	<spin>720</spin>
-	<cooldown>8.5</cooldown> <!-- 1.25 was 9 -->
+	<cooldown>7.5</cooldown><!-- 1.28 was 8.5 | 1.25 was 9 -->
 	<boost>
 		<type>cooldown</type>
 		<amount>0.9</amount> <!-- 1.26 was 1 -> cap is 2.2 instead of 1.5 -->
 		<count>7</count>
 	</boost>
 	<power>4</power>
-	<cost>120</cost>
+	<cost>100</cost><!-- 1.28 was 120 -->
 	<bp>4</bp>
 	<rarity>5</rarity>
 	<image>ba_ion_vulkan_shot</image>
@@ -20317,9 +21007,9 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<spin>720</spin>
 	<fireChance>0</fireChance>
 	<breachChance>0</breachChance>
-	<cooldown>11</cooldown>
+	<cooldown>8</cooldown><!-- 1.28 was 11 -->
 	<power>1</power>
-	<cost>50</cost>
+	<cost>40</cost><!-- 1.28 was 50 -->
 	<bp>10</bp>
 	<rarity>3</rarity>
 	<explosion>ba_explosion_ion_medium</explosion>
@@ -20365,9 +21055,9 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<spin>720</spin>
 	<fireChance>0</fireChance>
 	<breachChance>0</breachChance>
-	<cooldown>12</cooldown><!-- 1.27 was 14 -->
+	<cooldown>10</cooldown><!-- 1.28 was 12 | 1.27 was 14 -->
 	<power>2</power>
-	<cost>60</cost>
+	<cost>50</cost><!-- 1.28 was 60 -->
 	<bp>10</bp>
 	<rarity>4</rarity>
 	<explosion>ba_explosion_ion_medium</explosion>
@@ -20412,7 +21102,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<sp>0</sp>
 	<fireChance>0</fireChance>
 	<breachChance>0</breachChance>
-	<cooldown>10</cooldown>
+	<cooldown>7</cooldown><!-- 1.28 was 10 -->
 	<power>1</power>
 	<cost>35</cost>
 	<bp>3</bp>
@@ -20456,7 +21146,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<sp>0</sp>
 	<fireChance>0</fireChance>
 	<breachChance>0</breachChance>
-	<cooldown>15</cooldown>
+	<cooldown>10</cooldown><!-- 1.28 was 15 -->
 	<power>2</power>
 	<cost>50</cost>
 	<bp>4</bp>
@@ -20500,7 +21190,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<sp>0</sp>
 	<fireChance>0</fireChance>
 	<breachChance>0</breachChance>
-	<cooldown>16</cooldown><!-- 1.25, was 17 -->
+	<cooldown>12</cooldown><!-- 1.28 was 16 | 1.25, was 17 -->
 	<power>1</power>
 	<cost>45</cost>
 	<bp>3</bp>
@@ -20545,7 +21235,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<fireChance>0</fireChance>
 	<breachChance>0</breachChance>
 	<stunChance>1</stunChance>
-	<cooldown>15</cooldown>
+	<cooldown>11</cooldown><!-- 1.28 was 15 -->
 	<power>1</power>
 	<cost>40</cost>
 	<bp>3</bp>
@@ -20590,7 +21280,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<fireChance>0</fireChance>
 	<breachChance>0</breachChance>
 	<stunChance>1</stunChance>
-	<cooldown>10</cooldown>
+	<cooldown>7</cooldown><!-- 1.28 was 10 -->
 	<power>2</power>
 	<cost>50</cost>
 	<bp>4</bp>
@@ -20635,7 +21325,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<sp>0</sp>
 	<fireChance>0</fireChance>
 	<breachChance>0</breachChance>
-	<cooldown>16</cooldown>
+	<cooldown>13</cooldown><!-- 1.28 was 16 -->
 	<power>2</power>
 	<cost>40</cost>
 	<bp>2</bp>
@@ -20670,13 +21360,13 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<flavorType>Ion Emitter</flavorType>
 	<desc>Fast ion emitter that quickly generates ion fields, disabling systems.</desc>
 	<damage>0</damage>
-	<ion>1</ion>
+	<ion>2</ion><!-- 1.28 was 1 -->
 	<missiles>0</missiles>
 	<shots>1</shots>
 	<sp>0</sp>
 	<fireChance>0</fireChance>
 	<breachChance>0</breachChance>
-	<cooldown>7</cooldown>
+	<cooldown>10</cooldown><!-- 1.28 was 7 -->
 	<power>2</power>
 	<cost>60</cost>
 	<bp>4</bp>
@@ -20717,7 +21407,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<sp>0</sp>
 	<fireChance>0</fireChance>
 	<breachChance>0</breachChance>
-	<cooldown>19</cooldown>
+	<cooldown>15</cooldown><!-- 1.28 was 19 -->
 	<power>3</power>
 	<cost>75</cost>
 	<bp>4</bp>
@@ -20758,7 +21448,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<sp>0</sp>
 	<fireChance>0</fireChance>
 	<breachChance>0</breachChance>
-	<cooldown>11</cooldown>
+	<cooldown>10</cooldown><!-- 1.28 was 11 -->
 	<power>3</power>
 	<cost>70</cost>
 	<bp>4</bp>
@@ -20805,7 +21495,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<sp>0</sp>
 	<fireChance>0</fireChance>
 	<breachChance>0</breachChance>
-	<cooldown>15</cooldown>
+	<cooldown>12</cooldown><!-- 1.28 was 15 -->
 	<power>1</power>
 	<cost>40</cost>
 	<bp>3</bp>
@@ -20848,7 +21538,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<sp>0</sp>
 	<fireChance>0</fireChance>
 	<breachChance>0</breachChance>
-	<cooldown>15</cooldown>
+	<cooldown>12</cooldown><!-- 1.28 was 15 -->
 	<power>2</power>
 	<cost>60</cost>
 	<bp>3</bp>
@@ -20891,9 +21581,9 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<sp>0</sp>
 	<fireChance>0</fireChance>
 	<breachChance>0</breachChance>
-	<cooldown>15</cooldown>
+	<cooldown>12</cooldown><!-- 1.28 was 15 -->
 	<power>3</power>
-	<cost>90</cost>
+	<cost>80</cost><!-- 1.28 was 90 -->
 	<bp>3</bp>
 	<rarity>5</rarity>
 	<image>ion_blast_1_shot</image>
@@ -20938,7 +21628,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<spin>720</spin>
 	<fireChance>0</fireChance>
 	<breachChance>0</breachChance>
-	<cooldown>14</cooldown><!-- 1.22, was 12 -->
+	<cooldown>12</cooldown><!-- 1.28 was 14 | 1.22, was 12 -->
 	<power>2</power>
 	<cost>45</cost>
 	<bp>4</bp>
@@ -20983,9 +21673,9 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<spin>720</spin>
 	<fireChance>0</fireChance>
 	<breachChance>0</breachChance>
-	<cooldown>18</cooldown><!-- 1.25, was 19 -->
+	<cooldown>15</cooldown><!-- 1.28 was 18 | 1.25, was 19 -->
 	<power>2</power>
-	<cost>65</cost>
+	<cost>60</cost><!-- 1.28 was 65 -->
 	<bp>4</bp>
 	<rarity>3</rarity>
 	<image>ion_heavy_2_shot</image>
@@ -21028,9 +21718,9 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<spin>720</spin>
 	<fireChance>0</fireChance>
 	<breachChance>0</breachChance>
-	<cooldown>22</cooldown>
+	<cooldown>18</cooldown><!-- 1.28 was 22 -->
 	<power>2</power> <!-- 1.26 was 3 -->
-	<cost>85</cost>
+	<cost>75</cost><!-- 1.28 was 85 -->
 	<bp>4</bp>
 	<rarity>4</rarity>
 	<image>ion_heavy_3_shot</image>
@@ -21075,9 +21765,9 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<spin>720</spin>
 	<fireChance>5</fireChance> <!-- 1.25.2 was 3 -->
 	<breachChance>0</breachChance>
-	<cooldown>14</cooldown><!-- 1.22, was 12 -->
+	<cooldown>12</cooldown><!-- 1.28 was 14 | 1.22, was 12 -->
 	<power>2</power>
-	<cost>65</cost>
+	<cost>45</cost><!-- 1.28 was 65 -->
 	<bp>4</bp>
 	<rarity>0</rarity>
 	<image>ion_heavy_1_fire_shot</image>
@@ -21120,9 +21810,9 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<spin>720</spin>
 	<fireChance>5</fireChance> <!-- 1.25.2 was 3 -->
 	<breachChance>0</breachChance>
-	<cooldown>18</cooldown><!-- 1.26 was 19 -->
+	<cooldown>15</cooldown><!-- 1.28 was 18 | 1.26 was 19 -->
 	<power>2</power>
-	<cost>85</cost>
+	<cost>60</cost><!-- 1.28 was 85 -->
 	<bp>4</bp>
 	<rarity>0</rarity>
 	<image>ion_heavy_2_fire_shot</image>
@@ -21165,9 +21855,9 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<spin>720</spin>
 	<fireChance>5</fireChance> <!-- 1.25.2 was 3 -->
 	<breachChance>0</breachChance>
-	<cooldown>22</cooldown>
+	<cooldown>18</cooldown><!-- 1.28 was 22 -->
 	<power>2</power> <!-- 1.26 was 3 -->
-	<cost>90</cost>
+	<cost>75</cost><!-- 1.28 was 90 -->
 	<bp>4</bp>
 	<rarity>0</rarity>
 	<image>ion_heavy_3_fire_shot</image>
@@ -21209,7 +21899,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<fireChance>0</fireChance>
 	<breachChance>0</breachChance>
 	<stunChance>1</stunChance>
-	<cooldown>8</cooldown>
+	<cooldown>7</cooldown><!-- 1.28 was 8 -->
 	<power>1</power>
 	<cost>30</cost>
 	<bp>3</bp>
@@ -21253,7 +21943,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<fireChance>0</fireChance>
 	<breachChance>0</breachChance>
 	<stunChance>1</stunChance>
-	<cooldown>6</cooldown>
+	<cooldown>5</cooldown><!-- 1.28 was 6 -->
 	<power>2</power>
 	<cost>55</cost> <!--was 80-->
 	<bp>6</bp>
@@ -21297,7 +21987,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<fireChance>0</fireChance>
 	<breachChance>0</breachChance>
 	<stunChance>1</stunChance>
-	<cooldown>4</cooldown>
+	<cooldown>3</cooldown><!-- 1.28 was 4 -->
 	<power>3</power>
 	<cost>75</cost> <!--was 80-->
 	<bp>6</bp>
@@ -21344,7 +22034,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<fireChance>0</fireChance>
 	<breachChance>0</breachChance>
 	<spin>720</spin>
-	<cooldown>10</cooldown>
+	<cooldown>9</cooldown><!-- 1.28 was 10 -->
 	<boost>
 		<type>cooldown</type>
 		<amount>2</amount>
@@ -21393,9 +22083,9 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<fireChance>3</fireChance>
 	<breachChance>0</breachChance>
 	<stunChance>1</stunChance>
-	<cooldown>8</cooldown>
+	<cooldown>7</cooldown><!-- 1.28 was 8 -->
 	<power>1</power>
-	<cost>45</cost>
+	<cost>30</cost><!-- 1.28 was 45 -->
 	<bp>3</bp>
 	<rarity>0</rarity>
 	<image>ion_blast_1_fire_shot</image>
@@ -21437,9 +22127,9 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<fireChance>3</fireChance>
 	<breachChance>0</breachChance>
 	<stunChance>1</stunChance>
-	<cooldown>6</cooldown>
+	<cooldown>5</cooldown><!-- 1.28 was 6 -->
 	<power>2</power>
-	<cost>70</cost> <!--was 80-->
+	<cost>55</cost> <!-- 1.28 was 70 | was 80 -->
 	<bp>6</bp>
 	<rarity>0</rarity>
 	<image>ion_blast_2_fire_shot</image>
@@ -21481,9 +22171,9 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<fireChance>3</fireChance>
 	<breachChance>0</breachChance>
 	<stunChance>1</stunChance>
-	<cooldown>4</cooldown>
+	<cooldown>3</cooldown><!-- 1.28 was 4 -->
 	<power>3</power>
-	<cost>90</cost> <!--was 80-->
+	<cost>75</cost> <!-- 1.28 was 90 | was 80 -->
 	<bp>6</bp>
 	<rarity>0</rarity>
 	<image>ion_blast_3_fire_shot</image>
@@ -21524,7 +22214,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<sp>5</sp>
 	<fireChance>4</fireChance>
 	<breachChance>0</breachChance>
-	<cooldown>14</cooldown>
+	<cooldown>10</cooldown><!-- 1.28 was 14 -->
 	<power>2</power>
 	<cost>60</cost><!-- 1.22, was 50 -->
 	<bp>7</bp>
@@ -21554,6 +22244,180 @@ This modified Pike Beam inflicts extra system damage.</desc>
 
 <!-- PROTOTYPES -->
 
+<!-- 1.28 -->
+
+<weaponBlueprint name="ORCHID_PROTOTYPE_1">
+	<type>BURST</type>
+	<flavorType>Experimental Weapon</flavorType>
+	<drone_targetable>1</drone_targetable>
+	<title>Orchid Prototype</title>
+	<short>Orchid Prototype</short>
+	<tip>tip_prototype_f0_b5</tip>
+	<desc>Experimental missile weapon.</desc>
+	<radius>40</radius>
+	<persDamage>0</persDamage>
+	<damage>0</damage>	
+	<shots>1</shots>
+	<sp>5</sp>
+	<fireChance>0</fireChance>
+	<breachChance>5</breachChance>
+	<cooldown>20</cooldown>
+	<power>4</power>
+	<cost>100</cost>
+	<bp>10</bp>
+	<speed>10</speed>
+	<rarity>0</rarity>
+	<boost>
+		<type>cooldown</type>
+		<amount>4</amount>
+		<count>3</count>
+	</boost>
+	<explosion>smallExplosion</explosion>
+	<projectiles>
+		<projectile count="3" fake="false">kernel_projectile_burst</projectile>
+	</projectiles>
+	<launchSounds>
+		<sound>kernel_launch1</sound>
+		<sound>kernel_launch2</sound>
+		<sound>kernel_launch3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>smallExplosion</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>orchid_prototype_1</weaponArt>
+</weaponBlueprint>
+
+<weaponBlueprint name="ORCHID_PROTOTYPE_2">
+	<type>BURST</type>
+	<flavorType>Experimental Weapon</flavorType>
+	<drone_targetable>1</drone_targetable>
+	<title>Orchid Prototype</title>
+	<short>Orchid Prototype</short>
+	<tip>tip_prototype_f0_b5</tip>
+	<desc>Experimental missile weapon. Damaged.</desc>
+	<radius>55</radius>
+	<persDamage>0</persDamage>
+	<damage>0</damage>	
+	<shots>1</shots>
+	<sp>5</sp>
+	<fireChance>0</fireChance>
+	<breachChance>5</breachChance>
+	<cooldown>20</cooldown>
+	<power>3</power>
+	<cost>80</cost>
+	<bp>10</bp>
+	<speed>10</speed>
+	<rarity>0</rarity>
+	<boost>
+		<type>cooldown</type>
+		<amount>4</amount>
+		<count>3</count>
+	</boost>
+	<explosion>smallExplosion</explosion>
+	<projectiles>
+		<projectile count="3" fake="false">kernel_projectile_burst</projectile>
+	</projectiles>
+	<launchSounds>
+		<sound>kernel_launch1</sound>
+		<sound>kernel_launch2</sound>
+		<sound>kernel_launch3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>smallExplosion</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>orchid_prototype_1</weaponArt>
+</weaponBlueprint>
+
+<weaponBlueprint name="MAGMAN_PROTOTYPE_1"> 
+	<type>BOMB</type>
+	<flavorType>Experimental Weapon</flavorType>
+	<tip>tip_magman_f10_b0</tip>
+	<title>Magman Prototype</title>
+	<short>Magman Prototype</short>
+	<desc>Experimental incendiary stun weapon.</desc>
+	<damage>0</damage>
+	<sysDamage>1</sysDamage>
+	<stun>5</stun>
+	<persDamage>2</persDamage>
+	<shots>1</shots>
+	<missiles>0</missiles>
+	<sp>0</sp>
+	<fireChance>10</fireChance>
+	<breachChance>0</breachChance>
+	<cooldown>25</cooldown>
+	<boost>
+		<type>cooldown</type>
+		<amount>15</amount>
+		<count>1</count>
+	</boost>
+	<power>4</power>
+	<cost>100</cost>
+	<bp>4</bp>
+	<rarity>0</rarity>
+	<image>NONE</image>
+	<explosion>magman_expl</explosion>
+	<launchSounds>
+		<sound>morph_fire</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>morph_hit</sound>
+	</hitShipSounds>
+	<weaponArt>magman_prot_1</weaponArt> 
+</weaponBlueprint>
+
+<weaponBlueprint name="MAGMAN_PROTOTYPE_2"> 
+	<type>BOMB</type>
+	<flavorType>Experimental Weapon</flavorType>
+	<tip>tip_magman_f10_b0</tip>
+	<title>Magman Prototype</title>
+	<short>Magman Prototype</short>
+	<desc>Experimental incendiary stun weapon. Damaged.</desc>
+	<damage>0</damage>
+	<sysDamage>0</sysDamage>
+	<stun>5</stun>
+	<persDamage>2</persDamage>
+	<shots>1</shots>
+	<missiles>0</missiles>
+	<sp>0</sp>
+	<fireChance>10</fireChance>
+	<breachChance>0</breachChance>
+	<cooldown>25</cooldown>
+	<boost>
+		<type>cooldown</type>
+		<amount>15</amount>
+		<count>1</count>
+	</boost>
+	<power>3</power>
+	<cost>80</cost>
+	<bp>4</bp>
+	<rarity>0</rarity>
+	<image>NONE</image>
+	<explosion>magman_expl</explosion>
+	<launchSounds>
+		<sound>morph_fire</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>morph_hit</sound>
+	</hitShipSounds>
+	<weaponArt>magman_prot_2</weaponArt> 
+</weaponBlueprint>
+
 <!-- 1.27 -->
 <weaponBlueprint name="PROTOTYPE_MORPHGUN">
 	<type>BOMB</type>
@@ -21572,7 +22436,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<sp>0</sp>
 	<fireChance>7</fireChance>
 	<breachChance>7</breachChance>
-	<cooldown>25</cooldown>
+	<cooldown>20</cooldown><!-- 1.28 was 25 -->
 	<power>4</power>
 	<cost>100</cost>
 	<bp>4</bp>
@@ -21604,7 +22468,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<sp>0</sp>
 	<fireChance>4</fireChance>
 	<breachChance>4</breachChance>
-	<cooldown>25</cooldown>
+	<cooldown>20</cooldown><!-- 1.28 was 25 -->
 	<power>3</power>
 	<cost>80</cost>
 	<bp>4</bp>
@@ -21633,7 +22497,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<fireChance>0</fireChance>
 	<breachChance>2</breachChance>
 	<speed>12.5</speed>
-	<cooldown>20</cooldown>
+	<cooldown>15</cooldown><!-- 1.28 was 20 -->
 	<power>4</power>
 	<cost>100</cost>
 	<bp>12</bp>
@@ -21664,7 +22528,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<fireChance>0</fireChance>
 	<breachChance>1</breachChance>
 	<speed>9.5</speed>
-	<cooldown>20</cooldown>
+	<cooldown>15</cooldown><!-- 1.28 was 20 -->
 	<power>3</power>
 	<cost>80</cost>
 	<bp>12</bp>
@@ -21696,7 +22560,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<speed>30</speed>
 	<sp>5</sp>
 	<fireChance>2</fireChance>
-	<cooldown>13</cooldown>
+	<cooldown>10</cooldown><!-- 1.28 was 13 -->
 	<power>4</power>
 	<cost>100</cost>
 	<bp>5</bp>
@@ -21740,7 +22604,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<speed>30</speed>
 	<sp>5</sp>
 	<fireChance>1</fireChance>
-	<cooldown>13</cooldown>
+	<cooldown>10</cooldown><!-- 1.28 was 13 -->
 	<power>3</power>
 	<cost>80</cost>
 	<bp>5</bp>
@@ -21785,7 +22649,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<sp>5</sp>
 	<fireChance>0</fireChance>
 	<breachChance>0</breachChance>
-	<cooldown>10</cooldown>
+	<cooldown>7</cooldown><!-- 1.28 was 10 -->
 	<power>3</power>
 	<cost>100</cost>
 	<bp>10</bp>
@@ -21827,7 +22691,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<sp>5</sp>
 	<fireChance>0</fireChance>
 	<breachChance>0</breachChance>
-	<cooldown>10</cooldown>
+	<cooldown>7</cooldown><!-- 1.28 was 10 -->
 	<power>2</power>
 	<cost>80</cost>
 	<bp>10</bp>
@@ -21873,7 +22737,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<sp>0</sp>
 	<fireChance>0</fireChance>
 	<breachChance>7</breachChance>
-	<cooldown>20</cooldown>
+	<cooldown>15</cooldown><!-- 1.28 was 20 -->
 	<power>3</power>
 	<cost>150</cost>
 	<bp>4</bp>
@@ -21906,7 +22770,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<sp>5</sp>
 	<fireChance>0</fireChance>
 	<breachChance>7</breachChance>
-	<cooldown>20</cooldown>
+	<cooldown>15</cooldown><!-- 1.28 was 20 -->
 	<power>3</power>
 	<cost>150</cost>
 	<bp>7</bp>
@@ -21953,7 +22817,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<sp>0</sp>
 	<fireChance>0</fireChance>
 	<breachChance>6</breachChance>
-	<cooldown>20</cooldown>
+	<cooldown>15</cooldown><!-- 1.28 was 20 -->
 	<power>2</power>
 	<cost>100</cost>
 	<bp>4</bp>
@@ -21986,7 +22850,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<sp>5</sp>
 	<fireChance>0</fireChance>
 	<breachChance>6</breachChance>
-	<cooldown>20</cooldown>
+	<cooldown>15</cooldown><!-- 1.28 was 20 -->
 	<power>2</power>
 	<cost>100</cost>
 	<bp>7</bp>
@@ -22112,7 +22976,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<stunChance>1</stunChance>
 	<fireChance>0</fireChance>
 	<breachChance>5</breachChance><!-- 1.24, was 4 -->
-	<cooldown>12</cooldown>
+	<cooldown>9</cooldown><!-- 1.28 was 12 -->
 	<power>2</power>
 	<cost>80</cost>
 	<speed>150</speed>
@@ -22157,7 +23021,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<stunChance>1</stunChance>
 	<fireChance>0</fireChance>
 	<breachChance>4</breachChance><!-- 1.24, was 3 -->
-	<cooldown>12</cooldown>
+	<cooldown>9</cooldown><!-- 1.28 was 12 -->
 	<power>1</power>
 	<cost>60</cost>
 	<speed>150</speed>
@@ -22205,7 +23069,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<shots>1</shots>
 	<sp>5</sp>
 	<fireChance>5</fireChance>
-	<cooldown>21</cooldown>
+	<cooldown>15</cooldown><!-- 1.28 was 21 -->
 	<power>4</power>
 	<cost>100</cost>
 	<bp>20</bp>
@@ -22245,7 +23109,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<shots>1</shots>
 	<sp>5</sp>
 	<fireChance>4</fireChance>
-	<cooldown>21</cooldown>
+	<cooldown>15</cooldown><!-- 1.28 was 21 -->
 	<power>3</power>
 	<cost>80</cost>
 	<bp>20</bp>
@@ -22283,11 +23147,11 @@ This modified Pike Beam inflicts extra system damage.</desc>
 		<g>255</g>
 		<b>255</b>
 	</color>
-	<ion>1</ion>
+	<ion>3</ion><!-- 1.28 was 1 -->
 	<sp>0</sp>
 	<fireChance>0</fireChance>
 	<breachChance>1</breachChance>
-	<cooldown>24</cooldown>
+	<cooldown>20</cooldown><!-- 1.28 was 24 -->
 	<power>4</power>
 	<cost>100</cost>
 	<bp>10</bp>
@@ -22307,7 +23171,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<title>Engi Prototype</title>
 	<short>Engi Prototype</short>
 	<desc>Experimental ion beam weapon. Damaged.</desc>
-	<tip>tip_prototype2_f0_b1</tip>
+	<tip>tip_prototype2_f0_b0</tip><!-- 1.28 -->
 	<damage>0</damage>
 	<color> <!-- Color only works for beams -->
 		<r>0</r>
@@ -22317,8 +23181,8 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<ion>1</ion>
 	<sp>0</sp>
 	<fireChance>0</fireChance>
-	<breachChance>1</breachChance>
-	<cooldown>24</cooldown>
+	<breachChance>0</breachChance><!-- 1.28 was 1 -->
+	<cooldown>20</cooldown><!-- 1.28 was 24 -->
 	<power>3</power>
 	<cost>80</cost>
 	<bp>10</bp>
@@ -22350,7 +23214,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<stunChance>5</stunChance>
 	<fireChance>0</fireChance>
 	<breachChance>5</breachChance>
-	<cooldown>15</cooldown>
+	<cooldown>10</cooldown><!-- 1.28 was 15 -->
 	<power>2</power>
 	<cost>80</cost>
 	<speed>7</speed>
@@ -22381,7 +23245,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<stunChance>3</stunChance>
 	<fireChance>0</fireChance>
 	<breachChance>3</breachChance>
-	<cooldown>15</cooldown>
+	<cooldown>10</cooldown><!-- 1.28 was 15 -->
 	<power>1</power>
 	<cost>60</cost>
 	<speed>7</speed>
@@ -22413,7 +23277,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<persDamage>0</persDamage>
 	<stunChance>8</stunChance>
 	<breachChance>0</breachChance>
-	<cooldown>8</cooldown>
+	<cooldown>7</cooldown><!-- 1.28 was 8 -->
 	<power>4</power>
 	<cost>100</cost>
 	<speed>45</speed>
@@ -22455,7 +23319,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<persDamage>0</persDamage>
 	<stunChance>4</stunChance>
 	<breachChance>0</breachChance>
-	<cooldown>8</cooldown>
+	<cooldown>7</cooldown><!-- 1.28 was 8 -->
 	<power>3</power>
 	<cost>80</cost>
 	<speed>45</speed>
@@ -22495,7 +23359,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<fireChance>0</fireChance>
 	<breachChance>10</breachChance>
 	<stun>5</stun><!-- 1.25, was 50% chance -->
-	<cooldown>8</cooldown>
+	<cooldown>7</cooldown><!-- 1.28 was 8 -->
 	<hullBust>1</hullBust>
 	<power>4</power>
 	<cost>100</cost>
@@ -22533,7 +23397,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<fireChance>0</fireChance>
 	<breachChance>5</breachChance><!-- 1.25, was 3 -->
 	<stun>3</stun><!-- 1.25, was 30% chance -->
-	<cooldown>8</cooldown>
+	<cooldown>7</cooldown><!-- 1.28 was 8 -->
 	<hullBust>1</hullBust>
 	<power>3</power>
 	<cost>80</cost>
@@ -22572,7 +23436,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<stunChance>6</stunChance>
 	<fireChance>3</fireChance>
 	<breachChance>3</breachChance>
-	<cooldown>15</cooldown>
+	<cooldown>12</cooldown><!-- 1.28 was 15 -->
 	<power>4</power>
 	<cost>100</cost>
 	<speed>200</speed>
@@ -22649,7 +23513,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<stunChance>5</stunChance>
 	<fireChance>2</fireChance>
 	<breachChance>2</breachChance>
-	<cooldown>15</cooldown>
+	<cooldown>12</cooldown><!-- 1.28 was 15 -->
 	<power>3</power>
 	<cost>80</cost>
 	<speed>200</speed>
@@ -22727,7 +23591,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<sp>0</sp>
 	<fireChance>3</fireChance>
 	<breachChance>0</breachChance>
-	<cooldown>6</cooldown>
+	<cooldown>4</cooldown><!-- 1.28 was 6 -->
 	<power>4</power>
 	<chargeLevels>3</chargeLevels>
 	<cost>100</cost>
@@ -22773,7 +23637,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<sp>0</sp>
 	<fireChance>1</fireChance>
 	<breachChance>0</breachChance>
-	<cooldown>6</cooldown>
+	<cooldown>4</cooldown><!-- 1.28 was 6 -->
 	<power>3</power>
 	<chargeLevels>3</chargeLevels>
 	<cost>80</cost>
@@ -22822,7 +23686,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<stunChance>5</stunChance>
 	<fireChance>0</fireChance>
 	<breachChance>0</breachChance>
-	<cooldown>15</cooldown><!-- 1.25, was 13 -->
+	<cooldown>13</cooldown><!-- 1.28 was 15 | 1.25, was 13 -->
 	<power>4</power>
 	<cost>100</cost>
 	<bp>3</bp>
@@ -22871,7 +23735,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<stunChance>3</stunChance>
 	<fireChance>0</fireChance>
 	<breachChance>0</breachChance>
-	<cooldown>15</cooldown><!-- 1.25, was 13 -->
+	<cooldown>13</cooldown><!-- 1.28 was 15 | 1.25, was 13 -->
 	<power>3</power>
 	<cost>80</cost>
 	<bp>3</bp>
@@ -23357,7 +24221,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 <weaponBlueprint name="FK_ION_VULKAN"> <!-- 1.27 -->
 	<type>LASER</type>
 	<title>Ion Chain Vulcan</title>
-	<short>I. Vulcan</short>
+	<short>I. Vulcan</short><!-- 1.28 likely russian fix to match real version. no change to english. -->
 	<desc>This is a model of the weapon, made of cheap plastic. It has been carefully painted so as to look identical to the actual weapon.</desc>
 	<damage>0</damage>
 	<shots>1</shots>
@@ -23399,9 +24263,9 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<sp>0</sp>
 	<fireChance>1</fireChance>
 	<breachChance>0</breachChance>
-	<cooldown>9</cooldown>
+	<cooldown>8.1</cooldown> <!-- 1.28 was 9 -->
 	<power>2</power>
-	<cost>20</cost>
+	<cost>25</cost><!-- 1.28 was 20 -->
 	<bp>4</bp>
 	<rarity>0</rarity>
 	<image>laser_light1</image>
@@ -23669,7 +24533,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<sp>1</sp>
 	<fireChance>6</fireChance>
 	<breachChance>0</breachChance>
-	<cooldown>13.5</cooldown>
+	<cooldown>9</cooldown><!-- 1.28 was 13.5 -->
 	<power>1</power>
 	<cost>40</cost>
 	<bp>10</bp>
@@ -23709,7 +24573,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<breachChance>0</breachChance>
 	<cooldown>3.6</cooldown>
 	<power>2</power>
-	<cost>35</cost>
+	<cost>20</cost><!-- 1.28 was 35 -->
 	<bp>7</bp>
 	<rarity>0</rarity>
 	<image>laser_light2</image>
@@ -23746,7 +24610,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<breachChance>0</breachChance>
 	<cooldown>2.7</cooldown>
 	<power>2</power>
-	<cost>55</cost>
+	<cost>35</cost><!-- 1.28 was 55 -->
 	<bp>7</bp>
 	<rarity>0</rarity>
 	<image>laser_light2</image>
@@ -23824,7 +24688,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<sp>0</sp>
 	<fireChance>0</fireChance>
 	<breachChance>0</breachChance>
-	<cooldown>10.8</cooldown>
+	<cooldown>9</cooldown><!-- 1.28 was 10.8 -->
 	<power>2</power>
 	<cost>35</cost>
 	<bp>8</bp>
@@ -23950,7 +24814,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<cooldown>6.3</cooldown>
 	<hullBust>1</hullBust>
 	<power>1</power>
-	<cost>35</cost>
+	<cost>25</cost><!-- 1.28 was 35 -->
 	<bp>5</bp>
 	<rarity>0</rarity>
 	<speed>75</speed>
@@ -24057,9 +24921,9 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<sp>0</sp>
 	<fireChance>1</fireChance>
 	<breachChance>0</breachChance>
-	<cooldown>12.6</cooldown>
+	<cooldown>11.25</cooldown><!-- 1.28 was 12.6 -->
 	<power>2</power>
-	<cost>50</cost>
+	<cost>80</cost><!-- 1.28 was 50 -->
 	<bp>7</bp>
 	<rarity>0</rarity>
 	<image>laser_light2</image>
@@ -24180,7 +25044,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<sp>0</sp>
 	<fireChance>0</fireChance>
 	<breachChance>1</breachChance>
-	<cooldown>18</cooldown>
+	<cooldown>15.3</cooldown><!-- 1.28 was 18 -->
 	<power>3</power>
 	<cost>100</cost>
 	<bp>10</bp>
@@ -24226,7 +25090,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<sp>1</sp>
 	<fireChance>7</fireChance>
 	<breachChance>0</breachChance>
-	<cooldown>16.2</cooldown>
+	<cooldown>10.8</cooldown><!-- 1.28 was 16.2 -->
 	<power>2</power>
 	<cost>55</cost>
 	<bp>10</bp>
@@ -24266,7 +25130,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<breachChance>0</breachChance>
 	<cooldown>2.2</cooldown>
 	<power>2</power>
-	<cost>90</cost>
+	<cost>50</cost><!-- 1.28 was 90 -->
 	<bp>7</bp>
 	<rarity>0</rarity>
 	<image>laser_light2</image>
@@ -24381,10 +25245,10 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<sp>1</sp>
 	<fireChance>0</fireChance>
 	<breachChance>7</breachChance>
-	<cooldown>14.4</cooldown>
+	<cooldown>12.6</cooldown><!-- 1.28 was 14.4 -->
 	<hullBust>1</hullBust>
 	<power>2</power>
-	<cost>60</cost>
+	<cost>40</cost><!-- 1.28 was 60 -->
 	<rarity>0</rarity>
 	<speed>60</speed>
 	<image>ba_laser_artillery_1_shot</image>
@@ -24423,7 +25287,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<cooldown>11.7</cooldown>
 	<hullBust>1</hullBust>
 	<power>2</power>
-	<cost>55</cost>
+	<cost>45</cost><!-- 1.28 was 55 -->
 	<bp>5</bp>
 	<rarity>0</rarity>
 	<speed>75</speed>
@@ -24461,7 +25325,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<cooldown>16.2</cooldown>
 	<hullBust>1</hullBust>
 	<power>2</power>
-	<cost>85</cost>
+	<cost>65</cost><!-- 1.28 was 85 -->
 	<bp>7</bp>
 	<rarity>0</rarity>
 	<image>laser_hull_shot</image>
@@ -24496,7 +25360,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<sp>0</sp>
 	<fireChance>0</fireChance>
 	<breachChance>3</breachChance>
-	<cooldown>9</cooldown>
+	<cooldown>8.1</cooldown><!-- 1.28 was 9 -->
 	<power>2</power>
 	<cost>40</cost>
 	<bp>4</bp>
@@ -24534,9 +25398,9 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<sp>0</sp>
 	<fireChance>0</fireChance>
 	<breachChance>3</breachChance>
-	<cooldown>12.6</cooldown>
+	<cooldown>11.25</cooldown><!-- 1.28 was 12.6 -->
 	<power>2</power>
-	<cost>75</cost>
+	<cost>90</cost><!-- 1.28 was 75 -->
 	<bp>7</bp>
 	<rarity>0</rarity>
 	<speed>140</speed> 
@@ -24573,7 +25437,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<sp>2</sp>
 	<fireChance>0</fireChance>
 	<breachChance>1</breachChance>
-	<cooldown>10.8</cooldown>
+	<cooldown>5.4</cooldown><!-- 1.28 was 10.8 -->
 	<power>1</power>
 	<cost>20</cost>
 	<bp>7</bp>
@@ -24613,7 +25477,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<sp>2</sp>
 	<fireChance>0</fireChance>
 	<breachChance>1</breachChance>
-	<cooldown>12.6</cooldown>
+	<cooldown>8.1</cooldown><!-- 1.28 was 12.6 -->
 	<power>1</power>
 	<cost>30</cost>
 	<bp>7</bp>
@@ -24654,7 +25518,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<sp>1</sp>
 	<fireChance>0</fireChance>
 	<breachChance>3</breachChance>
-	<cooldown>9.9</cooldown>
+	<cooldown>4.95</cooldown><!-- 1.28 was 9.9 -->
 	<power>1</power>
 	<cost>20</cost>
 	<bp>7</bp>
@@ -24696,7 +25560,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<sp>1</sp>
 	<fireChance>0</fireChance>
 	<breachChance>4</breachChance>
-	<cooldown>9</cooldown>
+	<cooldown>4.5</cooldown><!-- 1.28 was 9 -->
 	<power>1</power>
 	<cost>45</cost>
 	<bp>7</bp>
@@ -24739,7 +25603,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<breachChance>0</breachChance>
 	<cooldown>11.25</cooldown>
 	<power>4</power>
-	<cost>125</cost>
+	<cost>105</cost><!-- 1.28 was 125 -->
 	<bp>2</bp>
 	<rarity>0</rarity>
 	<image>laser_minigun_brust</image>
@@ -24780,7 +25644,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<breachChance>0</breachChance>
 	<cooldown>9.99</cooldown>
 	<power>4</power>
-	<cost>110</cost>
+	<cost>95</cost> <!-- 1.28 was 110 -->
 	<bp>2</bp>
 	<rarity>0</rarity>
 	<image>laser_light1</image>
@@ -25527,7 +26391,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<breachChance>1</breachChance>
 	<cooldown>9.9</cooldown>
 	<power>1</power>
-	<cost>35</cost>
+	<cost>30</cost><!-- 1.28 was 35 -->
 	<bp>5</bp>
 	<rarity>0</rarity>
 	<image>missile_2</image>
@@ -25714,7 +26578,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<breachChance>2</breachChance>
 	<cooldown>12.6</cooldown>
 	<power>3</power>
-	<cost>50</cost>
+	<cost>45</cost><!-- 1.28 was 50 -->
 	<bp>6</bp>
 	<rarity>0</rarity>
 	<image>missile_3</image>
@@ -25750,7 +26614,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<breachChance>2</breachChance>
 	<cooldown>16.2</cooldown>
 	<power>3</power>
-	<cost>65</cost>
+	<cost>50</cost><!-- 1.28 was 65 -->
 	<bp>7</bp>
 	<rarity>0</rarity>
 	<image>missile_2</image>
@@ -25789,7 +26653,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<breachChance>1</breachChance>
 	<cooldown>10.8</cooldown>
 	<power>2</power>
-	<cost>45</cost>
+	<cost>40</cost> <!-- 1.28 was 45 -->
 	<bp>5</bp>
 	<rarity>0</rarity>
 	<image>ba_missile_tech</image>
@@ -25863,7 +26727,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<breachChance>2</breachChance>
 	<cooldown>15.3</cooldown>
 	<power>3</power>
-	<cost>70</cost>
+	<cost>50</cost><!-- 1.28 was 70 -->
 	<bp>6</bp>
 	<rarity>0</rarity>
 	<image>ba_missile_4</image>
@@ -25935,7 +26799,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<breachChance>0</breachChance>
 	<cooldown>13.5</cooldown>
 	<power>3</power>
-	<cost>60</cost>
+	<cost>40</cost><!-- 1.28 was 60 -->
 	<bp>7</bp>
 	<rarity>0</rarity>
 	<image>ba_missile_swarm_2</image>
@@ -25971,7 +26835,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<stun>6</stun>
 	<cooldown>20.7</cooldown>
 	<power>4</power>
-	<cost>90</cost>
+	<cost>70</cost><!-- 1.28 was 90 -->
 	<bp>6</bp>
 	<rarity>0</rarity>
 	<image>missile_mega</image>
@@ -26009,7 +26873,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<sp>0</sp>
 	<fireChance>0</fireChance>
 	<breachChance>0</breachChance>
-	<cooldown>9</cooldown>
+	<cooldown>6.3</cooldown><!-- 1.28 was 9 -->
 	<power>1</power>
 	<cost>35</cost>
 	<bp>3</bp>
@@ -26053,9 +26917,9 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<spin>720</spin>
 	<fireChance>0</fireChance>
 	<breachChance>0</breachChance>
-	<cooldown>9.9</cooldown>
+	<cooldown>7.2</cooldown><!-- 1.28 was 9.9 -->
 	<power>1</power>
-	<cost>50</cost>
+	<cost>40</cost><!-- 1.28 was 50 -->
 	<bp>10</bp>
 	<rarity>0</rarity>
 	<explosion>ba_explosion_ion_medium</explosion>
@@ -26098,7 +26962,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<sp>0</sp>
 	<fireChance>0</fireChance>
 	<breachChance>0</breachChance>
-	<cooldown>13.5</cooldown>
+	<cooldown>9</cooldown><!-- 1.28 was 13.5 -->
 	<power>2</power>
 	<cost>50</cost>
 	<bp>4</bp>
@@ -26141,7 +27005,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<sp>0</sp>
 	<fireChance>0</fireChance>
 	<breachChance>0</breachChance>
-	<cooldown>14.4</cooldown>
+	<cooldown>10.8</cooldown><!-- 1.28 was 14.4 -->
 	<power>1</power>
 	<cost>45</cost>
 	<bp>3</bp>
@@ -26184,7 +27048,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<sp>0</sp>
 	<fireChance>0</fireChance>
 	<breachChance>0</breachChance>
-	<cooldown>13.5</cooldown>
+	<cooldown>10.8</cooldown><!-- 1.28 was 13.5 -->
 	<power>1</power>
 	<cost>40</cost>
 	<bp>3</bp>
@@ -26229,7 +27093,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<spin>720</spin>
 	<fireChance>0</fireChance>
 	<breachChance>0</breachChance>
-	<cooldown>12.6</cooldown>
+	<cooldown>10.8</cooldown><!-- 1.28 was 12.6 -->
 	<power>2</power>
 	<cost>45</cost>
 	<bp>4</bp>
@@ -26272,7 +27136,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<fireChance>0</fireChance>
 	<breachChance>0</breachChance>
 	<stunChance>1</stunChance>
-	<cooldown>7.2</cooldown>
+	<cooldown>6.3</cooldown><!-- 1.28 was 7.2 -->
 	<power>1</power>
 	<cost>30</cost>
 	<bp>3</bp>
@@ -26316,9 +27180,9 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<spin>720</spin>
 	<fireChance>0</fireChance>
 	<breachChance>0</breachChance>
-	<cooldown>10.8</cooldown><!-- 1.27 was 12.6 -->
+	<cooldown>9</cooldown><!-- 1.28 was 10.8 | 1.27 was 12.6 -->
 	<power>2</power>
-	<cost>60</cost>
+	<cost>50</cost><!-- 1.28 was 60 -->
 	<bp>10</bp>
 	<rarity>0</rarity>
 	<explosion>ba_explosion_ion_medium</explosion>
@@ -26361,7 +27225,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<sp>0</sp>
 	<fireChance>0</fireChance>
 	<breachChance>0</breachChance>
-	<cooldown>13.5</cooldown>
+	<cooldown>10.8</cooldown><!-- 1.28 was 13.5 -->
 	<power>2</power>
 	<cost>60</cost>
 	<bp>3</bp>
@@ -26404,7 +27268,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<fireChance>0</fireChance>
 	<breachChance>0</breachChance>
 	<stunChance>1</stunChance>
-	<cooldown>5.4</cooldown>
+	<cooldown>4.5</cooldown><!-- 1.28 was 5.4 -->
 	<power>2</power>
 	<cost>55</cost>
 	<bp>6</bp>
@@ -26447,7 +27311,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<fireChance>0</fireChance>
 	<breachChance>0</breachChance>
 	<stunChance>1</stunChance>
-	<cooldown>3.6</cooldown>
+	<cooldown>2.7</cooldown><!-- 1.28 was 3.6 -->
 	<power>3</power>
 	<cost>75</cost>
 	<bp>6</bp>
@@ -26524,7 +27388,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<sp>0</sp>
 	<fireChance>2</fireChance>
 	<breachChance>0</breachChance>
-	<cooldown>10</cooldown>
+	<cooldown>8</cooldown><!-- 1.28 was 10 -->
 	<speed>2.4</speed>
 	<power>1</power>
 	<cost>100</cost>
@@ -26554,7 +27418,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<sp>0</sp>
 	<fireChance>0</fireChance>
 	<breachChance>10</breachChance>
-	<cooldown>8</cooldown>
+	<cooldown>6</cooldown><!-- 1.28 was 8 -->
 	<power>1</power>
 	<cost>100</cost>
 	<bp>4</bp>
@@ -26587,7 +27451,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<sp>0</sp>
 	<fireChance>10</fireChance>
 	<breachChance>0</breachChance>
-	<cooldown>8</cooldown>
+	<cooldown>6</cooldown><!-- 1.28 was 8 -->
 	<power>1</power>
 	<cost>100</cost>
 	<bp>5</bp>
@@ -26618,7 +27482,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<fireChance>0</fireChance>
 	<breachChance>0</breachChance>
 	<stunChance>1</stunChance>
-	<cooldown>3</cooldown>
+	<cooldown>2</cooldown><!-- 1.28 was 3 -->
 	<power>2</power>
 	<cost>100</cost>
 	<bp>6</bp>
@@ -26664,7 +27528,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<spin>720</spin>
 	<fireChance>0</fireChance>
 	<breachChance>0</breachChance>
-	<cooldown>10</cooldown>
+	<cooldown>7</cooldown><!-- 1.28 was 10 -->
 	<power>2</power>
 	<cost>100</cost>
 	<bp>4</bp>
@@ -26708,7 +27572,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<fireChance>0</fireChance>
 	<breachChance>0</breachChance>
 	<stunChance>1</stunChance>
-	<cooldown>12</cooldown>
+	<cooldown>8</cooldown><!-- 1.28 was 12 -->
 	<power>2</power><!-- 1.26.5 was 1 -->
 	<cost>100</cost>
 	<bp>3</bp>
@@ -26748,7 +27612,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<sp>0</sp>
 	<fireChance>1</fireChance>
 	<breachChance>0</breachChance>
-	<cooldown>1.7</cooldown>
+	<cooldown>1.5</cooldown><!-- 1.28 was 1.7 -->
 	<power>1</power>
 	<cost>100</cost>
 	<bp>7</bp>
@@ -26787,7 +27651,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<sp>0</sp>
 	<fireChance>0</fireChance>
 	<breachChance>0</breachChance>
-	<cooldown>9</cooldown>
+	<cooldown>8</cooldown><!-- 1.28 was 9 -->
 	<power>1</power>
 	<cost>100</cost>
 	<bp>4</bp>
@@ -26826,7 +27690,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<sp>0</sp>
 	<fireChance>2</fireChance>
 	<breachChance>0</breachChance>
-	<cooldown>13</cooldown>
+	<cooldown>12</cooldown><!-- 1.28 was 13 -->
 	<power>2</power>
 	<cost>100</cost>
 	<bp>7</bp>
@@ -26865,7 +27729,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<sp>5</sp>
 	<fireChance>2</fireChance>
 	<breachChance>2</breachChance>
-	<cooldown>5</cooldown>
+	<cooldown>4</cooldown><!-- 1.28 was 5 -->
 	<power>1</power>
 	<cost>100</cost>
 	<bp>2</bp>
@@ -26901,7 +27765,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<sp>5</sp>
 	<fireChance>6</fireChance>
 	<breachChance>4</breachChance>
-	<cooldown>13</cooldown>
+	<cooldown>11</cooldown><!-- 1.28 was 13 -->
 	<power>2</power>
 	<cost>100</cost><!-- 1.26.6 -->
 	<bp>7</bp>
@@ -26940,7 +27804,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<fireChance>4</fireChance>
 	<breachChance>4</breachChance>
 	<stunChance>4</stunChance>
-	<cooldown>15</cooldown>
+	<cooldown>13</cooldown><!-- 1.28 was 15 -->
 	<power>2</power>
 	<cost>100</cost>
 	<bp>10</bp>
@@ -26983,7 +27847,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<spin>720</spin>
 	<fireChance>0</fireChance>
 	<breachChance>2</breachChance>
-	<cooldown>10</cooldown>
+	<cooldown>9</cooldown><!-- 1.28 was 10 -->
 	<power>2</power>
 	<cost>100</cost>
 	<bp>10</bp>
@@ -27017,6 +27881,115 @@ This modified Pike Beam inflicts extra system damage.</desc>
 
 <!-- ENEMY WEAPONS -->
 
+<!-- 1.28 -->
+<weaponBlueprint name="MAGMAN_GUN_1"> 
+	<type>BOMB</type>
+	<tip>tip_magman_f10_b0</tip>
+	<title>Пироформер Мод I</title>
+	<short>Пироформер I</short>
+	<desc>Зажигательное оглушающее оружие магменов. После трёх залпов стреляет каждые 5 секунд.</desc>
+	<damage>0</damage>
+	<sysDamage>0</sysDamage>
+	<stunChance>5</stunChance>
+	<persDamage>1</persDamage>
+	<shots>1</shots>
+	<missiles>0</missiles>
+	<sp>0</sp>
+	<fireChance>10</fireChance>
+	<breachChance>0</breachChance>
+	<cooldown>20</cooldown>
+	<boost>
+		<type>cooldown</type>
+		<amount>5</amount>
+		<count>3</count>
+	</boost>
+	<power>2</power>
+	<cost>80</cost>
+	<bp>4</bp>
+	<rarity>0</rarity>
+	<image>NONE</image>
+	<explosion>magman_expl</explosion>
+	<launchSounds>
+		<sound>morph_fire</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>morph_hit</sound>
+	</hitShipSounds>
+	<weaponArt>magman_gun_1</weaponArt> 
+</weaponBlueprint>
+
+<weaponBlueprint name="MAGMAN_GUN_2"> 
+	<type>BOMB</type>
+	<tip>tip_magman_f10_b0</tip>
+	<title>Пироформер Мод II</title>
+	<short>Пироформер II</short>
+	<desc>Зажигательное оглушающее оружие магменов. После двух залпов стреляет каждые 5 секунд.</desc>
+	<damage>0</damage>
+	<sysDamage>0</sysDamage>
+	<stunChance>5</stunChance>
+	<persDamage>1</persDamage>
+	<shots>1</shots>
+	<missiles>0</missiles>
+	<sp>0</sp>
+	<fireChance>10</fireChance>
+	<breachChance>0</breachChance>
+	<cooldown>20</cooldown>
+	<boost>
+		<type>cooldown</type>
+		<amount>7.5</amount>
+		<count>2</count>
+	</boost>
+	<power>2</power>
+	<cost>90</cost>
+	<bp>4</bp>
+	<rarity>0</rarity>
+	<image>NONE</image>
+	<explosion>magman_expl</explosion>
+	<launchSounds>
+		<sound>morph_fire</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>morph_hit</sound>
+	</hitShipSounds>
+	<weaponArt>magman_gun_2</weaponArt> 
+</weaponBlueprint>
+
+<weaponBlueprint name="MAGMAN_GUN_3"> 
+	<type>BOMB</type>
+	<tip>tip_magman_f10_b0</tip>
+	<title>Пироформер Мод III</title>
+	<short>Пироформер III</short>
+	<desc>Зажигательное оглушающее оружие магменов. После первого залпа стреляет каждые 5 секунд.</desc>
+	<damage>0</damage>
+	<sysDamage>0</sysDamage>
+	<stunChance>5</stunChance>
+	<persDamage>1</persDamage>
+	<shots>1</shots>
+	<missiles>0</missiles>
+	<sp>0</sp>
+	<fireChance>10</fireChance>
+	<breachChance>0</breachChance>
+	<cooldown>20</cooldown>
+	<boost>
+		<type>cooldown</type>
+		<amount>15</amount>
+		<count>1</count>
+	</boost>
+	<power>2</power>
+	<cost>100</cost>
+	<bp>4</bp>
+	<rarity>0</rarity>
+	<image>NONE</image>
+	<explosion>magman_expl</explosion>
+	<launchSounds>
+		<sound>morph_fire</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>morph_hit</sound>
+	</hitShipSounds>
+	<weaponArt>magman_gun_3</weaponArt> 
+</weaponBlueprint>
+
 <!-- 1.27 -->
 <weaponBlueprint name="MORPHGUN_M"> 
 	<type>BOMB</type>
@@ -27033,7 +28006,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<sp>0</sp>
 	<fireChance>0</fireChance>
 	<breachChance>0</breachChance>
-	<cooldown>20</cooldown>
+	<cooldown>16</cooldown><!-- 1.28 was 20 -->
 	<power>2</power>
 	<cost>80</cost>
 	<bp>4</bp>
@@ -27063,7 +28036,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<sp>0</sp>
 	<fireChance>7</fireChance>
 	<breachChance>0</breachChance>
-	<cooldown>20</cooldown>
+	<cooldown>16</cooldown><!-- 1.28 was 20 -->
 	<power>2</power>
 	<cost>80</cost>
 	<bp>4</bp>
@@ -27093,7 +28066,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<sp>0</sp>
 	<fireChance>0</fireChance>
 	<breachChance>7</breachChance>
-	<cooldown>20</cooldown>
+	<cooldown>16</cooldown><!-- 1.28 was 20 -->
 	<power>2</power>
 	<cost>80</cost>
 	<bp>4</bp>
@@ -27124,7 +28097,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<sp>0</sp>
 	<fireChance>0</fireChance>
 	<breachChance>0</breachChance>
-	<cooldown>20</cooldown>
+	<cooldown>16</cooldown><!-- 1.28 was 20 -->
 	<power>2</power>
 	<cost>80</cost>
 	<bp>4</bp>
@@ -27240,7 +28213,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<sp>0</sp>
 	<fireChance>0</fireChance>
 	<breachChance>2</breachChance>
-	<cooldown>17</cooldown>
+	<cooldown>15</cooldown><!-- 1.28 was 17 -->
 	<power>2</power>
 	<cost>55</cost>
 	<bp>10</bp>
@@ -27278,7 +28251,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<sp>0</sp>
 	<fireChance>0</fireChance>
 	<breachChance>3</breachChance>
-	<cooldown>17</cooldown>
+	<cooldown>15</cooldown><!-- 1.28 was 17 -->
 	<power>2</power>
 	<cost>75</cost>
 	<bp>10</bp>
@@ -27316,7 +28289,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<sp>0</sp>
 	<fireChance>0</fireChance>
 	<breachChance>2</breachChance>
-	<cooldown>20</cooldown>
+	<cooldown>18</cooldown><!-- 1.28 was 20 -->
 	<power>3</power>
 	<cost>70</cost>
 	<bp>10</bp>
@@ -27354,7 +28327,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<sp>0</sp>
 	<fireChance>0</fireChance>
 	<breachChance>3</breachChance>
-	<cooldown>20</cooldown>
+	<cooldown>18</cooldown><!-- 1.28 was 20 -->
 	<power>3</power>
 	<cost>90</cost>
 	<bp>10</bp>
@@ -29084,7 +30057,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<breachChance>0</breachChance>
 	<cooldown>32</cooldown> <!-- edited 18 -->
 	<power>1</power>
-	<cost>80</cost>
+	<cost>55</cost><!-- 1.28 was 80 -->
 	<bp>7</bp>
 	<rarity>0</rarity>
 	<image>ba_missile_swarm_3</image>
@@ -29120,7 +30093,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<breachChance>0</breachChance>
 	<cooldown>23</cooldown> <!-- edited 16 -->
 	<power>3</power>
-	<cost>70</cost>
+	<cost>50</cost><!-- 1.28 was 70 -->
 	<bp>7</bp>
 	<rarity>0</rarity>
 	<image>ba_missile_fire</image>
@@ -29155,7 +30128,7 @@ This modified Pike Beam inflicts extra system damage.</desc>
 	<breachChance>0</breachChance>
 	<cooldown>32</cooldown>
 	<power>1</power>
-	<cost>60</cost>
+	<cost>40</cost><!-- 1.28 was 60 -->
 	<bp>7</bp>
 	<rarity>0</rarity>
 	<image>ba_missile_swarm_2</image>
@@ -118456,6 +119429,22 @@ Cooldown: 450ms.</desc>
 	<weaponBlueprint>DRONE_BEAM</weaponBlueprint>
 	<rarity>0</rarity>
 </droneBlueprint>
+<droneBlueprint name="COMBAT_BEAM_ORCHID"><!-- 1.28 --> 
+	<type>COMBAT</type>
+	<tip>tip_combat</tip>
+	<title>Лучевой дрон орхидов</title><!-- 1.25 -->
+	<short>Лучевой О</short>
+	<desc>Боевой дрон, который постоянно атакует корабль противника небольшим лучевым оружием.</desc>
+	<power>1</power>
+	<cooldown>1000</cooldown>
+	<dodge>2</dodge>
+	<speed>15</speed>
+	<cost>60</cost>
+	<bp>3</bp>
+	<droneImage>drone_orchid_combat_2</droneImage>
+	<weaponBlueprint>DRONE_BEAM</weaponBlueprint>
+	<rarity>0</rarity>
+</droneBlueprint>
 <droneBlueprint name="COMBAT_BEAM_2_R">
 	<type>COMBAT</type>
 	<title>Beam Drone Mark II</title><!-- 1.25 -->
@@ -119052,6 +120041,23 @@ Cooldown: 450ms.</desc>
 	<cost>60</cost>
 	<bp>3</bp>
 	<droneImage>drone_combat</droneImage>
+	<weaponBlueprint>DRONE_LASER</weaponBlueprint>
+	<rarity>0</rarity>
+	<iconImage>combat</iconImage>
+</droneBlueprint>
+<droneBlueprint name="COMBAT_ORCHID"> <!-- 1.28 -->
+	<type>COMBAT</type>
+	<tip>tip_combat</tip>
+	<title>Боевой дрон орхидов</title>
+	<short>Боевой О</short>
+	<desc>Мощный дрон, который постоянно атакует корабль противника.</desc>
+	<power>1</power>
+	<cooldown>1000</cooldown>
+	<dodge>0</dodge>
+	<speed>15</speed>
+	<cost>60</cost>
+	<bp>3</bp>
+	<droneImage>drone_orchid_combat</droneImage>
 	<weaponBlueprint>DRONE_LASER</weaponBlueprint>
 	<rarity>0</rarity>
 	<iconImage>combat</iconImage>
@@ -119782,6 +120788,23 @@ Its manufacturer guarantees its accuracy. Cooldown: 1.25 seconds.</desc>
 	<cost>60</cost>
 	<bp>2</bp>
 	<droneImage>drone_defense</droneImage>
+	<weaponBlueprint>DRONE_LASER_DEFENSE</weaponBlueprint>
+	<rarity>0</rarity>
+</droneBlueprint>
+<droneBlueprint name="DEFENSE_ORCHID"> <!-- 1.28 -->
+	<type>DEFENSE</type>
+	<tip>tip_defense</tip>
+	<level>1</level>
+	<title>Защитный орхидов</title>
+	<short>Защитник О</short>
+	<desc>Сбивает вражеские ракеты, мины и астероиды. Перезарядка 1 секунда.</desc>
+	<power>1</power>
+	<cooldown>1000</cooldown>
+	<dodge>1</dodge>
+	<speed>5</speed>
+	<cost>60</cost>
+	<bp>2</bp>
+	<droneImage>drone_orchid_defense</droneImage>
 	<weaponBlueprint>DRONE_LASER_DEFENSE</weaponBlueprint>
 	<rarity>0</rarity>
 </droneBlueprint>

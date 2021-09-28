@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <!-- Copyright (c) 2012 by Subset Games. All rights reserved -->
-
+<FTL>
 <!--   
 			SUMMARY  — 
 A list of all main events to be called by lists
@@ -135,7 +135,7 @@ Distress:
 	<event load="SLUG_DISTRESS_RESCUE"/>
 
 
-	<event load="REFUGEE_DISTRESS_SLUG"/> <!--DLC — In newEvents--
+	<event load="REFUGEE_DISTRESS_SLUG"/> <!- -DLC — In newEvents- -
 	
 	<event load="PIRATE_CIVILIAN_BEACON"/>
 	<event load="TRAP_BEACON"/>
@@ -913,8 +913,30 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 </event>
 <event name="SLUG_UNLOCK_SURRENDER"> 
 	<text>"You have besssted us! Will you accept what is in our storeesss in exchange for our livess?"</text>
-	<choice hidden="true" req="slug" lvl="0" max_group="0" blue="false">
+	<choice hidden="true" req="SLUG_AND_ARMORED_SLUG" lvl="0" max_group="0" blue="false"><!-- 1.28 req was slug -->
 		<text>Let them live.</text>
+		<event>
+			<text>"Take thisss newly developed weapon we're transporting... They're not going to be happy we gave it up, that isss for ssure..."</text>
+			<choice>
+				<text>Accept the weapon.</text><!-- removed 'prototype' since it's not a /prototype/ -->
+				<event>
+					<text>This odd beam weapon does no damage to ships but instead greatly hurts the crew! Diabolical!</text>
+					<weapon name="BEAM_BIO"/>
+					<ship hostile="false"/>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>We don't want the weapon, we want information.</text>
+				<event>
+					<text>You ask where they were delivering the weapon. "By telling you we will probably die jussst as like as not... Oh well." They give you the coordinates of the a prototype cruiser's mobile construction platform.</text>
+					<quest event="SLUG_UNLOCK_1"/>
+					<ship hostile="false"/>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="slug_armored" lvl="1" max_group="0" blue="true"><!-- 1.28 Blizz in favor of separate option to promote diplomatic immunity achievement. -->
+		<text>(Slug Crewmember) Your Slug feels that they can offer something special. Let them live.</text>
 		<event>
 			<text>"Take thisss newly developed weapon we're transporting... They're not going to be happy we gave it up, that isss for ssure..."</text>
 			<choice>
@@ -957,7 +979,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 			</choice>
 		</event>
 	</choice>
-	<choice hidden="true">
+	<choice hidden="true" req="engines" blue="false" max_group="1">
 		<text>We will not accept surrender!</text>
 		<event/>
 	</choice>
@@ -1037,11 +1059,15 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 
 <event name="SLUG_SURRENDER">
 	<text>"You have besssted us! Will you accept what isss in our storesss in exchange for our livess?"</text>
-	<choice hidden="true" req="slug" lvl="0" max_group="0" blue="false">
+	<choice hidden="true" req="SLUG_AND_ARMORED_SLUG" lvl="0" max_group="0" blue="false"><!-- 1.28 req was slug -->
 		<text>Let them live.</text>
 		<event load="SLUG_SURRENDER_LIST"/>
 	</choice>
 	<choice hidden="false" req="slug" lvl="1" max_group="0" blue="true">
+		<text>(Slug Crewmember) Your Slug knows what they are going to offer you as a reward.</text>
+		<event load="SLUG_SURRENDER_LIST"/>
+	</choice>
+	<choice hidden="false" req="slug_armored" lvl="1" max_group="0" blue="true"><!-- 1.28 Blizz added in favor of diplomatic immunity -->
 		<text>(Slug Crewmember) Your Slug knows what they are going to offer you as a reward.</text>
 		<event load="SLUG_SURRENDER_LIST"/>
 	</choice>
@@ -1560,6 +1586,13 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 			<autoReward level="HIGH">standard</autoReward> 
 		</event>
 	</choice>
+	<choice req="morph" hidden="true"><!-- 1.28 added morph blue option since morph is engi -->
+		<text>(Morph Crewmember) Say ABADOTH.</text>
+		<event>
+			<text>Your Morph crewman easily recalls the phrase the deadman used from its memory banks. There is a moment of silence, and the ship's captain solemnly thanks you for the information. He wishes you well on your journey, and he offers several upgrades to assist you in exchange for your service to the Zoltan race.</text>
+			<autoReward level="HIGH">standard</autoReward> 
+		</event>
+	</choice>
 	<choice hidden="true">
 		<text>Say ANODYNE.</text>
 		<event>
@@ -1587,13 +1620,13 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 
 
 
-<!-- ----------------------------------------- -->
-<!-- ----------------------------------------- -->
-<!-- ----------------------------------------- -->
-<!-- ---------- UNSTABLE_SECTOR -------------- -->
-<!-- ----------------------------------------- -->
-<!-- ----------------------------------------- -->
-<!-- -----------------
+<!-- ***************************************** -->
+<!-- ***************************************** -->
+<!-- ***************************************** -->
+<!-- ********** UNSTABLE_SECTOR ************** -->
+<!-- ***************************************** -->
+<!-- ***************************************** -->
+<!-- *****************
 Load for unstable:
 Sun-asteroids     1
 Pulsar-asteroids	 1+1
@@ -1604,7 +1637,7 @@ nebula-PKB-asteroids
 Storm-pulsar
 Storm-asteroids
 storm-PKB
------------------------- -->
+************************ -->
 
 
 <eventList name="NEBULA_STORM_STORE_UNSTABLE">
@@ -1916,70 +1949,57 @@ storm-PKB
 	</choice>	
 	<choice hidden="true" req="mantis" lvl="0" max_group="0" blue="false">
 		<text id="continue" />
+		<event load="ASTEROID_ROCK_MINING_CHECK_CARGO"/>  <!-- 1.28 -->
+	</choice>
+</event>
+<event name="ASTEROID_ROCK_MINING_CHECK_CARGO"><!-- 1.28 split apart to separate event for hyperspace cargo check -->
+	<text>"Greetings! We're mining rare ore... but how did you get here?"</text>
+	<choice hidden="true">
+		<text>Tell them about your mission and ask for help.</text>
+		<event load="ASTEROID_ROCK_MINING_HELP"/>
+	</choice>
+	<choice hidden="true">
+		<text>Attack them.</text>
 		<event>
-			<text>"Greetings! We're mining rare ore... but how did you get here?"</text>
+			<text>No conversation. You decide to take apart their ship for scrap.</text>
+			<ship hostile="true"/>
+			<status type="clear" target="enemy" system="teleporter" amount="100"/>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Ignore them.</text>
+		<event/>
+	</choice>
+	<choice hidden="true" req="SCRAP_COLLECTOR">
+		<text>(Scrap Recovery Arm) Help the Rockmen to mine the ore.</text>
+		<event>
+			<text>Together, you quickly fill each other's holds with valuable scrap.</text>
+			<autoReward level="HIGH">scrap_only</autoReward>
 			<choice hidden="true">
-				<text>Tell them about your mission and ask for help.</text>
-				<event load="ASTEROID_ROCK_MINING_HELP"/>
-			</choice>
-			<choice hidden="true">
-				<text>Attack them.</text>
+				<text id="continue" />
 				<event>
-					<text>No conversation. You decide to take apart their ship for scrap.</text>
-					<ship hostile="true"/>
-					<status type="clear" target="enemy" system="teleporter" amount="100"/>
+					<text>Satisfied, the Rockmen give you some of their supplies.</text>
+					<autoReward level="LOW">stuff</autoReward>
 				</event>
 			</choice>
+		</event>
+	</choice>
+	<!-- 1.28 marker for removal of Scythe choice, Chain choice renamed to Industrial beams -->
+	<choice hidden="true" req="INDUSTRIAL_BEAMS"><!-- 1.28 combined BA_BEAM_SCYTHE (Scythe Beam) and BA_BEAM_FLAIL_DAMAGE (Chain Beam) choices, were the same -->
+		<text>(Industrial Beam) Help the Rockmen to mine the ore.</text><!-- 1.28 now Industrial Beam -->
+		<event>
+			<text>Together, you quickly fill each other's holds with valuable scrap.</text>
+			<autoReward level="HIGH">scrap_only</autoReward>
 			<choice hidden="true">
-				<text>Ignore them.</text>
-				<event/>
-			</choice>
-			<choice hidden="true" req="SCRAP_COLLECTOR">
-				<text>(Scrap Recovery Arm) Help the Rockmen to mine the ore.</text>
+				<text id="continue" />
 				<event>
-					<text>Together, you quickly fill each other's holds with valuable scrap.</text>
-					<autoReward level="HIGH">scrap_only</autoReward>
-					<choice hidden="true">
-						<text id="continue" />
-						<event>
-							<text>Satisfied, the Rockmen give you some of their supplies.</text>
-							<autoReward level="LOW">stuff</autoReward>
-						</event>
-					</choice>
-				</event>
-			</choice>
-			<choice hidden="true" req="BA_BEAM_SCYTHE">
-				<text>(Scythe Beam) Help the Rockmen to mine the ore.</text>
-				<event>
-					<text>Together, you quickly fill each other's holds with valuable scrap.</text>
-					<autoReward level="HIGH">scrap_only</autoReward>
-					<choice hidden="true">
-						<text id="continue" />
-						<event>
-							<text>Satisfied, the Rockmen give you some of their supplies.</text>
-							<autoReward level="LOW">stuff</autoReward>
-						</event>
-					</choice>
-				</event>
-			</choice>
-			<choice hidden="true" req="BA_BEAM_FLAIL_DAMAGE">
-				<text>(Chain Beam) Help the Rockmen to mine the ore.</text>
-				<event>
-					<text>Together, you quickly fill each other's holds with valuable scrap.</text>
-					<autoReward level="HIGH">scrap_only</autoReward>
-					<choice hidden="true">
-						<text id="continue" />
-						<event>
-							<text>Satisfied, the Rockmen give you some of their supplies.</text>
-							<autoReward level="LOW">stuff</autoReward>
-						</event>
-					</choice>
+					<text>Satisfied, the Rockmen give you some of their supplies.</text>
+					<autoReward level="LOW">stuff</autoReward>
 				</event>
 			</choice>
 		</event>
 	</choice>
 </event>
-
 <eventList name="ASTEROID_ROCK_MINING_HELP">
 	<event>
 		<text>The Rockmen carefully listen then give you some supplies for the sake of saving the Federation.</text>
@@ -2123,8 +2143,19 @@ storm-PKB
 			<choice hidden="true" req="human">
 				<text>(Human Crewmember) Send your Human.</text>
 				<event>
-					<text>You send your crewmember to the strange artifact. There's a strange sound and it draws them inward, then everything fades... </text>
+					<text>You send your crewmember to the strange artifact. There's a strange sound and it draws them inward, then everything fades...</text>
 					<crewMember amount="-1" class="human"/>
+					<choice hidden="true">
+						<text id="continue" />
+						<event load="NEBULA_STORM_SLUG_CONVERTER_OF_SOUL_RANDOMCREATURE"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true" req="order_human"><!-- 1.28 -->
+				<text>(Order Human Crewmember) Send your Order Human.</text>
+				<event>
+					<text>You send your crewmember to the strange artifact. There's a strange sound and it draws them inward, then everything fades...</text>
+					<crewMember amount="-1" class="Order_human"/>
 					<choice hidden="true">
 						<text id="continue" />
 						<event load="NEBULA_STORM_SLUG_CONVERTER_OF_SOUL_RANDOMCREATURE"/>
@@ -2134,8 +2165,19 @@ storm-PKB
 			<choice hidden="true" req="engi">
 				<text>(Engi Crewmember) Send your Engi.</text>
 				<event>
-					<text>You send your crewmember to the strange artifact. There's a strange sound and it draws them inward, then everything fades... </text>
+					<text>You send your crewmember to the strange artifact. There's a strange sound and it draws them inward, then everything fades...</text>
 					<crewMember amount="-1" class="engi"/>
+					<choice hidden="true">
+						<text id="continue" />
+						<event load="NEBULA_STORM_SLUG_CONVERTER_OF_SOUL_RANDOMCREATURE"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true" req="morph"><!-- thanks to argonaute -->
+				<text>(Morph Crewmember) Send your Morph.</text>
+				<event>
+					<text>You send your crewmember to the strange artifact. There's a strange sound and it draws them inward, then everything fades... </text>
+					<crewMember amount="-1" class="morph"/>
 					<choice hidden="true">
 						<text id="continue" />
 						<event load="NEBULA_STORM_SLUG_CONVERTER_OF_SOUL_RANDOMCREATURE"/>
@@ -2145,7 +2187,7 @@ storm-PKB
 			<choice hidden="true" req="energy">
 				<text>(Zoltan Crewmember) Send your Zoltan.</text>
 				<event>
-					<text>You send your crewmember to the strange artifact. There's a strange sound and it draws them inward, then everything fades... </text>
+					<text>You send your crewmember to the strange artifact. There's a strange sound and it draws them inward, then everything fades...</text>
 					<crewMember amount="-1" class="energy"/>
 					<choice hidden="true">
 						<text id="continue" />
@@ -2153,10 +2195,109 @@ storm-PKB
 					</choice>
 				</event>
 			</choice>
+			<choice hidden="true" req="energyx"><!-- 1.28 -->
+				<text>(Zolton Crew Member) Send your Zolton.</text>
+				<event>
+					<text>You send your crewmember to the strange artifact. There's a strange sound and it draws them inward, then everything fades...</text>
+					<crewMember amount="-1" class="energyx"/>
+					<choice hidden="true">
+						<text id="continue"/>
+						<event load="NEBULA_STORM_SLUG_CONVERTER_OF_SOUL_RANDOMCREATURE"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true" req="rock">
+				<text>(Rock Crew Member) Send your Rock.</text>
+				<event>
+					<text>You send your crewmember to the strange artifact. There's a strange sound and it draws them inward, then everything fades...</text>
+					<crewMember amount="-1" class="rock"/>
+					<choice hidden="true">
+						<text id="continue"/>
+						<event load="NEBULA_STORM_SLUG_CONVERTER_OF_SOUL_RANDOMCREATURE"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true" req="magman"><!-- 1.28 -->
+				<text>(Magman Crew Member) Send your Magman.</text>
+				<event>
+					<text>You send your crewmember to the strange artifact. There's a strange sound and it draws them inward, then everything fades...</text>
+					<crewMember amount="-1" class="magman"/>
+					<choice hidden="true">
+						<text id="continue"/>
+						<event load="NEBULA_STORM_SLUG_CONVERTER_OF_SOUL_RANDOMCREATURE"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true" req="mushroom_f"><!-- 1.28 -->
+				<text>(Young Mushroom Crew Member) Send your Mushroom.</text>
+				<event>
+					<text>You send your crewmember to the strange artifact. There's a strange sound and it draws them inward, then everything fades...</text>
+					<crewMember amount="-1" class="mushroom_f"/>
+					<choice hidden="true">
+						<text id="continue"/>
+						<event load="NEBULA_STORM_SLUG_CONVERTER_OF_SOUL_RANDOMCREATURE"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true" req="mushroom_b"><!-- 1.28 -->
+				<text>(Mature Mushroom Crew Member) Send your Mushroom.</text>
+				<event>
+					<text>You send your crewmember to the strange artifact. There's a strange sound and it draws them inward, then everything fades...</text>
+					<crewMember amount="-1" class="mushroom_b"/>
+					<choice hidden="true">
+						<text id="continue"/>
+						<event load="NEBULA_STORM_SLUG_CONVERTER_OF_SOUL_RANDOMCREATURE"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true" req="mushroom"><!-- 1.28 -->
+				<text>(Old Mushroom Crew Member) Send your Mushroom.</text>
+				<event>
+					<text>You send your crewmember to the strange artifact. There's a strange sound and it draws them inward, then everything fades...</text>
+					<crewMember amount="-1" class="mushroom"/>
+					<choice hidden="true">
+						<text id="continue"/>
+						<event load="NEBULA_STORM_SLUG_CONVERTER_OF_SOUL_RANDOMCREATURE"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true" req="orchid"><!-- 1.28 -->
+				<text>(Orchid Crew Member) Send your Orchid.</text>
+				<event>
+					<text>You send your crewmember to the strange artifact. There's a strange sound and it draws them inward, then everything fades...</text>
+					<crewMember amount="-1" class="orchid"/>
+					<choice hidden="true">
+						<text id="continue"/>
+						<event load="NEBULA_STORM_SLUG_CONVERTER_OF_SOUL_RANDOMCREATURE"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true" req="slug_armored"><!-- 1.28 -->
+				<text>(Armored Slug Crew Member) Send your Armored Slug.</text>
+				<event>
+					<text>You send your crewmember to the strange artifact. There's a strange sound and it draws them inward, then everything fades...</text>
+					<crewMember amount="-1" class="slug_armored"/>
+					<choice hidden="true">
+						<text id="continue"/>
+						<event load="NEBULA_STORM_SLUG_CONVERTER_OF_SOUL_RANDOMCREATURE"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true" req="shell"><!-- 1.28 -->
+				<text>(Shell Crew Member) Send your Shell.</text>
+				<event>
+					<text>You send your crewmember to the strange artifact. There's a strange sound and it draws them inward, then everything fades...</text>
+					<crewMember amount="-1" class="shell"/>
+					<choice hidden="true">
+						<text id="continue"/>
+						<event load="NEBULA_STORM_SLUG_CONVERTER_OF_SOUL_RANDOMCREATURE"/>
+					</choice>
+				</event>
+			</choice>
 			<choice hidden="true" req="rock">
 				<text>(Rock Crewmember) Send your Rockman.</text>
 				<event>
-					<text>You send your crewmember to the strange artifact. There's a strange sound and it draws them inward, then everything fades... </text>
+					<text>You send your crewmember to the strange artifact. There's a strange sound and it draws them inward, then everything fades...</text>
 					<crewMember amount="-1" class="rock"/>
 					<choice hidden="true">
 						<text id="continue" />
@@ -2167,7 +2308,7 @@ storm-PKB
 			<choice hidden="true" req="anaerobic">
 				<text>(Lanius Crewmember) Send your Lanius.</text>
 				<event>
-					<text>You send your crewmember to the strange artifact. There's a strange sound and it draws them inward, then everything fades... </text>
+					<text>You send your crewmember to the strange artifact. There's a strange sound and it draws them inward, then everything fades...</text>
 					<crewMember amount="-1" class="anaerobic"/>
 					<choice hidden="true">
 						<text id="continue" />
@@ -2178,7 +2319,7 @@ storm-PKB
 			<choice hidden="true" req="crystal">
 				<text>(Crystal Crewmember) Send your Crystal.</text>
 				<event>
-					<text>You send your crewmember to the strange artifact. There's a strange sound and it draws them inward, then everything fades... </text>
+					<text>You send your crewmember to the strange artifact. There's a strange sound and it draws them inward, then everything fades...</text>
 					<crewMember amount="-1" class="crystal"/>
 					<choice hidden="true">
 						<text id="continue" />
@@ -2189,7 +2330,7 @@ storm-PKB
 			<choice hidden="true" req="ghost">
 				<text>(Avatar Crewmember) Send your Avatar.</text>
 				<event>
-					<text>You send your crewmember to the strange artifact. There's a strange sound and it draws them inward, then everything fades... </text>
+					<text>You send your crewmember to the strange artifact. There's a strange sound and it draws them inward, then everything fades...</text>
 					<crewMember amount="-1" class="ghost"/>
 					<choice hidden="true">
 						<text id="continue" />
@@ -2200,7 +2341,7 @@ storm-PKB
 			<choice hidden="true" req="mantis">
 				<text>(Mantis Crewmember) Send your Mantis.</text>
 				<event>
-					<text>You send your crewmember to the strange artifact. There's a strange sound and it draws them inward, then everything fades... </text>
+					<text>You send your crewmember to the strange artifact. There's a strange sound and it draws them inward, then everything fades...</text>
 					<crewMember amount="-1" class="mantis"/>
 					<choice hidden="true">
 						<text id="continue" />
@@ -2211,10 +2352,21 @@ storm-PKB
 			<choice hidden="true" req="slug">
 				<text>(Slug Crewmember) Send your Slug.</text>
 				<event>
-					<text>You send your crewmember to the strange artifact. There's a strange sound and it draws them inward, then everything fades... </text>
+					<text>You send your crewmember to the strange artifact. There's a strange sound and it draws them inward, then everything fades...</text>
 					<crewMember amount="-1" class="slug"/>
 					<choice hidden="true">
 						<text id="continue" />
+						<event load="NEBULA_STORM_SLUG_CONVERTER_OF_SOUL_RANDOMCREATURE"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true" req="slig"><!-- 1.28 -->
+				<text>(Slig Crewmember) Send your Slig.</text>
+				<event>
+					<text>You send your crewmember to the strange artifact. There's a strange sound and it draws them inward, then everything fades...</text>
+					<crewMember amount="-1" class="slig"/>
+					<choice hidden="true">
+						<text id="continue"/>
 						<event load="NEBULA_STORM_SLUG_CONVERTER_OF_SOUL_RANDOMCREATURE"/>
 					</choice>
 				</event>
@@ -2270,14 +2422,69 @@ storm-PKB
 		<crewMember amount="1" class="engi" all_skills="1">Izual</crewMember>
 		<autoReward level="LOW">scrap_only</autoReward>
 	</event>
+	<event><!-- thanks to argonaute -->
+		<text>Suddenly a slimy cocoon comes out of the artifact, and your new crewmember crawls out of it... The Slugs make some measurements and give you a bit of scrap in gratitude.</text>
+		<crewMember amount="1" class="morph" all_skills="1">Izual</crewMember>
+		<autoReward level="LOW">scrap_only</autoReward>
+	</event>
 	<event>
 		<text>Suddenly a slimy cocoon comes out of the artifact, and your new crewmember crawls out of it... The Slugs make some measurements and give you a bit of scrap in gratitude.</text>
 		<crewMember amount="1" class="rock" all_skills="1">Izual</crewMember>
 		<autoReward level="LOW">scrap_only</autoReward>
 	</event>
+	<event><!-- 1.28 -->
+		<text>Suddenly a slimy cocoon comes out of the artifact, and your new crewmember crawls out of it... The Slugs make some measurements and give you a bit of scrap in gratitude.</text>
+		<crewMember amount="1" class="magman" all_skills="1">Izual</crewMember>
+		<autoReward level="LOW">scrap_only</autoReward>
+	</event>
+	<event><!-- 1.28 -->
+		<text>Suddenly a slimy cocoon comes out of the artifact, and your new crewmember crawls out of it... The Slugs make some measurements and give you a bit of scrap in gratitude.</text>
+		<crewMember amount="1" class="order_human" all_skills="1">Izual</crewMember>
+		<autoReward level="LOW">scrap_only</autoReward>
+	</event>
+	<event><!-- 1.28 -->
+		<text>Suddenly a slimy cocoon comes out of the artifact, and your new crewmember crawls out of it... The Slugs make some measurements and give you a bit of scrap in gratitude.</text>
+		<crewMember amount="1" class="orchid" all_skills="1">Izual</crewMember>
+		<autoReward level="LOW">scrap_only</autoReward>
+	</event>
+	<event><!-- 1.28 -->
+		<text>Suddenly a slimy cocoon comes out of the artifact, and your new crewmember crawls out of it... The Slugs make some measurements and give you a bit of scrap in gratitude.</text>
+		<crewMember amount="1" class="shell" all_skills="1">Izual</crewMember>
+		<autoReward level="LOW">scrap_only</autoReward>
+	</event>
+	<event><!-- 1.28 -->
+		<text>Suddenly a slimy cocoon comes out of the artifact, and your new crewmember crawls out of it... The Slugs make some measurements and give you a bit of scrap in gratitude.</text>
+		<crewMember amount="1" class="slug_armored" all_skills="1">Izual</crewMember>
+		<autoReward level="LOW">scrap_only</autoReward>
+	</event>
+	<event><!-- 1.28 -->
+		<text>Suddenly a slimy cocoon comes out of the artifact, and your new crewmember crawls out of it... The Slugs make some measurements and give you a bit of scrap in gratitude.</text>
+		<crewMember amount="1" class="slig" all_skills="1">Izual</crewMember>
+		<autoReward level="LOW">scrap_only</autoReward>
+	</event>
 	<event>
 		<text>Suddenly a slimy cocoon comes out of the artifact, and your new crewmember crawls out of it... The Slugs make some measurements and give you a bit of scrap in gratitude.</text>
 		<crewMember amount="1" class="energy" all_skills="1">Izual</crewMember>
+		<autoReward level="LOW">scrap_only</autoReward>
+	</event>
+	<event><!-- 1.28 -->
+		<text>Suddenly a slimy cocoon comes out of the artifact, and your new crewmember crawls out of it... The Slugs make some measurements and give you a bit of scrap in gratitude.</text>
+		<crewMember amount="1" class="energyx" all_skills="1">Izual</crewMember>
+		<autoReward level="LOW">scrap_only</autoReward>
+	</event>
+	<event><!-- 1.28 -->
+		<text>Suddenly a slimy cocoon comes out of the artifact, and your new crewmember crawls out of it... The Slugs make some measurements and give you a bit of scrap in gratitude.</text>
+		<crewMember amount="1" class="mushroom_f" all_skills="1">Izual</crewMember>
+		<autoReward level="LOW">scrap_only</autoReward>
+	</event>
+	<event><!-- 1.28 -->
+		<text>Suddenly a slimy cocoon comes out of the artifact, and your new crewmember crawls out of it... The Slugs make some measurements and give you a bit of scrap in gratitude.</text>
+		<crewMember amount="1" class="mushroom_b" all_skills="1">Izual</crewMember>
+		<autoReward level="LOW">scrap_only</autoReward>
+	</event>
+	<event><!-- 1.28 -->
+		<text>Suddenly a slimy cocoon comes out of the artifact, and your new crewmember crawls out of it... The Slugs make some measurements and give you a bit of scrap in gratitude.</text>
+		<crewMember amount="1" class="mushroom" all_skills="1">Izual</crewMember>
 		<autoReward level="LOW">scrap_only</autoReward>
 	</event>
 	<event>
@@ -3012,7 +3219,7 @@ storm-PKB
 			<status type="clear" target="player" system="engines" amount="100" />
 			<status type="clear" target="player" system="pilot" amount="100" />
 			<crewMember amount="-1" class="ghost"/>
-			<item_modify><item type="scrap" min="35" max="35"/></item_modify>
+			<item_modify><item type="scrap" min="25" max="25"/></item_modify><!-- 1.28 was 35 -->
 		</event>
 	</choice>
 	<choice hidden="true" req="ghost" lvl="2" max_group="0" blue="false">
@@ -3027,7 +3234,7 @@ storm-PKB
 					<status type="clear" target="player" system="engines" amount="100" />
 					<status type="clear" target="player" system="pilot" amount="100" />
 					<crewMember amount="-1" class="ghost"/>
-					<item_modify><item type="scrap" min="70" max="70"/></item_modify>
+					<item_modify><item type="scrap" min="50" max="50"/></item_modify><!-- 1.28 was 70 -->
 				</event>
 			</choice>
 		</event>
@@ -3049,7 +3256,7 @@ storm-PKB
 							<status type="clear" target="player" system="engines" amount="100" />
 							<status type="clear" target="player" system="pilot" amount="100" />
 							<crewMember amount="-1" class="ghost"/>
-							<item_modify><item type="scrap" min="105" max="105"/></item_modify>
+							<item_modify><item type="scrap" min="75" max="75"/></item_modify><!-- 1.28 was 105 -->
 						</event>
 					</choice>
 				</event>
@@ -3078,7 +3285,7 @@ storm-PKB
 									<status type="clear" target="player" system="engines" amount="100" />
 									<status type="clear" target="player" system="pilot" amount="100" />
 									<crewMember amount="-1" class="ghost"/>
-									<item_modify><item type="scrap" min="140" max="140"/></item_modify>
+									<item_modify><item type="scrap" min="100" max="100"/></item_modify><!-- 1.28 was 140 -->
 								</event>
 							</choice>
 						</event>
@@ -3114,7 +3321,7 @@ storm-PKB
 											<status type="clear" target="player" system="engines" amount="100" />
 											<status type="clear" target="player" system="pilot" amount="100" />
 											<crewMember amount="-1" class="ghost"/>
-											<item_modify><item type="scrap" min="175" max="175"/></item_modify>
+											<item_modify><item type="scrap" min="125" max="125"/></item_modify><!-- 1.28 was 175 -->
 										</event>
 									</choice>
 								</event>
@@ -3157,7 +3364,7 @@ storm-PKB
 													<status type="clear" target="player" system="engines" amount="100" />
 													<status type="clear" target="player" system="pilot" amount="100" />
 													<crewMember amount="-1" class="ghost"/>
-													<item_modify><item type="scrap" min="210" max="210"/></item_modify>
+													<item_modify><item type="scrap" min="150" max="150"/></item_modify><!-- 1.28 was 210 -->
 												</event>
 											</choice>
 										</event>
@@ -3207,7 +3414,7 @@ storm-PKB
 															<status type="clear" target="player" system="engines" amount="100" />
 															<status type="clear" target="player" system="pilot" amount="100" />
 															<crewMember amount="-1" class="ghost"/>
-															<item_modify><item type="scrap" min="245" max="245"/></item_modify>
+															<item_modify><item type="scrap" min="175" max="175"/></item_modify><!-- 1.28 was 245 -->
 														</event>
 													</choice>
 												</event>
@@ -3264,7 +3471,7 @@ storm-PKB
 																	<status type="clear" target="player" system="engines" amount="100" />
 																	<status type="clear" target="player" system="pilot" amount="100" />
 																	<crewMember amount="-1" class="ghost"/>
-																	<item_modify><item type="scrap" min="280" max="280"/></item_modify>
+																	<item_modify><item type="scrap" min="200" max="200"/></item_modify><!-- 1.28 was 280 -->
 																</event>
 															</choice>
 														</event>
@@ -3490,6 +3697,7 @@ storm-PKB
 	<event load="SLURM_FIGHT_RANDOM"/>
 	<event load="SLURM_FIGHT_RANDOM"/>
 	<event load="EVENT_SLURM_TAMOZNA"/>
+	<!-- <event load="NEBULA_AUTO_CLOUDER_EVENT"/> --><!-- 1.28 not sure, wasn't there before either -->
 </eventList>
 
 <eventList name="NEBULA_HOSTILE_SLURM">
@@ -3498,6 +3706,7 @@ storm-PKB
 	<event load="NEBULA_SLURM_FIGHT_RANDOM"/>
 	<event load="NEBULA_SLURM_FIGHT_RANDOM"/>
 	<event load="NEBULA_AUTO_WARNING"/>
+	<event load="NEBULA_AUTO_CLOUDER_EVENT"/><!-- 1.28 -->
 </eventList>
 
 <eventList name="DISTRESS_BEACON_SLURM">
@@ -3679,7 +3888,7 @@ storm-PKB
 	<text load="NOTHING_SLURM"/>
 	<choice hidden="true">
 		<text id="continue" />
-		<event load="TALK_WITH_CREW"/>
+		<event load="TALK_WITH_CREW_SLIG"/><!-- 1.28 -->
 	</choice>
 </event>
 <textList name="NOTHING_SLURM">
@@ -3695,7 +3904,7 @@ storm-PKB
 	<environment type="nebula"/>
 	<choice hidden="true">
 		<text id="continue" />
-		<event load="TALK_WITH_CREW"/>
+		<event load="TALK_WITH_CREW_SLIG"/><!-- 1.28 -->
 	</choice>
 </event>
 <textList name="NEBULA_NOTHING_SLURM">
@@ -5850,7 +6059,7 @@ storm-PKB
 	</event>
 	<event>
 		<text>Seeing your intentions, he says: "Okay, okay, stop! Let's talk. Here's a modest offer.. I have an interesting weapon — will you take it?"</text>
-		<choice req="slug" lvl="0" hidden="true" max_group="0" blue="false">
+		<choice req="SLUG_AND_ARMORED_SLUG" lvl="0" hidden="true" max_group="0" blue="false"><!-- 1.28 req was slug -->
 			<text>Accept the offer.</text>
 			<event>
 				<text>You take the weapon and release the pirate's ship.</text>
@@ -5864,14 +6073,21 @@ storm-PKB
 				<weapon name="WEAPONS_RUHLAD"/>
 			</event>
 		</choice>
-		<choice hidden="true"> 
+		<choice req="slug_armored" lvl="1" hidden="false" max_group="0" blue="true"><!-- 1.28 would be both in one , but this promotes diplomatic immunity -->
+			<text>(Slug Crewmember) Your Slug knows what he wants to offer you.</text>
+			<event>
+				<text>You take the weapon and release the pirate's ship.</text>
+				<weapon name="WEAPONS_RUHLAD"/>
+			</event>
+		</choice>
+		<choice req="engines" lvl="1" blue="false" max_group="1" hidden="true"><!-- english added dummy engine req+max_group to place this last -->
 			<text>Destroy him.</text>
 			<event load="PEACEFUL_MAN_RANDOM_ATTACK2"/>
 		</choice>
 	</event>
 	<event>
 		<text>Seeing your intentions, he says: "Okay, okay, stop! Let's talk. I have an unusual device... Will you take it and let us both part ways in peace?"</text>
-		<choice req="slug" lvl="0" hidden="true" max_group="0" blue="false">
+		<choice req="SLUG_AND_ARMORED_SLUG" lvl="0" hidden="true" max_group="0" blue="false"><!-- 1.28 req was slug -->
 			<text>Accept the offer.</text>
 			<event>
 				<text>You take the strange device and release the pirate's ship.</text>
@@ -5885,14 +6101,21 @@ storm-PKB
 				<weapon name="SHIPRADAR"/>
 			</event>
 		</choice>
-		<choice hidden="true"> 
+		<choice req="slug_armored" lvl="1" hidden="false" max_group="0" blue="true"><!-- 1.28 added this instead of both to promote diplomatic immunity -->
+			<text>(Slug Crewmember) Your Slug knows what he wants to offer you.</text>
+			<event>
+				<text>You take the strange device and release the pirate's ship.</text>
+				<weapon name="SHIPRADAR"/>
+			</event>
+		</choice>
+		<choice req="engines" lvl="1" blue="false" max_group="1" hidden="true"><!-- english added dummy engine req+max_group to place this last -->
 			<text>Destroy him.</text>
 			<event load="PEACEFUL_MAN_RANDOM_ATTACK2"/>
 		</choice>
 	</event>
 	<event>
 		<text>Seeing your intentions, he says: "Okay, okay, stop! Let's talk. Here's a modest offer.. take my slave?"</text>
-		<choice req="slug" lvl="0" hidden="true" max_group="0" blue="false">
+		<choice req="SLUG_AND_ARMORED_SLUG" lvl="0" hidden="true" max_group="0" blue="false"><!-- 1.28 req was slug -->
 			<text>Accept the offer.</text>
 			<event>
 				<text>You take the slave and release the pirate ship.</text>
@@ -5906,14 +6129,21 @@ storm-PKB
 				<crewMember amount="1" class="random">Slave</crewMember>
 			</event>
 		</choice>
-		<choice hidden="true"> 
+		<choice req="slug_armored" lvl="1" hidden="false" max_group="0" blue="true"><!-- 1.28 added this instead of both to promote diplomatic immunity -->
+			<text>(Slug Crewmember) Your Slug knows who he wants to offer you.</text>
+			<event>
+				<text>You take the slave and release the pirate ship.</text>
+				<crewMember amount="1" class="random">Slave</crewMember>
+			</event>
+		</choice>
+		<choice req="engines" lvl="1" blue="false" max_group="1" hidden="true"><!-- english added dummy engine req+max_group to place this last -->
 			<text>Destroy him.</text>
 			<event load="PEACEFUL_MAN_RANDOM_ATTACK2"/>
 		</choice>
 	</event>
 	<event>
 		<text>Seeing your intentions, he says: "Okay, okay, stop! Let's talk. Here's a modest offer.. Will you take my ship augment and let us both part ways in peace?"</text>
-		<choice req="slug" lvl="0" hidden="true" max_group="0" blue="false">
+		<choice req="SLUG_AND_ARMORED_SLUG" lvl="0" hidden="true" max_group="0" blue="false"><!-- 1.28 req was slug -->
 			<text>Accept the offer.</text>
 			<event>
 				<text>You take the augmentation and release the pirate's ship.</text>
@@ -5927,7 +6157,14 @@ storm-PKB
 				<augment name="LIFE_SCANNER"/>
 			</event>
 		</choice>
-		<choice hidden="true"> 
+		<choice req="slug_armored" lvl="1" hidden="false" max_group="0" blue="true"><!-- 1.28 added this instead of both to promote diplomatic immunity -->
+			<text>(Slug Crewmember) Your Slug knows what augment he wants to offer you.</text>
+			<event>
+				<text>You take the augmentation and release the pirate's ship.</text>
+				<augment name="LIFE_SCANNER"/>
+			</event>
+		</choice>
+		<choice req="engines" lvl="1" blue="false" max_group="1" hidden="true"><!-- english added dummy engine req+max_group to place this last -->
 			<text>Destroy him.</text>
 			<event load="PEACEFUL_MAN_RANDOM_ATTACK2"/>
 		</choice>
@@ -6050,7 +6287,7 @@ storm-PKB
 	</event>
 	<event>
 		<text>"Hey! Well, what are you doing?! Okay okay, I get it! Maybe you'll take a drone and forget everything!?"</text>
-		<choice req="slug" lvl="0" hidden="true" max_group="0" blue="false">
+		<choice req="SLUG_AND_ARMORED_SLUG" lvl="0" hidden="true" max_group="0" blue="false"><!-- 1.28 req was slug -->
 			<text>Accept the offer.</text>
 			<event>
 				<text>You take the drone and release the pirate ship.</text>
@@ -6064,7 +6301,14 @@ storm-PKB
 				<drone name="RANDOM"/>
 			</event>
 		</choice>
-		<choice hidden="true"> 
+		<choice req="slug_armored" lvl="1" hidden="false" max_group="0" blue="true"><!-- 1.28 added this instead of both to promote diplomatic immunity -->
+			<text>(Slug Crewmember) Your Slug knows what kind of drone he wants to offer you.</text>
+			<event>
+				<text>You take the drone and release the pirate ship.</text>
+				<drone name="RANDOM"/>
+			</event>
+		</choice>
+		<choice req="engines" lvl="1" blue="false" max_group="1" hidden="true"><!-- english added dummy engine req+max_group to place this last -->
 			<text>Attack!</text>
 			<event>
 				<text>You still continue charging the weapons.. and now the enemy is doing the same.</text>
@@ -6138,7 +6382,7 @@ storm-PKB
 		<text load="NOTHING"/>
 		<choice hidden="true">
 			<text id="continue" />
-			<event load="TALK_WITH_CREW"/>
+			<event load="TALK_WITH_CREW_SLIG"/><!-- 1.28 -->
 		</choice>
 	</event>
 	<event>
@@ -6156,7 +6400,27 @@ storm-PKB
 				<text>You decide that approaching the wormhole is too dangerous for the ship...</text>
 				<choice hidden="true">
 					<text id="continue" />
-					<event load="TALK_WITH_CREW"/>
+					<event load="TALK_WITH_CREW_SLIG"/><!-- 1.28 -->
+				</choice>
+			</event>
+		</choice>
+	</event>
+	<event><!-- 1.28 added duplicate for higher chance of crystal wormhole -->
+		<img planet="PLANET_GAS" back="CRYSTAL_CHERV"/>
+		<text>The pirate didn't come here, but at the indicated coordinates you find a wormhole! Surely it leads to the Crystal sector.</text>
+		<choice>
+			<text>Approach the wormhole.</text>
+			<event>
+				<secretSector/>
+			</event>
+		</choice>
+		<choice>
+			<text>Don't approach the wormhole.</text>
+			<event>
+				<text>You decide that approaching the wormhole is too dangerous for the ship...</text>
+				<choice hidden="true">
+					<text id="continue" />
+					<event load="TALK_WITH_CREW_SLIG"/><!-- 1.28 -->
 				</choice>
 			</event>
 		</choice>
@@ -6167,10 +6431,14 @@ storm-PKB
 		<text load="NOTHING"/>
 		<choice hidden="true">
 			<text id="continue" />
-			<event load="TALK_WITH_CREW"/>
+			<event load="TALK_WITH_CREW_SLIG"/><!-- 1.28 -->
 		</choice>
 	</event>
 	<event>
+		<text>At these coordinates you find a warehouse full of useful equipment. Evidently pirates have never been here, so you calmly clean out the warehouse.</text>
+		<autoReward level="HIGH">standard</autoReward>
+	</event>
+	<event><!-- 1.28 added duplicate for higher chance of reward -->
 		<text>At these coordinates you find a warehouse full of useful equipment. Evidently pirates have never been here, so you calmly clean out the warehouse.</text>
 		<autoReward level="HIGH">standard</autoReward>
 	</event>
@@ -6211,7 +6479,7 @@ storm-PKB
 			<status type="limit" target="player" system="teleporter" amount="0"/> <!-- 1.26 -->
 		</event>
 	</choice>
-	<choice>
+	<choice hidden="true" req="pilot" blue="false" max_group="1"> <!-- 1.28 added dummy req+max_group -->
 		<text>Don't interfere in this.</text>
 		<event/>
 	</choice>
@@ -6678,11 +6946,33 @@ storm-PKB
 					<weapon name="SLURMBARRELS"/>
 				</event>
 			</choice>
+			<choice hidden="true" req="order_human"> <!-- 1.28 -->
+				<text>(Order Human Crewmember) Give your Order Human.</text>
+				<event>
+					<text>Your crewmember is tossed into the cauldron, and some time later you receive payment from the Sligs and a portion of fresh Slurm in a barrel...</text>
+					<crewMember amount="-1" class="order_human"/>
+					<item_modify>
+						<item type="scrap" min="50" max="50"/>
+					</item_modify>
+					<weapon name="SLURMBARRELS"/>
+				</event>
+			</choice>
 			<choice hidden="true" req="engi">
 				<text>(Engi Crewmember) Give your Engi.</text>
 				<event>
 					<text>Your crewmember is tossed into the cauldron, and some time later you receive payment from the Sligs and a portion of fresh Slurm in a barrel...</text>
 					<crewMember amount="-1" class="engi"/>
+					<item_modify>
+						<item type="scrap" min="50" max="50"/>
+					</item_modify>
+					<weapon name="SLURMBARRELS"/>
+				</event>
+			</choice>
+			<choice hidden="true" req="morph"><!-- thanks to argonaute -->
+				<text>(Morph Crewmember) Give your Morph.</text>
+				<event>
+					<text>Your crewmember is tossed into the cauldron, and some time later you receive payment from the Sligs and a portion of fresh Slurm in a barrel...</text>
+					<crewMember amount="-1" class="morph"/>
 					<item_modify>
 						<item type="scrap" min="50" max="50"/>
 					</item_modify>
@@ -6711,6 +7001,17 @@ storm-PKB
 					<weapon name="SLURMBARRELS"/>
 				</event>
 			</choice>
+			<choice hidden="true" req="slig"><!-- 1.28 -->
+				<text>(Slig Crew Member) Give your Slig.</text>
+				<event>
+					<text>Your crewmember is tossed into the cauldron, and some time later you receive payment from the Sligs and a portion of fresh Slurm in a barrel...</text>
+					<crewMember amount="-1" class="slig"/>
+					<item_modify>
+						<item type="scrap" min="50" max="50"/>
+					</item_modify>
+					<weapon name="SLURMBARRELS"/>
+				</event>
+			</choice>
 			<choice hidden="true" req="rock">
 				<text>(Rock Crewmember) Give your Rockman.</text>
 				<event>
@@ -6722,11 +7023,99 @@ storm-PKB
 					<weapon name="SLURMBARRELS"/>
 				</event>
 			</choice>
+			<choice hidden="true" req="magman"> <!-- 1.28 -->
+				<text>(Magman Crewmember) Give your Magman.</text>
+				<event>
+					<text>Your crewmember is tossed into the cauldron, and some time later you receive payment from the Sligs and a portion of fresh Slurm in a barrel...</text>
+					<crewMember amount="-1" class="magman"/>
+					<item_modify>
+						<item type="scrap" min="50" max="50"/>
+					</item_modify>
+					<weapon name="SLURMBARRELS"/>
+				</event>
+			</choice>
+			<choice hidden="true" req="mushroom_f"> <!-- 1.28 -->
+				<text>(Young Mushroom Crew Member) Give your Mushroom.</text>
+				<event>
+					<text>Your crewmember is tossed into the cauldron, and some time later you receive payment from the Sligs and a portion of fresh Slurm in a barrel...</text>
+					<crewMember amount="-1" class="mushroom_f"/>
+					<item_modify>
+						<item type="scrap" min="50" max="50"/>
+					</item_modify>
+					<weapon name="SLURMBARRELS"/>
+				</event>
+			</choice>
+			<choice hidden="true" req="mushroom_b"> <!-- 1.28 -->
+				<text>(Mature Mushroom Crew Member) Give your Mushroom.</text>
+				<event>
+					<text>Your crewmember is tossed into the cauldron, and some time later you receive payment from the Sligs and a portion of fresh Slurm in a barrel...</text>
+					<crewMember amount="-1" class="mushroom_b"/>
+					<item_modify>
+						<item type="scrap" min="50" max="50"/>
+					</item_modify>
+					<weapon name="SLURMBARRELS"/>
+				</event>
+			</choice>
+			<choice hidden="true" req="mushroom"> <!-- 1.28 -->
+				<text>(Old Mushroom Crew Member) Give your Mushroom.</text>
+				<event>
+					<text>Your crewmember is tossed into the cauldron, and some time later you receive payment from the Sligs and a portion of fresh Slurm in a barrel...</text>
+					<crewMember amount="-1" class="mushroom"/>
+					<item_modify>
+						<item type="scrap" min="50" max="50"/>
+					</item_modify>
+					<weapon name="SLURMBARRELS"/>
+				</event>
+			</choice>
+			<choice hidden="true" req="orchid"> <!-- 1.28 -->
+				<text>(Orchid Crewmember) Give your Orchid.</text>
+				<event>
+					<text>Your crewmember is tossed into the cauldron, and some time later you receive payment from the Sligs and a portion of fresh Slurm in a barrel...</text>
+					<crewMember amount="-1" class="orchid"/>
+					<item_modify>
+						<item type="scrap" min="50" max="50"/>
+					</item_modify>
+					<weapon name="SLURMBARRELS"/>
+				</event>
+			</choice>
+			<choice hidden="true" req="shell"> <!-- 1.28 -->
+				<text>(Shell Crew Member) Give your Shell.</text>
+				<event>
+					<text>Your crewmember is tossed into the cauldron, and some time later you receive payment from the Sligs and a portion of fresh Slurm in a barrel...</text>
+					<crewMember amount="-1" class="shell"/>
+					<item_modify>
+						<item type="scrap" min="50" max="50"/>
+					</item_modify>
+					<weapon name="SLURMBARRELS"/>
+				</event>
+			</choice>
+			<choice hidden="true" req="slug_armored"> <!-- 1.28 -->
+				<text>(Armored Slug Crew Member) Give your Armored Slug.</text>
+				<event>
+					<text>Your crewmember is tossed into the cauldron, and some time later you receive payment from the Sligs and a portion of fresh Slurm in a barrel...</text>
+					<crewMember amount="-1" class="slug_armored"/>
+					<item_modify>
+						<item type="scrap" min="50" max="50"/>
+					</item_modify>
+					<weapon name="SLURMBARRELS"/>
+				</event>
+			</choice>
 			<choice hidden="true" req="energy">
 				<text>(Zoltan Crewmember) Give your Zoltan.</text>
 				<event>
 					<text>Your crewmember is tossed into the cauldron, and some time later you receive payment from the Sligs and a portion of fresh Slurm in a barrel...</text>
 					<crewMember amount="-1" class="energy"/>
+					<item_modify>
+						<item type="scrap" min="50" max="50"/>
+					</item_modify>
+					<weapon name="SLURMBARRELS"/>
+				</event>
+			</choice>
+			<choice hidden="true" req="energyx"><!-- 1.28 -->
+				<text>(Zolton Crewmember) Give your Zolton.</text>
+				<event>
+					<text>Your crewmember is tossed into the cauldron, and some time later you receive payment from the Sligs and a portion of fresh Slurm in a barrel...</text>
+					<crewMember amount="-1" class="energyx"/>
 					<item_modify>
 						<item type="scrap" min="50" max="50"/>
 					</item_modify>
@@ -6789,7 +7178,7 @@ storm-PKB
 	<text>After asking the crew member to inspect the outer plating, you power up the engines, leaving them to dangle in outer space...</text>
 </textList>
 <eventList name="SLURM_PLANET_TRADER_RAND">
-	<event> <!-- NO HUMAN -->
+	<event> <!-- NO HUMAN --><!-- Basic races only. Special fractions are ok. --><!-- 1.28 -->
 		<text>...Of these messages, you understand that bringing Humans to their planet is forbidden. What to do?</text>
 		<choice hidden="true">
 			<text>Fly away from here.</text>
@@ -6913,6 +7302,10 @@ storm-PKB
 							<event load="SLURM_PLANET_TRADER_X_HUMAN"/>
 						</choice>
 					</event>
+				</choice>
+				<choice hidden="true"><!-- 1.28 -->
+					<text>Change your mind and just get out of here.</text>
+					<event/>
 				</choice>
 			</event>
 		</choice>
@@ -7042,6 +7435,10 @@ storm-PKB
 						</choice>
 					</event>
 				</choice>
+				<choice hidden="true"><!-- 1.28 -->
+					<text>Change your mind and just get out of here.</text>
+					<event/>
+				</choice>
 			</event>
 		</choice>
 	</event>
@@ -7169,6 +7566,10 @@ storm-PKB
 							<event load="SLURM_PLANET_TRADER_X_MANTIS"/>
 						</choice>
 					</event>
+				</choice>
+				<choice hidden="true"><!-- 1.28 -->
+					<text>Change your mind and just get out of here.</text>
+					<event/>
 				</choice>
 			</event>
 		</choice>
@@ -7298,6 +7699,10 @@ storm-PKB
 						</choice>
 					</event>
 				</choice>
+				<choice hidden="true"><!-- 1.28 -->
+					<text>Change your mind and just get out of here.</text>
+					<event/>
+				</choice>
 			</event>
 		</choice>
 	</event>
@@ -7425,6 +7830,10 @@ storm-PKB
 							<event load="SLURM_PLANET_TRADER_X_ROCK"/>
 						</choice>
 					</event>
+				</choice>
+				<choice hidden="true"><!-- 1.28 -->
+					<text>Change your mind and just get out of here.</text>
+					<event/>
 				</choice>
 			</event>
 		</choice>
@@ -7554,6 +7963,10 @@ storm-PKB
 						</choice>
 					</event>
 				</choice>
+				<choice hidden="true"><!-- 1.28 -->
+					<text>Change your mind and just get out of here.</text>
+					<event/>
+				</choice>
 			</event>
 		</choice>
 	</event>
@@ -7681,6 +8094,10 @@ storm-PKB
 							<event load="SLURM_PLANET_TRADER_X_LANIUS"/>
 						</choice>
 					</event>
+				</choice>
+				<choice hidden="true"><!-- 1.28 -->
+					<text>Change your mind and just get out of here.</text>
+					<event/>
 				</choice>
 			</event>
 		</choice>
@@ -7810,6 +8227,10 @@ storm-PKB
 						</choice>
 					</event>
 				</choice>
+				<choice hidden="true"><!-- 1.28 -->
+					<text>Change your mind and just get out of here.</text>
+					<event/>
+				</choice>
 			</event>
 		</choice>
 	</event>
@@ -7937,6 +8358,10 @@ storm-PKB
 							<event load="SLURM_PLANET_TRADER_X_CRYSTAL"/>
 						</choice>
 					</event>
+				</choice>
+				<choice hidden="true"><!-- 1.28 -->
+					<text>Change your mind and just get out of here.</text>
+					<event/>
 				</choice>
 			</event>
 		</choice>
@@ -8208,7 +8633,7 @@ storm-PKB
 		<text>You go to the coordinates specified by the Sligs but don't find a shop. There's absolutely nothing interesting near the beacon. Looks like they gave you the wrong coordinates.</text>
 		<choice hidden="true">
 			<text id="continue" />
-			<event load="TALK_WITH_CREW"/>
+			<event load="TALK_WITH_CREW_SLIG"/><!-- 1.28 -->
 		</choice>
 	</event>
 </eventList>
@@ -8364,7 +8789,7 @@ storm-PKB
 			</choice>
 		</event>
 	</choice>
-	<choice req="slug" hidden="true">
+	<choice req="SLUG_AND_ARMORED_SLUG" hidden="true"><!-- 1.28 req was slug -->
 		<text>(Slug Crewmember) Your Slug suggests that weapons will be cheaper where the entrance ticket is more expensive...</text>
 		<event>
 			<text>Are you a cheater?</text>
@@ -8378,7 +8803,7 @@ storm-PKB
 	</choice>
 	<choice hidden="true">
 		<text>Charge the FTL engines and fly away.</text>
-		<event load="TALK_WITH_CREW"/>
+		<event load="TALK_WITH_CREW_SLIG"/><!-- 1.28 -->
 	</choice>	
 </event>
 <textList name="SLURM_3_CORPORATIONS_TEXT1">
@@ -8436,7 +8861,7 @@ storm-PKB
 	</choice>
 	<choice hidden="true">
 		<text>Refuse to intervene, charge the FTL engines and fly away.</text>
-		<event load="TALK_WITH_CREW"/>
+		<event load="TALK_WITH_CREW_SLIG"/><!-- 1.28 -->
 	</choice>	
 </event>
 <eventList name="SLURM_CRAZY_CAPTAIN_TEAM">
@@ -13882,11 +14307,35 @@ TJ - Fuel cell.					2
 				<status type="clear" target="enemy" system="teleporter" amount="100"/>
 			</event>
 		</choice>
+		<choice hidden="true" req="order_human"> <!-- 1.28 -->
+			<text>(Order Human Crewmember) Send your Order Human.</text>
+			<event>
+				<text load="EVENT_SLURM_RISK_TEXT"/>
+				<removeCrew class="order_human">
+					<clone>true</clone>
+					<text>The clone of the crewmember boiled alive in Slurm emerges from the clonebay ready to seek revenge.</text>
+				</removeCrew>
+				<ship hostile="true"/>
+				<status type="clear" target="enemy" system="teleporter" amount="100"/>
+			</event>
+		</choice>
 		<choice hidden="true" req="engi">
 			<text>(Engi Crewmember) Send your Engi.</text>
 			<event>
 				<text load="EVENT_SLURM_RISK_TEXT"/>
 				<removeCrew class="engi">
+					<clone>true</clone>
+					<text>The clone of the crewmember boiled alive in Slurm emerges from the clonebay ready to seek revenge.</text>
+				</removeCrew>
+				<ship hostile="true"/>
+				<status type="clear" target="enemy" system="teleporter" amount="100"/>
+			</event>
+		</choice>
+		<choice hidden="true" req="morph"><!-- thanks to argonaute -->
+			<text>(Morph Crewmember) Send your Morph.</text>
+			<event>
+				<text load="EVENT_SLURM_RISK_TEXT"/>
+				<removeCrew class="morph">
 					<clone>true</clone>
 					<text>The clone of the crewmember boiled alive in Slurm emerges from the clonebay ready to seek revenge.</text>
 				</removeCrew>
@@ -13918,6 +14367,102 @@ TJ - Fuel cell.					2
 				<status type="clear" target="enemy" system="teleporter" amount="100"/>
 			</event>
 		</choice>
+		<choice hidden="true" req="slig"><!-- english addition, bug update in 1.28.1 likely -->
+			<text>(Slig Crewmember) Send your Slig.</text>
+			<event>
+				<text load="EVENT_SLURM_RISK_TEXT"/>
+				<removeCrew class="slug">
+					<clone>true</clone>
+					<text>The clone of the crewmember boiled alive in Slurm emerges from the clonebay ready to seek revenge.</text>
+				</removeCrew>
+				<ship hostile="true"/>
+				<status type="clear" target="enemy" system="teleporter" amount="100"/>
+			</event>
+		</choice>
+		<choice hidden="true" req="magman"> <!-- 1.28 -->
+			<text>(Magman Crewmember) Send your Magman.</text>
+			<event>
+				<text load="EVENT_SLURM_RISK_TEXT"/>
+				<removeCrew class="magman">
+					<clone>true</clone>
+					<text>The clone of the crewmember boiled alive in Slurm emerges from the clonebay ready to seek revenge.</text>
+				</removeCrew>
+				<ship hostile="true"/>
+				<status type="clear" target="enemy" system="teleporter" amount="100"/>
+			</event>
+		</choice>
+		<choice hidden="true" req="mushroom_f"> <!-- 1.28 -->
+			<text>(Young Mushroom Crew Member) Send your Mushroom.</text>
+			<event>
+				<text load="EVENT_SLURM_RISK_TEXT"/>
+				<removeCrew class="mushroom_f">
+					<clone>true</clone>
+					<text>The clone of the crewmember boiled alive in Slurm emerges from the clonebay ready to seek revenge.</text>
+				</removeCrew>
+				<ship hostile="true"/>
+				<status type="clear" target="enemy" system="teleporter" amount="100"/>
+			</event>
+		</choice>
+		<choice hidden="true" req="mushroom_b"> <!-- 1.28 -->
+			<text>(Mature Mushroom Crew Member) Send your Mushroom.</text>
+			<event>
+				<text load="EVENT_SLURM_RISK_TEXT"/>
+				<removeCrew class="mushroom_b">
+					<clone>true</clone>
+					<text>The clone of the crewmember boiled alive in Slurm emerges from the clonebay ready to seek revenge.</text>
+				</removeCrew>
+				<ship hostile="true"/>
+				<status type="clear" target="enemy" system="teleporter" amount="100"/>
+			</event>
+		</choice>
+		<choice hidden="true" req="mushroom"> <!-- 1.28 -->
+			<text>(Old Mushroom Crew Member) Send your Mushroom.</text>
+			<event>
+				<text load="EVENT_SLURM_RISK_TEXT"/>
+				<removeCrew class="mushroom">
+					<clone>true</clone>
+					<text>The clone of the crewmember boiled alive in Slurm emerges from the clonebay ready to seek revenge.</text>
+				</removeCrew>
+				<ship hostile="true"/>
+				<status type="clear" target="enemy" system="teleporter" amount="100"/>
+			</event>
+		</choice>
+		<choice hidden="true" req="orchid"> <!-- 1.28 -->
+			<text>(Orchid Crewmember) Send your Orchid.</text>
+			<event>
+				<text load="EVENT_SLURM_RISK_TEXT"/>
+				<removeCrew class="orchid">
+					<clone>true</clone>
+					<text>The clone of the crewmember boiled alive in Slurm emerges from the clonebay ready to seek revenge.</text>
+				</removeCrew>
+				<ship hostile="true"/>
+				<status type="clear" target="enemy" system="teleporter" amount="100"/>
+			</event>
+		</choice>
+		<choice hidden="true" req="shell"> <!-- 1.28 -->
+			<text>(Shell Crew Member) Send your Shell.</text>
+			<event>
+				<text load="EVENT_SLURM_RISK_TEXT"/>
+				<removeCrew class="shell">
+					<clone>true</clone>
+					<text>The clone of the crewmember boiled alive in Slurm emerges from the clonebay ready to seek revenge.</text>
+				</removeCrew>
+				<ship hostile="true"/>
+				<status type="clear" target="enemy" system="teleporter" amount="100"/>
+			</event>
+		</choice>
+		<choice hidden="true" req="slug_armored"> <!-- 1.28 -->
+			<text>(Armored Slug Crew Member) Send your Armored Slug.</text>
+			<event>
+				<text load="EVENT_SLURM_RISK_TEXT"/>
+				<removeCrew class="slug_armored">
+					<clone>true</clone>
+					<text>The clone of the crewmember boiled alive in Slurm emerges from the clonebay ready to seek revenge.</text>
+				</removeCrew>
+				<ship hostile="true"/>
+				<status type="clear" target="enemy" system="teleporter" amount="100"/>
+			</event>
+		</choice>
 		<choice hidden="true" req="rock">
 			<text>(Rock Crewmember) Send your Rockman.</text>
 			<event>
@@ -13935,6 +14480,18 @@ TJ - Fuel cell.					2
 			<event>
 				<text load="EVENT_SLURM_RISK_TEXT"/>
 				<removeCrew class="energy">
+					<clone>true</clone>
+					<text>The clone of the crewmember boiled alive in Slurm emerges from the clonebay ready to seek revenge.</text>
+				</removeCrew>
+				<ship hostile="true"/>
+				<status type="clear" target="enemy" system="teleporter" amount="100"/>
+			</event>
+		</choice>
+		<choice hidden="true" req="energyx"><!-- 1.28 -->
+			<text>(Zolton Crewmember) Send your Zolton.</text>
+			<event>
+				<text load="EVENT_SLURM_RISK_TEXT"/>
+				<removeCrew class="energyx">
 					<clone>true</clone>
 					<text>The clone of the crewmember boiled alive in Slurm emerges from the clonebay ready to seek revenge.</text>
 				</removeCrew>
@@ -13988,8 +14545,22 @@ TJ - Fuel cell.					2
 				<autoReward level="HIGH">standard</autoReward>
 			</event>
 		</choice>
+		<choice hidden="true" req="order_human"> <!-- 1.28 -->
+			<text>(Order Human Crewmember) Send your Order Human.</text>
+			<event>
+				<text load="EVENT_SLURM_RISK_TEXT2"/>
+				<autoReward level="MED">standard</autoReward>
+			</event>
+		</choice>
 		<choice hidden="true" req="engi">
 			<text>(Engi Crewmember) Send your Engi.</text>
+			<event>
+				<text load="EVENT_SLURM_RISK_TEXT2"/>
+				<autoReward level="HIGH">standard</autoReward>
+			</event>
+		</choice>
+		<choice hidden="true" req="morph"><!-- thanks to argonaute -->
+			<text>(Morph Crewmember) Send your Morph.</text>
 			<event>
 				<text load="EVENT_SLURM_RISK_TEXT2"/>
 				<autoReward level="HIGH">standard</autoReward>
@@ -14014,6 +14585,18 @@ TJ - Fuel cell.					2
 				<status type="clear" target="enemy" system="teleporter" amount="100"/>
 			</event>
 		</choice>
+		<choice hidden="true" req="slig"><!-- 1.28 -->
+			<text>(Slig Crewmember) Send your Slig.</text>
+			<event>
+				<text>Your Slig confidently climbs into the vat full of Slurm and, being at the bottom, starts randomly floundering around and slipping before eventually dissolving... After this, the vat full of Slurm explodes and damages the sensitive equipment. With fury, the Sligs go on the attack!</text>
+				<removeCrew class="slug">
+					<clone>true</clone>
+					<text>The clone of the Slug asks that you never again force it to do things like that...</text>
+				</removeCrew>
+				<ship hostile="true"/>
+				<status type="clear" target="enemy" system="teleporter" amount="100"/>
+			</event>
+		</choice>
 		<choice hidden="true" req="rock">
 			<text>(Rock Crewmember) Send your Rockman.</text>
 			<event>
@@ -14021,8 +14604,64 @@ TJ - Fuel cell.					2
 				<autoReward level="HIGH">standard</autoReward>
 			</event>
 		</choice>
+		<choice hidden="true" req="magman"><!-- 1.28 -->
+			<text>(Magman Crewmember) Send your Magman.</text>
+			<event>
+				<text load="EVENT_SLURM_RISK_TEXT2"/>
+				<autoReward level="HIGH">standard</autoReward>
+			</event>
+		</choice>
+		<choice hidden="true" req="mushroom_f"><!-- 1.28 -->
+			<text>(Young Mushroom Crew Member) Send your Mushroom.</text>
+			<event>
+				<text load="EVENT_SLURM_RISK_TEXT2"/>
+				<autoReward level="HIGH">standard</autoReward>
+			</event>
+		</choice>
+		<choice hidden="true" req="mushroom_b"><!-- 1.28 -->
+			<text>(Mature Mushroom Crew Member) Send your Mushroom.</text>
+			<event>
+				<text load="EVENT_SLURM_RISK_TEXT2"/>
+				<autoReward level="HIGH">standard</autoReward>
+			</event>
+		</choice>
+		<choice hidden="true" req="mushroom"><!-- 1.28 -->
+			<text>(Old Mushroom Crew Member) Send your Mushroom.</text>
+			<event>
+				<text load="EVENT_SLURM_RISK_TEXT2"/>
+				<autoReward level="HIGH">standard</autoReward>
+			</event>
+		</choice>
+		<choice hidden="true" req="orchid"><!-- 1.28 -->
+			<text>(Orchid Crewmember) Send your Orchid.</text>
+			<event>
+				<text load="EVENT_SLURM_RISK_TEXT2"/>
+				<autoReward level="HIGH">standard</autoReward>
+			</event>
+		</choice>
+		<choice hidden="true" req="shell"><!-- 1.28 -->
+			<text>(Shell Crew Member) Send your Shell.</text>
+			<event>
+				<text load="EVENT_SLURM_RISK_TEXT2"/>
+				<autoReward level="HIGH">standard</autoReward>
+			</event>
+		</choice>
+		<choice hidden="true" req="slug_armored"> <!-- 1.28 -->
+			<text>(Armored Slug Crew Member) Send your Armored Slug.</text>
+			<event>
+				<text load="EVENT_SLURM_RISK_TEXT2"/>
+				<autoReward level="HIGH">standard</autoReward>
+			</event>
+		</choice>
 		<choice hidden="true" req="energy">
 			<text>(Zoltan Crewmember) Send your Zoltan.</text>
+			<event>
+				<text load="EVENT_SLURM_RISK_TEXT2"/>
+				<autoReward level="HIGH">standard</autoReward>
+			</event>
+		</choice>
+		<choice hidden="true" req="energyx"><!-- 1.28 -->
+			<text>(Zolton Crewmember) Send your Zolton.</text>
 			<event>
 				<text load="EVENT_SLURM_RISK_TEXT2"/>
 				<autoReward level="HIGH">standard</autoReward>
@@ -14056,6 +14695,13 @@ TJ - Fuel cell.					2
 			<text>(Human Crewmember) Send your Human.</text>
 			<event>
 				<text load="EVENT_SLURM_RISK_TEXT2"/>
+				<autoReward level="HIGH">standard</autoReward>
+			</event>
+		</choice>
+		<choice hidden="true" req="order_human"> <!-- 1.28 -->
+			<text>(Order Human Crewmember) Send your Order Human.</text>
+			<event>
+				<text load="EVENT_SLURM_RISK_TEXT2"/>
 				<autoReward level="MED">standard</autoReward>
 			</event>
 		</choice>
@@ -14063,14 +14709,21 @@ TJ - Fuel cell.					2
 			<text>(Engi Crewmember) Send your Engi.</text>
 			<event>
 				<text load="EVENT_SLURM_RISK_TEXT2"/>
-				<autoReward level="MED">standard</autoReward>
+				<autoReward level="HIGH">standard</autoReward>
+			</event>
+		</choice>
+		<choice hidden="true" req="morph"><!-- thanks to argonaute -->
+			<text>(Morph Crewmember) Send your Morph.</text>
+			<event>
+				<text load="EVENT_SLURM_RISK_TEXT2"/>
+				<autoReward level="HIGH">standard</autoReward>
 			</event>
 		</choice>
 		<choice hidden="true" req="mantis">
 			<text>(Mantis Crewmember) Send your Mantis.</text>
 			<event>
 				<text load="EVENT_SLURM_RISK_TEXT2"/>
-				<autoReward level="MED">standard</autoReward>
+				<autoReward level="HIGH">standard</autoReward>
 			</event>
 		</choice>
 		<choice hidden="true" req="slug">
@@ -14085,8 +14738,69 @@ TJ - Fuel cell.					2
 				<status type="clear" target="enemy" system="teleporter" amount="100"/>
 			</event>
 		</choice>
+		<choice hidden="true" req="slig"><!-- 1.28 -->
+			<text>(Slig Crewmember) Send your Slig.</text>
+			<event>
+				<text>Your Slig confidently climbs into the vat full of Slurm and, being at the bottom, starts randomly floundering around and slipping before eventually dissolving... After this, the vat full of Slurm explodes and damages the sensitive equipment. With fury, the Sligs go on the attack!</text>
+				<removeCrew class="slug">
+					<clone>true</clone>
+					<text>The clone of the Slug asks that you never again force it to do things like that...</text>
+				</removeCrew>
+				<ship hostile="true"/>
+				<status type="clear" target="enemy" system="teleporter" amount="100"/>
+			</event>
+		</choice>
 		<choice hidden="true" req="rock">
 			<text>(Rock Crewmember) Send your Rockman.</text>
+			<event>
+				<text load="EVENT_SLURM_RISK_TEXT2"/>
+				<autoReward level="HIGH">standard</autoReward>
+			</event>
+		</choice>
+		<choice hidden="true" req="magman"><!-- 1.28 -->
+			<text>(Magman Crewmember) Send your Magman.</text>
+			<event>
+				<text load="EVENT_SLURM_RISK_TEXT2"/>
+				<autoReward level="HIGH">standard</autoReward>
+			</event>
+		</choice>
+		<choice hidden="true" req="mushroom_f"><!-- 1.28 -->
+			<text>(Young Mushroom Crew Member) Send your Mushroom.</text>
+			<event>
+				<text load="EVENT_SLURM_RISK_TEXT2"/>
+				<autoReward level="HIGH">standard</autoReward>
+			</event>
+		</choice>
+		<choice hidden="true" req="mushroom_b"><!-- 1.28 -->
+			<text>(Mature Mushroom Crew Member) Send your Mushroom.</text>
+			<event>
+				<text load="EVENT_SLURM_RISK_TEXT2"/>
+				<autoReward level="HIGH">standard</autoReward>
+			</event>
+		</choice>
+		<choice hidden="true" req="mushroom"><!-- 1.28 -->
+			<text>(Old Mushroom Crew Member) Send your Mushroom.</text>
+			<event>
+				<text load="EVENT_SLURM_RISK_TEXT2"/>
+				<autoReward level="HIGH">standard</autoReward>
+			</event>
+		</choice>
+		<choice hidden="true" req="orchid"><!-- 1.28 -->
+			<text>(Orchid Crewmember) Send your Orchid.</text>
+			<event>
+				<text load="EVENT_SLURM_RISK_TEXT2"/>
+				<autoReward level="HIGH">standard</autoReward>
+			</event>
+		</choice>
+		<choice hidden="true" req="shell"><!-- 1.28 -->
+			<text>(Shell Crew Member) Send your Shell.</text>
+			<event>
+				<text load="EVENT_SLURM_RISK_TEXT2"/>
+				<autoReward level="HIGH">standard</autoReward>
+			</event>
+		</choice>
+		<choice hidden="true" req="slug_armored"><!-- 1.28 -->
+			<text>(Armored Slug Crew Member) Send your Armored Slug.</text>
 			<event>
 				<text load="EVENT_SLURM_RISK_TEXT2"/>
 				<autoReward level="MED">standard</autoReward>
@@ -14096,28 +14810,35 @@ TJ - Fuel cell.					2
 			<text>(Zoltan Crewmember) Send your Zoltan.</text>
 			<event>
 				<text load="EVENT_SLURM_RISK_TEXT2"/>
-				<autoReward level="MED">standard</autoReward>
+				<autoReward level="HIGH">standard</autoReward>
+			</event>
+		</choice>
+		<choice hidden="true" req="energyx"><!-- 1.28 -->
+			<text>(Zolton Crewmember) Send your Zolton.</text>
+			<event>
+				<text load="EVENT_SLURM_RISK_TEXT2"/>
+				<autoReward level="HIGH">standard</autoReward>
 			</event>
 		</choice>
 		<choice hidden="true" req="anaerobic">
 			<text>(Lanius Crewmember) Send your Lanius.</text>
 			<event>
 				<text load="EVENT_SLURM_RISK_TEXT2"/>
-				<autoReward level="MED">standard</autoReward>
+				<autoReward level="HIGH">standard</autoReward>
 			</event>
 		</choice>
 		<choice hidden="true" req="ghost">
 			<text>(Avatar Crewmember) Send your Avatar.</text>
 			<event>
 				<text load="EVENT_SLURM_RISK_TEXT2"/>
-				<autoReward level="MED">standard</autoReward>
+				<autoReward level="HIGH">standard</autoReward>
 			</event>
 		</choice>
 		<choice hidden="true" req="crystal">
 			<text>(Crystal Crewmember) Send your Crystal.</text>
 			<event>
 				<text load="EVENT_SLURM_RISK_TEXT2"/>
-				<autoReward level="MED">standard</autoReward>
+				<autoReward level="HIGH">standard</autoReward>
 			</event>
 		</choice>
 	</event>
@@ -14326,7 +15047,7 @@ TJ - Fuel cell.					2
 	</choice>
 	<choice hidden="true">
 		<text>Charge the FTL Drive and fly away.</text>
-		<event load="TALK_WITH_CREW"/>
+		<event load="TALK_WITH_CREW_SLIG"/><!-- 1.28 -->
 	</choice>
 </event>
 
@@ -14725,7 +15446,7 @@ TJ - Fuel cell.					2
 	</choice>
 	<choice hidden="true">
 		<text>Charge the FTL Drive and fly away.</text>
-		<event load="TALK_WITH_CREW"/>
+		<event load="TALK_WITH_CREW_SLIG"/><!-- 1.28 -->
 	</choice>
 </event>
 <textList name="EVENT_SLURM_AUCTION_LOSETEXT">
@@ -15680,3 +16401,5 @@ TJ - Fuel cell.					2
 		<name>SLURMGUNS</name>
 	</weaponOverride>
 </ship>
+
+</FTL>

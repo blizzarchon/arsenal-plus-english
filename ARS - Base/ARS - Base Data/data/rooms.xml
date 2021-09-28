@@ -125,3 +125,16 @@
 <roomLayout name="weapons_10">
 	<computerGlow x="6" y="0" dir="UP"/>
 </roomLayout>
+
+<!-- 1.28 -->
+<roomLayout name="engines_orchid_3">
+	<computerGlow x="53" y="7" dir="RIGHT"/>
+</roomLayout>
+
+<roomLayout name="hacking_orchid">
+	<computerGlow x="9" y="54" dir="DOWN"/>
+</roomLayout>
+
+<roomLayout name="shields_orchid_2">
+	<computerGlow x="35" y="53" dir="DOWN"/>
+</roomLayout>

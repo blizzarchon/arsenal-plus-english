@@ -194,6 +194,178 @@ STRUCTURE SECTORS
 <!-- -
 CIVILIAN SECTORS
  -->
+<sectorDescription name="ORCHID_SECTOR" minSector="0" unique="false"><!-- 1.28 -->
+	<nameList>
+		<name id="sectorname_ORCHID_SECTOR" short="sectorname_short_ORCHID_SECTOR"/>
+	</nameList>
+	<trackList>
+		<track>milkyway</track>
+		<track>cosmos</track>
+		<track>lostship</track>
+	</trackList>
+	<rarityList>
+		<blueprint name="orchid" rarity="1"/>
+		<blueprint name="human" rarity="3"/>
+		<blueprint name="rock" rarity="3"/>
+		<blueprint name="mantis" rarity="4"/>
+		<blueprint name="engi" rarity="5"/>
+		<blueprint name="energy" rarity="5"/>
+		<blueprint name="slug" rarity="0"/>
+		<blueprint name="crystal" rarity="0"/>
+		<blueprint name="anaerobic" rarity="0"/>
+		
+		<blueprint name="KERNEL_1" rarity="1"/>
+		<blueprint name="KERNEL_2" rarity="2"/>
+		<blueprint name="KERNEL_CHAIN" rarity="4"/>
+		
+		<blueprint name="DEFENSE_ORCHID" rarity="2"/>
+		<blueprint name="COMBAT_ORCHID" rarity="1"/>
+		<blueprint name="COMBAT_BEAM_ORCHID" rarity="1"/>
+		
+		<blueprint name="MISSILES_1" rarity="0"/>
+		<blueprint name="MISSILES_2_PLAYER" rarity="0"/>
+		<blueprint name="MISSILES_3" rarity="0"/>
+		<blueprint name="MISSILES_BURST" rarity="0"/>
+		<blueprint name="MISSILES_BREACH" rarity="0"/>
+		<blueprint name="MISSILE_CHARGEGUN" rarity="0"/>
+		<blueprint name="BA_MISSILES_ASTERIA" rarity="0"/>
+		<blueprint name="BA_MISSILES_PERYTON" rarity="0"/>
+		<blueprint name="BA_MISSILES_COCKATRICE" rarity="0"/>
+		<blueprint name="BA_MISSILES_SIMURGH" rarity="0"/>
+		<blueprint name="BA_MISSILES_FIRE" rarity="0"/>
+		<blueprint name="BA_MISSILES_ONI" rarity="0"/>
+		<blueprint name="BA_MISSILES_IFRIT" rarity="0"/>
+		<blueprint name="BA_MISSILES_4" rarity="0"/>
+		<blueprint name="MISSILES_MEGA" rarity="0"/>
+		<blueprint name="MISSILES_HYDRA" rarity="0"/>
+		<blueprint name="MISSILES_ARU_GOLIAPH" rarity="0"/>
+		<blueprint name="MISSILES_SYS1" rarity="0"/>
+		<blueprint name="MISSILES_SYS2" rarity="0"/>
+		<blueprint name="BA_MISSILES_FOBOS" rarity="0"/>
+		<blueprint name="BA_MISSILES_DEIMOS" rarity="0"/>
+		<blueprint name="BA_MISSILES_SWARM_1" rarity="0"/>
+		<blueprint name="BA_MISSILES_SWARM_2" rarity="0"/>
+		<blueprint name="BA_MISSILES_SWARM_3" rarity="0"/>
+		<blueprint name="BA_SHOTGUN_MISSILES" rarity="0"/>
+		<blueprint name="BA_SHOTGUN_MISSILES2" rarity="0"/>
+		<blueprint name="BA_SHOTGUN_MISSILES3" rarity="0"/>
+		<blueprint name="BA_MISSILE_CHARGEGUN_SMALL" rarity="0"/>
+		<blueprint name="MISSILES_HULL" rarity="0"/>
+		<blueprint name="BA_MISSILES_HULL_SMALL" rarity="0"/>
+
+		<blueprint name="BEAM_FIRE" rarity="0"/>
+		<blueprint name="BA_BEAM_FIRE_2" rarity="0"/>
+		<blueprint name="BA_BEAM_FIRE_FOCUS" rarity="0"/>
+		<blueprint name="BA_BEAM_FIRE_FOCUS2" rarity="0"/>
+		<blueprint name="EP_BEAM_BIOFIRE" rarity="0"/>
+		<blueprint name="BEAM_BIOFIRE" rarity="0"/>
+		<blueprint name="BEAM_FIRECHAIN" rarity="0"/>
+		<blueprint name="BA_BEAM_HOT_1" rarity="0"/>
+		<blueprint name="BA_BEAM_HOT_2" rarity="0"/>
+		<blueprint name="BA_BEAM_HOT_3" rarity="0"/>
+		
+		<blueprint name="BA_BOMB_FIRE_SMALL" rarity="0"/>
+		<blueprint name="BOMB_FIRE" rarity="0"/>
+		<blueprint name="BA_BOMB_FIRE_2" rarity="0"/>
+		<blueprint name="BA_BOMB_CLUSTER_FIRE" rarity="0"/>
+		<blueprint name="BOMB_HEALFIRE" rarity="0"/>
+	</rarityList>
+	<startEvent>START_BEACON_ORCHID</startEvent>
+	<event name="STORE_ORCHID" min="2" max="3"/>
+	<event name="NOTHING_ORCHID" min="0" max="1"/>
+	<event name="ITEMS_ORCHID" min="2" max="3"/>
+	<event name="DISTRESS_BEACON_ORCHID" min="2" max="3"/>
+	<event name="QUESTS_ORCHID" min="1" max="2"/>
+	<event name="NEUTRAL_ORCHID" min="7" max="10"/>
+	<event name="HOSTILE_ORCHID" min="5" max="8"/>
+</sectorDescription>
+
+<sectorDescription name="ORCHID_HOME" minSector="3" unique="false"><!-- 1.28 -->
+	<nameList>
+		<name id="sectorname_ORCHID_HOME" short="sectorname_short_ORCHID_HOME"/>
+	</nameList>
+	<trackList>
+		<track>milkyway</track>
+		<track>cosmos</track>
+		<track>lostship</track>
+	</trackList>
+	<rarityList>
+		<blueprint name="orchid" rarity="1"/>
+		<blueprint name="human" rarity="3"/>
+		<blueprint name="rock" rarity="3"/>
+		<blueprint name="mantis" rarity="4"/>
+		<blueprint name="engi" rarity="5"/>
+		<blueprint name="energy" rarity="5"/>
+		<blueprint name="slug" rarity="0"/>
+		<blueprint name="crystal" rarity="0"/>
+		<blueprint name="anaerobic" rarity="0"/>
+		
+		<blueprint name="KERNEL_1" rarity="1"/>
+		<blueprint name="KERNEL_2" rarity="2"/>
+		<blueprint name="KERNEL_CHAIN" rarity="4"/>
+		
+		<blueprint name="DEFENSE_ORCHID" rarity="2"/>
+		<blueprint name="COMBAT_ORCHID" rarity="1"/>
+		<blueprint name="COMBAT_BEAM_ORCHID" rarity="1"/>
+		
+		<blueprint name="MISSILES_1" rarity="0"/>
+		<blueprint name="MISSILES_2_PLAYER" rarity="0"/>
+		<blueprint name="MISSILES_3" rarity="0"/>
+		<blueprint name="MISSILES_BURST" rarity="0"/>
+		<blueprint name="MISSILES_BREACH" rarity="0"/>
+		<blueprint name="MISSILE_CHARGEGUN" rarity="0"/>
+		<blueprint name="BA_MISSILES_ASTERIA" rarity="0"/>
+		<blueprint name="BA_MISSILES_PERYTON" rarity="0"/>
+		<blueprint name="BA_MISSILES_COCKATRICE" rarity="0"/>
+		<blueprint name="BA_MISSILES_SIMURGH" rarity="0"/>
+		<blueprint name="BA_MISSILES_FIRE" rarity="0"/>
+		<blueprint name="BA_MISSILES_ONI" rarity="0"/>
+		<blueprint name="BA_MISSILES_IFRIT" rarity="0"/>
+		<blueprint name="BA_MISSILES_4" rarity="0"/>
+		<blueprint name="MISSILES_MEGA" rarity="0"/>
+		<blueprint name="MISSILES_HYDRA" rarity="0"/>
+		<blueprint name="MISSILES_ARU_GOLIAPH" rarity="0"/>
+		<blueprint name="MISSILES_SYS1" rarity="0"/>
+		<blueprint name="MISSILES_SYS2" rarity="0"/>
+		<blueprint name="BA_MISSILES_FOBOS" rarity="0"/>
+		<blueprint name="BA_MISSILES_DEIMOS" rarity="0"/>
+		<blueprint name="BA_MISSILES_SWARM_1" rarity="0"/>
+		<blueprint name="BA_MISSILES_SWARM_2" rarity="0"/>
+		<blueprint name="BA_MISSILES_SWARM_3" rarity="0"/>
+		<blueprint name="BA_SHOTGUN_MISSILES" rarity="0"/>
+		<blueprint name="BA_SHOTGUN_MISSILES2" rarity="0"/>
+		<blueprint name="BA_SHOTGUN_MISSILES3" rarity="0"/>
+		<blueprint name="BA_MISSILE_CHARGEGUN_SMALL" rarity="0"/>
+		<blueprint name="MISSILES_HULL" rarity="0"/>
+		<blueprint name="BA_MISSILES_HULL_SMALL" rarity="0"/>
+
+		<blueprint name="BEAM_FIRE" rarity="0"/>
+		<blueprint name="BA_BEAM_FIRE_2" rarity="0"/>
+		<blueprint name="BA_BEAM_FIRE_FOCUS" rarity="0"/>
+		<blueprint name="BA_BEAM_FIRE_FOCUS2" rarity="0"/>
+		<blueprint name="EP_BEAM_BIOFIRE" rarity="0"/>
+		<blueprint name="BEAM_BIOFIRE" rarity="0"/>
+		<blueprint name="BEAM_FIRECHAIN" rarity="0"/>
+		<blueprint name="BA_BEAM_HOT_1" rarity="0"/>
+		<blueprint name="BA_BEAM_HOT_2" rarity="0"/>
+		<blueprint name="BA_BEAM_HOT_3" rarity="0"/>
+		
+		<blueprint name="BA_BOMB_FIRE_SMALL" rarity="0"/>
+		<blueprint name="BOMB_FIRE" rarity="0"/>
+		<blueprint name="BA_BOMB_FIRE_2" rarity="0"/>
+		<blueprint name="BA_BOMB_CLUSTER_FIRE" rarity="0"/>
+		<blueprint name="BOMB_HEALFIRE" rarity="0"/>
+	</rarityList>
+	<startEvent>START_BEACON_ORCHID</startEvent>
+	<event name="STORE_ORCHID" min="2" max="3"/>
+	<event name="NOTHING_ORCHID" min="0" max="1"/>
+	<event name="ITEMS_ORCHID" min="2" max="3"/>
+	<event name="DISTRESS_BEACON_ORCHID" min="2" max="3"/>
+	<event name="QUESTS_ORCHID" min="1" max="2"/>
+	<event name="NEUTRAL_ORCHID" min="7" max="10"/>
+	<event name="HOSTILE_ORCHID" min="4" max="7"/>
+	<event name="ORCHID_BOSS_EVENT" min="1" max="1"/>
+</sectorDescription>
 
 
 <sectorDescription name="CIVILIAN_SECTOR" minSector="0" unique="false"> 
@@ -893,6 +1065,10 @@ NEBULA SECTORS
 		<blueprint name="rock" rarity="0"/>
 		<blueprint name="human" rarity="0"/>
 		<blueprint name="ghost" rarity="1"/>
+		<blueprint name="magman" rarity="0"/> <!-- 1.28 -->
+		<blueprint name="mushroom_f" rarity="0"/> <!-- 1.28 -->
+		<blueprint name="shell" rarity="0"/> <!-- 1.28 -->
+		<blueprint name="slug_armored" rarity="0"/> <!-- 1.28 -->
 		
 		<blueprint name="PREIGNITE_SHOTGUN_IMPULSE_1" rarity="2"/><!-- 1.23 -->
 		<blueprint name="PREIGNITE_SHOTGUN_IMPULSE_2" rarity="3"/><!-- 1.23 -->
@@ -931,6 +1107,10 @@ NEBULA SECTORS
 		<blueprint name="rock" rarity="0"/>
 		<blueprint name="human" rarity="0"/>
 		<blueprint name="ghost" rarity="1"/>
+		<blueprint name="magman" rarity="0"/> <!-- 1.28 -->
+		<blueprint name="mushroom_f" rarity="0"/> <!-- 1.28 -->
+		<blueprint name="shell" rarity="0"/> <!-- 1.28 -->
+		<blueprint name="slug_armored" rarity="0"/> <!-- 1.28 -->
 		
 		<blueprint name="PREIGNITE_SHOTGUN_IMPULSE_1" rarity="2"/><!-- 1.23 -->
 		<blueprint name="PREIGNITE_SHOTGUN_IMPULSE_2" rarity="3"/><!-- 1.23 -->
@@ -1675,6 +1855,10 @@ HIDDEN SECTORS
 		<blueprint name="rock" rarity="0"/>
 		<blueprint name="human" rarity="0"/>
 		<blueprint name="crystal" rarity="1"/>
+		<blueprint name="magman" rarity="0"/> <!-- 1.28 -->
+		<blueprint name="mushroom_f" rarity="0"/> <!-- 1.28 -->
+		<blueprint name="shell" rarity="0"/> <!-- 1.28 -->
+		<blueprint name="slug_armored" rarity="0"/> <!-- 1.28 -->
 		<blueprint name="LASER_HEAVY_PIERCE_1" rarity="0"/>
 		<blueprint name="LASER_DUAL_2" rarity="0"/>
 		<blueprint name="LASER_STANDARD_1" rarity="0"/>
@@ -1972,6 +2156,10 @@ HIDDEN SECTORS
 		<blueprint name="rock" rarity="0"/>
 		<blueprint name="human" rarity="0"/>
 		<blueprint name="anaerobic" rarity="1"/>
+		<blueprint name="magman" rarity="0"/> <!-- 1.28 -->
+		<blueprint name="mushroom_f" rarity="0"/> <!-- 1.28 -->
+		<blueprint name="shell" rarity="0"/> <!-- 1.28 -->
+		<blueprint name="slug_armored" rarity="0"/> <!-- 1.28 -->
 		<blueprint name="PHOTO_1" rarity="1"/>
 		<blueprint name="PHOTO_2" rarity="1"/>
 		<blueprint name="PHOTO_HEAVY_1" rarity="2"/>
@@ -2009,6 +2197,10 @@ HIDDEN SECTORS
 		<blueprint name="rock" rarity="0"/>
 		<blueprint name="human" rarity="0"/>
 		<blueprint name="anaerobic" rarity="1"/>
+		<blueprint name="magman" rarity="0"/> <!-- 1.28 -->
+		<blueprint name="mushroom_f" rarity="0"/> <!-- 1.28 -->
+		<blueprint name="shell" rarity="0"/> <!-- 1.28 -->
+		<blueprint name="slug_armored" rarity="0"/> <!-- 1.28 -->
 		<blueprint name="PHOTO_1" rarity="1"/>
 		<blueprint name="PHOTO_2" rarity="1"/>
 		<blueprint name="PHOTO_HEAVY_1" rarity="2"/>

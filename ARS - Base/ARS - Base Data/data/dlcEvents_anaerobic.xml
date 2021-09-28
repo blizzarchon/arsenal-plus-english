@@ -628,7 +628,7 @@ This sector will be hostile (i think) but with lots of varied events.  Leading t
 
 <event name="LANIUS_RESEARCHER_CRAFT" unique="true">
 	<text>A merchant ship is docked with a Lanius transport. You message them to see if they need any help. It turns out they have been studying the Lanius's ability to reshape metal.</text>
-	<choice hidden="true" req="slug" lvl="0" max_lvl="0" blue="false"> <!-- 1.25 -->
+	<choice hidden="true" req="SLUG_AND_ARMORED_SLUG" blue="false" lvl="0" max_lvl="0"> <!-- 1.25 --><!-- 1.28 added armored slug -->
 		<text>Inquire about the process.</text>
 		<event>
 			<text>They respond, "We haven't the foggiest idea how it works. They appear to meld part of their bodies into the metal and reshape it. They have been willing to demonstrate their ability if you have some extra metal that you would like converted into something.</text>
@@ -712,7 +712,7 @@ This sector will be hostile (i think) but with lots of varied events.  Leading t
 			</choice>	
 		</event>	
 	</choice>
-	<choice hidden="true" req="slug" blue="false"> <!-- 1.25 -->
+	<choice hidden="true" req="SLUG_AND_ARMORED_SLUG" blue="false"> <!-- 1.28 added armored slug -->
 		<text>Inquire about the process.</text>
 		<event>
 			<text>They respond, "We haven't the foggiest idea how it works. They appear to meld part of their bodies into the metal and reshape it. They have been willing to demonstrate their ability if you have some extra metal that you would like converted into something.</text>
@@ -802,7 +802,7 @@ This sector will be hostile (i think) but with lots of varied events.  Leading t
 			</choice>	
 		</event>	
 	</choice>
-	<choice hidden="true">
+	<choice>
 		<text>Leave them to their research.</text>
 		<event>
 			<text>While replicating their innate ability would have immeasurable consequences on commercial manufacturing, your mission has a much higher priority at the moment.</text>
@@ -1503,11 +1503,13 @@ This sector will be hostile (i think) but with lots of varied events.  Leading t
 <event name="LANIUS_DORMANT_EVENT" unique="true">
 	<text>You have picked up a Lanius vessel drifting in this sector. There is no damage to the hull, and it appears to be powered down.</text>
 	<ship load="LANIUS_SHIP" hostile="false"/>
+	<status type="limit" target="enemy" system="teleporter" amount="0"/> <!-- 1.28 -->
 	<choice hidden="true">
 		<text>Scan the ship for lifeforms.</text>
 		<event>
 			<text>As you scan the vessel, the scan frequencies awaken the Lanius crew from hibernation - and they're hungry for raw materials!</text>
 			<ship hostile="true"/>
+			<status type="clear" target="enemy" system="teleporter" amount="100"/> <!-- 1.28 -->
 		</event>
 	</choice>
 	<choice hidden="true">
@@ -1523,6 +1525,7 @@ This sector will be hostile (i think) but with lots of varied events.  Leading t
 	<event>
 		<text>You power up your weapons, and in response, the Lanius ship does the same! Prepare for a fight.</text>
 		<ship hostile="true"/>
+		<status type="clear" target="enemy" system="teleporter" amount="100"/> <!-- 1.28 -->
 	</event>
 	<event>
 		<text>You power up your weapons, but don't get a response.</text>
@@ -1535,6 +1538,7 @@ This sector will be hostile (i think) but with lots of varied events.  Leading t
 			<event>
 				<text>As soon as you lock your weapons onto their vessel, it awakens... they must have been in hibernation and were awoken by the danger!</text>
 				<ship hostile="true"/>
+				<status type="clear" target="enemy" system="teleporter" amount="100"/> <!-- 1.28 -->
 			</event>
 		</choice>
 	</event>
@@ -1568,6 +1572,7 @@ This sector will be hostile (i think) but with lots of varied events.  Leading t
 	<event>
 		<text>As you drift toward the vessel, your piloting skill is unable to match your intent - the Lanius ship powers up, hungry for raw materials!</text>
 		<ship hostile="true"/>
+		<status type="clear" target="enemy" system="teleporter" amount="100"/> <!-- 1.28 -->
 	</event>
 	<event>
 		<text>You clumsily manage to strip some hull plating before being forced to retreat or risk collision.</text>

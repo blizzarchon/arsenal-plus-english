@@ -18,6 +18,7 @@
 	<name short="Murd">Murdantiks</name>
 	<name>Pustunchik</name><!-- 1.27 removed short="Pustun" -->
 	<name short="Plenum">Plenumolog</name>
+	<name short="Kirill">Man-Kirill</name><!-- 1.28 -->
 	<name>Abama</name> 
 	<name>Abver</name> 
 	<name>Abrams</name>
@@ -96,6 +97,7 @@
 	<name>Warp</name>
 	<name>Warrok</name>
 	<name>Basil</name>
+	<name>Vasyan</name> <!-- 1.28 -->
 	<name>Vjuice</name> 
 	<name>Weber</name>
 	<name>Bucket</name>
@@ -185,7 +187,7 @@
 	<name>Jack Hammer</name><!-- 1.23 -->
 	<name>Jerry</name>
 	<name>Jessie</name>
-	<name>Jet</name><!-- 1.23 -->
+	<!-- <name>Jet</name> --><!-- 1.23 --><!-- 1.28 is now an event crew -->
 	<name>Jeffrey</name>
 	<name>Jim</name>
 	<name>Gin</name><!-- 1.26 -->
@@ -273,6 +275,7 @@
 	<name>Cake</name>
 	<!-- <name>Camper</name> -->
 	<name>Kenbro</name>
+	<name>Kenix</name> <!-- 1.28 -->
 	<!-- <name>Killme</name> -->
 	<name>Kinf</name>
 	<name>Kieran</name>
@@ -352,6 +355,7 @@
 	<name>Liu Chang</name>
 	<name>Lucian</name>
 	<name>Ma Feng</name>
+	<name>Miker</name> <!-- 1.28 -->
 	<name>McFly</name>
 	<name>Maqam</name>
 	<name>Maxim</name>
@@ -558,7 +562,8 @@
 	<name>Foreman</name>
 	<name>Ti Lek</name>
 	<name>Tianid</name>
-	<name>Tiggo</name> 
+	<name>Tian Kami</name> <!-- 1.28 -->
+	<name>Tigga</name> 
 	<name>Thies</name> 
 	<name>Tirion</name>
 	<name>Thomas</name>

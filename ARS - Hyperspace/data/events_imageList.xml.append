@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Copyright (c) 2012 by Subset Games. All rights reserved -->
+
+<FTL>
+
+<imageList name="HANGAR_PNG"> 
+	<img w="1280" h="720">stars/hangar.png</img>
+	<img w="1280" h="720">stars/hangar2.png</img>
+</imageList>
+
+</FTL>

@@ -22,6 +22,13 @@
 	<computerGlow name="glow_pilot" x="54" y="9" dir="RIGHT"/>
 </roomLayout>
 
+<!-- 1.4 -->
+
+<!--orchid missing glow-->
+<roomLayout name="pilot_10">
+	<computerGlow name="glow_pilot" x="53" y="9" dir="RIGHT"/> <!--should be ok-->
+</roomLayout>
+
 <!-- DLC SHIP PACK 2 -->
 
 <roomLayout name="shields_14">

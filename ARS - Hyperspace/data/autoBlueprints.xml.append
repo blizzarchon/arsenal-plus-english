@@ -1,5 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 
+<!-- <shipBlueprint name="SWORDFISH" layout="swordfish" img="swordfish">
+	<class>Рыба-меч</class>
+	<systemList>
+		<engines power="2" max="8" room="0" start="true" />
+		<oxygen power="3" max="3" room="3" start="true" />
+		<pilot power="1" max="3" room="2" start="true" />
+		<weapons power="3" max="8" room="1" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="6" count="4" load="WEAPONS_AUTO" />
+	<droneList drones="0" count="2" />
+	<health amount="8" />
+	<maxPower amount="8" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="AUTO_COOLDOWN" />
+	<aug name="SYSTEM_CASING" />
+</shipBlueprint> -->
+
+<mod:findName type="shipBlueprint" name="SWORDFISH"> <!-- 1.4 -->
+	<mod:findLike type="crewCount">
+		<mod:removeTag />
+	</mod:findLike>
+</mod:findName>
+
 <blueprintList name="TULLY_AUG">
 	<name>O2_MASKS_CREW_STIMS</name>
 	<name>ENERGY_SHIELD_ZOLTAN_BYPASS</name>
@@ -15,7 +40,24 @@
 	<name>FTL_JUMPER_GOOD</name>
 </blueprintList>
 
-<blueprintList name="energy">
+<blueprintList name="HP_BOOSTERS"> <!-- 1.4 -->
+	<name>HP_BOOSTER</name>
+	<name>HP_BOOSTER_2</name>
+	<name>HP_BOOSTER_3</name>
+	<name>HP_BOOSTER_4</name>
+	<name>HP_BOOSTER_5</name>
+</blueprintList>
+
+<blueprintList name="ARMOR_SUITS"> <!-- 1.4 -->
+	<name>ARMOR_SUIT</name>
+	<name>ARMOR_SUIT_2</name>
+	<name>ARMOR_SUIT_3</name>
+	<name>ARMOR_SUIT_4</name>
+	<name>ARMOR_SUIT_5</name>
+</blueprintList>
+
+<!-- 1.4 -->
+<!-- <blueprintList name="energy">
 	<name>energy</name>
 	<name>energy_w</name>
 </blueprintList>
@@ -28,7 +70,7 @@
 <blueprintList name="order_human">
 	<name>order_human</name>
 	<name>order_female</name>
-</blueprintList>
+</blueprintList> -->
 
 <blueprintList name="mushrooms">
 	<name>mushroom</name>
@@ -36,8 +78,19 @@
 	<name>mushroom_f</name>
 </blueprintList>
 
-<mod:findName type="blueprintList" name="CREW_ENERGY">
+<!-- <mod:findName type="blueprintList" name="CREW_ENERGY">
 	<mod-append:name>energy_w</mod-append:name>
+</mod:findName> --> <!-- 1.4 -->
+
+<mod:findName type="blueprintList" name="DRONES_HELPS_LIST"> <!-- 1.4 -->
+	<mod-append:name>BATTERY_DRONE</mod-append:name>
+	<mod-append:name>BATTERY_DRONE_2</mod-append:name>
+	<mod-append:name>MANNING_DRONE</mod-append:name>
+	<mod-append:name>MANNING_DRONE_2</mod-append:name>
+	<mod-append:name>DE_REPAIR_2</mod-append:name>
+	<mod-append:name>DE_BATTLE_4</mod-append:name>
+	<mod-append:name>DE_BOARDER_4</mod-append:name>
+	<mod-append:name>BOARDER_ION</mod-append:name>
 </mod:findName>
 
 <mod:findName type="blueprintList" name="WEAPONS_PROTOTYPES">

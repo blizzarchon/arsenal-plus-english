@@ -56,3 +56,120 @@
 		<crewMember amount="1" class="slig">Слёрм</crewMember>
 	</event>
 </eventList>
+
+<eventList name="NEBULA_STORM_SLUG_CONVERTER_OF_SOUL_RANDOMCREATURE">
+	<event>
+		<text>Внезапно из артефакта вываливается склизкий кокон. Внутри ничего нет... Слаги говорят, что такого раньше не было и просят вас уйти.</text>
+		<choice hidden="true">
+			<text>Атаковать их. Мы такое не прощаем!</text>
+			<event>
+				<text>Вы начинаете зарядку своих орудий. Слаги в ответ делают то же самое!</text>
+				<ship hostile="true"/>
+			</event>
+		</choice>
+		<choice hidden="true">
+			<text>Уйти прочь.</text>
+			<event/>
+		</choice>
+	</event>
+	<event>
+		<text>Внезапно из артефакта вываливается склизкий кокон, и из него вылезает ваш новый член экипажа... Слаги делают какие-то замеры и дают немного лома в благодарность.</text>
+		<crewMember amount="1" class="human" all_skills="1">Изуал</crewMember>
+		<autoReward level="LOW">scrap_only</autoReward>
+	</event>
+	<event>
+		<text>Внезапно из артефакта вываливается склизкий кокон, и из него вылезает ваш новый член экипажа... Слаги делают какие-то замеры и дают немного лома в благодарность.</text>
+		<crewMember amount="1" class="engi" all_skills="1">Изуал</crewMember>
+		<autoReward level="LOW">scrap_only</autoReward>
+	</event>
+	<event>
+		<text>Внезапно из артефакта вываливается склизкий кокон, и из него вылезает ваш новый член экипажа... Слаги делают какие-то замеры и дают немного лома в благодарность.</text>
+		<crewMember amount="1" class="rock" all_skills="1">Изуал</crewMember>
+		<autoReward level="LOW">scrap_only</autoReward>
+	</event>
+	<event>
+		<text>Внезапно из артефакта вываливается склизкий кокон, и из него вылезает ваш новый член экипажа... Слаги делают какие-то замеры и дают немного лома в благодарность.</text>
+		<crewMember amount="1" class="magman" all_skills="1">Изуал</crewMember>
+		<autoReward level="LOW">scrap_only</autoReward>
+	</event>
+	<event>
+		<text>Внезапно из артефакта вываливается склизкий кокон, и из него вылезает ваш новый член экипажа... Слаги делают какие-то замеры и дают немного лома в благодарность.</text>
+		<crewMember amount="1" class="order_human" all_skills="1">Изуал</crewMember>
+		<autoReward level="LOW">scrap_only</autoReward>
+	</event>
+	<event>
+		<text>Внезапно из артефакта вываливается склизкий кокон, и из него вылезает ваш новый член экипажа... Слаги делают какие-то замеры и дают немного лома в благодарность.</text>
+		<crewMember amount="1" class="orchid" all_skills="1">Изуал</crewMember>
+		<autoReward level="LOW">scrap_only</autoReward>
+	</event>
+	<event>
+		<text>Внезапно из артефакта вываливается склизкий кокон, и из него вылезает ваш новый член экипажа... Слаги делают какие-то замеры и дают немного лома в благодарность.</text>
+		<crewMember amount="1" class="shell" all_skills="1">Изуал</crewMember>
+		<autoReward level="LOW">scrap_only</autoReward>
+	</event>
+	<event>
+		<text>Внезапно из артефакта вываливается склизкий кокон, и из него вылезает ваш новый член экипажа... Слаги делают какие-то замеры и дают немного лома в благодарность.</text>
+		<crewMember amount="1" class="slug_armored" all_skills="1">Изуал</crewMember>
+		<autoReward level="LOW">scrap_only</autoReward>
+	</event>
+	<event>
+		<text>Внезапно из артефакта вываливается склизкий кокон, и из него вылезает ваш новый член экипажа... Слаги делают какие-то замеры и дают немного лома в благодарность.</text>
+		<crewMember amount="1" class="slig" all_skills="1">Изуал</crewMember>
+		<autoReward level="LOW">scrap_only</autoReward>
+	</event>
+	<event>
+		<text>Внезапно из артефакта вываливается склизкий кокон, и из него вылезает ваш новый член экипажа... Слаги делают какие-то замеры и дают немного лома в благодарность.</text>
+		<crewMember amount="1" class="energy" all_skills="1">Изуал</crewMember>
+		<autoReward level="LOW">scrap_only</autoReward>
+	</event>
+	<event>
+		<text>Внезапно из артефакта вываливается склизкий кокон, и из него вылезает ваш новый член экипажа... Слаги делают какие-то замеры и дают немного лома в благодарность.</text>
+		<crewMember amount="1" class="energyx" all_skills="1">Изуал</crewMember>
+		<autoReward level="LOW">scrap_only</autoReward>
+	</event>
+	<event>
+		<text>Внезапно из артефакта вываливается склизкий кокон, и из него вылезает ваш новый член экипажа... Слаги делают какие-то замеры и дают немного лома в благодарность.</text>
+		<crewMember amount="1" class="mushroom_f" all_skills="1">Изуал</crewMember>
+		<autoReward level="LOW">scrap_only</autoReward>
+	</event>
+	<event>
+		<text>Внезапно из артефакта вываливается склизкий кокон, и из него вылезает ваш новый член экипажа... Слаги делают какие-то замеры и дают немного лома в благодарность.</text>
+		<crewMember amount="1" class="mushroom_b" all_skills="1">Изуал</crewMember>
+		<autoReward level="LOW">scrap_only</autoReward>
+	</event>
+	<event><!-- 1.28 -->
+		<text>Внезапно из артефакта вываливается склизкий кокон, и из него вылезает ваш новый член экипажа... Слаги делают какие-то замеры и дают немного лома в благодарность.</text>
+		<crewMember amount="1" class="mushroom" all_skills="1">Изуал</crewMember>
+		<autoReward level="LOW">scrap_only</autoReward>
+	</event>
+	<event>
+		<text>Внезапно из артефакта вываливается склизкий кокон, и из него вылезает ваш новый член экипажа... Слаги делают какие-то замеры и дают немного лома в благодарность.</text>
+		<crewMember amount="1" class="ghost" all_skills="1">Изуал</crewMember>
+		<autoReward level="LOW">scrap_only</autoReward>
+	</event>
+	<event>
+		<text>Внезапно из артефакта вываливается склизкий кокон, и из него вылезает ваш новый член экипажа... Слаги делают какие-то замеры и дают немного лома в благодарность.</text>
+		<crewMember amount="1" class="crystal" all_skills="1">Изуал</crewMember>
+		<autoReward level="LOW">scrap_only</autoReward>
+	</event>
+	<event>
+		<text>Внезапно из артефакта вываливается склизкий кокон, и из него вылезает ваш новый член экипажа... Слаги делают какие-то замеры и дают немного лома в благодарность.</text>
+		<crewMember amount="1" class="mantis" all_skills="1">Изуал</crewMember>
+		<autoReward level="LOW">scrap_only</autoReward>
+	</event>
+	<event>
+		<text>Внезапно из артефакта вываливается склизкий кокон, и из него вылезает ваш новый член экипажа... Слаги делают какие-то замеры и дают немного лома в благодарность.</text>
+		<crewMember amount="1" class="slug" all_skills="1">Изуал</crewMember>
+		<autoReward level="LOW">scrap_only</autoReward>
+	</event>
+	<event>
+		<text>Внезапно из артефакта вываливается склизкий кокон, и из него вылезает ваш новый член экипажа... Слаги делают какие-то замеры и дают немного лома в благодарность.</text>
+		<crewMember amount="1" class="anaerobic" all_skills="1">Изуал</crewMember>
+		<autoReward level="LOW">scrap_only</autoReward>
+	</event>
+	<event>
+		<text>Внезапно из артефакта вываливается склизкий кокон, и из него вылезает ваш новый член экипажа... Слаги делают какие-то замеры и дают немного лома в благодарность.</text>
+		<crewMember amount="1" class="morph" all_skills="1">Изуал</crewMember>
+		<autoReward level="LOW">scrap_only</autoReward>
+	</event>
+</eventList>

@@ -1,12 +1,69 @@
 <FTL>
 
-<version>41</version>
+<version>71</version>
+
+<!-- Custom save file:
+
+With inheritMode, 0 forces inheriting the vanilla save file, 1 asks, and 2 forces a new file
+The prefix is the prefix of the save file name (e.g. ae_prof.sav would be ae)
+Ideally, the prefix should be unique for every mod with custom save files
+-->
+<saveFile> <!-- 1.4 -->
+    <prefix>ars_hs</prefix>
+    <inheritMode>1</inheritMode>
+</saveFile>
 
 <!-- Enables the game's built in infinite mode
 (found by ih8ih8sn0w)
 -->
 
+<advancedCrewTooltips enabled="true" ally="false" enemy="false" rounding="2"/> <!-- 1.4 -->
+<eventTooltips enabled="true"/> <!-- 1.4 -->
+
+<showNumericalWeaponCooldown enabled="true"/> <!-- 1.4 -->
+
+<redesignedWeaponTooltips enabled="true"/> <!-- 1.4 -->
+<redesignedDroneTooltips enabled="true"/> <!-- 1.4 -->
+<redesignedAugmentTooltips enabled="true"/> <!-- 1.4 -->
+
 <infinite enabled="false"/>
+
+<!-- Discord rich presence integration -->
+
+<discord enabled="true">
+	<miniships> <!-- Asset ids for miniships - if a ship does not have a miniship defined here, it will use the "miniship_question" asset which has to be created in your application -->
+		<miniship>miniship_anaerobic_cruiser</miniship>
+		<miniship>miniship_anaerobic_cruiser_2</miniship>
+		<miniship>miniship_circle_cruiser</miniship>
+		<miniship>miniship_circle_cruiser_2</miniship>
+		<miniship>miniship_circle_cruiser_3</miniship>
+		<miniship>miniship_crystal_cruiser</miniship>
+		<miniship>miniship_crystal_cruiser_2</miniship>
+		<miniship>miniship_energy_cruiser</miniship>
+		<miniship>miniship_energy_cruiser_2</miniship>
+		<miniship>miniship_energy_cruiser_3</miniship>
+		<miniship>miniship_fed_cruiser</miniship>
+		<miniship>miniship_fed_cruiser_2</miniship>
+		<miniship>miniship_fed_cruiser_3</miniship>
+		<miniship>miniship_jelly_cruiser</miniship>
+		<miniship>miniship_jelly_cruiser_2</miniship>
+		<miniship>miniship_jelly_cruiser_3</miniship>
+		<miniship>miniship_kestral</miniship>
+		<miniship>miniship_kestral_2</miniship>
+		<miniship>miniship_kestral_3</miniship>
+		<miniship>miniship_mantis_cruiser</miniship>
+		<miniship>miniship_mantis_cruiser_2</miniship>
+		<miniship>miniship_mantis_cruiser_3</miniship>
+		<miniship>miniship_rock_cruiser</miniship>
+		<miniship>miniship_rock_cruiser_2</miniship>
+		<miniship>miniship_rock_cruiser_3</miniship>
+		<miniship>miniship_stealth</miniship>
+		<miniship>miniship_stealth_2</miniship>
+		<miniship>miniship_stealth_3</miniship>
+	</miniships>
+	<appId>728949575586545695</appId> <!-- Discord app id -->
+	<icon>big_icon</icon> <!-- internal asset id for large icon -->
+</discord>
 
 <!-- Hull bar indicator
 Displays the amount of hull points left for the player or enemy
@@ -32,9 +89,139 @@ This means that you can't get past defense drones easily anymore
 <!-- Custom title screen
 Changes the background and logo and moves the FTL logo slightly -->
 
-<titleScreen logo_x="862" logo_y="7" enabled="false"/>
+<!-- Syntax for splash images -
+
+The first one would load a splash image from main_menus/splash_img.png
+You can have multiple splash images and it will pick them at random
+
+If the chance attribute is set to 1 or above, every time the main menu is loaded there is a x/10000 chance that it loads that splash image
+
+
+<titleScreen logo_x="862" logo_y="7" enabled="true">
+    <splashImages>
+        <splashImage x="50" y="50" center="true">img</splashImage>
+        <splashImage x="50" y="50" center="true" chance="1">img_secret</splashImage>
+    </splashImages>
+</titleScreen> -->
+
+<titleScreen logo_x="862" logo_y="7" enabled="false">
+	<splashImages>
+		<splashImage x="5" y="5" center="false">001</splashImage>
+		<splashImage x="5" y="5" center="false">002</splashImage>
+		<splashImage x="5" y="5" center="false">003</splashImage>
+		<splashImage x="5" y="5" center="false">004</splashImage>
+		<splashImage x="5" y="5" center="false">005</splashImage>
+		<splashImage x="5" y="5" center="false">006</splashImage>
+		<splashImage x="5" y="5" center="false">007</splashImage>
+		<splashImage x="5" y="5" center="false">008</splashImage>
+		<splashImage x="5" y="5" center="false">009</splashImage>
+		<splashImage x="5" y="5" center="false">010</splashImage>
+		<splashImage x="5" y="5" center="false">011</splashImage>
+		<splashImage x="5" y="5" center="false">012</splashImage>
+		<splashImage x="5" y="5" center="false">013</splashImage>
+		<splashImage x="5" y="5" center="false">014</splashImage>
+		<splashImage x="5" y="5" center="false">015</splashImage>
+		<splashImage x="5" y="5" center="false">016</splashImage>
+		<splashImage x="5" y="5" center="false">017</splashImage>
+		<splashImage x="5" y="5" center="false">018</splashImage>
+		<splashImage x="5" y="5" center="false">019</splashImage>
+		<splashImage x="5" y="5" center="false">020</splashImage>
+		<splashImage x="5" y="5" center="false">021</splashImage>
+		<splashImage x="5" y="5" center="false">022</splashImage>
+		<splashImage x="5" y="5" center="false">023</splashImage>
+		<splashImage x="5" y="5" center="false">024</splashImage>
+		<splashImage x="5" y="5" center="false">025</splashImage>
+		<splashImage x="5" y="5" center="false">026</splashImage>
+		<splashImage x="5" y="5" center="false">027</splashImage>
+		<splashImage x="5" y="5" center="false">028</splashImage>
+		<splashImage x="5" y="5" center="false">029</splashImage>
+		<splashImage x="5" y="5" center="false">030</splashImage>
+		<splashImage x="5" y="5" center="false">031</splashImage>
+		<splashImage x="5" y="5" center="false">032</splashImage>
+		<splashImage x="5" y="5" center="false">033</splashImage>
+		<splashImage x="5" y="5" center="false">034</splashImage>
+		<splashImage x="5" y="5" center="false">035</splashImage>
+		<splashImage x="5" y="5" center="false">036</splashImage>
+		<splashImage x="5" y="5" center="false">037</splashImage>
+		<splashImage x="5" y="5" center="false">038</splashImage>
+		<splashImage x="5" y="5" center="false">039</splashImage>
+		<splashImage x="5" y="5" center="false">040</splashImage>
+		<splashImage x="5" y="5" center="false">041</splashImage>
+		<splashImage x="5" y="5" center="false">042</splashImage>
+		<splashImage x="5" y="5" center="false">043</splashImage>
+		<splashImage x="5" y="5" center="false">044</splashImage>
+		<splashImage x="5" y="5" center="false">045</splashImage>
+		<splashImage x="5" y="5" center="false">046</splashImage>
+		<splashImage x="5" y="5" center="false">047</splashImage>
+		<splashImage x="5" y="5" center="false">048</splashImage>
+		<splashImage x="5" y="5" center="false" chance="10">049</splashImage>
+    </splashImages>
+</titleScreen>
+
+<!-- Я - это ты из будущего, в этот раз ты соберёшь имбу!
+Я - это ты из будущего, мы обречены!
+Ионный лучевой вулкан поможет тебе!
+Слокног блефует! Слокрук
+Купи неизвестное орудие за 35 лома!
+Не открывай капсулу мантисов!
+Открой капсулу мантисов!
+Гигантские пауки не представляют опасности!
+Гигантские пауки не шутка!
+Дроны полезные!
+Купи миномёт! (ну пожалуйста)
+Полетели на стелсе?
+Победная стратегия на сегодня: купить артиллерию
+Никаких захватов в этот раз!
+Продам душу за пушку
+Сейчас бы пропустить пару бокалов в баре
+Возле чёрной дыры что-то интересное!
+Кому нужны пушки? Телепортера будет достаточно!
+Не верьте этому Слокруку! Слокног
+Ракету мне в рубку! Это же кран для сбора лома!
+Некоторые из пиратов не такие уж и враждебные
+Ходят слухи, что истинный флагман повстанцев окрашен в чёрные цвета
+Машрумы - одни из немногих, кто способен расти над собой в условиях войны
+Даже самое бесполезное на первый взгляд оборудование может принести выгоду (кроме миномётов)
+Даже самое бесполезное на первый взгляд оборудование может принести выгоду
+Поговаривают, что корабли Ордена используют альтернативные источники энергии, и это отнюдь не кремниевые панели...
+Слизни убеждены, что разбор 29 прочности корабля на лом - это путь к успеху
+Мама родная! Контейнеры с оружием дрейфуют в космосе!
+Из космоса доносится сигнал =Бета=Альфа=Бета=, что бы это значило?..
+Подключение генератора случайных чисел к карме игрока проведено успешно
+База Федерации может оказать вам неоценимую помощь, если вы окажетесь там раньше повстанцев
+Контейнер для Тулли - это не просто балласт для компенсации крена корабля
+Аватары очень не любят нестабильные секторы с их электромагнитными бурями
+Иногда в двоичном коде морфов можно разобраться даже без переводчика
+Орхиды выделяют кислород даже без солнечного света и регулярного полива! Потрясающая эволюция!
+У золтонцев есть свой "Глаз" с туманностями и золтонками
+Мантис в синем победит. Бой подставной
+Мантис в красном победит. Бой подставной
+Мантис в белом победит. Бой подставной
+Покорить сердце КазааакплетКилика сложно, но можно
+Когда вы последний раз видели торговый конвой в секторе аватаров?
+Система взлома может противодействовать цифровому нападению!
+Что такое ОЗУ? Р-Р-РАЗ - и победа! Или нет...
+Иногда самый выгодный выбор не этичен. Решать всегда вам!
+Игровой автомат с пони имеет несколько игровых режимов. Попробуйте!
+Сердце кристалина, дронная настойка и кожа слага. Записали? Вперёд!
+Квантовый умножитель способен квантово умножить ваше имущество. Или разделить
+Светящиеся шары могут быть не такими уж и агрессивными, если присмотреться
+ОчЕнЬ РеДкАя НаДпИсЬ
+
+Не связывайтесь с приверженцами Федерации!
+Некоторые пираты могут вызывать настороженность
+В Галактике много разных аномалий, и не в каждую следует соваться
+Встретимся на базе, Люминис
+Не забыть улучшить систему сенсоров
+
+
+ -->
+
+<!-- Disables toggling off Advanced Edition -->
 
 <forceDlc enabled="true"/>
+
+<seeds enabled="true"/>
 
 <!-- Enables command console in game - press L to use
 
@@ -60,25 +247,277 @@ STORE          Creates a store at your location        Usage: STORE [sector]    
 KILL           Kills a person on your ship             Usage: KILL <crew_name>        Example: KILL John
 DELETECREW     Kills everyone on the enemy ship        Usage: DELETECREW
 SPEED          Changes game speed                      Usage: SPEED <speed>           Example: SPEED 3 (any integer from -2 to 3) toggle in game by `
+DAMAGESYS      Damages a system                        Usage: DAMAGESYS <system_name> Example: DAMAGESYS medbay
+SHIP_CUSTOM <ship_id>
 -->
 
 <console enabled="true"/> 
 
 <!-- Infinite Ships
 
+You can make a customShip with no name (or name "default") to set default values for all ships
+Make sure this is above every <ship> and <customShip> tag, though
+
+<roomAnim> lets you choose animations for rooms (from animations.xml)
+roomAnim render layers:
+0 - draws below everything except floor, including no O2 stripes - can't see when room has no vision
+1 - draws below everything but above O2 stripes - can't see when room has no vision
+2 - draws below crew - can see when room has no vision
+3 - draws above crew - can see when room has no vision, but not when you can't actually see the room outline
+4 - draws above everything
+
+<empty> in shipOrder means that the slot that the ship would take up is empty instead
+
+Unlocks:
+variant attribute is what variant you want the unlock method for (a, b or c)
+
+type is the unlock method (0 is beat flagship, 1 is reach sector, 2 is any victory, 3 is other ship unlocks, 4 is for event unlocks)
+shipReq is the ship that you have to do it with to unlock it
+value is only used for reach sector currently which defines which sector the player has to reach
+silent tag defines whether or not it will show up in the top right and plays the sound
+
+for the achievement icon that appears on the top right when you unlock the ship, you will need to add an icon in img/achievements 
+it will use whatever the layoutFile is with "_1" put on the end
+so for the engi ship, the layoutFile is mup_engi_b, so the icon would be img/achievements/mup_engi_b_1.png
+
+you can also put multiple unlock methods which will let the player do ANY of them to unlock the ship
+putting the secret attribute on the ship tag will make the ship show up as "Unidentified Cruiser" when hovering over it in the ship selection screen
+
 Syntax -> 
 
-<ships>
-	<ship name="PLAYER_SHIP_CUSTOM" b="true" c="true"/> 
+<ships removeFirstShipPage="false">
+	<shipOrder>
+		<ship>PLAYER_SHIP_CUSTOM1</ship>
+		<ship>PLAYER_SHIP_CUSTOM7</ship>
+		<ship>PLAYER_SHIP_CUSTOM2</ship>
+		<ship>PLAYER_SHIP_CUSTOM3</ship>
+		<empty/>
+		<empty/>
+		<ship>PLAYER_SHIP_CUSTOM4</ship>
+		<ship>PLAYER_SHIP_CUSTOM9</ship>
+		<ship>PLAYER_SHIP_CUSTOM8</ship>
+		<empty/>
+	</shipOrder>
+	
+	<customShip> 
+		<hiddenAug>FIRE_EXTINGUISHERS</hiddenAug>
+		<crewLimit>12</crewLimit>
+	</customShip>
+	
+	<ship name="PLAYER_SHIP_CUSTOM" b="true" c="true">
+		<unlock variant="a">
+            <type>1</type>
+            <shipReq>PLAYER_SHIP_CUSTOM_2</shipReq>
+            <value>5</value>
+			<silent/>
+        </unlock>
+    </ship>
+	
 	<customShip name="PLAYER_SHIP_CUSTOM_2">
+		<rooms>
+			<room id="1">
+				<roomAnim renderLayer="1">custom</roomAnim>
+				<sysDamageResistChance>50</sysDamageResistChance>
+				<ionDamageResistChance>10</ionDamageResistChance>
+			</room>
+		</rooms>
+		<crew>
+			<human room="1" name="Joe"/>
+			<CREW_BLUEPRINT_LIST room="1" isList="true"/>
+		</crew>
 		<hiddenAug>ENERGY_SHIELD</hiddenAug>
+		<crewLimit>6</crewLimit>
+		<startingScrap>0</startingScrap>
+		<startingFuel>0</startingFuel>
+	</customShip>
+	
+	<customShip name="ENEMY_SHIP">
+		<noJump/>
+		<hpCap>30</hpCap>
+		<noFuelStalemate/>
+		<autoShipForce>false</autoShipForce>
 	</customShip>
 	...
 </ships>
 
 -->
 
-<ships>
+<ships removeFirstShipPage="true">
+	<shipIcons><!-- 1.4 -->
+        <normalPos x="1242" y="528"/>
+        <bossPos x="1235" y="555"/>
+		<shipIcon>
+            <name>icon_auto_cooldown</name>
+            <tooltip>Авто-перезарядчик:
+			Задержка между выстрелами орудий и артиллерии снижена на 25%.</tooltip>
+        </shipIcon>
+		<shipIcon>
+            <name>icon_slug_gel</name>
+            <tooltip>Ремонтный гель слагов:
+			Густой гель, который автоматически ремонтирует пробоины в корпусе корабля.</tooltip>
+        </shipIcon>
+		<shipIcon>
+            <name>icon_cloak_fire</name>
+            <tooltip>Скрытые орудия:
+			Позволяют стрелять из режима невидимости, не прерывая его.</tooltip>
+        </shipIcon>
+		<shipIcon>
+            <name>icon_system_casing</name>
+            <tooltip>Титановое покрытие:
+			Все системы корабля имеют покрытие, обеспечивающее 33% шанс свести на нет урон при попадании.</tooltip>
+        </shipIcon>
+		<shipIcon>
+            <name>icon_blackbird</name>
+            <tooltip>Чёрное крыло:
+			Этот корабль обладает неразрушимым орудийным отсеком.</tooltip>
+        </shipIcon>
+		<shipIcon>
+            <name>icon_energyx</name>
+            <tooltip>Золтонский щит:
+			Этот корабль обладает неразрушимым отсеком щитов.</tooltip>
+        </shipIcon>
+		<shipIcon>
+            <name>icon_rock_armor</name>
+            <tooltip>Обшивка корпуса роков:
+			Улучшенная броня, дающая 33% шанс свести к нулю поступающий урон по корпусу.</tooltip>
+        </shipIcon>
+		<shipIcon>
+            <name>icon_fire_extinguishers</name>
+            <tooltip>Система пожаротушения:
+			Автоматически тушит пожары на корабле.</tooltip>
+        </shipIcon>
+		<shipIcon>
+            <name>icon_crew_stims</name>
+            <tooltip>Феромоны мантисов:
+			Скорость передвижения команды значительно увеличивается.</tooltip>
+        </shipIcon>
+		<shipIcon>
+            <name>icon_o2_masks</name>
+            <tooltip>Кислородные маски:
+			Команда почти не получает урона от удушья.</tooltip>
+        </shipIcon>
+		<shipIcon>
+            <name>icon_zoltan_bypass</name>
+            <tooltip>Обход суперщита:
+			Позволяет работать через суперщит телепортации экипажа, бомбам и управлению разумом.</tooltip>
+        </shipIcon>
+		<shipIcon>
+            <name>icon_shield_recharge</name>
+            <tooltip>Ускоритель зарядки щита:
+			Повышает скорость перезарядки щита на 50%.</tooltip>
+        </shipIcon>
+		<shipIcon>
+            <name>icon_nano_medbay</name>
+            <tooltip>Нано мед-боты инжи:
+			Лечат экипаж на своём корабле даже вне медотсека.</tooltip>
+        </shipIcon>
+		<shipIcon>
+            <name>icon_energy_shield</name>
+            <tooltip>Щит золтанцев:
+			Неизвестная технология создаёт этот практически непроницаемый щит.</tooltip>
+        </shipIcon>
+		<shipIcon>
+            <name>icon_crystal_shards</name>
+            <tooltip>Месть кристалинов:
+			Каждый раз, когда корабль получает повреждения, существует 30% шанс, что отломится осколок, который отлетит в противника.</tooltip>
+        </shipIcon>
+		<shipIcon>
+            <name>icon_drone_speed</name>
+            <tooltip>Ускоритель дронов:
+			Скорость передвижения всех пеших дронов увеличена на 250%.</tooltip>
+        </shipIcon>
+		<shipIcon>
+            <name>icon_hacking_stun</name>
+            <tooltip>Парализующий взлом:
+			Взлом системы также временно парализует экипаж в отсеке.</tooltip>
+        </shipIcon>
+		<shipIcon>
+            <name>icon_ion_armor</name>
+            <tooltip>Инверсное ионное поле:
+			Защищает корабль от ионного урона, давая 75% шанс свести его полностью на нет.</tooltip>
+        </shipIcon>
+		<shipIcon>
+            <name>icon_backup_dna</name>
+            <tooltip>Резервный банк ДНК:
+			Экипаж не погибнет, даже если отсек клонирования выключен или сломан.</tooltip>
+        </shipIcon>
+		<shipIcon>
+            <name>icon_teleport_heal</name>
+            <tooltip>Исцеляющий телепорт:
+			Полностью исцеляет команду при телепортации.</tooltip>
+        </shipIcon>
+		<shipIcon>
+            <name>icon_defense_scrambler</name>
+            <tooltip>Генератор помех:
+			Сбивает прицел защитных дронов противника.</tooltip>
+        </shipIcon>
+		<shipIcon>
+            <name>icon_battery_booster</name>
+            <tooltip>Зарядное устройство:
+			В 4 раза ускоряет перезарядку подсистемы батареи.</tooltip>
+        </shipIcon>
+		<shipIcon>
+            <name>icon_shell_gas</name>
+            <tooltip>Разъедающий газ:
+			Вредоносный газ наносит урон посторонним на борту. Эффективность 100%.</tooltip>
+        </shipIcon>
+		<shipIcon>
+            <name>icon_magman_extinguishers</name>
+            <tooltip>Хладагент:
+			Устаревшая система пожаротушения. Автоматически тушит пожары на корабле.</tooltip>
+        </shipIcon>
+		<shipIcon>
+            <name>icon_battery_hal</name>
+            <tooltip>Резервные цепи питания:
+			Этот корабль начинает сражение с 1/2 реактора.</tooltip>
+        </shipIcon>
+    </shipIcons>
+	<customShip><!-- 1.3 -->
+		<crewLimit>12</crewLimit>
+		<hpCap>-1</hpCap><!-- 1.4 -->
+	</customShip>
+	<shipOrder><!-- 1.4 -->
+		<ship>PLAYER_SHIP_HARD_DLC1</ship>
+		<ship>PLAYER_SHIP_CIRCLE_DLC1</ship>
+		<ship>PLAYER_SHIP_FED_DLC1</ship>
+		<ship>PLAYER_SHIP_ENERGY_DLC1</ship>
+		<ship>PLAYER_SHIP_MANTIS_DLC1</ship>
+		<ship>PLAYER_SHIP_JELLY_DLC1</ship>
+		<ship>PLAYER_SHIP_ROCK_DLC1</ship>
+		<ship>PLAYER_SHIP_STEALTH_DLC1</ship>
+		<ship>PLAYER_SHIP_ANAEROBIC_DLC1</ship>
+		<ship>PLAYER_SHIP_CRYSTAL_DLC1</ship>
+		<ship>PLAYER_SHIP_HARD_DLC2</ship>
+		<ship>PLAYER_SHIP_CIRCLE_DLC2</ship>
+		<ship>PLAYER_SHIP_FED_DLC2</ship>
+		<ship>PLAYER_SHIP_ENERGY_DLC2</ship>
+		<ship>PLAYER_SHIP_MANTIS_DLC2</ship>
+		<ship>PLAYER_SHIP_JELLY_DLC2</ship>
+		<ship>PLAYER_SHIP_ROCK_DLC2</ship>
+		<ship>PLAYER_SHIP_STEALTH_DLC2</ship>
+		<ship>PLAYER_SHIP_ANAEROBIC_DLC2</ship>
+		<ship>PLAYER_SHIP_CRYSTAL_DLC2</ship>
+		<ship>PLAYER_SHIP_HARD_DLC3</ship>
+		<ship>PLAYER_SHIP_CIRCLE_DLC3</ship>
+		<ship>PLAYER_SHIP_FED_DLC3</ship>
+		<ship>PLAYER_SHIP_ENERGY_DLC3</ship>
+		<ship>PLAYER_SHIP_MANTIS_DLC3</ship>
+		<ship>PLAYER_SHIP_JELLY_DLC3</ship>
+		<ship>PLAYER_SHIP_ROCK_DLC3</ship>
+		<ship>PLAYER_SHIP_STEALTH_DLC3</ship>
+		<ship>PLAYER_SHIP_ANAEROBIC_DLC3</ship>
+		<ship>PLAYER_SHIP_CRYSTAL_DLC3</ship>
+		<ship>PLAYER_SHIP_ORCHID</ship>
+		<ship>PLAYER_SHIP_SHELL</ship>
+		<ship>PLAYER_SHIP_MUSHROOM</ship>
+		<ship>PLAYER_SHIP_MAGMAN</ship>
+		<empty/>
+		<empty/>
+		<empty/>
+		<empty/>
+		<empty/>
+		<empty/>
+	</shipOrder>
 	<ship name="PLAYER_SHIP_HARD_DLC1" b="true" c="true"/>
 	<ship name="PLAYER_SHIP_CIRCLE_DLC1" b="true" c="true"/>
 	<ship name="PLAYER_SHIP_FED_DLC1" b="true" c="true"/>
@@ -112,6 +551,2790 @@ Syntax ->
 	<ship name="PLAYER_SHIP_ORCHID" b="true" c="true"/>
 	<ship name="PLAYER_SHIP_SHELL" b="true" c="true"/>
 	<ship name="PLAYER_SHIP_MUSHROOM" b="true" c="true"/>
+	<ship name="PLAYER_SHIP_MAGMAN" b="true" c="true"/><!-- 1.3 -->
+	<customShip name="PLAYER_SHIP_MAGMAN"><!-- 1.3 -->
+		<hiddenAug>MAGMAN_EXTINGUISHERS</hiddenAug>
+		<rooms>
+			<room id="0">
+				<roomAnim renderLayer="0">frozen_2x1</roomAnim>
+ 			</room>
+			<room id="1">
+				<roomAnim renderLayer="0">frozen_1x2</roomAnim>
+			</room>
+			<room id="2">
+				<roomAnim renderLayer="0">frozen_2x1</roomAnim>
+			</room>
+			<room id="3">
+				<roomAnim renderLayer="0">frozen_1x2</roomAnim>
+			</room>
+			<room id="4">
+				<roomAnim renderLayer="0">frozen_2x1</roomAnim>
+			</room>
+			<room id="5">
+				<roomAnim renderLayer="0">frozen_2x1</roomAnim>
+			</room>
+			<room id="6">
+				<roomAnim renderLayer="0">frozen_2x1</roomAnim>
+			</room>
+			<room id="7">
+				<roomAnim renderLayer="0">frozen_1x2</roomAnim>
+			</room>
+			<room id="8">
+				<roomAnim renderLayer="0">frozen_2x2</roomAnim>
+			</room>
+			<room id="9">
+				<roomAnim renderLayer="0">frozen_2x1</roomAnim>
+			</room>
+			<room id="10">
+				<roomAnim renderLayer="0">frozen_1x2</roomAnim>
+			</room>
+			<room id="11">
+				<roomAnim renderLayer="0">frozen_1x2</roomAnim>
+			</room>
+			<room id="12">
+				<roomAnim renderLayer="0">frozen_1x2</roomAnim>
+			</room>
+			<room id="13">
+				<roomAnim renderLayer="0">frozen_2x2</roomAnim>
+			</room>
+			<room id="14">
+				<roomAnim renderLayer="0">frozen_2x2</roomAnim>
+			</room>
+		</rooms>
+	</customShip>
+	<customShip name="PLAYER_SHIP_MAGMAN_2">
+		<hiddenAug>MAGMAN_EXTINGUISHERS</hiddenAug>
+		<rooms>
+			<room id="0">
+				<roomAnim renderLayer="0">frozen_2x1</roomAnim>
+ 			</room>
+			<room id="1">
+				<roomAnim renderLayer="0">frozen_1x2</roomAnim>
+			</room>
+			<room id="2">
+				<roomAnim renderLayer="0">frozen_2x1</roomAnim>
+			</room>
+			<room id="3">
+				<roomAnim renderLayer="0">frozen_1x2</roomAnim>
+			</room>
+			<room id="4">
+				<roomAnim renderLayer="0">frozen_2x1</roomAnim>
+			</room>
+			<room id="5">
+				<roomAnim renderLayer="0">frozen_1x2</roomAnim>
+			</room>
+			<room id="6">
+				<roomAnim renderLayer="0">frozen_2x1</roomAnim>
+			</room>
+			<room id="7">
+				<roomAnim renderLayer="0">frozen_1x2</roomAnim>
+			</room>
+			<room id="8">
+				<roomAnim renderLayer="0">frozen_2x2</roomAnim>
+			</room>
+			<room id="9">
+				<roomAnim renderLayer="0">frozen_1x2</roomAnim>
+			</room>
+			<room id="10">
+				<roomAnim renderLayer="0">frozen_1x2</roomAnim>
+			</room>
+			<room id="11">
+				<roomAnim renderLayer="0">frozen_1x2</roomAnim>
+			</room>
+			<room id="12">
+				<roomAnim renderLayer="0">frozen_2x2</roomAnim>
+			</room>
+			<room id="13">
+				<roomAnim renderLayer="0">frozen_2x2</roomAnim>
+			</room>
+			<room id="14">
+				<roomAnim renderLayer="0">frozen_1x2</roomAnim>
+			</room>
+		</rooms>
+	</customShip>
+	<customShip name="PLAYER_SHIP_MAGMAN_3">
+		<hiddenAug>MAGMAN_EXTINGUISHERS</hiddenAug>
+		<rooms>
+			<room id="0">
+				<roomAnim renderLayer="0">frozen_1x2</roomAnim>
+ 			</room>
+			<room id="1">
+				<roomAnim renderLayer="0">frozen_1x2</roomAnim>
+			</room>
+			<room id="2">
+				<roomAnim renderLayer="0">frozen_1x2</roomAnim>
+			</room>
+			<room id="3">
+				<roomAnim renderLayer="0">frozen_2x1</roomAnim>
+			</room>
+			<room id="4">
+				<roomAnim renderLayer="0">frozen_1x2</roomAnim>
+			</room>
+			<room id="5">
+				<roomAnim renderLayer="0">frozen_2x1</roomAnim>
+			</room>
+			<room id="6">
+				<roomAnim renderLayer="0">frozen_1x2</roomAnim>
+			</room>
+			<room id="7">
+				<roomAnim renderLayer="0">frozen_2x2</roomAnim>
+			</room>
+			<room id="8">
+				<roomAnim renderLayer="0">frozen_1x2</roomAnim>
+			</room>
+			<room id="9">
+				<roomAnim renderLayer="0">frozen_1x2</roomAnim>
+			</room>
+			<room id="10">
+				<roomAnim renderLayer="0">frozen_1x2</roomAnim>
+			</room>
+			<room id="11">
+				<roomAnim renderLayer="0">frozen_2x2</roomAnim>
+			</room>
+			<room id="12">
+				<roomAnim renderLayer="0">frozen_2x2</roomAnim>
+			</room>
+			<room id="13">
+				<roomAnim renderLayer="0">frozen_1x2</roomAnim>
+			</room>
+			<room id="14">
+				<roomAnim renderLayer="0">frozen_1x2</roomAnim>
+			</room>
+		</rooms>
+	</customShip>
+	<!-- enemy --><!-- 1.4 -->
+	<customShip name="TB_AUTO_HUNTER_DLC">
+		<shipIcons>
+            <shipIcon>icon_system_casing</shipIcon>
+			<shipIcon>icon_slug_gel</shipIcon>
+			<shipIcon>icon_cloak_fire</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="TB_AUTO_HUNTER_DLC_2">
+		<shipIcons>
+            <shipIcon>icon_system_casing</shipIcon>
+			<shipIcon>icon_slug_gel</shipIcon>
+			<shipIcon>icon_cloak_fire</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="TB_AUTO_HUNTER_DLC_3">
+		<shipIcons>
+            <shipIcon>icon_system_casing</shipIcon>
+			<shipIcon>icon_slug_gel</shipIcon>
+			<shipIcon>icon_cloak_fire</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="CE_AUTO_SPOTTER_ELITE">
+		<shipIcons>
+            <shipIcon>icon_system_casing</shipIcon>
+			<shipIcon>icon_slug_gel</shipIcon>
+			<shipIcon>icon_cloak_fire</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="JELLY_BUTTON">
+		<shipIcons>
+			<shipIcon>icon_slug_gel</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="JELLY_BUTTON_2">
+		<shipIcons>
+			<shipIcon>icon_slug_gel</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="JELLY_BUTTON_3">
+		<shipIcons>
+			<shipIcon>icon_slug_gel</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="JELLY_CROISSANT">
+		<shipIcons>
+			<shipIcon>icon_slug_gel</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="JELLY_CROISSANT_2">
+		<shipIcons>
+			<shipIcon>icon_slug_gel</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="JELLY_CROISSANT_3">
+		<shipIcons>
+			<shipIcon>icon_slug_gel</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="JELLY_TRUFFLE">
+		<shipIcons>
+			<shipIcon>icon_slug_gel</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="JELLY_TRUFFLE_2">
+		<shipIcons>
+			<shipIcon>icon_slug_gel</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="JELLY_TRUFFLE_3">
+		<shipIcons>
+			<shipIcon>icon_slug_gel</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ROCK_SCOUT">
+		<shipIcons>
+			<shipIcon>icon_rock_armor</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ROCK_SCOUT_2">
+		<shipIcons>
+			<shipIcon>icon_rock_armor</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ROCK_SCOUT_3">
+		<shipIcons>
+			<shipIcon>icon_rock_armor</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ROCK_FIGHT">
+		<shipIcons>
+			<shipIcon>icon_rock_armor</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ROCK_FIGHT_2">
+		<shipIcons>
+			<shipIcon>icon_rock_armor</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ROCK_FIGHT_3">
+		<shipIcons>
+			<shipIcon>icon_rock_armor</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ROCK_ASSAULT">
+		<shipIcons>
+			<shipIcon>icon_rock_armor</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ROCK_ASSAULT_2">
+		<shipIcons>
+			<shipIcon>icon_rock_armor</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ROCK_ASSAULT_3">
+		<shipIcons>
+			<shipIcon>icon_rock_armor</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ROCK_ASSAULT_ELITE">
+		<shipIcons>
+			<shipIcon>icon_rock_armor</shipIcon>
+			<shipIcon>icon_fire_extinguishers</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ROCK_ASSAULT_ELITE_2">
+		<shipIcons>
+			<shipIcon>icon_rock_armor</shipIcon>
+			<shipIcon>icon_fire_extinguishers</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ROCK_ASSAULT_ELITE_3">
+		<shipIcons>
+			<shipIcon>icon_rock_armor</shipIcon>
+			<shipIcon>icon_fire_extinguishers</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="MANTIS_SCOUT">
+		<shipIcons>
+			<shipIcon>icon_crew_stims</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="MANTIS_SCOUT_2">
+		<shipIcons>
+			<shipIcon>icon_crew_stims</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="MANTIS_SCOUT_3">
+		<shipIcons>
+			<shipIcon>icon_crew_stims</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="MANTIS_FIGHTER">
+		<shipIcons>
+			<shipIcon>icon_crew_stims</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="MANTIS_FIGHTER_2">
+		<shipIcons>
+			<shipIcon>icon_crew_stims</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="MANTIS_FIGHTER_3">
+		<shipIcons>
+			<shipIcon>icon_crew_stims</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="MANTIS_BOMBER">
+		<shipIcons>
+			<shipIcon>icon_crew_stims</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="MANTIS_BOMBER_2">
+		<shipIcons>
+			<shipIcon>icon_crew_stims</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="MANTIS_BOMBER_3">
+		<shipIcons>
+			<shipIcon>icon_crew_stims</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="MANTIS_HUNTER">
+		<shipIcons>
+			<shipIcon>icon_crew_stims</shipIcon>
+			<shipIcon>icon_o2_masks</shipIcon>
+			<shipIcon>icon_zoltan_bypass</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="MANTIS_HUNTER_2">
+		<shipIcons>
+			<shipIcon>icon_crew_stims</shipIcon>
+			<shipIcon>icon_o2_masks</shipIcon>
+			<shipIcon>icon_zoltan_bypass</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="MANTIS_HUNTER_3">
+		<shipIcons>
+			<shipIcon>icon_crew_stims</shipIcon>
+			<shipIcon>icon_o2_masks</shipIcon>
+			<shipIcon>icon_zoltan_bypass</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="MANTIS_FOX_1">
+		<shipIcons>
+			<shipIcon>icon_crew_stims</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="MANTIS_FOX_2">
+		<shipIcons>
+			<shipIcon>icon_crew_stims</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="MANTIS_FOX_3">
+		<shipIcons>
+			<shipIcon>icon_crew_stims</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="CIRCLE_SCOUT">
+		<shipIcons>
+			<shipIcon>icon_nano_medbay</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="CIRCLE_SCOUT_2">
+		<shipIcons>
+			<shipIcon>icon_nano_medbay</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="CIRCLE_SCOUT_3">
+		<shipIcons>
+			<shipIcon>icon_nano_medbay</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="CIRCLE_BOMBER">
+		<shipIcons>
+			<shipIcon>icon_nano_medbay</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="CIRCLE_BOMBER_2">
+		<shipIcons>
+			<shipIcon>icon_nano_medbay</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="CIRCLE_BOMBER_3">
+		<shipIcons>
+			<shipIcon>icon_nano_medbay</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ZOLTAN_FIGHTER">
+		<shipIcons>
+			<shipIcon>icon_energy_shield</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ZOLTAN_FIGHTER_2">
+		<shipIcons>
+			<shipIcon>icon_energy_shield</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ZOLTAN_FIGHTER_3">
+		<shipIcons>
+			<shipIcon>icon_energy_shield</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ZOLTAN_BOMBER">
+		<shipIcons>
+			<shipIcon>icon_energy_shield</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ZOLTAN_BOMBER_2">
+		<shipIcons>
+			<shipIcon>icon_energy_shield</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ZOLTAN_BOMBER_3">
+		<shipIcons>
+			<shipIcon>icon_energy_shield</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="CRYSTAL_SCOUT">
+		<shipIcons>
+			<shipIcon>icon_crystal_shards</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="CRYSTAL_SCOUT_2">
+		<shipIcons>
+			<shipIcon>icon_crystal_shards</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="CRYSTAL_SCOUT_3">
+		<shipIcons>
+			<shipIcon>icon_crystal_shards</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="CRYSTAL_BOMBER">
+		<shipIcons>
+			<shipIcon>icon_crystal_shards</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="CRYSTAL_BOMBER_2">
+		<shipIcons>
+			<shipIcon>icon_crystal_shards</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="CRYSTAL_BOMBER_3">
+		<shipIcons>
+			<shipIcon>icon_crystal_shards</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="BS_ROCK_OUTPOST">
+		<shipIcons>
+			<shipIcon>icon_rock_armor</shipIcon>
+			<shipIcon>icon_auto_cooldown</shipIcon>
+			<shipIcon>icon_shield_recharge</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="BS_CIRCLE_EW">
+		<shipIcons>
+			<shipIcon>icon_nano_medbay</shipIcon>
+			<shipIcon>icon_drone_speed</shipIcon>
+			<shipIcon>icon_system_casing</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="BS_ENERGY_CHECKPOINT">
+		<shipIcons>
+			<shipIcon>icon_shield_recharge</shipIcon>
+			<shipIcon>icon_energy_shield</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="BS_JELLY_CHECKPOINT">
+		<shipIcons>
+			<shipIcon>icon_slug_gel</shipIcon>
+			<shipIcon>icon_hacking_stun</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="BS_MANTIS_OUTPOST">
+		<shipIcons>
+			<shipIcon>icon_crew_stims</shipIcon>
+			<shipIcon>icon_shield_recharge</shipIcon>
+			<shipIcon>icon_system_casing</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="BS_MANTIS_OUTPOST2">
+		<shipIcons>
+			<shipIcon>icon_crew_stims</shipIcon>
+			<shipIcon>icon_shield_recharge</shipIcon>
+			<shipIcon>icon_system_casing</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="TB_CRYSTAL_BOMBER_DLC">
+		<shipIcons>
+			<shipIcon>icon_crystal_shards</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="TB_CRYSTAL_BOMBER_DLC_2">
+		<shipIcons>
+			<shipIcon>icon_crystal_shards</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="TB_CRYSTAL_BOMBER_DLC_3">
+		<shipIcons>
+			<shipIcon>icon_crystal_shards</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="BS_ENERGY_SHIELD">
+		<shipIcons>
+			<shipIcon>icon_shield_recharge</shipIcon>
+			<shipIcon>icon_ion_armor</shipIcon>
+			<shipIcon>icon_energy_shield</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="C_AUTO_CRUISER">
+		<shipIcons>
+			<shipIcon>icon_auto_cooldown</shipIcon>
+			<shipIcon>icon_system_casing</shipIcon>
+			<shipIcon>icon_slug_gel</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="BS_AUTO_CONSTRUCTOR">
+		<shipIcons>
+			<shipIcon>icon_system_casing</shipIcon>
+			<shipIcon>icon_slug_gel</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="TB_ROCK_FIGHT_DLC_OUTLAW">
+		<shipIcons>
+			<shipIcon>icon_rock_armor</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="CE_ROCK_ASTEROID">
+		<shipIcons>
+			<shipIcon>icon_rock_armor</shipIcon>
+			<shipIcon>icon_system_casing</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="TB_CIRCLE_SCOUT_DLC">
+		<shipIcons>
+			<shipIcon>icon_nano_medbay</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="TB_CIRCLE_SCOUT_DLC_2">
+		<shipIcons>
+			<shipIcon>icon_nano_medbay</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="TB_CIRCLE_SCOUT_DLC_3">
+		<shipIcons>
+			<shipIcon>icon_nano_medbay</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="BS_ANAEROBIC_HIVE">
+		<shipIcons>
+			<shipIcon>icon_o2_masks</shipIcon>
+			<shipIcon>icon_auto_cooldown</shipIcon>
+			<shipIcon>icon_auto_cooldown</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="C_REBEL_EW_CRUISER">
+		<shipIcons>
+			<shipIcon>icon_zoltan_bypass</shipIcon>
+			<shipIcon>icon_hacking_stun</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="C_REBEL_EW_CRUISER_2">
+		<shipIcons>
+			<shipIcon>icon_zoltan_bypass</shipIcon>
+			<shipIcon>icon_hacking_stun</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="BS_OUTLAW_OUTPOST">
+		<shipIcons>
+			<shipIcon>icon_system_casing</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="TB_JELLY_HUNTER">
+		<shipIcons>
+			<shipIcon>icon_slug_gel</shipIcon>
+			<shipIcon>icon_cloak_fire</shipIcon>
+			<shipIcon>icon_auto_cooldown</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="TB_JELLY_HUNTER_2">
+		<shipIcons>
+			<shipIcon>icon_slug_gel</shipIcon>
+			<shipIcon>icon_cloak_fire</shipIcon>
+			<shipIcon>icon_auto_cooldown</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="TB_JELLY_HUNTER_3">
+		<shipIcons>
+			<shipIcon>icon_slug_gel</shipIcon>
+			<shipIcon>icon_cloak_fire</shipIcon>
+			<shipIcon>icon_auto_cooldown</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="TB_ENERGY_BARGE">
+		<shipIcons>
+			<shipIcon>icon_energy_shield</shipIcon>
+			<shipIcon>icon_shield_recharge</shipIcon>
+			<shipIcon>icon_ion_armor</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="BS_AI_OUTPOST">
+		<shipIcons>
+			<shipIcon>icon_nano_medbay</shipIcon>
+			<shipIcon>icon_ion_armor</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="CE_AI_REPAIR">
+		<shipIcons>
+			<shipIcon>icon_ion_armor</shipIcon>
+			<shipIcon>icon_drone_speed</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="CE_AI_REPAIR_2">
+		<shipIcons>
+			<shipIcon>icon_ion_armor</shipIcon>
+			<shipIcon>icon_drone_speed</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="CE_AI_REPAIR_3">
+		<shipIcons>
+			<shipIcon>icon_ion_armor</shipIcon>
+			<shipIcon>icon_drone_speed</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="CE_AI_INTERCEPTOR">
+		<shipIcons>
+			<shipIcon>icon_nano_medbay</shipIcon>
+			<shipIcon>icon_ion_armor</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="CE_AI_INTERCEPTOR_2">
+		<shipIcons>
+			<shipIcon>icon_nano_medbay</shipIcon>
+			<shipIcon>icon_ion_armor</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="CE_AI_INTERCEPTOR_3">
+		<shipIcons>
+			<shipIcon>icon_nano_medbay</shipIcon>
+			<shipIcon>icon_ion_armor</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="CE_AI_BOMBER">
+		<shipIcons>
+			<shipIcon>icon_nano_medbay</shipIcon>
+			<shipIcon>icon_ion_armor</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="CE_AI_BOMBER_2">
+		<shipIcons>
+			<shipIcon>icon_nano_medbay</shipIcon>
+			<shipIcon>icon_ion_armor</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="1-CE_AI_BOMBER-2">
+		<shipIcons>
+			<shipIcon>icon_nano_medbay</shipIcon>
+			<shipIcon>icon_ion_armor</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="1-CE_AI_BOMBER-3">
+		<shipIcons>
+			<shipIcon>icon_nano_medbay</shipIcon>
+			<shipIcon>icon_ion_armor</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="1-CE_AI_BOMBER-4">
+		<shipIcons>
+			<shipIcon>icon_nano_medbay</shipIcon>
+			<shipIcon>icon_ion_armor</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="1-CE_AI_BOMBER-5">
+		<shipIcons>
+			<shipIcon>icon_nano_medbay</shipIcon>
+			<shipIcon>icon_ion_armor</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="CE_AI_ASSAULT">
+		<shipIcons>
+			<shipIcon>icon_nano_medbay</shipIcon>
+			<shipIcon>icon_ion_armor</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="CE_AI_INSTIGATOR">
+		<shipIcons>
+			<shipIcon>icon_ion_armor</shipIcon>
+			<shipIcon>icon_zoltan_bypass</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="CE_AI_INSTIGATOR_2">
+		<shipIcons>
+			<shipIcon>icon_ion_armor</shipIcon>
+			<shipIcon>icon_zoltan_bypass</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="CE_AI_DEFENDER">
+		<shipIcons>
+			<shipIcon>icon_nano_medbay</shipIcon>
+			<shipIcon>icon_ion_armor</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="CE_AI_DEFENDER_2">
+		<shipIcons>
+			<shipIcon>icon_nano_medbay</shipIcon>
+			<shipIcon>icon_ion_armor</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="CE_AI_HACKER">
+		<shipIcons>
+			<shipIcon>icon_backup_dna</shipIcon>
+			<shipIcon>icon_ion_armor</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="CE_AI_HACKER_2">
+		<shipIcons>
+			<shipIcon>icon_backup_dna</shipIcon>
+			<shipIcon>icon_ion_armor</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="CE_AI_HACKER_3">
+		<shipIcons>
+			<shipIcon>icon_backup_dna</shipIcon>
+			<shipIcon>icon_ion_armor</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ZOLTAN_SCOUT">
+		<shipIcons>
+			<shipIcon>icon_energy_shield</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ZOLTAN_SCOUT_2">
+		<shipIcons>
+			<shipIcon>icon_energy_shield</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ZOLTAN_SCOUT_3">
+		<shipIcons>
+			<shipIcon>icon_energy_shield</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="1_MOTHERSHIP">
+		<shipIcons>
+			<shipIcon>icon_backup_dna</shipIcon>
+			<shipIcon>icon_ion_armor</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="MANTIS_HUNTER_PIRATE">
+		<shipIcons>
+			<shipIcon>icon_crew_stims</shipIcon>
+			<shipIcon>icon_o2_masks</shipIcon>
+			<shipIcon>icon_zoltan_bypass</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ENGI_HUNTER">
+		<shipIcons>
+			<shipIcon>icon_zoltan_bypass</shipIcon>
+			<shipIcon>icon_teleport_heal</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="REBEL_ION_SHIP_1">
+		<shipIcons>
+			<shipIcon>icon_ion_armor</shipIcon>
+			<shipIcon>icon_auto_cooldown</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="CRYSTAL_DREDNOUT">
+		<shipIcons>
+			<shipIcon>icon_crystal_shards</shipIcon>
+			<shipIcon>icon_shield_recharge</shipIcon>
+			<shipIcon>icon_system_casing</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="SLUG_DEPRESSER">
+		<shipIcons>
+			<shipIcon>icon_slug_gel</shipIcon>
+			<shipIcon>icon_defense_scrambler</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="AUTO_PRO">
+		<shipIcons>
+			<shipIcon>icon_shield_recharge</shipIcon>
+			<shipIcon>icon_shield_recharge</shipIcon>
+			<shipIcon>icon_shield_recharge</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ZOLTAN_ARTILLERY">
+		<shipIcons>
+			<shipIcon>icon_energy_shield</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ZOLTAN_ARTILLERY_2">
+		<shipIcons>
+			<shipIcon>icon_energy_shield</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="CIV_GLORY_SUP_1">
+		<shipIcons>
+			<shipIcon>icon_fire_extinguishers</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="CIV_GLORY_SUP_2">
+		<shipIcons>
+			<shipIcon>icon_fire_extinguishers</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="CIV_GLORY_SUP_3">
+		<shipIcons>
+			<shipIcon>icon_fire_extinguishers</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="CIV_GLORY">
+		<shipIcons>
+			<shipIcon>icon_fire_extinguishers</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="CIV_GLORY_2">
+		<shipIcons>
+			<shipIcon>icon_fire_extinguishers</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="CIV_GLORY_3">
+		<shipIcons>
+			<shipIcon>icon_fire_extinguishers</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="CIV_GLORY_CLASSIC">
+		<shipIcons>
+			<shipIcon>icon_fire_extinguishers</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="CIV_GLORY_CLASSIC_2">
+		<shipIcons>
+			<shipIcon>icon_fire_extinguishers</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="CIV_GLORY_CLASSIC_3">
+		<shipIcons>
+			<shipIcon>icon_fire_extinguishers</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="CIV_GLORY_BOMBER">
+		<shipIcons>
+			<shipIcon>icon_fire_extinguishers</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="CIV_GLORY_BOMBER_2">
+		<shipIcons>
+			<shipIcon>icon_fire_extinguishers</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="CIV_GLORY_BOMBER_3">
+		<shipIcons>
+			<shipIcon>icon_fire_extinguishers</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="CIV_GLORY_ART">
+		<shipIcons>
+			<shipIcon>icon_fire_extinguishers</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="CIV_GLORY_ART_2">
+		<shipIcons>
+			<shipIcon>icon_fire_extinguishers</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="CIV_GLORY_ART_3">
+		<shipIcons>
+			<shipIcon>icon_fire_extinguishers</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="CIV_GLORY_FLAGSHIP">
+		<shipIcons>
+			<shipIcon>icon_fire_extinguishers</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="CIV_GLORY_FLAGSHIP_2">
+		<shipIcons>
+			<shipIcon>icon_fire_extinguishers</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="CIV_GLORY_FLAGSHIP_3">
+		<shipIcons>
+			<shipIcon>icon_fire_extinguishers</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="CIRCLE_SCOUT_CRAZY">
+		<shipIcons>
+			<shipIcon>icon_nano_medbay</shipIcon>
+			<shipIcon>icon_zoltan_bypass</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="AUTO_DRONEQUEEN">
+		<shipIcons>
+			<shipIcon>icon_defense_scrambler</shipIcon>
+			<shipIcon>icon_shield_recharge</shipIcon>
+			<shipIcon>icon_system_casing</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="CIV_GLORY_STATION">
+		<shipIcons>
+			<shipIcon>icon_fire_extinguishers</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="MANTIS_BOSS_1">
+		<shipIcons>
+			<shipIcon>icon_backup_dna</shipIcon>
+			<shipIcon>icon_teleport_heal</shipIcon>
+			<shipIcon>icon_crew_stims</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="MANTIS_BOSS_2">
+		<shipIcons>
+			<shipIcon>icon_backup_dna</shipIcon>
+			<shipIcon>icon_teleport_heal</shipIcon>
+			<shipIcon>icon_crew_stims</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="MANTIS_FIGHTER_ROCKER">
+		<shipIcons>
+			<shipIcon>icon_crew_stims</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="JELLY_BUTTON_PROHACK_1">
+		<shipIcons>
+			<shipIcon>icon_slug_gel</shipIcon>
+			<shipIcon>icon_hacking_stun</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="JELLY_BUTTON_PROHACK_2">
+		<shipIcons>
+			<shipIcon>icon_slug_gel</shipIcon>
+			<shipIcon>icon_hacking_stun</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="JELLY_BUTTON_PROHACK_3">
+		<shipIcons>
+			<shipIcon>icon_slug_gel</shipIcon>
+			<shipIcon>icon_hacking_stun</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="JELLY_CROISSANT_PROHACK_1">
+		<shipIcons>
+			<shipIcon>icon_slug_gel</shipIcon>
+			<shipIcon>icon_hacking_stun</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="JELLY_CROISSANT_PROHACK_2">
+		<shipIcons>
+			<shipIcon>icon_slug_gel</shipIcon>
+			<shipIcon>icon_hacking_stun</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="JELLY_CROISSANT_PROHACK_3">
+		<shipIcons>
+			<shipIcon>icon_slug_gel</shipIcon>
+			<shipIcon>icon_hacking_stun</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="JELLY_TRUFFLE_PROHACK_1">
+		<shipIcons>
+			<shipIcon>icon_slug_gel</shipIcon>
+			<shipIcon>icon_hacking_stun</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="JELLY_TRUFFLE_PROHACK_2">
+		<shipIcons>
+			<shipIcon>icon_slug_gel</shipIcon>
+			<shipIcon>icon_hacking_stun</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="JELLY_TRUFFLE_PROHACK_3">
+		<shipIcons>
+			<shipIcon>icon_slug_gel</shipIcon>
+			<shipIcon>icon_hacking_stun</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="FED_BARGE">
+		<shipIcons>
+			<shipIcon>icon_cloak_fire</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ROCK_FLAGSHIP">
+		<shipIcons>
+			<shipIcon>icon_rock_armor</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="CIRCLE_ART">
+		<shipIcons>
+			<shipIcon>icon_nano_medbay</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="CIRCLE_SENSOR_MINI">
+		<shipIcons>
+			<shipIcon>icon_nano_medbay</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="HAL_1000">
+		<shipIcons>
+			<shipIcon>icon_battery_hal</shipIcon>
+			<shipIcon>icon_defense_scrambler</shipIcon>
+			<shipIcon>icon_system_casing</shipIcon>
+			<shipIcon>icon_slug_gel</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="HAL_1001">
+		<shipIcons>
+			<shipIcon>icon_battery_hal</shipIcon>
+			<shipIcon>icon_defense_scrambler</shipIcon>
+			<shipIcon>icon_system_casing</shipIcon>
+			<shipIcon>icon_slug_gel</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="HAL_1002">
+		<shipIcons>
+			<shipIcon>icon_battery_hal</shipIcon>
+			<shipIcon>icon_defense_scrambler</shipIcon>
+			<shipIcon>icon_system_casing</shipIcon>
+			<shipIcon>icon_slug_gel</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="HAL_1300">
+		<shipIcons>
+			<shipIcon>icon_battery_hal</shipIcon>
+			<shipIcon>icon_defense_scrambler</shipIcon>
+			<shipIcon>icon_system_casing</shipIcon>
+			<shipIcon>icon_slug_gel</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="HAL_1301">
+		<shipIcons>
+			<shipIcon>icon_battery_hal</shipIcon>
+			<shipIcon>icon_defense_scrambler</shipIcon>
+			<shipIcon>icon_system_casing</shipIcon>
+			<shipIcon>icon_slug_gel</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="HAL_1302">
+		<shipIcons>
+			<shipIcon>icon_battery_hal</shipIcon>
+			<shipIcon>icon_defense_scrambler</shipIcon>
+			<shipIcon>icon_system_casing</shipIcon>
+			<shipIcon>icon_slug_gel</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="HAL_1600">
+		<shipIcons>
+			<shipIcon>icon_battery_hal</shipIcon>
+			<shipIcon>icon_defense_scrambler</shipIcon>
+			<shipIcon>icon_system_casing</shipIcon>
+			<shipIcon>icon_slug_gel</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="HAL_1601">
+		<shipIcons>
+			<shipIcon>icon_battery_hal</shipIcon>
+			<shipIcon>icon_defense_scrambler</shipIcon>
+			<shipIcon>icon_system_casing</shipIcon>
+			<shipIcon>icon_slug_gel</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="HAL_1602">
+		<shipIcons>
+			<shipIcon>icon_battery_hal</shipIcon>
+			<shipIcon>icon_defense_scrambler</shipIcon>
+			<shipIcon>icon_system_casing</shipIcon>
+			<shipIcon>icon_slug_gel</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="HAL_2000">
+		<shipIcons>
+			<shipIcon>icon_battery_hal</shipIcon>
+			<shipIcon>icon_defense_scrambler</shipIcon>
+			<shipIcon>icon_system_casing</shipIcon>
+			<shipIcon>icon_slug_gel</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="HAL_2001">
+		<shipIcons>
+			<shipIcon>icon_battery_hal</shipIcon>
+			<shipIcon>icon_defense_scrambler</shipIcon>
+			<shipIcon>icon_system_casing</shipIcon>
+			<shipIcon>icon_slug_gel</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="HAL_2002">
+		<shipIcons>
+			<shipIcon>icon_battery_hal</shipIcon>
+			<shipIcon>icon_defense_scrambler</shipIcon>
+			<shipIcon>icon_system_casing</shipIcon>
+			<shipIcon>icon_slug_gel</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="HAL_2300">
+		<shipIcons>
+			<shipIcon>icon_battery_hal</shipIcon>
+			<shipIcon>icon_defense_scrambler</shipIcon>
+			<shipIcon>icon_system_casing</shipIcon>
+			<shipIcon>icon_slug_gel</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="HAL_2301">
+		<shipIcons>
+			<shipIcon>icon_battery_hal</shipIcon>
+			<shipIcon>icon_defense_scrambler</shipIcon>
+			<shipIcon>icon_system_casing</shipIcon>
+			<shipIcon>icon_slug_gel</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="HAL_2302">
+		<shipIcons>
+			<shipIcon>icon_battery_hal</shipIcon>
+			<shipIcon>icon_defense_scrambler</shipIcon>
+			<shipIcon>icon_system_casing</shipIcon>
+			<shipIcon>icon_slug_gel</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="HAL_2600">
+		<shipIcons>
+			<shipIcon>icon_battery_hal</shipIcon>
+			<shipIcon>icon_defense_scrambler</shipIcon>
+			<shipIcon>icon_system_casing</shipIcon>
+			<shipIcon>icon_slug_gel</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="HAL_2601">
+		<shipIcons>
+			<shipIcon>icon_battery_hal</shipIcon>
+			<shipIcon>icon_defense_scrambler</shipIcon>
+			<shipIcon>icon_system_casing</shipIcon>
+			<shipIcon>icon_slug_gel</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="HAL_2602">
+		<shipIcons>
+			<shipIcon>icon_battery_hal</shipIcon>
+			<shipIcon>icon_defense_scrambler</shipIcon>
+			<shipIcon>icon_system_casing</shipIcon>
+			<shipIcon>icon_slug_gel</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="HAL_3000">
+		<shipIcons>
+			<shipIcon>icon_battery_hal</shipIcon>
+			<shipIcon>icon_defense_scrambler</shipIcon>
+			<shipIcon>icon_system_casing</shipIcon>
+			<shipIcon>icon_slug_gel</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="HAL_3001">
+		<shipIcons>
+			<shipIcon>icon_battery_hal</shipIcon>
+			<shipIcon>icon_defense_scrambler</shipIcon>
+			<shipIcon>icon_system_casing</shipIcon>
+			<shipIcon>icon_slug_gel</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="HAL_3002">
+		<shipIcons>
+			<shipIcon>icon_battery_hal</shipIcon>
+			<shipIcon>icon_defense_scrambler</shipIcon>
+			<shipIcon>icon_system_casing</shipIcon>
+			<shipIcon>icon_slug_gel</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="HAL_3300">
+		<shipIcons>
+			<shipIcon>icon_battery_hal</shipIcon>
+			<shipIcon>icon_defense_scrambler</shipIcon>
+			<shipIcon>icon_system_casing</shipIcon>
+			<shipIcon>icon_slug_gel</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="HAL_3301">
+		<shipIcons>
+			<shipIcon>icon_battery_hal</shipIcon>
+			<shipIcon>icon_defense_scrambler</shipIcon>
+			<shipIcon>icon_system_casing</shipIcon>
+			<shipIcon>icon_slug_gel</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="HAL_3302">
+		<shipIcons>
+			<shipIcon>icon_battery_hal</shipIcon>
+			<shipIcon>icon_defense_scrambler</shipIcon>
+			<shipIcon>icon_system_casing</shipIcon>
+			<shipIcon>icon_slug_gel</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="HAL_3600">
+		<shipIcons>
+			<shipIcon>icon_battery_hal</shipIcon>
+			<shipIcon>icon_defense_scrambler</shipIcon>
+			<shipIcon>icon_system_casing</shipIcon>
+			<shipIcon>icon_slug_gel</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="HAL_3601">
+		<shipIcons>
+			<shipIcon>icon_battery_hal</shipIcon>
+			<shipIcon>icon_defense_scrambler</shipIcon>
+			<shipIcon>icon_system_casing</shipIcon>
+			<shipIcon>icon_slug_gel</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="HAL_3602">
+		<shipIcons>
+			<shipIcon>icon_battery_hal</shipIcon>
+			<shipIcon>icon_defense_scrambler</shipIcon>
+			<shipIcon>icon_system_casing</shipIcon>
+			<shipIcon>icon_slug_gel</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="AI_CORE">
+		<shipIcons>
+			<shipIcon>icon_ion_armor</shipIcon>
+			<shipIcon>icon_nano_medbay</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="HAL_BOSS">
+		<shipIcons>
+			<shipIcon>icon_battery_hal</shipIcon>
+			<shipIcon>icon_defense_scrambler</shipIcon>
+			<shipIcon>icon_system_casing</shipIcon>
+			<shipIcon>icon_slug_gel</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="MANTIS_SCOUT_K">
+		<shipIcons>
+			<shipIcon>icon_crew_stims</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="MANTIS_HAL_HUNTER">
+		<shipIcons>
+			<shipIcon>icon_crew_stims</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="PIRATE_BOSS_O2">
+		<shipIcons>
+			<shipIcon>icon_o2_masks</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="PIRATE_BOSS_FIR">
+		<shipIcons>
+			<shipIcon>icon_fire_extinguishers</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="PIRATE_BOSS_HEA">
+		<shipIcons>
+			<shipIcon>icon_teleport_heal</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="PIRATE_BOSS_BYP">
+		<shipIcons>
+			<shipIcon>icon_zoltan_bypass</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="PIRATE_BOSS_CRE">
+		<shipIcons>
+			<shipIcon>icon_crew_stims</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="PIRATE_BOSS_SHI">
+		<shipIcons>
+			<shipIcon>icon_shield_recharge</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="PIRATE_BOSS_GEL">
+		<shipIcons>
+			<shipIcon>icon_slug_gel</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="PIRATE_BOSS_ROC">
+		<shipIcons>
+			<shipIcon>icon_rock_armor</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="PIRATE_BOSS_ENE">
+		<shipIcons>
+			<shipIcon>icon_energy_shield</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="PIRATE_BOSS_SYS">
+		<shipIcons>
+			<shipIcon>icon_system_casing</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="PIRATE_BOSS_ION">
+		<shipIcons>
+			<shipIcon>icon_ion_armor</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="HAL_1001_LANI">
+		<shipIcons>
+			<shipIcon>icon_slug_gel</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="CIRCLE_MANTIS_BOMBER">
+		<shipIcons>
+			<shipIcon>icon_nano_medbay</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="HAL_MEGADEATH">
+		<shipIcons>
+			<shipIcon>icon_rock_armor</shipIcon>
+			<shipIcon>icon_system_casing</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="JELLY_HACK_BOSS">
+		<shipIcons>
+			<shipIcon>icon_hacking_stun</shipIcon>
+			<shipIcon>icon_slug_gel</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ROCK_ARMORED_1">
+		<shipIcons>
+			<shipIcon>icon_rock_armor</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ROCK_ARMORED_2">
+		<shipIcons>
+			<shipIcon>icon_rock_armor</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ROCK_ARMORED_3">
+		<shipIcons>
+			<shipIcon>icon_rock_armor</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ZOLTAN_BIGBIG">
+		<shipIcons>
+			<shipIcon>icon_energy_shield</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="JELLY_CROISSANT_BYPASS">
+		<shipIcons>
+			<shipIcon>icon_slug_gel</shipIcon>
+			<shipIcon>icon_zoltan_bypass</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="INVISIBLE_SHIP">
+		<shipIcons>
+			<shipIcon>icon_system_casing</shipIcon>
+			<shipIcon>icon_slug_gel</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="INVISIBLE_SHIP_2">
+		<shipIcons>
+			<shipIcon>icon_auto_cooldown</shipIcon>
+			<shipIcon>icon_slug_gel</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="INVISIBLE_SHIP_3">
+		<shipIcons>
+			<shipIcon>icon_auto_cooldown</shipIcon>
+			<shipIcon>icon_auto_cooldown</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ENERGY_BOSS">
+		<shipIcons>
+			<shipIcon>icon_energy_shield</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="JELLY_TRUFFLE_S">
+		<shipIcons>
+			<shipIcon>icon_slug_gel</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="DECEPTICON_SHIP">
+		<shipIcons>
+			<shipIcon>icon_drone_speed</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ZOLTAN_BLINK">
+		<shipIcons>
+			<shipIcon>icon_energy_shield</shipIcon>
+			<shipIcon>icon_fire_extinguishers</shipIcon>
+			<shipIcon>icon_ion_armor</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ZOLTAN_BLINK2">
+		<shipIcons>
+			<shipIcon>icon_energy_shield</shipIcon>
+			<shipIcon>icon_fire_extinguishers</shipIcon>
+			<shipIcon>icon_ion_armor</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ZOLTAN_BLINK3">
+		<shipIcons>
+			<shipIcon>icon_energy_shield</shipIcon>
+			<shipIcon>icon_fire_extinguishers</shipIcon>
+			<shipIcon>icon_ion_armor</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ZOLTAN_BLINK4">
+		<shipIcons>
+			<shipIcon>icon_energy_shield</shipIcon>
+			<shipIcon>icon_fire_extinguishers</shipIcon>
+			<shipIcon>icon_ion_armor</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ZOLTAN_BLINK5">
+		<shipIcons>
+			<shipIcon>icon_energy_shield</shipIcon>
+			<shipIcon>icon_fire_extinguishers</shipIcon>
+			<shipIcon>icon_ion_armor</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="PIRATE_SPECIAL">
+		<shipIcons>
+			<shipIcon>icon_drone_speed</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="CRYSTAL_KEEPER">
+		<shipIcons>
+			<shipIcon>icon_crystal_shards</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="CRYSTAL_KEEPER_2">
+		<shipIcons>
+			<shipIcon>icon_crystal_shards</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="CRYSTAL_KEEPER_3">
+		<shipIcons>
+			<shipIcon>icon_crystal_shards</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="AUTO_FEDHELP">
+		<shipIcons>
+			<shipIcon>icon_auto_cooldown</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="BS_CRYSTAL_STATION">
+		<shipIcons>
+			<shipIcon>icon_crystal_shards</shipIcon>
+			<shipIcon>icon_drone_speed</shipIcon>
+			<shipIcon>icon_auto_cooldown</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="MANTIS_WRKD">
+		<shipIcons>
+			<shipIcon>icon_crew_stims</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="TR_SHIP">
+		<shipIcons>
+			<shipIcon>icon_fire_extinguishers</shipIcon>
+			<shipIcon>icon_system_casing</shipIcon>
+			<shipIcon>icon_drone_speed</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="FED_STATION">
+		<shipIcons>
+			<shipIcon>icon_o2_masks</shipIcon>
+			<shipIcon>icon_drone_speed</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ROCKSLUG">
+		<shipIcons>
+			<shipIcon>icon_rock_armor</shipIcon>
+			<shipIcon>icon_slug_gel</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="CIRCLE_PIRATRADER">
+		<shipIcons>
+			<shipIcon>icon_nano_medbay</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="FED_BOMBER_DX">
+		<shipIcons>
+			<shipIcon>icon_auto_cooldown</shipIcon>
+			<shipIcon>icon_shield_recharge</shipIcon>
+			<shipIcon>icon_drone_speed</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="AUTO_AGRESSOR_1">
+		<shipIcons>
+			<shipIcon>icon_hacking_stun</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="AUTO_AGRESSOR_2">
+		<shipIcons>
+			<shipIcon>icon_hacking_stun</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="AUTO_AGRESSOR_3">
+		<shipIcons>
+			<shipIcon>icon_hacking_stun</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="AUTO_BOXER_1">
+		<shipIcons>
+			<shipIcon>icon_auto_cooldown</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="AUTO_BOXER_2">
+		<shipIcons>
+			<shipIcon>icon_auto_cooldown</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="AUTO_BOXER_3">
+		<shipIcons>
+			<shipIcon>icon_auto_cooldown</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="AUTO_RAPID_1">
+		<shipIcons>
+			<shipIcon>icon_auto_cooldown</shipIcon>
+			<shipIcon>icon_auto_cooldown</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="AUTO_RAPID_2">
+		<shipIcons>
+			<shipIcon>icon_auto_cooldown</shipIcon>
+			<shipIcon>icon_auto_cooldown</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="AUTO_RAPID_3">
+		<shipIcons>
+			<shipIcon>icon_auto_cooldown</shipIcon>
+			<shipIcon>icon_auto_cooldown</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="REBEL_ELITE_ETG">
+		<shipIcons>
+			<shipIcon>icon_cloak_fire</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="FED_TRBARREL">
+		<shipIcons>
+			<shipIcon>icon_drone_speed</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="FED_TRBOX">
+		<shipIcons>
+			<shipIcon>icon_drone_speed</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="FED_TRBARREL_P">
+		<shipIcons>
+			<shipIcon>icon_drone_speed</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="FED_TRBOX_P">
+		<shipIcons>
+			<shipIcon>icon_drone_speed</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ROCK_ARTILLERY_1">
+		<shipIcons>
+			<shipIcon>icon_rock_armor</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ROCK_ARTILLERY_2">
+		<shipIcons>
+			<shipIcon>icon_rock_armor</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ROCK_ARTILLERY_3">
+		<shipIcons>
+			<shipIcon>icon_rock_armor</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ENERGYX_BOMBER_1">
+		<shipIcons>
+			<shipIcon>icon_battery_booster</shipIcon>
+			<shipIcon>icon_energyx</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ENERGYX_BOMBER_2">
+		<shipIcons>
+			<shipIcon>icon_battery_booster</shipIcon>
+			<shipIcon>icon_energyx</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ENERGYX_BOMBER_3">
+		<shipIcons>
+			<shipIcon>icon_battery_booster</shipIcon>
+			<shipIcon>icon_energyx</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ENERGYX_BOMBER_4">
+		<shipIcons>
+			<shipIcon>icon_battery_booster</shipIcon>
+			<shipIcon>icon_energyx</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ENERGYX_FIGHTER_1">
+		<shipIcons>
+			<shipIcon>icon_battery_booster</shipIcon>
+			<shipIcon>icon_energyx</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ENERGYX_FIGHTER_2">
+		<shipIcons>
+			<shipIcon>icon_battery_booster</shipIcon>
+			<shipIcon>icon_energyx</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ENERGYX_FIGHTER_3">
+		<shipIcons>
+			<shipIcon>icon_battery_booster</shipIcon>
+			<shipIcon>icon_energyx</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ENERGYX_FIGHTER_4">
+		<shipIcons>
+			<shipIcon>icon_battery_booster</shipIcon>
+			<shipIcon>icon_energyx</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ENERGYX_SCOUT_1">
+		<shipIcons>
+			<shipIcon>icon_battery_booster</shipIcon>
+			<shipIcon>icon_energyx</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ENERGYX_SCOUT_2">
+		<shipIcons>
+			<shipIcon>icon_battery_booster</shipIcon>
+			<shipIcon>icon_energyx</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ENERGYX_SCOUT_3">
+		<shipIcons>
+			<shipIcon>icon_battery_booster</shipIcon>
+			<shipIcon>icon_energyx</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ENERGYX_SCOUT_4">
+		<shipIcons>
+			<shipIcon>icon_battery_booster</shipIcon>
+			<shipIcon>icon_energyx</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ENERGYX_BOSS_1">
+		<shipIcons>
+			<shipIcon>icon_battery_booster</shipIcon>
+			<shipIcon>icon_energyx</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ENERGYX_BOSS_2">
+		<shipIcons>
+			<shipIcon>icon_battery_booster</shipIcon>
+			<shipIcon>icon_energyx</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ENERGYX_AUTO_1">
+		<shipIcons>
+			<shipIcon>icon_battery_booster</shipIcon>
+			<shipIcon>icon_energyx</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ENERGYX_AUTO_2">
+		<shipIcons>
+			<shipIcon>icon_battery_booster</shipIcon>
+			<shipIcon>icon_energyx</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ENERGYX_AUTO_3">
+		<shipIcons>
+			<shipIcon>icon_battery_booster</shipIcon>
+			<shipIcon>icon_energyx</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ENERGYX_AUTOB_1">
+		<shipIcons>
+			<shipIcon>icon_battery_booster</shipIcon>
+			<shipIcon>icon_energyx</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ENERGYX_AUTOB_2">
+		<shipIcons>
+			<shipIcon>icon_battery_booster</shipIcon>
+			<shipIcon>icon_energyx</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ENERGYX_AUTOB_3">
+		<shipIcons>
+			<shipIcon>icon_battery_booster</shipIcon>
+			<shipIcon>icon_energyx</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ENERGYX_AUTO_RAZ_1">
+		<shipIcons>
+			<shipIcon>icon_battery_booster</shipIcon>
+			<shipIcon>icon_energyx</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ENERGYX_AUTO_RAZ_2">
+		<shipIcons>
+			<shipIcon>icon_battery_booster</shipIcon>
+			<shipIcon>icon_energyx</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ENERGYX_AUTO_RAZ_3">
+		<shipIcons>
+			<shipIcon>icon_battery_booster</shipIcon>
+			<shipIcon>icon_energyx</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="BS_ENERGYX">
+		<shipIcons>
+			<shipIcon>icon_shield_recharge</shipIcon>
+			<shipIcon>icon_battery_booster</shipIcon>
+			<shipIcon>icon_energyx</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="MOTILEK_BLUE_1">
+		<shipIcons>
+			<shipIcon>icon_zoltan_bypass</shipIcon>
+			<shipIcon>icon_auto_cooldown</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="MOTILEK_BLUE_2">
+		<shipIcons>
+			<shipIcon>icon_zoltan_bypass</shipIcon>
+			<shipIcon>icon_auto_cooldown</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="MOTILEK_BLUE_3">
+		<shipIcons>
+			<shipIcon>icon_zoltan_bypass</shipIcon>
+			<shipIcon>icon_auto_cooldown</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="MOTILEK_GREEN_1">
+		<shipIcons>
+			<shipIcon>icon_zoltan_bypass</shipIcon>
+			<shipIcon>icon_auto_cooldown</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="MOTILEK_GREEN_2">
+		<shipIcons>
+			<shipIcon>icon_zoltan_bypass</shipIcon>
+			<shipIcon>icon_auto_cooldown</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="MOTILEK_GREEN_3">
+		<shipIcons>
+			<shipIcon>icon_zoltan_bypass</shipIcon>
+			<shipIcon>icon_auto_cooldown</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="MOTILEK_VIO_1">
+		<shipIcons>
+			<shipIcon>icon_zoltan_bypass</shipIcon>
+			<shipIcon>icon_auto_cooldown</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="MOTILEK_VIO_2">
+		<shipIcons>
+			<shipIcon>icon_zoltan_bypass</shipIcon>
+			<shipIcon>icon_auto_cooldown</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="MOTILEK_VIO_3">
+		<shipIcons>
+			<shipIcon>icon_zoltan_bypass</shipIcon>
+			<shipIcon>icon_auto_cooldown</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ABYSSEYE_1">
+		<shipIcons>
+			<shipIcon>icon_system_casing</shipIcon>
+			<shipIcon>icon_drone_speed</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ABYSSEYE_2">
+		<shipIcons>
+			<shipIcon>icon_system_casing</shipIcon>
+			<shipIcon>icon_drone_speed</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ABYSSEYE_3">
+		<shipIcons>
+			<shipIcon>icon_system_casing</shipIcon>
+			<shipIcon>icon_drone_speed</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ABYSSEYE_4">
+		<shipIcons>
+			<shipIcon>icon_system_casing</shipIcon>
+			<shipIcon>icon_drone_speed</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ABYSSEYE_5">
+		<shipIcons>
+			<shipIcon>icon_system_casing</shipIcon>
+			<shipIcon>icon_drone_speed</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ENERGYX_STATION_M">
+		<shipIcons>
+			<shipIcon>icon_battery_booster</shipIcon>
+			<shipIcon>icon_energyx</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ENERGYX_BOMBER_1_S">
+		<shipIcons>
+			<shipIcon>icon_battery_booster</shipIcon>
+			<shipIcon>icon_energyx</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ENERGYX_FIGHTER_1_S">
+		<shipIcons>
+			<shipIcon>icon_battery_booster</shipIcon>
+			<shipIcon>icon_energyx</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ENERGYX_SCOUT_1_S">
+		<shipIcons>
+			<shipIcon>icon_battery_booster</shipIcon>
+			<shipIcon>icon_energyx</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="CON_STATION">
+		<shipIcons>
+			<shipIcon>icon_auto_cooldown</shipIcon>
+			<shipIcon>icon_system_casing</shipIcon>
+			<shipIcon>icon_backup_dna</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ENERGYX_AUTO_1_PROG">
+		<shipIcons>
+			<shipIcon>icon_battery_booster</shipIcon>
+			<shipIcon>icon_auto_cooldown</shipIcon>
+			<shipIcon>icon_energyx</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="BCIRCLE_EZ_SCOUT_1">
+		<shipIcons>
+			<shipIcon>icon_energy_shield</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="BCIRCLE_EZ_SCOUT_2">
+		<shipIcons>
+			<shipIcon>icon_energy_shield</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="BCIRCLE_EZ_SCOUT_1B">
+		<shipIcons>
+			<shipIcon>icon_energy_shield</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="BCIRCLE_EZ_SCOUT_2B">
+		<shipIcons>
+			<shipIcon>icon_energy_shield</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="BCIRCLE_EZ_BOMBER_1">
+		<shipIcons>
+			<shipIcon>icon_energy_shield</shipIcon>
+			<shipIcon>icon_backup_dna</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="BCIRCLE_EZ_BOMBER_2">
+		<shipIcons>
+			<shipIcon>icon_energy_shield</shipIcon>
+			<shipIcon>icon_backup_dna</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="BCIRCLE_EZ_BOMBER_1B">
+		<shipIcons>
+			<shipIcon>icon_energy_shield</shipIcon>
+			<shipIcon>icon_nano_medbay</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="BCIRCLE_EZ_BOMBER_2B">
+		<shipIcons>
+			<shipIcon>icon_energy_shield</shipIcon>
+			<shipIcon>icon_nano_medbay</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="BCIRCLE_ES_SCOUT_1">
+		<shipIcons>
+			<shipIcon>icon_slug_gel</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="BCIRCLE_ES_SCOUT_2">
+		<shipIcons>
+			<shipIcon>icon_slug_gel</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="BCIRCLE_ES_SCOUT_1B">
+		<shipIcons>
+			<shipIcon>icon_slug_gel</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="BCIRCLE_ES_SCOUT_2B">
+		<shipIcons>
+			<shipIcon>icon_slug_gel</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="BCIRCLE_ES_BOMBER_1">
+		<shipIcons>
+			<shipIcon>icon_backup_dna</shipIcon>
+			<shipIcon>icon_slug_gel</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="BCIRCLE_ES_BOMBER_2">
+		<shipIcons>
+			<shipIcon>icon_backup_dna</shipIcon>
+			<shipIcon>icon_slug_gel</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="BCIRCLE_ES_BOMBER_1B">
+		<shipIcons>
+			<shipIcon>icon_nano_medbay</shipIcon>
+			<shipIcon>icon_slug_gel</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="BCIRCLE_ES_BOMBER_2B">
+		<shipIcons>
+			<shipIcon>icon_nano_medbay</shipIcon>
+			<shipIcon>icon_slug_gel</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="BCIRCLE_ER_SCOUT_1">
+		<shipIcons>
+			<shipIcon>icon_rock_armor</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="BCIRCLE_ER_SCOUT_2">
+		<shipIcons>
+			<shipIcon>icon_rock_armor</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="BCIRCLE_ER_SCOUT_1B">
+		<shipIcons>
+			<shipIcon>icon_rock_armor</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="BCIRCLE_ER_SCOUT_2B">
+		<shipIcons>
+			<shipIcon>icon_rock_armor</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="BCIRCLE_ER_BOMBER_1">
+		<shipIcons>
+			<shipIcon>icon_backup_dna</shipIcon>
+			<shipIcon>icon_rock_armor</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="BCIRCLE_ER_BOMBER_2">
+		<shipIcons>
+			<shipIcon>icon_backup_dna</shipIcon>
+			<shipIcon>icon_rock_armor</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="BCIRCLE_ER_BOMBER_1B">
+		<shipIcons>
+			<shipIcon>icon_nano_medbay</shipIcon>
+			<shipIcon>icon_rock_armor</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="BCIRCLE_ER_BOMBER_2B">
+		<shipIcons>
+			<shipIcon>icon_nano_medbay</shipIcon>
+			<shipIcon>icon_rock_armor</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="BCIRCLE_EM_SCOUT_1">
+		<shipIcons>
+			<shipIcon>icon_crew_stims</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="BCIRCLE_EM_SCOUT_2">
+		<shipIcons>
+			<shipIcon>icon_crew_stims</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="BCIRCLE_EM_SCOUT_1B">
+		<shipIcons>
+			<shipIcon>icon_crew_stims</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="BCIRCLE_EM_SCOUT_2B">
+		<shipIcons>
+			<shipIcon>icon_crew_stims</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="BCIRCLE_EM_BOMBER_1">
+		<shipIcons>
+			<shipIcon>icon_backup_dna</shipIcon>
+			<shipIcon>icon_crew_stims</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="BCIRCLE_EM_BOMBER_2">
+		<shipIcons>
+			<shipIcon>icon_backup_dna</shipIcon>
+			<shipIcon>icon_crew_stims</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="BCIRCLE_EM_BOMBER_1B">
+		<shipIcons>
+			<shipIcon>icon_nano_medbay</shipIcon>
+			<shipIcon>icon_crew_stims</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="BCIRCLE_EM_BOMBER_2B">
+		<shipIcons>
+			<shipIcon>icon_nano_medbay</shipIcon>
+			<shipIcon>icon_crew_stims</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="BCIRCLE_BOSSNOZLT">
+		<shipIcons>
+			<shipIcon>icon_rock_armor</shipIcon>
+			<shipIcon>icon_crew_stims</shipIcon>
+			<shipIcon>icon_slug_gel</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="BCIRCLE_BOSSNOSLG">
+		<shipIcons>
+			<shipIcon>icon_rock_armor</shipIcon>
+			<shipIcon>icon_crew_stims</shipIcon>
+			<shipIcon>icon_energy_shield</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="BCIRCLE_BOSSNORCK">
+		<shipIcons>
+			<shipIcon>icon_energy_shield</shipIcon>
+			<shipIcon>icon_crew_stims</shipIcon>
+			<shipIcon>icon_slug_gel</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="BCIRCLE_BOSSNOMAN">
+		<shipIcons>
+			<shipIcon>icon_energy_shield</shipIcon>
+			<shipIcon>icon_rock_armor</shipIcon>
+			<shipIcon>icon_slug_gel</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ANAEROBIC_PROV_1">
+		<shipIcons>
+			<shipIcon>icon_o2_masks</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ANAEROBIC_PROV_2">
+		<shipIcons>
+			<shipIcon>icon_o2_masks</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ANAEROBIC_PROV_3">
+		<shipIcons>
+			<shipIcon>icon_o2_masks</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ANAEROBIC_PHO_1">
+		<shipIcons>
+			<shipIcon>icon_o2_masks</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ANAEROBIC_PHO_2">
+		<shipIcons>
+			<shipIcon>icon_o2_masks</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ANAEROBIC_PHO_3">
+		<shipIcons>
+			<shipIcon>icon_o2_masks</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ANAEROBIC_HARV_1">
+		<shipIcons>
+			<shipIcon>icon_teleport_heal</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ANAEROBIC_HARV_2">
+		<shipIcons>
+			<shipIcon>icon_teleport_heal</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ANAEROBIC_HARV_3">
+		<shipIcons>
+			<shipIcon>icon_teleport_heal</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="BCIRCLE_ZOND_R">
+		<shipIcons>
+			<shipIcon>icon_rock_armor</shipIcon>
+			<shipIcon>icon_auto_cooldown</shipIcon>
+			<shipIcon>icon_auto_cooldown</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="BCIRCLE_ZOND_S">
+		<shipIcons>
+			<shipIcon>icon_slug_gel</shipIcon>
+			<shipIcon>icon_auto_cooldown</shipIcon>
+			<shipIcon>icon_auto_cooldown</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="BCIRCLE_ZOND_M">
+		<shipIcons>
+			<shipIcon>icon_auto_cooldown</shipIcon>
+			<shipIcon>icon_auto_cooldown</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="BCIRCLE_ZOND_Z">
+		<shipIcons>
+			<shipIcon>icon_energy_shield</shipIcon>
+			<shipIcon>icon_auto_cooldown</shipIcon>
+			<shipIcon>icon_auto_cooldown</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ZOLTAN_HUNTER_1">
+		<shipIcons>
+			<shipIcon>icon_energy_shield</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ZOLTAN_HUNTER_2">
+		<shipIcons>
+			<shipIcon>icon_energy_shield</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ZOLTAN_HUNTER_3">
+		<shipIcons>
+			<shipIcon>icon_energy_shield</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ZOLTAN_HUNTER_P1">
+		<shipIcons>
+			<shipIcon>icon_energy_shield</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ZOLTAN_HUNTER_P2">
+		<shipIcons>
+			<shipIcon>icon_energy_shield</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ZOLTAN_HUNTER_P3">
+		<shipIcons>
+			<shipIcon>icon_energy_shield</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ENERGYX_HUNTER_1">
+		<shipIcons>
+			<shipIcon>icon_battery_booster</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ENERGYX_HUNTER_2">
+		<shipIcons>
+			<shipIcon>icon_battery_booster</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ENERGYX_HUNTER_3">
+		<shipIcons>
+			<shipIcon>icon_battery_booster</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="JELLY_SCIENCE_1">
+		<shipIcons>
+			<shipIcon>icon_slug_gel</shipIcon>
+			<shipIcon>icon_zoltan_bypass</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="JELLY_SCIENCE_2">
+		<shipIcons>
+			<shipIcon>icon_slug_gel</shipIcon>
+			<shipIcon>icon_zoltan_bypass</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="JELLY_SCIENCE_3">
+		<shipIcons>
+			<shipIcon>icon_slug_gel</shipIcon>
+			<shipIcon>icon_zoltan_bypass</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="JELLY_SCIENCE_1P">
+		<shipIcons>
+			<shipIcon>icon_slug_gel</shipIcon>
+			<shipIcon>icon_zoltan_bypass</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="JELLY_SCIENCE_2P">
+		<shipIcons>
+			<shipIcon>icon_slug_gel</shipIcon>
+			<shipIcon>icon_zoltan_bypass</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="JELLY_SCIENCE_3P">
+		<shipIcons>
+			<shipIcon>icon_slug_gel</shipIcon>
+			<shipIcon>icon_zoltan_bypass</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="MANTIS_CATCHR_1">
+		<shipIcons>
+			<shipIcon>icon_zoltan_bypass</shipIcon>
+			<shipIcon>icon_crew_stims</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="MANTIS_CATCHR_2">
+		<shipIcons>
+			<shipIcon>icon_zoltan_bypass</shipIcon>
+			<shipIcon>icon_crew_stims</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="MANTIS_CATCHR_3">
+		<shipIcons>
+			<shipIcon>icon_zoltan_bypass</shipIcon>
+			<shipIcon>icon_crew_stims</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="MANTIS_CATCHR_1P">
+		<shipIcons>
+			<shipIcon>icon_zoltan_bypass</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="MANTIS_CATCHR_2P">
+		<shipIcons>
+			<shipIcon>icon_zoltan_bypass</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="MANTIS_CATCHR_3P">
+		<shipIcons>
+			<shipIcon>icon_zoltan_bypass</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="SWORDFISH">
+		<autoShipForce>false</autoShipForce>
+		<shipIcons>
+			<shipIcon>icon_auto_cooldown</shipIcon>
+			<shipIcon>icon_system_casing</shipIcon>
+        </shipIcons>
+		<crewLimit>2</crewLimit>
+		<crew>
+			<human room="2" name="Джет"/>  <!--pilot-->
+			<human room="0" name="Спайк"/>  <!--engines-->
+		</crew>
+	</customShip>
+	<customShip name="SWORDFISH_BRK">
+		<shipIcons>
+			<shipIcon>icon_auto_cooldown</shipIcon>
+			<shipIcon>icon_system_casing</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="SHELL_BOMBER_1">
+		<shipIcons>
+			<shipIcon>icon_shell_gas</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="SHELL_BOMBER_2">
+		<shipIcons>
+			<shipIcon>icon_shell_gas</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="SHELL_BOMBER_3">
+		<shipIcons>
+			<shipIcon>icon_shell_gas</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="SHELL_FIGHTER_1">
+		<shipIcons>
+			<shipIcon>icon_shell_gas</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="SHELL_FIGHTER_2">
+		<shipIcons>
+			<shipIcon>icon_shell_gas</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="SHELL_FIGHTER_3">
+		<shipIcons>
+			<shipIcon>icon_shell_gas</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="MAGMAN_A1">
+		<shipIcons>
+			<shipIcon>icon_magman_extinguishers</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="MAGMAN_A2">
+		<shipIcons>
+			<shipIcon>icon_magman_extinguishers</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="MAGMAN_A3">
+		<shipIcons>
+			<shipIcon>icon_magman_extinguishers</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="MAGMAN_A4">
+		<shipIcons>
+			<shipIcon>icon_magman_extinguishers</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="MAGMAN_B1">
+		<shipIcons>
+			<shipIcon>icon_magman_extinguishers</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="MAGMAN_B2">
+		<shipIcons>
+			<shipIcon>icon_magman_extinguishers</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="MAGMAN_B3">
+		<shipIcons>
+			<shipIcon>icon_magman_extinguishers</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="MAGMAN_B4">
+		<shipIcons>
+			<shipIcon>icon_magman_extinguishers</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="MAGMAN_C1">
+		<shipIcons>
+			<shipIcon>icon_magman_extinguishers</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="MAGMAN_C2">
+		<shipIcons>
+			<shipIcon>icon_magman_extinguishers</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="MAGMAN_C3">
+		<shipIcons>
+			<shipIcon>icon_magman_extinguishers</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="MAGMAN_C4">
+		<shipIcons>
+			<shipIcon>icon_magman_extinguishers</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="MAGMAN_D1">
+		<shipIcons>
+			<shipIcon>icon_magman_extinguishers</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="MAGMAN_D2">
+		<shipIcons>
+			<shipIcon>icon_magman_extinguishers</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="MAGMAN_E1">
+		<shipIcons>
+			<shipIcon>icon_magman_extinguishers</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="MAGMAN_E2">
+		<shipIcons>
+			<shipIcon>icon_magman_extinguishers</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="MAGMAN_BOSS1">
+		<shipIcons>
+			<shipIcon>icon_magman_extinguishers</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="MAGMAN_BOSS2">
+		<shipIcons>
+			<shipIcon>icon_magman_extinguishers</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="BOSS_3_HARD">
+		<shipIcons>
+			<shipIcon>icon_slug_gel</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="BOSS_3_HARD_DLC">
+		<shipIcons>
+			<shipIcon>icon_slug_gel</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ANAEROBIC_SCOUT">
+		<shipIcons>
+			<shipIcon>icon_o2_masks</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ANAEROBIC_SCOUT_2">
+		<shipIcons>
+			<shipIcon>icon_o2_masks</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ANAEROBIC_SCOUT_3">
+		<shipIcons>
+			<shipIcon>icon_o2_masks</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ANAEROBIC_SCOUT_4">
+		<shipIcons>
+			<shipIcon>icon_o2_masks</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ANAEROBIC_SCOUT_5">
+		<shipIcons>
+			<shipIcon>icon_o2_masks</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ANAEROBIC_SCOUT_6">
+		<shipIcons>
+			<shipIcon>icon_o2_masks</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ANAEROBIC_SCOUT_7">
+		<shipIcons>
+			<shipIcon>icon_o2_masks</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ANAEROBIC_SCOUT_8">
+		<shipIcons>
+			<shipIcon>icon_o2_masks</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ANAEROBIC_SCOUT_9">
+		<shipIcons>
+			<shipIcon>icon_o2_masks</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ANAEROBIC_BOMBER">
+		<shipIcons>
+			<shipIcon>icon_o2_masks</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ANAEROBIC_BOMBER_2">
+		<shipIcons>
+			<shipIcon>icon_o2_masks</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ANAEROBIC_BOMBER_3">
+		<shipIcons>
+			<shipIcon>icon_o2_masks</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ANAEROBIC_BOMBER_4">
+		<shipIcons>
+			<shipIcon>icon_o2_masks</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ANAEROBIC_BOMBER_5">
+		<shipIcons>
+			<shipIcon>icon_o2_masks</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ANAEROBIC_BOMBER_6">
+		<shipIcons>
+			<shipIcon>icon_o2_masks</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ANAEROBIC_BOMBER_7">
+		<shipIcons>
+			<shipIcon>icon_o2_masks</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ANAEROBIC_BOMBER_8">
+		<shipIcons>
+			<shipIcon>icon_o2_masks</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ANAEROBIC_BOMBER_9">
+		<shipIcons>
+			<shipIcon>icon_o2_masks</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="REBEL_SKINNY_ELITE_X">
+		<shipIcons>
+			<shipIcon>icon_fire_extinguishers</shipIcon>
+			<shipIcon>icon_blackbird</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="REBEL_SKINNY_ELITE_X2">
+		<shipIcons>
+			<shipIcon>icon_fire_extinguishers</shipIcon>
+			<shipIcon>icon_blackbird</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="C_REBEL_EW_CRUISER_M">
+		<shipIcons>
+			<shipIcon>icon_fire_extinguishers</shipIcon>
+			<shipIcon>icon_blackbird</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="JELLY_BUTTON_DLC">
+		<shipIcons>
+			<shipIcon>icon_slug_gel</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="JELLY_BUTTON_DLC_2">
+		<shipIcons>
+			<shipIcon>icon_slug_gel</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="JELLY_BUTTON_DLC_3">
+		<shipIcons>
+			<shipIcon>icon_slug_gel</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="JELLY_CROISSANT_DLC">
+		<shipIcons>
+			<shipIcon>icon_slug_gel</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="JELLY_CROISSANT_DLC_2">
+		<shipIcons>
+			<shipIcon>icon_slug_gel</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="JELLY_CROISSANT_DLC_3">
+		<shipIcons>
+			<shipIcon>icon_slug_gel</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="JELLY_TRUFFLE_DLC">
+		<shipIcons>
+			<shipIcon>icon_slug_gel</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="JELLY_TRUFFLE_DLC_2">
+		<shipIcons>
+			<shipIcon>icon_slug_gel</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="JELLY_TRUFFLE_DLC_3">
+		<shipIcons>
+			<shipIcon>icon_slug_gel</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ROCK_SCOUT_DLC">
+		<shipIcons>
+			<shipIcon>icon_rock_armor</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ROCK_SCOUT_DLC_2">
+		<shipIcons>
+			<shipIcon>icon_rock_armor</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ROCK_SCOUT_DLC_3">
+		<shipIcons>
+			<shipIcon>icon_rock_armor</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ROCK_FIGHT_DLC">
+		<shipIcons>
+			<shipIcon>icon_rock_armor</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ROCK_FIGHT_DLC_2">
+		<shipIcons>
+			<shipIcon>icon_rock_armor</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ROCK_FIGHT_DLC_3">
+		<shipIcons>
+			<shipIcon>icon_rock_armor</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ROCK_ASSAULT_DLC">
+		<shipIcons>
+			<shipIcon>icon_rock_armor</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ROCK_ASSAULT_DLC_2">
+		<shipIcons>
+			<shipIcon>icon_rock_armor</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ROCK_ASSAULT_DLC_3">
+		<shipIcons>
+			<shipIcon>icon_rock_armor</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="MANTIS_SCOUT_DLC">
+		<shipIcons>
+			<shipIcon>icon_crew_stims</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="MANTIS_SCOUT_DLC_2">
+		<shipIcons>
+			<shipIcon>icon_crew_stims</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="MANTIS_SCOUT_DLC_3">
+		<shipIcons>
+			<shipIcon>icon_crew_stims</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="MANTIS_FIGHTER_DLC">
+		<shipIcons>
+			<shipIcon>icon_crew_stims</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="MANTIS_FIGHTER_DLC_2">
+		<shipIcons>
+			<shipIcon>icon_crew_stims</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="MANTIS_FIGHTER_DLC_3">
+		<shipIcons>
+			<shipIcon>icon_crew_stims</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="MANTIS_BOMBER_DLC">
+		<shipIcons>
+			<shipIcon>icon_crew_stims</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="MANTIS_BOMBER_DLC_2">
+		<shipIcons>
+			<shipIcon>icon_crew_stims</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="MANTIS_BOMBER_DLC_3">
+		<shipIcons>
+			<shipIcon>icon_crew_stims</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ZOLTAN_FIGHTER_DLC">
+		<shipIcons>
+			<shipIcon>icon_energy_shield</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ZOLTAN_FIGHTER_DLC_2">
+		<shipIcons>
+			<shipIcon>icon_energy_shield</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ZOLTAN_FIGHTER_DLC_3">
+		<shipIcons>
+			<shipIcon>icon_energy_shield</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ZOLTAN_BOMBER_DLC">
+		<shipIcons>
+			<shipIcon>icon_energy_shield</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ZOLTAN_BOMBER_DLC_2">
+		<shipIcons>
+			<shipIcon>icon_energy_shield</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ZOLTAN_BOMBER_DLC_3">
+		<shipIcons>
+			<shipIcon>icon_energy_shield</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="CRYSTAL_SCOUT_DLC">
+		<shipIcons>
+			<shipIcon>icon_crystal_shards</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="CRYSTAL_SCOUT_DLC_2">
+		<shipIcons>
+			<shipIcon>icon_crystal_shards</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="CRYSTAL_SCOUT_DLC_3">
+		<shipIcons>
+			<shipIcon>icon_crystal_shards</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="CRYSTAL_BOMBER_DLC">
+		<shipIcons>
+			<shipIcon>icon_crystal_shards</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="CRYSTAL_BOMBER_DLC_2">
+		<shipIcons>
+			<shipIcon>icon_crystal_shards</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="CRYSTAL_BOMBER_DLC_3">
+		<shipIcons>
+			<shipIcon>icon_crystal_shards</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="JELLY_BUTTON_P">
+		<shipIcons>
+			<shipIcon>icon_slug_gel</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="JELLY_BUTTON_P_DLC">
+		<shipIcons>
+			<shipIcon>icon_slug_gel</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="JELLY_CROISSANT_P">
+		<shipIcons>
+			<shipIcon>icon_slug_gel</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="JELLY_CROISSANT_P_DLC">
+		<shipIcons>
+			<shipIcon>icon_slug_gel</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="JELLY_TRUFFLE_P">
+		<shipIcons>
+			<shipIcon>icon_slug_gel</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="JELLY_TRUFFLE_P_DLC">
+		<shipIcons>
+			<shipIcon>icon_slug_gel</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ROCK_SCOUT_P">
+		<shipIcons>
+			<shipIcon>icon_rock_armor</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ROCK_SCOUT_P_DLC">
+		<shipIcons>
+			<shipIcon>icon_rock_armor</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ROCK_FIGHT_P">
+		<shipIcons>
+			<shipIcon>icon_rock_armor</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ROCK_FIGHT_P_DLC">
+		<shipIcons>
+			<shipIcon>icon_rock_armor</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="MANTIS_SCOUT_P">
+		<shipIcons>
+			<shipIcon>icon_crew_stims</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="MANTIS_SCOUT_P_DLC">
+		<shipIcons>
+			<shipIcon>icon_crew_stims</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="MANTIS_FIGHTER_P">
+		<shipIcons>
+			<shipIcon>icon_crew_stims</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="MANTIS_FIGHTER_P_DLC">
+		<shipIcons>
+			<shipIcon>icon_crew_stims</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="MANTIS_BOMBER_P">
+		<shipIcons>
+			<shipIcon>icon_crew_stims</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="MANTIS_BOMBER_P_DLC">
+		<shipIcons>
+			<shipIcon>icon_crew_stims</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ZOLTAN_FIGHTER_P">
+		<shipIcons>
+			<shipIcon>icon_energy_shield</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ZOLTAN_FIGHTER_P_DLC">
+		<shipIcons>
+			<shipIcon>icon_energy_shield</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ZOLTAN_BOMBER_P">
+		<shipIcons>
+			<shipIcon>icon_energy_shield</shipIcon>
+        </shipIcons>
+	</customShip>
+	<customShip name="ZOLTAN_BOMBER_P_DLC">
+		<shipIcons>
+			<shipIcon>icon_energy_shield</shipIcon>
+        </shipIcons>
+	</customShip>
 </ships>
 
 
@@ -124,27 +3347,45 @@ jumpCooldown can either be "continue", "reset", or "full", and it is "full" by d
 
 animSheet pulls from img/people/<animSheet>.png and acts as a layer on top of the crew
 
+healSpeed determines how fast crew heal in the medbay/from non-true healing sources and how fast drones heal in the drone control room.
+
+When animFrame is set for <powerEffect> and <temporaryPowerEffect> it makes it so that the effect only happens on that frame of the effect animation.
+
+When animSoundFrame is set for <repairSounds> AND <animBase> is rock, instead of having a looping repair sound it will instead play a single sound at that frame of the animation.
+
+<transformRace> in <powerEffect> allows the crewmember to transform into another race while keeping their name and skills
+
+<nameRace> allows the crewmember to change into a different race if they are given a certain name (indicated by the transformName attribute), and the changeIfSame attribute (default to true) specifies whether they change when they *are* named that, or *aren't* named that
+
+<animBase> can be either mantis or rock
+
 Syntax -> 
 
 <crew>
 	(default human values)
 	<race name="newRace">
+		<nameRace transformName="Admiral Billy" changeIfSame="true">newRace2</nameRace>
 		<canFight>true</canFight>
-		<canSuffocate>true</canSuffocate>
+		<controllable>true</controllable>
+		<canRepair>true</canRepair>
 		<canSabotage>true</canSabotage>
+		<canMan>true</canMan>
+		<canSuffocate>true</canSuffocate>
 		<canBurn>true</canBurn>
 		<maxHealth>100</maxHealth>
-		<moveSpeedMultiplier>1</moveSpeedMultiplier>
-		<repairSpeed>1</repairSpeed>
-		<damageMultiplier>1</damageMultiplier>
-		<bonusPower>0</bonusPower>
+		<moveSpeedMultiplier>1.0</moveSpeedMultiplier>
+		<repairSpeed>1.0</repairSpeed>
+		<damageMultiplier>1.0</damageMultiplier>
+		<rangedDamageMultiplier>1.0</rangedDamageMultiplier>
 		<fireRepairMultiplier>1.2</fireRepairMultiplier>
-		<sabotageSpeedMultiplier>1</sabotageSpeedMultiplier>
-		<suffocationModifier>1</suffocationModifier>
+		<suffocationModifier>1.0</suffocationModifier>
+		<bonusPower>0</bonusPower>
 		<isTelepathic>false</isTelepathic>
 		<isAnaerobic>false</isAnaerobic>
-		<fireDamageMultiplier>1</fireDamageMultiplier>
+		<fireDamageMultiplier>1.0</fireDamageMultiplier>
+		<stunMultiplier>1.0</stunMultiplier>
 		<canPhaseThroughDoors>false</canPhaseThroughDoors>
+		<healSpeed>1.0</healSpeed>
 		<deathSounds>
 			<deathSound>death1</deathSound>
 			<deathSound>death2</deathSound>
@@ -152,14 +3393,17 @@ Syntax ->
 		<shootingSounds>
 			<shootingSound>crewLaser</shootingSound>
 		</shootingSounds>
-		<repairSounds>
+		<repairSounds animSoundFrame="-1">
 			<repairSound>repair</repairSound>
 		</repairSounds>
+		<animBase>rock</animBase> (for rock stomping animation, use <animBase>mantis</animBase> for mantis shooting animation (they are mutually exclusive))
 		<oxygenChangeSpeed>-0.525</oxygenChangeSpeed> (lanius speed)
-		<damageTakenMultiplier>1</damageTakenMultiplier>
-		<passiveHealAmount>1</passiveHealAmount>
+		<damageTakenMultiplier>1.0</damageTakenMultiplier>
+		<passiveHealAmount>1.0</passiveHealAmount>
 		<passiveHealDelay>15</passiveHealDelay>
+		<trueHealAmount>2.0</trueHealAmount>
 		<detectsLifeforms>false</detectsLifeforms>
+		<healCrewAmount>0.0</healCrewAmount>
 		<skills>
 			<piloting req="15"/>
 			<engines req="15"/>
@@ -168,8 +3412,12 @@ Syntax ->
 			<repair req="18"/>
 			<combat req="8"/>
 		</skills>
-		<hasCustomDeathAnimation>false</hasCustomDeathAnimation>
-		<hasDeathExplosion>false</hasDeathExplosion>
+		<sabotageSpeedMultiplier>1.0</sabotageSpeedMultiplier>
+		<defaultSkillLevel>0</defaultSkillLevel>
+		<cloneLoseSkills>true</cloneLoseSkills>
+		<damageEnemiesAmount>0</damageEnemiesAmount>
+		<powerDrain>0</powerDrain>
+		<powerDrainFriendly>false</powerDrainFriendly>
 		<deathEffect>
 			<damage>0</damage>
 			<fireChance>0</fireChance>
@@ -184,7 +3432,6 @@ Syntax ->
 			<stun>0</stun>
 			<shipFriendlyFire>false</shipFriendlyFire>
 		</deathEffect>
-		<animBase>rock</animBase> (for rock stomping animation)
 		<powerEffect>
 			<cooldown>30</cooldown>
 			<jumpCooldown>full</jumpCooldown>
@@ -192,16 +3439,30 @@ Syntax ->
 				<powerSound>lockdown1</powerSound>
 				<powerSound>lockdown2</powerSound>
 			</powerSounds>
-			<req>
+			<req type="enemy">
 				<enemyShip/>
 				<playerShip/>
 				<friendlyInRoom/>
 				<enemyInRoom/>
-				<systemInRoom/>
+				<systemInRoom damaged="false"/>
 				<inCombat/>
 				<outOfCombat/>
 				<hasClonebay/>
+				<minHealth>10</minHealth>
+				<maxHealth>40</maxHealth>
 				<aiDisabled/>
+			</req>
+			<req type="player">
+				<enemyShip/>
+				<playerShip/>
+				<friendlyInRoom/>
+				<enemyInRoom/>
+				<systemInRoom damaged="true"/>
+				<inCombat/>
+				<outOfCombat/>
+				<hasClonebay/>
+				<minHealth>10</minHealth>
+				<maxHealth>40</maxHealth>
 			</req>
 			<damage>0</damage>
 			<fireChance>0</fireChance>
@@ -216,13 +3477,16 @@ Syntax ->
 			<stun>0</stun>
 			<shipFriendlyFire>false</shipFriendlyFire>
 			<win>false</win>
+			<animFrame>-1</animFrame>
 			<buttonText id="button_lockdown">LOCKDOWN</buttonText>
 			<tooltip id="power_ready">Ready: Click to lock down room with special power</tooltip>
 			<cooldownColor r="133" g="231" b="237"/>
 			<effectAnim>explosion_crystal</effectAnim>
-			<crewHealth>0</crewHealth>
-			<enemyHealth>0</enemyHealth>
-			<selfHealth>0</selfHealth>
+			<crewHealth>0.0</crewHealth>
+			<enemyHealth>0.0</enemyHealth>
+			<selfHealth>0.0</selfHealth>
+			<transformRace>engi</transformRace>
+			<activateWhenReady enemiesOnly="false">false</activateWhenReady>
 			
 			<temporaryEffect>
 				<duration>10</duration>
@@ -230,30 +3494,155 @@ Syntax ->
 				<finishSounds>
 					<finishSound>mindControlEnd</finishSound>
 				</finishSounds>
+				<controllable>true</controllable>
 				<moveSpeedMultiplier>1.2</moveSpeedMultiplier>
 				<repairSpeed>1.2</repairSpeed>
 				<damageMultiplier>1.2</damageMultiplier>
 				<bonusPower>0</bonusPower>
 				<canFight>true</canFight>
+				<canRepair>true</canRepair>
 				<canSabotage>true</canSabotage>
 				<canSuffocate>true</canSuffocate>
 				<oxygenChangeSpeed>0</oxygenChangeSpeed>
 				<detectsLifeforms>false</detectsLifeforms>
 				<isTelepathic>false</isTelepathic>
 				<fireDamageMultiplier>1</fireDamageMultiplier>
+				<suffocationModifier>
 				<damageTakenMultiplier>1</damageTakenMultiplier>
 				<allDamageTakenMultiplier>1</allDamageTakenMultiplier>
 				<sabotageSpeedMultiplier>1</sabotageSpeedMultiplier>
 				<effectAnim>mindcontrol</effectAnim>
 				<invulnerable>false</invulnerable>
+				<animSheet baseVisible="true">human_effect</animSheet>
+				<animFrame>-1</animFrame>
+				<effectFinishAnim>mindcontrol</effectFinishAnim>
+				<damageEnemiesAmount>0</damageEnemiesAmount>
+				<powerDrain>0</powerDrain>
+				<stunMultiplier>1.0</stunMultiplier>
 			</temporaryEffect>
 		</powerEffect>
+		
+		<droneAI>
+			<fightAI/>
+			<repairAI/>
+			<manAI/>
+			<batteryAI/>
+			<returnToDroneRoom/>
+		</droneAI>
+		
+		<droneMoveFromManningSlot>true</droneMoveFromManningSlot>
+
+	</race>
+	
+	
+	drone attribute can be BATTLE, REPAIR, BOARDER or BOARDER_ION, and will use default values for those drones
+	you can change anything with drones that you can with crew (realistically) apart from <powerEffect>
+	
+	<race name="newDrone" drone="BATTLE">
+		<canMan>true</canMan>
+		<canRepair>true</canRepair>
 	</race>
 	...
 </crew>
 -->
 
 <crew>
+	<race name="rock"> <!-- 1.4 -->
+		<maxHealth>150</maxHealth>
+		<canBurn>false</canBurn>
+		<stunMultiplier>0.5</stunMultiplier> <!-- 1.4 -->
+		<moveSpeedMultiplier>0.6</moveSpeedMultiplier> <!-- 1.4 -->
+		<animBase>rock</animBase>
+		<deathSounds>
+			<deathSound>rockDeath</deathSound>
+		</deathSounds>
+		<shootingSounds>
+			<shootingSound>rockThrow1</shootingSound>
+			<shootingSound>rockThrow2</shootingSound>
+			<shootingSound>rockThrow3</shootingSound>
+		</shootingSounds>
+		<repairSounds animSoundFrame="5">
+		  <repairSound>rockThud1</repairSound>
+		  <repairSound>rockThud2</repairSound>
+		  <repairSound>rockThud3</repairSound>
+		</repairSounds>
+	</race>
+	<race name="crystal"> <!-- 1.4 -->
+        <maxHealth>125</maxHealth>
+        <moveSpeedMultiplier>0.8</moveSpeedMultiplier>
+        <fireRepairMultiplier>1.0</fireRepairMultiplier>
+        <suffocationModifier>0.5</suffocationModifier>
+        <animBase>rock</animBase>
+        
+        <repairSounds animSoundFrame="5">
+            <repairSound>rockThud1</repairSound>
+            <repairSound>rockThud2</repairSound>
+            <repairSound>rockThud3</repairSound>
+        </repairSounds>
+        
+        <deathSounds>
+            <deathSound>crystalDeath</deathSound>
+        </deathSounds>
+        
+        <shootingSounds>
+            <shootingSound>rockThrow1</shootingSound>
+            <shootingSound>rockThrow2</shootingSound>
+            <shootingSound>rockThrow3</shootingSound>
+        </shootingSounds>
+        <powerEffect>
+            <cooldown>30</cooldown>
+            <jumpCooldown>full</jumpCooldown>
+            <powerSounds>
+                <powerSound>lockdown1</powerSound>
+                <powerSound>lockdown2</powerSound>
+            </powerSounds>
+            <lockdown>true</lockdown>
+            <buttonText id="button_lockdown">ЗАПЕРЕТЬ</buttonText>
+            <tooltip id="power_ready"></tooltip>
+            <cooldownColor r="133" g="231" b="237"/>
+            <effectAnim>explosion_crystal</effectAnim>
+        </powerEffect>
+    </race>
+	<race name="anaerobic"> <!-- 1.4 -->
+        <moveSpeedMultiplier>0.85</moveSpeedMultiplier>
+        <oxygenChangeSpeed>-0.525</oxygenChangeSpeed>
+        <canSuffocate>false</canSuffocate>
+        
+        <repairSounds>
+            <repairSound>shrikeRepair</repairSound>
+        </repairSounds>
+        
+        <deathSounds>
+            <deathSound>shrikeDeath</deathSound>
+        </deathSounds>
+    </race>
+	<race name="engi"> <!-- 1.4 -->
+		<repairSpeed>2</repairSpeed>
+		<fireRepairMultiplier>2</fireRepairMultiplier>
+		<damageMultiplier>0.5</damageMultiplier>
+		<deathSounds>
+			<deathSound>engiDeath</deathSound>
+		</deathSounds>
+	</race>
+	<race name="mantis"> <!-- 1.4 -->
+		<repairSpeed>0.5</repairSpeed>
+		<fireRepairMultiplier>0.5</fireRepairMultiplier>
+		<damageMultiplier>1.5</damageMultiplier>
+		<moveSpeedMultiplier>1.2</moveSpeedMultiplier> <!-- 1.4 -->
+		<animBase>mantis</animBase>
+		<deathSounds>
+			<deathSound>mantisDeath</deathSound>
+		</deathSounds>
+		<shootingSounds>
+			<shootingSound>mantisSpit1</shootingSound>
+			<shootingSound>mantisSpit2</shootingSound>
+			<shootingSound>mantisSpit3</shootingSound>
+		</shootingSounds>
+	</race>
+	<race name="slug"> <!-- 1.4 -->
+		<detectsLifeforms>true</detectsLifeforms>
+		<isTelepathic>true</isTelepathic>
+	</race>
 	<race name="ghost">
 		<canPhaseThroughDoors>true</canPhaseThroughDoors>
 		<canSuffocate>false</canSuffocate>
@@ -286,7 +3675,7 @@ Syntax ->
 		<fireRepairMultiplier>5</fireRepairMultiplier>
 	</race>
 	<race name="magman">
-		<fireDamageMultiplier>-3.0</fireDamageMultiplier>
+		<fireDamageMultiplier>-1</fireDamageMultiplier> <!-- 1.3 --><!-- 1.4 -->
 		<fireRepairMultiplier>0</fireRepairMultiplier>
 		<maxHealth>125</maxHealth>
 		<hasDeathExplosion>true</hasDeathExplosion>
@@ -295,11 +3684,30 @@ Syntax ->
 			<friendlyFire>true</friendlyFire>
 			<shipFriendlyFire>true</shipFriendlyFire>
 		</deathEffect>
+		<powerEffect> <!-- 1.3 -->
+			<cooldown>60</cooldown>
+			<jumpCooldown>full</jumpCooldown>
+			<powerSounds>
+				<powerSound>fireBomb</powerSound>
+			</powerSounds>
+			<friendlyFire>true</friendlyFire>
+			<fireChance>5</fireChance>
+			<buttonText id="button_magman"/>
+			<tooltip id="power_magman_ready"/>
+			<cooldownColor r="255" g="0" b="0"/>
+			<req type="enemy"><!-- 1.4 -->
+				<aiDisabled/>
+			</req>
+			<req type="player">
+				<enemyShip/>
+			</req>
+		</powerEffect>
 	</race>
 	<race name="orchid">
 		<fireRepairMultiplier>0.5</fireRepairMultiplier>
 		<fireDamageMultiplier>4.0</fireDamageMultiplier>
 		<oxygenChangeSpeed>1.05</oxygenChangeSpeed>
+		<stunMultiplier>0</stunMultiplier> <!-- 1.4 -->
 		<deathSounds>
 			<deathSound>orchidDeath</deathSound>
 		</deathSounds>
@@ -313,6 +3721,7 @@ Syntax ->
 		<maxHealth>90</maxHealth>
 		<damageTakenMultiplier>0.5</damageTakenMultiplier>
 		<suffocationModifier>2.0</suffocationModifier>
+		<stunMultiplier>0.5</stunMultiplier> <!-- 1.4 -->
 		<deathSounds>
 			<deathSound>shellDeath</deathSound>
 		</deathSounds>
@@ -321,6 +3730,20 @@ Syntax ->
 		<damageTakenMultiplier>0.5</damageTakenMultiplier>
 		<detectsLifeforms>false</detectsLifeforms>
 		<isTelepathic>true</isTelepathic>
+		<stunMultiplier>0.5</stunMultiplier> <!-- 1.4 -->
+	</race>
+	<race name="energy"> <!-- 1.4 -->
+		<maxHealth>70</maxHealth>
+		<bonusPower>1</bonusPower>
+		<hasDeathExplosion>true</hasDeathExplosion>
+		<deathEffect>
+			<friendlyFire>false</friendlyFire>
+			<persDamage>1</persDamage>
+		</deathEffect>
+		<deathSounds>
+			<deathSound>energyDeath</deathSound>
+		</deathSounds>
+		<hasCustomDeathAnimation>true</hasCustomDeathAnimation>
 	</race>
 	<race name="energy_w">
 		<maxHealth>70</maxHealth>
@@ -365,45 +3788,82 @@ Syntax ->
 		<moveSpeedMultiplier>0.7</moveSpeedMultiplier>
 		<isTelepathic>true</isTelepathic>
 		<detectsLifeforms>false</detectsLifeforms>
-		<passiveHealAmount>1</passiveHealAmount>
+		<passiveHealAmount>5</passiveHealAmount> <!-- 1.4 -->
 		<passiveHealDelay>15</passiveHealDelay>
 	</race>
 	<race name="morph">
 		<repairSpeed>1.5</repairSpeed>
 		<fireRepairMultiplier>1.5</fireRepairMultiplier>
 		<damageMultiplier>0.75</damageMultiplier>
-		<moveSpeedMultiplier>2</moveSpeedMultiplier>
+		<moveSpeedMultiplier>1</moveSpeedMultiplier> <!-- 1.3 -->
 		<deathSounds>
 			<deathSound>engiDeath</deathSound>
 		</deathSounds>
+		<!-- <req type="enemy">
+			<aiDisabled/>
+		</req> --> <!-- 1.4 -->
+		<powerEffect><!-- 1.3 -->
+			<cooldown>60</cooldown>
+			<req type="enemy"> <!-- 1.4 -->
+				<aiDisabled/>
+			</req>
+			<jumpCooldown>continue</jumpCooldown><!-- 1.3 -->
+			<powerSounds>
+				<powerSound>morph_crazy</powerSound>
+			</powerSounds>
+			<activateWhenReady enemiesOnly="false">true</activateWhenReady>
+			<temporaryEffect>
+				<duration>20</duration>
+				<cooldownColor r="237" g="28" b="36"/>
+				<finishSounds>
+					<finishSound>mindControlEnd</finishSound>
+				</finishSounds>
+				<controllable>false</controllable>
+				<moveSpeedMultiplier>2</moveSpeedMultiplier>
+				<repairSpeed>5</repairSpeed>
+				<fireRepairMultiplier>5</fireRepairMultiplier>
+				<damageMultiplier>2</damageMultiplier>
+			</temporaryEffect>
+			<buttonText id="button_morph"/>
+			<tooltip id="power_morph"/>
+			<cooldownColor r="163" g="73" b="164"/>
+		</powerEffect>
 	</race>
 	<race name="mushroom">
 		<maxHealth>120</maxHealth>
-		<skills>
+		<!-- <skills>
 			<piloting req="15"/>
 			<engines req="15"/>
 			<shields req="55"/>
 			<weapons req="65"/>
 			<repair req="18"/>
 			<combat req="1"/>
-		</skills>
+		</skills> --> <!-- 1.4 -->
 		<suffocationModifier>0.2</suffocationModifier>
 		<moveSpeedMultiplier>0.5</moveSpeedMultiplier>
+		<cloneLoseSkills>false</cloneLoseSkills> <!-- 1.3 -->
+		<defaultSkillLevel>2</defaultSkillLevel> <!-- 1.4 -->
+		<stunMultiplier>0</stunMultiplier> <!-- 1.4 -->
 		<hasDeathExplosion>true</hasDeathExplosion>
+		<deathSounds> <!-- 1.3 -->
+			<deathSound>mushroomDeath1</deathSound>
+			<deathSound>mushroomDeath2</deathSound>
+			<deathSound>mushroomDeath3</deathSound>
+		</deathSounds>
 		<deathEffect>
 			<friendlyFire>false</friendlyFire>
 			<stun>10</stun>
 		</deathEffect>
 		<powerEffect>
 			<cooldown>30</cooldown>
-			<jumpCooldown>reset</jumpCooldown>
+			<jumpCooldown>full</jumpCooldown> <!-- 1.3 -->
 			<powerSounds>
 				<powerSound>remont</powerSound>
 			</powerSounds>
 			<req>
 				<enemyInRoom/>
 			</req>
-			<stun>10</stun>
+			<stun>8</stun> <!-- 1.3 -->
 			<friendlyFire>false</friendlyFire>
 			<buttonText id="button_mushroom"/>
 			<tooltip id="power_mushroom_ready"/>
@@ -412,61 +3872,395 @@ Syntax ->
 	</race>
 	<race name="mushroom_b">
 		<maxHealth>100</maxHealth>
-		<skills>
+		<!-- <skills>
 			<piloting req="15"/>
 			<engines req="15"/>
 			<shields req="55"/>
 			<weapons req="65"/>
 			<repair req="18"/>
 			<combat req="2"/>
-		</skills>
+		</skills> --> <!-- 1.4 -->
 		<suffocationModifier>0.2</suffocationModifier>
 		<moveSpeedMultiplier>0.5</moveSpeedMultiplier>
+		<cloneLoseSkills>false</cloneLoseSkills> <!-- 1.3 -->
+		<defaultSkillLevel>1</defaultSkillLevel> <!-- 1.4 -->
+		<stunMultiplier>0</stunMultiplier> <!-- 1.4 -->
 		<hasDeathExplosion>true</hasDeathExplosion>
+		<deathSounds> <!-- 1.3 -->
+			<deathSound>mushroomDeath1</deathSound>
+			<deathSound>mushroomDeath2</deathSound>
+			<deathSound>mushroomDeath3</deathSound>
+		</deathSounds>
 		<deathEffect>
 			<friendlyFire>false</friendlyFire>
 			<stun>10</stun>
 		</deathEffect>
 		<powerEffect>
 			<cooldown>30</cooldown>
-			<jumpCooldown>reset</jumpCooldown>
+			<jumpCooldown>full</jumpCooldown> <!-- 1.3 -->
 			<powerSounds>
 				<powerSound>remont</powerSound>
 			</powerSounds>
 			<req>
 				<enemyInRoom/>
 			</req>
-			<stun>5</stun>
+			<stun>4</stun> <!-- 1.3 -->
 			<friendlyFire>false</friendlyFire>
 			<buttonText id="button_mushroom_b"/>
-			<tooltip id="button_mushroom_b_ready"/>
+			<tooltip id="power_mushroom_b_ready"/> <!-- 1.3 -->
 			<cooldownColor r="239" g="228" b="176"/>
 		</powerEffect>
 	</race>
 	<race name="mushroom_f">
 		<maxHealth>80</maxHealth>
-		<skills>
+		<!-- <skills>
 			<piloting req="15"/>
 			<engines req="15"/>
 			<shields req="55"/>
 			<weapons req="65"/>
 			<repair req="18"/>
 			<combat req="3"/>
-		</skills>
+		</skills> --> <!-- 1.4 -->
 		<suffocationModifier>0.2</suffocationModifier>
 		<moveSpeedMultiplier>0.5</moveSpeedMultiplier>
+		<cloneLoseSkills>false</cloneLoseSkills> <!-- 1.3 -->
+		<stunMultiplier>0</stunMultiplier> <!-- 1.4 -->
 		<hasDeathExplosion>true</hasDeathExplosion>
+		<deathSounds> <!-- 1.3 -->
+			<deathSound>mushroomDeath1</deathSound>
+			<deathSound>mushroomDeath2</deathSound>
+			<deathSound>mushroomDeath3</deathSound>
+		</deathSounds>
 		<deathEffect>
 			<friendlyFire>false</friendlyFire>
 			<stun>5</stun>
 		</deathEffect>
 	</race>
+	<!-- 1.4 -->
+	<!-- DRONES -->
+	<race name="repair">
+		<canFight>false</canFight>
+		<canRepair>true</canRepair>
+		<canSabotage>false</canSabotage>
+		<canSuffocate>false</canSuffocate>
+		<canMan>false</canMan>
+		<repairSpeed>2</repairSpeed>
+		<fireRepairMultiplier>2</fireRepairMultiplier>
+		<maxHealth>25</maxHealth>
+		<healSpeed>3.0</healSpeed>
+		<droneAI>
+			<repairAI/>
+			<returnToDroneRoom/>
+		</droneAI>
+		<damageMultiplier>0</damageMultiplier>
+		<fireDamageMultiplier>0</fireDamageMultiplier>
+		<moveSpeedMultiplier>0.8</moveSpeedMultiplier>
+		<controllable>true</controllable>
+	</race>
+	<race name="repair_strong">
+		<canFight>false</canFight>
+		<canRepair>true</canRepair>
+		<canSabotage>false</canSabotage>
+		<canSuffocate>false</canSuffocate>
+		<canMan>false</canMan>
+		<repairSpeed>2</repairSpeed>
+		<fireRepairMultiplier>2</fireRepairMultiplier>
+		<maxHealth>50</maxHealth>
+		<healSpeed>3.0</healSpeed>
+		<droneAI>
+			<repairAI/>
+			<returnToDroneRoom/>
+		</droneAI>
+		<damageMultiplier>0</damageMultiplier>
+		<fireDamageMultiplier>0</fireDamageMultiplier>
+		<moveSpeedMultiplier>0.8</moveSpeedMultiplier>
+		<controllable>true</controllable>
+	</race>
+	<race name="repair_fast">
+		<canFight>false</canFight>
+		<canRepair>true</canRepair>
+		<canSabotage>false</canSabotage>
+		<canSuffocate>false</canSuffocate>
+		<canMan>false</canMan>
+		<repairSpeed>2</repairSpeed>
+		<fireRepairMultiplier>2</fireRepairMultiplier>
+		<maxHealth>25</maxHealth>
+		<healSpeed>3.0</healSpeed>
+		<droneAI>
+			<repairAI/>
+			<returnToDroneRoom/>
+		</droneAI>
+		<damageMultiplier>0</damageMultiplier>
+		<fireDamageMultiplier>0</fireDamageMultiplier>
+		<moveSpeedMultiplier>1.2</moveSpeedMultiplier>
+		<controllable>true</controllable>
+	</race>
+	<race name="repair_hal">
+		<canFight>false</canFight>
+		<canRepair>true</canRepair>
+		<canSabotage>false</canSabotage>
+		<canSuffocate>false</canSuffocate>
+		<canMan>false</canMan>
+		<repairSpeed>2</repairSpeed>
+		<fireRepairMultiplier>2</fireRepairMultiplier>
+		<maxHealth>25</maxHealth>
+		<healSpeed>3.0</healSpeed>
+		<droneAI>
+			<repairAI/>
+			<returnToDroneRoom/>
+		</droneAI>
+		<damageMultiplier>0</damageMultiplier>
+		<fireDamageMultiplier>0</fireDamageMultiplier>
+		<moveSpeedMultiplier>2.0</moveSpeedMultiplier>
+		<controllable>false</controllable>
+	</race>
+	<race name="repair_morph">
+		<canFight>false</canFight>
+		<canRepair>true</canRepair>
+		<canSabotage>false</canSabotage>
+		<canSuffocate>false</canSuffocate>
+		<canMan>false</canMan>
+		<repairSpeed>3</repairSpeed>
+		<fireRepairMultiplier>3</fireRepairMultiplier>
+		<maxHealth>100</maxHealth>
+		<healSpeed>3.0</healSpeed>
+		<droneAI>
+			<repairAI/>
+			<returnToDroneRoom/>
+		</droneAI>
+		<damageMultiplier>0</damageMultiplier>
+		<fireDamageMultiplier>0</fireDamageMultiplier>
+		<moveSpeedMultiplier>0.8</moveSpeedMultiplier>
+		<controllable>true</controllable>
+	</race>
+	<race name="battle">
+		<canFight>true</canFight>
+		<canSabotage>true</canSabotage>
+		<canRepair>false</canRepair>
+		<canSuffocate>false</canSuffocate>
+		<canMan>false</canMan>
+		<maxHealth>150</maxHealth>
+		<healSpeed>3.0</healSpeed>
+		<droneAI>
+			<fightAI/>
+			<returnToDroneRoom/>
+		</droneAI>
+		<damageMultiplier>1.5</damageMultiplier>
+		<fireDamageMultiplier>0.0</fireDamageMultiplier>
+		<moveSpeedMultiplier>0.8</moveSpeedMultiplier>
+		<controllable>true</controllable>
+	</race>
+	<race name="battle_strong">
+		<canFight>true</canFight>
+		<canSabotage>true</canSabotage>
+		<canRepair>false</canRepair>
+		<canSuffocate>false</canSuffocate>
+		<canMan>false</canMan>
+		<maxHealth>250</maxHealth>
+		<healSpeed>3.0</healSpeed>
+		<droneAI>
+			<fightAI/>
+			<returnToDroneRoom/>
+		</droneAI>
+		<damageMultiplier>2.0</damageMultiplier>
+		<fireDamageMultiplier>0.0</fireDamageMultiplier>
+		<moveSpeedMultiplier>0.8</moveSpeedMultiplier>
+		<controllable>true</controllable>
+	</race>
+	<race name="battle_fast">
+		<canFight>true</canFight>
+		<canSabotage>true</canSabotage>
+		<canRepair>false</canRepair>
+		<canSuffocate>false</canSuffocate>
+		<canMan>false</canMan>
+		<maxHealth>150</maxHealth>
+		<healSpeed>3.0</healSpeed>
+		<droneAI>
+			<fightAI/>
+			<returnToDroneRoom/>
+		</droneAI>
+		<damageMultiplier>1.5</damageMultiplier>
+		<fireDamageMultiplier>0.0</fireDamageMultiplier>
+		<moveSpeedMultiplier>1.2</moveSpeedMultiplier>
+		<controllable>true</controllable>
+	</race>
+	<race name="manning">
+		<canMan>true</canMan>
+		<canFight>false</canFight>
+		<canRepair>false</canRepair>
+		<canSabotage>false</canSabotage>
+		<canSuffocate>false</canSuffocate>
+		<bonusPower>1</bonusPower>
+		<healSpeed>3.0</healSpeed>
+		<maxHealth>150</maxHealth>
+		<droneMoveFromManningSlot>true</droneMoveFromManningSlot>
+		<droneAI>
+			<manAI/>
+		</droneAI>
+		<fireDamageMultiplier>0.0</fireDamageMultiplier>
+		<moveSpeedMultiplier>0.8</moveSpeedMultiplier>
+		<defaultSkillLevel>1</defaultSkillLevel>
+		<controllable>true</controllable>
+	</race>
+	<race name="manning_2">
+		<canMan>true</canMan>
+		<canFight>false</canFight>
+		<canRepair>false</canRepair>
+		<canSabotage>false</canSabotage>
+		<canSuffocate>false</canSuffocate>
+		<bonusPower>2</bonusPower>
+		<healSpeed>3.0</healSpeed>
+		<maxHealth>150</maxHealth>
+		<droneMoveFromManningSlot>true</droneMoveFromManningSlot>
+		<droneAI>
+			<manAI/>
+		</droneAI>
+		<fireDamageMultiplier>0.0</fireDamageMultiplier>
+		<moveSpeedMultiplier>0.8</moveSpeedMultiplier>
+		<defaultSkillLevel>2</defaultSkillLevel>
+	</race>
+	<race name="battery">
+		<canMan>false</canMan>
+		<canFight>false</canFight>
+		<canRepair>false</canRepair>
+		<canSabotage>false</canSabotage>
+		<canSuffocate>false</canSuffocate>
+		<bonusPower>3</bonusPower>
+		<healSpeed>3.0</healSpeed>
+		<maxHealth>150</maxHealth>
+		<droneMoveFromManningSlot>true</droneMoveFromManningSlot>
+		<droneAI>
+			<batteryAI/>
+		</droneAI>
+		<fireDamageMultiplier>0.0</fireDamageMultiplier>
+		<moveSpeedMultiplier>0.8</moveSpeedMultiplier>
+		<controllable>true</controllable>
+	</race>
+	<race name="battery_2">
+		<canMan>false</canMan>
+		<canFight>false</canFight>
+		<canRepair>false</canRepair>
+		<canSabotage>false</canSabotage>
+		<canSuffocate>false</canSuffocate>
+		<bonusPower>4</bonusPower>
+		<healSpeed>3.0</healSpeed>
+		<maxHealth>150</maxHealth>
+		<droneMoveFromManningSlot>true</droneMoveFromManningSlot>
+		<droneAI>
+			<batteryAI/>
+		</droneAI>
+		<fireDamageMultiplier>0.0</fireDamageMultiplier>
+		<moveSpeedMultiplier>0.8</moveSpeedMultiplier>
+		<controllable>true</controllable>
+	</race>
 </crew>
+
+<!-- Custom drones
+
+crewBlueprint needs to be defined as a crewBlueprint in blueprints.xml and a custom race in the <crew> tag in hyperspace.xml
+tooltipName is the name that shows up when you hover over the drone
+A flying boarding drone uses a _fly animation (e.g. newDrone_fly) for its texture
+The animations for drones will use the <crewBlueprint> tag for a prefix. Look at "boarder_" animations in vanilla as an example.
+
+Syntax ->
+
+<drones>
+	<drone name="BATTLE_CUSTOM">
+		<crewBlueprint>newDrone</crewBlueprint>
+		<tooltipName>Anti-Personnel Drone II</tooltipName>
+	</drone>
+</drones>
+
+-->
+
+<drones>
+	<drone name="BATTERY_DRONE">
+		<crewBlueprint>battery</crewBlueprint>
+		<tooltipName>Аккумуляторный дрон Мод I</tooltipName>
+	</drone>
+	<drone name="BATTERY_DRONE_R">
+		<crewBlueprint>battery</crewBlueprint>
+		<tooltipName>Аккумуляторный дрон Мод I</tooltipName>
+	</drone>
+	<drone name="BATTERY_DRONE_2">
+		<crewBlueprint>battery_2</crewBlueprint>
+		<tooltipName>Аккумуляторный дрон Мод II</tooltipName>
+	</drone>
+	<drone name="MANNING_DRONE">
+		<crewBlueprint>manning</crewBlueprint>
+		<tooltipName>Управляющий дрон Мод I</tooltipName>
+	</drone>
+	<drone name="MANNING_DRONE_R">
+		<crewBlueprint>manning</crewBlueprint>
+		<tooltipName>Управляющий дрон Мод I</tooltipName>
+	</drone>
+	<drone name="MANNING_DRONE_2">
+		<crewBlueprint>manning_2</crewBlueprint>
+		<tooltipName>Управляющий дрон Мод II</tooltipName>
+	</drone>
+	<drone name="HAL_REPAIR">
+		<crewBlueprint>repair_hal</crewBlueprint>
+		<tooltipName>Ремонтник систем HAL</tooltipName>
+	</drone>
+	<drone name="MORPH_REPAIR">
+		<crewBlueprint>repair_morph</crewBlueprint>
+		<tooltipName>Ремонтник морфов</tooltipName>
+	</drone>
+	<drone name="DE_REPAIR_2">
+		<crewBlueprint>repair_strong</crewBlueprint>
+		<tooltipName>Прочный ремонтник</tooltipName>
+	</drone>
+	<drone name="DE_REPAIR_2_R">
+		<crewBlueprint>repair_strong</crewBlueprint>
+		<tooltipName>Прочный ремонтник</tooltipName>
+	</drone>
+	<drone name="DE_REPAIR_4">
+		<crewBlueprint>repair_fast</crewBlueprint>
+		<tooltipName>Быстрый ремонтник</tooltipName>
+	</drone>
+	<drone name="DE_REPAIR_4_R">
+		<crewBlueprint>repair_fast</crewBlueprint>
+		<tooltipName>Быстрый ремонтник</tooltipName>
+	</drone>
+	<drone name="DE_BATTLE_2">
+		<crewBlueprint>battle_strong</crewBlueprint>
+		<tooltipName>Закалённый противопех</tooltipName>
+	</drone>
+	<drone name="DE_BATTLE_4">
+		<crewBlueprint>battle_fast</crewBlueprint>
+		<tooltipName>Быстрый противопех</tooltipName>
+	</drone>
+	<drone name="DE_BATTLE_2_R">
+		<crewBlueprint>battle_strong</crewBlueprint>
+		<tooltipName>Закалённый противопех</tooltipName>
+	</drone>
+	<drone name="DE_BATTLE_4_R">
+		<crewBlueprint>battle_fast</crewBlueprint>
+		<tooltipName>Быстрый противопех</tooltipName>
+	</drone>
+	<drone name="DE_BOARDER_2">
+		<crewBlueprint>battle_strong</crewBlueprint>
+		<tooltipName>Улучш. абордажный дрон</tooltipName>
+	</drone>
+	<drone name="DE_BOARDER_2_R">
+		<crewBlueprint>battle_strong</crewBlueprint>
+		<tooltipName>Улучш. абордажный дрон</tooltipName>
+	</drone>
+	<drone name="DE_BOARDER_4">
+		<crewBlueprint>battle_fast</crewBlueprint>
+		<tooltipName>Быстрый абордажник</tooltipName>
+	</drone>
+	<drone name="DE_BOARDER_4_R">
+		<crewBlueprint>battle_fast</crewBlueprint>
+		<tooltipName>Быстрый абордажник</tooltipName>
+	</drone>	
+</drones>
 
 <!-- Custom Augments
 
 <locked> means you cannot remove it (sell or replace with another augment) once it's equipped.
 useForReqs is for whether you want the augment to work for blue options or not. True by default.
+warning attribute being false removes red warning text
 
 Syntax ->
 <augments>
@@ -474,7 +4268,7 @@ Syntax ->
     	<function name="ADV_SCANNERS"/>
 		<function name="CREW_STIMS" value="0.2"/>
 		<function name="O2_MASKS" value="0.2" preferHigher="false"/>
-		<function name="HACKING_STUN" useForReqs="false"/>
+		<function name="HACKING_STUN" useForReqs="false" warning="false"/>
 		
 		<locked/>
     </aug>
@@ -482,31 +4276,200 @@ Syntax ->
 -->
 
 <augments>
+	<aug name="LOST_SUN_FIRE_ENHANCER"> <!-- 1.4 -->
+		<statBoost name = "canBurn">
+			<boostType>SET</boostType> <!--types are FLAT, MULT, or SET for numbers and SET, FLIP for true/false-->
+			<value>TRUE</value> <!--use amount for numbers and value for booleans-->
+			<shipTarget>ALL</shipTarget> <!--ship target can be PLAYER_SHIP, ENEMY_SHIP, ALL for booleans, and the same for numbers but also CURRENT_ALL, CURRENT_ROOM, and OTHER_ALL-->
+			<crewTarget>ENEMIES</crewTarget> <!--can be ALLIES/CREW/SELF/ALL-->
+			<affectsSelf>false</affectsSelf> <!--used to trigger a self effect in addition to one of the above-->
+			<priority>9999</priority> <!--determines order of execution, bigger number = happens first-->
+		</statBoost>
+		<statBoost name = "fireDamageMultiplier">
+			<boostType>SET</boostType>
+			<shipTarget>ALL</shipTarget>
+			<crewTarget>ENEMIES</crewTarget>
+			<amount>2.0</amount>
+			<priority>9998</priority>
+			<systemRoomTarget>ALL</systemRoomTarget> <!--can be ALL or NONE, determines if the system rooms specified are banned or the only ones allowed-->
+			<systemList> <!--determines the systems that the above option works on, can be any system name (blueprint name) or all-->
+			  <all/>
+			</systemList>
+		</statBoost>
+	</aug>
+	<aug name="HP_BOOSTER"> <!-- 1.4 -->
+		<statBoosts>
+			<statBoost name = "maxHealth">
+				<boostType>FLAT</boostType>
+				<amount>5</amount>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+			</statBoost>
+		</statBoosts>
+	</aug>
+	<aug name="HP_BOOSTER_2"> <!-- 1.4 -->
+		<statBoosts>
+			<statBoost name = "maxHealth">
+				<boostType>FLAT</boostType>
+				<amount>15</amount>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+			</statBoost>
+		</statBoosts>
+	</aug>
+	<aug name="HP_BOOSTER_3"> <!-- 1.4 -->
+		<statBoosts>
+			<statBoost name = "maxHealth">
+				<boostType>FLAT</boostType>
+				<amount>25</amount>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+			</statBoost>
+		</statBoosts>
+	</aug>
+	<aug name="HP_BOOSTER_4"> <!-- 1.4 -->
+		<statBoosts>
+			<statBoost name = "maxHealth">
+				<boostType>FLAT</boostType>
+				<amount>35</amount>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+			</statBoost>
+			<statBoost name = "damageMultiplier">
+				<boostType>MULT</boostType>
+				<amount>1.05</amount>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+			</statBoost>
+		</statBoosts>
+	</aug>
+	<aug name="HP_BOOSTER_5"> <!-- 1.4 -->
+		<statBoosts>
+			<statBoost name = "maxHealth">
+				<boostType>FLAT</boostType>
+				<amount>45</amount>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+			</statBoost>
+			<statBoost name = "damageMultiplier">
+				<boostType>MULT</boostType>
+				<amount>1.1</amount>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+			</statBoost>
+		</statBoosts>
+	</aug>
+	<aug name="ARMOR_SUIT"> <!-- 1.4 -->
+		<statBoosts>
+			<statBoost name = "allDamageTakenMultiplier">
+				<boostType>MULT</boostType>
+				<amount>0.95</amount>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+			</statBoost>
+			<statBoost name = "moveSpeedMultiplier">
+				<boostType>MULT</boostType>
+				<amount>0.85</amount>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+			</statBoost>
+		</statBoosts>
+	</aug>
+	<aug name="ARMOR_SUIT_2"> <!-- 1.4 -->
+		<statBoosts>
+			<statBoost name = "allDamageTakenMultiplier">
+				<boostType>MULT</boostType>
+				<amount>0.9</amount>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+			</statBoost>
+			<statBoost name = "moveSpeedMultiplier">
+				<boostType>MULT</boostType>
+				<amount>0.85</amount>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+			</statBoost>
+		</statBoosts>
+	</aug>
+	<aug name="ARMOR_SUIT_3"> <!-- 1.4 -->
+		<statBoosts>
+			<statBoost name = "allDamageTakenMultiplier">
+				<boostType>MULT</boostType>
+				<amount>0.85</amount>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+			</statBoost>
+			<statBoost name = "moveSpeedMultiplier">
+				<boostType>MULT</boostType>
+				<amount>0.85</amount>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+			</statBoost>
+		</statBoosts>
+	</aug>
+	<aug name="ARMOR_SUIT_4"> <!-- 1.4 -->
+		<statBoosts>
+			<statBoost name = "allDamageTakenMultiplier">
+				<boostType>MULT</boostType>
+				<amount>0.8</amount>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+			</statBoost>
+		</statBoosts>
+	</aug>
+	<aug name="ARMOR_SUIT_5"> <!-- 1.4 -->
+		<statBoosts>
+			<statBoost name = "allDamageTakenMultiplier">
+				<boostType>MULT</boostType>
+				<amount>0.75</amount>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+			</statBoost>
+			<statBoost name = "moveSpeedMultiplier">
+				<boostType>MULT</boostType>
+				<amount>1.15</amount>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+			</statBoost>
+			<statBoost name = "canBurn">
+				<boostType>SET</boostType>
+				<value>FALSE</value>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+			</statBoost>
+		</statBoosts>
+	</aug>
+	<aug name="HID_SLUG_GEL"> <!-- 1.4 -->
+    	<function name="SLUG_GEL" value="0.25" useForReqs="true"/>
+    </aug>
+	<aug name="HID_DRONE_SPEED"> <!-- 1.4 -->
+    	<function name="DRONE_SPEED" value="2.5" useForReqs="true"/>
+    </aug>
 	<aug name="MUSHROOM_REPAIR">
     	<function name="REPAIR_ARM" value="0" preferHigher="false" useForReqs="false"/> 
-		<function name="CREW_STIMS" value="0.25" useForReqs="false"/>
+		<function name="CREW_STIMS" value="0.25" useForReqs="false" warning="false"/> <!-- 1.3 -->
 		<locked/>
     </aug>
-	<aug name="SHELL_GAS">
-    	<function name="NANOBOT_DEFENSE_SYSTEM" value="100"/> 
+	<aug name="SHELL_GAS"> <!-- 1.3 -->
+    	<function name="NANOBOT_DEFENSE_SYSTEM" value="100" useForReqs="false"/> 
     </aug>
-	<aug name="SHELL_GAS_2">
-    	<function name="NANOBOT_DEFENSE_SYSTEM" value="150"/> 
+	<aug name="SHELL_GAS_2"> <!-- 1.3 -->
+    	<function name="NANOBOT_DEFENSE_SYSTEM" value="150" useForReqs="false"/> 
     </aug>
-	<aug name="SHELL_GAS_3">
-    	<function name="NANOBOT_DEFENSE_SYSTEM" value="200"/> 
+	<aug name="SHELL_GAS_3"> <!-- 1.3 -->
+    	<function name="NANOBOT_DEFENSE_SYSTEM" value="200" useForReqs="false"/> 
     </aug>
-	<aug name="SHELL_GAS_4">
-    	<function name="NANOBOT_DEFENSE_SYSTEM" value="250"/> 
+	<aug name="SHELL_GAS_4"> <!-- 1.3 -->
+    	<function name="NANOBOT_DEFENSE_SYSTEM" value="250" useForReqs="false"/> 
     </aug>
-	<aug name="SHELL_GAS_5">
-    	<function name="NANOBOT_DEFENSE_SYSTEM" value="300"/>
+	<aug name="SHELL_GAS_5"> <!-- 1.3 -->
+    	<function name="NANOBOT_DEFENSE_SYSTEM" value="300" useForReqs="false"/>
     </aug>
-	<aug name="MAGMAN_EXTINGUISHERS">
-    	<function name="FIRE_EXTINGUISHERS" value="1"/>
+	<aug name="MAGMAN_EXTINGUISHERS"> <!-- 1.3 -->
+    	<function name="FIRE_EXTINGUISHERS" value="1" useForReqs="false"/>
     </aug>
 	<aug name="O2_MASKS_CREW_STIMS">
-    	<function name="O2_MASKS" preferHigher="false"/>
+    	<function name="O2_MASKS" value="0.05" preferHigher="false"/> <!-- 1.3 -->
 		<function name="CREW_STIMS"/> 
     </aug>
 	<aug name="NANOBOT_DEFENSE_SYSTEM_NANO_MEDBAY">
@@ -514,7 +4477,7 @@ Syntax ->
 		<function name="NANO_MEDBAY"/>
     </aug>
 	<aug name="ENERGY_SHIELD_ZOLTAN_BYPASS">
-    	<function name="ENERGY_SHIELD"/> <!-- does not work -->
+    	<function name="ENERGY_SHIELD"/>
 		<function name="ZOLTAN_BYPASS"/> 
     </aug>
 	<aug name="SLUG_GEL_FIRE_EXTINGUISHERS">
@@ -571,16 +4534,142 @@ Syntax ->
     </aug>
 </augments>
 
+<!-- Stat boosts
+
+NOTE:
+TO USE STAT BOOSTS, THE RACE MUST BE LAID OUT AS A CUSTOM CREW IN THE <crew> TAG
+
+Stat boosts can be added in one of two ways: through crew, and through augments.
+For augments and crew active abilities, statboosts should be placed in a <statBoosts> tag (as many as you want, the <statBoosts> tag should contain all of them)
+For passive crew boosts, they should be placed in a <passiveStatBoosts> tag, but otherwise the code is the same
+As the name implies, stat boosts can be used to boost (or just generally modify) a given stat, but also you can use stat boosts to apply other stat boosts to crew (therefore buffing everyone except the recipient) by using "statBoost" for the statBoost name
+
+boostType: what the boost does to the stat; for numerical amounts, it can be FLAT, MULT, or SET, and for true/false values it can be SET or FLIP
+value/amount: use value for true/false stats and amount for numerical ones
+shipTarget: the ship/room that the statBoost affects. For augments, you can use PLAYER_SHIP, ENEMY_SHIP, ORIGINAL_SHIP, ORIGINAL_OTHER_SHIP, or ALL, and for crew you can use the same but also OTHER_ALL, CURRENT_ROOM, and CURRENT_ALL
+crewTarget: determines what crew the boost affects. it can be ALLIES, ENEMIES, or ALL
+droneTarget: determines whether the boost affects drones or not. it can be DRONES, CREW, or ALL (the default)
+whiteList/blackList: determines the species that the boost applies to. whiteLists mean that only those species get the boost, and blackLists mean that only those species won't get the boost.
+affectsSelf: determines if the boost affects the source in addition to its normal targets, defaults to false
+priority: determines the timing of when the boost gets applied, useful when you want to change how things stack. A bigger priority number means that the boost is calculated first, and the default priority is 0
+systemList: the list of systems to use with the next variable. can be the file-name of any system (e.g. "mind") or all
+systemRoomTarget: determines if the boost only works in the systems provided, or only *doesn't* work in those systems.
+systemPowerDependency: determines the systems that affect the power of this stat boost. can be any amount of system file names, reactorMax, reactorCurrent, or all
+systemPowerScaling: determines how the boost is affected by the total power bars within the systems in systemPowerDependency. The tag name doesn't matter; the first value is used when the system isn't there, the second is used when the system is offline, and the third onwards determines the power at each given bar of power (with any amount of power over the max using the last number)
+deathEffect: can be used to add any <deathEffect> as an additional part of the statBoost
+duration: for augments, determines how long a boost will apply after jumping, measured in seconds
+
+Stat boost syntax examples->
+
+<statBoost name = "canBurn">
+	<boostType>SET</boostType>
+	<value>TRUE</value>
+	<shipTarget>ALL</shipTarget>
+	<crewTarget>ENEMIES</crewTarget>
+	<droneTarget>CREW</droneTarget>
+	<blackList>
+		<superRock/>
+	</blackList>
+	<duration>15</duration>
+	<priority>0</priority>
+</statBoost>
+
+<statBoost name = "fireDamageMultiplier">
+	<boostType>MULT</boostType>
+	<shipTarget>ALL</shipTarget>
+	<crewTarget>ENEMIES</crewTarget>
+	<amount>2.0</amount>
+	<priority>9998</priority>
+	<systemRoomTarget>ALL</systemRoomTarget>
+	<systemList>
+		<all/>
+	</systemList>
+	<systemPowerDependency>
+		<weapons/>
+	</systemPowerDependency>
+	<systemPowerScaling>
+		<noSys>0.0</noSys>
+		<noPwr>0.5</noPwr>
+		<onePwr>1.0</onePwr>
+		<twoPwr>2.0</twoPwr>
+		<threePwr>3.0</threePwr>
+		<morePwr>4.0</morePwr>
+	</systemPowerScaling>
+</statBoost>
+
+<statBoost name = "statBoost">
+	<shipTarget>ALL</shipTarget>
+	<crewTarget>ENEMIES</crewTarget>
+	<priority>9998</priority>
+	<systemRoomTarget>ALL</systemRoomTarget>
+	<systemList>
+		<all/>
+	</systemList>
+	<statBoost>
+		(insert another statBoost here to apply to all affected targets)
+	</statBoost>
+</statBoost>
+
+Syntax (for an augment)->
+
+<aug name="WEIRD_FIRE_ENHANCER">
+	<statBoosts>
+		<statBoost name = "canBurn">
+			(insert statBoost here)
+		</statBoost>
+	</statBoosts>
+</aug>
+
+Syntax (for crew)->
+
+<race name="fireBoi">
+	<passiveStatBoosts>
+		(insert statBoost here)
+	</passiveStatBoosts>
+	<powerEffect>
+		(insert rest of ability)
+		<statBoosts>
+			(insert statBoost here)
+		</statBoosts>
+	</abilityEffect>
+</race>
+
+-->
+
 <!-- Custom Event Characteristics
 
 For beaconType and unvisitedTooltip/visitedTooltip, you can either use "id" or "text" as an attribute for the text - "id" pulls it from text_misc.xml while "text" uses the attribute's value.
+
+To remove a hidden augment, use <remove> in the actual event tag for the event and put "HIDDEN " before the augment name, e.g. to remove a hidden zoltan shield make a remove tag with "HIDDEN ENERGY_SHIELD"
+
+<loadEvent> makes it so that the event that's loaded is NOT preloaded when the sector is generated,
+and instead loaded only when needed. This helps with loading times at the start of a sector, as well as
+reducing RAM usage and making events that load each other possible (useful for stuff like back buttons in events).
+The seeded attribute makes it so that randomly generated things in the same beacon are the same every time that event
+is loaded. Otherwise it will not depend on the seed/beacon and will instead be random every time the event is loaded in that beacon.
+
+The req attribute for beaconType makes it so that the beacon label is only visible when the ship has a specific piece of equipment (augment, weapon, drone, race) installed.
+
+For nebulaQuest, if nebulaEvent is set then the event will be replaced by nebulaEvent if the quest beacon is a nebula beacon.
+If force="true" then the quest must spawn in a nebula, otherwise it can spawn outside the nebula as well.
+If clear="false" then a nebula will be added to the quest event if in a nebula beacon, otherwise the event's normal environment will be used.
+Default behaviour is clear="true" if force="true" or if nebulaEvent is set, otherwise clear="false".
+For lastStandQuest, if noBoss="true" then the quest cannot actually spawn in the last stand, but will spawn if the player goes to a secret sector.
+
+You can load custom stores by supplying the custom store id
+The event has to load a vanilla store in events.xml - it will be replaced with the custom store on load
+
 
 Syntax -> 
 <events>
 	<bossShip>AUTO_ASSAULT_DLC</bossShip>
 	<eventFile>special</eventFile>
-	<exitBeacon sectorName="CIVILIAN_SECTOR" event="BOARDERS" rebelEvent="FLEET_HARD" nebulaEvent="NEBULA_HOSTILE"/>
-	<rebelBeacon sectorName="CIVILIAN_SECTOR" event="BOARDERS" nebulaEvent="NEBULA_AUTO"/>
+	
+	<sector name="CIVILIAN_SECTOR">
+        <exitBeacon event="BOARDERS" rebelEvent="FLEET_HARD" nebulaEvent="NEBULA_HOSTILE"/>
+        <rebelBeacon event="BOARDERS" nebulaEvent="NEBULA_AUTO"/>
+        <removeFirstBeaconNebula/>
+    </sector>
 	
 	<event name="CIVILIAN_ASTEROIDS_BEACON_2" recursive="false">
 		<checkCargo/>
@@ -591,11 +4680,57 @@ Syntax ->
 	<event name="TRADER_CIV">
 		<preventQuest/>
 		<noQuestText/>
-		<beaconType id="map_icon_trader" text="TRADER" global="false">
+		<beaconType id="map_icon_trader" text="TRADER" global="false" req="EQUIPMENT_REQU>
 			<color r="255" g="166" b="226" a="1.0"/>
-			<unvisitedTooltip id="map_unvisited_loc">An unvisited location.</unvisitedTooltip>
-			<visitedTooltip id="map_nothing_loc">An explored location.</visitedTooltip>
+			<undiscoveredTooltip id="map_unvisited_loc">An unvisited location.</unvisitedTooltip>
+			<unvisitedTooltip id="map_unvisited_loc">An unvisited trader location.</unvisitedTooltip>
+			<visitedTooltip id="map_nothing_loc">An explored location. A trader was here.</visitedTooltip>
 		</beaconType>
+		<playSound>sell</playSound>
+		<changeBackground>BACK_SECTOR_CIVILIAN</changeBackground>
+	</event>
+	
+	<event name="QUEST_DESTINATION">
+		<nebulaQuest force="false" clear="false" nebulaEvent="NEBULA_QUEST_DESTINATION"/>
+		<lastStandQuest noBoss="false"/>
+		<noNextSectorQuest aggressive="false"/>
+	</event>
+	
+	<event name="CRYSTAL_TEST">
+		<secretSectorWarp>ENGI_HOME</secretSectorWarp>
+	</event>
+	
+	<event name="FREE_WIN">
+		<win text="Custom event victory!" creditsText="credit_victory" creditsBackground="imageList"/>
+	</event>
+	
+	<event name="default_victory"> -> This is the default <win> tag for winning the game by killing the flagship
+		<win text="Custom event victory!" creditsText="credit_victory" creditsBackground="imageList"/>
+	</event>
+	
+	<event name="FREE_HIDDEN_ENERGY_SHIELD" recursive="false">
+		<hiddenAug>ENERGY_SHIELD</hiddenAug>
+	</event>
+	
+	<event name="LOAD_OTHER_BIG_EVENT">
+		<loadEvent name="BIG_EVENT" seeded="true"/>
+	</event>
+	
+	<event name="REMOVE_ITEMS">
+		<removeItem>HIDDEN ENERGY_SHIELD</removeItem>
+		<removeItem>NANO_MEDBAY</removeItem>
+	</event>
+	
+	<event name="UNLOCK_CUSTOM_SHIP">
+		<unlockShip>PLAYER_SHIP_CUSTOM</unlockShip>
+	</event>
+	
+	<event name="SANDBOX_GIVE_SCRAP">
+		<disableScrapScore/>
+	</event>
+	
+	<event name="STOREEVENT_STORE_CUSTOM" recursive="true">
+<customStore>STORE_CUSTOM</customStore>
 	</event>
 </events>
 
@@ -603,42 +4738,126 @@ Syntax ->
 -->
 
 <events>
+    <sector name="STANDARD_SPACE"><!-- 1.3 -->
+        <removeFirstBeaconNebula/>
+    </sector>
+	<sector name="CIVILIAN_SECTOR"><!-- 1.3 -->
+        <removeFirstBeaconNebula/>
+    </sector>
 	<event name="LANIUS_BEACON_EATER">
 		<checkCargo/>
 	</event>
-	<event name="TALK_WITH_CREW">
+	<event name="TALK_WITH_CREW"> <!-- 1.4 -->
+		<loadEvent>TALK_WITH_CREW_2</loadEvent>
+	</event>
+	<event name="TALK_WITH_CREW_2"> <!-- 1.4 -->
 		<checkCargo/>
 	</event>
-	<event name="TALK_WITH_CREW_HUMAN">
+	<event name="TALK_WITH_CREW_HUMAN"> <!-- 1.4 -->
+		<loadEvent>TALK_WITH_CREW_HUMAN_2</loadEvent>
+	</event>
+	<event name="TALK_WITH_CREW_HUMAN_2"> <!-- 1.4 -->
 		<checkCargo/>
 	</event>
-	<event name="TALK_WITH_CREW_ORDER_HUMAN">
+	<event name="TALK_WITH_CREW_ORDER_HUMAN"> <!-- 1.4 -->
+		<loadEvent>TALK_WITH_CREW_ORDER_HUMAN_2</loadEvent>
+	</event>
+	<event name="TALK_WITH_CREW_ORDER_HUMAN_2"> <!-- 1.4 -->
 		<checkCargo/>
 	</event>
-	<event name="TALK_WITH_CREW_ENGI">
+	<event name="TALK_WITH_CREW_ENGI"> <!-- 1.4 -->
+		<loadEvent>TALK_WITH_CREW_ENGI_2</loadEvent>
+	</event>
+	<event name="TALK_WITH_CREW_ENGI_2"> <!-- 1.4 -->
 		<checkCargo/>
 	</event>
-	<event name="TALK_WITH_CREW_ENERGY">
+	<event name="TALK_WITH_CREW_MORPH"> <!-- 1.4 -->
+		<loadEvent>TALK_WITH_CREW_MORPH_2</loadEvent>
+	</event>
+	<event name="TALK_WITH_CREW_MORPH_2"> <!-- 1.4 -->
 		<checkCargo/>
 	</event>
-	<event name="TALK_WITH_CREW_MANTIS">
+	<event name="TALK_WITH_CREW_ENERGY"> <!-- 1.4 -->
+		<loadEvent>TALK_WITH_CREW_ENERGY_2</loadEvent>
+	</event>
+	<event name="TALK_WITH_CREW_ENERGY_2"> <!-- 1.4 -->
 		<checkCargo/>
 	</event>
-	<event name="TALK_WITH_CREW_SLUG">
+	<event name="TALK_WITH_CREW_ENERGYX"> <!-- 1.4 -->
+		<loadEvent>TALK_WITH_CREW_ENERGYX_2</loadEvent>
+	</event>
+	<event name="TALK_WITH_CREW_ENERGYX_2"> <!-- 1.4 -->
 		<checkCargo/>
 	</event>
-	<event name="TALK_WITH_CREW_ROCK">
+	<event name="TALK_WITH_CREW_MANTIS"> <!-- 1.4 -->
+		<loadEvent>TALK_WITH_CREW_MANTIS_2</loadEvent>
+	</event>
+	<event name="TALK_WITH_CREW_MANTIS_2"> <!-- 1.4 -->
 		<checkCargo/>
 	</event>
-	<event name="TALK_WITH_CREW_ANAEROBIC">
+	<event name="TALK_WITH_CREW_SLUG"> <!-- 1.4 -->
+		<loadEvent>TALK_WITH_CREW_SLUG_2</loadEvent>
+	</event>
+	<event name="TALK_WITH_CREW_SLUG_2"> <!-- 1.4 -->
 		<checkCargo/>
 	</event>
-	<event name="TALK_WITH_CREW_CRYSTAL">
+	<event name="TALK_WITH_CREW_ROCK"> <!-- 1.4 -->
+		<loadEvent>TALK_WITH_CREW_ROCK_2</loadEvent>
+	</event>
+	<event name="TALK_WITH_CREW_ROCK_2"> <!-- 1.4 -->
 		<checkCargo/>
 	</event>
-	<event name="TALK_WITH_CREW_GHOST">
+	<event name="TALK_WITH_CREW_SLIG"> <!-- 1.4 -->
+		<loadEvent>TALK_WITH_CREW_SLIG_2</loadEvent>
+	</event>
+	<event name="TALK_WITH_CREW_2_SLIG"> <!-- 1.4 -->
 		<checkCargo/>
 	</event>
+	<event name="TALK_WITH_CREW_MAGMAN"> <!-- 1.4 -->
+		<loadEvent>TALK_WITH_CREW_MAGMAN_2</loadEvent>
+	</event>
+	<event name="TALK_WITH_CREW_MAGMAN_2"> <!-- 1.4 -->
+		<checkCargo/>
+	</event>
+	<event name="TALK_WITH_CREW_ORCHID"> <!-- 1.4 -->
+		<loadEvent>TALK_WITH_CREW_ORCHID_2</loadEvent>
+	</event>
+	<event name="TALK_WITH_CREW_ORCHID_2"> <!-- 1.4 -->
+		<checkCargo/>
+	</event>
+	<event name="TALK_WITH_CREW_SHELL"> <!-- 1.4 -->
+		<loadEvent>TALK_WITH_CREW_SHELL_2</loadEvent>
+	</event>
+	<event name="TALK_WITH_CREW_SHELL_2"> <!-- 1.4 -->
+		<checkCargo/>
+	</event>
+	<event name="TALK_WITH_CREW_MUSHROOM"> <!-- 1.4 -->
+		<loadEvent>TALK_WITH_CREW_MUSHROOM_2</loadEvent>
+	</event>
+	<event name="TALK_WITH_CREW_MUSHROOM_2"> <!-- 1.4 -->
+		<checkCargo/>
+	</event>
+	<event name="TALK_WITH_CREW_ANAEROBIC"> <!-- 1.4 -->
+		<loadEvent>TALK_WITH_CREW_ANAEROBIC_2</loadEvent>
+	</event>
+	<event name="TALK_WITH_CREW_ANAEROBIC_2"> <!-- 1.4 -->
+		<checkCargo/>
+	</event>
+	<event name="TALK_WITH_CREW_CRYSTAL"> <!-- 1.4 -->
+		<loadEvent>TALK_WITH_CREW_CRYSTAL_2</loadEvent>
+	</event>
+	<event name="TALK_WITH_CREW_CRYSTAL_2"> <!-- 1.4 -->
+		<checkCargo/>
+	</event>
+	<event name="TALK_WITH_CREW_GHOST"> <!-- 1.4 -->
+		<loadEvent>TALK_WITH_CREW_GHOST_2</loadEvent>
+	</event>
+	<event name="TALK_WITH_CREW_GHOST_2"> <!-- 1.4 -->
+		<checkCargo/>
+	</event>
+	<event name="AUGMENTS_ON_START_BEACON"> <!-- 1.4 -->
+		<loadEvent>AUGMENTS_ON_START_BEACON_2</loadEvent>
+	</event>	
 	<event name="PIRATE_STATION_CROPS">
 		<checkCargo/>
 	</event>
@@ -753,10 +4972,12 @@ Syntax ->
 	<event name="NEBULA_SLURM_CRAZY_CAPTAIN">
 		<checkCargo/>
 	</event>
-	<event name="PLANET_ENGE_UPGRADE">
-		<checkCargo/>
+	<event name="PLANET_ENGE_UPGRADE"> <!-- 1.4 -->
+		<loadEvent>PLANET_ENGE_UPGRADE_2</loadEvent>
 	</event>
-	
+	<event name="PLANET_ENGE_UPGRADE_2"> <!-- 1.4 -->
+		<checkCargo/>
+	</event>	
 	<event name="NOTHING2_SHELL_GOOD_EVENT">
 		<checkCargo/>
 	</event>
@@ -793,7 +5014,13 @@ Syntax ->
 	<event name="STASIS_POD_LIST_GOOD">
 		<checkCargo/>
 	</event>
-	<event name="PROTOTYPE_COLLECTIONER_DEAL">
+	<event name="PROTOTYPE_COLLECTIONER">
+		<checkCargo/>
+	</event>
+	<event name="PROTOTYPE_COLLECTIONER_DEAL"> <!-- 1.3 --><!-- 1.4 -->
+		<loadEvent>PROTOTYPE_COLLECTIONER_DEAL_2</loadEvent>
+	</event>
+	<event name="PROTOTYPE_COLLECTIONER_DEAL_2"> <!-- 1.4 -->
 		<checkCargo/>
 	</event>
 	<event name="PROTOTYPE_TRADE_REGULAR">
@@ -807,6 +5034,10 @@ Syntax ->
 	</event>
 	<event name="REPAIR_ENGI_HOME">
 		<checkCargo/>
+		<preventQuest/> <!-- 1.4 -->
+	</event>
+	<event name="REPAIR_ENGI">
+		<preventQuest/> <!-- 1.4 -->
 	</event>
 	<event name="REPAIR_ENGI_PROTOTYPES">
 		<checkCargo/>
@@ -819,6 +5050,231 @@ Syntax ->
 	</event>
 	<event name="EVENT_ENERGYX_BS">
 		<checkCargo/>
+	</event>
+	<event name="MENGI_SCANNING_EVENT2"> <!-- 1.3 -->
+		<checkCargo/>
+	</event>
+	<event name="NEBULA_WEAPONS_CHAIN"> <!-- 1.3 -->
+		<checkCargo/>
+	</event>
+	<event name="NEBULA_HOME_REPAIRMENGI_EVENT"> <!-- 1.4 -->
+		<preventQuest/>
+	</event>
+	<event name="HAL_BOSS_FIGHT"> <!-- 1.4 -->
+		<preventQuest/>
+	</event>
+	<event name="INSTALL_SLUG_GEL"> <!-- 1.4 -->
+        <hiddenAug>HID_SLUG_GEL</hiddenAug>
+		<loadEvent>AUTOSHIP_TALK</loadEvent>
+    </event>
+	<event name="INSTALL_DRONE_SPEED"> <!-- 1.4 -->
+        <hiddenAug>HID_DRONE_SPEED</hiddenAug>
+		<loadEvent>AUTOSHIP_TALK</loadEvent>
+    </event>
+	<!-- 1.4 --> <!-- STORES -->
+	<event name="SPECIAL_STORE" recursive="true">
+		<customStore>SPECIAL_STORE_CUSTOM</customStore>
+		<beaconType id="map_icon_store" global="true" req="ADV_SCANNERS">
+			<color r="46" g="250" b="51" a="1"/>
+		</beaconType>
+	</event>
+	<event name="STORE_ZOLTAN" recursive="true">
+		<customStore>STORE_CUSTOM</customStore>
+		<beaconType id="map_icon_store" global="true" req="ADV_SCANNERS">
+			<color r="46" g="250" b="51" a="1"/>
+		</beaconType>
+	</event>
+	<event name="STORE_ZOLTON" recursive="true">
+		<customStore>STORE_CUSTOM</customStore>
+		<beaconType id="map_icon_store" global="true" req="ADV_SCANNERS">
+			<color r="46" g="250" b="51" a="1"/>
+		</beaconType>
+	</event>
+	<event name="STORE_LANIUS" recursive="true">
+		<customStore>STORE_CUSTOM</customStore>
+		<beaconType id="map_icon_store" global="true" req="ADV_SCANNERS">
+			<color r="46" g="250" b="51" a="1"/>
+		</beaconType>
+	</event>
+	<event name="STORE" recursive="true">
+		<customStore>STORE_CUSTOM</customStore>
+		<beaconType id="map_icon_store" global="true" req="ADV_SCANNERS">
+			<color r="46" g="250" b="51" a="1"/>
+		</beaconType>
+	</event>
+	<event name="QUEST_STORE" recursive="true">
+		<customStore>STORE_CUSTOM</customStore>
+		<beaconType id="map_icon_store" global="true" req="ADV_SCANNERS">
+			<color r="46" g="250" b="51" a="1"/>
+		</beaconType>
+	</event>
+	<event name="LOTEREYA" recursive="true">
+		<customStore>STORE_CUSTOM</customStore>
+		<beaconType id="map_icon_store" global="true" req="ADV_SCANNERS">
+			<color r="46" g="250" b="51" a="1"/>
+		</beaconType>
+	</event>
+	<event name="SKUP" recursive="true">
+		<customStore>STORE_CUSTOM</customStore>
+		<beaconType id="map_icon_store" global="true" req="ADV_SCANNERS">
+			<color r="46" g="250" b="51" a="1"/>
+		</beaconType>
+	</event>
+	<event name="000100" recursive="true">
+		<customStore>STORE_CUSTOM</customStore>
+		<beaconType id="map_icon_store" global="true" req="ADV_SCANNERS">
+			<color r="46" g="250" b="51" a="1"/>
+		</beaconType>
+	</event>
+	<event name="TRADERS_3_AUGMENTS" recursive="true">
+		<customStore>AUGMENTS_STORE_CUSTOM</customStore>
+		<beaconType id="map_icon_store" global="true" req="ADV_SCANNERS">
+			<color r="46" g="250" b="51" a="1"/>
+		</beaconType>
+	</event>
+	<event name="TRADERS_3_WEAPONS" recursive="true">
+		<customStore>WEAPONS_STORE_CUSTOM</customStore>
+		<beaconType id="map_icon_store" global="true" req="ADV_SCANNERS">
+			<color r="46" g="250" b="51" a="1"/>
+		</beaconType>
+	</event>
+	<event name="TRADERS_3_DRONES" recursive="true">
+		<customStore>DRONES_STORE_CUSTOM</customStore>
+		<beaconType id="map_icon_store" global="true" req="ADV_SCANNERS">
+			<color r="46" g="250" b="51" a="1"/>
+		</beaconType>
+	</event>
+	<event name="TRADERS_3_MERCENARY" recursive="true">
+		<customStore>CREW_STORE_CUSTOM</customStore>
+		<beaconType id="map_icon_store" global="true" req="ADV_SCANNERS">
+			<color r="46" g="250" b="51" a="1"/>
+		</beaconType>
+	</event>
+	<event name="PROTOTYPE_COLLECTIONER" recursive="true">
+		<customStore>STORE_CUSTOM</customStore>
+		<beaconType id="map_icon_store" global="true" req="ADV_SCANNERS">
+			<color r="46" g="250" b="51" a="1"/>
+		</beaconType>
+	</event>
+	<event name="STORE_CRYSTAL" recursive="true">
+		<customStore>STORE_CUSTOM</customStore>
+		<beaconType id="map_icon_store" global="true" req="ADV_SCANNERS">
+			<color r="46" g="250" b="51" a="1"/>
+		</beaconType>
+	</event>
+	<event name="STORE_ENGI" recursive="true">
+		<customStore>STORE_CUSTOM</customStore>
+		<beaconType id="map_icon_store" global="true" req="ADV_SCANNERS">
+			<color r="46" g="250" b="51" a="1"/>
+		</beaconType>
+	</event>
+	<event name="STORE_MORPH" recursive="true">
+		<customStore>STORE_CUSTOM</customStore>
+		<beaconType id="map_icon_store" global="true" req="ADV_SCANNERS">
+			<color r="46" g="250" b="51" a="1"/>
+		</beaconType>
+	</event>
+	<event name="MENGI_STORE_EVENT" recursive="true">
+		<customStore>STORE_CUSTOM</customStore>
+		<beaconType id="map_icon_store" global="true" req="ADV_SCANNERS">
+			<color r="46" g="250" b="51" a="1"/>
+		</beaconType>
+	</event>
+	<event name="STORE_ORCHID" recursive="true">
+		<customStore>STORE_CUSTOM</customStore>
+		<beaconType id="map_icon_store" global="true" req="ADV_SCANNERS">
+			<color r="46" g="250" b="51" a="1"/>
+		</beaconType>
+	</event>
+	<event name="STORE_MANTIS" recursive="true">
+		<customStore>STORE_CUSTOM</customStore>
+		<beaconType id="map_icon_store" global="true" req="ADV_SCANNERS">
+			<color r="46" g="250" b="51" a="1"/>
+		</beaconType>
+	</event>
+	<event name="NEBULA_STORE" recursive="true">
+		<customStore>STORE_CUSTOM</customStore>
+		<beaconType id="map_icon_store" global="true" req="ADV_SCANNERS">
+			<color r="46" g="250" b="51" a="1"/>
+		</beaconType>
+	</event>
+	<event name="NEBULA_STORE_AVATAR" recursive="true">
+		<customStore>STORE_CUSTOM</customStore>
+		<beaconType id="map_icon_store" global="true" req="ADV_SCANNERS">
+			<color r="46" g="250" b="51" a="1"/>
+		</beaconType>
+	</event>
+	<event name="STORE_PIRATE" recursive="true">
+		<customStore>STORE_CUSTOM</customStore>
+		<beaconType id="map_icon_store" global="true" req="ADV_SCANNERS">
+			<color r="46" g="250" b="51" a="1"/>
+		</beaconType>
+	</event>
+	<event name="STORE_REBEL" recursive="true">
+		<customStore>STORE_CUSTOM</customStore>
+		<beaconType id="map_icon_store" global="true" req="ADV_SCANNERS">
+			<color r="46" g="250" b="51" a="1"/>
+		</beaconType>
+	</event>
+	<event name="STORE_ORDEN_PIRATESTORE" recursive="true">
+		<customStore>STORE_CUSTOM</customStore>
+		<beaconType id="map_icon_store" global="true" req="ADV_SCANNERS">
+			<color r="46" g="250" b="51" a="1"/>
+		</beaconType>
+	</event>
+	<event name="STORE_ORDEN_JUST_STORE" recursive="true">
+		<customStore>STORE_CUSTOM</customStore>
+		<beaconType id="map_icon_store" global="true" req="ADV_SCANNERS">
+			<color r="46" g="250" b="51" a="1"/>
+		</beaconType>
+	</event>
+	<event name="STORE_HAL_1" recursive="true">
+		<customStore>STORE_CUSTOM</customStore>
+		<beaconType id="map_icon_store" global="true" req="ADV_SCANNERS">
+			<color r="46" g="250" b="51" a="1"/>
+		</beaconType>
+	</event>
+	<event name="STORE_BORDER_1" recursive="true">
+		<customStore>STORE_CUSTOM</customStore>
+		<beaconType id="map_icon_store" global="true" req="ADV_SCANNERS">
+			<color r="46" g="250" b="51" a="1"/>
+		</beaconType>
+	</event>
+	<event name="STORE_ROCK" recursive="true">
+		<customStore>STORE_CUSTOM</customStore>
+		<beaconType id="map_icon_store" global="true" req="ADV_SCANNERS">
+			<color r="46" g="250" b="51" a="1"/>
+		</beaconType>
+	</event>
+	<event name="NEBULA_STORE_SLUG" recursive="true">
+		<customStore>STORE_CUSTOM</customStore>
+		<beaconType id="map_icon_store" global="true" req="ADV_SCANNERS">
+			<color r="46" g="250" b="51" a="1"/>
+		</beaconType>
+	</event>
+	<event name="NEBULA_STORM_STORE_UNSTABLE_STORM" recursive="true">
+		<customStore>STORE_CUSTOM</customStore>
+		<beaconType id="map_icon_store" global="true" req="ADV_SCANNERS">
+			<color r="46" g="250" b="51" a="1"/>
+		</beaconType>
+	</event>
+	<event name="NEBULA_STORM_STORE_UNSTABLE_NO_SCRAP" recursive="true">
+		<customStore>STORE_CUSTOM</customStore>
+		<beaconType id="map_icon_store" global="true" req="ADV_SCANNERS">
+			<color r="46" g="250" b="51" a="1"/>
+		</beaconType>
+	</event>
+	<event name="NEBULA_STORE_SLURM" recursive="true">
+		<customStore>STORE_CUSTOM</customStore>
+		<beaconType id="map_icon_store" global="true" req="ADV_SCANNERS">
+			<color r="46" g="250" b="51" a="1"/>
+		</beaconType>
+	</event>
+	<event name="SLURM_PLANET_TRADER" recursive="true">
+		<customStore>STORE_CUSTOM</customStore>
+		<beaconType id="map_icon_store" global="true" req="ADV_SCANNERS">
+			<color r="46" g="250" b="51" a="1"/>
+		</beaconType>
 	</event>
 	<!-- <bossShip>MANTIS_BOSS_1</bossShip>
 	<bossShip>MANTIS_BOSS_2</bossShip> -->
@@ -838,23 +5294,1011 @@ Syntax ->
 		<human room="14"/>
 		<human room="18"/>
 	</crew>
-	<surgeDrones>    
-		<drone difficulty="0" name="COMBAT_1" count="2"/>
-		<drone difficulty="0" name="COMBAT_BEAM" count="2"/>
-		<drone difficulty="1" name="COMBAT_1" count="3"/>
-		<drone difficulty="1" name="COMBAT_BEAM" count="3"/>
-		<drone difficulty="2" name="COMBAT_1" count="4"/>
-		<drone difficulty="2" name="COMBAT_BEAM" count="3"/>
+	<surgeDrones>  <!-- 1.2 -->  
+		<drone difficulty="0" name="COMBAT_1" count="1"/>
+		<drone difficulty="0" name="COMBAT_1" count="1"/>
+		<drone difficulty="0" name="COMBAT_BEAM" count="1"/>
+		<drone difficulty="0" name="COMBAT_BEAM" count="1"/>
+		<drone difficulty="1" name="COMBAT_1" count="1"/>
+		<drone difficulty="1" name="COMBAT_1" count="1"/>
+		<drone difficulty="1" name="COMBAT_1" count="1"/>
+		<drone difficulty="1" name="COMBAT_BEAM" count="1"/>
+		<drone difficulty="1" name="COMBAT_BEAM" count="1"/>
+		<drone difficulty="1" name="COMBAT_BEAM" count="1"/>
+		<drone difficulty="2" name="COMBAT_1" count="1"/>
+		<drone difficulty="2" name="COMBAT_1" count="1"/>
+		<drone difficulty="2" name="COMBAT_1" count="1"/>
+		<drone difficulty="2" name="COMBAT_1" count="1"/>
+		<drone difficulty="2" name="COMBAT_BEAM" count="1"/>
+		<drone difficulty="2" name="COMBAT_BEAM" count="1"/>
+		<drone difficulty="2" name="COMBAT_BEAM" count="1"/>
 	</surgeDrones>
 </boss>
 
+<!-- Custom Stores
+	The Custom Store id will be what is used to spawn the store from a custom event
+	
+	Prices:
+		These same tags can be used for the price of any item/resource/hull repair
+		flat or not flat determines whether the amount is just added onto the price of the item or if it's a multiplier respectively
+		
+		<item>
+			<price>10</price>         Option 1: Set price (if price is not set, defaults to -1 meaning it will use the blueprint price)
+			<price min="5" max="10"/> Option 2: Min-max price, uses random between min-max if not <sectorScaled/>
+
+			<sectorScaled/> chooses between min-max price depending on sector ((max - min) * ((sector - 1) / 7) + min)
+
+			<modifier flat="false">0.8</modifier>        Option 1: Set modifier (flat is false by default)
+			<modifier min="0.5" max="0.9" flat="false"/> Option 2: random modifier between min-max
+		</item>
+	
+	Hull repair:
+		If a hullRepair tag is not set, you will not be able to repair your hull at the store
+		
+	Resources:
+		type can be "missiles", "drones", or "fuel"
+		count can either have min and max attributes, or a set amount
+		
+	Category:
+		A store category has 3 (or fewer) items of a specific type inside it
+		the type for a category can be: "WEAPONS", "DRONES", "AUGMENTS", "CREW", "SYSTEMS"
+		
+		Stores can have infinite categories, pages will be created to accomodate them
+		
+		customTitle is the title that appears above the store items. If it's not set it will use the default for the type
+		
+		A category can have a group that it belongs to
+		Only one category per group is displayed, unless a group is not set
+		The groupChance determines the chance that the category will be chosen
+		If a groupChance is not set for a category, it will evenly distribute the chance between the categories that don't have a groupChance set (while keeping the chance for the ones that do have it set)
+		NOTE: the sum of all groupChances in a group should never go beyond 100
+		
+		allowDuplicates sets whether or not duplicate checking is enabled for that single category (duplicate checking is only used for items using a blueprintList)
+		
+		chance is the chance that the category shows up at all (this is rolled separately from groupChance)
+		
+	Item:
+		blueprint can either be empty or a blueprint/blueprintList - if it is empty, it will use vanilla generation
+		mysteryItem decides whether or not you can see what the item is before purchasing
+		
+		System id list: shields, engines, oxygen, weapons, drones, medbay, pilot, sensors, doors, teleporter, cloaking, artillery, battery, clonebay, mind, hacking
+	
+	Item purchase limit sets the number of total items that can be purchased from a store	
+	
+    <customStore id="STORE_CUSTOM">
+        <itemPurchaseLimit>2</itemPurchaseLimit>
+		
+		<hullRepair>
+			<price min="3" max="8"/>
+			<sectorScaled/>
+			<modifier min="-2" max="2" flat="true"/>
+		</hullRepair>
+		
+		<resource>
+			<type>missiles</type>
+			<count min="8" max="20"/>
+			<price>2</price>
+		</resource>
+		<resource>
+			<type>drones</type>
+			<count min="8" max="20"/>
+			<price>2</price>
+		</resource>
+		
+		With the two categories below, there is a 25% chance that the category chosen will be the mystery item category, with items chosen from the MYSTERY_ITEM_POOL blueprintList
+		(Meaning there is a 75% chance of choosing the non-mystery item category, which will contain visible items from a STORE_CUSTOM_WEAPON_POOL blueprintList)
+		<category type="WEAPONS" group="1">
+            <item>
+                <blueprint>MYSTERY_ITEM_POOL</blueprint>
+                <modifier min="0.8" max="1.1" flat="false"/>
+				<mysteryItem>true</mysteryItem>
+            </item>    
+            <item>
+                <blueprint>MYSTERY_ITEM_POOL</blueprint>
+                <modifier min="0.8" max="1.1" flat="false"/>
+				<mysteryItem>true</mysteryItem>
+            </item>    
+            <item>
+                <blueprint>MYSTERY_ITEM_POOL</blueprint>
+                <modifier min="0.8" max="1.1" flat="false"/>
+				<mysteryItem>true</mysteryItem>
+            </item>   
+			
+			<groupChance>15</groupChance>
+        </category>
+		<category type="WEAPONS" group="1">
+			<allowDuplicates/>
+            <item>
+                <blueprint>STORE_CUSTOM_WEAPON_POOL</blueprint>
+                <modifier min="0.8" max="1.1" flat="false"/>
+            </item> 
+			<item>
+                <blueprint>STORE_CUSTOM_WEAPON_POOL</blueprint>
+                <modifier min="0.8" max="1.1" flat="false"/>
+            </item>    			
+            <item>
+                <blueprint>STORE_CUSTOM_WEAPON_POOL</blueprint>
+                <modifier min="0.8" max="1.1" flat="false"/>
+            </item>
+        </category>
+		
+		<category type="SYSTEMS"> This spawn a weapons system at the weapon system blueprint price 50% of the time
+			<chance>50</chance>
+			<item>
+				<blueprint>weapons</blueprint>
+			</item>
+		</category>
+		
+		<category type="DRONES"> This category will use vanilla generation of drone schematics, but discount them
+			<item>
+                <modifier min="0.5" max="0.8" flat="false"/>
+			</item>
+			
+			<item>
+                <modifier min="0.5" max="0.8" flat="false"/>
+			</item>
+			
+			<item>
+                <modifier min="0.5" max="0.8" flat="false"/>
+			</item>
+		</category>
+    </customStore>
+-->
+
+
 <!-- freeDrones lets you customise the drone you get when buying a drone system. It can be a drone blueprintList as well. -->
 <store>
-	<freeDrones>
+	<customStore id="STORE_CUSTOM">
+		<hullRepair>
+			<price min="2" max="4"/>
+			<sectorScaled/>
+		</hullRepair>
+		<resource>
+			<type>fuel</type>
+			<count min="0" max="8"/>
+			<price>4</price>
+		</resource>
+		<resource>
+			<type>missiles</type>
+			<count min="0" max="16"/>
+			<price>2</price>
+		</resource>
+		<resource>
+			<type>drones</type>
+			<count min="0" max="12"/>
+			<price>3</price>
+		</resource>
+		<category type="DRONES" group="12">
+			<groupChance>15</groupChance>
+			<item>
+                <modifier min="0.8" max="1.0" flat="false"/>
+			</item>
+			<item>
+                <modifier min="0.8" max="1.0" flat="false"/>
+			</item>			
+			<item>
+                <modifier min="0.8" max="1.0" flat="false"/>
+			</item>
+		</category>
+		<category type="DRONES" group="12">
+			<groupChance>40</groupChance>
+			<item>
+                <modifier min="0.9" max="1.0" flat="false"/>
+			</item>
+			<item>
+                <modifier min="0.9" max="1.0" flat="false"/>
+			</item>			
+			<item>
+                <modifier min="0.9" max="1.0" flat="false"/>
+			</item>
+		</category>
+		<category type="DRONES" group="11">
+			<groupChance>15</groupChance>
+			<item>
+                <modifier min="0.8" max="1.0" flat="false"/>
+			</item>
+			<item>
+                <modifier min="0.8" max="1.0" flat="false"/>
+			</item>			
+			<item>
+                <modifier min="0.8" max="1.0" flat="false"/>
+			</item>
+		</category>
+		<category type="DRONES" group="11">
+			<groupChance>40</groupChance>
+			<item>
+                <modifier min="0.9" max="1.0" flat="false"/>
+			</item>
+			<item>
+                <modifier min="0.9" max="1.0" flat="false"/>
+			</item>			
+			<item>
+                <modifier min="0.9" max="1.0" flat="false"/>
+			</item>
+		</category>
+		<category type="DRONES" group="11">
+			<groupChance>5</groupChance>
+			<customTitle>ДРОНЫ - РАСПРОДАЖА!</customTitle>
+            <item>
+                <modifier min="0.5" max="0.6" flat="false"/>
+            </item> 
+			<item>
+                <modifier min="0.5" max="0.6" flat="false"/>
+            </item>    			
+            <item>
+                <modifier min="0.5" max="0.6" flat="false"/>
+            </item>
+        </category>
+		<category type="CREW" group="10">
+			<groupChance>15</groupChance>
+			<item>
+				<modifier min="0.8" max="1.1" flat="false"/>
+			</item>
+			<item>
+				<modifier min="0.8" max="1.1" flat="false"/>
+			</item>
+			<item>
+				<modifier min="0.8" max="1.1" flat="false"/>
+			</item>
+		</category>
+		<category type="CREW" group="10">
+			<groupChance>40</groupChance>
+			<item>
+				<modifier min="0.9" max="1.1" flat="false"/>
+			</item>
+			<item>
+				<modifier min="0.9" max="1.1" flat="false"/>
+			</item>
+			<item>
+				<modifier min="0.9" max="1.1" flat="false"/>
+			</item>
+		</category>
+		<category type="CREW" group="9">
+			<groupChance>15</groupChance>
+			<item>
+				<modifier min="0.8" max="1.1" flat="false"/>
+			</item>
+			<item>
+				<modifier min="0.8" max="1.1" flat="false"/>
+			</item>
+			<item>
+				<modifier min="0.8" max="1.1" flat="false"/>
+			</item>
+		</category>
+		<category type="CREW" group="9">
+			<groupChance>40</groupChance>
+			<item>
+				<modifier min="0.9" max="1.1" flat="false"/>
+			</item>
+			<item>
+				<modifier min="0.9" max="1.1" flat="false"/>
+			</item>
+			<item>
+				<modifier min="0.9" max="1.1" flat="false"/>
+			</item>
+		</category>
+		<category type="CREW" group="9">
+			<groupChance>5</groupChance>
+			<customTitle>ДЕШЁВЫЕ РАБОТНИКИ!</customTitle>
+            <item>
+                <modifier min="0.5" max="0.6" flat="false"/>
+            </item> 
+			<item>
+                <modifier min="0.5" max="0.6" flat="false"/>
+            </item>    			
+            <item>
+                <modifier min="0.5" max="0.6" flat="false"/>
+            </item>
+        </category>
+		<category type="AUGMENTS" group="8">
+			<groupChance>15</groupChance>
+			<item>
+				<modifier min="0.8" max="1.1" flat="false"/>
+			</item>
+			<item>
+				<modifier min="0.8" max="1.1" flat="false"/>
+			</item>
+			<item>
+				<modifier min="0.8" max="1.1" flat="false"/>
+			</item>
+		</category>
+		<category type="AUGMENTS" group="8">
+			<groupChance>40</groupChance>
+			<item>
+				<modifier min="0.9" max="1.1" flat="false"/>
+			</item>
+			<item>
+				<modifier min="0.9" max="1.1" flat="false"/>
+			</item>
+			<item>
+				<modifier min="0.9" max="1.1" flat="false"/>
+			</item>
+		</category>
+		<category type="AUGMENTS" group="7">
+			<groupChance>15</groupChance>
+			<item>
+				<modifier min="0.8" max="1.1" flat="false"/>
+			</item>
+			<item>
+				<modifier min="0.8" max="1.1" flat="false"/>
+			</item>
+			<item>
+				<modifier min="0.8" max="1.1" flat="false"/>
+			</item>
+		</category>
+		<category type="AUGMENTS" group="7">
+			<groupChance>40</groupChance>
+			<item>
+				<modifier min="0.9" max="1.1" flat="false"/>
+			</item>
+			<item>
+				<modifier min="0.9" max="1.1" flat="false"/>
+			</item>
+			<item>
+				<modifier min="0.9" max="1.1" flat="false"/>
+			</item>
+		</category>
+		<category type="AUGMENTS" group="7">
+			<groupChance>5</groupChance>
+			<customTitle>УСИЛЕНИЯ - РАСПРОДАЖА!</customTitle>
+            <item>
+                <modifier min="0.5" max="0.6" flat="false"/>
+            </item> 
+			<item>
+                <modifier min="0.5" max="0.6" flat="false"/>
+            </item>    			
+            <item>
+                <modifier min="0.5" max="0.6" flat="false"/>
+            </item>
+        </category>
+		<category type="SYSTEMS" group="6">
+			<groupChance>15</groupChance>
+			<item>
+				<modifier min="0.8" max="1.1" flat="false"/>
+			</item>
+			<item>
+				<modifier min="0.8" max="1.1" flat="false"/>
+			</item>
+			<item>
+				<modifier min="0.8" max="1.1" flat="false"/>
+			</item>
+		</category>
+		<category type="SYSTEMS" group="6">
+			<groupChance>40</groupChance>
+			<item>
+				<modifier min="0.9" max="1.1" flat="false"/>
+			</item>
+			<item>
+				<modifier min="0.9" max="1.1" flat="false"/>
+			</item>
+			<item>
+				<modifier min="0.9" max="1.1" flat="false"/>
+			</item>
+		</category>
+		<category type="SYSTEMS" group="5">
+			<groupChance>15</groupChance>
+			<item>
+				<modifier min="0.8" max="1.1" flat="false"/>
+			</item>
+			<item>
+				<modifier min="0.8" max="1.1" flat="false"/>
+			</item>
+			<item>
+				<modifier min="0.8" max="1.1" flat="false"/>
+			</item>
+		</category>
+		<category type="SYSTEMS" group="5">
+			<groupChance>40</groupChance>
+			<item>
+				<modifier min="0.9" max="1.1" flat="false"/>
+			</item>
+			<item>
+				<modifier min="0.9" max="1.1" flat="false"/>
+			</item>
+			<item>
+				<modifier min="0.9" max="1.1" flat="false"/>
+			</item>
+		</category>		
+		<category type="WEAPONS" group="4">
+			<allowDuplicates/>
+			<groupChance>15</groupChance>
+            <item>
+                <modifier min="0.8" max="1.3" flat="false"/>
+            </item> 
+			<item>
+                <modifier min="0.8" max="1.3" flat="false"/>
+            </item>    			
+            <item>
+                <modifier min="0.8" max="1.3" flat="false"/>
+            </item>
+        </category>
+		<category type="WEAPONS" group="4">
+			<allowDuplicates/>
+			<groupChance>40</groupChance>
+            <item>
+                <modifier min="0.9" max="1.3" flat="false"/>
+            </item> 
+			<item>
+                <modifier min="0.9" max="1.3" flat="false"/>
+            </item>    			
+            <item>
+                <modifier min="0.9" max="1.3" flat="false"/>
+            </item>
+        </category>
+		<category type="WEAPONS" group="3">
+			<allowDuplicates/>
+			<groupChance>15</groupChance>
+            <item>
+                <modifier min="0.8" max="1.2" flat="false"/>
+            </item> 
+			<item>
+                <modifier min="0.8" max="1.2" flat="false"/>
+            </item>    			
+            <item>
+                <modifier min="0.8" max="1.2" flat="false"/>
+            </item>
+        </category>
+		<category type="WEAPONS" group="3">
+			<allowDuplicates/>
+			<groupChance>40</groupChance>
+            <item>
+                <modifier min="0.9" max="1.2" flat="false"/>
+            </item> 
+			<item>
+                <modifier min="0.9" max="1.2" flat="false"/>
+            </item>    			
+            <item>
+                <modifier min="0.9" max="1.2" flat="false"/>
+            </item>
+        </category>
+		<category type="WEAPONS" group="2">
+			<allowDuplicates/>
+			<groupChance>15</groupChance>
+            <item>
+                <modifier min="0.8" max="1.1" flat="false"/>
+            </item> 
+			<item>
+                <modifier min="0.8" max="1.1" flat="false"/>
+            </item>    			
+            <item>
+                <modifier min="0.8" max="1.1" flat="false"/>
+            </item>
+        </category>
+		<category type="WEAPONS" group="2">
+			<allowDuplicates/>
+			<groupChance>40</groupChance>
+            <item>
+                <modifier min="0.9" max="1.1" flat="false"/>
+            </item> 
+			<item>
+                <modifier min="0.9" max="1.1" flat="false"/>
+            </item>    			
+            <item>
+                <modifier min="0.9" max="1.1" flat="false"/>
+            </item>
+        </category>
+		<category type="WEAPONS" group="2">
+			<allowDuplicates/>
+			<customTitle>ОРУДИЯ - РАСПРОДАЖА!</customTitle>
+			<groupChance>5</groupChance>
+            <item>
+                <modifier min="0.5" max="0.7" flat="false"/>
+            </item> 
+			<item>
+                <modifier min="0.5" max="0.7" flat="false"/>
+            </item>    			
+            <item>
+                <modifier min="0.5" max="0.7" flat="false"/>
+            </item>
+        </category>
+		<category type="WEAPONS" group="1">
+			<allowDuplicates/>
+			<customTitle>МИСТИЧЕСКИЕ ОРУДИЯ</customTitle>
+			<groupChance>15</groupChance>
+            <item>
+                <modifier min="0.3" max="0.7" flat="false"/>
+				<mysteryItem>true</mysteryItem>
+            </item> 
+			 <item>
+                <modifier min="0.3" max="0.7" flat="false"/>
+				<mysteryItem>true</mysteryItem>
+            </item>    			
+             <item>
+                <modifier min="0.3" max="0.7" flat="false"/>
+				<mysteryItem>true</mysteryItem>
+            </item> 
+        </category>
+		<category type="WEAPONS" group="1">
+			<allowDuplicates/>
+			<groupChance>40</groupChance>
+            <item>
+                <modifier min="0.9" max="1.0" flat="false"/>
+            </item> 
+			<item>
+                <modifier min="0.9" max="1.0" flat="false"/>
+            </item>    			
+            <item>
+                <modifier min="0.9" max="1.0" flat="false"/>
+            </item>
+        </category>
+		<category type="WEAPONS" group="1">
+			<allowDuplicates/>
+			<customTitle>ОРУДИЯ - РАСПРОДАЖА!</customTitle>
+			<groupChance>5</groupChance>
+            <item>
+                <modifier min="0.5" max="0.6" flat="false"/>
+            </item> 
+			<item>
+                <modifier min="0.5" max="0.6" flat="false"/>
+            </item>    			
+            <item>
+                <modifier min="0.5" max="0.6" flat="false"/>
+            </item>
+        </category>
+    </customStore>
+	<customStore id="SPECIAL_STORE_CUSTOM">
+		<itemPurchaseLimit>2</itemPurchaseLimit>
+		<hullRepair>
+			<price min="2" max="4"/>
+			<sectorScaled/>
+		</hullRepair>
+		<resource>
+			<type>fuel</type>
+			<count min="0" max="8"/>
+			<price>4</price>
+		</resource>
+		<resource>
+			<type>missiles</type>
+			<count min="0" max="16"/>
+			<price>2</price>
+		</resource>
+		<resource>
+			<type>drones</type>
+			<count min="0" max="12"/>
+			<price>3</price>
+		</resource>
+		<category type="AUGMENTS">
+			<item>
+				<blueprint>COMBO_AUGS</blueprint>
+				<price min="70" max="130"/>
+			</item>
+			<item>
+				<blueprint>COMBO_AUGS</blueprint>
+				<price min="80" max="120"/>
+			</item>
+			<item>
+				<blueprint>COMBO_AUGS</blueprint>
+				<price min="90" max="110"/>
+			</item>
+		</category>
+		<category type="AUGMENTS">
+			<item>
+				<blueprint>COMBO_AUGS</blueprint>
+				<price min="70" max="130"/>
+			</item>
+			<item>
+				<blueprint>COMBO_AUGS</blueprint>
+				<price min="80" max="120"/>
+			</item>
+			<item>
+				<blueprint>COMBO_AUGS</blueprint>
+				<price min="90" max="110"/>
+			</item>
+		</category>
+		<category type="AUGMENTS">
+			<item>
+				<blueprint>COMBO_AUGS</blueprint>
+				<price min="70" max="130"/>
+			</item>
+			<item>
+				<blueprint>COMBO_AUGS</blueprint>
+				<price min="80" max="120"/>
+			</item>
+			<item>
+				<blueprint>COMBO_AUGS</blueprint>
+				<price min="90" max="110"/>
+			</item>
+		</category>
+		<category type="AUGMENTS">
+			<item>
+				<blueprint>COMBO_AUGS</blueprint>
+				<price min="70" max="130"/>
+			</item>
+			<item>
+				<blueprint>COMBO_AUGS</blueprint>
+				<price min="80" max="120"/>
+			</item>
+			<item>
+				<blueprint>COMBO_AUGS</blueprint>
+				<price min="90" max="110"/>
+			</item>
+		</category>
+		<category type="AUGMENTS">
+			<item>
+				<blueprint>COMBO_AUGS</blueprint>
+				<price min="70" max="130"/>
+			</item>
+			<item>
+				<blueprint>COMBO_AUGS</blueprint>
+				<price min="80" max="120"/>
+			</item>
+			<item>
+				<blueprint>COMBO_AUGS</blueprint>
+				<price min="90" max="110"/>
+			</item>
+		</category>
+		<category type="AUGMENTS">
+			<item>
+				<blueprint>COMBO_AUGS</blueprint>
+				<price min="70" max="130"/>
+			</item>
+			<item>
+				<blueprint>COMBO_AUGS</blueprint>
+				<price min="80" max="120"/>
+			</item>
+			<item>
+				<blueprint>COMBO_AUGS</blueprint>
+				<price min="90" max="110"/>
+			</item>
+		</category>
+	</customStore>
+	<customStore id="AUGMENTS_STORE_CUSTOM">
+		<itemPurchaseLimit>3</itemPurchaseLimit>
+		<hullRepair>
+			<price min="2" max="4"/>
+			<sectorScaled/>
+		</hullRepair>
+		<resource>
+			<type>fuel</type>
+			<count min="0" max="8"/>
+			<price>4</price>
+		</resource>
+		<resource>
+			<type>missiles</type>
+			<count min="0" max="16"/>
+			<price>2</price>
+		</resource>
+		<resource>
+			<type>drones</type>
+			<count min="0" max="12"/>
+			<price>3</price>
+		</resource>
+		<category type="AUGMENTS">
+			<item>
+				<modifier min="0.6" max="0.9" flat="false"/>
+			</item>
+			<item>
+				<modifier min="0.6" max="0.9" flat="false"/>
+			</item>
+			<item>
+				<modifier min="0.6" max="0.9" flat="false"/>
+			</item>
+		</category>
+		<category type="AUGMENTS">
+			<item>
+				<modifier min="0.6" max="0.9" flat="false"/>
+			</item>
+			<item>
+				<modifier min="0.6" max="0.9" flat="false"/>
+			</item>
+			<item>
+				<modifier min="0.6" max="0.9" flat="false"/>
+			</item>
+		</category>
+		<category type="AUGMENTS">
+			<item>
+				<modifier min="0.6" max="0.9" flat="false"/>
+			</item>
+			<item>
+				<modifier min="0.6" max="0.9" flat="false"/>
+			</item>
+			<item>
+				<modifier min="0.6" max="0.9" flat="false"/>
+			</item>
+		</category>
+		<category type="AUGMENTS">
+			<item>
+				<modifier min="0.6" max="0.9" flat="false"/>
+			</item>
+			<item>
+				<modifier min="0.6" max="0.9" flat="false"/>
+			</item>
+			<item>
+				<modifier min="0.6" max="0.9" flat="false"/>
+			</item>
+		</category>
+		<category type="AUGMENTS">
+			<item>
+				<modifier min="0.6" max="0.9" flat="false"/>
+			</item>
+			<item>
+				<modifier min="0.6" max="0.9" flat="false"/>
+			</item>
+			<item>
+				<modifier min="0.6" max="0.9" flat="false"/>
+			</item>
+		</category>
+		<category type="AUGMENTS">
+			<item>
+				<modifier min="0.6" max="0.9" flat="false"/>
+			</item>
+			<item>
+				<modifier min="0.6" max="0.9" flat="false"/>
+			</item>
+			<item>
+				<modifier min="0.6" max="0.9" flat="false"/>
+			</item>
+		</category>
+	</customStore>
+	<customStore id="WEAPONS_STORE_CUSTOM">
+		<itemPurchaseLimit>3</itemPurchaseLimit>
+		<hullRepair>
+			<price min="2" max="4"/>
+			<sectorScaled/>
+		</hullRepair>
+		<resource>
+			<type>fuel</type>
+			<count min="0" max="8"/>
+			<price>4</price>
+		</resource>
+		<resource>
+			<type>missiles</type>
+			<count min="0" max="16"/>
+			<price>2</price>
+		</resource>
+		<resource>
+			<type>drones</type>
+			<count min="0" max="12"/>
+			<price>3</price>
+		</resource>
+		<category type="WEAPONS">
+			<item>
+				<modifier min="0.6" max="0.9" flat="false"/>
+			</item>
+			<item>
+				<modifier min="0.6" max="0.9" flat="false"/>
+			</item>
+			<item>
+				<modifier min="0.6" max="0.9" flat="false"/>
+			</item>
+		</category>
+		<category type="WEAPONS">
+			<item>
+				<modifier min="0.6" max="0.9" flat="false"/>
+			</item>
+			<item>
+				<modifier min="0.6" max="0.9" flat="false"/>
+			</item>
+			<item>
+				<modifier min="0.6" max="0.9" flat="false"/>
+			</item>
+		</category>
+		<category type="WEAPONS">
+			<item>
+				<modifier min="0.6" max="0.9" flat="false"/>
+			</item>
+			<item>
+				<modifier min="0.6" max="0.9" flat="false"/>
+			</item>
+			<item>
+				<modifier min="0.6" max="0.9" flat="false"/>
+			</item>
+		</category>
+		<category type="WEAPONS">
+			<item>
+				<modifier min="0.6" max="0.9" flat="false"/>
+			</item>
+			<item>
+				<modifier min="0.6" max="0.9" flat="false"/>
+			</item>
+			<item>
+				<modifier min="0.6" max="0.9" flat="false"/>
+			</item>
+		</category>
+		<category type="WEAPONS">
+			<item>
+				<modifier min="0.6" max="0.9" flat="false"/>
+			</item>
+			<item>
+				<modifier min="0.6" max="0.9" flat="false"/>
+			</item>
+			<item>
+				<modifier min="0.6" max="0.9" flat="false"/>
+			</item>
+		</category>
+		<category type="WEAPONS">
+			<item>
+				<modifier min="0.6" max="0.9" flat="false"/>
+			</item>
+			<item>
+				<modifier min="0.6" max="0.9" flat="false"/>
+			</item>
+			<item>
+				<modifier min="0.6" max="0.9" flat="false"/>
+			</item>
+		</category>
+	</customStore>
+	<customStore id="DRONES_STORE_CUSTOM">
+		<itemPurchaseLimit>3</itemPurchaseLimit>
+		<hullRepair>
+			<price min="2" max="4"/>
+			<sectorScaled/>
+		</hullRepair>
+		<resource>
+			<type>fuel</type>
+			<count min="0" max="8"/>
+			<price>4</price>
+		</resource>
+		<resource>
+			<type>missiles</type>
+			<count min="0" max="16"/>
+			<price>2</price>
+		</resource>
+		<resource>
+			<type>drones</type>
+			<count min="0" max="12"/>
+			<price>3</price>
+		</resource>
+		<category type="DRONES">
+			<item>
+				<modifier min="0.6" max="0.9" flat="false"/>
+			</item>
+			<item>
+				<modifier min="0.6" max="0.9" flat="false"/>
+			</item>
+			<item>
+				<modifier min="0.6" max="0.9" flat="false"/>
+			</item>
+		</category>
+		<category type="DRONES">
+			<item>
+				<modifier min="0.6" max="0.9" flat="false"/>
+			</item>
+			<item>
+				<modifier min="0.6" max="0.9" flat="false"/>
+			</item>
+			<item>
+				<modifier min="0.6" max="0.9" flat="false"/>
+			</item>
+		</category>
+		<category type="DRONES">
+			<item>
+				<modifier min="0.6" max="0.9" flat="false"/>
+			</item>
+			<item>
+				<modifier min="0.6" max="0.9" flat="false"/>
+			</item>
+			<item>
+				<modifier min="0.6" max="0.9" flat="false"/>
+			</item>
+		</category>
+		<category type="DRONES">
+			<item>
+				<modifier min="0.6" max="0.9" flat="false"/>
+			</item>
+			<item>
+				<modifier min="0.6" max="0.9" flat="false"/>
+			</item>
+			<item>
+				<modifier min="0.6" max="0.9" flat="false"/>
+			</item>
+		</category>
+		<category type="DRONES">
+			<item>
+				<modifier min="0.6" max="0.9" flat="false"/>
+			</item>
+			<item>
+				<modifier min="0.6" max="0.9" flat="false"/>
+			</item>
+			<item>
+				<modifier min="0.6" max="0.9" flat="false"/>
+			</item>
+		</category>
+		<category type="DRONES">
+			<item>
+				<modifier min="0.6" max="0.9" flat="false"/>
+			</item>
+			<item>
+				<modifier min="0.6" max="0.9" flat="false"/>
+			</item>
+			<item>
+				<modifier min="0.6" max="0.9" flat="false"/>
+			</item>
+		</category>
+	</customStore>
+	<customStore id="CREW_STORE_CUSTOM">
+		<itemPurchaseLimit>4</itemPurchaseLimit>
+		<hullRepair>
+			<price min="2" max="4"/>
+			<sectorScaled/>
+		</hullRepair>
+		<resource>
+			<type>fuel</type>
+			<count min="0" max="8"/>
+			<price>4</price>
+		</resource>
+		<resource>
+			<type>missiles</type>
+			<count min="0" max="16"/>
+			<price>2</price>
+		</resource>
+		<resource>
+			<type>drones</type>
+			<count min="0" max="12"/>
+			<price>3</price>
+		</resource>
+		<category type="CREW">
+			<item>
+				<modifier min="0.6" max="0.9" flat="false"/>
+			</item>
+			<item>
+				<modifier min="0.6" max="0.9" flat="false"/>
+			</item>
+			<item>
+				<modifier min="0.6" max="0.9" flat="false"/>
+			</item>
+		</category>
+		<category type="CREW">
+			<item>
+				<modifier min="0.6" max="0.9" flat="false"/>
+			</item>
+			<item>
+				<modifier min="0.6" max="0.9" flat="false"/>
+			</item>
+			<item>
+				<modifier min="0.6" max="0.9" flat="false"/>
+			</item>
+		</category>
+		<category type="CREW">
+			<item>
+				<modifier min="0.6" max="0.9" flat="false"/>
+			</item>
+			<item>
+				<modifier min="0.6" max="0.9" flat="false"/>
+			</item>
+			<item>
+				<modifier min="0.6" max="0.9" flat="false"/>
+			</item>
+		</category>
+		<category type="CREW">
+			<item>
+				<modifier min="0.6" max="0.9" flat="false"/>
+			</item>
+			<item>
+				<modifier min="0.6" max="0.9" flat="false"/>
+			</item>
+			<item>
+				<modifier min="0.6" max="0.9" flat="false"/>
+			</item>
+		</category>
+		<category type="CREW">
+			<item>
+				<modifier min="0.6" max="0.9" flat="false"/>
+			</item>
+			<item>
+				<modifier min="0.6" max="0.9" flat="false"/>
+			</item>
+			<item>
+				<modifier min="0.6" max="0.9" flat="false"/>
+			</item>
+		</category>
+		<category type="CREW">
+			<item>
+				<modifier min="0.6" max="0.9" flat="false"/>
+			</item>
+			<item>
+				<modifier min="0.6" max="0.9" flat="false"/>
+			</item>
+			<item>
+				<modifier min="0.6" max="0.9" flat="false"/>
+			</item>
+		</category>
+	</customStore>
+	<!-- <freeDrones>
 		<COMBAT_1/>
 		<DEFENSE_1/>
 		<REPAIR/>
-	</freeDrones>
+	</freeDrones> --> <!-- 1.2 -->
 </store>
 
 </FTL>

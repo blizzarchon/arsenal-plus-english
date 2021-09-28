@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<eventList name="MENGI_LIFEFORM_EXPERIMENT_EVENT_END">
-	<event>
-		<text>Один из морфов хочет отправиться в путешествие ради поиска новых видов жизни и просится к вам в команду.</text>
-		<crewMember amount="1" class="morph"/>
-	</event>
-	<event>
-		<text>Один из морфов хочет отправиться в путешествие ради поиска новых видов жизни и просится к вам в команду.</text>
-		<crewMember amount="1" class="morph"/>
-	</event>
-	<event/>
-</eventList>
+<!-- Morph wants to join crew, change 'engi' to 'morph' -->
+<mod:findName type="eventList" name="MENGI_LIFEFORM_EXPERIMENT_EVENT_END">
+	<mod:findLike type="event">
+		<mod:findLike type="crewMember">
+			<mod:setAttributes class="morph" />
+		</mod:findLike>
+	</mod:findLike>
+</mod:findName>
 <eventList name="MORPH_BRK_SHIELD_W"> 
 	<event>
 		<text>Челнок врезается в астероид и взрывается. Корабль морфов вдруг становится агрессивным.</text>

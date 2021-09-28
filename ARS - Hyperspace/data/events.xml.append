@@ -1,68 +1,222 @@
 <?xml version="1.0" encoding="utf-8"?>
+<FTL>
+<event name="START_BEACON"><!-- 1.3 -->
+	<img back="HANGAR_PNG" planet="NONE"/>
+</event>
 
-<event name="SPECIAL_STORE">
-	<text>Вы уже было направились к местному магазину, когда на связь выходит потрёпанный корабль Федерации, находящийся неподалёку. Их капитан предлагает провести вас к "хорошим знакомым", они тоже занимаются здесь торговлей, и у них есть товар "высшего качества". За свои услуги провожатого он просит немного лома.</text>
-	<choice hidden="false">
-		<text>Заплатить ему, чтобы взглянуть на товар "высшего качества" в другом магазине.</text>
+<!-- 1.4 -->
+<mod:findName type="event" name="TALK_WITH_CREW">
+    <mod:setAttributes name="TALK_WITH_CREW_2" />
+</mod:findName>
+<event name="TALK_WITH_CREW">
+	<event/>
+</event>
+<mod:findName type="event" name="TALK_WITH_CREW_HUMAN">
+    <mod:setAttributes name="TALK_WITH_CREW_HUMAN_2" />
+</mod:findName>
+<event name="TALK_WITH_CREW_HUMAN">
+	<event/>
+</event>
+<mod:findName type="event" name="TALK_WITH_CREW_ORDER_HUMAN">
+    <mod:setAttributes name="TALK_WITH_CREW_ORDER_HUMAN_2" />
+</mod:findName>
+<event name="TALK_WITH_CREW_ORDER_HUMAN">
+	<event/>
+</event>
+<mod:findName type="event" name="TALK_WITH_CREW_ENGI">
+    <mod:setAttributes name="TALK_WITH_CREW_ENGI_2" />
+</mod:findName>
+<event name="TALK_WITH_CREW_ENGI">
+	<event/>
+</event>
+<mod:findName type="event" name="TALK_WITH_CREW_MORPH">
+    <mod:setAttributes name="TALK_WITH_CREW_MORPH_2" />
+</mod:findName>
+<event name="TALK_WITH_CREW_MORPH">
+	<event/>
+</event>
+<mod:findName type="event" name="TALK_WITH_CREW_ENERGY">
+    <mod:setAttributes name="TALK_WITH_CREW_ENERGY_2" />
+</mod:findName>
+<event name="TALK_WITH_CREW_ENERGY">
+	<event/>
+</event>
+<mod:findName type="event" name="TALK_WITH_CREW_ENERGYX">
+    <mod:setAttributes name="TALK_WITH_CREW_ENERGYX_2" />
+</mod:findName>
+<event name="TALK_WITH_CREW_ENERGYX">
+	<event/>
+</event>
+<mod:findName type="event" name="TALK_WITH_CREW_MANTIS">
+    <mod:setAttributes name="TALK_WITH_CREW_MANTIS_2" />
+</mod:findName>
+<event name="TALK_WITH_CREW_MANTIS">
+	<event/>
+</event>
+<mod:findName type="event" name="TALK_WITH_CREW_SLUG">
+    <mod:setAttributes name="TALK_WITH_CREW_SLUG_2" />
+</mod:findName>
+<event name="TALK_WITH_CREW_SLUG">
+	<event/>
+</event>
+<mod:findName type="event" name="TALK_WITH_CREW_ROCK">
+    <mod:setAttributes name="TALK_WITH_CREW_ROCK_2" />
+</mod:findName>
+<event name="TALK_WITH_CREW_ROCK">
+	<event/>
+</event>
+<mod:findName type="event" name="TALK_WITH_CREW_SLIG">
+    <mod:setAttributes name="TALK_WITH_CREW_SLIG_2" />
+</mod:findName>
+<event name="TALK_WITH_CREW_SLIG">
+	<event/>
+</event>
+<mod:findName type="event" name="TALK_WITH_CREW_MAGMAN">
+    <mod:setAttributes name="TALK_WITH_CREW_MAGMAN_2" />
+</mod:findName>
+<event name="TALK_WITH_CREW_MAGMAN">
+	<event/>
+</event>
+<mod:findName type="event" name="TALK_WITH_CREW_ORCHID">
+    <mod:setAttributes name="TALK_WITH_CREW_ORCHID_2" />
+</mod:findName>
+<event name="TALK_WITH_CREW_ORCHID">
+	<event/>
+</event>
+<mod:findName type="event" name="TALK_WITH_CREW_SHELL">
+    <mod:setAttributes name="TALK_WITH_CREW_SHELL_2" />
+</mod:findName>
+<event name="TALK_WITH_CREW_SHELL">
+	<event/>
+</event>
+<mod:findName type="event" name="TALK_WITH_CREW_MUSHROOM">
+    <mod:setAttributes name="TALK_WITH_CREW_MUSHROOM_2" />
+</mod:findName>
+<event name="TALK_WITH_CREW_MUSHROOM">
+	<event/>
+</event>
+<mod:findName type="event" name="TALK_WITH_CREW_ANAEROBIC">
+    <mod:setAttributes name="TALK_WITH_CREW_ANAEROBIC_2" />
+</mod:findName>
+<event name="TALK_WITH_CREW_ANAEROBIC">
+	<event/>
+</event>
+<mod:findName type="event" name="TALK_WITH_CREW_CRYSTAL">
+    <mod:setAttributes name="TALK_WITH_CREW_CRYSTAL_2" />
+</mod:findName>
+<event name="TALK_WITH_CREW_CRYSTAL">
+	<event/>
+</event>
+<mod:findName type="event" name="TALK_WITH_CREW_GHOST">
+    <mod:setAttributes name="TALK_WITH_CREW_GHOST_2" />
+</mod:findName>
+<event name="TALK_WITH_CREW_GHOST">
+	<event/>
+</event>
+
+<mod:findName type="event" name="AUGMENTS_ON_START_BEACON"> <!-- 1.4 -->
+    <mod:setAttributes name="AUGMENTS_ON_START_BEACON_2" />
+</mod:findName>
+<event name="AUGMENTS_ON_START_BEACON"> <!-- 1.4 -->
+	<event/>
+</event>
+
+<mod:findName type="event" name="PROTOTYPE_COLLECTIONER_DEAL"> <!-- 1.4 -->
+    <mod:setAttributes name="PROTOTYPE_COLLECTIONER_DEAL_2" />
+</mod:findName>
+<event name="PROTOTYPE_COLLECTIONER_DEAL"> <!-- 1.4 -->
+	<event/>
+</event>
+
+<mod:findName type="event" name="PLANET_ENGE_UPGRADE"> <!-- 1.4 -->
+    <mod:setAttributes name="PLANET_ENGE_UPGRADE_2" />
+</mod:findName>
+<event name="PLANET_ENGE_UPGRADE"> <!-- 1.4 -->
+	<event/>
+</event>
+
+<event name="AUTOSHIP_TALK"> <!-- 1.4 -->
+	<text>Здесь не с кем разговаривать. Однако, можно произвести некоторую модернизацию вашего беспилотника.</text>
+	<choice req="SLUG_GEL" blue="false">
+		<text>Встроить ваш ремонтный гель в конструкции корабля, освободив слот усилений.</text>
+		<event load="AUTOSHIP_SLUG_GEL"/>
+	</choice>
+	<choice req="DRONE_SPEED" blue="false">
+		<text>Встроить ваш ускоритель дронов в конструкции корабля, освободив слот усилений.</text>
+		<event load="AUTOSHIP_DRONE_SPEED"/>
+	</choice>
+	<choice hidden="false" req="pilot" blue="false">
+		<text>Перенести ИИ беспилотника в сознание трёх вновь созданных аватаров. [Это завершит модернизацию]</text>
 		<event>
-			<text>Капитан принимает оплату и предлагает следовать за ним.</text>
+			<text>Некоторое время спустя в кабине автопилота появляется воплощение ИИ корабля в виде аватаров.</text>
+			<crewMember amount="3" class="ghost">ИИ</crewMember>
 			<item_modify>
-				<item type="scrap" min="-25" max="-5"/>
+				<item type="drones" min="-6" max="-6"/>
+				<item type="scrap" min="-30" max="-30"/>
 			</item_modify>
-			<choice hidden="true">
-				<text id="continue"/>
-				<event>
-					<text>Вы пролетаете совсем немного, прыжковый маяк остаётся в пределах видимости. Корабль Федерации перед вами тормозит у магазина, скрытого прежде другой станцией. Вам велят ждать, и через некоторое время сам хозяин магазина выходит на связь, чтобы обсудить "особое предложение".</text>
-					<choice hidden="true">
-						<text id="continue"/>
-						<event>
-							<text>Оказывается, что у него имеются в наличии особые комбинированные усиления. Вам мало что говорят эти названия, стоит ли купить что-то из этого?</text>
-							<choice hidden="false">
-								<text>Купить это усиление.</text>
-								<event>
-									<text>Хозяин радостно потирает руки, забирает ваш лом и отдаёт приказ рабочим установить усиление на ваше судно. Кажется, всё в порядке. Вы проходите в лавку, чтобы взглянуть на остальные товары.</text>
-									<item_modify>
-										<item type="scrap" min="-130" max="-70"/>
-									</item_modify>
-									<augment name="COMBO_AUGS"/>
-								</event>
-							</choice>
-							<choice hidden="false">
-								<text>Купить это усиление.</text>
-								<event>
-									<text>Хозяин радостно потирает руки, забирает ваш лом и отдаёт приказ рабочим установить усиление на ваше судно. Кажется, всё в порядке. Вы проходите в лавку, чтобы взглянуть на остальные товары.</text>
-									<item_modify>
-										<item type="scrap" min="-120" max="-80"/>
-									</item_modify>
-									<augment name="COMBO_AUGS"/>
-								</event>
-							</choice>
-							<choice hidden="false">
-								<text>Купить это усиление.</text>
-								<event>
-									<text>Хозяин радостно потирает руки, забирает ваш лом и отдаёт приказ рабочим установить усиление на ваше судно. Кажется, всё в порядке. Вы проходите в лавку, чтобы взглянуть на остальные товары.</text>
-									<item_modify>
-										<item type="scrap" min="-100" max="-90"/>
-									</item_modify>
-									<augment name="COMBO_AUGS"/>
-								</event>
-							</choice>
-							<choice hidden="true">
-								<text>Отказаться и взглянуть на прочие товары.</text>
-								<event/>
-							</choice>
-						</event>
-					</choice>
-				</event>
-			</choice>
 		</event>
 	</choice>
 	<choice hidden="true">
-		<text>Отказаться и зайти в этот магазин.</text>
+		<text>Просто зарядить FTL-двигатель.</text>
 		<event/>
 	</choice>
+</event>
+
+<event name="AUTOSHIP_SLUG_GEL"> <!-- 1.4 -->
+	<text>Вы улучшаете структуру ремонтного геля и избавляетесь от генератора. Теперь гель будет сам себя воспроизводить! [Не выбирайте этот вариант модернизации повторно]</text>
+	<item_modify>
+		<item type="scrap" min="-40" max="-40"/>
+	</item_modify>
+	<remove name="SLUG_GEL"/>
+	<choice hidden="true">
+		<text id="continue"/>
+		<event load="INSTALL_SLUG_GEL"/>
+	</choice>
+</event>
+<event name="INSTALL_SLUG_GEL"> <!-- 1.4 -->
+	<event/>
+</event>
+
+<event name="AUTOSHIP_DRONE_SPEED"> <!-- 1.4 -->
+	<text>Вы улучшаете напольные покрытия вашего корабля и избавляетесь от ускорителя дронов. Теперь ваши корабельные дроны будут всегда быстрыми! [Не выбирайте этот вариант модернизации повторно]</text>
+	<item_modify>
+		<item type="scrap" min="-20" max="-20"/>
+	</item_modify>
+	<remove name="DRONE_SPEED"/>
+	<choice hidden="true">
+		<text id="continue"/>
+		<event load="INSTALL_DRONE_SPEED"/>
+	</choice>
+</event>
+<event name="INSTALL_DRONE_SPEED"> <!-- 1.4 -->
+	<event/>
+</event>
+
+<event name="SPECIAL_STORE"> <!-- 1.4 -->
+	<text>Вывеска этого магазина гласит: "Только у нас, товары высшего качества!" Интересно, что они продают?</text>
 	<store/>
 </event>
+
+<event name="TRADERS_3_AUGMENTS"> <!-- 1.4 -->
+	<text>Вывеска этого магазина гласит: "Только у нас, усиления высшего качества по скромным ценам!" Стоит заглянуть...</text>
+	<store/>
+</event>
+
+<event name="TRADERS_3_WEAPONS"> <!-- 1.4 -->
+	<text>Вывеска этого магазина гласит: "Только у нас, оружие высшего качества по скромным ценам!" Стоит заглянуть...</text>
+	<store/>
+</event>
+
+<event name="TRADERS_3_DRONES"> <!-- 1.4 -->
+	<text>Вывеска этого магазина гласит: "Только у нас, дроны высшего качества по скромным ценам!" Стоит заглянуть...</text>
+	<store/>
+</event>
+
+<event name="TRADERS_3_MERCENARY"> <!-- 1.4 -->
+	<text>Вывеска этого магазина гласит: "Только у нас, работники высшего качества и скромными запросами!" Стоит заглянуть...</text>
+	<store/>
+</event>
+
 
 <event name="ZOLTAN_SCI_QUEST" unique="true">
 	<text>Сигнал бедствия исходит от небольшого судна золтанцев. Завидев вас, они выходят на связь: «Пожалуйста, вы должны нам помочь. Мы проводили испытания нового энергетического оружия, пробивающего все щиты. Испытания завершились успешно, но наш лидер, кажется, сошёл с ума после этого! Он и его друзья захватили лабораторию и грозятся разнести весь сектор! Нам еле удалось спастись, это было ужасно...»</text>
@@ -90,3 +244,4 @@
 	</choice>
 	<distressBeacon/>
 </event>
+</FTL>

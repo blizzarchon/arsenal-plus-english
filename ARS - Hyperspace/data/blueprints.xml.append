@@ -1,15 +1,640 @@
 <?xml version="1.0" encoding="utf-8"?>
 
+<!-- 1.4 -->
+
+<mod:findName type="shipBlueprint" name="PLAYER_SHIP_CIRCLE_2">
+	<mod-overwrite:droneList count="3" drones="6">
+		<drone name="MANNING_DRONE"/>
+		<drone name="DE_BATTLE_3"/>
+		<drone name="DE_REPAIR_3"/>
+    </mod-overwrite:droneList>
+</mod:findName>
+
+<mod:findName type="shipBlueprint" name="PLAYER_SHIP_ENERGY_3">
+	<mod-overwrite:maxPower amount="1"/>
+	<mod-overwrite:droneList count="2" drones="20">
+		<drone name="BATTERY_DRONE"/>
+		<drone name="COMBAT_1_OLD"/>
+    </mod-overwrite:droneList>
+</mod:findName>
+
+<!-- DRONES -->
+
+<crewBlueprint name="battle_strong"> <!-- 1.4 -->
+	<desc>Dummy blueprint needed now.</desc>
+	<cost>50</cost>
+	<bp>2</bp>
+	<title>Battle</title>
+	<short>Battle</short>
+	<rarity>0</rarity>
+	<powerList/>
+</crewBlueprint>
+
+<crewBlueprint name="battle_fast"> <!-- 1.4 -->
+	<desc>Dummy blueprint needed now.</desc>
+	<cost>50</cost>
+	<bp>2</bp>
+	<title>Battle</title>
+	<short>Battle</short>
+	<rarity>0</rarity>
+	<powerList/>
+</crewBlueprint>
+
+<crewBlueprint name="repair_hal"> <!-- 1.4 -->
+	<desc>Dummy blueprint needed now.</desc>
+	<cost>50</cost>
+	<bp>2</bp>
+	<title>Repair</title>
+	<short>Repair</short>
+	<rarity>0</rarity>
+	<powerList/>
+</crewBlueprint>
+
+<crewBlueprint name="repair_morph"> <!-- 1.4 -->
+	<desc>Dummy blueprint needed now.</desc>
+	<cost>50</cost>
+	<bp>2</bp>
+	<title>Repair</title>
+	<short>Repair</short>
+	<rarity>0</rarity>
+	<powerList/>
+</crewBlueprint>
+
+<crewBlueprint name="repair_strong"> <!-- 1.4 -->
+	<desc>Dummy blueprint needed now.</desc>
+	<cost>50</cost>
+	<bp>2</bp>
+	<title>Repair</title>
+	<short>Repair</short>
+	<rarity>0</rarity>
+	<powerList/>
+</crewBlueprint>
+
+<crewBlueprint name="repair_fast"> <!-- 1.4 -->
+	<desc>Dummy blueprint needed now.</desc>
+	<cost>50</cost>
+	<bp>2</bp>
+	<title>Repair</title>
+	<short>Repair</short>
+	<rarity>0</rarity>
+	<powerList/>
+</crewBlueprint>
+
+<crewBlueprint name="manning"> <!-- 1.4 -->
+	<desc>Dummy blueprint needed now.</desc>
+	<cost>50</cost>
+	<bp>2</bp>
+	<title>Manager</title>
+	<short>Manager</short>
+	<rarity>0</rarity>
+	<powerList/>
+</crewBlueprint>
+
+<crewBlueprint name="manning_2"> <!-- 1.4 -->
+	<desc>Dummy blueprint needed now.</desc>
+	<cost>50</cost>
+	<bp>2</bp>
+	<title>Manager</title>
+	<short>Manager</short>
+	<rarity>0</rarity>
+	<powerList/>
+</crewBlueprint>
+
+<crewBlueprint name="battery"> <!-- 1.4 -->
+	<desc>Dummy blueprint needed now.</desc>
+	<cost>50</cost>
+	<bp>2</bp>
+	<title>Battery</title>
+	<short>Battery</short>
+	<rarity>0</rarity>
+	<powerList/>
+</crewBlueprint>
+
+<crewBlueprint name="battery_2"> <!-- 1.4 -->
+	<desc>Dummy blueprint needed now.</desc>
+	<cost>50</cost>
+	<bp>2</bp>
+	<title>Battery</title>
+	<short>Battery</short>
+	<rarity>0</rarity>
+	<powerList/>
+</crewBlueprint>
+
+<droneBlueprint name="BATTERY_DRONE">
+	<type>BATTLE</type>
+	<tip>tip_battery</tip>
+	<title>Battery Drone Mark I</title>
+	<short>Battery I</short>
+	<desc>Provides additional power to systems.
+	
+	User-controlled
+	Health: 150
+	System Power Bonus: 3
+	Movement speed: 80%</desc>
+	<power>1</power>
+	<cost>40</cost>
+	<rarity>3</rarity>
+</droneBlueprint>
+
+<droneBlueprint name="BATTERY_DRONE_2">
+	<type>BATTLE</type>
+	<tip>tip_battery</tip>
+	<title>Battery Drone Mark II</title>
+	<short>Battery II</short>
+	<desc>Provides additional power to systems.
+	
+	User-controlled
+	Health: 150
+	System Power Bonus: 4
+	Movement speed: 80%</desc>
+	<power>1</power>
+	<cost>60</cost>
+	<rarity>4</rarity>
+</droneBlueprint>
+
+<droneBlueprint name="MANNING_DRONE">
+	<type>BATTLE</type>
+	<tip>tip_manning</tip>
+	<title>Управляющий дрон Мод I</title>
+	<short>Управляющий I</short>
+	<desc>Эффективно управляет системами и обеспечивает их питание. Незаменимый помощник на борту!
+	
+	User-controlled
+	Health: 150
+	Бонус питания системе: 1
+	Навык управления: продвинутый
+	Movement speed: 80%</desc>
+	<power>1</power>
+	<cost>40</cost>
+	<rarity>3</rarity>
+</droneBlueprint>
+
+
+<droneBlueprint name="MANNING_DRONE_2">
+	<type>BATTLE</type>
+	<tip>tip_manning_2</tip>
+	<title>Управляющий дрон Мод II</title>
+	<short>Управляющий II</short>
+	<desc>Максимально эффективно управляет системами и обеспечивает их питание. Незаменимый помощник на борту!
+	
+	User-controlled
+	Health: 150
+	Бонус питания системе: 2
+	Навык управления: экспертный
+	Movement speed: 80%</desc>
+	<power>1</power>
+	<cost>60</cost>
+	<rarity>4</rarity>
+</droneBlueprint>
+
+<droneBlueprint name="BATTERY_DRONE_R">
+	<type>BATTLE</type>
+	<tip>tip_battery</tip>
+	<title>Аккумуляторный дрон Мод I</title>
+	<short>Аккумулятор I</short>
+	<desc>Даёт дополнительное питание системам.
+	
+	User-controlled
+	Health: 150
+	Бонус питания системе: 3
+	Movement speed: 80%</desc>
+	<power>1</power>
+	<cost>60</cost>
+	<rarity>7</rarity>
+</droneBlueprint>
+
+<droneBlueprint name="MANNING_DRONE_R">
+	<type>BATTLE</type>
+	<tip>tip_manning</tip>
+	<title>Управляющий дрон Мод I</title>
+	<short>Управляющий I</short>
+	<desc>Эффективно управляет системами и обеспечивает их питание. Незаменимый помощник на борту!
+	
+	User-controlled
+	Health: 150
+	Бонус питания системе: 1
+	Навык управления: продвинутый
+	Movement speed: 80%</desc>
+	<power>1</power>
+	<cost>60</cost>
+	<rarity>0</rarity>
+</droneBlueprint>
+
+<mod:findName type="droneBlueprint" name="BOARDER">
+	<mod-overwrite:desc>Проламывается через вражескую броню и наносит ущерб. Потрясающе!
+	
+	User-controlled
+	Health: 150
+	Урон: 150%
+	Movement speed: 80%</mod-overwrite:desc>
+</mod:findName>
+
+<mod:findName type="droneBlueprint" name="DE_BOARDER_2">
+	<mod-overwrite:desc>С большой скоростью влетает на вражеский корабль, чтобы увернуться от защитных дронов и ещё быстрее начать резню. Массовое уничтожение!
+	
+	User-controlled
+	Health: 250
+	Урон: 200%
+	Movement speed: 80%</mod-overwrite:desc>
+	<mod-overwrite:speed>60</mod-overwrite:speed>
+</mod:findName>
+
+<mod:findName type="droneBlueprint" name="DE_BOARDER_3">
+	<mod-overwrite:desc>Ему нужно время, чтобы попасть на вражеский корабль. Затем начнётся резня. Спокойно!
+	
+	User-controlled
+	Health: 150
+	Урон: 150%
+	Movement speed: 80%</mod-overwrite:desc>
+</mod:findName>
+
+<mod:findName type="droneBlueprint" name="DE_BOARDER_4">
+	<mod-overwrite:desc>Проламывается через вражескую броню и наносит ущерб. Потрясающе!
+	
+	User-controlled
+	Health: 150
+	Урон: 150%
+	Movement speed: 120%</mod-overwrite:desc>
+	<mod-overwrite:title>Быстрый абордажник</mod-overwrite:title>
+	<mod-overwrite:short>Быстр. аборд.</mod-overwrite:short>
+</mod:findName>
+
+<mod:findName type="droneBlueprint" name="BATTLE">
+	<mod-overwrite:desc>Отправьте его уничтожить любого незваного гостя на борту вашего корабля.
+	
+	User-controlled
+	Health: 150
+	Урон: 150%
+	Movement speed: 80%</mod-overwrite:desc>
+</mod:findName>
+
+<mod:findName type="droneBlueprint" name="DE_BATTLE_2">
+	<mod-overwrite:desc>Отправьте его уничтожить любого незваного гостя на борту вашего корабля. На его счету десятки жертв.
+	
+	User-controlled
+	Health: 250
+	Урон: 200%
+	Movement speed: 80%</mod-overwrite:desc>
+</mod:findName>
+
+<mod:findName type="droneBlueprint" name="DE_BATTLE_3">
+	<mod-overwrite:desc>Питание этого дрона неисправно, он требует больше энергии от реактора.
+	
+	User-controlled
+	Health: 150
+	Урон: 150%
+	Movement speed: 80%</mod-overwrite:desc>
+</mod:findName>
+
+<mod:findName type="droneBlueprint" name="DE_BATTLE_4">
+	<mod-overwrite:desc>Отправьте его уничтожить любого незваного гостя на борту вашего корабля.
+	
+	User-controlled
+	Health: 150
+	Урон: 150%
+	Movement speed: 120%</mod-overwrite:desc>
+	<mod-overwrite:title>Быстрый противопех</mod-overwrite:title>
+	<mod-overwrite:short>Быстрый ПП</mod-overwrite:short>
+</mod:findName>
+
+<mod:findName type="droneBlueprint" name="HAL_REPAIR">
+	<mod-overwrite:desc>После включения автономен. Может спасти из сложных ситуаций. Обладает самосознанием, поэтому не оставляйте его надолго без присмотра в трюме корабля.
+	
+	Неконтролируем
+	Health: 25
+	Repair/Firefighting speed: 200%
+	Movement speed: 200%</mod-overwrite:desc>
+</mod:findName>
+
+<mod:findName type="droneBlueprint" name="MORPH_REPAIR">
+	<mod-overwrite:desc>Этот ремонтник создан из дорогих сплавов.
+	
+	User-controlled
+	Health: 100
+	Repair/Firefighting speed: 300%
+	Movement speed: 80%</mod-overwrite:desc>
+</mod:findName>
+
+<mod:findName type="droneBlueprint" name="REPAIR_OLD">
+	<mod-overwrite:desc>Отправьте его в повреждённые системы, чтобы починить их.
+	
+	User-controlled
+	Health: 25
+	Repair/Firefighting speed: 200%
+	Movement speed: 80%</mod-overwrite:desc>
+</mod:findName>
+
+<mod:findName type="droneBlueprint" name="DE_REPAIR_2">
+	<mod-overwrite:desc>Отправьте его в повреждённые системы, чтобы починить их.
+	
+	User-controlled
+	Health: 50
+	Repair/Firefighting speed: 200%
+	Movement speed: 80%</mod-overwrite:desc>
+	<mod-overwrite:short>Прочн. рем.</mod-overwrite:short>
+</mod:findName>
+
+<mod:findName type="droneBlueprint" name="DE_REPAIR_3">
+	<mod-overwrite:desc>Отправьте его в повреждённые системы, чтобы починить их. Питание этого дрона неисправно, он требует больше энергии от реактора.
+	
+	User-controlled
+	Health: 25
+	Repair/Firefighting speed: 200%
+	Movement speed: 80%</mod-overwrite:desc>
+</mod:findName>
+
+<mod:findName type="droneBlueprint" name="DE_REPAIR_4">
+	<mod-overwrite:desc>Отправьте его в повреждённые системы, чтобы починить их.
+	
+	User-controlled
+	Health: 25
+	Repair/Firefighting speed: 200%
+	Movement speed: 120%</mod-overwrite:desc>
+	<mod-overwrite:title>Быстрый ремонтник</mod-overwrite:title>
+	<mod-overwrite:short>Быстр. рем.</mod-overwrite:short>
+</mod:findName>
+
+<blueprintList name="REPAIR">
+	<name>BOARDER_ION</name>
+	<name>BOARDER_ION</name>
+	<name>BOARDER_ION</name>
+	
+	<name>DE_DRONE_SHIELD_SMALL_R</name>
+	<name>DRONE_SHIELD_R</name>
+	<name>DE_DRONE_SHIELD_BIG_R</name>
+	
+	<name>DE_REPAIR_1_R</name> <!-- new -->
+	<name>DE_REPAIR_2_R</name> <!-- new -->
+	<name>DE_REPAIR_4_R</name>
+	
+	<name>DE_BATTLE_1_R</name> <!-- new -->
+	<name>DE_BATTLE_2_R</name> <!-- new -->
+	<name>DE_BATTLE_4_R</name>
+	
+	<name>DE_BOARDER_4_R</name>
+	<name>DE_BOARDER_2_R</name>
+	<name>DE_BOARDER_1_R</name> <!-- new -->
+	
+	<name>BATTERY_DRONE_R</name> <!-- new -->
+	<name>BATTERY_DRONE_2</name> <!-- new -->
+	<name>MANNING_DRONE_R</name> <!-- new -->
+	<name>MANNING_DRONE_2</name> <!-- new -->
+	
+	<name>SHIP_REPAIR_R</name>
+	<name>SHIP_REPAIR_R</name>
+	<name>DE_SHIP_REPAIR_2_R</name>
+</blueprintList>
+
+<droneBlueprint name="DE_BOARDER_1_R">
+	<type>BOARDER</type>
+	<tip>tip_boarding</tip>
+	<locked>1</locked>
+	<title>Абордажный дрон</title>
+	<short>Абордажник</short>
+	<desc>Проламывается через вражескую броню и наносит ущерб. Потрясающе!
+	
+	User-controlled
+	Health: 150
+	Урон: 150%
+	Movement speed: 80%</desc>
+	<power>2</power>
+	<speed>45</speed>
+	<cost>60</cost>
+	<rarity>0</rarity>
+	<iconImage>boarder</iconImage>
+</droneBlueprint>
+
+<mod:findName type="droneBlueprint" name="DE_BOARDER_2_R">
+	<mod-overwrite:desc>С большой скоростью влетает на вражеский корабль, чтобы увернуться от защитных дронов и ещё быстрее начать резню. Массовое уничтожение!
+	
+	User-controlled
+	Health: 250
+	Урон: 200%
+	Movement speed: 80%</mod-overwrite:desc>
+	<mod-overwrite:speed>60</mod-overwrite:speed>
+</mod:findName>
+
+<mod:findName type="droneBlueprint" name="DE_BOARDER_4_R">
+	<mod-overwrite:desc>Проламывается через вражескую броню и наносит ущерб. Потрясающе!
+	
+	User-controlled
+	Health: 150
+	Урон: 150%
+	Movement speed: 120%</mod-overwrite:desc>
+	<mod-overwrite:title>Быстрый абордажник</mod-overwrite:title>
+	<mod-overwrite:short>Быс. аборд.</mod-overwrite:short>
+</mod:findName>
+
+<droneBlueprint name="DE_BATTLE_1_R">
+	<type>BATTLE</type>
+	<locked>1</locked>
+	<tip>tip_battle</tip>
+	<title>Противопехотный дрон</title>
+	<short>Противопех</short>
+	<desc>Отправьте его уничтожить любого незваного гостя на борту вашего корабля.
+	
+	User-controlled
+	Health: 150
+	Урон: 150%
+	Movement speed: 80%</desc>
+	<power>1</power>
+	<cost>60</cost>
+	<bp>3</bp>
+	<rarity>0</rarity>
+	<iconImage>battle</iconImage>
+</droneBlueprint>
+
+<droneBlueprint name="DE_BATTLE_2_R">
+	<type>BATTLE</type>
+	<locked>1</locked>
+	<tip>tip_battle</tip>
+	<title>Закалённый противопех</title>
+	<short>Закал. ПП</short>
+	<desc>Отправьте его уничтожить любого незваного гостя на борту вашего корабля. На его счету десятки жертв.
+	
+	User-controlled
+	Health: 250
+	Урон: 200%
+	Movement speed: 80%</desc>
+	<power>1</power>
+	<cost>60</cost>
+	<bp>3</bp>
+	<rarity>0</rarity>
+	<iconImage>battle</iconImage>
+</droneBlueprint>
+
+<mod:findName type="droneBlueprint" name="DE_BATTLE_4_R">
+	<mod-overwrite:desc>Отправьте его уничтожить любого незваного гостя на борту вашего корабля.
+	
+	User-controlled
+	Health: 150
+	Урон: 150%
+	Movement speed: 120%</mod-overwrite:desc>
+	<mod-overwrite:title>Быстрый противопех</mod-overwrite:title>
+	<mod-overwrite:short>Быстрый ПП</mod-overwrite:short>
+</mod:findName>
+
+<droneBlueprint name="DE_REPAIR_1_R">
+	<type>REPAIR</type>
+	<tip>tip_crew</tip>
+	<title>Ремонтник систем</title>
+	<short>Рем. систем</short>
+	<desc>Отправьте его в повреждённые системы, чтобы починить их.
+	
+	User-controlled
+	Health: 25
+	Repair/Firefighting speed: 200%
+	Movement speed: 80%</desc>
+	<power>1</power>
+	<cost>60</cost>
+	<bp>2</bp>
+	<rarity>0</rarity>
+	<iconImage>repair</iconImage>
+</droneBlueprint>
+
+<droneBlueprint name="DE_REPAIR_2_R">
+	<type>REPAIR</type>
+	<tip>tip_crew</tip>
+	<title>Прочный ремонтник</title>
+	<short>Прочн. рем.</short>
+	<desc>Отправьте его в повреждённые системы, чтобы починить их.
+	
+	User-controlled
+	Health: 50
+	Repair/Firefighting speed: 200%
+	Movement speed: 80%</desc>
+	<power>1</power>
+	<cost>60</cost>
+	<bp>2</bp>
+	<rarity>0</rarity>
+	<iconImage>repair</iconImage>
+</droneBlueprint>
+
+<mod:findName type="droneBlueprint" name="DE_REPAIR_4_R">
+	<mod-overwrite:desc>Отправьте его в повреждённые системы, чтобы починить их.
+	
+	User-controlled
+	Health: 25
+	Repair/Firefighting speed: 200%
+	Movement speed: 120%</mod-overwrite:desc>
+	<mod-overwrite:title>Быстрый ремонтник</mod-overwrite:title>
+	<mod-overwrite:short>Быстр. рем.</mod-overwrite:short>
+</mod:findName>
+
 <!-- AUGS -->
 
+<mod:findName type="augBlueprint" name="INJECTOR_UNI"> <!-- 1.4 -->
+	<mod-overwrite:desc>Подходит для любых орудий. Одноразовый. Эффект зависит от типа оружия:
+	Лазеры, ионки: +50% к скорости снарядов, +15 урон по экипажу.
+	Ракеты, мины, оружие кристалинов, крушитель: +1 базовый урон.
+	Бомбы, эффекторы: +1 бомба за выстрел.
+	Оружие с разбросом: -30% радиуса разброса снарядов.
+	Длинные лучи: +25% к длине и к скорости луча.
+	Точечные лучи: +1 урон по системам.</mod-overwrite:desc>
+</mod:findName>
+
 <mod:findName type="augBlueprint" name="EXPLOSIVE_REPLICATOR">
-	<mod-overwrite:desc>Оружие, использующее ракеты, имеет 75% шанс не потратить ракету.</mod-overwrite:desc>
+	<mod-overwrite:desc>Missile based weapons have a 75 percent chance of not using a missile.</mod-overwrite:desc>
     <mod-overwrite:value>0.75</mod-overwrite:value>
 </mod:findName>
 
+<mod:findName type="augBlueprint" name="ADV_SCANNERS"> <!-- 1.4 -->
+	<mod-overwrite:desc>Gather more information about nearby stellar beacons and reveal the coordinates of stores on the star map.</mod-overwrite:desc>
+</mod:findName>
+
+<augBlueprint name="HP_BOOSTER"> <!-- 1.4 -->
+	<title>Steroids</title>
+	<desc>Increases friendly crew health by 5.</desc>
+	<cost>45</cost>
+	<bp>8</bp>
+	<rarity>0</rarity>
+	<stackable>false</stackable>
+</augBlueprint>
+
+<augBlueprint name="HP_BOOSTER_2"> <!-- 1.4 -->
+	<title>Steroids</title>
+	<desc>Increases friendly crew health by 15.</desc>
+	<cost>45</cost>
+	<bp>8</bp>
+	<rarity>0</rarity>
+	<stackable>false</stackable>
+</augBlueprint>
+
+<augBlueprint name="HP_BOOSTER_3"> <!-- 1.4 -->
+	<title>Steroids</title>
+	<desc>Increases friendly crew health by 25.</desc>
+	<cost>45</cost>
+	<bp>8</bp>
+	<rarity>4</rarity>
+	<stackable>false</stackable>
+</augBlueprint>
+
+<augBlueprint name="HP_BOOSTER_4"> <!-- 1.4 -->
+	<title>Steroids</title>
+	<desc>Increases friendly crew health by 35 and combat damage by 5%.</desc>
+	<cost>45</cost>
+	<bp>8</bp>
+	<rarity>0</rarity>
+	<stackable>false</stackable>
+</augBlueprint>
+
+<augBlueprint name="HP_BOOSTER_5"> <!-- 1.4 -->
+	<title>Steroids</title>
+	<desc>Increases friendly crew health by 45 and combat damage by 10%.</desc>
+	<cost>45</cost>
+	<bp>8</bp>
+	<rarity>0</rarity>
+	<stackable>false</stackable>
+</augBlueprint>
+
+<augBlueprint name="ARMOR_SUIT"> <!-- 1.4 -->
+	<title>Armor Suits</title>
+	<desc>Reduces all friendly crew damage taken by 5%. Slows movement by 15%.</desc>
+	<cost>40</cost>
+	<bp>8</bp>
+	<rarity>0</rarity>
+	<stackable>false</stackable>
+</augBlueprint>
+
+<augBlueprint name="ARMOR_SUIT_2"> <!-- 1.4 -->
+	<title>Armor Suits</title>
+	<desc>Reduces all friendly crew damage taken by 10%. Slows movement by 15%.</desc>
+	<cost>40</cost>
+	<bp>8</bp>
+	<rarity>0</rarity>
+	<stackable>false</stackable>
+</augBlueprint>
+
+<augBlueprint name="ARMOR_SUIT_3"> <!-- 1.4 -->
+	<title>Armor Suits</title>
+	<desc>Reduces all friendly crew damage taken by 15%. Slows movement by 15%.</desc>
+	<cost>40</cost>
+	<bp>8</bp>
+	<rarity>4</rarity>
+	<stackable>false</stackable>
+</augBlueprint>
+
+<augBlueprint name="ARMOR_SUIT_4"> <!-- 1.4 -->
+	<title>Armor Suits</title>
+	<desc>Reduces all friendly crew damage taken by 20%.</desc>
+	<cost>40</cost>
+	<bp>8</bp>
+	<rarity>0</rarity>
+	<stackable>false</stackable>
+</augBlueprint>
+
+<augBlueprint name="ARMOR_SUIT_5"> <!-- 1.4 -->
+	<title>Armor Suits</title>
+	<desc>Reduces all friendly crew damage taken by 25%. Movement speed up 15%. Grants immunity to fire.</desc>
+	<cost>40</cost>
+	<bp>8</bp>
+	<rarity>0</rarity>
+	<stackable>false</stackable>
+</augBlueprint>
+
 <augBlueprint name="MAGMAN_EXTINGUISHERS"> 
-	<title>Хладагент</title>
-	<desc>Устаревшая система пожаротушения. Автоматически тушит пожары на корабле.</desc>
+	<title>Refrigerant</title>
+	<desc>Outdated fire suppression. Automatically extinguishes fires on the ship.</desc>
 	<cost>35</cost>
 	<bp>8</bp>
 	<rarity>0</rarity>
@@ -18,8 +643,8 @@
 </augBlueprint>
 
 <augBlueprint name="MUSHROOM_REPAIR"> 
-	<title>Мицелий</title>
-	<desc>Ускоряет передвижение вашей команды на 25% и восстанавливает корпус корабля на 2 единицы каждый раз, когда вы получаете лом. Это усиление нельзя снять с корабля.</desc>
+	<title>Mycelium</title>
+	<desc>Your crew's movement speed is increased by 25% and repairs hull every time you collect scrap. This augmentation cannot be removed from the ship.</desc>
 	<cost>100</cost>
 	<bp>8</bp>
 	<rarity>0</rarity>
@@ -44,8 +669,8 @@
 </mod:findName>
 
 <augBlueprint name="FTL_JUMPER_GOOD">
-    <title>Улучш. FTL-навигация</title>
-	<desc>Позволяет вашему кораблю прыгнуть к любому маяку, но на это тратится дополнительное топливо.</desc>
+    <title>Advanced FTL-Navigation</title>
+	<desc>Allows your ship to jump to any beacon, though this costs additional fuel.</desc>
     <cost>50</cost>
     <bp>4</bp>
     <rarity>0</rarity>
@@ -54,8 +679,8 @@
 </augBlueprint>
 
 <augBlueprint name="NANOBOT_DEFENSE_SYSTEM">
-    <title>Защитные наноботы</title>
-	<desc>Постоянно атакуют вражеских абордажников на вашем корабле.</desc>
+    <title>Nanobot Defenses</title>
+	<desc>Constantly attacks enemy boarders with a grid of nanobots.</desc>
     <cost>40</cost>
     <bp>4</bp>
     <rarity>4</rarity>
@@ -64,8 +689,8 @@
 </augBlueprint>
 
 <augBlueprint name="SHELL_GAS">
-	<title>Разъедающий газ</title>
-	<desc>Вредоносный газ наносит урон посторонним на борту. При этом ваш экипаж полностью защищён от газа. Эффективность 100%.</desc>
+	<title>Corrosive Gas</title>
+	<desc>This harmful gas eats away at enemy boarders, but your crew is safe. 100% efficiency.</desc>
     <cost>50</cost>
     <bp>4</bp>
     <rarity>0</rarity>
@@ -74,8 +699,8 @@
 </augBlueprint>
 
 <augBlueprint name="SHELL_GAS_2">
-	<title>Разъедающий газ</title>
-	<desc>Вредоносный газ наносит урон посторонним на борту. При этом ваш экипаж полностью защищён от газа. Эффективность 150%.</desc>
+	<title>Corrosive Gas</title>
+	<desc>This harmful gas eats away at enemy boarders, but your crew is safe. 150% efficiency.</desc>
     <cost>50</cost>
     <bp>4</bp>
     <rarity>0</rarity>
@@ -84,8 +709,8 @@
 </augBlueprint>
 
 <augBlueprint name="SHELL_GAS_3">
-	<title>Разъедающий газ</title>
-	<desc>Вредоносный газ наносит урон посторонним на борту. При этом ваш экипаж полностью защищён от газа. Эффективность 200%.</desc>
+	<title>Corrosive Gas</title>
+	<desc>This harmful gas eats away at enemy boarders, but your crew is safe. 200% efficiency.</desc>
     <cost>50</cost>
     <bp>4</bp>
     <rarity>0</rarity>
@@ -94,8 +719,8 @@
 </augBlueprint>
 
 <augBlueprint name="SHELL_GAS_4">
-	<title>Разъедающий газ</title>
-	<desc>Вредоносный газ наносит урон посторонним на борту. При этом ваш экипаж полностью защищён от газа. Эффективность 250%.</desc>
+	<title>Corrosive Gas</title>
+	<desc>This harmful gas eats away at enemy boarders, but your crew is safe. 250% efficiency.</desc>
     <cost>50</cost>
     <bp>4</bp>
     <rarity>0</rarity>
@@ -104,8 +729,8 @@
 </augBlueprint>
 
 <augBlueprint name="SHELL_GAS_5">
-	<title>Разъедающий газ</title>
-	<desc>Вредоносный газ наносит урон посторонним на борту. При этом ваш экипаж полностью защищён от газа. Эффективность 300%.</desc>
+	<title>Corrosive Gas</title>
+	<desc>This harmful gas eats away at enemy boarders, but your crew is safe. 300% efficiency.</desc>
     <cost>50</cost>
     <bp>4</bp>
     <rarity>0</rarity>
@@ -114,16 +739,16 @@
 </augBlueprint>
 
 <augBlueprint name="O2_MASKS_CREW_STIMS">
-    <title>Снаряжение охотника</title>
-	<desc>Это усиление даёт эффект от кислородных масок и феромонов мантисов.</desc>
+    <title>Hunter Equipment</title>
+	<desc>This augmentation combines the effects of Emergency Respirators and Mantis Pheromones.</desc>
     <cost>125</cost>
     <rarity>0</rarity>
     <stackable>false</stackable>
 </augBlueprint>
 
 <augBlueprint name="NANOBOT_DEFENSE_SYSTEM_NANO_MEDBAY">
-    <title>Продвинутые наноботы</title>
-	<desc>Это усиление даёт эффект от защитных наноботов и нано мед-ботов инжи.</desc>
+    <title>Advanced Nanobots</title>
+	<desc>This augmentation combines the effects of Nanobot Defenses and Engi Med-bot Dispersal.</desc>
     <cost>100</cost>
     <rarity>0</rarity>
     <stackable>false</stackable>
@@ -131,112 +756,112 @@
 
 
 <augBlueprint name="ENERGY_SHIELD_ZOLTAN_BYPASS">
-    <title>Технологии золтанцев</title>
-	<desc>Это усиление даёт эффект от щита золтанцев и обхода суперщита.</desc>
+    <title>Zoltan Technologies</title>
+	<desc>This augmentation combines the effects of Zoltan Shield and Super Shield Bypass.</desc>
     <cost>145</cost>
     <rarity>0</rarity>
     <stackable>false</stackable>
 </augBlueprint>
 
 <augBlueprint name="SLUG_GEL_FIRE_EXTINGUISHERS">
-    <title>Система безопасности</title>
-	<desc>Это усиление даёт эффект от ремонтного геля слагов и системы пожаротушения.</desc>
+    <title>Safeguard System</title><!-- Security System -->
+	<desc>This augmentation combines the effects of Slug Repair Gel and Fire Suppression.</desc>
     <cost>115</cost>
     <rarity>0</rarity>
     <stackable>false</stackable>
 </augBlueprint>
 
 <augBlueprint name="CRYSTAL_SHARDS_ROCK_ARMOR">
-    <title>Композитная броня</title>
-	<desc>Это усиление даёт эффект от мести кристалинов и обшивки корпуса роков.</desc>
+    <title>Composite Armor</title>
+	<desc>This augmentation combines the effects of Crystal Vengeance and Rock Armor Plating.</desc>
     <cost>120</cost>
     <rarity>0</rarity>
     <stackable>false</stackable>
 </augBlueprint>
 
 <augBlueprint name="SYSTEM_CASING_ION_ARMOR">
-    <title>Защитное поле</title>
-	<desc>Это усиление даёт эффект от титанового покрытия и инверсного ионного поля.</desc>
+    <title>Protective Shielding</title>
+	<desc>This augmentation combines the effects of Titanium System Casing and Reverse Ion Field.</desc>
     <cost>125</cost>
     <rarity>0</rarity>
     <stackable>false</stackable>
 </augBlueprint>
 
 <augBlueprint name="FTL_JUMPER_DRONE_RECOVERY">
-    <title>Навигационный механизм</title>
-	<desc>Это усиление даёт эффект от улучшенной FTL-навигации и механизма сбора дронов.</desc>
+    <title>Navigation Mechanism</title>
+	<desc>This augmentation combines the effects of Advanced FTL-Navigation and Drone Recovery Arm.</desc>
     <cost>85</cost>
     <rarity>0</rarity>
     <stackable>false</stackable>
 </augBlueprint>
 
 <augBlueprint name="FTL_BOOSTER_FTL_JAMMER">
-    <title>FTL-контроллер</title>
-	<desc>Это усиление даёт эффект от ускорителя FTL и глушителя FTL.</desc>
+    <title>FTL-Manipulator</title><!-- FTL-Controller -->
+	<desc>This augmentation combines the effects of FTL Accelerator and FTL Jammer.</desc>
     <cost>55</cost>
     <rarity>0</rarity>
     <stackable>false</stackable>
 </augBlueprint>
 
 <augBlueprint name="WEAPON_PREIGNITE_AUTO_COOLDOWN">
-    <title>Компенсатор перезарядки</title>
-	<desc>Это усиление даёт эффект от предзажигателя орудий и авто-перезарядчика.</desc>
+    <title>Recharge Compensator</title>
+	<desc>This augmentation combines the effects of Weapon Pre-Igniter and Automated Reloader.</desc>
     <cost>205</cost>
     <rarity>0</rarity>
     <stackable>false</stackable>
 </augBlueprint>
 
 <augBlueprint name="SHIELD_RECHARGE_CLOAK_FIRE">
-    <title>Маскировочный барьер</title>
-	<desc>Это усиление даёт эффект от ускорителя зарядки щитов и скрытых орудий.</desc>
+    <title>Camouflage Barrier</title>
+	<desc>This augmentation combines the effects of Shield Recharge Booster and Stealth Weapons.</desc>
     <cost>95</cost>
     <rarity>0</rarity>
     <stackable>false</stackable>
 </augBlueprint>
 
 <augBlueprint name="ADV_SCANNERS_LIFE_SCANNER">
-    <title>Продвинутый сканер</title>
-	<desc>Это усиление даёт эффект от сканеров широкого охвата и сканера жизненных форм.</desc>
+    <title>Advanced Scanners</title>
+	<desc>This augmentation combines the effects of Long-Ranged Scanners and Lifeform Scanner.</desc>
     <cost>70</cost>
     <rarity>0</rarity>
     <stackable>false</stackable>
 </augBlueprint>
 
 <augBlueprint name="SCRAP_COLLECTOR_REPAIR_ARM">
-    <title>Продвинутый манипулятор</title>
-	<desc>Это усиление даёт эффект от крана для сбора лома и крана для ремонта.</desc>
+    <title>Advanced Scrap Manipulator</title>
+	<desc>This augmentation combines the effects of Scrap Recovery Arm and Repair Arm.</desc>
     <cost>95</cost>
     <rarity>0</rarity>
     <stackable>false</stackable>
 </augBlueprint>
 
 <augBlueprint name="BACKUP_DNA_TELEPORT_HEAL">
-    <title>Модуль сохранности</title>
-	<desc>Это усиление даёт эффект от резервного банка ДНК и исцеляющего телепорта.</desc>
+    <title>Preservation Module</title>
+	<desc>This augmentation combines the effects of Backup DNA Bank and Reconstructive Teleport.</desc>
     <cost>95</cost>
     <rarity>0</rarity>
     <stackable>false</stackable>
 </augBlueprint>
 
 <augBlueprint name="DEFENSE_SCRAMBLER_HACKING_STUN">
-    <title>Снаряжение хакера</title>
-	<desc>Это усиление даёт эффект от генератора помех и парализующего взлома.</desc>
+    <title>Hacker Equipment</title>
+	<desc>This augmentation combines the effects of Defense Scrambler and Hacking Stun.</desc>
     <cost>95</cost>
     <rarity>0</rarity>
     <stackable>false</stackable>
 </augBlueprint>
 
 <augBlueprint name="FLEET_DISTRACTION_BATTERY_BOOSTER">
-    <title>Вспомогательный модуль</title>
-	<desc>Это усиление даёт эффект от отвлекающего буя и зарядного устройства.</desc>
+    <title>Backup Module</title><!-- Auxilliary, Ancillary, Utility... -->
+	<desc>This augmentation combines the effects of Distraction Buoys and Battery Charger.</desc>
     <cost>60</cost>
     <rarity>0</rarity>
     <stackable>false</stackable>
 </augBlueprint>
 
 <augBlueprint name="EXPLOSIVE_REPLICATOR_DRONE_SPEED">
-    <title>Модуль поддержки</title>
-	<desc>Это усиление даёт эффект от репликатора ракет и ускорителя дронов.</desc>
+    <title>Support Module</title><!-- Support Module -->
+	<desc>This augmentation combines the effects of Explosive Replicator and Drone Accelerator.</desc>
     <cost>70</cost>
     <rarity>0</rarity>
     <stackable>false</stackable>
@@ -244,29 +869,39 @@
 
 <!-- SYSTEMS -->
 
+<!-- English version opting to keep 10% dodge
+
 <mod:findName type="droneBlueprint" name="DRONE_HACKING">
     <mod-overwrite:dodge>0</mod-overwrite:dodge>
 </mod:findName>
 
 <mod:findName type="systemBlueprint" name="hacking">
-	<mod-overwrite:desc>Блокирует систему, временно отключает или нарушает её работу. Для запуска требует детали дронов.</mod-overwrite:desc>
-    <mod-overwrite:dodge>0</mod-overwrite:dodge>
-</mod:findName>
+	<mod-overwrite:desc>Launches a hacking drone at a system, locking down its doors and granting the ability to temporarily disable or disrupt it. Requires drone part to launch.</mod-overwrite:desc>
+</mod:findName> -->
 
 <!-- RACES -->
 
 <mod:findName type="crewBlueprint" name="ghost">
     <mod-overwrite:powerList>
-		<power> Не дышит и не горит</power>
-		<power> Здоровье уменьшено до 50</power>
-		<power> Проходит сквозь двери</power>
-		<power> Ремонтирует и тушит на 50% быстрее</power>
+		<power> Immune to suffocation and fire</power><!-- Does not breathe and does not burn  -->
+		<power> Health reduced to 50</power>
+		<power> Ignores doors</power><!-- Goes through doors -->
+		<power> Repairs and extinguishes fires 50% faster</power>
+    </mod-overwrite:powerList>
+</mod:findName>
+
+<mod:findName type="crewBlueprint" name="rock">
+    <mod-overwrite:powerList>
+		<power> Immune to fire</power>
+		<power> Stun duration halved</power>
+		<power> Moves 40% slower</power>
+		<power> Health increased to 150</power>
     </mod-overwrite:powerList>
 </mod:findName>
 
 <mod:findName type="crewBlueprint" name="human">
     <mod-overwrite:powerList>
-		<power> Способности улучшаются вдвое быстрее</power>
+		<power> Skills improve twice as fast</power>
     </mod-overwrite:powerList>
 </mod:findName>
 
@@ -283,9 +918,9 @@
 <droneBlueprint name="MORPH_REPAIR">
 	<type>REPAIR_MORPH</type>
 	<tip>tip_crew</tip>
-	<title>Ремонтник морфов</title>
-	<short>Рем. морфов</short>
-	<desc>Этот ремонтник создан из дорогих сплавов. Быстро ремонтирует и тушит пожары.</desc>
+	<title>Morph Repair Drone</title>
+	<short>Morph Rep.</short>
+	<desc>The higher-quality material composition of this drone allows it to repair and put out fires even faster.</desc>
 	<power>1</power>
 	<cost>60</cost>
 	<bp>2</bp>
@@ -294,16 +929,16 @@
 </droneBlueprint> -->
 
 <crewBlueprint name="morph">
-	<desc>Этот потерявший из-за короткого замыкания рассудок вид инжи часто ведёт себя неадекватно.</desc>
+	<desc>A short-circuit in this Engi's mind has altered their performance and behavior.</desc>
 	<cost>50</cost>
 	<bp>2</bp>
-	<title>Морф</title>
-	<short>Морф</short>
+	<title>Morph</title>
+	<short>Morph</short>
 	<rarity>0</rarity>
 	<powerList>
-		<power> Ремонтирует и тушит на 50% быстрее</power>
-		<power> Урон по экипажу снижен на 25%</power>
-		<power> Передвигается вдвое быстрее</power>
+		<power> Repairs and extinguishes fires 50% faster</power>
+		<power> Crew damage reduced by 25%</power>
+		<power> Moves twice as fast</power>
 	</powerList>
 	<colorList>
 		<layer><!-- Layer 1 - 'Skin' -->
@@ -362,17 +997,18 @@
 </crewBlueprint>
 
 <crewBlueprint name="slig">
-	<desc>Слёрмы — изрядно разжиревший вид слагов, в чём повинна их страсть к особому напитку.</desc>
-	<title>Слёрм</title>
-	<short>Слёрм</short>
+	<desc>Sligs — they're a pretty fatty type of Slug, which explains their passion for a special drink.</desc>
+	<!-- <desc>Generations of Slug cloning has resulted in the Slig — a pretty fatty type of Slug, which explains their passion for a special drink.</desc> -->
+	<title>Slig</title>
+	<short>Slig</short>
 	<cost>45</cost>
 	<bp>2</bp>
 	<rarity>0</rarity>
 	<powerList>
-		<power> Скорость уменьшена до 70%</power>
-		<power> Регенерирует здоровье</power>
-		<power> Телепатически видит всё в ближайших отсеках</power>
-		<power> Невосприимчив к управлению разумом</power>
+		<power> Moves 30% slower</power>
+		<power> Regenerates health</power>
+		<power> Reveals nearby rooms</power>
+		<power> Immune to Mind Control</power>
 	</powerList>
 	<colorList>
 		<layer><!-- Layer 1 - color -->
@@ -510,16 +1146,16 @@
 </crewBlueprint>
 
 <crewBlueprint name="energy">
-	<desc>Золтанцы — союзники инжи. Их врождённая энергия может питать системы корабля.</desc>
-	<title>Золтанец</title>
-	<short>Золтанец</short>
+	<desc>The 'Zoltan' are allies of the 'Engi'. Their innate energy can power ship systems.</desc>
+	<title>Zoltan</title>
+	<short>Zoltan</short>
 	<cost>60</cost> <!-- 1.21 --><!-- 1.23 -->
 	<bp>4</bp>
 	<rarity>5</rarity>
 	<powerList>
-		<power> Обеспечивает неионизируемой энергией занимаемый отсек</power>
-		<power> Здоровье уменьшено до 70</power>
-		<power> Наносит 15 урона врагу в момент смерти</power>
+		<power> Provides non-ionizable energy to the occupied system</power>
+		<power> Health reduced to 70</power>
+		<power> 15 damage to enemy crew on death</power>
 	</powerList>
 	<colorList>
 		<layer><!-- Layer 1 - color -->
@@ -605,16 +1241,16 @@
 </crewBlueprint>
 
 <crewBlueprint name="energy_w">
-	<desc>Золтанцы — союзники инжи. Их врождённая энергия может питать системы корабля.</desc>
-	<title>Золтанец</title>
-	<short>Золтанец</short>
+	<desc>The 'Zoltan' are allies of the 'Engi'. Their innate energy can power ship systems.</desc>
+	<title>Zoltan</title>
+	<short>Zoltan</short>
 	<cost>60</cost> <!-- 1.21 --><!-- 1.23 -->
 	<bp>4</bp>
 	<rarity>5</rarity>
 	<powerList>
-		<power> Обеспечивает неионизируемой энергией занимаемый отсек</power>
-		<power> Здоровье уменьшено до 70</power>
-		<power> Наносит 15 урона врагу в момент смерти</power>
+		<power> Provides non-ionizable energy to the occupied system</power>
+		<power> Health reduced to 70</power>
+		<power> 15 damage to enemy crew on death</power>
 	</powerList>
 	<colorList>
 		<layer><!-- Layer 1 - color -->
@@ -666,16 +1302,16 @@
 </crewBlueprint>
 
 <crewBlueprint name="energyx">
-	<desc>Золтонцы — близкие родственники золтанцев. Их врождённая энергия может питать системы корабля.</desc>
-	<title>Золтонец</title>
-	<short>Золтонец</short>
+	<desc>The 'Zolton' are close relatives of the 'Zoltan'. Their innate energy can power ship systems.</desc>
+	<title>Zolton</title>
+	<short>Zolton</short>
 	<cost>60</cost> 
 	<bp>4</bp>
 	<rarity>0</rarity>
 	<powerList>
-		<power> Обеспечивает неионизируемой энергией занимаемый отсек</power>
-		<power> Здоровье уменьшено до 70</power>
-		<power> Наносит 3 ионного урона вражеским системам в момент смерти</power>
+		<power> Provides power to occupied system</power>
+		<power> Health reduced to 70</power>
+		<power> Deals 3 ion damage to enemy systems on death</power>
 	</powerList>
 	<colorList>
 		<layer><!-- Layer 1 - color -->
@@ -739,16 +1375,16 @@
 </crewBlueprint>
 
 <crewBlueprint name="energyx_w">
-	<desc>Золтонцы — близкие родственники золтанцев. Их врождённая энергия может питать системы корабля.</desc>
-	<title>Золтонец</title>
-	<short>Золтонец</short>
+	<desc>The 'Zolton' are close relatives of the 'Zoltan'. Their innate energy can power ship systems.</desc>
+	<title>Zolton</title>
+	<short>Zolton</short>
 	<cost>60</cost> 
 	<bp>4</bp>
 	<rarity>0</rarity>
 	<powerList>
-		<power> Обеспечивает неионизируемой энергией занимаемый отсек</power>
-		<power> Здоровье уменьшено до 70</power>
-		<power> Наносит 3 ионного урона вражеским системам в момент смерти</power>
+		<power> Provides power to occupied system</power>
+		<power> Health reduced to 70</power>
+		<power> Deals 3 ion damage to enemy systems on death</power>
 	</powerList>
 	<colorList>
 		<layer><!-- Layer 1 - color -->
@@ -809,18 +1445,20 @@
 </crewBlueprint>
 
 <crewBlueprint name="mushroom">
-	<desc>Машрумы — разумная грибная форма жизни. Агрессивные от природы, они всё же находят общий язык с орхидами.</desc>
-	<title>Машрум (старый)</title>
-	<short>Машрум</short>
-	<cost>60</cost> 
+	<desc>Mushrooms are a sentient mushroom life form. Though they are aggressive by nature, they still find a common language with the Orchids.</desc>
+	<title>Mushroom (Old)</title><!-- старый -->
+	<short>Mushroom</short>
+	<cost>45</cost> <!-- 1.3 --><!-- 1.4 -->
 	<bp>4</bp>
 	<rarity>0</rarity>
 	<powerList>
-		<power> Способность: Оглушающие споры</power>
-		<power> Скорость передвижения снижена до 50%</power>
-		<power> Быстро обучается боевым навыкам</power>
-		<power> Получает 20% урона от удушья</power>
-		<power> При смерти оглушает врагов спорами</power>
+		<power> Ability: Deafening Spores</power>
+		<power> Movement speed halved</power>
+		<power> Possesses expert skills</power> <!-- 1.4 -->
+		<power> Does not lose experience from cloning</power> <!-- 1.3 -->
+		<power> Only takes 20% suffocation damage</power>
+		<power> Immune to stuns</power> <!-- 1.4 -->
+		<power> Stuns enemies with spores on death</power>
 	</powerList>
 	<colorList> 
 		<layer> <!-- Layer 1 - Hat -->
@@ -836,17 +1474,20 @@
 </crewBlueprint>
 
 <crewBlueprint name="mushroom_b">
-	<desc>Машрумы — разумная грибная форма жизни. Агрессивные от природы, они всё же находят общий язык с орхидами.</desc>
-	<title>Машрум (зрелый)</title>
-	<short>Машрум</short>
-	<cost>60</cost> 
+	<desc>Mushrooms are a sentient mushroom life form. Though they are aggressive by nature, they still find a common language with the Orchids.</desc>
+	<title>Mushroom (Mature)</title>
+	<short>Mushroom</short>
+	<cost>45</cost> <!-- 1.3 --><!-- 1.4 -->
 	<bp>4</bp>
 	<rarity>0</rarity>
 	<powerList>
-		<power> Скорость передвижения снижена до 50%</power>
-		<power> Быстро обучается боевым навыкам</power>
-		<power> Получает 20% урона от удушья</power>
-		<power> При смерти оглушает врагов спорами</power>
+		<power> Ability: Deafening Spores</power>
+		<power> Movement speed halved</power>
+		<power> Possesses advanced skills</power> <!-- 1.4 -->
+		<power> Does not lose experience from cloning</power> <!-- 1.3 -->
+		<power> Only takes 20% suffocation damage</power>
+		<power> Immune to stuns</power> <!-- 1.4 -->
+		<power> Stuns enemies with spores on death</power>
 	</powerList>
 	<colorList> 
 		<layer> <!-- Layer 1 - Hat -->
@@ -862,17 +1503,19 @@
 </crewBlueprint>
 
 <crewBlueprint name="mushroom_f">
-	<desc>Машрумы — разумная грибная форма жизни. Агрессивные от природы, они всё же находят общий язык с орхидами.</desc>
-	<title>Машрум (молодой)</title>
-	<short>Машрум</short>
-	<cost>60</cost> 
+	<desc>Mushrooms are a sentient mushroom life form. Though they are aggressive by nature, they still find a common language with the Orchids.</desc>
+	<title>Mushroom (Young)</title>
+	<short>Mushroom</short>
+	<cost>45</cost> <!-- 1.3 --><!-- 1.4 -->
 	<bp>4</bp>
 	<rarity>5</rarity>
 	<powerList>
-		<power> Скорость передвижения снижена до 50%</power>
-		<power> Быстро обучается боевым навыкам</power>
-		<power> Получает 20% урона от удушья</power>
-		<power> При смерти оглушает врагов спорами</power>
+		<power> Movement speed halved</power>
+		<!-- <power> Learns combat skills quickly</power> --> <!-- 1.4 -->
+		<power> Does not lose experience from cloning</power> <!-- 1.3 -->
+		<power> Only takes 20% suffocation damage</power>
+		<power> Immune to stuns</power> <!-- 1.4 -->
+		<power> Stuns enemies with spores on death</power>
 	</powerList>
 	<colorList> 
 		<layer> <!-- Layer 1 - Hat -->
@@ -889,15 +1532,15 @@
 
 
 <crewBlueprint name="order_human">
-	<desc>Фанатик Ордена. Носит огнеупорную форму, имеет при себе продвинутый огнетушитель.</desc>
+	<desc>A fanatic of the Order. Wears a fireproof uniform and carries an advanced fire extinguisher.</desc>
 	<cost>40</cost>
 	<bp>2</bp>
-	<title>Человек</title>
-	<short>Человек</short>
+	<title>Order Human</title><!-- Russian: no 'Order' -->
+	<short>Human</short>
 	<rarity>0</rarity>
 	<powerList>
-		<power> Получает на 50% меньше урона от огня</power>
-		<power> Быстро расправляется с пожарами</power>
+		<power> Takes half damage from fires</power>
+		<power> Puts out fires quickly</power>
 	</powerList>
 	<colorList>
 		<layer><!-- Layer 1 - Lines -->
@@ -986,15 +1629,15 @@
 </crewBlueprint>
 
 <crewBlueprint name="order_female">
-	<desc>Фанатик Ордена. Носит огнеупорную форму, имеет при себе продвинутый огнетушитель.</desc>
+	<desc>A fanatic of the Order. Wears a fireproof uniform and carries an advanced fire extinguisher.</desc>
 	<cost>40</cost>
 	<bp>2</bp>
-	<title>Человек</title>
-	<short>Человек</short>
+	<title>Order Human</title><!-- Russian: no 'Order' -->
+	<short>Human</short>
 	<rarity>0</rarity>
 	<powerList>
-		<power> Получает на 50% меньше урона от огня</power>
-		<power> Быстро расправляется с пожарами</power>
+		<power> Takes half damage from fires</power>
+		<power> Puts out fires quickly</power>
 	</powerList>
 	<colorList>
 		<layer><!-- Layer 1 - Lines -->
@@ -1063,17 +1706,18 @@
 </crewBlueprint>
 
 <crewBlueprint name="magman">
-	<desc>Дальние двоюродные братья роков, магмены гораздо быстрее их и более жестоки.</desc>
-	<title>Магмен</title>
-	<short>Магмен</short>
+	<desc>Distant cousins of the Rockmen, the Magmen are much faster and more violent.</desc>
+	<title>Magman</title>
+	<short>Magman</short>
 	<cost>55</cost>
 	<bp>2</bp>
 	<rarity>4</rarity>
 	<powerList>
-		<power> Здоровье увеличено до 125</power>
-		<power> Лечится от огня</power>
-		<power> Не может тушить пожары</power>
-		<power> Создаёт пожар при смерти</power>
+		<power> Health increased to 125</power>
+		<power> Heals from fire</power>
+		<power> Can't put out fires</power>
+		<power> Combusts on death</power><!-- Creates a fire on death -->
+		<power> Sets enemy ships on fire</power>
 	</powerList>
 	<colorList>
 		<layer><!-- Layer 1 — aura -->
@@ -1130,16 +1774,17 @@
 </crewBlueprint>
 
 <crewBlueprint name="orchid">
-	<title>Орхид</title>
-	<short>Орхид</short>
-	<desc>Эти растительные формы жизни имеют мало общего с земными, но насыщают воздух кислородом столь же хорошо.</desc>
+	<title>Orchid</title>
+	<short>Orchid</short>
+	<desc>These floral lifeforms have little in common with Earth plants but fill air with oxygen just as well.</desc>
 	<cost>50</cost>
 	<bp>2</bp>
 	<rarity>0</rarity>
 	<powerList>
-		<power> Усиливает работу кислородной системы</power>
-		<power> Получает в 4 раза больше урона от огня</power>
-		<power> Тушит пожары в 2 раза медленнее</power>
+		<power> Strengthens the oxygen system</power>
+		<power> Receives 4 times more damage from fire</power>
+		<power> Extinguishes fires at half speed</power>
+		<power> Immune to stuns</power> <!-- 1.4 -->
 	</powerList>
 	<colorList>
 		<layer>
@@ -1177,16 +1822,17 @@
 </crewBlueprint>
 
 <crewBlueprint name="shell">
-	<title>Броненосец</title>
-	<short>Броненосец</short>
-	<desc>Защищённые со всех сторон прочным панцирем, броненосцы становятся уязвимы только когда заканчивается кислород.</desc>
+	<title>Shell</title>
+	<short>Shell</short>
+	<desc>Protected by their armor from all sides, the only weakness of Shells is their need to breathe.</desc>
 	<cost>50</cost>
 	<bp>2</bp>
 	<rarity>5</rarity>
 	<powerList>
-		<power> Здоровье снижено до 90</power>
-		<power> Получает вдвое меньше урона в бою</power>
-		<power> Получает вдвое больше урона от удушья</power>
+		<power> Health reduced to 90</power>
+		<power> Take half damage in close combat</power>
+		<power> Take double damage from suffocation</power>
+		<power> Stun duration halved</power>
 	</powerList>
 	<colorList>
 		<layer>
@@ -1210,16 +1856,17 @@
 </crewBlueprint>
 
 <crewBlueprint name="slug_armored">
-	<title>Слаг в панцире</title>
-	<short>Слаг в панцире</short>
-	<desc>Защищённый панцирем, захваченным с убитого броненосца, слаг теряет способность видеть формы жизни.</desc>
+	<title>Armored Slug</title>
+	<short>Armored Slug</short>
+	<desc>This Slug has encased themselves in armor, taken from a slain Shell, but this has made them unable to see lifeforms.</desc>
 	<cost>70</cost>
 	<bp>2</bp>
 	<rarity>0</rarity>
 	<powerList>
-		<power> Сканирует ближайшие отсеки</power>
-		<power> Невосприимчив к управлению разумом</power>
-		<power> Получает вдвое меньше урона в бою</power>
+		<power> Reveals nearby rooms</power>
+		<power> Immune to Mind Control</power>
+		<power> Take half damage in close combat</power>
+		<power> Stun duration halved</power>
 	</powerList>
 	<colorList>
 		<layer><!-- Layer 1 - armor-->
@@ -1255,37 +1902,276 @@
 <!-- WEAPONS -->
 
 <mod:findName type="weaponBlueprint" name="SHOTGUN_3_BROKEN">
-    <mod-append:desc>Похоже, что эта пушка повреждена. Необходимо найти тех, кто сможет её починить.</mod-append:desc>
+    <mod-overwrite:desc>It seems that this weapon is damaged. You must find someone who can fix it.</mod-overwrite:desc><!-- no longer needs to be in weapon slot -->
 </mod:findName>
 
+
+<!--  for now, these are the same as in english. the change is supposed to be that the weapon doesn't need to be in the weapons slot, but I didn't specify that in the base data anyway...
+Одноразовое.' (can only be used once) is at end of each injector desc. maybe should be added to english? though I thought 'one weapon' is clear...?
+
 <mod:findName type="augBlueprint" name="INJECTOR_PRC">
-    <mod-append:desc>Увеличивает проникновение сквозь щиты (+1) орудия на стартовых маяках. Не применим, если эффект бесполезен. Одноразовое.</mod-append:desc>
+    <mod-overwrite:desc>Increases the shield piercing of one weapon by 1 bubble. Used at sector start.
+Can only be applied to weapons that will benefit from more shield piercing.</mod-overwrite:desc>
 </mod:findName>
 
 <mod:findName type="augBlueprint" name="INJECTOR_FRC">
-    <mod-append:desc>Увеличивает проникновение сквозь щиты (+1) орудия на стартовых маяках. Не применим, если эффект бесполезен. Одноразовое.</mod-append:desc>
+    <mod-overwrite:desc>Увеличивает шанс поджога (+40%) орудия на стартовых маяках. Не применим, если эффект бесполезен или отсутствует изначально. Одноразовое.</mod-overwrite:desc> <!- - 1.3 - ->
 </mod:findName>
 
-<mod:findName type="augBlueprint" name="INJECTOR_PRC">
+<!- - 1.3 - ->
+<!- - <mod:findName type="augBlueprint" name="INJECTOR_PRC">
     <mod-append:desc>Увеличивает шанс поджога (+40%) орудия на стартовых маяках. Не применим, если эффект бесполезен или отсутствует изначально. Одноразовое.</mod-append:desc>
-</mod:findName>
+</mod:findName> - ->
 
 <mod:findName type="augBlueprint" name="INJECTOR_BRC">
-    <mod-append:desc>Увеличивает шанс пробоя (+40%) орудия на стартовых маяках. Не применим, если эффект бесполезен или отсутствует изначально. Одноразовое.</mod-append:desc>
+    <mod-overwrite:desc>Увеличивает шанс пробоя (+40%) орудия на стартовых маяках. Не применим, если эффект бесполезен или отсутствует изначально. Одноразовое.</mod-overwrite:desc>
 </mod:findName>
 
 <mod:findName type="augBlueprint" name="INJECTOR_CLD">
-    <mod-append:desc>Уменьшает перезарядку (-25%) орудия на стартовых маяках. Не применим, если эффект бесполезен. Одноразовое.</mod-append:desc>
+    <mod-overwrite:desc>Уменьшает перезарядку (-25%) орудия на стартовых маяках. Не применим, если эффект бесполезен. Одноразовое.</mod-overwrite:desc>
 </mod:findName>
 
 <mod:findName type="augBlueprint" name="INJECTOR_POW">
-    <mod-append:desc>Уменьшает энергопотребление (-1) орудия на стартовых маяках. Не может снизить энергопотребление до нуля. Одноразовое.</mod-append:desc>
-</mod:findName>
+    <mod-overwrite:desc>Уменьшает энергопотребление (-1) орудия на стартовых маяках. Не может снизить энергопотребление до нуля. Одноразовое.</mod-overwrite:desc>
+</mod:findName> -->
 
 <!-- SHIPS -->
 
+<!-- 1.3 -->
+
+<!-- This ship is furnished with a built-in refrigerant that slowly extinguishes fires. -->
+
+<shipBlueprint name="PLAYER_SHIP_MAGMAN" layout="magman_cruiser" img="magman_cruiser">
+	<class>Magman Cruiser</class>
+	<name>Magmario</name>
+	<desc>Магмены собрали этот крейсер используя лишь свои конечности и упорство. This ship is furnished with a built-in refrigerant that slowly extinguishes fires.</desc><!-- ... assembled cruiser using only 'limbs'??? and perseverance ... what does the ship look like? -->
+	<systemList>
+		<artillery power="2" room="4" start="false" weapon="ARTILLERY_MAGMAN" img="room_artillery_2" /><!-- 1.3 -->
+		<battery power="1" room="7" start="false" img="room_battery_11" />
+		<cloaking power="1" room="6" start="false" img="room_cloaking_3" />
+		<clonebay power="1" room="8" start="false">
+			<slot>
+				<number>0</number>
+			</slot>
+		</clonebay>
+		<doors power="2" room="10" start="true" img="room_doors_6">
+			<slot>
+				<direction>right</direction>
+				<number>1</number>
+			</slot>
+		</doors>
+		<drones power="2" room="12" start="false" img="room_drones_2" />
+		<engines power="1" room="13" start="true" img="room_engines_2">
+			<slot>
+				<direction>down</direction>
+				<number>2</number>
+			</slot>
+		</engines>
+		<hacking power="1" room="5" start="false" img="room_hacking_4" />
+		<medbay power="1" room="8" start="true" img="room_medbay_4">
+			<slot>
+				<number>0</number>
+			</slot>
+		</medbay>
+		<mind power="1" room="3" start="false" img="room_mind_6" />
+		<oxygen power="1" room="1" start="true" img="room_oxygen_4" />
+		<pilot power="1" room="11" start="true" img="room_pilot">
+			<slot>
+				<direction>right</direction>
+				<number>0</number>
+			</slot>
+		</pilot>
+		<sensors power="1" room="0" start="true" img="room_sensors">
+			<slot>
+				<direction>down</direction>
+				<number>1</number>
+			</slot>
+		</sensors>
+		<shields power="2" room="9" start="true" img="room_shields_15">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</shields>
+		<teleporter power="1" room="2" start="false" />
+		<weapons power="4" room="14" start="true" img="room_weapons"> <!-- 1.3 -->
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</weapons>
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="20" count="3"><!-- 1.3 -->
+		<weapon name="MAGMAN_GUN_1" />
+		<weapon name="BA_MISSILES_ASTERIA" /><!-- 1.3 -->
+		<weapon name="BA_STUNGUN_3" /><!-- 1.3 -->
+	</weaponList>
+	<droneList drones="2" count="2" />
+	<health amount="30" />
+	<maxPower amount="8" /><!-- 1.3 -->
+	<crewCount amount="1" class="magman" />
+	<crewCount amount="1" class="magman" />
+	<!-- <aug name="MAGMAN_EXTINGUISHERS" /> -->
+</shipBlueprint>
+
+<shipBlueprint name="PLAYER_SHIP_MAGMAN_2" layout="magman_cruiser2" img="magman_cruiser2">
+	<class>Magmen Cruiser</class>
+	<name>Namgam</name>
+	<desc>Этот корабль магменов встал на тёмную сторону пиратских абордажей и грабежей. This ship is furnished with a built-in refrigerant that slowly extinguishes fires.</desc><!-- something about piracy and robbery ... preview ship first before translating -->
+	<systemList>
+		<artillery power="3" room="5" start="true" weapon="ARTILLERY_MAGMAN" img="room_artillery_3" /><!-- 1.3 -->
+		<battery power="1" room="2" start="false" img="room_battery_3" />
+		<cloaking power="1" room="6" start="false" img="room_cloaking_3" />
+		<clonebay power="1" room="8" start="false">
+			<slot>
+				<number>1</number>
+			</slot>
+		</clonebay>
+		<doors power="2" room="9" start="true" img="room_doors_6">
+			<slot>
+				<direction>right</direction>
+				<number>1</number>
+			</slot>
+		</doors>
+		<drones power="2" room="11" start="false" img="room_drones_2" />
+		<engines power="1" room="14" start="true" img="room_engines_8">
+			<slot>
+				<direction>left</direction>
+				<number>1</number>
+			</slot>
+		</engines>
+		<hacking power="1" room="7" start="false" img="room_hacking_Devastator" />
+		<medbay power="1" room="8" start="false" img="room_medbay"><!-- 1.3 -->
+			<slot>
+				<number>1</number>
+			</slot>
+		</medbay>
+		<mind power="1" room="3" start="false" img="room_mind_25" />
+		<oxygen power="1" room="1" start="true" img="room_oxygen_4" />
+		<pilot power="1" room="10" start="true" img="room_pilot">
+			<slot>
+				<direction>right</direction>
+				<number>0</number>
+			</slot>
+		</pilot>
+		<sensors power="1" room="0" start="true" img="room_sensors">
+			<slot>
+				<direction>down</direction>
+				<number>1</number>
+			</slot>
+		</sensors>
+		<shields power="2" room="4" start="true" img="room_shields_16">
+			<slot>
+				<direction>down</direction>
+				<number>0</number>
+			</slot>
+		</shields>
+		<teleporter power="1" room="12" start="true" />
+		<weapons power="2" room="13" start="true" img="room_weapons_7_dlc2">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</weapons>
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="0" count="0"><!-- 1.3 -->
+		<!-- <weapon name="MAGMAN_GUN_1" /> -->
+	</weaponList>
+	<droneList drones="2" count="2" />
+	<health amount="30" />
+	<maxPower amount="8" /><!-- 1.3 -->
+	<crewCount amount="1" class="magman" />
+	<crewCount amount="1" class="magman" />
+	<crewCount amount="1" class="magman" />
+	<crewCount amount="1" class="magman" />
+	<!-- <aug name="MAGMAN_EXTINGUISHERS" /> -->
+	<shieldImage>magman_cruiser</shieldImage>
+	<cloakImage>magman_cruiser</cloakImage>
+</shipBlueprint>
+
+<shipBlueprint name="PLAYER_SHIP_MAGMAN_3" layout="magman_cruiser3" img="magman_cruiser3">
+	<class>Magman Cruiser</class>
+	<name>Fireball</name>
+	<desc>The Federation managed to get ahold of this ship and repaint it. That's it. The keys are under the seat. This ship is furnished with a built-in refrigerant that slowly extinguishes fires.</desc>
+	<systemList>
+		<artillery power="2" room="4" start="false" weapon="ARTILLERY_MAGMAN" img="room_artillery_3" /><!-- 1.3 -->
+		<battery power="1" room="0" start="false" img="room_battery_8" />
+		<cloaking power="1" room="5" start="false" img="room_cloaking_3" />
+		<clonebay power="2" room="7" start="true"><!-- 1.3 -->
+			<slot>
+				<number>1</number>
+			</slot>
+		</clonebay>
+		<doors power="1" room="8" start="true" img="room_doors_6"><!-- 1.3 -->
+			<slot>
+				<direction>right</direction>
+				<number>1</number>
+			</slot>
+		</doors>
+		<drones power="2" room="10" start="false" img="room_drones_14" />
+		<engines power="1" room="13" start="true" img="room_engines_8">
+			<slot>
+				<direction>left</direction>
+				<number>1</number>
+			</slot>
+		</engines>
+		<hacking power="1" room="6" start="false" img="room_hacking_7" />
+		<medbay power="1" room="7" start="false" img="room_medbay"><!-- 1.3 -->
+			<slot>
+				<number>1</number>
+			</slot>
+		</medbay>
+		<mind power="1" room="2" start="true" img="room_mind_25" /> <!-- 1.3 -->
+		<oxygen power="1" room="1" start="true" img="room_oxygen_6" />
+		<pilot power="1" room="9" start="true" img="room_pilot">
+			<slot>
+				<direction>right</direction>
+				<number>0</number>
+			</slot>
+		</pilot>
+		<sensors power="2" room="14" start="true" img="room_sensors_4"><!-- 1.3 -->
+			<slot>
+				<direction>left</direction>
+				<number>1</number>
+			</slot>
+		</sensors>
+		<shields power="2" room="3" start="true" img="room_shields_16">
+			<slot>
+				<direction>down</direction>
+				<number>0</number>
+			</slot>
+		</shields>
+		<teleporter power="1" room="11" start="false" />
+		<weapons power="3" room="12" start="true" img="room_weapons_7_dlc2">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</weapons>
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="2" count="1"> <!-- 1.3 -->
+		<weapon name="MAGMAN_GUN_2" />
+	</weaponList>
+	<droneList drones="2" count="2" />
+	<health amount="30" />
+	<maxPower amount="8" /><!-- 1.3 -->
+	<crewCount amount="1" class="magman" />
+	<crewCount amount="1" class="magman" />
+	<crewCount amount="1" class="magman" />
+	<!-- <aug name="MAGMAN_EXTINGUISHERS" /> -->
+	<shieldImage>magman_cruiser</shieldImage>
+	<cloakImage>magman_cruiser</cloakImage>
+</shipBlueprint>
+
+
 <shipBlueprint name="PLAYER_SHIP_MUSHROOM" layout="mushroom_1" img="mushroom_1">
-	<class>Крейсер машрумов</class>
+	<class>Mushroom Cruiser</class>
 	<name>Bungler's Bane</name>
 	<desc>Корабли машрумов несут на борту мицелий, который помогает машрумам быстрее двигаться и ремонтирует корпус корабля.</desc>
 	<systemList>
@@ -1359,7 +2245,7 @@
 </shipBlueprint>
 
 <shipBlueprint name="PLAYER_SHIP_MUSHROOM_2" layout="mushroom_2" img="mushroom_2">
-	<class>Крейсер машрумов</class>
+	<class>Mushroom Cruiser</class>
 	<name>Violet Coprinus</name>
 	<desc>Корабли машрумов несут на борту мицелий, который помогает машрумам быстрее двигаться и ремонтирует корпус корабля.</desc>
 	<systemList>
@@ -1433,7 +2319,7 @@
 </shipBlueprint>
 
 <shipBlueprint name="PLAYER_SHIP_MUSHROOM_3" layout="mushroom_3" img="mushroom_3">
-	<class>Крейсер машрумов</class>
+	<class>Mushroom Cruiser</class>
 	<name>Hypha Facia</name>
 	<desc>Корабли машрумов несут на борту мицелий, который помогает машрумам быстрее двигаться и ремонтирует корпус корабля.</desc>
 	<systemList>
@@ -1508,9 +2394,9 @@
 </shipBlueprint>
 
 <shipBlueprint name="PLAYER_SHIP_SHELL" layout="shell_cruiser" img="shell_cruiser">
-	<class>Крейсер броненосцев</class>
+	<class>Shell Cruiser</class>
 	<name>Turtle</name>
-	<desc>Корабли броненосцев отличаются отличной защитой, как от орудий, так и от захватчиков, но очень слабым вооружением.</desc>
+	<desc>Shell ships are renowned for their excellent protection from both weapons and boarders, but their weaponry leaves much to be desired.</desc>
 	<systemList>
 		<pilot power="1" room="0" start="true" img="room_pilot">
 			<slot>
@@ -1588,9 +2474,9 @@
 </shipBlueprint>
 
 <shipBlueprint name="PLAYER_SHIP_SHELL_2" layout="shell_cruiser_2" img="shell_cruiser_2">
-	<class>Крейсер броненосцев</class>
+	<class>Shell Cruiser</class>
 	<name>Mastodon</name>
-	<desc>Переоборудованный для флота Федерации, этот крейсер вооружён разрушительными лазерами. Опасный корабль, пока его собственная команда не убивает друг друга.</desc>
+	<desc>Refitted for the Federation fleet, this cruiser is armed with devastating lasers. A dangerous ship, provided its own crew doesn't kill each other first.</desc>
 	<systemList>
 		<pilot power="1" room="0" start="true" img="room_pilot_2">
 			<slot>
@@ -1670,9 +2556,9 @@
 </shipBlueprint>
 
 <shipBlueprint name="PLAYER_SHIP_SHELL_3" layout="shell_cruiser_slug" img="shell_cruiser_slug">
-	<class>Крейсер броненосцев</class>
+	<class>Shell Cruiser</class>
 	<name>Asp</name>
-	<desc>Этот корабль был захвачен слагами вместе с телами бывшей команды. Оптимизирован для убийства экипажа.</desc>
+	<desc>This ship was captured by the Slugs along with the bodies of its former crew. Optimized for crew killing.</desc>
 	<systemList>
 		<pilot power="1" room="0" start="true" img="room_pilot_shell_3">
 			<slot>
@@ -1751,9 +2637,9 @@
 </shipBlueprint>
 
 <shipBlueprint name="PLAYER_SHIP_ORCHID" layout="orchid_cruiser" img="orchid_cruiser">
-	<class>Крейсер орхидов</class>
+	<class>Orchid Cruiser</class>
 	<name>Juglan</name>
-	<desc>Орхиды - хрупкие создания, особенно уязвимые к огню, поэтому они вынуждены полагаться на дронов и обман для победы в сражениях.</desc>
+	<desc>The Orchids are fragile creatures, especially vulnerable to fire, so they have to rely on drones and other trickery to win battles.</desc>
 	<systemList>
 		<artillery power="2" room="11" start="false" weapon="ARTILLERY_ORCHID" img="room_artillery_Avalon" />
 		<battery power="1" room="2" start="false" img="room_battery_70" />
@@ -1829,9 +2715,9 @@
 </shipBlueprint>
 
 <shipBlueprint name="PLAYER_SHIP_ORCHID_2" layout="orchid_cruiser_autumn" img="orchid_cruiser_autumn">
-	<class>Крейсер орхидов</class>
+	<class>Orchid Cruiser</class>
 	<name>Beetroot</name>
-	<desc>Несмотря на то, что орхиды - не самые лучшие бойцы врукопашную, их способности полезны для абордажных команд.</desc>
+	<desc>Although the Orchids are not the best hand-to-hand combatants, their abilities are useful for boarding crews.</desc><!-- what abilities? -->
 	<systemList>
 		<artillery power="2" room="11" start="false" weapon="ARTILLERY_ORCHID" img="room_artillery_Avalon" />
 		<battery power="1" room="6" start="false" img="room_battery_3" />
@@ -1906,9 +2792,9 @@
 </shipBlueprint>
 
 <shipBlueprint name="PLAYER_SHIP_ORCHID_3" layout="orchid_cruiser_strawberry" img="orchid_cruiser_strawberry">
-	<class>Крейсер орхидов</class>
+	<class>Orchid Cruiser</class>
 	<name>Lilac</name>
-	<desc>Этот крейсер использует технологии по репликации боеприпасов и мощный зерномёт, а также артиллерию.</desc>
+	<desc>This cruiser uses ammo replication technology and мощный зерномёт, along with artillery.</desc><!-- check name of Orchid weapon in woona's original mod -->
 	<systemList>
 		<artillery power="2" room="2" start="true" weapon="ARTILLERY_ORCHID" img="room_artillery_Avalon" />
 		<battery power="1" room="0" start="false" img="room_battery_Megatron" />
@@ -4235,7 +5121,7 @@
 	<aug name="ADV_SCANNERS" />
 </shipBlueprint>
 
-<shipBlueprint name="PLAYER_SHIP_STEALTH_DLC1_3" layout="dlc1_stealth_3" img="dlc1_stealth_3">
+<shipBlueprint name="PLAYER_SHIP_STEALTH_DLC1_3" layout="dlc1_stealth_3" img="dlc1_stealth_3"> <!-- 1.3 --> <!-- miniship_dlc1_stealth_3.png updated -->
 	<class>Стелс-крейсер</class>
 	<name>The Arcane</name>
 	<desc>Этот стелс-крейсер имеет щитовой отсек на борту, но пришлось пожертвовать усилениями.</desc>
@@ -4923,7 +5809,7 @@
 				<number>1</number>
 			</slot>
 		</engines>
-		<hacking power="1" room="7" start="false" img="room_hacking" />
+		<hacking power="1" room="7" start="true" img="room_hacking" /> <!-- 1.28.1 -->
 		<medbay power="1" room="2" start="true" img="room_medbay_4">
 			<slot>
 				<number>0</number>
@@ -4966,7 +5852,7 @@
 	</weaponList>
 	<droneList drones="0" count="2" />
 	<health amount="30" />
-	<maxPower amount="8" />
+	<maxPower amount="9" /> <!-- 1.28.1 -->
 	<crewCount amount="1" class="human" />
 	<crewCount amount="1" class="anaerobic" />
 	<crewCount amount="1" class="engi" />
@@ -6254,7 +7140,7 @@
 				<number>1</number>
 			</slot>
 		</shields>
-		<teleporter power="1" room="16" start="false" /><!-- 1.28 -->
+		<teleporter power="1" room="6" start="false" /><!-- 1.28 --><!-- 1.28.1 -->
 		<weapons power="2" room="8" start="true" img="room_weapons_11">
 			<slot>
 				<direction>left</direction>
@@ -8284,7 +9170,7 @@
 	</droneList>
 	<health amount="30" />
 	<maxPower amount="8" />
-	<crewCount amount="1" class="human" />
+	<crewCount amount="1" class="order_human" /> <!-- 1.4 -->
 	<aug name="DRONE_SPEED" />
 </shipBlueprint>
 

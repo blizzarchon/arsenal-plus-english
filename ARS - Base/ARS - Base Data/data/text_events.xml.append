@@ -1,0 +1,24 @@
+<FTL>
+
+<!-- TALK_WITH_CREW choices -->
+<text name="talk_to_human">(Human Crew Member) Talk to your Human.</text>
+<text name="talk_to_order_human">(Order Human Crew Member) Talk to your Order Human.</text>
+<text name="talk_to_engi">(Engi Crew Member) Talk to your Engi.</text>
+<text name="talk_to_morph">(Morph Crew Member) Talk to your Morph.</text>
+<text name="talk_to_zoltan">(Zoltan Crew Member) Talk to your Zoltan.</text>
+<text name="talk_to_zolton">(Zolton Crew Member) Talk to your Zolton.</text>
+<text name="talk_to_mantis">(Mantis Crew Member) Talk to your Mantis.</text>
+<text name="talk_to_slug">(Slug Crew Member) Talk to your Slug.</text>
+<text name="talk_to_rock">(Rock Crew Member) Talk to your Rockman.</text>
+<text name="talk_to_slig">(Slig Crew Member) Talk to your Slig.</text>
+<text name="talk_to_magman">(Magman Crew Member) Talk to your Magman.</text>
+<text name="talk_to_orchid">(Orchid Crew Member) Talk to your Orchid.</text>
+<text name="talk_to_shell">(Shell Crew Member) Talk to your Shell.</text>
+<text name="talk_to_lanius">(Lanius Crew Member) Talk to your Lanius.</text>
+<text name="talk_to_crystal">(Crystal Crew Member) Talk to your Crystal.</text>
+<text name="talk_to_avatar">(Avatar Crew Member) Talk to your Avatar.</text>
+<text name="talk_to_mushroom_f">(Young Mushroom Crew Member) Talk to your Mushroom.</text>
+<text name="talk_to_mushroom_b">(Mature Mushroom Crew Member) Talk to your Mushroom.</text>
+<text name="talk_to_mushroom">(Old Mushroom Crew Member) Talk to your Mushroom.</text>
+
+</FTL>

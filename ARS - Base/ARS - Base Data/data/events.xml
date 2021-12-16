@@ -1141,79 +1141,79 @@ High Average =	140%
 <event name="TALK_WITH_CREW">
 	<text>You decide to speak with a member of your crew while the FTL Drive charges to jump to the next beacon.</text>
 	<choice hidden="true" req="HUMAN">
-		<text>(Human Crew Member) Talk to your Human.</text>
+		<text id="talk_to_human" />
 		<event load="NOTHING2_HUMAN"/>
 	</choice>
-	<choice hidden="true" req="CREW_ORDER_HUMAN"> <!-- 1.28 -->
-		<text>(Order Human Crew Member) Talk to your Order Human.</text>
+	<choice hidden="true" req="ORDER_HUMAN"> <!-- 1.28 -->
+		<text id="talk_to_order_human" />
 		<event load="NOTHING2_ORDER_HUMAN"/>
 	</choice>
 	<choice hidden="true" req="ENGI">
-		<text>(Engi Crew Member) Talk to your Engi.</text>
+		<text id="talk_to_engi" />
 		<event load="NOTHING2_ENGI"/>
 	</choice>
-	<choice hidden="true" req="CREW_MORPH"> <!-- 1.28 -->
-		<text>(Morph Crew Member) Talk to your Morph.</text>
+	<choice hidden="true" req="MORPH"> <!-- 1.28 -->
+		<text id="talk_to_morph" />
 		<event load="NOTHING2_MORPH"/>
 	</choice>		
 	<choice hidden="true" req="ENERGY">
-		<text>(Zoltan Crew Member) Talk to your Zoltan.</text>
+		<text id="talk_to_zoltan" />
 		<event load="NOTHING2_ENERGY"/>
 	</choice>
-	<choice hidden="true" req="CREW_ENERGYX"> <!-- 1.28 -->
-		<text>(Zolton Crew Member) Talk to your Zolton.</text>
+	<choice hidden="true" req="ENERGYX"> <!-- 1.28 -->
+		<text id="talk_to_zolton" />
 		<event load="NOTHING2_ENERGYX"/>
 	</choice>
 	<choice hidden="true" req="MANTIS">
-		<text>(Mantis Crew Member) Talk to your Mantis.</text>
+		<text id="talk_to_mantis" />
 		<event load="NOTHING2_MANTIS"/>
 	</choice>
 	<choice hidden="true" req="SLUG_AND_ARMORED_SLUG"><!-- 1.28 req was SLUG -->
-		<text>(Slug Crew Member) Talk to your Slug.</text>
+		<text id="talk_to_slug" />
 		<event load="NOTHING2_SLUG"/>
 	</choice>
 	<choice hidden="true" req="ROCK">
-		<text>(Rock Crew Member) Talk to your Rockman.</text>
+		<text id="talk_to_rock" />
 		<event load="NOTHING2_ROCK"/>
 	</choice>
-	<choice hidden="true" req="CREW_SLIG"> <!-- 1.28 -->
-		<text>(Slig Crew Member) Talk to your Slig.</text>
+	<choice hidden="true" req="SLIG"> <!-- 1.28 -->
+		<text id="talk_to_slig" />
 		<event load="NOTHING2_SLIG"/>
 	</choice>
-	<choice hidden="true" req="CREW_MAGMAN"> <!-- 1.28 -->
-		<text>(Magman Crew Member) Talk to your Magman.</text>
+	<choice hidden="true" req="MAGMAN"> <!-- 1.28 -->
+		<text id="talk_to_magman" />
 		<event load="NOTHING2_MAGMAN"/>
 	</choice>
-	<choice hidden="true" req="CREW_ORCHID"> <!-- 1.28 -->
-		<text>(Orchid Crew Member) Talk to your Orchid.</text>
+	<choice hidden="true" req="ORCHID"> <!-- 1.28 -->
+		<text id="talk_to_orchid" />
 		<event load="NOTHING2_ORCHID"/>
 	</choice>
-	<choice hidden="true" req="CREW_SHELL"> <!-- 1.28 -->
-		<text>(броненосец Crew Member) Talk to your броненосцем.</text>
+	<choice hidden="true" req="SHELL"> <!-- 1.28 -->
+		<text id="talk_to_shell" />
 		<event load="NOTHING2_SHELL"/>
 	</choice>
 	<choice hidden="true" req="ANAEROBIC">
-		<text>(Lanius Crew Member) Talk to your Lanius.</text>
+		<text id="talk_to_lanius" />
 		<event load="NOTHING2_ANAEROBIC"/>
 	</choice>
 	<choice hidden="true" req="CRYSTAL">
-		<text>(Crystal Crew Member) Talk to your Crystal.</text>
+		<text id="talk_to_crystal" />
 		<event load="NOTHING2_CRYSTAL"/>
 	</choice>
 	<choice hidden="true" req="GHOST">
-		<text>(Avatar Crew Member) Talk to your Avatar.</text>
+		<text id="talk_to_avatar" />
 		<event load="NOTHING2_GHOST"/>
 	</choice>
-	<choice hidden="true" req="CREW_MUSHROOM_F">
-		<text>(молодой машрум Crew Member) Talk to your машрумом.</text>
+	<choice hidden="true" req="MUSHROOM_F">
+		<text id="talk_to_mushroom_f" />
 		<event load="NOTHING2_MUSHROOM_F"/>
 	</choice>
-	<choice hidden="true" req="CREW_MUSHROOM_B">
-		<text>(зрелый машрум Crew Member) Talk to your машрумом.</text>
+	<choice hidden="true" req="MUSHROOM_B">
+		<text id="talk_to_mushroom_b" />
 		<event load="NOTHING2_MUSHROOM_B"/>
 	</choice>
-	<choice hidden="true" req="CREW_MUSHROOM">
-		<text>(старый машрум Crew Member) Talk to your машрумом.</text>
+	<choice hidden="true" req="MUSHROOM">
+		<text id="talk_to_mushroom" />
 		<event load="NOTHING2_MUSHROOM"/>
 	</choice>
 	<choice req="CREW_ALL" lvl="0" max_lvl="0" hidden="true" blue="false"> <!-- 1.24.1 -->
@@ -1229,79 +1229,79 @@ High Average =	140%
 <event name="TALK_WITH_CREW_HUMAN">
 	<text>You decide to speak with a member of your crew while you wait for the FTL Drive to charge in order to jump to the next beacon.</text>
 	<choice hidden="true" req="HUMAN">
-		<text>(Human Crew Member) Talk to your Human.</text>
+		<text id="talk_to_human" />
 		<event load="NOTHING2_HUMAN2"/>
 	</choice>
-	<choice hidden="true" req="CREW_ORDER_HUMAN"> <!-- 1.28 -->
-		<text>(человек Ордена Crew Member) Talk to your человеком.</text>
+	<choice hidden="true" req="ORDER_HUMAN"> <!-- 1.28 -->
+		<text id="talk_to_order_human" />
 		<event load="NOTHING2_ORDER_HUMAN"/>
 	</choice>
 	<choice hidden="true" req="ENGI">
-		<text>(Engi Crew Member) Talk to your Engi.</text>
+		<text id="talk_to_engi" />
 		<event load="NOTHING2_ENGI"/>
 	</choice>
-	<choice hidden="true" req="CREW_MORPH"> <!-- 1.28 -->
-		<text>(морф Crew Member) Talk to your морфом.</text>
+	<choice hidden="true" req="MORPH"> <!-- 1.28 -->
+		<text id="talk_to_morph" />
 		<event load="NOTHING2_MORPH"/>
 	</choice>
 	<choice hidden="true" req="ENERGY">
-		<text>(Zoltan Crew Member) Talk to your Zoltan.</text>
+		<text id="talk_to_zoltan" />
 		<event load="NOTHING2_ENERGY"/>
 	</choice>
-	<choice hidden="true" req="CREW_ENERGYX"> <!-- 1.28 -->
-		<text>(золтонец Crew Member) Talk to your золтонцем.</text>
+	<choice hidden="true" req="ENERGYX"> <!-- 1.28 -->
+		<text id="talk_to_zolton" />
 		<event load="NOTHING2_ENERGYX"/>
 	</choice>
 	<choice hidden="true" req="MANTIS">
-		<text>(Mantis Crew Member) Talk to your Mantis.</text>
+		<text id="talk_to_mantis" />
 		<event load="NOTHING2_MANTIS"/>
 	</choice>
 	<choice hidden="true" req="SLUG_AND_ARMORED_SLUG"> <!-- 1.28 -->
-		<text>(Slug Crew Member) Talk to your Slug.</text>
+		<text id="talk_to_slug" />
 		<event load="NOTHING2_SLUG"/>
 	</choice>
 	<choice hidden="true" req="ROCK">
-		<text>(Rock Crew Member) Talk to your Rockman.</text>
+		<text id="talk_to_rock" />
 		<event load="NOTHING2_ROCK"/>
 	</choice>
-	<choice hidden="true" req="CREW_SLIG"> <!-- 1.28 -->
-		<text>(слёрм Crew Member) Поговорить со слёрмом.</text>
+	<choice hidden="true" req="SLIG"> <!-- 1.28 -->
+		<text id="talk_to_slig" />
 		<event load="NOTHING2_SLIG"/>
 	</choice>
-	<choice hidden="true" req="CREW_MAGMAN"> <!-- 1.28 -->
-		<text>(магмен Crew Member) Talk to your магменом.</text>
+	<choice hidden="true" req="MAGMAN"> <!-- 1.28 -->
+		<text id="talk_to_magman" />
 		<event load="NOTHING2_MAGMAN"/>
 	</choice>
-	<choice hidden="true" req="CREW_ORCHID"> <!-- 1.28 -->
-		<text>(орхид Crew Member) Talk to your орхидом.</text>
+	<choice hidden="true" req="ORCHID"> <!-- 1.28 -->
+		<text id="talk_to_orchid" />
 		<event load="NOTHING2_ORCHID"/>
 	</choice>
-	<choice hidden="true" req="CREW_SHELL"> <!-- 1.28 -->
-		<text>(броненосец Crew Member) Talk to your броненосцем.</text>
+	<choice hidden="true" req="SHELL"> <!-- 1.28 -->
+		<text id="talk_to_shell" />
 		<event load="NOTHING2_SHELL"/>
 	</choice>
 	<choice hidden="true" req="ANAEROBIC">
-		<text>(Lanius Crew Member) Talk to your Lanius.</text>
+		<text id="talk_to_lanius" />
 		<event load="NOTHING2_ANAEROBIC"/>
 	</choice>
 	<choice hidden="true" req="CRYSTAL">
-		<text>(Crystal Crew Member) Talk to your Crystal.</text>
+		<text id="talk_to_crystal" />
 		<event load="NOTHING2_CRYSTAL"/>
 	</choice>
 	<choice hidden="true" req="GHOST">
-		<text>(Avatar Crew Member) Talk to your Avatar.</text>
+		<text id="talk_to_avatar" />
 		<event load="NOTHING2_GHOST"/>
 	</choice>
-	<choice hidden="true" req="CREW_MUSHROOM_F"><!-- 1.28 -->
-		<text>(молодой машрум Crew Member) Talk to your машрумом.</text>
+	<choice hidden="true" req="MUSHROOM_F"><!-- 1.28 -->
+		<text id="talk_to_mushroom_f" />
 		<event load="NOTHING2_MUSHROOM_F"/>
 	</choice>
-	<choice hidden="true" req="CREW_MUSHROOM_B"><!-- 1.28 -->
-		<text>(зрелый машрум Crew Member) Talk to your машрумом.</text>
+	<choice hidden="true" req="MUSHROOM_B"><!-- 1.28 -->
+		<text id="talk_to_mushroom_b" />
 		<event load="NOTHING2_MUSHROOM_B"/>
 	</choice>
-	<choice hidden="true" req="CREW_MUSHROOM"><!-- 1.28 -->
-		<text>(старый машрум Crew Member) Talk to your машрумом.</text>
+	<choice hidden="true" req="MUSHROOM"><!-- 1.28 -->
+		<text id="talk_to_mushroom" />
 		<event load="NOTHING2_MUSHROOM"/>
 	</choice>
 	<choice req="CREW_ALL" lvl="0" max_lvl="0" hidden="true" blue="false"> <!-- 1.24.1 -->
@@ -1316,81 +1316,81 @@ High Average =	140%
 
 
 <event name="TALK_WITH_CREW_ORDER_HUMAN"> <!-- 1.28 -->
-	<text>Вы решаете переговорить с одним из членов вашей команды, пока заряжается FTL-привод для прыжка к следующему маяку.</text>
-	<choice hidden="true" req="CREW_HUMAN">
-		<text>(человек Crew Member) Talk to your человеком.</text>
+	<text>You decide to speak with a member of your crew while you wait for the FTL Drive to charge in order to jump to the next beacon.</text>
+	<choice hidden="true" req="HUMAN">
+		<text id="talk_to_human" />
 		<event load="NOTHING2_HUMAN"/>
 	</choice>
-	<choice hidden="true" req="CREW_ORDER_HUMAN">
-		<text>(человек Ордена Crew Member) Talk to your человеком.</text>
+	<choice hidden="true" req="ORDER_HUMAN">
+		<text id="talk_to_order_human" />
 		<event load="NOTHING2_ORDER_HUMAN2"/>
 	</choice>
-	<choice hidden="true" req="CREW_ENGI">
-		<text>(инжи Crew Member) Talk to your инжи.</text>
+	<choice hidden="true" req="ENGI">
+		<text id="talk_to_engi" />
 		<event load="NOTHING2_ENGI"/>
 	</choice>		
-	<choice hidden="true" req="CREW_MORPH"> <!-- 1.28 -->
-		<text>(морф Crew Member) Talk to your морфом.</text>
+	<choice hidden="true" req="MORPH"> <!-- 1.28 -->
+		<text id="talk_to_morph" />
 		<event load="NOTHING2_MORPH"/>
 	</choice>
-	<choice hidden="true" req="CREW_ENERGY">
-		<text>(золтанец Crew Member) Talk to your золтанцем.</text>
+	<choice hidden="true" req="ENERGY">
+		<text id="talk_to_zoltan" />
 		<event load="NOTHING2_ENERGY"/>
 	</choice>
-	<choice hidden="true" req="CREW_ENERGYX"> <!-- 1.28 -->
-		<text>(золтонец Crew Member) Talk to your золтонцем.</text>
+	<choice hidden="true" req="ENERGYX"> <!-- 1.28 -->
+		<text id="talk_to_zolton" />
 		<event load="NOTHING2_ENERGYX"/>
 	</choice>
-	<choice hidden="true" req="CREW_MANTIS">
-		<text>(мантис Crew Member) Talk to your мантисом.</text>
+	<choice hidden="true" req="MANTIS">
+		<text id="talk_to_mantis" />
 		<event load="NOTHING2_MANTIS"/>
 	</choice>
 	<choice hidden="true" req="SLUG_AND_ARMORED_SLUG"> <!-- 1.28 -->
-		<text>(слаг Crew Member) Поговорить со слагом.</text>
+		<text id="talk_to_slug" />
 		<event load="NOTHING2_SLUG"/>
 	</choice>
-	<choice hidden="true" req="CREW_ROCK">
-		<text>(рок Crew Member) Talk to your роком.</text>
+	<choice hidden="true" req="ROCK">
+		<text id="talk_to_rock" />
 		<event load="NOTHING2_ROCK"/>
 	</choice>
-	<choice hidden="true" req="CREW_SLIG"> <!-- 1.28 -->
-		<text>(слёрм Crew Member) Поговорить со слёрмом.</text>
+	<choice hidden="true" req="SLIG"> <!-- 1.28 -->
+		<text id="talk_to_slig" />
 		<event load="NOTHING2_SLIG"/>
 	</choice>
-	<choice hidden="true" req="CREW_MAGMAN"> <!-- 1.28 -->
-		<text>(магмен Crew Member) Talk to your магменом.</text>
+	<choice hidden="true" req="MAGMAN"> <!-- 1.28 -->
+		<text id="talk_to_magman" />
 		<event load="NOTHING2_MAGMAN"/>
 	</choice>
-	<choice hidden="true" req="CREW_ORCHID"> <!-- 1.28 -->
-		<text>(орхид Crew Member) Talk to your орхидом.</text>
+	<choice hidden="true" req="ORCHID"> <!-- 1.28 -->
+		<text id="talk_to_orchid" />
 		<event load="NOTHING2_ORCHID"/>
 	</choice>
-	<choice hidden="true" req="CREW_SHELL"> <!-- 1.28 -->
-		<text>(броненосец Crew Member) Talk to your броненосцем.</text>
+	<choice hidden="true" req="SHELL"> <!-- 1.28 -->
+		<text id="talk_to_shell" />
 		<event load="NOTHING2_SHELL"/>
 	</choice>
-	<choice hidden="true" req="CREW_ANAEROBIC">
-		<text>(ланиус Crew Member) Talk to your ланиусом.</text>
+	<choice hidden="true" req="ANAEROBIC">
+		<text id="talk_to_lanius" />
 		<event load="NOTHING2_ANAEROBIC"/>
 	</choice>
-	<choice hidden="true" req="CREW_CRYSTAL">
-		<text>(кристалин Crew Member) Talk to your кристалином.</text>
+	<choice hidden="true" req="CRYSTAL">
+		<text id="talk_to_crystal" />
 		<event load="NOTHING2_CRYSTAL"/>
 	</choice>
-	<choice hidden="true" req="CREW_GHOST">
-		<text>(аватар Crew Member) Talk to your аватаром.</text>
+	<choice hidden="true" req="GHOST">
+		<text id="talk_to_avatar" />
 		<event load="NOTHING2_GHOST"/>
 	</choice>
-	<choice hidden="true" req="CREW_MUSHROOM_F"><!-- 1.28 -->
-		<text>(молодой машрум Crew Member) Talk to your машрумом.</text>
+	<choice hidden="true" req="MUSHROOM_F"><!-- 1.28 -->
+		<text id="talk_to_mushroom_f" />
 		<event load="NOTHING2_MUSHROOM_F"/>
 	</choice>
-	<choice hidden="true" req="CREW_MUSHROOM_B"><!-- 1.28 -->
-		<text>(зрелый машрум Crew Member) Talk to your машрумом.</text>
+	<choice hidden="true" req="MUSHROOM_B"><!-- 1.28 -->
+		<text id="talk_to_mushroom_b" />
 		<event load="NOTHING2_MUSHROOM_B"/>
 	</choice>
-	<choice hidden="true" req="CREW_MUSHROOM"><!-- 1.28 -->
-		<text>(старый машрум Crew Member) Talk to your машрумом.</text>
+	<choice hidden="true" req="MUSHROOM"><!-- 1.28 -->
+		<text id="talk_to_mushroom" />
 		<event load="NOTHING2_MUSHROOM"/>
 	</choice>
 	<choice req="CREW_ALL" lvl="0" max_lvl="0" hidden="true" blue="false"> <!-- 1.24.1 -->
@@ -1406,79 +1406,79 @@ High Average =	140%
 <event name="TALK_WITH_CREW_ENGI">
 	<text>You decide to speak with a member of your crew while you wait for the FTL Drive to charge in order to jump to the next beacon.</text>
 	<choice hidden="true" req="HUMAN">
-		<text>(Human Crew Member) Talk to your Human.</text>
+		<text id="talk_to_human" />
 		<event load="NOTHING2_HUMAN"/>
 	</choice>
-	<choice hidden="true" req="CREW_ORDER_HUMAN"> <!-- 1.28 -->
-		<text>(человек Ордена Crew Member) Talk to your человеком.</text>
+	<choice hidden="true" req="ORDER_HUMAN"> <!-- 1.28 -->
+		<text id="talk_to_order_human" />
 		<event load="NOTHING2_ORDER_HUMAN"/>
 	</choice>
 	<choice hidden="true" req="ENGI">
-		<text>(Engi Crew Member) Talk to your Engi.</text>
+		<text id="talk_to_engi" />
 		<event load="NOTHING2_ENGI2"/>
 	</choice>			
-	<choice hidden="true" req="CREW_MORPH"> <!-- 1.28 -->
-		<text>(морф Crew Member) Talk to your морфом.</text>
+	<choice hidden="true" req="MORPH"> <!-- 1.28 -->
+		<text id="talk_to_morph" />
 		<event load="NOTHING2_MORPH"/>
 	</choice>
 	<choice hidden="true" req="ENERGY">
-		<text>(Zoltan Crew Member) Talk to your Zoltan.</text>
+		<text id="talk_to_zoltan" />
 		<event load="NOTHING2_ENERGY"/>
 	</choice>
-	<choice hidden="true" req="CREW_ENERGYX"> <!-- 1.28 -->
-		<text>(золтонец Crew Member) Talk to your золтонцем.</text>
+	<choice hidden="true" req="ENERGYX"> <!-- 1.28 -->
+		<text id="talk_to_zolton" />
 		<event load="NOTHING2_ENERGYX"/>
 	</choice>
 	<choice hidden="true" req="MANTIS">
-		<text>(Mantis Crew Member) Talk to your Mantis.</text>
+		<text id="talk_to_mantis" />
 		<event load="NOTHING2_MANTIS"/>
 	</choice>
 	<choice hidden="true" req="SLUG_AND_ARMORED_SLUG"> <!-- 1.28 req was SLUG -->
-		<text>(Slug Crew Member) Talk to your Slug.</text>
+		<text id="talk_to_slug" />
 		<event load="NOTHING2_SLUG"/>
 	</choice>
 	<choice hidden="true" req="ROCK">
-		<text>(Rock Crew Member) Talk to your Rockman.</text>
+		<text id="talk_to_rock" />
 		<event load="NOTHING2_ROCK"/>
 	</choice>
-	<choice hidden="true" req="CREW_SLIG"> <!-- 1.28 -->
-		<text>(слёрм Crew Member) Поговорить со слёрмом.</text>
+	<choice hidden="true" req="SLIG"> <!-- 1.28 -->
+		<text id="talk_to_slig" />
 		<event load="NOTHING2_SLIG"/>
 	</choice>
-	<choice hidden="true" req="CREW_MAGMAN"> <!-- 1.28 -->
-		<text>(магмен Crew Member) Talk to your магменом.</text>
+	<choice hidden="true" req="MAGMAN"> <!-- 1.28 -->
+		<text id="talk_to_magman" />
 		<event load="NOTHING2_MAGMAN"/>
 	</choice>
-	<choice hidden="true" req="CREW_ORCHID"> <!-- 1.28 -->
-		<text>(орхид Crew Member) Talk to your орхидом.</text>
+	<choice hidden="true" req="ORCHID"> <!-- 1.28 -->
+		<text id="talk_to_orchid" />
 		<event load="NOTHING2_ORCHID"/>
 	</choice>
-	<choice hidden="true" req="CREW_SHELL"> <!-- 1.28 -->
-		<text>(броненосец Crew Member) Talk to your броненосцем.</text>
+	<choice hidden="true" req="SHELL"> <!-- 1.28 -->
+		<text id="talk_to_shell" />
 		<event load="NOTHING2_SHELL"/>
 	</choice>
 	<choice hidden="true" req="ANAEROBIC">
-		<text>(Lanius Crew Member) Talk to your Lanius.</text>
+		<text id="talk_to_lanius" />
 		<event load="NOTHING2_ANAEROBIC"/>
 	</choice>
 	<choice hidden="true" req="CRYSTAL">
-		<text>(Crystal Crew Member) Talk to your Crystal.</text>
+		<text id="talk_to_crystal" />
 		<event load="NOTHING2_CRYSTAL"/>
 	</choice>
 	<choice hidden="true" req="GHOST">
-		<text>(Avatar Crew Member) Talk to your Avatar.</text>
+		<text id="talk_to_avatar" />
 		<event load="NOTHING2_GHOST"/>
 	</choice>
-	<choice hidden="true" req="CREW_MUSHROOM_F"><!-- 1.28 -->
-		<text>(молодой машрум Crew Member) Talk to your машрумом.</text>
+	<choice hidden="true" req="MUSHROOM_F"><!-- 1.28 -->
+		<text id="talk_to_mushroom_f" />
 		<event load="NOTHING2_MUSHROOM_F"/>
 	</choice>
-	<choice hidden="true" req="CREW_MUSHROOM_B"><!-- 1.28 -->
-		<text>(зрелый машрум Crew Member) Talk to your машрумом.</text>
+	<choice hidden="true" req="MUSHROOM_B"><!-- 1.28 -->
+		<text id="talk_to_mushroom_b" />
 		<event load="NOTHING2_MUSHROOM_B"/>
 	</choice>
-	<choice hidden="true" req="CREW_MUSHROOM"><!-- 1.28 -->
-		<text>(старый машрум Crew Member) Talk to your машрумом.</text>
+	<choice hidden="true" req="MUSHROOM"><!-- 1.28 -->
+		<text id="talk_to_mushroom" />
 		<event load="NOTHING2_MUSHROOM"/>
 	</choice>
 	<choice req="CREW_ALL" lvl="0" max_lvl="0" hidden="true" blue="false"> <!-- 1.24.1 -->
@@ -1493,81 +1493,81 @@ High Average =	140%
 
 
 <event name="TALK_WITH_CREW_MORPH"> <!-- 1.28 -->
-	<text>Вы решаете переговорить с одним из членов вашей команды, пока заряжается FTL-привод для прыжка к следующему маяку.</text>
-	<choice hidden="true" req="CREW_HUMAN">
-		<text>(человек Crew Member) Talk to your человеком.</text>
+	<text>You decide to speak with a member of your crew while you wait for the FTL Drive to charge in order to jump to the next beacon.</text>
+	<choice hidden="true" req="HUMAN">
+		<text id="talk_to_human" />
 		<event load="NOTHING2_HUMAN"/>
 	</choice>
-	<choice hidden="true" req="CREW_ORDER_HUMAN"> <!-- 1.28 -->
-		<text>(человек Ордена Crew Member) Talk to your человеком.</text>
+	<choice hidden="true" req="ORDER_HUMAN"> <!-- 1.28 -->
+		<text id="talk_to_order_human" />
 		<event load="NOTHING2_ORDER_HUMAN"/>
 	</choice>
-	<choice hidden="true" req="CREW_ENGI">
-		<text>(инжи Crew Member) Talk to your инжи.</text>
+	<choice hidden="true" req="ENGI">
+		<text id="talk_to_engi" />
 		<event load="NOTHING2_ENGI"/>
 	</choice>		
-	<choice hidden="true" req="CREW_MORPH">
-		<text>(морф Crew Member) Talk to your морфом.</text>
+	<choice hidden="true" req="MORPH">
+		<text id="talk_to_morph" />
 		<event load="NOTHING2_MORPH2"/>
 	</choice>
-	<choice hidden="true" req="CREW_ENERGY">
-		<text>(золтанец Crew Member) Talk to your золтанцем.</text>
+	<choice hidden="true" req="ENERGY">
+		<text id="talk_to_zoltan" />
 		<event load="NOTHING2_ENERGY"/>
 	</choice>
-	<choice hidden="true" req="CREW_ENERGYX"> <!-- 1.28 -->
-		<text>(золтонец Crew Member) Talk to your золтонцем.</text>
+	<choice hidden="true" req="ENERGYX"> <!-- 1.28 -->
+		<text id="talk_to_zolton" />
 		<event load="NOTHING2_ENERGYX"/>
 	</choice>
-	<choice hidden="true" req="CREW_MANTIS">
-		<text>(мантис Crew Member) Talk to your мантисом.</text>
+	<choice hidden="true" req="MANTIS">
+		<text id="talk_to_mantis" />
 		<event load="NOTHING2_MANTIS"/>
 	</choice>
 	<choice hidden="true" req="SLUG_AND_ARMORED_SLUG"> <!-- 1.28 -->
-		<text>(слаг Crew Member) Поговорить со слагом.</text>
+		<text id="talk_to_slug" />
 		<event load="NOTHING2_SLUG"/>
 	</choice>
-	<choice hidden="true" req="CREW_ROCK">
-		<text>(рок Crew Member) Talk to your роком.</text>
+	<choice hidden="true" req="ROCK">
+		<text id="talk_to_rock" />
 		<event load="NOTHING2_ROCK"/>
 	</choice>
-	<choice hidden="true" req="CREW_SLIG"> <!-- 1.28 -->
-		<text>(слёрм Crew Member) Поговорить со слёрмом.</text>
+	<choice hidden="true" req="SLIG"> <!-- 1.28 -->
+		<text id="talk_to_slig" />
 		<event load="NOTHING2_SLIG"/>
 	</choice>
-	<choice hidden="true" req="CREW_MAGMAN"> <!-- 1.28 -->
-		<text>(магмен Crew Member) Talk to your магменом.</text>
+	<choice hidden="true" req="MAGMAN"> <!-- 1.28 -->
+		<text id="talk_to_magman" />
 		<event load="NOTHING2_MAGMAN"/>
 	</choice>
-	<choice hidden="true" req="CREW_ORCHID"> <!-- 1.28 -->
-		<text>(орхид Crew Member) Talk to your орхидом.</text>
+	<choice hidden="true" req="ORCHID"> <!-- 1.28 -->
+		<text id="talk_to_orchid" />
 		<event load="NOTHING2_ORCHID"/>
 	</choice>
-	<choice hidden="true" req="CREW_SHELL"> <!-- 1.28 -->
-		<text>(броненосец Crew Member) Talk to your броненосцем.</text>
+	<choice hidden="true" req="SHELL"> <!-- 1.28 -->
+		<text id="talk_to_shell" />
 		<event load="NOTHING2_SHELL"/>
 	</choice>
-	<choice hidden="true" req="CREW_ANAEROBIC">
-		<text>(ланиус Crew Member) Talk to your ланиусом.</text>
+	<choice hidden="true" req="ANAEROBIC">
+		<text id="talk_to_lanius" />
 		<event load="NOTHING2_ANAEROBIC"/>
 	</choice>
-	<choice hidden="true" req="CREW_CRYSTAL">
-		<text>(кристалин Crew Member) Talk to your кристалином.</text>
+	<choice hidden="true" req="CRYSTAL">
+		<text id="talk_to_crystal" />
 		<event load="NOTHING2_CRYSTAL"/>
 	</choice>
-	<choice hidden="true" req="CREW_GHOST">
-		<text>(аватар Crew Member) Talk to your аватаром.</text>
+	<choice hidden="true" req="GHOST">
+		<text id="talk_to_avatar" />
 		<event load="NOTHING2_GHOST"/>
 	</choice>
-	<choice hidden="true" req="CREW_MUSHROOM_F"><!-- 1.28 -->
-		<text>(молодой машрум Crew Member) Talk to your машрумом.</text>
+	<choice hidden="true" req="MUSHROOM_F"><!-- 1.28 -->
+		<text id="talk_to_mushroom_f" />
 		<event load="NOTHING2_MUSHROOM_F"/>
 	</choice>
-	<choice hidden="true" req="CREW_MUSHROOM_B"><!-- 1.28 -->
-		<text>(зрелый машрум Crew Member) Talk to your машрумом.</text>
+	<choice hidden="true" req="MUSHROOM_B"><!-- 1.28 -->
+		<text id="talk_to_mushroom_b" />
 		<event load="NOTHING2_MUSHROOM_B"/>
 	</choice>
-	<choice hidden="true" req="CREW_MUSHROOM"><!-- 1.28 -->
-		<text>(старый машрум Crew Member) Talk to your машрумом.</text>
+	<choice hidden="true" req="MUSHROOM"><!-- 1.28 -->
+		<text id="talk_to_mushroom" />
 		<event load="NOTHING2_MUSHROOM"/>
 	</choice>
 	<choice req="CREW_ALL" lvl="0" max_lvl="0" hidden="true" blue="false"> <!-- 1.24.1 -->
@@ -1575,7 +1575,7 @@ High Average =	140%
 		<event load="TALK_WITH_CREW_AI_SHIP" />
 	</choice>
 	<choice hidden="true" req="SHIPRADAR2"> <!-- 1.27 -->
-		<text>(Анализатор морфов) Поручить экипажу просканировать близлежащее пространство.</text>
+		<text>(Morph Analyzer) Instruct the crew to scan the surrounding area.</text>
 		<event load="NOTHING_SHIPRADAR2_RAND"/>
 	</choice>
 </event>
@@ -1583,79 +1583,79 @@ High Average =	140%
 <event name="TALK_WITH_CREW_ENERGY">
 	<text>You decide to speak with a member of your crew while you wait for the FTL Drive to charge in order to jump to the next beacon.</text>
 	<choice hidden="true" req="HUMAN">
-		<text>(Human Crew Member) Talk to your Human.</text>
+		<text id="talk_to_human" />
 		<event load="NOTHING2_HUMAN"/>
 	</choice>
-	<choice hidden="true" req="CREW_ORDER_HUMAN"> <!-- 1.28 -->
-		<text>(человек Ордена Crew Member) Talk to your человеком.</text>
+	<choice hidden="true" req="ORDER_HUMAN"> <!-- 1.28 -->
+		<text id="talk_to_order_human" />
 		<event load="NOTHING2_ORDER_HUMAN"/>
 	</choice>
 	<choice hidden="true" req="ENGI">
-		<text>(Engi Crew Member) Talk to your Engi.</text>
+		<text id="talk_to_engi" />
 		<event load="NOTHING2_ENGI"/>
 	</choice>		
-	<choice hidden="true" req="CREW_MORPH"> <!-- 1.28 -->
-		<text>(морф Crew Member) Talk to your морфом.</text>
+	<choice hidden="true" req="MORPH"> <!-- 1.28 -->
+		<text id="talk_to_morph" />
 		<event load="NOTHING2_MORPH"/>
 	</choice>
 	<choice hidden="true" req="ENERGY">
-		<text>(Zoltan Crew Member) Talk to your Zoltan.</text>
+		<text id="talk_to_zoltan" />
 		<event load="NOTHING2_ENERGY2"/>
 	</choice>
-	<choice hidden="true" req="CREW_ENERGYX"> <!-- 1.28 -->
-		<text>(золтонец Crew Member) Talk to your золтонцем.</text>
+	<choice hidden="true" req="ENERGYX"> <!-- 1.28 -->
+		<text id="talk_to_zolton" />
 		<event load="NOTHING2_ENERGYX"/>
 	</choice>
 	<choice hidden="true" req="MANTIS">
-		<text>(Mantis Crew Member) Talk to your Mantis.</text>
+		<text id="talk_to_mantis" />
 		<event load="NOTHING2_MANTIS"/>
 	</choice>
 	<choice hidden="true" req="SLUG_AND_ARMORED_SLUG"> <!-- 1.28 req was SLUG -->
-		<text>(Slug Crew Member) Talk to your Slug.</text>
+		<text id="talk_to_slug" />
 		<event load="NOTHING2_SLUG"/>
 	</choice>
 	<choice hidden="true" req="ROCK">
-		<text>(Rock Crew Member) Talk to your Rockman.</text>
+		<text id="talk_to_rock" />
 		<event load="NOTHING2_ROCK"/>
 	</choice>
-	<choice hidden="true" req="CREW_SLIG"> <!-- 1.28 -->
-		<text>(слёрм Crew Member) Поговорить со слёрмом.</text>
+	<choice hidden="true" req="SLIG"> <!-- 1.28 -->
+		<text id="talk_to_slig" />
 		<event load="NOTHING2_SLIG"/>
 	</choice>
-	<choice hidden="true" req="CREW_MAGMAN"> <!-- 1.28 -->
-		<text>(магмен Crew Member) Talk to your магменом.</text>
+	<choice hidden="true" req="MAGMAN"> <!-- 1.28 -->
+		<text id="talk_to_magman" />
 		<event load="NOTHING2_MAGMAN"/>
 	</choice>
-	<choice hidden="true" req="CREW_ORCHID"> <!-- 1.28 -->
-		<text>(орхид Crew Member) Talk to your орхидом.</text>
+	<choice hidden="true" req="ORCHID"> <!-- 1.28 -->
+		<text id="talk_to_orchid" />
 		<event load="NOTHING2_ORCHID"/>
 	</choice>
-	<choice hidden="true" req="CREW_SHELL"> <!-- 1.28 -->
-		<text>(броненосец Crew Member) Talk to your броненосцем.</text>
+	<choice hidden="true" req="SHELL"> <!-- 1.28 -->
+		<text id="talk_to_shell" />
 		<event load="NOTHING2_SHELL"/>
 	</choice>
 	<choice hidden="true" req="ANAEROBIC">
-		<text>(Lanius Crew Member) Talk to your Lanius.</text>
+		<text id="talk_to_lanius" />
 		<event load="NOTHING2_ANAEROBIC"/>
 	</choice>
 	<choice hidden="true" req="CRYSTAL">
-		<text>(Crystal Crew Member) Talk to your Crystal.</text>
+		<text id="talk_to_crystal" />
 		<event load="NOTHING2_CRYSTAL"/>
 	</choice>
 	<choice hidden="true" req="GHOST">
-		<text>(Avatar Crew Member) Talk to your Avatar.</text>
+		<text id="talk_to_avatar" />
 		<event load="NOTHING2_GHOST"/>
 	</choice>
-	<choice hidden="true" req="CREW_MUSHROOM_F"><!-- 1.28 -->
-		<text>(молодой машрум Crew Member) Talk to your машрумом.</text>
+	<choice hidden="true" req="MUSHROOM_F"><!-- 1.28 -->
+		<text id="talk_to_mushroom_f" />
 		<event load="NOTHING2_MUSHROOM_F"/>
 	</choice>
-	<choice hidden="true" req="CREW_MUSHROOM_B"><!-- 1.28 -->
-		<text>(зрелый машрум Crew Member) Talk to your машрумом.</text>
+	<choice hidden="true" req="MUSHROOM_B"><!-- 1.28 -->
+		<text id="talk_to_mushroom_b" />
 		<event load="NOTHING2_MUSHROOM_B"/>
 	</choice>
-	<choice hidden="true" req="CREW_MUSHROOM"><!-- 1.28 -->
-		<text>(старый машрум Crew Member) Talk to your машрумом.</text>
+	<choice hidden="true" req="MUSHROOM"><!-- 1.28 -->
+		<text id="talk_to_mushroom" />
 		<event load="NOTHING2_MUSHROOM"/>
 	</choice>
 	<choice req="CREW_ALL" lvl="0" max_lvl="0" hidden="true" blue="false"> <!-- 1.24.1 -->
@@ -1670,81 +1670,81 @@ High Average =	140%
 
 
 <event name="TALK_WITH_CREW_ENERGYX">
-	<text>Вы решаете переговорить с одним из членов вашей команды, пока заряжается FTL-привод для прыжка к следующему маяку.</text>
-	<choice hidden="true" req="CREW_HUMAN">
-		<text>(человек Crew Member) Talk to your человеком.</text>
+	<text>You decide to speak with a member of your crew while you wait for the FTL Drive to charge in order to jump to the next beacon.</text>
+	<choice hidden="true" req="HUMAN">
+		<text id="talk_to_human" />
 		<event load="NOTHING2_HUMAN"/>
 	</choice>
-	<choice hidden="true" req="CREW_ORDER_HUMAN"> <!-- 1.28 -->
-		<text>(человек Ордена Crew Member) Talk to your человеком.</text>
+	<choice hidden="true" req="ORDER_HUMAN"> <!-- 1.28 -->
+		<text id="talk_to_order_human" />
 		<event load="NOTHING2_ORDER_HUMAN"/>
 	</choice>
-	<choice hidden="true" req="CREW_ENGI">
-		<text>(инжи Crew Member) Talk to your инжи.</text>
+	<choice hidden="true" req="ENGI">
+		<text id="talk_to_engi" />
 		<event load="NOTHING2_ENGI"/>
 	</choice>		
-	<choice hidden="true" req="CREW_MORPH"> <!-- 1.28 -->
-		<text>(морф Crew Member) Talk to your морфом.</text>
+	<choice hidden="true" req="MORPH"> <!-- 1.28 -->
+		<text id="talk_to_morph" />
 		<event load="NOTHING2_MORPH"/>
 	</choice>
-	<choice hidden="true" req="CREW_ENERGY">
-		<text>(золтанец Crew Member) Talk to your золтанцем.</text>
+	<choice hidden="true" req="ENERGY">
+		<text id="talk_to_zoltan" />
 		<event load="NOTHING2_ENERGY"/>
 	</choice>
-	<choice hidden="true" req="CREW_ENERGYX"> <!-- 1.28 -->
-		<text>(золтонец Crew Member) Talk to your золтонцем.</text>
+	<choice hidden="true" req="ENERGYX"> <!-- 1.28 -->
+		<text id="talk_to_zolton" />
 		<event load="NOTHING2_ENERGYX2"/>
 	</choice>
-	<choice hidden="true" req="CREW_MANTIS">
-		<text>(мантис Crew Member) Talk to your мантисом.</text>
+	<choice hidden="true" req="MANTIS">
+		<text id="talk_to_mantis" />
 		<event load="NOTHING2_MANTIS"/>
 	</choice>
 	<choice hidden="true" req="SLUG_AND_ARMORED_SLUG"> <!-- 1.28 -->
-		<text>(слаг Crew Member) Поговорить со слагом.</text>
+		<text id="talk_to_slug" />
 		<event load="NOTHING2_SLUG"/>
 	</choice>
-	<choice hidden="true" req="CREW_ROCK">
-		<text>(рок Crew Member) Talk to your роком.</text>
+	<choice hidden="true" req="ROCK">
+		<text id="talk_to_rock" />
 		<event load="NOTHING2_ROCK"/>
 	</choice>
-	<choice hidden="true" req="CREW_SLIG"> <!-- 1.28 -->
-		<text>(слёрм Crew Member) Поговорить со слёрмом.</text>
+	<choice hidden="true" req="SLIG"> <!-- 1.28 -->
+		<text id="talk_to_slig" />
 		<event load="NOTHING2_SLIG"/>
 	</choice>
-	<choice hidden="true" req="CREW_MAGMAN"> <!-- 1.28 -->
-		<text>(магмен Crew Member) Talk to your магменом.</text>
+	<choice hidden="true" req="MAGMAN"> <!-- 1.28 -->
+		<text id="talk_to_magman" />
 		<event load="NOTHING2_MAGMAN"/>
 	</choice>
-	<choice hidden="true" req="CREW_ORCHID"> <!-- 1.28 -->
-		<text>(орхид Crew Member) Talk to your орхидом.</text>
+	<choice hidden="true" req="ORCHID"> <!-- 1.28 -->
+		<text id="talk_to_orchid" />
 		<event load="NOTHING2_ORCHID"/>
 	</choice>
-	<choice hidden="true" req="CREW_SHELL"> <!-- 1.28 -->
-		<text>(броненосец Crew Member) Talk to your броненосцем.</text>
+	<choice hidden="true" req="SHELL"> <!-- 1.28 -->
+		<text id="talk_to_shell" />
 		<event load="NOTHING2_SHELL"/>
 	</choice>
-	<choice hidden="true" req="CREW_ANAEROBIC">
-		<text>(ланиус Crew Member) Talk to your ланиусом.</text>
+	<choice hidden="true" req="ANAEROBIC">
+		<text id="talk_to_lanius" />
 		<event load="NOTHING2_ANAEROBIC"/>
 	</choice>
-	<choice hidden="true" req="CREW_CRYSTAL">
-		<text>(кристалин Crew Member) Talk to your кристалином.</text>
+	<choice hidden="true" req="CRYSTAL">
+		<text id="talk_to_crystal" />
 		<event load="NOTHING2_CRYSTAL"/>
 	</choice>
-	<choice hidden="true" req="CREW_GHOST">
-		<text>(аватар Crew Member) Talk to your аватаром.</text>
+	<choice hidden="true" req="GHOST">
+		<text id="talk_to_avatar" />
 		<event load="NOTHING2_GHOST"/>
 	</choice>
-	<choice hidden="true" req="CREW_MUSHROOM_F"><!-- 1.28 -->
-		<text>(молодой машрум Crew Member) Talk to your машрумом.</text>
+	<choice hidden="true" req="MUSHROOM_F"><!-- 1.28 -->
+		<text id="talk_to_mushroom_f" />
 		<event load="NOTHING2_MUSHROOM_F"/>
 	</choice>
-	<choice hidden="true" req="CREW_MUSHROOM_B"><!-- 1.28 -->
-		<text>(зрелый машрум Crew Member) Talk to your машрумом.</text>
+	<choice hidden="true" req="MUSHROOM_B"><!-- 1.28 -->
+		<text id="talk_to_mushroom_b" />
 		<event load="NOTHING2_MUSHROOM_B"/>
 	</choice>
-	<choice hidden="true" req="CREW_MUSHROOM"><!-- 1.28 -->
-		<text>(старый машрум Crew Member) Talk to your машрумом.</text>
+	<choice hidden="true" req="MUSHROOM"><!-- 1.28 -->
+		<text id="talk_to_mushroom" />
 		<event load="NOTHING2_MUSHROOM"/>
 	</choice>
 	<choice req="CREW_ALL" lvl="0" max_lvl="0" hidden="true" blue="false"> <!-- 1.24.1 -->
@@ -1760,79 +1760,79 @@ High Average =	140%
 <event name="TALK_WITH_CREW_MANTIS">
 	<text>You decide to speak with a member of your crew while you wait for the FTL Drive to charge in order to jump to the next beacon.</text>
 	<choice hidden="true" req="HUMAN">
-		<text>(Human Crew Member) Talk to your Human.</text>
+		<text id="talk_to_human" />
 		<event load="NOTHING2_HUMAN"/>
 	</choice>
-	<choice hidden="true" req="CREW_ORDER_HUMAN"> <!-- 1.28 -->
-		<text>(человек Ордена Crew Member) Talk to your человеком.</text>
+	<choice hidden="true" req="ORDER_HUMAN"> <!-- 1.28 -->
+		<text id="talk_to_order_human" />
 		<event load="NOTHING2_ORDER_HUMAN"/>
 	</choice>
 	<choice hidden="true" req="ENGI">
-		<text>(Engi Crew Member) Talk to your Engi.</text>
+		<text id="talk_to_engi" />
 		<event load="NOTHING2_ENGI"/>
 	</choice>		
-	<choice hidden="true" req="CREW_MORPH"> <!-- 1.28 -->
-		<text>(морф Crew Member) Talk to your морфом.</text>
+	<choice hidden="true" req="MORPH"> <!-- 1.28 -->
+		<text id="talk_to_morph" />
 		<event load="NOTHING2_MORPH"/>
 	</choice>
 	<choice hidden="true" req="ENERGY">
-		<text>(Zoltan Crew Member) Talk to your Zoltan.</text>
+		<text id="talk_to_zoltan" />
 		<event load="NOTHING2_ENERGY"/>
 	</choice>
-	<choice hidden="true" req="CREW_ENERGYX"> <!-- 1.28 -->
-		<text>(золтонец Crew Member) Talk to your золтонцем.</text>
+	<choice hidden="true" req="ENERGYX"> <!-- 1.28 -->
+		<text id="talk_to_zolton" />
 		<event load="NOTHING2_ENERGYX"/>
 	</choice>
 	<choice hidden="true" req="MANTIS">
-		<text>(Mantis Crew Member) Talk to your Mantis.</text>
+		<text id="talk_to_mantis" />
 		<event load="NOTHING2_MANTIS2"/>
 	</choice>
 	<choice hidden="true" req="SLUG_AND_ARMORED_SLUG"> <!-- 1.28 req was SLUG -->
-		<text>(Slug Crew Member) Talk to your Slug.</text>
+		<text id="talk_to_slug" />
 		<event load="NOTHING2_SLUG"/>
 	</choice>
 	<choice hidden="true" req="ROCK">
-		<text>(Rock Crew Member) Talk to your Rockman.</text>
+		<text id="talk_to_rock" />
 		<event load="NOTHING2_ROCK"/>
 	</choice>
-	<choice hidden="true" req="CREW_SLIG"> <!-- 1.28 -->
-		<text>(слёрм Crew Member) Поговорить со слёрмом.</text>
+	<choice hidden="true" req="SLIG"> <!-- 1.28 -->
+		<text id="talk_to_slig" />
 		<event load="NOTHING2_SLIG"/>
 	</choice>
-	<choice hidden="true" req="CREW_MAGMAN"> <!-- 1.28 -->
-		<text>(магмен Crew Member) Talk to your магменом.</text>
+	<choice hidden="true" req="MAGMAN"> <!-- 1.28 -->
+		<text id="talk_to_magman" />
 		<event load="NOTHING2_MAGMAN"/>
 	</choice>
-	<choice hidden="true" req="CREW_ORCHID"> <!-- 1.28 -->
-		<text>(орхид Crew Member) Talk to your орхидом.</text>
+	<choice hidden="true" req="ORCHID"> <!-- 1.28 -->
+		<text id="talk_to_orchid" />
 		<event load="NOTHING2_ORCHID"/>
 	</choice>
-	<choice hidden="true" req="CREW_SHELL"> <!-- 1.28 -->
-		<text>(броненосец Crew Member) Talk to your броненосцем.</text>
+	<choice hidden="true" req="SHELL"> <!-- 1.28 -->
+		<text id="talk_to_shell" />
 		<event load="NOTHING2_SHELL"/>
 	</choice>
 	<choice hidden="true" req="ANAEROBIC">
-		<text>(Lanius Crew Member) Talk to your Lanius.</text>
+		<text id="talk_to_lanius" />
 		<event load="NOTHING2_ANAEROBIC"/>
 	</choice>
 	<choice hidden="true" req="CRYSTAL">
-		<text>(Crystal Crew Member) Talk to your Crystal.</text>
+		<text id="talk_to_crystal" />
 		<event load="NOTHING2_CRYSTAL"/>
 	</choice>
 	<choice hidden="true" req="GHOST">
-		<text>(Avatar Crew Member) Talk to your Avatar.</text>
+		<text id="talk_to_avatar" />
 		<event load="NOTHING2_GHOST"/>
 	</choice>
-	<choice hidden="true" req="CREW_MUSHROOM_F"><!-- 1.28 -->
-		<text>(молодой машрум Crew Member) Talk to your машрумом.</text>
+	<choice hidden="true" req="MUSHROOM_F"><!-- 1.28 -->
+		<text id="talk_to_mushroom_f" />
 		<event load="NOTHING2_MUSHROOM_F"/>
 	</choice>
-	<choice hidden="true" req="CREW_MUSHROOM_B"><!-- 1.28 -->
-		<text>(зрелый машрум Crew Member) Talk to your машрумом.</text>
+	<choice hidden="true" req="MUSHROOM_B"><!-- 1.28 -->
+		<text id="talk_to_mushroom_b" />
 		<event load="NOTHING2_MUSHROOM_B"/>
 	</choice>
-	<choice hidden="true" req="CREW_MUSHROOM"><!-- 1.28 -->
-		<text>(старый машрум Crew Member) Talk to your машрумом.</text>
+	<choice hidden="true" req="MUSHROOM"><!-- 1.28 -->
+		<text id="talk_to_mushroom" />
 		<event load="NOTHING2_MUSHROOM"/>
 	</choice>
 	<choice req="CREW_ALL" lvl="0" max_lvl="0" hidden="true" blue="false"> <!-- 1.24.1 -->
@@ -1848,79 +1848,79 @@ High Average =	140%
 <event name="TALK_WITH_CREW_SLUG">
 	<text>You decide to speak with a member of your crew while you wait for the FTL Drive to charge in order to jump to the next beacon.</text>
 	<choice hidden="true" req="HUMAN">
-		<text>(Human Crew Member) Talk to your Human.</text>
+		<text id="talk_to_human" />
 		<event load="NOTHING2_HUMAN"/>
 	</choice>
-	<choice hidden="true" req="CREW_ORDER_HUMAN"> <!-- 1.28 -->
-		<text>(человек Ордена Crew Member) Talk to your человеком.</text>
+	<choice hidden="true" req="ORDER_HUMAN"> <!-- 1.28 -->
+		<text id="talk_to_order_human" />
 		<event load="NOTHING2_ORDER_HUMAN"/>
 	</choice>
 	<choice hidden="true" req="ENGI">
-		<text>(Engi Crew Member) Talk to your Engi.</text>
+		<text id="talk_to_engi" />
 		<event load="NOTHING2_ENGI"/>
 	</choice>		
-	<choice hidden="true" req="CREW_MORPH"> <!-- 1.28 -->
-		<text>(морф Crew Member) Talk to your морфом.</text>
+	<choice hidden="true" req="MORPH"> <!-- 1.28 -->
+		<text id="talk_to_morph" />
 		<event load="NOTHING2_MORPH"/>
 	</choice>
 	<choice hidden="true" req="ENERGY">
-		<text>(Zoltan Crew Member) Talk to your Zoltan.</text>
+		<text id="talk_to_zoltan" />
 		<event load="NOTHING2_ENERGY"/>
 	</choice>
-	<choice hidden="true" req="CREW_ENERGYX"> <!-- 1.28 -->
-		<text>(золтонец Crew Member) Talk to your золтонцем.</text>
+	<choice hidden="true" req="ENERGYX"> <!-- 1.28 -->
+		<text id="talk_to_zolton" />
 		<event load="NOTHING2_ENERGYX"/>
 	</choice>
 	<choice hidden="true" req="MANTIS">
-		<text>(Mantis Crew Member) Talk to your Mantis.</text>
+		<text id="talk_to_mantis" />
 		<event load="NOTHING2_MANTIS"/>
 	</choice>
 	<choice hidden="true" req="SLUG_AND_ARMORED_SLUG"> <!-- 1.28 req was SLUG -->
-		<text>(Slug Crew Member) Talk to your Slug.</text>
+		<text id="talk_to_slug" />
 		<event load="NOTHING2_SLUG2"/>
 	</choice>
 	<choice hidden="true" req="ROCK">
-		<text>(Rock Crew Member) Talk to your Rockman.</text>
+		<text id="talk_to_rock" />
 		<event load="NOTHING2_ROCK"/>
 	</choice>
-	<choice hidden="true" req="CREW_SLIG"> <!-- 1.28 -->
-		<text>(слёрм Crew Member) Поговорить со слёрмом.</text>
+	<choice hidden="true" req="SLIG"> <!-- 1.28 -->
+		<text id="talk_to_slig" />
 		<event load="NOTHING2_SLIG"/>
 	</choice>
-	<choice hidden="true" req="CREW_MAGMAN"> <!-- 1.28 -->
-		<text>(магмен Crew Member) Talk to your магменом.</text>
+	<choice hidden="true" req="MAGMAN"> <!-- 1.28 -->
+		<text id="talk_to_magman" />
 		<event load="NOTHING2_MAGMAN"/>
 	</choice>
-	<choice hidden="true" req="CREW_ORCHID"> <!-- 1.28 -->
-		<text>(орхид Crew Member) Talk to your орхидом.</text>
+	<choice hidden="true" req="ORCHID"> <!-- 1.28 -->
+		<text id="talk_to_orchid" />
 		<event load="NOTHING2_ORCHID"/>
 	</choice>
-	<choice hidden="true" req="CREW_SHELL"> <!-- 1.28 -->
-		<text>(броненосец Crew Member) Talk to your броненосцем.</text>
+	<choice hidden="true" req="SHELL"> <!-- 1.28 -->
+		<text id="talk_to_shell" />
 		<event load="NOTHING2_SHELL"/>
 	</choice>
 	<choice hidden="true" req="ANAEROBIC">
-		<text>(Lanius Crew Member) Talk to your Lanius.</text>
+		<text id="talk_to_lanius" />
 		<event load="NOTHING2_ANAEROBIC"/>
 	</choice>
 	<choice hidden="true" req="CRYSTAL">
-		<text>(Crystal Crew Member) Talk to your Crystal.</text>
+		<text id="talk_to_crystal" />
 		<event load="NOTHING2_CRYSTAL"/>
 	</choice>
 	<choice hidden="true" req="GHOST">
-		<text>(Avatar Crew Member) Talk to your Avatar.</text>
+		<text id="talk_to_avatar" />
 		<event load="NOTHING2_GHOST"/>
 	</choice>
-	<choice hidden="true" req="CREW_MUSHROOM_F"><!-- 1.28 -->
-		<text>(молодой машрум Crew Member) Talk to your машрумом.</text>
+	<choice hidden="true" req="MUSHROOM_F"><!-- 1.28 -->
+		<text id="talk_to_mushroom_f" />
 		<event load="NOTHING2_MUSHROOM_F"/>
 	</choice>
-	<choice hidden="true" req="CREW_MUSHROOM_B"><!-- 1.28 -->
-		<text>(зрелый машрум Crew Member) Talk to your машрумом.</text>
+	<choice hidden="true" req="MUSHROOM_B"><!-- 1.28 -->
+		<text id="talk_to_mushroom_b" />
 		<event load="NOTHING2_MUSHROOM_B"/>
 	</choice>
-	<choice hidden="true" req="CREW_MUSHROOM"><!-- 1.28 -->
-		<text>(старый машрум Crew Member) Talk to your машрумом.</text>
+	<choice hidden="true" req="MUSHROOM"><!-- 1.28 -->
+		<text id="talk_to_mushroom" />
 		<event load="NOTHING2_MUSHROOM"/>
 	</choice>
 	<choice req="CREW_ALL" lvl="0" max_lvl="0" hidden="true" blue="false"> <!-- 1.24.1 -->
@@ -1936,79 +1936,79 @@ High Average =	140%
 <event name="TALK_WITH_CREW_ROCK">
 	<text>You decide to speak with a member of your crew while you wait for the FTL Drive to charge in order to jump to the next beacon.</text>
 	<choice hidden="true" req="HUMAN">
-		<text>(Human Crew Member) Talk to your Human.</text>
+		<text id="talk_to_human" />
 		<event load="NOTHING2_HUMAN"/>
 	</choice>
-	<choice hidden="true" req="CREW_ORDER_HUMAN"> <!-- 1.28 -->
-		<text>(человек Ордена Crew Member) Talk to your человеком.</text>
+	<choice hidden="true" req="ORDER_HUMAN"> <!-- 1.28 -->
+		<text id="talk_to_order_human" />
 		<event load="NOTHING2_ORDER_HUMAN"/>
 	</choice>
 	<choice hidden="true" req="ENGI">
-		<text>(Engi Crew Member) Talk to your Engi.</text>
+		<text id="talk_to_engi" />
 		<event load="NOTHING2_ENGI"/>
 	</choice>		
-	<choice hidden="true" req="CREW_MORPH"> <!-- 1.28 -->
-		<text>(морф Crew Member) Talk to your морфом.</text>
+	<choice hidden="true" req="MORPH"> <!-- 1.28 -->
+		<text id="talk_to_morph" />
 		<event load="NOTHING2_MORPH"/>
 	</choice>
 	<choice hidden="true" req="ENERGY">
-		<text>(Zoltan Crew Member) Talk to your Zoltan.</text>
+		<text id="talk_to_zoltan" />
 		<event load="NOTHING2_ENERGY"/>
 	</choice>
-	<choice hidden="true" req="CREW_ENERGYX"> <!-- 1.28 -->
-		<text>(золтонец Crew Member) Talk to your золтонцем.</text>
+	<choice hidden="true" req="ENERGYX"> <!-- 1.28 -->
+		<text id="talk_to_zolton" />
 		<event load="NOTHING2_ENERGYX"/>
 	</choice>
 	<choice hidden="true" req="MANTIS">
-		<text>(Mantis Crew Member) Talk to your Mantis.</text>
+		<text id="talk_to_mantis" />
 		<event load="NOTHING2_MANTIS"/>
 	</choice>
 	<choice hidden="true" req="SLUG_AND_ARMORED_SLUG"> <!-- 1.28 req was SLUG -->
-		<text>(Slug Crew Member) Talk to your Slug.</text>
+		<text id="talk_to_slug" />
 		<event load="NOTHING2_SLUG"/>
 	</choice>
 	<choice hidden="true" req="ROCK">
-		<text>(Rock Crew Member) Talk to your Rockman.</text>
+		<text id="talk_to_rock" />
 		<event load="NOTHING2_ROCK2"/>
 	</choice>
-	<choice hidden="true" req="CREW_SLIG"> <!-- 1.28 -->
-		<text>(слёрм Crew Member) Поговорить со слёрмом.</text>
+	<choice hidden="true" req="SLIG"> <!-- 1.28 -->
+		<text id="talk_to_slig" />
 		<event load="NOTHING2_SLIG"/>
 	</choice>
-	<choice hidden="true" req="CREW_MAGMAN"> <!-- 1.28 -->
-		<text>(магмен Crew Member) Talk to your магменом.</text>
+	<choice hidden="true" req="MAGMAN"> <!-- 1.28 -->
+		<text id="talk_to_magman" />
 		<event load="NOTHING2_MAGMAN"/>
 	</choice>
-	<choice hidden="true" req="CREW_ORCHID"> <!-- 1.28 -->
-		<text>(орхид Crew Member) Talk to your орхидом.</text>
+	<choice hidden="true" req="ORCHID"> <!-- 1.28 -->
+		<text id="talk_to_orchid" />
 		<event load="NOTHING2_ORCHID"/>
 	</choice>
-	<choice hidden="true" req="CREW_SHELL"> <!-- 1.28 -->
-		<text>(броненосец Crew Member) Talk to your броненосцем.</text>
+	<choice hidden="true" req="SHELL"> <!-- 1.28 -->
+		<text id="talk_to_shell" />
 		<event load="NOTHING2_SHELL"/>
 	</choice>
 	<choice hidden="true" req="ANAEROBIC">
-		<text>(Lanius Crew Member) Talk to your Lanius.</text>
+		<text id="talk_to_lanius" />
 		<event load="NOTHING2_ANAEROBIC"/>
 	</choice>
 	<choice hidden="true" req="CRYSTAL">
-		<text>(Crystal Crew Member) Talk to your Crystal.</text>
+		<text id="talk_to_crystal" />
 		<event load="NOTHING2_CRYSTAL"/>
 	</choice>
 	<choice hidden="true" req="GHOST">
-		<text>(Avatar Crew Member) Talk to your Avatar.</text>
+		<text id="talk_to_avatar" />
 		<event load="NOTHING2_GHOST"/>
 	</choice>
-	<choice hidden="true" req="CREW_MUSHROOM_F"><!-- 1.28 -->
-		<text>(молодой машрум Crew Member) Talk to your машрумом.</text>
+	<choice hidden="true" req="MUSHROOM_F"><!-- 1.28 -->
+		<text id="talk_to_mushroom_f" />
 		<event load="NOTHING2_MUSHROOM_F"/>
 	</choice>
-	<choice hidden="true" req="CREW_MUSHROOM_B"><!-- 1.28 -->
-		<text>(зрелый машрум Crew Member) Talk to your машрумом.</text>
+	<choice hidden="true" req="MUSHROOM_B"><!-- 1.28 -->
+		<text id="talk_to_mushroom_b" />
 		<event load="NOTHING2_MUSHROOM_B"/>
 	</choice>
-	<choice hidden="true" req="CREW_MUSHROOM"><!-- 1.28 -->
-		<text>(старый машрум Crew Member) Talk to your машрумом.</text>
+	<choice hidden="true" req="MUSHROOM"><!-- 1.28 -->
+		<text id="talk_to_mushroom" />
 		<event load="NOTHING2_MUSHROOM"/>
 	</choice>
 	<choice req="CREW_ALL" lvl="0" max_lvl="0" hidden="true" blue="false"> <!-- 1.24.1 -->
@@ -2022,81 +2022,81 @@ High Average =	140%
 </event>
 
 <event name="TALK_WITH_CREW_SLIG">
-	<text>Вы решаете переговорить с одним из членов вашей команды, пока заряжается FTL-привод для прыжка к следующему маяку.</text>
-	<choice hidden="true" req="CREW_HUMAN">
-		<text>(человек Crew Member) Talk to your человеком.</text>
+	<text>You decide to speak with a member of your crew while you wait for the FTL Drive to charge in order to jump to the next beacon.</text>
+	<choice hidden="true" req="HUMAN">
+		<text id="talk_to_human" />
 		<event load="NOTHING2_HUMAN"/>
 	</choice>
-	<choice hidden="true" req="CREW_ORDER_HUMAN"> <!-- 1.28 -->
-		<text>(человек Ордена Crew Member) Talk to your человеком.</text>
+	<choice hidden="true" req="ORDER_HUMAN"> <!-- 1.28 -->
+		<text id="talk_to_order_human" />
 		<event load="NOTHING2_ORDER_HUMAN"/>
 	</choice>
-	<choice hidden="true" req="CREW_ENGI">
-		<text>(инжи Crew Member) Talk to your инжи.</text>
+	<choice hidden="true" req="ENGI">
+		<text id="talk_to_engi" />
 		<event load="NOTHING2_ENGI"/>
 	</choice>		
-	<choice hidden="true" req="CREW_MORPH"> <!-- 1.28 -->
-		<text>(морф Crew Member) Talk to your морфом.</text>
+	<choice hidden="true" req="MORPH"> <!-- 1.28 -->
+		<text id="talk_to_morph" />
 		<event load="NOTHING2_MORPH"/>
 	</choice>
-	<choice hidden="true" req="CREW_ENERGY">
-		<text>(золтанец Crew Member) Talk to your золтанцем.</text>
+	<choice hidden="true" req="ENERGY">
+		<text id="talk_to_zoltan" />
 		<event load="NOTHING2_ENERGY"/>
 	</choice>
-	<choice hidden="true" req="CREW_ENERGYX"> <!-- 1.28 -->
-		<text>(золтонец Crew Member) Talk to your золтонцем.</text>
+	<choice hidden="true" req="ENERGYX"> <!-- 1.28 -->
+		<text id="talk_to_zolton" />
 		<event load="NOTHING2_ENERGYX"/>
 	</choice>
-	<choice hidden="true" req="CREW_MANTIS">
-		<text>(мантис Crew Member) Talk to your мантисом.</text>
+	<choice hidden="true" req="MANTIS">
+		<text id="talk_to_mantis" />
 		<event load="NOTHING2_MANTIS"/>
 	</choice>
 	<choice hidden="true" req="SLUG_AND_ARMORED_SLUG"> <!-- 1.28 -->
-		<text>(слаг Crew Member) Поговорить со слагом.</text>
+		<text id="talk_to_slug" />
 		<event load="NOTHING2_SLUG"/>
 	</choice>
-	<choice hidden="true" req="CREW_ROCK">
-		<text>(рок Crew Member) Talk to your роком.</text>
+	<choice hidden="true" req="ROCK">
+		<text id="talk_to_rock" />
 		<event load="NOTHING2_ROCK"/>
 	</choice>
-	<choice hidden="true" req="CREW_SLIG"> <!-- 1.28 -->
-		<text>(слёрм Crew Member) Поговорить со слёрмом.</text>
+	<choice hidden="true" req="SLIG"> <!-- 1.28 -->
+		<text id="talk_to_slig" />
 		<event load="NOTHING2_SLIG2"/>
 	</choice>
-	<choice hidden="true" req="CREW_MAGMAN"> <!-- 1.28 -->
-		<text>(магмен Crew Member) Talk to your магменом.</text>
+	<choice hidden="true" req="MAGMAN"> <!-- 1.28 -->
+		<text id="talk_to_magman" />
 		<event load="NOTHING2_MAGMAN"/>
 	</choice>
-	<choice hidden="true" req="CREW_ORCHID"> <!-- 1.28 -->
-		<text>(орхид Crew Member) Talk to your орхидом.</text>
+	<choice hidden="true" req="ORCHID"> <!-- 1.28 -->
+		<text id="talk_to_orchid" />
 		<event load="NOTHING2_ORCHID"/>
 	</choice>
-	<choice hidden="true" req="CREW_SHELL"> <!-- 1.28 -->
-		<text>(броненосец Crew Member) Talk to your броненосцем.</text>
+	<choice hidden="true" req="SHELL"> <!-- 1.28 -->
+		<text id="talk_to_shell" />
 		<event load="NOTHING2_SHELL"/>
 	</choice>
-	<choice hidden="true" req="CREW_ANAEROBIC">
-		<text>(ланиус Crew Member) Talk to your ланиусом.</text>
+	<choice hidden="true" req="ANAEROBIC">
+		<text id="talk_to_lanius" />
 		<event load="NOTHING2_ANAEROBIC"/>
 	</choice>
-	<choice hidden="true" req="CREW_CRYSTAL">
-		<text>(кристалин Crew Member) Talk to your кристалином.</text>
+	<choice hidden="true" req="CRYSTAL">
+		<text id="talk_to_crystal" />
 		<event load="NOTHING2_CRYSTAL"/>
 	</choice>
-	<choice hidden="true" req="CREW_GHOST">
-		<text>(аватар Crew Member) Talk to your аватаром.</text>
+	<choice hidden="true" req="GHOST">
+		<text id="talk_to_avatar" />
 		<event load="NOTHING2_GHOST"/>
 	</choice>
-	<choice hidden="true" req="CREW_MUSHROOM_F"><!-- 1.28 -->
-		<text>(молодой машрум Crew Member) Talk to your машрумом.</text>
+	<choice hidden="true" req="MUSHROOM_F"><!-- 1.28 -->
+		<text id="talk_to_mushroom_f" />
 		<event load="NOTHING2_MUSHROOM_F"/>
 	</choice>
-	<choice hidden="true" req="CREW_MUSHROOM_B"><!-- 1.28 -->
-		<text>(зрелый машрум Crew Member) Talk to your машрумом.</text>
+	<choice hidden="true" req="MUSHROOM_B"><!-- 1.28 -->
+		<text id="talk_to_mushroom_b" />
 		<event load="NOTHING2_MUSHROOM_B"/>
 	</choice>
-	<choice hidden="true" req="CREW_MUSHROOM"><!-- 1.28 -->
-		<text>(старый машрум Crew Member) Talk to your машрумом.</text>
+	<choice hidden="true" req="MUSHROOM"><!-- 1.28 -->
+		<text id="talk_to_mushroom" />
 		<event load="NOTHING2_MUSHROOM"/>
 	</choice>
 	<choice req="CREW_ALL" lvl="0" max_lvl="0" hidden="true" blue="false"> <!-- 1.24.1 -->
@@ -2104,87 +2104,87 @@ High Average =	140%
 		<event load="TALK_WITH_CREW_AI_SHIP" />
 	</choice>
 	<choice hidden="true" req="SHIPRADAR2"> <!-- 1.27 -->
-		<text>(Анализатор морфов) Поручить экипажу просканировать близлежащее пространство.</text>
+		<text>(Morph Analyzer) Instruct the crew to scan the surrounding area.</text>
 		<event load="NOTHING_SHIPRADAR2_RAND"/>
 	</choice>
 </event>
 
 <event name="TALK_WITH_CREW_MAGMAN"> <!-- 1.28 --> <!-- not used until magman sector -->
-	<text>Вы решаете переговорить с одним из членов вашей команды, пока заряжается FTL-привод для прыжка к следующему маяку.</text>
-	<choice hidden="true" req="CREW_HUMAN">
-		<text>(человек Crew Member) Talk to your человеком.</text>
+	<text>You decide to speak with a member of your crew while you wait for the FTL Drive to charge in order to jump to the next beacon.</text>
+	<choice hidden="true" req="HUMAN">
+		<text id="talk_to_human" />
 		<event load="NOTHING2_HUMAN"/>
 	</choice>
-	<choice hidden="true" req="CREW_ORDER_HUMAN"> <!-- 1.28 -->
-		<text>(человек Ордена Crew Member) Talk to your человеком.</text>
+	<choice hidden="true" req="ORDER_HUMAN"> <!-- 1.28 -->
+		<text id="talk_to_order_human" />
 		<event load="NOTHING2_ORDER_HUMAN"/>
 	</choice>
-	<choice hidden="true" req="CREW_ENGI">
-		<text>(инжи Crew Member) Talk to your инжи.</text>
+	<choice hidden="true" req="ENGI">
+		<text id="talk_to_engi" />
 		<event load="NOTHING2_ENGI"/>
 	</choice>		
-	<choice hidden="true" req="CREW_MORPH"> <!-- 1.28 -->
-		<text>(морф Crew Member) Talk to your морфом.</text>
+	<choice hidden="true" req="MORPH"> <!-- 1.28 -->
+		<text id="talk_to_morph" />
 		<event load="NOTHING2_MORPH"/>
 	</choice>
-	<choice hidden="true" req="CREW_ENERGY">
-		<text>(золтанец Crew Member) Talk to your золтанцем.</text>
+	<choice hidden="true" req="ENERGY">
+		<text id="talk_to_zoltan" />
 		<event load="NOTHING2_ENERGY"/>
 	</choice>
-	<choice hidden="true" req="CREW_ENERGYX"> <!-- 1.28 -->
-		<text>(золтонец Crew Member) Talk to your золтонцем.</text>
+	<choice hidden="true" req="ENERGYX"> <!-- 1.28 -->
+		<text id="talk_to_zolton" />
 		<event load="NOTHING2_ENERGYX"/>
 	</choice>
-	<choice hidden="true" req="CREW_MANTIS">
-		<text>(мантис Crew Member) Talk to your мантисом.</text>
+	<choice hidden="true" req="MANTIS">
+		<text id="talk_to_mantis" />
 		<event load="NOTHING2_MANTIS"/>
 	</choice>
 	<choice hidden="true" req="SLUG_AND_ARMORED_SLUG"> <!-- 1.28 -->
-		<text>(слаг Crew Member) Поговорить со слагом.</text>
+		<text id="talk_to_slug" />
 		<event load="NOTHING2_SLUG"/>
 	</choice>
-	<choice hidden="true" req="CREW_ROCK">
-		<text>(рок Crew Member) Talk to your роком.</text>
+	<choice hidden="true" req="ROCK">
+		<text id="talk_to_rock" />
 		<event load="NOTHING2_ROCK"/>
 	</choice>
-	<choice hidden="true" req="CREW_SLIG"> <!-- 1.28 -->
-		<text>(слёрм Crew Member) Поговорить со слёрмом.</text>
+	<choice hidden="true" req="SLIG"> <!-- 1.28 -->
+		<text id="talk_to_slig" />
 		<event load="NOTHING2_SLIG"/>
 	</choice>
-	<choice hidden="true" req="CREW_MAGMAN">
-		<text>(магмен Crew Member) Talk to your магменом.</text>
+	<choice hidden="true" req="MAGMAN">
+		<text id="talk_to_magman" />
 		<event load="NOTHING2_MAGMAN2"/>
 	</choice>
-	<choice hidden="true" req="CREW_ORCHID"> <!-- 1.28 -->
-		<text>(орхид Crew Member) Talk to your орхидом.</text>
+	<choice hidden="true" req="ORCHID"> <!-- 1.28 -->
+		<text id="talk_to_orchid" />
 		<event load="NOTHING2_ORCHID"/>
 	</choice>
-	<choice hidden="true" req="CREW_SHELL"> <!-- 1.28 -->
-		<text>(броненосец Crew Member) Talk to your броненосцем.</text>
+	<choice hidden="true" req="SHELL"> <!-- 1.28 -->
+		<text id="talk_to_shell" />
 		<event load="NOTHING2_SHELL"/>
 	</choice>
-	<choice hidden="true" req="CREW_ANAEROBIC">
-		<text>(ланиус Crew Member) Talk to your ланиусом.</text>
+	<choice hidden="true" req="ANAEROBIC">
+		<text id="talk_to_lanius" />
 		<event load="NOTHING2_ANAEROBIC"/>
 	</choice>
-	<choice hidden="true" req="CREW_CRYSTAL">
-		<text>(кристалин Crew Member) Talk to your кристалином.</text>
+	<choice hidden="true" req="CRYSTAL">
+		<text id="talk_to_crystal" />
 		<event load="NOTHING2_CRYSTAL"/>
 	</choice>
-	<choice hidden="true" req="CREW_GHOST">
-		<text>(аватар Crew Member) Talk to your аватаром.</text>
+	<choice hidden="true" req="GHOST">
+		<text id="talk_to_avatar" />
 		<event load="NOTHING2_GHOST"/>
 	</choice>
-	<choice hidden="true" req="CREW_MUSHROOM_F"><!-- 1.28 -->
-		<text>(молодой машрум Crew Member) Talk to your машрумом.</text>
+	<choice hidden="true" req="MUSHROOM_F"><!-- 1.28 -->
+		<text id="talk_to_mushroom_f" />
 		<event load="NOTHING2_MUSHROOM_F"/>
 	</choice>
-	<choice hidden="true" req="CREW_MUSHROOM_B"><!-- 1.28 -->
-		<text>(зрелый машрум Crew Member) Talk to your машрумом.</text>
+	<choice hidden="true" req="MUSHROOM_B"><!-- 1.28 -->
+		<text id="talk_to_mushroom_b" />
 		<event load="NOTHING2_MUSHROOM_B"/>
 	</choice>
-	<choice hidden="true" req="CREW_MUSHROOM"><!-- 1.28 -->
-		<text>(старый машрум Crew Member) Talk to your машрумом.</text>
+	<choice hidden="true" req="MUSHROOM"><!-- 1.28 -->
+		<text id="talk_to_mushroom" />
 		<event load="NOTHING2_MUSHROOM"/>
 	</choice>
 	<choice req="CREW_ALL" lvl="0" max_lvl="0" hidden="true" blue="false"> <!-- 1.24.1 -->
@@ -2192,87 +2192,87 @@ High Average =	140%
 		<event load="TALK_WITH_CREW_AI_SHIP" />
 	</choice>
 	<choice hidden="true" req="SHIPRADAR2"> <!-- 1.27 -->
-		<text>(Анализатор морфов) Поручить экипажу просканировать близлежащее пространство.</text>
+		<text>(Morph Analyzer) Instruct the crew to scan the surrounding area.</text>
 		<event load="NOTHING_SHIPRADAR2_RAND"/>
 	</choice>
 </event>
 
 <event name="TALK_WITH_CREW_ORCHID"> <!-- 1.28 -->
-	<text>Вы решаете переговорить с одним из членов вашей команды, пока заряжается FTL-привод для прыжка к следующему маяку.</text>
-	<choice hidden="true" req="CREW_HUMAN">
-		<text>(человек Crew Member) Talk to your человеком.</text>
+	<text>You decide to speak with a member of your crew while you wait for the FTL Drive to charge in order to jump to the next beacon.</text>
+	<choice hidden="true" req="HUMAN">
+		<text id="talk_to_human" />
 		<event load="NOTHING2_HUMAN"/>
 	</choice>
-	<choice hidden="true" req="CREW_ORDER_HUMAN"> <!-- 1.28 -->
-		<text>(человек Ордена Crew Member) Talk to your человеком.</text>
+	<choice hidden="true" req="ORDER_HUMAN"> <!-- 1.28 -->
+		<text id="talk_to_order_human" />
 		<event load="NOTHING2_ORDER_HUMAN"/>
 	</choice>
-	<choice hidden="true" req="CREW_ENGI">
-		<text>(инжи Crew Member) Talk to your инжи.</text>
+	<choice hidden="true" req="ENGI">
+		<text id="talk_to_engi" />
 		<event load="NOTHING2_ENGI"/>
 	</choice>		
-	<choice hidden="true" req="CREW_MORPH"> <!-- 1.28 -->
-		<text>(морф Crew Member) Talk to your морфом.</text>
+	<choice hidden="true" req="MORPH"> <!-- 1.28 -->
+		<text id="talk_to_morph" />
 		<event load="NOTHING2_MORPH"/>
 	</choice>
-	<choice hidden="true" req="CREW_ENERGY">
-		<text>(золтанец Crew Member) Talk to your золтанцем.</text>
+	<choice hidden="true" req="ENERGY">
+		<text id="talk_to_zoltan" />
 		<event load="NOTHING2_ENERGY"/>
 	</choice>
-	<choice hidden="true" req="CREW_ENERGYX"> <!-- 1.28 -->
-		<text>(золтонец Crew Member) Talk to your золтонцем.</text>
+	<choice hidden="true" req="ENERGYX"> <!-- 1.28 -->
+		<text id="talk_to_zolton" />
 		<event load="NOTHING2_ENERGYX"/>
 	</choice>
-	<choice hidden="true" req="CREW_MANTIS">
-		<text>(мантис Crew Member) Talk to your мантисом.</text>
+	<choice hidden="true" req="MANTIS">
+		<text id="talk_to_mantis" />
 		<event load="NOTHING2_MANTIS"/>
 	</choice>
 	<choice hidden="true" req="SLUG_AND_ARMORED_SLUG"> <!-- 1.28 -->
-		<text>(слаг Crew Member) Поговорить со слагом.</text>
+		<text id="talk_to_slug" />
 		<event load="NOTHING2_SLUG"/>
 	</choice>
-	<choice hidden="true" req="CREW_ROCK">
-		<text>(рок Crew Member) Talk to your роком.</text>
+	<choice hidden="true" req="ROCK">
+		<text id="talk_to_rock" />
 		<event load="NOTHING2_ROCK"/>
 	</choice>
-	<choice hidden="true" req="CREW_SLIG"> <!-- 1.28 -->
-		<text>(слёрм Crew Member) Поговорить со слёрмом.</text>
+	<choice hidden="true" req="SLIG"> <!-- 1.28 -->
+		<text id="talk_to_slig" />
 		<event load="NOTHING2_SLIG"/>
 	</choice>
-	<choice hidden="true" req="CREW_MAGMAN">
-		<text>(магмен Crew Member) Talk to your магменом.</text>
+	<choice hidden="true" req="MAGMAN">
+		<text id="talk_to_magman" />
 		<event load="NOTHING2_MAGMAN"/>
 	</choice>
-	<choice hidden="true" req="CREW_ORCHID"> <!-- 1.28 -->
-		<text>(орхид Crew Member) Talk to your орхидом.</text>
+	<choice hidden="true" req="ORCHID"> <!-- 1.28 -->
+		<text id="talk_to_orchid" />
 		<event load="NOTHING2_ORCHID2"/>
 	</choice>
-	<choice hidden="true" req="CREW_SHELL"> <!-- 1.28 -->
-		<text>(броненосец Crew Member) Talk to your броненосцем.</text>
+	<choice hidden="true" req="SHELL"> <!-- 1.28 -->
+		<text id="talk_to_shell" />
 		<event load="NOTHING2_SHELL"/>
 	</choice>
-	<choice hidden="true" req="CREW_ANAEROBIC">
-		<text>(ланиус Crew Member) Talk to your ланиусом.</text>
+	<choice hidden="true" req="ANAEROBIC">
+		<text id="talk_to_lanius" />
 		<event load="NOTHING2_ANAEROBIC"/>
 	</choice>
-	<choice hidden="true" req="CREW_CRYSTAL">
-		<text>(кристалин Crew Member) Talk to your кристалином.</text>
+	<choice hidden="true" req="CRYSTAL">
+		<text id="talk_to_crystal" />
 		<event load="NOTHING2_CRYSTAL"/>
 	</choice>
-	<choice hidden="true" req="CREW_GHOST">
-		<text>(аватар Crew Member) Talk to your аватаром.</text>
+	<choice hidden="true" req="GHOST">
+		<text id="talk_to_avatar" />
 		<event load="NOTHING2_GHOST"/>
 	</choice>
-	<choice hidden="true" req="CREW_MUSHROOM_F"><!-- 1.28 -->
-		<text>(молодой машрум Crew Member) Talk to your машрумом.</text>
+	<choice hidden="true" req="MUSHROOM_F"><!-- 1.28 -->
+		<text id="talk_to_mushroom_f" />
 		<event load="NOTHING2_MUSHROOM_F"/>
 	</choice>
-	<choice hidden="true" req="CREW_MUSHROOM_B"><!-- 1.28 -->
-		<text>(зрелый машрум Crew Member) Talk to your машрумом.</text>
+	<choice hidden="true" req="MUSHROOM_B"><!-- 1.28 -->
+		<text id="talk_to_mushroom_b" />
 		<event load="NOTHING2_MUSHROOM_B"/>
 	</choice>
-	<choice hidden="true" req="CREW_MUSHROOM"><!-- 1.28 -->
-		<text>(старый машрум Crew Member) Talk to your машрумом.</text>
+	<choice hidden="true" req="MUSHROOM"><!-- 1.28 -->
+		<text id="talk_to_mushroom" />
 		<event load="NOTHING2_MUSHROOM"/>
 	</choice>
 	<choice req="CREW_ALL" lvl="0" max_lvl="0" hidden="true" blue="false"> <!-- 1.24.1 -->
@@ -2280,87 +2280,87 @@ High Average =	140%
 		<event load="TALK_WITH_CREW_AI_SHIP" />
 	</choice>
 	<choice hidden="true" req="SHIPRADAR2"> <!-- 1.27 -->
-		<text>(Анализатор морфов) Поручить экипажу просканировать близлежащее пространство.</text>
+		<text>(Morph Analyzer) Instruct the crew to scan the surrounding area.</text>
 		<event load="NOTHING_SHIPRADAR2_RAND"/>
 	</choice>
 </event>
 
 <event name="TALK_WITH_CREW_SHELL"> <!-- 1.28 -->
-	<text>Вы решаете переговорить с одним из членов вашей команды, пока заряжается FTL-привод для прыжка к следующему маяку.</text>
-	<choice hidden="true" req="CREW_HUMAN">
-		<text>(человек Crew Member) Talk to your человеком.</text>
+	<text>You decide to speak with a member of your crew while you wait for the FTL Drive to charge in order to jump to the next beacon.</text>
+	<choice hidden="true" req="HUMAN">
+		<text id="talk_to_human" />
 		<event load="NOTHING2_HUMAN"/>
 	</choice>
-	<choice hidden="true" req="CREW_ORDER_HUMAN"> <!-- 1.28 -->
-		<text>(человек Ордена Crew Member) Talk to your человеком.</text>
+	<choice hidden="true" req="ORDER_HUMAN"> <!-- 1.28 -->
+		<text id="talk_to_order_human" />
 		<event load="NOTHING2_ORDER_HUMAN"/>
 	</choice>
-	<choice hidden="true" req="CREW_ENGI">
-		<text>(инжи Crew Member) Talk to your инжи.</text>
+	<choice hidden="true" req="ENGI">
+		<text id="talk_to_engi" />
 		<event load="NOTHING2_ENGI"/>
 	</choice>
-	<choice hidden="true" req="CREW_MORPH"> <!-- 1.28 -->
-		<text>(морф Crew Member) Talk to your морфом.</text>
+	<choice hidden="true" req="MORPH"> <!-- 1.28 -->
+		<text id="talk_to_morph" />
 		<event load="NOTHING2_MORPH"/>
 	</choice>
-	<choice hidden="true" req="CREW_ENERGY">
-		<text>(золтанец Crew Member) Talk to your золтанцем.</text>
+	<choice hidden="true" req="ENERGY">
+		<text id="talk_to_zoltan" />
 		<event load="NOTHING2_ENERGY"/>
 	</choice>
-	<choice hidden="true" req="CREW_ENERGYX"> <!-- 1.28 -->
-		<text>(золтонец Crew Member) Talk to your золтонцем.</text>
+	<choice hidden="true" req="ENERGYX"> <!-- 1.28 -->
+		<text id="talk_to_zolton" />
 		<event load="NOTHING2_ENERGYX"/>
 	</choice>
-	<choice hidden="true" req="CREW_MANTIS">
-		<text>(мантис Crew Member) Talk to your мантисом.</text>
+	<choice hidden="true" req="MANTIS">
+		<text id="talk_to_mantis" />
 		<event load="NOTHING2_MANTIS"/>
 	</choice>
 	<choice hidden="true" req="SLUG_AND_ARMORED_SLUG"> <!-- 1.28 -->
-		<text>(слаг Crew Member) Поговорить со слагом.</text>
+		<text id="talk_to_slug" />
 		<event load="NOTHING2_SLUG"/>
 	</choice>
-	<choice hidden="true" req="CREW_ROCK">
-		<text>(рок Crew Member) Talk to your роком.</text>
+	<choice hidden="true" req="ROCK">
+		<text id="talk_to_rock" />
 		<event load="NOTHING2_ROCK"/>
 	</choice>
-	<choice hidden="true" req="CREW_SLIG"> <!-- 1.28 -->
-		<text>(слёрм Crew Member) Поговорить со слёрмом.</text>
+	<choice hidden="true" req="SLIG"> <!-- 1.28 -->
+		<text id="talk_to_slig" />
 		<event load="NOTHING2_SLIG"/>
 	</choice>
-	<choice hidden="true" req="CREW_MAGMAN">
-		<text>(магмен Crew Member) Talk to your магменом.</text>
+	<choice hidden="true" req="MAGMAN">
+		<text id="talk_to_magman" />
 		<event load="NOTHING2_MAGMAN"/>
 	</choice>
-	<choice hidden="true" req="CREW_ORCHID"> <!-- 1.28 -->
-		<text>(орхид Crew Member) Talk to your орхидом.</text>
+	<choice hidden="true" req="ORCHID"> <!-- 1.28 -->
+		<text id="talk_to_orchid" />
 		<event load="NOTHING2_ORCHID"/>
 	</choice>
-	<choice hidden="true" req="CREW_SHELL"> <!-- 1.28 -->
-		<text>(броненосец Crew Member) Talk to your броненосцем.</text>
+	<choice hidden="true" req="SHELL"> <!-- 1.28 -->
+		<text id="talk_to_shell" />
 		<event load="NOTHING2_SHELL2"/>
 	</choice>
-	<choice hidden="true" req="CREW_ANAEROBIC">
-		<text>(ланиус Crew Member) Talk to your ланиусом.</text>
+	<choice hidden="true" req="ANAEROBIC">
+		<text id="talk_to_lanius" />
 		<event load="NOTHING2_ANAEROBIC"/>
 	</choice>
-	<choice hidden="true" req="CREW_CRYSTAL">
-		<text>(кристалин Crew Member) Talk to your кристалином.</text>
+	<choice hidden="true" req="CRYSTAL">
+		<text id="talk_to_crystal" />
 		<event load="NOTHING2_CRYSTAL"/>
 	</choice>
-	<choice hidden="true" req="CREW_GHOST">
-		<text>(аватар Crew Member) Talk to your аватаром.</text>
+	<choice hidden="true" req="GHOST">
+		<text id="talk_to_avatar" />
 		<event load="NOTHING2_GHOST"/>
 	</choice>
-	<choice hidden="true" req="CREW_MUSHROOM_F"><!-- 1.28 -->
-		<text>(молодой машрум Crew Member) Talk to your машрумом.</text>
+	<choice hidden="true" req="MUSHROOM_F"><!-- 1.28 -->
+		<text id="talk_to_mushroom_f" />
 		<event load="NOTHING2_MUSHROOM_F"/>
 	</choice>
-	<choice hidden="true" req="CREW_MUSHROOM_B"><!-- 1.28 -->
-		<text>(зрелый машрум Crew Member) Talk to your машрумом.</text>
+	<choice hidden="true" req="MUSHROOM_B"><!-- 1.28 -->
+		<text id="talk_to_mushroom_b" />
 		<event load="NOTHING2_MUSHROOM_B"/>
 	</choice>
-	<choice hidden="true" req="CREW_MUSHROOM"><!-- 1.28 -->
-		<text>(старый машрум Crew Member) Talk to your машрумом.</text>
+	<choice hidden="true" req="MUSHROOM"><!-- 1.28 -->
+		<text id="talk_to_mushroom" />
 		<event load="NOTHING2_MUSHROOM"/>
 	</choice>
 	<choice req="CREW_ALL" lvl="0" max_lvl="0" hidden="true" blue="false"> <!-- 1.24.1 -->
@@ -2368,87 +2368,87 @@ High Average =	140%
 		<event load="TALK_WITH_CREW_AI_SHIP" />
 	</choice>
 	<choice hidden="true" req="SHIPRADAR2"> <!-- 1.27 -->
-		<text>(Анализатор морфов) Поручить экипажу просканировать близлежащее пространство.</text>
+		<text>(Morph Analyzer) Instruct the crew to scan the surrounding area.</text>
 		<event load="NOTHING_SHIPRADAR2_RAND"/>
 	</choice>
 </event>
 
 <event name="TALK_WITH_CREW_MUSHROOM"> <!-- 1.28 -->
-	<text>Вы решаете переговорить с одним из членов вашей команды, пока заряжается FTL-привод для прыжка к следующему маяку.</text>
-	<choice hidden="true" req="CREW_HUMAN">
-		<text>(человек Crew Member) Talk to your человеком.</text>
+	<text>You decide to speak with a member of your crew while you wait for the FTL Drive to charge in order to jump to the next beacon.</text>
+	<choice hidden="true" req="HUMAN">
+		<text id="talk_to_human" />
 		<event load="NOTHING2_HUMAN"/>
 	</choice>
-	<choice hidden="true" req="CREW_ORDER_HUMAN"> 
-		<text>(человек Ордена Crew Member) Talk to your человеком.</text>
+	<choice hidden="true" req="ORDER_HUMAN"> 
+		<text id="talk_to_order_human" />
 		<event load="NOTHING2_ORDER_HUMAN"/>
 	</choice>
-	<choice hidden="true" req="CREW_ENGI">
-		<text>(инжи Crew Member) Talk to your инжи.</text>
+	<choice hidden="true" req="ENGI">
+		<text id="talk_to_engi" />
 		<event load="NOTHING2_ENGI"/>
 	</choice>
-	<choice hidden="true" req="CREW_MORPH"> 
-		<text>(морф Crew Member) Talk to your морфом.</text>
+	<choice hidden="true" req="MORPH"> 
+		<text id="talk_to_morph" />
 		<event load="NOTHING2_MORPH"/>
 	</choice>
-	<choice hidden="true" req="CREW_ENERGY">
-		<text>(золтанец Crew Member) Talk to your золтанцем.</text>
+	<choice hidden="true" req="ENERGY">
+		<text id="talk_to_zoltan" />
 		<event load="NOTHING2_ENERGY"/>
 	</choice>
-	<choice hidden="true" req="CREW_ENERGYX"> 
-		<text>(золтонец Crew Member) Talk to your золтонцем.</text>
+	<choice hidden="true" req="ENERGYX"> 
+		<text id="talk_to_zolton" />
 		<event load="NOTHING2_ENERGYX"/>
 	</choice>
-	<choice hidden="true" req="CREW_MANTIS">
-		<text>(мантис Crew Member) Talk to your мантисом.</text>
+	<choice hidden="true" req="MANTIS">
+		<text id="talk_to_mantis" />
 		<event load="NOTHING2_MANTIS"/>
 	</choice>
 	<choice hidden="true" req="SLUG_AND_ARMORED_SLUG">
-		<text>(слаг Crew Member) Поговорить со слагом.</text>
+		<text id="talk_to_slug" />
 		<event load="NOTHING2_SLUG"/>
 	</choice>
-	<choice hidden="true" req="CREW_ROCK">
-		<text>(рок Crew Member) Talk to your роком.</text>
+	<choice hidden="true" req="ROCK">
+		<text id="talk_to_rock" />
 		<event load="NOTHING2_ROCK"/>
 	</choice>
-	<choice hidden="true" req="CREW_SLIG"> 
-		<text>(слёрм Crew Member) Поговорить со слёрмом.</text>
+	<choice hidden="true" req="SLIG"> 
+		<text id="talk_to_slig" />
 		<event load="NOTHING2_SLIG"/>
 	</choice>
-	<choice hidden="true" req="CREW_MAGMAN">
-		<text>(магмен Crew Member) Talk to your магменом.</text>
+	<choice hidden="true" req="MAGMAN">
+		<text id="talk_to_magman" />
 		<event load="NOTHING2_MAGMAN"/>
 	</choice>
-	<choice hidden="true" req="CREW_ORCHID">
-		<text>(орхид Crew Member) Talk to your орхидом.</text>
+	<choice hidden="true" req="ORCHID">
+		<text id="talk_to_orchid" />
 		<event load="NOTHING2_ORCHID"/>
 	</choice>
-	<choice hidden="true" req="CREW_SHELL"> 
-		<text>(броненосец Crew Member) Talk to your броненосцем.</text>
+	<choice hidden="true" req="SHELL"> 
+		<text id="talk_to_shell" />
 		<event load="NOTHING2_SHELL"/>
 	</choice>
-	<choice hidden="true" req="CREW_ANAEROBIC">
-		<text>(ланиус Crew Member) Talk to your ланиусом.</text>
+	<choice hidden="true" req="ANAEROBIC">
+		<text id="talk_to_lanius" />
 		<event load="NOTHING2_ANAEROBIC"/>
 	</choice>
-	<choice hidden="true" req="CREW_CRYSTAL">
-		<text>(кристалин Crew Member) Talk to your кристалином.</text>
+	<choice hidden="true" req="CRYSTAL">
+		<text id="talk_to_crystal" />
 		<event load="NOTHING2_CRYSTAL"/>
 	</choice>
-	<choice hidden="true" req="CREW_GHOST">
-		<text>(аватар Crew Member) Talk to your аватаром.</text>
+	<choice hidden="true" req="GHOST">
+		<text id="talk_to_avatar" />
 		<event load="NOTHING2_GHOST"/>
 	</choice>
-	<choice hidden="true" req="CREW_MUSHROOM_F">
-		<text>(молодой машрум Crew Member) Talk to your машрумом.</text>
+	<choice hidden="true" req="MUSHROOM_F">
+		<text id="talk_to_mushroom_f" />
 		<event load="NOTHING2_MUSHROOM2_F"/>
 	</choice>
-	<choice hidden="true" req="CREW_MUSHROOM_B">
-		<text>(зрелый машрум Crew Member) Talk to your машрумом.</text>
+	<choice hidden="true" req="MUSHROOM_B">
+		<text id="talk_to_mushroom_b" />
 		<event load="NOTHING2_MUSHROOM2_B"/>
 	</choice>
-	<choice hidden="true" req="CREW_MUSHROOM">
-		<text>(старый машрум Crew Member) Talk to your машрумом.</text>
+	<choice hidden="true" req="MUSHROOM">
+		<text id="talk_to_mushroom" />
 		<event load="NOTHING2_MUSHROOM2"/>
 	</choice>
 	<choice req="CREW_ALL" lvl="0" max_lvl="0" hidden="true" blue="false"> 
@@ -2456,7 +2456,7 @@ High Average =	140%
 		<event load="TALK_WITH_CREW_AI_SHIP" />
 	</choice>
 	<choice hidden="true" req="SHIPRADAR2">
-		<text>(Анализатор морфов) Поручить экипажу просканировать близлежащее пространство.</text>
+		<text>(Morph Analyzer) Instruct the crew to scan the surrounding area.</text>
 		<event load="NOTHING_SHIPRADAR2_RAND"/>
 	</choice>
 </event>
@@ -2464,79 +2464,79 @@ High Average =	140%
 <event name="TALK_WITH_CREW_ANAEROBIC">
 	<text>You decide to speak with a member of your crew while you wait for the FTL Drive to charge in order to jump to the next beacon.</text>
 	<choice hidden="true" req="HUMAN">
-		<text>(Human Crew Member) Talk to your Human.</text>
+		<text id="talk_to_human" />
 		<event load="NOTHING2_HUMAN"/>
 	</choice>
-	<choice hidden="true" req="CREW_ORDER_HUMAN"> <!-- 1.28 -->
+	<choice hidden="true" req="ORDER_HUMAN"> <!-- 1.28 -->
 		<text>(человек Ордена Crew Member) Talk to your человеком.</text>
 		<event load="NOTHING2_ORDER_HUMAN"/>
 	</choice>
 	<choice hidden="true" req="ENGI">
-		<text>(Engi Crew Member) Talk to your Engi.</text>
+		<text id="talk_to_engi" />
 		<event load="NOTHING2_ENGI"/>
 	</choice>
-	<choice hidden="true" req="CREW_MORPH"> <!-- 1.28 -->
-		<text>(морф Crew Member) Talk to your морфом.</text>
+	<choice hidden="true" req="MORPH"> <!-- 1.28 -->
+		<text id="talk_to_morph" />
 		<event load="NOTHING2_MORPH"/>
 	</choice>
 	<choice hidden="true" req="ENERGY">
-		<text>(Zoltan Crew Member) Talk to your Zoltan.</text>
+		<text id="talk_to_zoltan" />
 		<event load="NOTHING2_ENERGY"/>
 	</choice>
-	<choice hidden="true" req="CREW_ENERGYX"> <!-- 1.28 -->
-		<text>(золтонец Crew Member) Talk to your золтонцем.</text>
+	<choice hidden="true" req="ENERGYX"> <!-- 1.28 -->
+		<text id="talk_to_zolton" />
 		<event load="NOTHING2_ENERGYX"/>
 	</choice>
 	<choice hidden="true" req="MANTIS">
-		<text>(Mantis Crew Member) Talk to your Mantis.</text>
+		<text id="talk_to_mantis" />
 		<event load="NOTHING2_MANTIS"/>
 	</choice>
 	<choice hidden="true" req="SLUG_AND_ARMORED_SLUG"> <!-- 1.28 req was SLUG -->
-		<text>(Slug Crew Member) Talk to your Slug.</text>
+		<text id="talk_to_slug" />
 		<event load="NOTHING2_SLUG"/>
 	</choice>
 	<choice hidden="true" req="ROCK">
-		<text>(Rock Crew Member) Talk to your Rockman.</text>
+		<text id="talk_to_rock" />
 		<event load="NOTHING2_ROCK"/>
 	</choice>
-	<choice hidden="true" req="CREW_SLIG"> <!-- 1.28 -->
-		<text>(слёрм Crew Member) Поговорить со слёрмом.</text>
+	<choice hidden="true" req="SLIG"> <!-- 1.28 -->
+		<text id="talk_to_slig" />
 		<event load="NOTHING2_SLIG"/>
 	</choice>
-	<choice hidden="true" req="CREW_MAGMAN"> <!-- 1.28 -->
-		<text>(магмен Crew Member) Talk to your магменом.</text>
+	<choice hidden="true" req="MAGMAN"> <!-- 1.28 -->
+		<text id="talk_to_magman" />
 		<event load="NOTHING2_MAGMAN"/>
 	</choice>
-	<choice hidden="true" req="CREW_ORCHID"> <!-- 1.28 -->
-		<text>(орхид Crew Member) Talk to your орхидом.</text>
+	<choice hidden="true" req="ORCHID"> <!-- 1.28 -->
+		<text id="talk_to_orchid" />
 		<event load="NOTHING2_ORCHID"/>
 	</choice>
-	<choice hidden="true" req="CREW_SHELL"> <!-- 1.28 -->
-		<text>(броненосец Crew Member) Talk to your броненосцем.</text>
+	<choice hidden="true" req="SHELL"> <!-- 1.28 -->
+		<text id="talk_to_shell" />
 		<event load="NOTHING2_SHELL"/>
 	</choice>
 	<choice hidden="true" req="ANAEROBIC">
-		<text>(Lanius Crew Member) Talk to your Lanius.</text>
+		<text id="talk_to_lanius" />
 		<event load="NOTHING2_ANAEROBIC2"/>
 	</choice>
 	<choice hidden="true" req="CRYSTAL">
-		<text>(Crystal Crew Member) Talk to your Crystal.</text>
+		<text id="talk_to_crystal" />
 		<event load="NOTHING2_CRYSTAL"/>
 	</choice>
 	<choice hidden="true" req="GHOST">
-		<text>(Avatar Crew Member) Talk to your Avatar.</text>
+		<text id="talk_to_avatar" />
 		<event load="NOTHING2_GHOST"/>
 	</choice>
-	<choice hidden="true" req="CREW_MUSHROOM_F"><!-- 1.28 -->
-		<text>(молодой машрум Crew Member) Talk to your машрумом.</text>
+	<choice hidden="true" req="MUSHROOM_F"><!-- 1.28 -->
+		<text id="talk_to_mushroom_f" />
 		<event load="NOTHING2_MUSHROOM_F"/>
 	</choice>
-	<choice hidden="true" req="CREW_MUSHROOM_B"><!-- 1.28 -->
-		<text>(зрелый машрум Crew Member) Talk to your машрумом.</text>
+	<choice hidden="true" req="MUSHROOM_B"><!-- 1.28 -->
+		<text id="talk_to_mushroom_b" />
 		<event load="NOTHING2_MUSHROOM_B"/>
 	</choice>
-	<choice hidden="true" req="CREW_MUSHROOM"><!-- 1.28 -->
-		<text>(старый машрум Crew Member) Talk to your машрумом.</text>
+	<choice hidden="true" req="MUSHROOM"><!-- 1.28 -->
+		<text id="talk_to_mushroom" />
 		<event load="NOTHING2_MUSHROOM"/>
 	</choice>
 	<choice req="CREW_ALL" lvl="0" max_lvl="0" hidden="true" blue="false"> <!-- 1.24.1 -->
@@ -2552,79 +2552,79 @@ High Average =	140%
 <event name="TALK_WITH_CREW_CRYSTAL">
 	<text>You decide to speak with a member of your crew while you wait for the FTL Drive to charge in order to jump to the next beacon.</text>
 	<choice hidden="true" req="HUMAN">
-		<text>(Human Crew Member) Talk to your Human.</text>
+		<text id="talk_to_human" />
 		<event load="NOTHING2_HUMAN"/>
 	</choice>
-	<choice hidden="true" req="CREW_ORDER_HUMAN"> <!-- 1.28 -->
-		<text>(человек Ордена Crew Member) Talk to your человеком.</text>
+	<choice hidden="true" req="ORDER_HUMAN"> <!-- 1.28 -->
+		<text>(Order Human Crew Member) Talk to your человеком.</text>
 		<event load="NOTHING2_ORDER_HUMAN"/>
 	</choice>
 	<choice hidden="true" req="ENGI">
-		<text>(Engi Crew Member) Talk to your Engi.</text>
+		<text id="talk_to_engi" />
 		<event load="NOTHING2_ENGI"/>
 	</choice>		
-	<choice hidden="true" req="CREW_MORPH"> <!-- 1.28 -->
-		<text>(морф Crew Member) Talk to your морфом.</text>
+	<choice hidden="true" req="MORPH"> <!-- 1.28 -->
+		<text id="talk_to_morph" />
 		<event load="NOTHING2_MORPH"/>
 	</choice>
 	<choice hidden="true" req="ENERGY">
-		<text>(Zoltan Crew Member) Talk to your Zoltan.</text>
+		<text id="talk_to_zoltan" />
 		<event load="NOTHING2_ENERGY"/>
 	</choice>
-	<choice hidden="true" req="CREW_ENERGYX"> <!-- 1.28 -->
-		<text>(золтонец Crew Member) Talk to your золтонцем.</text>
+	<choice hidden="true" req="ENERGYX"> <!-- 1.28 -->
+		<text id="talk_to_zolton" />
 		<event load="NOTHING2_ENERGYX"/>
 	</choice>
 	<choice hidden="true" req="MANTIS">
-		<text>(Mantis Crew Member) Talk to your Mantis.</text>
+		<text id="talk_to_mantis" />
 		<event load="NOTHING2_MANTIS"/>
 	</choice>
 	<choice hidden="true" req="SLUG_AND_ARMORED_SLUG"> <!-- 1.28 req was SLUG -->
-		<text>(Slug Crew Member) Talk to your Slug.</text>
+		<text id="talk_to_slug" />
 		<event load="NOTHING2_SLUG"/>
 	</choice>
 	<choice hidden="true" req="ROCK">
-		<text>(Rock Crew Member) Talk to your Rockman.</text>
+		<text id="talk_to_rock" />
 		<event load="NOTHING2_ROCK"/>
 	</choice>
-	<choice hidden="true" req="CREW_SLIG"> <!-- 1.28 -->
-		<text>(слёрм Crew Member) Поговорить со слёрмом.</text>
+	<choice hidden="true" req="SLIG"> <!-- 1.28 -->
+		<text id="talk_to_slig" />
 		<event load="NOTHING2_SLIG"/>
 	</choice>
-	<choice hidden="true" req="CREW_MAGMAN"> <!-- 1.28 -->
-		<text>(магмен Crew Member) Talk to your магменом.</text>
+	<choice hidden="true" req="MAGMAN"> <!-- 1.28 -->
+		<text id="talk_to_magman" />
 		<event load="NOTHING2_MAGMAN"/>
 	</choice>
-	<choice hidden="true" req="CREW_ORCHID"> <!-- 1.28 -->
-		<text>(орхид Crew Member) Talk to your орхидом.</text>
+	<choice hidden="true" req="ORCHID"> <!-- 1.28 -->
+		<text id="talk_to_orchid" />
 		<event load="NOTHING2_ORCHID"/>
 	</choice>
-	<choice hidden="true" req="CREW_SHELL"> <!-- 1.28 -->
-		<text>(броненосец Crew Member) Talk to your броненосцем.</text>
+	<choice hidden="true" req="SHELL"> <!-- 1.28 -->
+		<text id="talk_to_shell" />
 		<event load="NOTHING2_SHELL"/>
 	</choice>
 	<choice hidden="true" req="ANAEROBIC">
-		<text>(Lanius Crew Member) Talk to your Lanius.</text>
+		<text id="talk_to_lanius" />
 		<event load="NOTHING2_ANAEROBIC"/>
 	</choice>
 	<choice hidden="true" req="CRYSTAL">
-		<text>(Crystal Crew Member) Talk to your Crystal.</text>
+		<text id="talk_to_crystal" />
 		<event load="NOTHING2_CRYSTAL2"/>
 	</choice>
 	<choice hidden="true" req="GHOST">
-		<text>(Avatar Crew Member) Talk to your Avatar.</text>
+		<text id="talk_to_avatar" />
 		<event load="NOTHING2_GHOST"/>
 	</choice>
-	<choice hidden="true" req="CREW_MUSHROOM_F"><!-- 1.28 -->
-		<text>(молодой машрум Crew Member) Talk to your машрумом.</text>
+	<choice hidden="true" req="MUSHROOM_F"><!-- 1.28 -->
+		<text id="talk_to_mushroom_f" />
 		<event load="NOTHING2_MUSHROOM_F"/>
 	</choice>
-	<choice hidden="true" req="CREW_MUSHROOM_B"><!-- 1.28 -->
-		<text>(зрелый машрум Crew Member) Talk to your машрумом.</text>
+	<choice hidden="true" req="MUSHROOM_B"><!-- 1.28 -->
+		<text id="talk_to_mushroom_b" />
 		<event load="NOTHING2_MUSHROOM_B"/>
 	</choice>
-	<choice hidden="true" req="CREW_MUSHROOM"><!-- 1.28 -->
-		<text>(старый машрум Crew Member) Talk to your машрумом.</text>
+	<choice hidden="true" req="MUSHROOM"><!-- 1.28 -->
+		<text id="talk_to_mushroom" />
 		<event load="NOTHING2_MUSHROOM"/>
 	</choice>
 	<choice req="CREW_ALL" lvl="0" max_lvl="0" hidden="true" blue="false"> <!-- 1.24.1 -->
@@ -2640,79 +2640,79 @@ High Average =	140%
 <event name="TALK_WITH_CREW_GHOST">
 	<text>You decide to speak with a member of your crew while you wait for the FTL Drive to charge in order to jump to the next beacon.</text>
 	<choice hidden="true" req="HUMAN">
-		<text>(Human Crew Member) Talk to your Human.</text>
+		<text id="talk_to_human" />
 		<event load="NOTHING2_HUMAN"/>
 	</choice>
-	<choice hidden="true" req="CREW_ORDER_HUMAN"> <!-- 1.28 -->
-		<text>(человек Ордена Crew Member) Talk to your человеком.</text>
+	<choice hidden="true" req="ORDER_HUMAN"> <!-- 1.28 -->
+		<text>(Order Human Crew Member) Talk to your человеком.</text>
 		<event load="NOTHING2_ORDER_HUMAN"/>
 	</choice>
 	<choice hidden="true" req="ENGI">
-		<text>(Engi Crew Member) Talk to your Engi.</text>
+		<text id="talk_to_engi" />
 		<event load="NOTHING2_ENGI"/>
 	</choice>		
-	<choice hidden="true" req="CREW_MORPH"> <!-- 1.28 -->
-		<text>(морф Crew Member) Talk to your морфом.</text>
+	<choice hidden="true" req="MORPH"> <!-- 1.28 -->
+		<text id="talk_to_morph" />
 		<event load="NOTHING2_MORPH"/>
 	</choice>
 	<choice hidden="true" req="ENERGY">
-		<text>(Zoltan Crew Member) Talk to your Zoltan.</text>
+		<text id="talk_to_zoltan" />
 		<event load="NOTHING2_ENERGY"/>
 	</choice>
-	<choice hidden="true" req="CREW_ENERGYX"> <!-- 1.28 -->
-		<text>(золтонец Crew Member) Talk to your золтонцем.</text>
+	<choice hidden="true" req="ENERGYX"> <!-- 1.28 -->
+		<text id="talk_to_zolton" />
 		<event load="NOTHING2_ENERGYX"/>
 	</choice>
 	<choice hidden="true" req="MANTIS">
-		<text>(Mantis Crew Member) Talk to your Mantis.</text>
+		<text id="talk_to_mantis" />
 		<event load="NOTHING2_MANTIS"/>
 	</choice>
 	<choice hidden="true" req="SLUG_AND_ARMORED_SLUG"> <!-- 1.28 req was SLUG -->
-		<text>(Slug Crew Member) Talk to your Slug.</text>
+		<text id="talk_to_slug" />
 		<event load="NOTHING2_SLUG"/>
 	</choice>
 	<choice hidden="true" req="ROCK">
-		<text>(Rock Crew Member) Talk to your Rockman.</text>
+		<text id="talk_to_rock" />
 		<event load="NOTHING2_ROCK"/>
 	</choice>
-	<choice hidden="true" req="CREW_SLIG"> <!-- 1.28 -->
-		<text>(слёрм Crew Member) Поговорить со слёрмом.</text>
+	<choice hidden="true" req="SLIG"> <!-- 1.28 -->
+		<text id="talk_to_slig" />
 		<event load="NOTHING2_SLIG"/>
 	</choice>
-	<choice hidden="true" req="CREW_MAGMAN"> <!-- 1.28 -->
-		<text>(магмен Crew Member) Talk to your магменом.</text>
+	<choice hidden="true" req="MAGMAN"> <!-- 1.28 -->
+		<text id="talk_to_magman" />
 		<event load="NOTHING2_MAGMAN"/>
 	</choice>
-	<choice hidden="true" req="CREW_ORCHID"> <!-- 1.28 -->
-		<text>(орхид Crew Member) Talk to your орхидом.</text>
+	<choice hidden="true" req="ORCHID"> <!-- 1.28 -->
+		<text id="talk_to_orchid" />
 		<event load="NOTHING2_ORCHID"/>
 	</choice>
-	<choice hidden="true" req="CREW_SHELL"> <!-- 1.28 -->
-		<text>(броненосец Crew Member) Talk to your броненосцем.</text>
+	<choice hidden="true" req="SHELL"> <!-- 1.28 -->
+		<text id="talk_to_shell" />
 		<event load="NOTHING2_SHELL"/>
 	</choice>
 	<choice hidden="true" req="ANAEROBIC">
-		<text>(Lanius Crew Member) Talk to your Lanius.</text>
+		<text id="talk_to_lanius" />
 		<event load="NOTHING2_ANAEROBIC"/>
 	</choice>
 	<choice hidden="true" req="CRYSTAL">
-		<text>(Crystal Crew Member) Talk to your Crystal.</text>
+		<text id="talk_to_crystal" />
 		<event load="NOTHING2_CRYSTAL"/>
 	</choice>
 	<choice hidden="true" req="GHOST">
-		<text>(Avatar Crew Member) Talk to your Avatar.</text>
+		<text id="talk_to_avatar" />
 		<event load="NOTHING2_GHOST2"/>
 	</choice>
-	<choice hidden="true" req="CREW_MUSHROOM_F"><!-- 1.28 -->
-		<text>(молодой машрум Crew Member) Talk to your машрумом.</text>
+	<choice hidden="true" req="MUSHROOM_F"><!-- 1.28 -->
+		<text id="talk_to_mushroom_f" />
 		<event load="NOTHING2_MUSHROOM_F"/>
 	</choice>
-	<choice hidden="true" req="CREW_MUSHROOM_B"><!-- 1.28 -->
-		<text>(зрелый машрум Crew Member) Talk to your машрумом.</text>
+	<choice hidden="true" req="MUSHROOM_B"><!-- 1.28 -->
+		<text id="talk_to_mushroom_b" />
 		<event load="NOTHING2_MUSHROOM_B"/>
 	</choice>
-	<choice hidden="true" req="CREW_MUSHROOM"><!-- 1.28 -->
-		<text>(старый машрум Crew Member) Talk to your машрумом.</text>
+	<choice hidden="true" req="MUSHROOM"><!-- 1.28 -->
+		<text id="talk_to_mushroom" />
 		<event load="NOTHING2_MUSHROOM"/>
 	</choice>
 	<choice req="CREW_ALL" lvl="0" max_lvl="0" hidden="true" blue="false"> <!-- 1.24.1 -->
@@ -10005,7 +10005,7 @@ High Average =	140%
 	</event>
 	<event><!-- 1.25 -->
 		<text>The marauders carried away almost everything off the cruiser. However, you still manage to find some rubbish in the cruiser.</text>
-		<weapon name="DRONES_USELESS"/>
+		<drone name="DRONES_USELESS"/>
 		<autoReward level="LOW">scrap_only</autoReward>
 	</event>
 </eventList>
@@ -10057,7 +10057,7 @@ High Average =	140%
 	</event>
 	<event><!-- 1.25 -->
 		<text>The marauders carried away almost everything off the cruiser. However, you still manage to find some rubbish in the cruiser.</text>
-		<weapon name="DRONES_USELESS"/>
+		<drone name="DRONES_USELESS"/>
 		<autoReward level="LOW">scrap_only</autoReward>
 	</event>
 </eventList>
@@ -10086,7 +10086,7 @@ High Average =	140%
 	</event>
 	<event><!-- 1.25 -->
 		<text>The marauders carried away almost everything off the cruiser. However, you still manage to find some rubbish in the cruiser.</text>
-		<weapon name="DRONES_USELESS"/>
+		<drone name="DRONES_USELESS"/>
 		<autoReward level="LOW">scrap_only</autoReward>
 	</event>
 </eventList>
@@ -10190,7 +10190,7 @@ High Average =	140%
 	</event>
 	<event><!-- 1.25 -->
 		<text>The marauders carried away almost everything off the cruiser. However, you still manage to find some rubbish in the cruiser.</text>
-		<weapon name="DRONES_USELESS"/>
+		<drone name="DRONES_USELESS"/>
 		<autoReward level="LOW">scrap_only</autoReward>
 	</event>
 </eventList>
@@ -10232,7 +10232,7 @@ High Average =	140%
 	</event>
 	<event><!-- 1.25 -->
 		<text>The marauders carried away almost everything off the cruiser. However, you still manage to find some rubbish in the cruiser.</text>
-		<weapon name="DRONES_USELESS"/>
+		<drone name="DRONES_USELESS"/>
 		<autoReward level="LOW">scrap_only</autoReward>
 	</event>
 </eventList>
@@ -17609,7 +17609,7 @@ High Average =	140%
 		<event load="RADAR_REBEL_T_HUMAN"/>
 	</choice>
 	<choice hidden="true" req="order_human"> <!-- 1.28 -->
-		<text>(человек Ордена Crew Member) Send your человека.</text>
+		<text>(Order Human Crew Member) Send your человека.</text>
 		<event load="RADAR_REBEL_T_ORDER_HUMAN"/>
 	</choice>
 	<choice hidden="true" req="engi">
@@ -19542,7 +19542,7 @@ High Average =	140%
 				<choice hidden="true" req="order_human"> <!-- 1.28 -->
 					<text>(Order Human Crew Member) Send your Order Human.</text>
 					<event>
-						<text>Флот задержан боевой стычкой с захваченным вами кораблём.</text>
+						<text>The fleet was detained by a combat skirmish with the ship you captured.</text>
 						<modifyPursuit amount="-4"/>
 						<crewMember amount="-1" class="order_human"/>
 					</event>
@@ -19556,9 +19556,9 @@ High Average =	140%
 					</event>
 				</choice>
 				<choice hidden="true" req="morph"><!-- 1.28 -->
-					<text>(Член экипажа морф) Отправить морфа.</text>
+					<text>(Morph Crew Member) Отправить морфа.</text>
 					<event>
-						<text>Флот задержан боевой стычкой с захваченным вами кораблём.</text>
+						<text>The fleet was detained by a combat skirmish with the ship you captured.</text>
 						<modifyPursuit amount="-4"/>
 						<crewMember amount="-1" class="morph"/>
 					</event>
@@ -19572,9 +19572,9 @@ High Average =	140%
 					</event>
 				</choice>
 				<choice hidden="true" req="energyx"><!-- 1.28 -->
-					<text>(Член экипажа золтонец) Отправить золтонца.</text>
+					<text>(Zolton Crew Member) Отправить золтонца.</text>
 					<event>
-						<text>Флот задержан боевой стычкой с захваченным вами кораблём.</text>
+						<text>The fleet was detained by a combat skirmish with the ship you captured.</text>
 						<modifyPursuit amount="-4"/>
 						<crewMember amount="-1" class="energyx"/>
 					</event>
@@ -19590,55 +19590,55 @@ High Average =	140%
 				<choice hidden="true" req="magman"> <!-- 1.28 -->
 					<text>(Член экипажа магмен) Отправить магмена.</text>
 					<event>
-						<text>Флот задержан боевой стычкой с захваченным вами кораблём.</text>
+						<text>The fleet was detained by a combat skirmish with the ship you captured.</text>
 						<modifyPursuit amount="-4"/>
 						<crewMember amount="-1" class="magman"/>
 					</event>
 				</choice>
 				<choice hidden="true" req="mushroom_f"> <!-- 1.28 -->
-					<text>(Член экипажа молодой машрум) Отправить машрума.</text>
+					<text>(Young Mushroom Crew Member) Отправить машрума.</text>
 					<event>
-						<text>Флот задержан боевой стычкой с захваченным вами кораблём.</text>
+						<text>The fleet was detained by a combat skirmish with the ship you captured.</text>
 						<modifyPursuit amount="-4"/>
 						<crewMember amount="-1" class="mushroom_f"/>
 					</event>
 				</choice>
 				<choice hidden="true" req="mushroom_b"> <!-- 1.28 -->
-					<text>(Член экипажа зрелый машрум) Отправить машрума.</text>
+					<text>(Mature Mushroom Crew Member) Отправить машрума.</text>
 					<event>
-						<text>Флот задержан боевой стычкой с захваченным вами кораблём.</text>
+						<text>The fleet was detained by a combat skirmish with the ship you captured.</text>
 						<modifyPursuit amount="-4"/>
 						<crewMember amount="-1" class="mushroom_b"/>
 					</event>
 				</choice>
 				<choice hidden="true" req="mushroom"> <!-- 1.28 -->
-					<text>(Член экипажа старый машрум) Отправить машрума.</text>
+					<text>(Old Mushroom Crew Member) Отправить машрума.</text>
 					<event>
-						<text>Флот задержан боевой стычкой с захваченным вами кораблём.</text>
+						<text>The fleet was detained by a combat skirmish with the ship you captured.</text>
 						<modifyPursuit amount="-4"/>
 						<crewMember amount="-1" class="mushroom"/>
 					</event>
 				</choice>
 				<choice hidden="true" req="orchid"> <!-- 1.28 -->
-					<text>(Член экипажа орхид) Отправить орхида.</text>
+					<text>(Orchid Crew Member) Send your Orchid.</text>
 					<event>
-						<text>Флот задержан боевой стычкой с захваченным вами кораблём.</text>
+						<text>The fleet was detained by a combat skirmish with the ship you captured.</text>
 						<modifyPursuit amount="-4"/>
 						<crewMember amount="-1" class="orchid"/>
 					</event>
 				</choice>
 				<choice hidden="true" req="shell"> <!-- 1.28 -->
-					<text>(Член экипажа броненосец) Отправить броненосца.</text>
+					<text>(Shell Crew Member) Send your Shell.</text>
 					<event>
-						<text>Флот задержан боевой стычкой с захваченным вами кораблём.</text>
+						<text>The fleet was detained by a combat skirmish with the ship you captured.</text>
 						<modifyPursuit amount="-4"/>
 						<crewMember amount="-1" class="shell"/>
 					</event>
 				</choice>
 				<choice hidden="true" req="slug_armored"> <!-- 1.28 -->
-					<text>(Член экипажа слаг в панцире) Отправить слага в панцире.</text>
+					<text>(Armored Slug Crew Member) Send your Armored Slug.</text>
 					<event>
-						<text>Флот задержан боевой стычкой с захваченным вами кораблём.</text>
+						<text>The fleet was detained by a combat skirmish with the ship you captured.</text>
 						<modifyPursuit amount="-4"/>
 						<crewMember amount="-1" class="slug_armored"/>
 					</event>
@@ -19684,9 +19684,9 @@ High Average =	140%
 					</event>
 				</choice>
 				<choice hidden="true" req="slig"> <!-- 1.28 -->
-					<text>(Член экипажа слёрм) Отправить слёрма.</text>
+					<text>(Slig Crew Member) Send your Slig.</text>
 					<event>
-						<text>Флот задержан боевой стычкой с захваченным вами кораблём.</text>
+						<text>The fleet was detained by a combat skirmish with the ship you captured.</text>
 						<modifyPursuit amount="-4"/>
 						<crewMember amount="-1" class="slig"/>
 					</event>
@@ -19717,9 +19717,9 @@ High Average =	140%
 					</event>
 				</choice>
 				<choice hidden="true" req="order_human"> <!-- 1.28 -->
-					<text>(Член экипажа человек Ордена) Отправить человека.</text>
+					<text>(Order Human Crew Member) Send your Order Human.</text>
 					<event>
-						<text>Флот задержан боевой стычкой с захваченным вами кораблём.</text>
+						<text>The fleet was detained by a combat skirmish with the ship you captured.</text>
 						<modifyPursuit amount="-4"/>
 						<crewMember amount="-1" class="order_human"/>
 					</event>
@@ -19733,9 +19733,9 @@ High Average =	140%
 					</event>
 				</choice>
 				<choice hidden="true" req="morph"><!-- 1.28 -->
-					<text>(Член экипажа морф) Отправить морфа.</text>
+					<text>(Morph Crew Member) Отправить морфа.</text>
 					<event>
-						<text>Флот задержан боевой стычкой с захваченным вами кораблём.</text>
+						<text>The fleet was detained by a combat skirmish with the ship you captured.</text>
 						<modifyPursuit amount="-4"/>
 						<crewMember amount="-1" class="morph"/>
 					</event>
@@ -19749,9 +19749,9 @@ High Average =	140%
 					</event>
 				</choice>
 				<choice hidden="true" req="energyx"><!-- 1.28 -->
-					<text>(Член экипажа золтонец) Отправить золтонца.</text>
+					<text>(Zolton Crew Member) Отправить золтонца.</text>
 					<event>
-						<text>Флот задержан боевой стычкой с захваченным вами кораблём.</text>
+						<text>The fleet was detained by a combat skirmish with the ship you captured.</text>
 						<modifyPursuit amount="-4"/>
 						<crewMember amount="-1" class="energyx"/>
 					</event>
@@ -19767,55 +19767,55 @@ High Average =	140%
 				<choice hidden="true" req="magman"> <!-- 1.28 -->
 					<text>(Член экипажа магмен) Отправить магмена.</text>
 					<event>
-						<text>Флот задержан боевой стычкой с захваченным вами кораблём.</text>
+						<text>The fleet was detained by a combat skirmish with the ship you captured.</text>
 						<modifyPursuit amount="-4"/>
 						<crewMember amount="-1" class="magman"/>
 					</event>
 				</choice>
 				<choice hidden="true" req="mushroom_f"> <!-- 1.28 -->
-					<text>(Член экипажа молодой машрум) Отправить машрума.</text>
+					<text>(Young Mushroom Crew Member) Отправить машрума.</text>
 					<event>
-						<text>Флот задержан боевой стычкой с захваченным вами кораблём.</text>
+						<text>The fleet was detained by a combat skirmish with the ship you captured.</text>
 						<modifyPursuit amount="-4"/>
 						<crewMember amount="-1" class="mushroom_f"/>
 					</event>
 				</choice>
 				<choice hidden="true" req="mushroom_b"> <!-- 1.28 -->
-					<text>(Член экипажа зрелый машрум) Отправить машрума.</text>
+					<text>(Mature Mushroom Crew Member) Отправить машрума.</text>
 					<event>
-						<text>Флот задержан боевой стычкой с захваченным вами кораблём.</text>
+						<text>The fleet was detained by a combat skirmish with the ship you captured.</text>
 						<modifyPursuit amount="-4"/>
 						<crewMember amount="-1" class="mushroom_b"/>
 					</event>
 				</choice>
 				<choice hidden="true" req="mushroom"> <!-- 1.28 -->
-					<text>(Член экипажа старый машрум) Отправить машрума.</text>
+					<text>(Old Mushroom Crew Member) Отправить машрума.</text>
 					<event>
-						<text>Флот задержан боевой стычкой с захваченным вами кораблём.</text>
+						<text>The fleet was detained by a combat skirmish with the ship you captured.</text>
 						<modifyPursuit amount="-4"/>
 						<crewMember amount="-1" class="mushroom"/>
 					</event>
 				</choice>
 				<choice hidden="true" req="orchid"> <!-- 1.28 -->
-					<text>(Член экипажа орхид) Отправить орхида.</text>
+					<text>(Orchid Crew Member) Send your Orchid.</text>
 					<event>
-						<text>Флот задержан боевой стычкой с захваченным вами кораблём.</text>
+						<text>The fleet was detained by a combat skirmish with the ship you captured.</text>
 						<modifyPursuit amount="-4"/>
 						<crewMember amount="-1" class="orchid"/>
 					</event>
 				</choice>
 				<choice hidden="true" req="shell"> <!-- 1.28 -->
-					<text>(Член экипажа броненосец) Отправить броненосца.</text>
+					<text>(Shell Crew Member) Send your Shell.</text>
 					<event>
-						<text>Флот задержан боевой стычкой с захваченным вами кораблём.</text>
+						<text>The fleet was detained by a combat skirmish with the ship you captured.</text>
 						<modifyPursuit amount="-4"/>
 						<crewMember amount="-1" class="shell"/>
 					</event>
 				</choice>
 				<choice hidden="true" req="slug_armored"> <!-- 1.28 -->
-					<text>(Член экипажа слаг в панцире) Отправить слага в панцире.</text>
+					<text>(Armored Slug Crew Member) Send your Armored Slug.</text>
 					<event>
-						<text>Флот задержан боевой стычкой с захваченным вами кораблём.</text>
+						<text>The fleet was detained by a combat skirmish with the ship you captured.</text>
 						<modifyPursuit amount="-4"/>
 						<crewMember amount="-1" class="slug_armored"/>
 					</event>
@@ -19861,9 +19861,9 @@ High Average =	140%
 					</event>
 				</choice>
 				<choice hidden="true" req="slig"> <!-- 1.28 -->
-					<text>(Член экипажа слёрм) Отправить слёрма.</text>
+					<text>(Slig Crew Member) Send your Slig.</text>
 					<event>
-						<text>Флот задержан боевой стычкой с захваченным вами кораблём.</text>
+						<text>The fleet was detained by a combat skirmish with the ship you captured.</text>
 						<modifyPursuit amount="-4"/>
 						<crewMember amount="-1" class="slig"/>
 					</event>
@@ -19913,9 +19913,9 @@ High Average =	140%
 					</event>
 				</choice>
 				<choice hidden="true" req="order_human"> <!-- 1.28 -->
-					<text>(Член экипажа человек Ордена) Отправить человека.</text>
+					<text>(Order Human Crew Member) Send your Order Human.</text>
 					<event>
-						<text>Флот задержан боевой стычкой с захваченным вами кораблём.</text>
+						<text>The fleet was detained by a combat skirmish with the ship you captured.</text>
 						<modifyPursuit amount="-4"/>
 						<crewMember amount="-1" class="order_human"/>
 					</event>
@@ -19929,9 +19929,9 @@ High Average =	140%
 					</event>
 				</choice>
 				<choice hidden="true" req="morph"><!-- 1.28 -->
-					<text>(Член экипажа морф) Отправить морфа.</text>
+					<text>(Morph Crew Member) Отправить морфа.</text>
 					<event>
-						<text>Флот задержан боевой стычкой с захваченным вами кораблём.</text>
+						<text>The fleet was detained by a combat skirmish with the ship you captured.</text>
 						<modifyPursuit amount="-4"/>
 						<crewMember amount="-1" class="morph"/>
 					</event>
@@ -19945,9 +19945,9 @@ High Average =	140%
 					</event>
 				</choice>
 				<choice hidden="true" req="energyx"><!-- 1.28 -->
-					<text>(Член экипажа золтонец) Отправить золтонца.</text>
+					<text>(Zolton Crew Member) Отправить золтонца.</text>
 					<event>
-						<text>Флот задержан боевой стычкой с захваченным вами кораблём.</text>
+						<text>The fleet was detained by a combat skirmish with the ship you captured.</text>
 						<modifyPursuit amount="-4"/>
 						<crewMember amount="-1" class="energyx"/>
 					</event>
@@ -19963,55 +19963,55 @@ High Average =	140%
 				<choice hidden="true" req="magman"> <!-- 1.28 -->
 					<text>(Член экипажа магмен) Отправить магмена.</text>
 					<event>
-						<text>Флот задержан боевой стычкой с захваченным вами кораблём.</text>
+						<text>The fleet was detained by a combat skirmish with the ship you captured.</text>
 						<modifyPursuit amount="-4"/>
 						<crewMember amount="-1" class="magman"/>
 					</event>
 				</choice>
 				<choice hidden="true" req="mushroom_f"> <!-- 1.28 -->
-					<text>(Член экипажа молодой машрум) Отправить машрума.</text>
+					<text>(Young Mushroom Crew Member) Отправить машрума.</text>
 					<event>
-						<text>Флот задержан боевой стычкой с захваченным вами кораблём.</text>
+						<text>The fleet was detained by a combat skirmish with the ship you captured.</text>
 						<modifyPursuit amount="-4"/>
 						<crewMember amount="-1" class="mushroom_f"/>
 					</event>
 				</choice>
 				<choice hidden="true" req="mushroom_b"> <!-- 1.28 -->
-					<text>(Член экипажа зрелый машрум) Отправить машрума.</text>
+					<text>(Mature Mushroom Crew Member) Отправить машрума.</text>
 					<event>
-						<text>Флот задержан боевой стычкой с захваченным вами кораблём.</text>
+						<text>The fleet was detained by a combat skirmish with the ship you captured.</text>
 						<modifyPursuit amount="-4"/>
 						<crewMember amount="-1" class="mushroom_b"/>
 					</event>
 				</choice>
 				<choice hidden="true" req="mushroom"> <!-- 1.28 -->
-					<text>(Член экипажа старый машрум) Отправить машрума.</text>
+					<text>(Old Mushroom Crew Member) Отправить машрума.</text>
 					<event>
-						<text>Флот задержан боевой стычкой с захваченным вами кораблём.</text>
+						<text>The fleet was detained by a combat skirmish with the ship you captured.</text>
 						<modifyPursuit amount="-4"/>
 						<crewMember amount="-1" class="mushroom"/>
 					</event>
 				</choice>
 				<choice hidden="true" req="orchid"> <!-- 1.28 -->
-					<text>(Член экипажа орхид) Отправить орхида.</text>
+					<text>(Orchid Crew Member) Send your Orchid.</text>
 					<event>
-						<text>Флот задержан боевой стычкой с захваченным вами кораблём.</text>
+						<text>The fleet was detained by a combat skirmish with the ship you captured.</text>
 						<modifyPursuit amount="-4"/>
 						<crewMember amount="-1" class="orchid"/>
 					</event>
 				</choice>
 				<choice hidden="true" req="shell"> <!-- 1.28 -->
-					<text>(Член экипажа броненосец) Отправить броненосца.</text>
+					<text>(Shell Crew Member) Send your Shell.</text>
 					<event>
-						<text>Флот задержан боевой стычкой с захваченным вами кораблём.</text>
+						<text>The fleet was detained by a combat skirmish with the ship you captured.</text>
 						<modifyPursuit amount="-4"/>
 						<crewMember amount="-1" class="shell"/>
 					</event>
 				</choice>
 				<choice hidden="true" req="slug_armored"> <!-- 1.28 -->
-					<text>(Член экипажа слаг в панцире) Отправить слага в панцире.</text>
+					<text>(Armored Slug Crew Member) Send your Armored Slug.</text>
 					<event>
-						<text>Флот задержан боевой стычкой с захваченным вами кораблём.</text>
+						<text>The fleet was detained by a combat skirmish with the ship you captured.</text>
 						<modifyPursuit amount="-4"/>
 						<crewMember amount="-1" class="slug_armored"/>
 					</event>
@@ -20057,9 +20057,9 @@ High Average =	140%
 					</event>
 				</choice>
 				<choice hidden="true" req="slig"> <!-- 1.28 -->
-					<text>(Член экипажа слёрм) Отправить слёрма.</text>
+					<text>(Slig Crew Member) Send your Slig.</text>
 					<event>
-						<text>Флот задержан боевой стычкой с захваченным вами кораблём.</text>
+						<text>The fleet was detained by a combat skirmish with the ship you captured.</text>
 						<modifyPursuit amount="-4"/>
 						<crewMember amount="-1" class="slig"/>
 					</event>
@@ -20092,7 +20092,7 @@ High Average =	140%
 				<choice hidden="true" req="order_human"> <!-- 1.28 -->
 					<text>(Член экипажа человек Ордена) Отправить человека.</text>
 					<event>
-						<text>Флот задержан боевой стычкой с захваченным вами кораблём.</text>
+						<text>The fleet was detained by a combat skirmish with the ship you captured.</text>
 						<modifyPursuit amount="-4"/>
 						<crewMember amount="-1" class="order_human"/>
 					</event>
@@ -20106,9 +20106,9 @@ High Average =	140%
 					</event>
 				</choice>
 				<choice hidden="true" req="morph"><!-- 1.28 -->
-					<text>(Член экипажа морф) Отправить морфа.</text>
+					<text>(Morph Crew Member) Отправить морфа.</text>
 					<event>
-						<text>Флот задержан боевой стычкой с захваченным вами кораблём.</text>
+						<text>The fleet was detained by a combat skirmish with the ship you captured.</text>
 						<modifyPursuit amount="-4"/>
 						<crewMember amount="-1" class="morph"/>
 					</event>
@@ -20122,9 +20122,9 @@ High Average =	140%
 					</event>
 				</choice>
 				<choice hidden="true" req="energyx"><!-- 1.28 -->
-					<text>(Член экипажа золтонец) Отправить золтонца.</text>
+					<text>(Zolton Crew Member) Отправить золтонца.</text>
 					<event>
-						<text>Флот задержан боевой стычкой с захваченным вами кораблём.</text>
+						<text>The fleet was detained by a combat skirmish with the ship you captured.</text>
 						<modifyPursuit amount="-4"/>
 						<crewMember amount="-1" class="energyx"/>
 					</event>
@@ -20140,55 +20140,55 @@ High Average =	140%
 				<choice hidden="true" req="magman"> <!-- 1.28 -->
 					<text>(Член экипажа магмен) Отправить магмена.</text>
 					<event>
-						<text>Флот задержан боевой стычкой с захваченным вами кораблём.</text>
+						<text>The fleet was detained by a combat skirmish with the ship you captured.</text>
 						<modifyPursuit amount="-4"/>
 						<crewMember amount="-1" class="magman"/>
 					</event>
 				</choice>
 				<choice hidden="true" req="mushroom_f"> <!-- 1.28 -->
-					<text>(Член экипажа молодой машрум) Отправить машрума.</text>
+					<text>(Young Mushroom Crew Member) Отправить машрума.</text>
 					<event>
-						<text>Флот задержан боевой стычкой с захваченным вами кораблём.</text>
+						<text>The fleet was detained by a combat skirmish with the ship you captured.</text>
 						<modifyPursuit amount="-4"/>
 						<crewMember amount="-1" class="mushroom_f"/>
 					</event>
 				</choice>
 				<choice hidden="true" req="mushroom_b"> <!-- 1.28 -->
-					<text>(Член экипажа зрелый машрум) Отправить машрума.</text>
+					<text>(Mature Mushroom Crew Member) Отправить машрума.</text>
 					<event>
-						<text>Флот задержан боевой стычкой с захваченным вами кораблём.</text>
+						<text>The fleet was detained by a combat skirmish with the ship you captured.</text>
 						<modifyPursuit amount="-4"/>
 						<crewMember amount="-1" class="mushroom_b"/>
 					</event>
 				</choice>
 				<choice hidden="true" req="mushroom"> <!-- 1.28 -->
-					<text>(Член экипажа старый машрум) Отправить машрума.</text>
+					<text>(Old Mushroom Crew Member) Отправить машрума.</text>
 					<event>
-						<text>Флот задержан боевой стычкой с захваченным вами кораблём.</text>
+						<text>The fleet was detained by a combat skirmish with the ship you captured.</text>
 						<modifyPursuit amount="-4"/>
 						<crewMember amount="-1" class="mushroom"/>
 					</event>
 				</choice>
 				<choice hidden="true" req="orchid"> <!-- 1.28 -->
-					<text>(Член экипажа орхид) Отправить орхида.</text>
+					<text>(Orchid Crew Member) Send your Orchid.</text>
 					<event>
-						<text>Флот задержан боевой стычкой с захваченным вами кораблём.</text>
+						<text>The fleet was detained by a combat skirmish with the ship you captured.</text>
 						<modifyPursuit amount="-4"/>
 						<crewMember amount="-1" class="orchid"/>
 					</event>
 				</choice>
 				<choice hidden="true" req="shell"> <!-- 1.28 -->
-					<text>(Член экипажа броненосец) Отправить броненосца.</text>
+					<text>(Shell Crew Member) Send your Shell.</text>
 					<event>
-						<text>Флот задержан боевой стычкой с захваченным вами кораблём.</text>
+						<text>The fleet was detained by a combat skirmish with the ship you captured.</text>
 						<modifyPursuit amount="-4"/>
 						<crewMember amount="-1" class="shell"/>
 					</event>
 				</choice>
 				<choice hidden="true" req="slug_armored"> <!-- 1.28 -->
-					<text>(Член экипажа слаг в панцире) Отправить слага в панцире.</text>
+					<text>(Armored Slug Crew Member) Send your Armored Slug.</text>
 					<event>
-						<text>Флот задержан боевой стычкой с захваченным вами кораблём.</text>
+						<text>The fleet was detained by a combat skirmish with the ship you captured.</text>
 						<modifyPursuit amount="-4"/>
 						<crewMember amount="-1" class="slug_armored"/>
 					</event>
@@ -20234,9 +20234,9 @@ High Average =	140%
 					</event>
 				</choice>
 				<choice hidden="true" req="slig"> <!-- 1.28 -->
-					<text>(Член экипажа слёрм) Отправить слёрма.</text>
+					<text>(Slig Crew Member) Send your Slig.</text>
 					<event>
-						<text>Флот задержан боевой стычкой с захваченным вами кораблём.</text>
+						<text>The fleet was detained by a combat skirmish with the ship you captured.</text>
 						<modifyPursuit amount="-4"/>
 						<crewMember amount="-1" class="slig"/>
 					</event>
@@ -26628,7 +26628,7 @@ High Average =	140%
 </event>
 <event name="001011">
 	<text>Near the beacon you find a sealed container with pirate insignia. A crewman reveals it — a working drone.</text>
-	<weapon name="DRONES_STANDARD_PLAYER"/>
+	<drone name="DRONES_STANDARD_PLAYER"/>
 </event>
 <event name="001010">
 	<text>Near the beacon hangs an escape pod. It is damaged as its locking mechanism is jammed. Perhaps someone can help you open it.</text>
@@ -48108,79 +48108,79 @@ High Average =	140%
 <event name="PSEVDO_TALK_WITH_CREW">
 	<text>You decide to speak with a member of your crew while the FTL Drive charges to jump to the next beacon.</text>
 	<choice hidden="true" req="HUMAN">
-		<text>(Human Crew Member) Talk to your Human.</text>
+		<text id="talk_to_human" />
 		<event load="PSEVDO_NOTHING_BATTLE1"/> <!-- different events to prevent freeze.thats very stupid but we need it.i know game engine loves it -->
 	</choice>
-	<choice hidden="true" req="ENGI">
-		<text>(Engi Crew Member) Talk to your Engi.</text>
+	<choice hidden="true" req="ORDER_HUMAN"> <!-- 1.28 -->
+		<text id="talk_to_order_human" />
 		<event load="PSEVDO_NOTHING_BATTLE2"/>
-	</choice>		
-	<choice hidden="true" req="ENERGY">
-		<text>(Zoltan Crew Member) Talk to your Zoltan.</text>
+	</choice>
+	<choice hidden="true" req="ENGI">
+		<text id="talk_to_engi" />
 		<event load="PSEVDO_NOTHING_BATTLE3"/>
 	</choice>
-	<choice hidden="true" req="MANTIS">
-		<text>(Mantis Crew Member) Talk to your Mantis.</text>
+	<choice hidden="true" req="MORPH"> <!-- 1.28 -->
+		<text id="talk_to_morph" />
 		<event load="PSEVDO_NOTHING_BATTLE4"/>
 	</choice>
-	<choice hidden="true" req="SLUG_AND_ARMORED_SLUG"><!-- 1.28 req was SLUG -->
-		<text>(Slug Crew Member) Talk to your Slug.</text>
+	<choice hidden="true" req="ENERGY">
+		<text id="talk_to_zoltan" />
 		<event load="PSEVDO_NOTHING_BATTLE5"/>
 	</choice>
-	<choice hidden="true" req="ROCK">
-		<text>(Rock Crew Member) Talk to your Rockman.</text>
+	<choice hidden="true" req="ENERGYX"> <!-- 1.28 -->
+		<text id="talk_to_zolton" />
 		<event load="PSEVDO_NOTHING_BATTLE6"/>
 	</choice>
-	<choice hidden="true" req="ANAEROBIC">
-		<text>(Lanius Crew Member) Talk to your Lanius.</text>
+	<choice hidden="true" req="MANTIS">
+		<text id="talk_to_mantis" />
 		<event load="PSEVDO_NOTHING_BATTLE7"/>
 	</choice>
-	<choice hidden="true" req="CRYSTAL">
-		<text>(Crystal Crew Member) Talk to your Crystal.</text>
+	<choice hidden="true" req="SLUG_AND_ARMORED_SLUG"><!-- 1.28 req was SLUG -->
+		<text id="talk_to_slug" />
 		<event load="PSEVDO_NOTHING_BATTLE8"/>
 	</choice>
-	<choice hidden="true" req="GHOST">
-		<text>(Avatar Crew Member) Talk to your Avatar.</text>
+	<choice hidden="true" req="ROCK">
+		<text id="talk_to_rock" />
 		<event load="PSEVDO_NOTHING_BATTLE9"/>
 	</choice>
-	<choice hidden="true" req="CREW_ORDER_HUMAN"> <!-- 1.28 -->
-		<text>(Член экипажа человек Ордена) Поговорить с человеком.</text>
+	<choice hidden="true" req="SLIG"> <!-- 1.28 -->
+		<text id="talk_to_slig" />
 		<event load="PSEVDO_NOTHING_BATTLE11"/>
 	</choice>
-	<choice hidden="true" req="CREW_MAGMAN"> <!-- 1.28 -->
-		<text>(Член экипажа магмен) Поговорить с магменом.</text>
+	<choice hidden="true" req="MAGMAN"> <!-- 1.28 -->
+		<text id="talk_to_magman" />
 		<event load="PSEVDO_NOTHING_BATTLE12"/>
 	</choice>
-	<choice hidden="true" req="CREW_ORCHID"> <!-- 1.28 -->
-		<text>(Член экипажа орхид) Поговорить с орхидом.</text>
+	<choice hidden="true" req="ORCHID"> <!-- 1.28 -->
+		<text id="talk_to_orchid" />
 		<event load="PSEVDO_NOTHING_BATTLE13"/>
 	</choice>
-	<choice hidden="true" req="CREW_SHELL"> <!-- 1.28 -->
-		<text>(Член экипажа броненосец) Поговорить с броненосцем.</text>
+	<choice hidden="true" req="SHELL"> <!-- 1.28 -->
+		<text id="talk_to_shell" />
 		<event load="PSEVDO_NOTHING_BATTLE14"/>
 	</choice>
-	<choice hidden="true" req="CREW_MORPH"> <!-- 1.28 -->
-		<text>(Член экипажа морф) Поговорить с морфом.</text>
+	<choice hidden="true" req="ANAEROBIC">
+		<text id="talk_to_lanius" />
 		<event load="PSEVDO_NOTHING_BATTLE15"/>
 	</choice>
-	<choice hidden="true" req="CREW_SLIG"> <!-- 1.28 -->
-		<text>(Член экипажа слёрм) Поговорить со слёрмом.</text>
+	<choice hidden="true" req="CRYSTAL">
+		<text id="talk_to_crystal" />
 		<event load="PSEVDO_NOTHING_BATTLE16"/>
 	</choice>
-	<choice hidden="true" req="CREW_ENERGYX"> <!-- 1.28 -->
-		<text>(Член экипажа золтонец) Поговорить с золтонцем.</text>
+	<choice hidden="true" req="GHOST">
+		<text id="talk_to_avatar" />
 		<event load="PSEVDO_NOTHING_BATTLE17"/>
 	</choice>
-	<choice hidden="true" req="CREW_MUSHROOM_F"> <!-- 1.28 -->
-		<text>(Член экипажа молодой машрум) Поговорить с машрумом.</text>
+	<choice hidden="true" req="MUSHROOM_F"> <!-- 1.28 -->
+		<text id="talk_to_mushroom_f" />
 		<event load="PSEVDO_NOTHING_BATTLE18"/>
 	</choice>
-	<choice hidden="true" req="CREW_MUSHROOM_B"> <!-- 1.28 -->
-		<text>(Член экипажа зрелый машрум) Поговорить с машрумом.</text>
+	<choice hidden="true" req="MUSHROOM_B"> <!-- 1.28 -->
+		<text id="talk_to_mushroom_b" />
 		<event load="PSEVDO_NOTHING_BATTLE19"/>
 	</choice>
-	<choice hidden="true" req="CREW_MUSHROOM"> <!-- 1.28 -->
-		<text>(Член экипажа старый машрум) Поговорить с машрумом.</text>
+	<choice hidden="true" req="MUSHROOM"> <!-- 1.28 -->
+		<text id="talk_to_mushroom" />
 		<event load="PSEVDO_NOTHING_BATTLE20"/>
 	</choice>
 	<choice req="CREW_ALL" lvl="0" max_lvl="0" hidden="true" blue="false">

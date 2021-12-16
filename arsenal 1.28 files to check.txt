@@ -1,0 +1,45 @@
+files to check:
+dlcEvents_anaerobic			done
+events_crystal				done
+events_mantis				translate orchid blue option
+events_pirate				done
+events_rock					done
+events_nebula				done 
+newEvents					done
+events_fuel					done
+names						done
+text_sectorname				done
+rooms (be careful)			done
+dlcBlueprintsOverwrite		done
+sector_data					done
+events_engi					verify EXPERIMENT_EVENT text
+events_slug					reorder choices in EVENT_SLURM_RISK_YES so they're all the same
+events_zoltan				check ordering of choices in EVENT_QMULTI_CREW (3 chains)
+							test run EVENT_QMULTI_CREW for lag and EVENT_CONTRABAND for new reqs
+blueprints 					not done
+							search for russian letters or 'flagged', pretty sure there is more left to translate
+							orchid drones: COMBAT_BEAM_ORCHID, COMBAT_ORCHID, DEFENSE_ORCHID
+							generate new injector variants using generator, check latest russian blueprints, there is bug
+							oru_missile and _m version
+							kernel missiles and _m versions
+							enemy magman_gun 1, 2 and 3
+events_ships				check Shell death noise for info on what
+							squeak or screech or sound DEAD_CREW_SHELL is saying
+autoBlueprints				SHIPS_ORCHID
+							Shell ships
+							Magman ships
+events_rebel				check 1.29 for morph option in boom and monolith events
+events 						AUGMENTS_ON_START_BEACON
+							PLANET_ENGE_UPGRADE weapons
+							new races in
+							talk to crew outcomes and
+							RAB_TRADE_NEXT and
+							RADAR_REBEL_SELECT_THE_HERO
+							prototype_collectionner?
+							check for russian text..?
+							check flagged
+text_misc					tip_magman_f10_b0
+							double check 1.27 changes
+							double check tip_charge. mentions versatile? if not add to 'ion_chargegun's in blueprints
+							double check phase ion tip and compare with blueprint descriptions
+sounds						done

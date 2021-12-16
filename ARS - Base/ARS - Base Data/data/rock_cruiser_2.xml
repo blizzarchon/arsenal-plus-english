@@ -23,7 +23,7 @@
 		<angular min="-0.3" max="0.3"/> 
 		<x>268</x>
 		<y>188</y>
-	</gib2>
+	</gib1>
 	<gib2>
 		<velocity min="0.3" max="0.5"/>
 		<direction min="290" max="320"/>

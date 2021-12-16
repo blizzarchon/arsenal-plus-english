@@ -30,7 +30,7 @@
 		<angular min="-0.4" max="-0.1"/>  
 		<x>0</x>
 		<y>0</y>
-	</gib2>
+	</gib1>
 	<gib2>
 		<velocity min="0.2" max="0.5"/>
 		<direction min="280" max="300"/>

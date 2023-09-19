@@ -3,7 +3,7 @@
 <!-- Copyright (c) 2012 by Subset Games. All rights reserved -->
 
 <!--     ' ,  " " "
-			SUMMARY  â€” 
+			SUMMARY  — 
 A list of all main events to be called by lists
 	does not include sub-events)
 	
@@ -135,7 +135,7 @@ Special
 	<text>Merchants are not highly respected among the Mantis race, so few undertake the profession. You're mildly surprised to receive an advertisement from a nearby space dock. You decide to see what they have to offer.</text>
 	<text>Identifying a Mantis trading post ahead, you signal them so that your approach won't be taken as a threat. The leader hails you: "You have scrap? Quickly, come dock before the warriors see you."</text>
 	<text>A struggling Mantis cargo ship headed for the node raises what's left of shields as you jump in. You power up your weapons as a show of force, and they reluctantly agree to offload some of their cargo to you - for a price.</text>
-	<text>The Rebels are already here! The crew braces for impact, but none comes. The sensors report the unmanned rebel supply ship is malfunctioning and is stuck in vending mode â€” for a little scrap you can take your pick.</text>
+	<text>The Rebels are already here! The crew braces for impact, but none comes. The sensors report the unmanned rebel supply ship is malfunctioning and is stuck in vending mode — for a little scrap you can take your pick.</text>
 </textList>
 
 <event name="NOTHING_MANTIS">
@@ -466,9 +466,9 @@ Special
 		<event load="MANTIS_SCAN_CREW_LIST"/>
 	</choice>
 	<choice hidden="true" req="orchid"> <!-- 1.28 -->
-		<text>(Orchid Crew Member) Заполнить отсек успокаивающим ароматом перед тем, как вскрыть капсулу.</text>
+		<text>(Orchid Crew Member) Fill the airlock with a soothing aroma before opening the pod.</text>
 		<event>
-			<text>Находившийся внутри мантис отдыхал. После пробуждения, он рад вдохнуть свежего воздуха и свободно двигать конечностями. Мантис предлагает присоединиться к вашему экипажу до тех пор, пока не найдёт дорогу домой.</text>
+			<text>You find the Mantis resting inside. After waking up, they are happy to breathe fresh air and freely move their limbs. The Mantis offers to join your crew until they find their way home.</text>
 			<crewMember amount="1" class="mantis"/>
 		</event>
 	</choice>
@@ -501,7 +501,7 @@ Special
 		</choice>
 	</event>
 	<event>
-		<text>The scanner indicates a Human inside, so you open the capsule. A man bursts out of the life-pod screaming and claws his way into a corner. A rare survivor of Mantis captivity. Once calm, the survivor offers to join your crew for a time.</text>
+		<text>The scanner indicates a Human inside, so you open the pod. A man bursts out of the life-pod screaming and claws his way into a corner. A rare survivor of Mantis captivity. Once calm, the survivor offers to join your crew for a time.</text>
 		<crewMember amount="1" class="human"/>
 	</event>
 </eventList>

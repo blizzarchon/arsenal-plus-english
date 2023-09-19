@@ -1,7 +1,7 @@
 files to check:
 dlcEvents_anaerobic			done
 events_crystal				done
-events_mantis				translate orchid blue option
+events_mantis				done
 events_pirate				done
 events_rock					done
 events_nebula				done 

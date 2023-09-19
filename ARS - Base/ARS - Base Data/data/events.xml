@@ -1491,7 +1491,6 @@ High Average =	140%
 	</choice>
 </event>
 
-
 <event name="TALK_WITH_CREW_MORPH"> <!-- 1.28 -->
 	<text>You decide to speak with a member of your crew while you wait for the FTL Drive to charge in order to jump to the next beacon.</text>
 	<choice hidden="true" req="HUMAN">
@@ -1667,7 +1666,6 @@ High Average =	140%
 		<event load="NOTHING_SHIPRADAR2_RAND"/>
 	</choice>
 </event>
-
 
 <event name="TALK_WITH_CREW_ENERGYX">
 	<text>You decide to speak with a member of your crew while you wait for the FTL Drive to charge in order to jump to the next beacon.</text>
@@ -2468,7 +2466,7 @@ High Average =	140%
 		<event load="NOTHING2_HUMAN"/>
 	</choice>
 	<choice hidden="true" req="ORDER_HUMAN"> <!-- 1.28 -->
-		<text>(человек Ордена Crew Member) Talk to your человеком.</text>
+		<text id="talk_to_order_human" />
 		<event load="NOTHING2_ORDER_HUMAN"/>
 	</choice>
 	<choice hidden="true" req="ENGI">
@@ -2556,7 +2554,7 @@ High Average =	140%
 		<event load="NOTHING2_HUMAN"/>
 	</choice>
 	<choice hidden="true" req="ORDER_HUMAN"> <!-- 1.28 -->
-		<text>(Order Human Crew Member) Talk to your человеком.</text>
+		<text id="talk_to_order_human" />
 		<event load="NOTHING2_ORDER_HUMAN"/>
 	</choice>
 	<choice hidden="true" req="ENGI">
@@ -2644,7 +2642,7 @@ High Average =	140%
 		<event load="NOTHING2_HUMAN"/>
 	</choice>
 	<choice hidden="true" req="ORDER_HUMAN"> <!-- 1.28 -->
-		<text>(Order Human Crew Member) Talk to your человеком.</text>
+		<text id="talk_to_order_human" />
 		<event load="NOTHING2_ORDER_HUMAN"/>
 	</choice>
 	<choice hidden="true" req="ENGI">
@@ -3101,7 +3099,7 @@ High Average =	140%
 	<text load="NOTHING2_ENERGYX_TEXT" />
 </event>
 <event name="NOTHING2_ENERGYX_GOOD">
-	<text>Вы заходите в комнату к золтонцу и видите, как он что-то делает со сломанной пушкой, которую он достал из кучи лома. Золтонец направляет на неё силу своей ауры и получает функционирующее ионное орудие!</text>
+	<text>You enter your Zolton's room and see them tinkering with a broken weapon that they found in a pile of scrap. The Zolton directs the power from their aura into it, and you receive a functioning ion weapon!</text>
 	<weapon name="WEAPONS_ION_TALK"/>
 </event>
 <eventList name="NOTHING2_ENERGYX">
@@ -3274,15 +3272,15 @@ High Average =	140%
 	<!-- more  1.24.1 -->
 	<text>You come to your Rockman. They are busy cleaning moss from their back. Perhaps, it would be better to postpone the conversation to next time.</text>
 	<text>You reach your Rock crew member. They are trying to carve a sort of finger on the edge of their huge stone hand. It must be quite difficult to control systems with such cobblestones.</text>
-	<text>You reach your Rockman. They repeatedly hit the walls and floor of their room, trying to kill some insect. They almost smash up the whole ship, but you calm them down in the nick of time.</text>
+	<text>You reach your Rockman. They are repeatedly slamming the walls and floor of their room, trying to kill some insect. They almost smash up the whole ship, but you calm them down in the nick of time.</text>
 	
-	<text>The Rockman suddenly dances about their quarters from idleness, rocking the whole ship and causing a roar, to which you ask them to not make so much noise.</text>
+	<text>The Rockman is bored of standing stoically so they start dancing around their quarters. The rumbling can be heard all throughout the ship, and you tell them there's too much noise. They stop moving, and in their usual loud and booming voice, agree that the ship can be pretty noisy.</text>
 	<text>The Rockman asks to board someplace, preferably a burning ship. You promise to do this the first chance you get.</text>
-	<text>The Rockman amuses themselves by collecting a pyramid of stones. One awkward movement, and the pyramid crumbles... the Rockman rumbles in discontent, and you leave as quickly as you can.</text>
-	<text>The Rockman sleeps in their bunk and their snores can be heard throughout the room. Your cover your ears, and quickly leave.</text>
+	<text>The Rockman is amusing themselves by stacking up stones in the shape of a pyramid. One awkward movement, and the pyramid crumbles... the Rockman rumbles in discontent, and you leave as quickly as you can.</text>
+	<text>The Rockman sleeps in their bunk and their snores can be heard throughout the room. You cover your ears and quickly leave.</text>
 	<text>The Rockman browses through a pile of defective ammunition in a storage bay. Nothing useful, just a pile of rubbish.</text>
 	<!-- 1.25 -->
-	<text>You go into the room the Rockman's in, and they show you an ugly stone statue. To your inquiries about what it is, they just silently smile...</text> 
+	<text>You enter the Rockman's room, and they show you a hideous stone figurine. When you ask them who it's a depiction of, they just silently smile...</text> 
 </textList>
 <event name="NOTHING2_ROCK_TALK">
 	<text load="NOTHING2_ROCK_TEXT" />
@@ -3314,7 +3312,7 @@ High Average =	140%
 
 <textList name="NOTHING2_MAGMAN_TEXT">
 	<text>Magmen have the ability to regulate their body temperature. You pat them on the back and feel a chill surge through your arm. You walk away but feel the Magman's smile behind you.</text>
-	<text>Magmen have the ability to regulate their body temperature. You're about to pat them on the back when you feel the intensity of a hot spring. You change from patting to waving, and walk away, though you swear the Magman chuckled or something.</text>
+	<text>Magmen have the ability to regulate their body temperature. You're about to pat them on the back when you feel the intensity of a hot spring. You change from patting to waving, and walk away, though you swear you hear the Magman chuckle.</text>
 	<text>The Magman is first covered with frost, then bursts with heat. You marvel at their unusual ability before leaving.</text>
 	<text>The Magman changes the color of their aura from cold blue to hot red. It looks pretty cool.</text>
 	<!-- more -->
@@ -3323,7 +3321,7 @@ High Average =	140%
 	<text load="NOTHING2_MAGMAN_TEXT" />
 </event>
 <event name="NOTHING2_MAGMAN_GOOD">
-	<text>Магмен с увлечением возится с каким-то оборудованием. Вы ждёте, и через некоторое время он показывает вам готовую огненную бомбу! Также он всячески намекает на необходимость телепортера на вашем корабле...</text>
+	<text>Your Magman is fondly tinkering with some equipment. After waiting a little while, they show you a ready-to-use fire bomb! They also strongly hint at the utility a teleporter brings to the ship...</text>
 	<weapon name="WEAPONS_BOMB_FIRE_MAGMAN"/>
 </event>
 <eventList name="NOTHING2_MAGMAN"><!-- 1.28 -->
@@ -3365,24 +3363,24 @@ High Average =	140%
 </eventList>
 
 <textList name="NOTHING2_SHELL_TEXT"><!-- 1.28 -->
-	<text>Броненосец свернулся в клубок и катается по всему отсеку. Понаблюдав немного за его игрой, вы уходите.</text>
-	<text>Броненосец сворачивается в клубок и начинает делать круги вокруг вас. У вас начинает кружиться голова и вы неловко падаете. Ну и шуточки у него...</text>
-	<text>Броненосец просит вас проверить его панцирь на прочность. Вы пинаете его со всей силы и отбиваете себе ногу. Прочный...</text>
-	<text>Броненосец лениво перекатывается из угла в угол. Он просит поскорее отправить его в абордаж — на корабле ему скучно.</text>
-	<text>Броненосец проводит какие-то химические опыты с ядовитыми газами. Вы наблюдаете в стороне, стараясь не мешать ему. Одна из пробирок взрывается, и броненосец спешно включает вытяжку. Вы тихонько уходите.</text>
+	<text>Your Shell has curled up into a ball and is rolling around their room. You watch them play for a while before leaving.</text>
+	<text>Your Shell curls up into a ball and spins circles around you. You soon feel your head spinning too and fall awkwardly. So this is their sense of humor...</text>
+	<text>Your Shell asks you to test the strength of their outer casing. You kick it with all your might and hurt your leg. Strong indeed...</text>
+	<text>Your Shell lazily rolls in their room from corner to corner. They ask you to send them to board a ship as soon as possible — they are quite bored on your ship.</text>
+	<text>Your Shell is conducting some chemical experiments with poisonous gases. You watch from the side, trying not to disturb them. One of the test tubes explodes, and the Shell quickly turns on the ventilation system. You leave quietly.</text>
 	<!-- more -->
 </textList>
 <textList name="NOTHING2_SHELL_GOOD_TEXT">
-	<text>Броненосец проводит какие-то химические опыты с ядовитыми газами. Вы наблюдаете в стороне, стараясь не мешать ему.</text>
+	<text>Your Shell is conducting some chemical experiments with poisonous gases. You watch from the side, trying not to disturb them.</text>
 </textList>
 <textList name="NOTHING2_SHELL_GOOD_TEXT_2">
-	<text>В конце концов ему удаётся получить формулу ядовитого газа, который разъедает тела вражеских абордажников, но безопасен для вашей команды. Удивительно!</text>
+	<text>In the end, they manage to get the formula right for a poisonous gas that corrodes the bodies of enemy boarders, but is harmless to your crew. Amazing!</text>
 </textList>
 <textList name="NOTHING2_SHELL_GOOD_TEXT_3">
-	<text>В конце концов ему удаётся улучшить формулу ядовитого газа, защищающего вас от абордажников. Теперь они будут получать ещё больше урона!</text>
+	<text>In the end, they manage to improve the formula of the poisonous gas that protects you from boarders. Now they will take even more damage!</text>
 </textList>
 <textList name="NOTHING2_SHELL_GOOD_TEXT_4">
-	<text>В конце концов он говорит, что концентрация газа уже на максимуме. Тем не менее вы получаете дополнительную порцию яда на продажу!</text>
+	<text>In the end, they say that the gas cannot be concentrated any further. All the same, you get an extra dose of the poisonous gas to sell!</text>
 </textList>
 <eventList name="NOTHING2_SHELL">
 	<event>
@@ -3561,137 +3559,77 @@ High Average =	140%
 </eventList>
 
 <textList name="NOTHING2_MUSHROOM_F_TEXT">
-	<text>Вы заходите в комнату к машруму, но на все ваши вопросы он упорно молчит. Это следовало ожидать от гриба...</text>
-	<text>Машрум не может с вами поговорить, потому что он всего лишь гриб.</text>
-	<text>Как только вы заходите в отсек, машрум выбрасывает в вашу сторону свои споры. К счастью, они ещё не дозрели и не имеют никакого эффекта.</text>
+	<text>You enter your Mushroom's quarters, but they stubbornly remain silent to all your questions. That's to be expected from a fungus...</text>
+	<text>Your Mushroom can't talk to you because it's just a mushroom.</text>
+	<text>As soon as you enter their room, your Mushroom throws its spores in your direction. Fortunately, they have not matured enough and as such have no effect.</text>
 </textList>
 <textList name="NOTHING2_MUSHROOM_GOOD_F_TEXT">
-	<text>Машрум превратил свой отсек в подобие лесной поляны с питательным экстрактом. Зарывшись в землю, он сбрасывает свою шляпку и меняет обличье! Вы уже не уверены, что перед вами находится тот же самый машрум...</text>
+	<text>Your Mushroom has turned its room into some kind of forest clearing with various nutritive extracts. Burrowing themselves into the ground, they throw off their 'hat' and change their appearance! You are no longer sure if this is even the same Mushroom in front of you...</text>
 </textList>
 <textList name="NOTHING2_MUSHROOM_GOOD_TEXT">
-	<text>Машрум превратил свой отсек в подобие лесной поляны с питательным экстрактом. Он разбрасывает свои споры, и из-под земли появляется молодой машрум, готовый служить под вашим руководством.</text>
+	<text>Your Mushroom has turned its room into some kind of forest clearing with various nutritive extracts. They scatter their spores, and a young Mushroom emerges from the ground, ready to serve under your leadership.</text>
 </textList>
+<event name="NOTHING2_MUSHROOM_F_TALK">
+	<text load="NOTHING2_MUSHROOM_F_TEXT" />
+</event>
+<event name="NOTHING2_MUSHROOM_F_GOOD">
+	<text load="NOTHING2_MUSHROOM_GOOD_F_TEXT"/>
+	<crewMember amount="-1" class="mushroom_f"/>
+	<choice hidden="true">
+		<text id="continue"/>
+		<event>
+			<crewMember amount="1" class="mushroom_b"/>
+		</event>
+	</choice>
+</event>
 <eventList name="NOTHING2_MUSHROOM_F">
-	<event>
-		<text load="NOTHING2_MUSHROOM_F_TEXT"/>
-	</event>
-	<event>
-		<text load="NOTHING2_MUSHROOM_F_TEXT"/>
-	</event>
-	<event>
-		<text load="NOTHING2_MUSHROOM_GOOD_F_TEXT"/>
-		<crewMember amount="-1" class="mushroom_f"/>
-		<choice hidden="true">
-			<text id="continue"/>
-			<event>
-				<crewMember amount="1" class="mushroom_b"/>
-			</event>
-		</choice>
-	</event>
+	<event load="NOTHING2_MUSHROOM_F_TALK" />
+	<event load="NOTHING2_MUSHROOM_F_TALK" />
+	<event load="NOTHING2_MUSHROOM_F_GOOD" />
 </eventList>
-<eventList name="NOTHING2_MUSHROOM2_F">
-	<event>
-		<text load="NOTHING2_MUSHROOM_F_TEXT"/>
-	</event>
-	<event>
-		<text load="NOTHING2_MUSHROOM_F_TEXT"/>
-	</event>
-	<event>
-		<text load="NOTHING2_MUSHROOM_GOOD_F_TEXT"/>
-		<crewMember amount="-1" class="mushroom_f"/>
-		<choice hidden="true">
-			<text id="continue"/>
-			<event>
-				<crewMember amount="1" class="mushroom_b"/>
-			</event>
-		</choice>
-	</event>
-	<event>
-		<text load="NOTHING2_MUSHROOM_GOOD_F_TEXT"/>
-		<crewMember amount="-1" class="mushroom_f"/>
-		<choice hidden="true">
-			<text id="continue"/>
-			<event>
-				<crewMember amount="1" class="mushroom_b"/>
-			</event>
-		</choice>
-	</event>
+<eventList name="NOTHING2_MUSHROOM_F">
+	<event load="NOTHING2_MUSHROOM_F_TALK" />
+	<event load="NOTHING2_MUSHROOM_F_TALK" />
+	<event load="NOTHING2_MUSHROOM_F_GOOD" />
+	<event load="NOTHING2_MUSHROOM_F_GOOD" />
 </eventList>
 
+<event name="NOTHING2_MUSHROOM_B_GOOD">
+	<text load="NOTHING2_MUSHROOM_GOOD_F_TEXT"/>
+	<crewMember amount="-1" class="mushroom_b"/>
+	<choice hidden="true">
+		<text id="continue"/>
+		<event>
+			<crewMember amount="1" class="mushroom"/>
+		</event>
+	</choice>
+</event>
 <eventList name="NOTHING2_MUSHROOM_B">
-	<event>
-		<text load="NOTHING2_MUSHROOM_F_TEXT"/>
-	</event>
-	<event>
-		<text load="NOTHING2_MUSHROOM_F_TEXT"/>
-	</event>
-	<event>
-		<text load="NOTHING2_MUSHROOM_GOOD_F_TEXT"/>
-		<crewMember amount="-1" class="mushroom_b"/>
-		<choice hidden="true">
-			<text id="continue"/>
-			<event>
-				<crewMember amount="1" class="mushroom"/>
-			</event>
-		</choice>
-	</event>
+	<event load="NOTHING2_MUSHROOM_F_TALK" />
+	<event load="NOTHING2_MUSHROOM_F_TALK" />
+	<event load="NOTHING2_MUSHROOM_B_GOOD" />
 </eventList>
 <eventList name="NOTHING2_MUSHROOM2_B">
-	<event>
-		<text load="NOTHING2_MUSHROOM_F_TEXT"/>
-	</event>
-	<event>
-		<text load="NOTHING2_MUSHROOM_F_TEXT"/>
-	</event>
-	<event>
-		<text load="NOTHING2_MUSHROOM_GOOD_F_TEXT"/>
-		<crewMember amount="-1" class="mushroom_b"/>
-		<choice hidden="true">
-			<text id="continue"/>
-			<event>
-				<crewMember amount="1" class="mushroom"/>
-			</event>
-		</choice>
-	</event>
-	<event>
-		<text load="NOTHING2_MUSHROOM_GOOD_F_TEXT"/>
-		<crewMember amount="-1" class="mushroom_b"/>
-		<choice hidden="true">
-			<text id="continue"/>
-			<event>
-				<crewMember amount="1" class="mushroom"/>
-			</event>
-		</choice>
-	</event>
+	<event load="NOTHING2_MUSHROOM_F_TALK" />
+	<event load="NOTHING2_MUSHROOM_F_TALK" />
+	<event load="NOTHING2_MUSHROOM_B_GOOD" />
+	<event load="NOTHING2_MUSHROOM_B_GOOD" />
 </eventList>
 
+<event name="NOTHING2_MUSHROOM_GOOD">
+	<text load="NOTHING2_MUSHROOM_GOOD_TEXT"/>
+	<crewMember amount="1" class="mushroom_f"/>
+</event>
 <eventList name="NOTHING2_MUSHROOM">
-	<event>
-		<text load="NOTHING2_MUSHROOM_F_TEXT"/>
-	</event>
-	<event>
-		<text load="NOTHING2_MUSHROOM_F_TEXT"/>
-	</event>
-	<event>
-		<text load="NOTHING2_MUSHROOM_GOOD_TEXT"/>
-		<crewMember amount="1" class="mushroom_f"/>
-	</event>
+	<event load="NOTHING2_MUSHROOM_F_TALK" />
+	<event load="NOTHING2_MUSHROOM_F_TALK" />
+	<event load="NOTHING2_MUSHROOM_GOOD" />
 </eventList>
 <eventList name="NOTHING2_MUSHROOM2">
-	<event>
-		<text load="NOTHING2_MUSHROOM_F_TEXT"/>
-	</event>
-	<event>
-		<text load="NOTHING2_MUSHROOM_F_TEXT"/>
-	</event>
-	<event>
-		<text load="NOTHING2_MUSHROOM_GOOD_TEXT"/>
-		<crewMember amount="1" class="mushroom_f"/>
-	</event>
-	<event>
-		<text load="NOTHING2_MUSHROOM_GOOD_TEXT"/>
-		<crewMember amount="1" class="mushroom_f"/>
-	</event>
+	<event load="NOTHING2_MUSHROOM_F_TALK" />
+	<event load="NOTHING2_MUSHROOM_F_TALK" />
+	<event load="NOTHING2_MUSHROOM_GOOD" />
+	<event load="NOTHING2_MUSHROOM_GOOD" />
 </eventList>
 <!-- 	*********************************************
 					HOSTILE EVENTS
@@ -15812,7 +15750,7 @@ High Average =	140%
 		</event>
 	</choice>
 	<choice hidden="false" req="mushroom_f"><!-- 1.28 -->
-		<text>(молодой машрум Crew Member) Sell your машрума.</text>
+		<text>(Young Mushroom Crew Member) Sell your Mushroom.</text>
 		<event>
 			<text load="RAB_TRADE_SELLCREW_TEXT"/>
 			<crewMember amount="-1" class="mushroom_f"/>
@@ -15826,7 +15764,7 @@ High Average =	140%
 		</event>
 	</choice>
 	<choice hidden="false" req="mushroom_b"><!-- 1.28 -->
-		<text>(зрелого машрум Crew Member) Sell your машрума.</text>
+		<text>(Mature Mushroom Crew Member) Sell your Mushroom.</text>
 		<event>
 			<text load="RAB_TRADE_SELLCREW_TEXT"/>
 			<crewMember amount="-1" class="mushroom_b"/>
@@ -15840,7 +15778,7 @@ High Average =	140%
 		</event>
 	</choice>
 	<choice hidden="false" req="mushroom"><!-- 1.28 -->
-		<text>(старого машрум Crew Member) Sell your машрума.</text>
+		<text>(Old Mushroom Crew Member) Sell your Mushroom.</text>
 		<event>
 			<text load="RAB_TRADE_SELLCREW_TEXT"/>
 			<crewMember amount="-1" class="mushroom"/>
@@ -15868,7 +15806,7 @@ High Average =	140%
 		</event>
 	</choice>
 	<choice hidden="false" req="shell"><!-- 1.28 -->
-		<text>(броненосец Crew Member) Sell your броненосца.</text>
+		<text>(Shell Crew Member) Sell your Shell.</text>
 		<event>
 			<text load="RAB_TRADE_SELLCREW_TEXT"/>
 			<crewMember amount="-1" class="shell"/>
@@ -15882,7 +15820,7 @@ High Average =	140%
 		</event>
 	</choice>
 	<choice hidden="false" req="slug_armored"><!-- 1.28 -->
-		<text>(слаг в панцире Crew Member) Sell your слага в панцире.</text>
+		<text>(Armored Slug Crew Member) Sell your Armored Slug.</text>
 		<event>
 			<text load="RAB_TRADE_SELLCREW_TEXT"/>
 			<crewMember amount="-1" class="slug_armored"/>
@@ -17583,9 +17521,9 @@ High Average =	140%
 
 <event name="RADAR_REBEL" unique="true">
 	<img back="BACKGROUND" planet="PLANET_POPULATED"/>
-	<text>According to the onboard computer, the planet to which you appeared next to is an advanced Rebel radar station. You don't dare doing an open attack — the entire fleet which you're trying to hide from will immediately show up.</text>
+	<text>According to the onboard computer, the planet to which you appeared next to is an advanced Rebel radar station. You don't dare an open attack — the entire fleet which you're trying to hide from will immediately show up.</text>
 	<choice hidden="true" req="CREW_ALL" blue="false"> <!-- 1.24.1 -->
-		<text>Send a landing capsule with a crew member inside to the station.</text>
+		<text>Send a crew member to the station in a shuttle.</text>
 		<event load="RADAR_REBEL_SELECT_THE_HERO"/>
 	</choice>
 	<choice hidden="true">
@@ -17609,7 +17547,7 @@ High Average =	140%
 		<event load="RADAR_REBEL_T_HUMAN"/>
 	</choice>
 	<choice hidden="true" req="order_human"> <!-- 1.28 -->
-		<text>(Order Human Crew Member) Send your человека.</text>
+		<text>(Order Human Crew Member) Send your Order Human.</text>
 		<event load="RADAR_REBEL_T_ORDER_HUMAN"/>
 	</choice>
 	<choice hidden="true" req="engi">
@@ -17637,7 +17575,7 @@ High Average =	140%
 		<event load="RADAR_REBEL_T_MAGMAN"/>
 	</choice>
 	<choice hidden="true" req="mushrooms"> <!-- 1.28 -->
-		<text>(машрум Crew Member) Send your машрума.</text>
+		<text>(Mushroom Crew Member) Send your Mushroom.</text>
 		<event load="RADAR_REBEL_T_MUSHROOM"/>
 	</choice>
 	<choice hidden="true" req="orchid"> <!-- 1.28 -->
@@ -17645,11 +17583,11 @@ High Average =	140%
 		<event load="RADAR_REBEL_T_ORCHID"/>
 	</choice>
 	<choice hidden="true" req="shell"> <!-- 1.28 -->
-		<text>(броненосец Crew Member) Send your броненосца.</text>
+		<text>(Shell Crew Member) Send your Shell.</text>
 		<event load="RADAR_REBEL_T_SHELL"/>
 	</choice>
 	<choice hidden="true" req="slug_armored"> <!-- 1.28 -->
-		<text>(слаг в панцире Crew Member) Send your слага в панцире.</text>
+		<text>(Armored Slug Crew Member) Send your Armored Slug.</text>
 		<event load="RADAR_REBEL_T_SLUG"/>
 	</choice>
 	<choice hidden="true" req="anaerobic">
@@ -17742,7 +17680,7 @@ High Average =	140%
 		</choice>
 	</event>
 	<event>
-		<text>A frightened person appears in the teleporter. They say that they worked at the station as a janitor, and that they disliked their work very much, so they'll be happy to join you.</text>
+		<text>A frightened person appears in the teleporter. They say that they worked at the station as a janitor, and they didn't like their job anyway, so they're happy to join you.</text>
 		<crewMember amount="1" repair="1" class="human"/>
 		<choice hidden="true">
 			<text>Fly away before the radar station's staff realize what happened.</text>
@@ -17865,7 +17803,7 @@ High Average =	140%
 		</choice>
 	</event>
 	<event>
-		<text>Your Human finds a warehouse containing a weapon, but can't carry it back.</text>
+		<text>Your Human finds a weapon in a warehouse, but can't bring it back without being spotted.</text>
 		<choice hidden="true">
 			<text>Return to the ship empty-handed.</text>
 			<event load="RADAR_REBEL_RETURN"/>
@@ -17956,7 +17894,7 @@ High Average =	140%
 
 <eventList name="RADAR_REBEL_T_ORDER_HUMAN"> <!-- 1.28 -->
 	<event>
-		<text>Человек скрытно пробирается в аналитический центр и отправляет флоту ложные координаты вашего расположения. Это их задержит.</text>
+		<text>Your Order Human secretly makes their way into the analytical center and sends the fleet false coordinates of your location. This will delay them.</text>
 		<modifyPursuit amount="-2"/>
 		<choice hidden="true">
 			<text id="continue"/>
@@ -17964,7 +17902,7 @@ High Average =	140%
 		</choice>
 	</event>
 	<event>
-		<text>Человек скрытно скачивает карту сектора и возвращается обратно.</text>
+		<text>Your Order Human secretly downloads a sector map and comes back.</text>
 		<reveal_map/>
 		<choice hidden="true">
 			<text id="continue"/>
@@ -17972,15 +17910,15 @@ High Average =	140%
 		</choice>
 	</event>
 	<event>
-		<text>Человек находит склад с оружием, но незаметно вынести ничего не может.</text>
+		<text>Your Order Human finds a weapon in a warehouse, but can't bring it back without being spotted.</text>
 		<choice hidden="true">
-			<text>Вернуться на корабль с пустыми руками.</text>
+			<text>Return to the ship empty-handed.</text>
 			<event load="RADAR_REBEL_RETURN"/>
 		</choice>
 		<choice hidden="true" req="teleporter">
-			<text>(Телепортер) Подцепить телепортационный маячок и подать сигнал на корабль.</text>
+			<text>(Teleporter) Place a teleporter beacon and send a signal back to the ship.</text>
 			<event>
-				<text>Ваш агент появляется в телепортере корабля с новым орудием.</text>
+				<text>Your agent appears in the ship's teleporter with the new weapon.</text>
 				<autoReward level="LOW">weapon</autoReward>
 				<choice hidden="true">
 					<text id="continue"/>
@@ -17990,7 +17928,7 @@ High Average =	140%
 		</choice>
 	</event>
 	<event>
-		<text>Человек находит склад с оборудованием, забирает груз и незаметно возвращается.</text>
+		<text>Your Order Human finds an equipment depot, picks up the cargo and quietly returns.</text>
 		<autoReward level="HIGH">stuff</autoReward>
 		<choice hidden="true">
 			<text id="continue"/>
@@ -17998,7 +17936,7 @@ High Average =	140%
 		</choice>
 	</event>
 	<event>
-		<text>Человек находит склад с оборудованием, забирает груз и незаметно возвращается.</text>
+		<text>Your Order Human finds an equipment depot, picks up the cargo and quietly returns.</text>
 		<autoReward level="HIGH">stuff</autoReward>
 		<choice hidden="true">
 			<text id="continue"/>
@@ -18006,15 +17944,15 @@ High Average =	140%
 		</choice>
 	</event>
 	<event>
-		<text>Человек находит склад с оборудованием, но незаметно вынести его не сможет.</text>
+		<text>Your Order Human finds an equipment depot, but can't take any of its stuff without being seen.</text>
 		<choice hidden="true">
-			<text>Вернуться на корабль с пустыми руками.</text>
+			<text>Return to the ship empty-handed.</text>
 			<event load="RADAR_REBEL_RETURN"/>
 		</choice>
 		<choice hidden="true" req="teleporter">
-			<text>(Телепортер) Подцепить телепортационный маячок и подать сигнал на корабль.</text>
+			<text>(Teleporter) Place a teleporter beacon and send a signal back to the ship.</text>
 			<event>
-				<text>Ваш агент появляется в телепортере корабля с кучей материалов.</text>
+				<text>Your agent appears in the ship's teleporter with a bunch of materials.</text>
 				<autoReward level="HIGH">stuff</autoReward>
 				<choice hidden="true">
 					<text id="continue"/>
@@ -18024,11 +17962,11 @@ High Average =	140%
 		</choice>
 	</event>
 	<event>
-		<text>Вашего члена экипажа обнаружила и связала охрана!</text>
+		<text>Your crew member was discovered and imprisoned by guards!</text>
 		<choice hidden="true">
-			<text>Мы не можем ему помочь...</text>
+			<text>We cannot help them...</text>
 			<event>
-				<text>Ничего не поделаешь, придётся его оставить.</text>
+				<text>There's nothing you can do, you'll just have to leave them.</text>
 				<crewMember amount="-1" class="order_human"/>
 				<choice hidden="true">
 					<text id="continue"/>
@@ -18037,16 +17975,16 @@ High Average =	140%
 			</event>
 		</choice>
 		<choice hidden="true" req="teleporter">
-			<text>(Телепортер) Вернуть его на корабль и улететь.</text>
+			<text>(Teleporter) Teleport them back to the ship and fly away.</text>
 			<event load="RADAR_REBEL_RETURN"/>
 		</choice>
 	</event>
 	<event>
-		<text>Человек переодевается в форму повстанцев, но надевает её задом наперёд. Это замечают, и охрана его связывает!</text>
+		<text>Your Order Human disguises themselves as a Rebel, but puts the uniform on backwards. They're noticed by a guard and apprehended!</text>
 		<choice hidden="true">
-			<text>Мы не можем ему помочь...</text>
+			<text>We cannot help them...</text>
 			<event>
-				<text>Ничего не поделаешь, придётся его оставить.</text>
+				<text>There's nothing you can do, you'll just have to leave them.</text>
 				<crewMember amount="-1" class="order_human"/>
 				<choice hidden="true">
 					<text id="continue"/>
@@ -18055,7 +17993,7 @@ High Average =	140%
 			</event>
 		</choice>
 		<choice hidden="true" req="teleporter">
-			<text>(Телепортер) Вернуть его на корабль и улететь.</text>
+			<text>(Teleporter) Teleport them back to the ship and fly away.</text>
 			<event load="RADAR_REBEL_RETURN"/>
 		</choice>
 	</event>
@@ -18079,7 +18017,7 @@ High Average =	140%
 		</choice>
 	</event>
 	<event>
-		<text>Your Engi finds a warehouse with a weapon, but can't carry it back.</text>
+		<text>Your Engi finds a weapon in a warehouse, but can't bring it back without being spotted.</text>
 		<choice hidden="true">
 			<text>Return to the ship empty-handed.</text>
 			<event load="RADAR_REBEL_RETURN"/>
@@ -18097,7 +18035,7 @@ High Average =	140%
 		</choice>
 	</event>
 	<event>
-		<text>Your Engi finds a warehouse with a drone schematic, takes it with them and quietly returns.</text>
+		<text>Your Engi finds a drone schematic in a warehouse, takes it with them and quietly returns.</text>
 		<autoReward level="HIGH">drone</autoReward>
 		<choice hidden="true">
 			<text id="continue" />
@@ -18105,7 +18043,7 @@ High Average =	140%
 		</choice>
 	</event>
 	<event>
-		<text>Your Engi finds a warehouse with a drone schematic, takes it with them and quietly returns.</text>
+		<text>Your Engi finds a drone schematic in a warehouse, takes it with them and quietly returns.</text>
 		<autoReward level="HIGH">drone</autoReward>
 		<choice hidden="true">
 			<text id="continue" />
@@ -18113,7 +18051,7 @@ High Average =	140%
 		</choice>
 	</event>
 	<event>
-		<text>Your Engi finds a warehouse with a drone schematic, but can't take it out quietly.</text>
+		<text>Your Engi finds a drone schematic in a warehouse, but can't bring it back without being spotted.</text>
 		<choice hidden="true">
 			<text>Return to the ship empty-handed.</text>
 			<event load="RADAR_REBEL_RETURN"/>
@@ -18170,7 +18108,7 @@ High Average =	140%
 
 <eventList name="RADAR_REBEL_T_MORPH"><!-- 1.28 -->
 	<event>
-		<text>Морф скрытно пробирается в аналитический центр и отправляет флоту ложные координаты вашего расположения. Это их задержит.</text>
+		<text>Your Morph secretly makes their way to the analytical center and sends the fleet false coordinates of your location. This will delay them.</text>
 		<modifyPursuit amount="-2"/>
 		<choice hidden="true">
 			<text id="continue"/>
@@ -18178,7 +18116,7 @@ High Average =	140%
 		</choice>
 	</event>
 	<event>
-		<text>Морф скрытно скачивает карту сектора и возвращается обратно.</text>
+		<text>Your Morph secretly downloads the sector map and comes back.</text>
 		<reveal_map/>
 		<choice hidden="true">
 			<text id="continue"/>
@@ -18186,15 +18124,15 @@ High Average =	140%
 		</choice>
 	</event>
 	<event>
-		<text>Морф находит склад с оружием, но незаметно вынести ничего не может.</text>
+		<text>Your Morph finds a weapon in a warehouse, but can't bring it back without being spotted.</text>
 		<choice hidden="true">
-			<text>Вернуться на корабль с пустыми руками.</text>
+			<text>Return to the ship empty-handed.</text>
 			<event load="RADAR_REBEL_RETURN"/>
 		</choice>
 		<choice hidden="true" req="teleporter">
-			<text>(Телепортер) Подцепить телепортационный маячок и подать сигнал на корабль.</text>
+			<text>(Teleporter) Place a teleporter beacon and send a signal back to the ship.</text>
 			<event>
-				<text>Ваш агент появляется в телепортере корабля с новым орудием.</text>
+				<text>Your agent appears in the ship's teleporter with the new weapon.</text>
 				<autoReward level="LOW">weapon</autoReward>
 				<choice hidden="true">
 					<text id="continue"/>
@@ -18204,7 +18142,7 @@ High Average =	140%
 		</choice>
 	</event>
 	<event>
-		<text>Морф находит склад с дронами, забирает груз и незаметно возвращается.</text>
+		<text>Your Morph finds a drone schematic in a warehouse, takes it with them and quietly returns.</text>
 		<autoReward level="HIGH">drone</autoReward>
 		<choice hidden="true">
 			<text id="continue"/>
@@ -18212,7 +18150,7 @@ High Average =	140%
 		</choice>
 	</event>
 	<event>
-		<text>Морф находит склад с дронами, забирает груз и незаметно возвращается.</text>
+		<text>Your Morph finds a drone schematic in a warehouse, takes it with them and quietly returns.</text>
 		<autoReward level="HIGH">drone</autoReward>
 		<choice hidden="true">
 			<text id="continue"/>
@@ -18220,15 +18158,15 @@ High Average =	140%
 		</choice>
 	</event>
 	<event>
-		<text>Морф находит склад с дронами, но незаметно вынести их не может.</text>
+		<text>Your Morph finds a drone schematic in a warehouse, but can't bring it back without being spotted.</text>
 		<choice hidden="true">
-			<text>Вернуться на корабль с пустыми руками.</text>
+			<text>Return to the ship empty-handed.</text>
 			<event load="RADAR_REBEL_RETURN"/>
 		</choice>
 		<choice hidden="true" req="teleporter">
-			<text>(Телепортер) Подцепить телепортационный маячок и подать сигнал на корабль.</text>
+			<text>(Teleporter) Place a teleporter beacon and send a signal back to the ship.</text>
 			<event>
-				<text>Ваш агент появляется в телепортере с новеньким дроном.</text>
+				<text>Your agent appears in the teleporter with a brand new drone.</text>
 				<autoReward level="HIGH">drone</autoReward>
 				<choice hidden="true">
 					<text id="continue"/>
@@ -18238,11 +18176,11 @@ High Average =	140%
 		</choice>
 	</event>
 	<event>
-		<text>Морф пытается подключиться к терминалу, но подхватывает вирус из системы повстанцев и зависает.</text>
+		<text>Your Morph tries to connect themselves to a terminal, but picks up a tracker virus from the system and gets caught by the Rebels.</text>
 		<choice hidden="true">
-			<text>Мы не можем ему помочь...</text>
+			<text>We cannot help them...</text>
 			<event>
-				<text>Ничего не поделаешь, придётся его оставить.</text>
+				<text>There's nothing you can do, you'll just have to leave them.</text>
 				<crewMember amount="-1" class="morph"/>
 				<choice hidden="true">
 					<text id="continue"/>
@@ -18251,16 +18189,16 @@ High Average =	140%
 			</event>
 		</choice>
 		<choice hidden="true" req="teleporter">
-			<text>(Телепортер) Вернуть его на корабль и улететь.</text>
+			<text>(Teleporter) Teleport them back to the ship and fly away.</text>
 			<event load="RADAR_REBEL_RETURN"/>
 		</choice>
 	</event>
 	<event>
-		<text>Морф, тихо пробираясь к складам, случайно задевает лучи охранной сигнализации, и его ловит охрана.</text>
+		<text>Your Morph quietly makes their way to a warehouse but accidentally trips a security alarm and gets caught by guards.</text>
 		<choice hidden="true">
-			<text>Мы не можем ему помочь...</text>
+			<text>We cannot help them...</text>
 			<event>
-				<text>Ничего не поделаешь, придётся его оставить.</text>
+				<text>There's nothing you can do, you'll just have to leave them.</text>
 				<crewMember amount="-1" class="morph"/>
 				<choice hidden="true">
 					<text id="continue"/>
@@ -18269,7 +18207,7 @@ High Average =	140%
 			</event>
 		</choice>
 		<choice hidden="true" req="teleporter">
-			<text>(Телепортер) Вернуть его на корабль и улететь.</text>
+			<text>(Teleporter) Teleport them back to the ship and fly away.</text>
 			<event load="RADAR_REBEL_RETURN"/>
 		</choice>
 	</event>
@@ -18293,7 +18231,7 @@ High Average =	140%
 		</choice>
 	</event>
 	<event>
-		<text>Your Zoltan finds a warehouse with a weapon, but can't take it out quietly.</text>
+		<text>Your Zoltan finds a weapon in a warehouse, but can't bring it back without being spotted.</text>
 		<choice hidden="true">
 			<text>Return to the ship empty-handed.</text>
 			<event load="RADAR_REBEL_RETURN"/>
@@ -18327,7 +18265,7 @@ High Average =	140%
 		</choice>
 	</event>
 	<event>
-		<text>Your Zoltan finds a cell with a prisoner and releases them.</text>
+		<text>Your Zoltan finds a cell with a prisoner and frees them.</text>
 		<choice hidden="true">
 			<text>The landing capsule only has enough space for one occupant...</text>		
 			<event>
@@ -18390,7 +18328,7 @@ High Average =	140%
 
 <eventList name="RADAR_REBEL_T_ENERGYX"><!-- 1.28 -->
 	<event>
-		<text>Золтонец скрытно пробирается в аналитический центр и отправляет флоту ложные координаты вашего расположения. Это их задержит.</text>
+		<text>Your Zolton secretly makes their way to the analytical center and sends the fleet false coordinates of your location. This will delay them.</text>
 		<modifyPursuit amount="-2"/>
 		<choice hidden="true">
 			<text id="continue"/>
@@ -18398,7 +18336,7 @@ High Average =	140%
 		</choice>
 	</event>
 	<event>
-		<text>Золтонец скрытно скачивает карту сектора и возвращается обратно.</text>
+		<text>Your Zolton secretly downloads the sector map and comes back.</text>
 		<reveal_map/>
 		<choice hidden="true">
 			<text id="continue"/>
@@ -18406,15 +18344,15 @@ High Average =	140%
 		</choice>
 	</event>
 	<event>
-		<text>Золтонец находит склад с оружием, но незаметно вынести ничего не может.</text>
+		<text>Your Zolton finds a weapon in a warehouse, but can't bring it back without being spotted.</text>
 		<choice hidden="true">
-			<text>Вернуться на корабль с пустыми руками.</text>
+			<text>Return to the ship empty-handed.</text>
 			<event load="RADAR_REBEL_RETURN"/>
 		</choice>
 		<choice hidden="true" req="teleporter">
-			<text>(Телепортер) Подцепить телепортационный маячок и подать сигнал на корабль.</text>
+			<text>(Teleporter) Place a teleporter beacon and send a signal back to the ship.</text>
 			<event>
-				<text>Ваш агент появляется в телепортере корабля с новым орудием.</text>
+				<text>Your agent appears in the ship's teleporter with the new weapon.</text>
 				<autoReward level="LOW">weapon</autoReward>
 				<choice hidden="true">
 					<text id="continue"/>
@@ -18424,7 +18362,7 @@ High Average =	140%
 		</choice>
 	</event>
 	<event>
-		<text>Золтонец находит камеру с заключённым и возвращается с ним на борт.</text>
+		<text>Your Zolton finds a cell with a prisoner and returns with them on board.</text>
 		<crewMember amount="1" class="random"/>
 		<choice hidden="true">
 			<text id="continue"/>
@@ -18432,7 +18370,7 @@ High Average =	140%
 		</choice>
 	</event>
 	<event>
-		<text>Золтонец находит камеру с заключённым и возвращается с ним на борт.</text>
+		<text>Your Zolton finds a cell with a prisoner and returns with them on board.</text>
 		<crewMember amount="1" class="random"/>
 		<choice hidden="true">
 			<text id="continue"/>
@@ -18440,15 +18378,21 @@ High Average =	140%
 		</choice>
 	</event>
 	<event>
-		<text>Золтонец находит камеру с заключённым и освобождает его.</text>
+		<text>Your Zolton finds a cell with a prisoner and frees them.</text>
 		<choice hidden="true">
-			<text>В десантной капсуле место только для одного. Заключённый всё понимает, благодарит вас и убегает...</text>
-			<event load="RADAR_REBEL_RETURN"/>
+			<text>The landing capsule only has enough space for one occupant...</text>		
+			<event>
+				<text>The prisoner understands and thanks you before running off...</text>
+				<choice hidden="true">
+					<text id="continue" />
+					<event load="RADAR_REBEL_RETURN"/>
+				</choice>
+			</event>
 		</choice>
 		<choice hidden="true" req="teleporter">
-			<text>(Телепортер) Вернуть обоих на корабль.</text>
+			<text>(Teleporter) Return both of them back to the ship.</text>
 			<event>
-				<text>Ваш агент появляется в телепортере с новым членом экипажа.</text>
+				<text>Your agent appears in the teleporter with a new crew member.</text>
 				<crewMember amount="1" class="random"/>
 				<choice hidden="true">
 					<text id="continue"/>
@@ -18458,11 +18402,11 @@ High Average =	140%
 		</choice>
 	</event>
 	<event>
-		<text>Золтонец слишком ярко светит своей аурой и его замечает охрана.</text>
+		<text>Your Zolton's aura shines too brightly and gets noticed by guards.</text>
 		<choice hidden="true">
-			<text>Мы не можем ему помочь...</text>
+			<text>We cannot help them...</text>
 			<event>
-				<text>Ничего не поделаешь, придётся его оставить.</text>
+				<text>There's nothing you can do, you'll just have to leave them.</text>
 				<crewMember amount="-1" class="energyx"/>
 				<choice hidden="true">
 					<text id="continue"/>
@@ -18471,16 +18415,16 @@ High Average =	140%
 			</event>
 		</choice>
 		<choice hidden="true" req="teleporter">
-			<text>(Телепортер) Вернуть его на корабль и улететь.</text>
+			<text>(Teleporter) Teleport them back to the ship and fly away.</text>
 			<event load="RADAR_REBEL_RETURN"/>
 		</choice>
 	</event>
 	<event>
-		<text>Золтонец своей аурой случайно включает один из генераторов, поднимается тревога и его ловят.</text>
+		<text>Your Zoltan's aura accidentally causes a power fluctuation in a nearby generator. An alarm's raised, and they're caught within seconds.</text>
 		<choice hidden="true">
-			<text>Мы не можем ему помочь...</text>
+			<text>We cannot help them...</text>
 			<event>
-				<text>Ничего не поделаешь, придётся его оставить.</text>
+				<text>There's nothing you can do, you'll just have to leave them.</text>
 				<crewMember amount="-1" class="energyx"/>
 				<choice hidden="true">
 					<text id="continue"/>
@@ -18489,7 +18433,7 @@ High Average =	140%
 			</event>
 		</choice>
 		<choice hidden="true" req="teleporter">
-			<text>(Телепортер) Вернуть его на корабль и улететь.</text>
+			<text>(Teleporter) Teleport them back to the ship and fly away.</text>
 			<event load="RADAR_REBEL_RETURN"/>
 		</choice>
 	</event>
@@ -18513,7 +18457,7 @@ High Average =	140%
 		</choice>
 	</event>
 	<event>
-		<text>Your Rockman finds a warehouse with a weapon, but can't take it out quietly.</text>
+		<text>Your Rockman finds a weapon in a warehouse, but can't bring it back without being spotted.</text>
 		<choice hidden="true">
 			<text>Return to the ship empty-handed.</text>
 			<event load="RADAR_REBEL_RETURN"/>
@@ -18555,7 +18499,7 @@ High Average =	140%
 	<event>
 		<text>Your Rockman finds a warhead storage facility but can't take much.</text>
 		<choice hidden="true">
-			<text>Back to the ship.</text>
+			<text>Return to the ship.</text>
 			<event>
 				<text>Your Rockman brings a box of missiles.</text>
 				<!-- <autoReward level="LOW">missiles_only</autoReward> -->
@@ -18571,7 +18515,7 @@ High Average =	140%
 		<choice hidden="true" req="teleporter">
 			<text>(Teleporter) Place a teleporter beacon and send a signal back to the ship.</text>
 			<event>
-				<text>Your agent appears in the teleporter with missile boxes.</text>
+				<text>Your agent appears in the teleporter with many missile crates.</text>
 				<!-- <autoReward level="HIGH">missiles_only</autoReward> -->
 				<item_modify> <!-- 1.25 -->
 					<item type="missiles" min="10" max="15"/>
@@ -18584,7 +18528,7 @@ High Average =	140%
 		</choice>
 	</event>
 	<event>
-		<text>Your Rockman accidentally stumbles and smashes their head into a wall, getting stuck!</text>
+		<text>Your Rockman accidentally stumbles and smashes their head right into the wall of the control room, getting stuck!</text>
 		<choice hidden="true">
 			<text>We cannot help them...</text>
 			<event>
@@ -18602,7 +18546,7 @@ High Average =	140%
 		</choice>
 	</event>
 	<event>
-		<text>Patrolling Rebels come towards your Rockman so they pretend to be a pile of stones, but the Rebels aren't that stupid and tie them up.</text>
+		<text>Patrolling Rebels approach your Rockman, so they pretend to be a pile of stones, but the Rebels aren't that stupid and tie them up.</text>
 		<choice hidden="true">
 			<text>We cannot help them...</text>
 			<event>
@@ -18624,7 +18568,7 @@ High Average =	140%
 
 <eventList name="RADAR_REBEL_T_MAGMAN"> <!-- 1.28 --> <!-- copy of rockman -->
 	<event>
-		<text>Магмен скрытно пробирается в аналитический центр и отправляет флоту ложные координаты вашего расположения. Это их задержит.</text>
+		<text>Your Magman secretly makes their way to the analytical center and sends the fleet false coordinates of your location. This will delay them.</text>
 		<modifyPursuit amount="-2"/>
 		<choice hidden="true">
 			<text id="continue"/>
@@ -18632,7 +18576,7 @@ High Average =	140%
 		</choice>
 	</event>
 	<event>
-		<text>Магмен скрытно скачивает карту сектора и возвращается обратно.</text>
+		<text>Your Magman secretly downloads the sector map and comes back.</text>
 		<reveal_map/>
 		<choice hidden="true">
 			<text id="continue"/>
@@ -18640,15 +18584,15 @@ High Average =	140%
 		</choice>
 	</event>
 	<event>
-		<text>Магмен находит склад с оружием, но незаметно вынести ничего не может.</text>
+		<text>Your Magman finds a weapon in a warehouse, but can't bring it back without being spotted.</text>
 		<choice hidden="true">
-			<text>Вернуться на корабль с пустыми руками.</text>
+			<text>Return to the ship empty-handed.</text>
 			<event load="RADAR_REBEL_RETURN"/>
 		</choice>
 		<choice hidden="true" req="teleporter">
-			<text>(Телепортер) Подцепить телепортационный маячок и подать сигнал на корабль.</text>
+			<text>(Teleporter) Place a teleporter beacon and send a signal back to the ship.</text>
 			<event>
-				<text>Ваш агент появляется в телепортере корабля с новым орудием.</text>
+				<text>Your agent appears in the ship's teleporter with the new weapon.</text>
 				<autoReward level="LOW">weapon</autoReward>
 				<choice hidden="true">
 					<text id="continue"/>
@@ -18658,7 +18602,7 @@ High Average =	140%
 		</choice>
 	</event>
 	<event>
-		<text>Магмен находит склад с ракетами, забирает груз и возвращается с ним на борт.</text>
+		<text>Your Magman finds a warhead storage facility and takes as much as they can carry before returning back to the ship.</text>
 		<item_modify>
 			<item type="missiles" min="10" max="15"/>
 		</item_modify>
@@ -18668,7 +18612,7 @@ High Average =	140%
 		</choice>
 	</event>
 	<event>
-		<text>Магмен находит склад с ракетами, забирает груз и возвращается с ним на борт.</text>
+		<text>Your Magman finds a warhead storage facility and takes as much as they can carry before returning back to the ship.</text>
 		<item_modify>
 			<item type="missiles" min="10" max="15"/>
 		</item_modify>
@@ -18678,11 +18622,11 @@ High Average =	140%
 		</choice>
 	</event>
 	<event>
-		<text>Магмен находит склад с ракетами, но взять их много не может.</text>
+		<text>Your Magman finds a warhead storage facility but can't take much.</text>
 		<choice hidden="true">
-			<text>Вернуться на корабль.</text>
+			<text>Return to the ship.</text>
 			<event>
-				<text>Магмен приносит ящик ракет.</text>
+				<text>Your Magman brings a box of missiles.</text>
 				<item_modify> 
 					<item type="missiles" min="4" max="8"/>
 				</item_modify>
@@ -18693,9 +18637,9 @@ High Average =	140%
 			</event>
 		</choice>
 		<choice hidden="true" req="teleporter">
-			<text>(Телепортер) Подцепить телепортационный маячок и подать сигнал на корабль.</text>
+			<text>(Teleporter) Place a teleporter beacon and send a signal back to the ship.</text>
 			<event>
-				<text>Ваш агент появляется в телепортере с ящиками ракет.</text>
+				<text>Your agent appears in the teleporter with many missile crates.</text>
 				<item_modify>
 					<item type="missiles" min="10" max="15"/>
 				</item_modify>
@@ -18707,11 +18651,11 @@ High Average =	140%
 		</choice>
 	</event>
 	<event>
-		<text>Магмен случайно спотыкается, пробивает головой стену в операторскую и застревает!</text>
+		<text>Your Magman accidentally stumbles and smashes their head right into the wall of the control room, getting stuck!</text>
 		<choice hidden="true">
-			<text>Мы не можем ему помочь...</text>
+			<text>We cannot help them...</text>
 			<event>
-				<text>Ничего не поделаешь, придётся его оставить.</text>
+				<text>There's nothing you can do, you'll just have to leave them.</text>
 				<crewMember amount="-1" class="magman"/>
 				<choice hidden="true">
 					<text id="continue"/>
@@ -18720,16 +18664,16 @@ High Average =	140%
 			</event>
 		</choice>
 		<choice hidden="true" req="teleporter">
-			<text>(Телепортер) Вернуть его на корабль и улететь.</text>
+			<text>(Teleporter) Teleport them back to the ship and fly away.</text>
 			<event load="RADAR_REBEL_RETURN"/>
 		</choice>
 	</event>
 	<event>
-		<text>Магмен находит работающий камин и залезает в него погреться. Там он застревает и повстанцы ловят его.</text> <!-- different text -->
+		<text>Your Magman finds a working fireplace and crawls into it to warm themselves up. There they get stuck and the Rebels catch them.</text> <!-- different text -->
 		<choice hidden="true">
-			<text>Мы не можем ему помочь...</text>
+			<text>We cannot help them...</text>
 			<event>
-				<text>Ничего не поделаешь, придётся его оставить.</text>
+				<text>There's nothing you can do, you'll just have to leave them.</text>
 				<crewMember amount="-1" class="magman"/>
 				<choice hidden="true">
 					<text id="continue"/>
@@ -18738,7 +18682,7 @@ High Average =	140%
 			</event>
 		</choice>
 		<choice hidden="true" req="teleporter">
-			<text>(Телепортер) Вернуть его на корабль и улететь.</text>
+			<text>(Teleporter) Teleport them back to the ship and fly away.</text>
 			<event load="RADAR_REBEL_RETURN"/>
 		</choice>
 	</event>
@@ -18762,7 +18706,7 @@ High Average =	140%
 		</choice>
 	</event>
 	<event>
-		<text>Your Lanius finds a warehouse with a weapon, but can't take it out quietly.</text>
+		<text>Your Lanius finds a weapon in a warehouse, but can't bring it back without being spotted.</text>
 		<choice hidden="true">
 			<text>Return to the ship empty-handed.</text>
 			<event load="RADAR_REBEL_RETURN"/>
@@ -18869,7 +18813,7 @@ High Average =	140%
 		</choice>
 	</event>
 	<event>
-		<text>Your Crystal finds a warehouse with a weapon, but can't take it out quietly.</text>
+		<text>Your Crystal finds a weapon in a warehouse, but can't bring it back without being spotted.</text>
 		<choice hidden="true">
 			<text>Return to the ship empty-handed.</text>
 			<event load="RADAR_REBEL_RETURN"/>
@@ -18954,7 +18898,7 @@ High Average =	140%
 		</choice>
 	</event>
 	<event>
-		<text>Your Avatar finds a warehouse with a weapon, but can't take it out quietly.</text>
+		<text>Your Avatar finds a weapon in a warehouse, but can't bring it back without being spotted.</text>
 		<choice hidden="true">
 			<text>Return to the ship empty-handed.</text>
 			<event load="RADAR_REBEL_RETURN"/>
@@ -19023,7 +18967,7 @@ High Average =	140%
 
 <eventList name="RADAR_REBEL_T_ORCHID"> <!-- 1.28 --> <!-- copy of avatar -->
 	<event>
-		<text>Орхид скрытно пробирается в аналитический центр и отправляет флоту ложные координаты вашего расположения. Это их задержит.</text>
+		<text>Your Orchid secretly makes their way to the analytical center and sends the fleet false coordinates of your location. This will delay them.</text>
 		<modifyPursuit amount="-2"/>
 		<choice hidden="true">
 			<text id="continue"/>
@@ -19031,7 +18975,7 @@ High Average =	140%
 		</choice>
 	</event>
 	<event>
-		<text>Орхид скрытно скачивает карту сектора и возвращается обратно.</text>
+		<text>Your Orchid secretly downloads the sector map and comes back.</text>
 		<reveal_map/>
 		<choice hidden="true">
 			<text id="continue"/>
@@ -19039,15 +18983,15 @@ High Average =	140%
 		</choice>
 	</event>
 	<event>
-		<text>Орхид находит склад с оружием, но незаметно вынести ничего не может.</text>
+		<text>Your Orchid finds a weapon in a warehouse, but can't bring it back without being spotted.</text>
 		<choice hidden="true">
-			<text>Вернуться на корабль с пустыми руками.</text>
+			<text>Return to the ship empty-handed.</text>
 			<event load="RADAR_REBEL_RETURN"/>
 		</choice>
 		<choice hidden="true" req="teleporter">
-			<text>(Телепортер) Подцепить телепортационный маячок и подать сигнал на корабль.</text>
+			<text>(Teleporter) Place a teleporter beacon and send a signal back to the ship.</text>
 			<event>
-				<text>Ваш агент появляется в телепортере корабля с новым орудием.</text>
+				<text>Your agent appears in the ship's teleporter with the new weapon.</text>
 				<autoReward level="LOW">weapon</autoReward>
 				<choice hidden="true">
 					<text id="continue"/>
@@ -19057,7 +19001,7 @@ High Average =	140%
 		</choice>
 	</event>
 	<event>
-		<text>Орхид находит склад с оборудованием, забирает груз и возвращается с ним на борт.</text>
+		<text>Your Orchid finds an equipment depot, picks up the cargo and returns with it on board the capsule.</text>
 		<autoReward level="HIGH">stuff</autoReward>
 		<choice hidden="true">
 			<text id="continue"/>
@@ -19065,7 +19009,7 @@ High Average =	140%
 		</choice>
 	</event>
 	<event>
-		<text>Орхид находит склад с оборудованием, забирает груз и возвращается с ним на борт.</text>
+		<text>Your Orchid finds an equipment depot, picks up the cargo and returns with it on board the capsule.</text>
 		<autoReward level="HIGH">stuff</autoReward>
 		<choice hidden="true">
 			<text id="continue"/>
@@ -19073,15 +19017,15 @@ High Average =	140%
 		</choice>
 	</event>
 	<event>
-		<text>Орхид находит склад с оборудованием, но незаметно вынести его не может.</text>
+		<text>Your Orchid finds an equipment depot, but can't take any of it without being noticed.</text>
 		<choice hidden="true">
-			<text>Вернуться на корабль с пустыми руками.</text>
+			<text>Return to the ship empty-handed.</text>
 			<event load="RADAR_REBEL_RETURN"/>
 		</choice>
 		<choice hidden="true" req="teleporter">
-			<text>(Телепортер) Подцепить телепортационный маячок и подать сигнал на корабль.</text>
+			<text>(Teleporter) Place a teleporter beacon and send a signal back to the ship.</text>
 			<event>
-				<text>Ваш агент появляется в телепортере с кучей материалов.</text>
+				<text>Your agent appears in the teleporter with a bunch of materials.</text>
 				<autoReward level="HIGH">stuff</autoReward>
 				<choice hidden="true">
 					<text id="continue"/>
@@ -19091,14 +19035,14 @@ High Average =	140%
 		</choice>
 	</event>
 	<event>
-		<text>Орхид притворяется декоративным растением и охрана его не находит, но и сам он возвращается с пустыми руками.</text> <!-- different -->
+		<text>Your Orchid pretends to be an ornamental plant, and the security's unable to find them, but your Orchid returns empty-handed.</text> <!-- different -->
 		<choice hidden="true">
 			<text id="continue"/>
 			<event load="RADAR_REBEL_RETURN"/>
 		</choice>
 	</event>
 	<event>
-		<text>Орхид притворяется декоративным растением и охрана его не находит, но и сам он возвращается с пустыми руками.</text> <!-- different -->
+		<text>Your Orchid pretends to be an ornamental plant, and the security's unable to find them, but your Orchid returns empty-handed.</text> <!-- different -->
 		<choice hidden="true">
 			<text id="continue"/>
 			<event load="RADAR_REBEL_RETURN"/>
@@ -19108,7 +19052,7 @@ High Average =	140%
 
 <eventList name="RADAR_REBEL_T_MUSHROOM"> <!-- 1.28 --> <!-- copy of orchid -->
 	<event>
-		<text>Машрум скрытно пробирается в аналитический центр и отправляет флоту ложные координаты вашего расположения. Это их задержит.</text>
+		<text>Your Mushroom secretly makes their way to the analytical center and sends the fleet false coordinates of your location. This will delay them.</text>
 		<modifyPursuit amount="-2"/>
 		<choice hidden="true">
 			<text id="continue"/>
@@ -19116,7 +19060,7 @@ High Average =	140%
 		</choice>
 	</event>
 	<event>
-		<text>Машрум скрытно скачивает карту сектора и возвращается обратно.</text>
+		<text>Your Mushroom secretly downloads the sector map and comes back.</text>
 		<reveal_map/>
 		<choice hidden="true">
 			<text id="continue"/>
@@ -19124,15 +19068,15 @@ High Average =	140%
 		</choice>
 	</event>
 	<event>
-		<text>Машрум находит склад с оружием, но незаметно вынести ничего не может.</text>
+		<text>Your Mushroom finds a weapon in a warehouse, but can't bring it back without being spotted.</text>
 		<choice hidden="true">
-			<text>Вернуться на корабль с пустыми руками.</text>
+			<text>Return to the ship empty-handed.</text>
 			<event load="RADAR_REBEL_RETURN"/>
 		</choice>
 		<choice hidden="true" req="teleporter">
-			<text>(Телепортер) Подцепить телепортационный маячок и подать сигнал на корабль.</text>
+			<text>(Teleporter) Place a teleporter beacon and send a signal back to the ship.</text>
 			<event>
-				<text>Ваш агент появляется в телепортере корабля с новым орудием.</text>
+				<text>Your agent appears in the ship's teleporter with the new weapon.</text>
 				<autoReward level="LOW">weapon</autoReward>
 				<choice hidden="true">
 					<text id="continue"/>
@@ -19142,7 +19086,7 @@ High Average =	140%
 		</choice>
 	</event>
 	<event>
-		<text>Машрум находит склад с оборудованием, забирает груз и возвращается с ним на борт.</text>
+		<text>Your Mushroom finds an equipment depot, picks up the cargo and returns with it on board the capsule.</text>
 		<autoReward level="HIGH">stuff</autoReward>
 		<choice hidden="true">
 			<text id="continue"/>
@@ -19150,7 +19094,7 @@ High Average =	140%
 		</choice>
 	</event>
 	<event>
-		<text>Машрум находит склад с оборудованием, забирает груз и возвращается с ним на борт.</text>
+		<text>Your Mushroom finds an equipment depot, picks up the cargo and returns with it on board the capsule.</text>
 		<autoReward level="HIGH">stuff</autoReward>
 		<choice hidden="true">
 			<text id="continue"/>
@@ -19158,15 +19102,15 @@ High Average =	140%
 		</choice>
 	</event>
 	<event>
-		<text>Машрум находит склад с оборудованием, но незаметно вынести его не может.</text>
+		<text>Your Mushroom finds an equipment depot, but can't take any of it without being noticed.</text>
 		<choice hidden="true">
-			<text>Вернуться на корабль с пустыми руками.</text>
+			<text>Return to the ship empty-handed.</text>
 			<event load="RADAR_REBEL_RETURN"/>
 		</choice>
 		<choice hidden="true" req="teleporter">
-			<text>(Телепортер) Подцепить телепортационный маячок и подать сигнал на корабль.</text>
+			<text>(Teleporter) Place a teleporter beacon and send a signal back to the ship.</text>
 			<event>
-				<text>Ваш агент появляется в телепортере с кучей материалов.</text>
+				<text>Your agent appears in the teleporter with a bunch of materials.</text>
 				<autoReward level="HIGH">stuff</autoReward>
 				<choice hidden="true">
 					<text id="continue"/>
@@ -19176,14 +19120,14 @@ High Average =	140%
 		</choice>
 	</event>
 	<event>
-		<text>Машрум притворяется обычным грибом и охрана его не находит, но и сам он возвращается с пустыми руками.</text> <!-- different -->
+		<text>Your Mushroom pretends to be an ordinary mushroom, and the security's unable to find them, but your Mushroom returns empty-handed.</text> <!-- different -->
 		<choice hidden="true">
 			<text id="continue"/>
 			<event load="RADAR_REBEL_RETURN"/>
 		</choice>
 	</event>
 	<event>
-		<text>Машрум притворяется обычным грибом и охрана его не находит, но и сам он возвращается с пустыми руками.</text> <!-- different -->
+		<text>Your Mushroom pretends to be an ordinary mushroom, and the security's unable to find them, but your Mushroom returns empty-handed.</text> <!-- different -->
 		<choice hidden="true">
 			<text id="continue"/>
 			<event load="RADAR_REBEL_RETURN"/>
@@ -19193,7 +19137,7 @@ High Average =	140%
 
 <eventList name="RADAR_REBEL_T_SHELL"> <!-- 1.28 --> <!-- copy of avatar -->
 	<event>
-		<text>Броненосец скрытно пробирается в аналитический центр и отправляет флоту ложные координаты вашего расположения. Это их задержит.</text>
+		<text>Your Shell secretly makes their way to the analytical center and sends the fleet false coordinates of your location. This will delay them.</text>
 		<modifyPursuit amount="-2"/>
 		<choice hidden="true">
 			<text id="continue"/>
@@ -19201,7 +19145,7 @@ High Average =	140%
 		</choice>
 	</event>
 	<event>
-		<text>Броненосец скрытно скачивает карту сектора и возвращается обратно.</text>
+		<text>Your Shell secretly downloads the sector map and comes back.</text>
 		<reveal_map/>
 		<choice hidden="true">
 			<text id="continue"/>
@@ -19209,15 +19153,15 @@ High Average =	140%
 		</choice>
 	</event>
 	<event>
-		<text>Броненосец находит склад с оружием, но незаметно вынести ничего не может.</text>
+		<text>Your Shell finds a weapon in a warehouse, but can't bring it back without being spotted.</text>
 		<choice hidden="true">
-			<text>Вернуться на корабль с пустыми руками.</text>
+			<text>Return to the ship empty-handed.</text>
 			<event load="RADAR_REBEL_RETURN"/>
 		</choice>
 		<choice hidden="true" req="teleporter">
-			<text>(Телепортер) Подцепить телепортационный маячок и подать сигнал на корабль.</text>
+			<text>(Teleporter) Place a teleporter beacon and send a signal back to the ship.</text>
 			<event>
-				<text>Ваш агент появляется в телепортере корабля с новым орудием.</text>
+				<text>Your agent appears in the ship's teleporter with the new weapon.</text>
 				<autoReward level="LOW">weapon</autoReward>
 				<choice hidden="true">
 					<text id="continue"/>
@@ -19227,7 +19171,7 @@ High Average =	140%
 		</choice>
 	</event>
 	<event>
-		<text>Броненосец находит склад с оборудованием, забирает груз и возвращается с ним на борт.</text>
+		<text>Your Shell finds an equipment depot, picks up the cargo and returns with it on board the capsule.</text>
 		<autoReward level="HIGH">stuff</autoReward>
 		<choice hidden="true">
 			<text id="continue"/>
@@ -19235,7 +19179,7 @@ High Average =	140%
 		</choice>
 	</event>
 	<event>
-		<text>Броненосец находит склад с оборудованием, забирает груз и возвращается с ним на борт.</text>
+		<text>Your Shell finds an equipment depot, picks up the cargo and returns with it on board the capsule.</text>
 		<autoReward level="HIGH">stuff</autoReward>
 		<choice hidden="true">
 			<text id="continue"/>
@@ -19243,15 +19187,15 @@ High Average =	140%
 		</choice>
 	</event>
 	<event>
-		<text>Броненосец находит склад с оборудованием, но незаметно вынести его не может.</text>
+		<text>Your Shell finds an equipment depot, but can't take any of it without being noticed.</text>
 		<choice hidden="true">
-			<text>Вернуться на корабль с пустыми руками.</text>
+			<text>Return to the ship empty-handed.</text>
 			<event load="RADAR_REBEL_RETURN"/>
 		</choice>
 		<choice hidden="true" req="teleporter">
-			<text>(Телепортер) Подцепить телепортационный маячок и подать сигнал на корабль.</text>
+			<text>(Teleporter) Place a teleporter beacon and send a signal back to the ship.</text>
 			<event>
-				<text>Ваш агент появляется в телепортере с кучей материалов.</text>
+				<text>Your agent appears in the teleporter with a bunch of materials.</text>
 				<autoReward level="HIGH">stuff</autoReward>
 				<choice hidden="true">
 					<text id="continue"/>
@@ -19261,14 +19205,14 @@ High Average =	140%
 		</choice>
 	</event>
 	<event>
-		<text>Броненосец не смог найти ничего полезного. К счастью, он остался незамеченным и благополучно возвращается на ваш корабль.</text> <!-- different -->
+		<text>Your Shell couldn't find anything useful. Fortunately, they went undetected and return safely to your ship.</text> <!-- different -->
 		<choice hidden="true">
 			<text id="continue"/>
 			<event load="RADAR_REBEL_RETURN"/>
 		</choice>
 	</event>
 	<event>
-		<text>Броненосец не смог найти ничего полезного. К счастью, он остался незамеченным и благополучно возвращается на ваш корабль.</text> <!-- different -->
+		<text>Your Shell couldn't find anything useful. Fortunately, they went undetected and return safely to your ship.</text> <!-- different -->
 		<choice hidden="true">
 			<text id="continue"/>
 			<event load="RADAR_REBEL_RETURN"/>
@@ -19294,7 +19238,7 @@ High Average =	140%
 		</choice>
 	</event>
 	<event>
-		<text>Your Mantis finds a warehouse with a weapon, but can't take it out quietly.</text>
+		<text>Your Mantis finds a weapon in a warehouse, but can't bring it back without being spotted.</text>
 		<choice hidden="true">
 			<text>Return to the ship empty-handed.</text>
 			<event load="RADAR_REBEL_RETURN"/>
@@ -19435,7 +19379,7 @@ High Average =	140%
 
 <eventList name="RADAR_REBEL_T_SLIG">
 	<event>
-		<text>Слёрм скрытно пробирается в аналитический центр и отправляет флоту ложные координаты вашего расположения. Это их задержит.</text>
+		<text>Your Slig secretly makes their way to the analytical center and sends the fleet false coordinates of your location. This will delay them.</text>
 		<modifyPursuit amount="-2"/>
 		<choice hidden="true">
 			<text id="continue"/>
@@ -19443,7 +19387,7 @@ High Average =	140%
 		</choice>
 	</event>
 	<event>
-		<text>Слёрм скрытно скачивает карту сектора и возвращается обратно.</text>
+		<text>Your Slig secretly downloads the sector map and comes back.</text>
 		<reveal_map/>
 		<choice hidden="true">
 			<text id="continue"/>
@@ -19451,11 +19395,11 @@ High Average =	140%
 		</choice>
 	</event>
 	<event>
-		<text>Слёрм находит склад с оружием.</text>
+		<text>Your Slig finds a weapons warehouse.</text>
 		<choice hidden="true">
-			<text>Перенести всё на корабль.</text>
+			<text>Transfer everything to the ship.</text>
 			<event>
-				<text>Слёрм гипнотизирует персонал радара, и они помогают ему доставить содержимое склада на корабль.</text>
+				<text>Your Slig hypnotizes the radar station's personnel, and they help your Slug deliver the contents of the warehouse to your ship.</text>
 				<autoReward level="LOW">weapon</autoReward>
 				<choice hidden="true">
 					<text id="continue"/>
@@ -19465,11 +19409,11 @@ High Average =	140%
 		</choice>
 	</event>
 	<event>
-		<text>Слёрм находит склад с оборудованием.</text>
+		<text>Your Slig finds an equipment depot.</text>
 		<choice hidden="true">
-			<text>Перенести всё на корабль.</text>
+			<text>Transfer everything to the ship.</text>
 			<event>
-				<text>Слёрм гипнотизирует персонал радара, и они помогают ему доставить содержимое склада на корабль.</text>
+				<text>Your Slig hypnotizes the radar station's personnel, and they help your Slug deliver the contents of the depot to your ship.</text>
 				<autoReward level="HIGH">standard</autoReward>
 				<choice hidden="true">
 					<text id="continue"/>
@@ -19479,14 +19423,14 @@ High Average =	140%
 		</choice>
 	</event>
 	<event>
-		<text>Слёрма находит охрана, но он усыпляет их. Найти что-то ценное слёрм не может и возвращается обратно.</text>
+		<text>Your Slug gets caught by a guard, but your Slig puts them to sleep, "Ssssssleep." Your Slig isn't able to find something of value and comes back.</text>
 		<choice hidden="true">
 			<text id="continue"/>
 			<event load="RADAR_REBEL_RETURN"/>
 		</choice>
 	</event>
 	<event>
-		<text>Слёрма находит охрана, но он внушает им, что они ничего не видели. Найти что-то ценное слёрм не может и возвращается обратно.</text>
+		<text>Your Slug gets caught by a guard, but your Slig "convinces" them that they didn't see anything. Your Slig isn't able to find something of value and comes back.</text>
 		<choice hidden="true">
 			<text id="continue"/>
 			<event load="RADAR_REBEL_RETURN"/>
@@ -19556,7 +19500,7 @@ High Average =	140%
 					</event>
 				</choice>
 				<choice hidden="true" req="morph"><!-- 1.28 -->
-					<text>(Morph Crew Member) Отправить морфа.</text>
+					<text>(Morph Crew Member) Send your Morph.</text>
 					<event>
 						<text>The fleet was detained by a combat skirmish with the ship you captured.</text>
 						<modifyPursuit amount="-4"/>
@@ -19572,7 +19516,7 @@ High Average =	140%
 					</event>
 				</choice>
 				<choice hidden="true" req="energyx"><!-- 1.28 -->
-					<text>(Zolton Crew Member) Отправить золтонца.</text>
+					<text>(Zolton Crew Member) Send your Zolton.</text>
 					<event>
 						<text>The fleet was detained by a combat skirmish with the ship you captured.</text>
 						<modifyPursuit amount="-4"/>
@@ -19588,7 +19532,7 @@ High Average =	140%
 					</event>
 				</choice>
 				<choice hidden="true" req="magman"> <!-- 1.28 -->
-					<text>(Член экипажа магмен) Отправить магмена.</text>
+					<text>(Magman Crew Member) Send your Magman.</text>
 					<event>
 						<text>The fleet was detained by a combat skirmish with the ship you captured.</text>
 						<modifyPursuit amount="-4"/>
@@ -19596,7 +19540,7 @@ High Average =	140%
 					</event>
 				</choice>
 				<choice hidden="true" req="mushroom_f"> <!-- 1.28 -->
-					<text>(Young Mushroom Crew Member) Отправить машрума.</text>
+					<text>(Young Mushroom Crew Member) Send your Mushroom.</text>
 					<event>
 						<text>The fleet was detained by a combat skirmish with the ship you captured.</text>
 						<modifyPursuit amount="-4"/>
@@ -19604,7 +19548,7 @@ High Average =	140%
 					</event>
 				</choice>
 				<choice hidden="true" req="mushroom_b"> <!-- 1.28 -->
-					<text>(Mature Mushroom Crew Member) Отправить машрума.</text>
+					<text>(Mature Mushroom Crew Member) Send your Mushroom.</text>
 					<event>
 						<text>The fleet was detained by a combat skirmish with the ship you captured.</text>
 						<modifyPursuit amount="-4"/>
@@ -19612,7 +19556,7 @@ High Average =	140%
 					</event>
 				</choice>
 				<choice hidden="true" req="mushroom"> <!-- 1.28 -->
-					<text>(Old Mushroom Crew Member) Отправить машрума.</text>
+					<text>(Old Mushroom Crew Member) Send your Mushroom.</text>
 					<event>
 						<text>The fleet was detained by a combat skirmish with the ship you captured.</text>
 						<modifyPursuit amount="-4"/>
@@ -19733,7 +19677,7 @@ High Average =	140%
 					</event>
 				</choice>
 				<choice hidden="true" req="morph"><!-- 1.28 -->
-					<text>(Morph Crew Member) Отправить морфа.</text>
+					<text>(Morph Crew Member) Send your Morph.</text>
 					<event>
 						<text>The fleet was detained by a combat skirmish with the ship you captured.</text>
 						<modifyPursuit amount="-4"/>
@@ -19749,7 +19693,7 @@ High Average =	140%
 					</event>
 				</choice>
 				<choice hidden="true" req="energyx"><!-- 1.28 -->
-					<text>(Zolton Crew Member) Отправить золтонца.</text>
+					<text>(Zolton Crew Member) Send your Zolton.</text>
 					<event>
 						<text>The fleet was detained by a combat skirmish with the ship you captured.</text>
 						<modifyPursuit amount="-4"/>
@@ -19765,7 +19709,7 @@ High Average =	140%
 					</event>
 				</choice>
 				<choice hidden="true" req="magman"> <!-- 1.28 -->
-					<text>(Член экипажа магмен) Отправить магмена.</text>
+					<text>(Magman Crew Member) Send your Magman.</text>
 					<event>
 						<text>The fleet was detained by a combat skirmish with the ship you captured.</text>
 						<modifyPursuit amount="-4"/>
@@ -19773,7 +19717,7 @@ High Average =	140%
 					</event>
 				</choice>
 				<choice hidden="true" req="mushroom_f"> <!-- 1.28 -->
-					<text>(Young Mushroom Crew Member) Отправить машрума.</text>
+					<text>(Young Mushroom Crew Member) Send your Mushroom.</text>
 					<event>
 						<text>The fleet was detained by a combat skirmish with the ship you captured.</text>
 						<modifyPursuit amount="-4"/>
@@ -19781,7 +19725,7 @@ High Average =	140%
 					</event>
 				</choice>
 				<choice hidden="true" req="mushroom_b"> <!-- 1.28 -->
-					<text>(Mature Mushroom Crew Member) Отправить машрума.</text>
+					<text>(Mature Mushroom Crew Member) Send your Mushroom.</text>
 					<event>
 						<text>The fleet was detained by a combat skirmish with the ship you captured.</text>
 						<modifyPursuit amount="-4"/>
@@ -19789,7 +19733,7 @@ High Average =	140%
 					</event>
 				</choice>
 				<choice hidden="true" req="mushroom"> <!-- 1.28 -->
-					<text>(Old Mushroom Crew Member) Отправить машрума.</text>
+					<text>(Old Mushroom Crew Member) Send your Mushroom.</text>
 					<event>
 						<text>The fleet was detained by a combat skirmish with the ship you captured.</text>
 						<modifyPursuit amount="-4"/>
@@ -19929,7 +19873,7 @@ High Average =	140%
 					</event>
 				</choice>
 				<choice hidden="true" req="morph"><!-- 1.28 -->
-					<text>(Morph Crew Member) Отправить морфа.</text>
+					<text>(Morph Crew Member) Send your Morph.</text>
 					<event>
 						<text>The fleet was detained by a combat skirmish with the ship you captured.</text>
 						<modifyPursuit amount="-4"/>
@@ -19961,7 +19905,7 @@ High Average =	140%
 					</event>
 				</choice>
 				<choice hidden="true" req="magman"> <!-- 1.28 -->
-					<text>(Член экипажа магмен) Отправить магмена.</text>
+					<text>(Magman Crew Member) Send your Magman.</text>
 					<event>
 						<text>The fleet was detained by a combat skirmish with the ship you captured.</text>
 						<modifyPursuit amount="-4"/>
@@ -19977,7 +19921,7 @@ High Average =	140%
 					</event>
 				</choice>
 				<choice hidden="true" req="mushroom_b"> <!-- 1.28 -->
-					<text>(Mature Mushroom Crew Member) Отправить машрума.</text>
+					<text>(Mature Mushroom Crew Member) Send your Mushroom.</text>
 					<event>
 						<text>The fleet was detained by a combat skirmish with the ship you captured.</text>
 						<modifyPursuit amount="-4"/>
@@ -20090,7 +20034,7 @@ High Average =	140%
 					</event>
 				</choice>
 				<choice hidden="true" req="order_human"> <!-- 1.28 -->
-					<text>(Член экипажа человек Ордена) Отправить человека.</text>
+					<text>(Order Human Crew Member) Send your Order Human.</text>
 					<event>
 						<text>The fleet was detained by a combat skirmish with the ship you captured.</text>
 						<modifyPursuit amount="-4"/>
@@ -20106,7 +20050,7 @@ High Average =	140%
 					</event>
 				</choice>
 				<choice hidden="true" req="morph"><!-- 1.28 -->
-					<text>(Morph Crew Member) Отправить морфа.</text>
+					<text>(Morph Crew Member) Send your Morph.</text>
 					<event>
 						<text>The fleet was detained by a combat skirmish with the ship you captured.</text>
 						<modifyPursuit amount="-4"/>
@@ -20122,7 +20066,7 @@ High Average =	140%
 					</event>
 				</choice>
 				<choice hidden="true" req="energyx"><!-- 1.28 -->
-					<text>(Zolton Crew Member) Отправить золтонца.</text>
+					<text>(Zolton Crew Member) Send your Zolton.</text>
 					<event>
 						<text>The fleet was detained by a combat skirmish with the ship you captured.</text>
 						<modifyPursuit amount="-4"/>
@@ -20138,7 +20082,7 @@ High Average =	140%
 					</event>
 				</choice>
 				<choice hidden="true" req="magman"> <!-- 1.28 -->
-					<text>(Член экипажа магмен) Отправить магмена.</text>
+					<text>(Magman Crew Member) Send your Magman.</text>
 					<event>
 						<text>The fleet was detained by a combat skirmish with the ship you captured.</text>
 						<modifyPursuit amount="-4"/>
@@ -20146,7 +20090,7 @@ High Average =	140%
 					</event>
 				</choice>
 				<choice hidden="true" req="mushroom_f"> <!-- 1.28 -->
-					<text>(Young Mushroom Crew Member) Отправить машрума.</text>
+					<text>(Young Mushroom Crew Member) Send your Mushroom.</text>
 					<event>
 						<text>The fleet was detained by a combat skirmish with the ship you captured.</text>
 						<modifyPursuit amount="-4"/>
@@ -20154,7 +20098,7 @@ High Average =	140%
 					</event>
 				</choice>
 				<choice hidden="true" req="mushroom_b"> <!-- 1.28 -->
-					<text>(Mature Mushroom Crew Member) Отправить машрума.</text>
+					<text>(Mature Mushroom Crew Member) Send your Mushroom.</text>
 					<event>
 						<text>The fleet was detained by a combat skirmish with the ship you captured.</text>
 						<modifyPursuit amount="-4"/>
@@ -20162,7 +20106,7 @@ High Average =	140%
 					</event>
 				</choice>
 				<choice hidden="true" req="mushroom"> <!-- 1.28 -->
-					<text>(Old Mushroom Crew Member) Отправить машрума.</text>
+					<text>(Old Mushroom Crew Member) Send your Mushroom.</text>
 					<event>
 						<text>The fleet was detained by a combat skirmish with the ship you captured.</text>
 						<modifyPursuit amount="-4"/>
@@ -48105,7 +48049,7 @@ High Average =	140%
 		<event load="PSEVDO_TALK_WITH_CREW"/>
 	</choice>
 </event>
-<event name="PSEVDO_TALK_WITH_CREW">
+<event name="PSEVDO_TALK_WITH_CREW"><!-- english v1.10 fixed choices order to match regular crew talk -->
 	<text>You decide to speak with a member of your crew while the FTL Drive charges to jump to the next beacon.</text>
 	<choice hidden="true" req="HUMAN">
 		<text id="talk_to_human" />

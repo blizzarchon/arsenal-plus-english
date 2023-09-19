@@ -31,11 +31,7 @@ autoBlueprints				SHIPS_ORCHID
 events_rebel				check 1.29 for morph option in boom and monolith events
 events 						AUGMENTS_ON_START_BEACON
 							PLANET_ENGE_UPGRADE weapons
-							new races in
-							talk to crew outcomes and
-							RAB_TRADE_NEXT and
-							RADAR_REBEL_SELECT_THE_HERO
-							prototype_collectionner?
+							prototype_collectioner new weapons
 							check for russian text..?
 							check flagged
 text_misc					tip_magman_f10_b0
